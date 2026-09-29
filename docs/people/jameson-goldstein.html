@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="../index.html">Boulder Votes</a>
     <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
-    <nav class="util"><a href="../find.html">Questions</a><a href="../issues.html">Issues</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -138,7 +159,42 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <h2>Campaigns</h2>
 <table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td><a href='../2026.html'>2026</a></td><td>Mayor of Boulder · <a href='https://www.jamoformayor.org/'>campaign</a></td><td>certified</td></tr></table>
 <p class='note'>2026: raised $0 · spent $0 · matching $0. <a href='#money'>Donors and spending</a>.</p>
-<p class='empty'>No sourced answers on file yet.</p>
+<h2 id='bio'>2026 candidate for Mayor of Boulder</h2>
+<p>Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU Boulder student. His proposals include changes to housing taxation and ending the city’s Flock Safety camera contract.</p>
+<ul><li><strong>Occupation:</strong> Student</li></ul>
+<p class='note'>Bio sources: <a href='https://boulderreportinglab.org/govpack_profiles/jamo-goldstein/'>boulderreportinglab.org</a></p>
+<h2 id='positions'>In their own words</h2>
+<p class='note'>Short passages from questionnaires, interviews and the campaign site, each with its source. Grouped by topic. Nothing here is a score; a topic with no quote means we have no quote, not a position.</p>
+<h3>Downtown</h3>
+<div class='card' data-statement='S-jameson-goldstein-3'><blockquote class='answer'>I think a Downtown Development Authority could be a useful tool for revitalizing downtown Boulder, but I do not think creating another government entity automatically fixes the problems we are facing.</blockquote><p class='note'>Better Boulder · questionnaire · <a href='https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/'>Where do Boulder’s 2026 Mayorial Candidates Stand?</a></p></div>
+<h3>Governance</h3>
+<div class='card' data-statement='S-jameson-goldstein-4'><blockquote class='answer'>I think the City’s current priorities are largely centered around long-term financial stability and our backlog of infrastructure needs, public safety and homelessness, and housing affordability.</blockquote><p class='note'>Better Boulder · questionnaire · <a href='https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/'>Where do Boulder’s 2026 Mayorial Candidates Stand?</a></p></div>
+<h3>Housing</h3>
+<div class='card' data-statement='S-jameson-goldstein-1'><blockquote class='answer'>Yes. Boulder needs more housing choices, especially duplexes and triplexes that can help families and middle-income resident stay here.</blockquote><p class='note'>Better Boulder · questionnaire · <a href='https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/'>Where do Boulder’s 2026 Mayorial Candidates Stand?</a></p></div>
+<h3>Privacy</h3>
+<div class='card' data-statement='S-jameson-goldstein-7'><blockquote class='answer'>We must cancel our Flock ‘Safety’ contract.</blockquote><p class='note'>Campaign website: Jameson Goldstein · campaign site · <a href='https://www.jamoformayor.org/'>Campaign priorities: Jameson Goldstein</a></p></div>
+<h3>Transportation</h3>
+<div class='card' data-statement='S-jameson-goldstein-2'><blockquote class='answer'>Yes. Completing the Core Arterial Network is essential to making biking, walking, and transit safer and more practical citywide.</blockquote><p class='note'>Better Boulder · questionnaire · <a href='https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/'>Where do Boulder’s 2026 Mayorial Candidates Stand?</a></p></div>
+<h3>What reporters wrote</h3>
+<p class='note'>These are the reporter's words about the candidate, not the candidate's own.</p>
+<div class='card' data-statement='S-jameson-goldstein-0'><div class='meta'>Boulder Reporting Lab reporter · housing</div><details class='quote'><summary>Goldstein is running on a platform of affordability and opposition to the city’s contract with Flock Safety, which supplies Boulder’s automatic license plate readers. He proposes an excise tax on…</summary><blockquote class='answer'>Goldstein is running on a platform of affordability and opposition to the city’s contract with Flock Safety, which supplies Boulder’s automatic license plate readers. He proposes an excise tax on corporations that own more than 75 Boulder housing units and would use the revenue to subsidize rental assistance. He also supports keeping Boulder Municipal Airport open.</blockquote></details><p class='note'>Boulder Reporting Lab · 2026-08-28 · <a href='https://boulderreportinglab.org/govpack_profiles/jamo-goldstein/'>Profile source: Jameson Goldstein</a></p></div>
+<div class='card' data-statement='S-jameson-goldstein-5'><div class='meta'>Richard Valenty reporting Jameson Goldstein’s interview · housing</div><blockquote class='answer'>“Right now, there’s a very large subsection of the Boulder population that finds it very difficult to even make ends meet and pay rent,” he said.</blockquote><p class='note'>Richard Valenty · 2026-09-16 · <a href='https://richardvalenty.com/2026/09/jamo-goldstein-careful-with-that-credit-card-boulder/'>Candidate interview: Jameson Goldstein</a></p></div>
+<p class='held'>1 further passage (Daily Camera) held back: our audit could not yet match the quoted text to the article. Not shown until verified.</p>
+<h2 id='endorsers'>Who endorses them</h2>
+<p class='note'>Grouped so you can see who is backing whom. Not ranked, not scored. Each line says where the endorsement comes from.</p>
+
+<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<dl class='legend'>
+<dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
+<dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
+<dt>City filing</dt><dd>A committee's registration with the city clerk names the candidate or measure it supports.</dd>
+<dt>News listing</dt><dd>A news outlet lists the endorsement, but we did not find the endorser's own statement.</dd>
+</dl>
+<p class='note'>Titles (e.g. “U.S. Representative”) are as printed on the cited page and describe the person, not an endorsement by their office. A blank title means the source did not give one.</p>
+</details>
+
+<p class='empty'>No endorsements on file. That is not opposition, and not a position on any issue.</p>
+<p class='empty'>No earlier questionnaire answers on file.</p>
 <h2 id='money'>Money</h2>
 <p>2026: raised $0 · spent $0 · matching received $0 · cash on hand $0 (&quot;Committee For the Election of Jameson &#x27;Jamo&#x27; Goldstein&quot;, &quot;C.F.E.J.G&quot;, as of 2026-08-26).</p>
 <p class='note'>0 contribution lines, 0 expenditures. City clerk, not TRACER. <a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&amp;committeeID=324'>Clerk statements</a> · <a href='../finance.html'>Everyone</a>.</p>
@@ -147,7 +203,8 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="../sources.html">Sources</a> ·
   <a href="../forums.html">Forums</a> ·
-  <a href="../find.html">Questions</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
   <a href="../finance.html">Money</a> ·
   <a href="../questionnaires.html">Questionnaires</a> ·
   <a href="../print/index.html">Print</a> ·

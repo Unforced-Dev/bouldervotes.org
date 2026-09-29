@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="../index.html">Boulder Votes</a>
     <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
-    <nav class="util"><a href="../find.html">Questions</a><a href="../issues.html">Issues</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -139,15 +160,50 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <h2>Campaigns</h2>
 <table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td><a href='../2026.html'>2026</a></td><td>Boulder City Council · <a href='https://www.fuquaforcouncil.com/'>campaign</a></td><td>certified</td></tr></table>
 <p class='note'>2026: raised $7,761 · spent $170.06 · matching $7,361. <a href='#money'>Donors and spending</a>.</p>
-<h2>What they have said</h2>
-<p class='note'>Newest year first. Each card is one question. A yes/no is an answer to that question — not a position on the whole topic.</p>
-<h2>2026</h2>
-<div class='card' id='q-249'>
-<div class='meta'><a href='../2026.html'>2026</a> · interview · Rec and safety bond</div>
-<h3>Do you support the $400 million recreation and safety bond on the November 2026 ballot?</h3>
-<p><strong>Yes</strong>. Reported by Boulder Reporting Lab, Aug 30 2026: all five incumbent candidates support the measure, citing more than $400 million in deferred maintenance. Sam Fuqua and Jamillah Richmond also support it.</p><p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p>
-<p class='note'><a href='https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/'>Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)</a></p>
-</div>
+<h2 id='bio'>2026 candidate for Boulder City Council</h2>
+<p>Fuqua previously served on the Boulder Valley school board and is now seeking a council seat. He prioritizes affordable family housing, climate resilience and government transparency.</p>
+<ul><li><strong>Occupation:</strong> Radio journalist</li><li><strong>Public office:</strong> Boulder Valley School District board member</li></ul>
+<p class='note'>Bio sources: <a href='https://boulderreportinglab.org/govpack_profiles/sam-fuqua/'>boulderreportinglab.org</a></p>
+<h2 id='positions'>In their own words</h2>
+<p class='note'>Short passages from questionnaires, interviews and the campaign site, each with its source. Grouped by topic. Nothing here is a score; a topic with no quote means we have no quote, not a position.</p>
+<h3>Budget</h3>
+<div class='card' data-statement='S-sam-fuqua-7'><blockquote class='answer'>Continue to improve efforts to make the city budget accessible and understandable for residents.</blockquote><p class='note'>Campaign website: Sam Fuqua · campaign site · <a href='https://www.fuquaforcouncil.com/priorities'>Campaign priorities: Sam Fuqua</a></p></div>
+<h3>Downtown</h3>
+<div class='card' data-statement='S-sam-fuqua-1'><blockquote class='answer'>I’m not convinced at this point that the DDA is the right tool.</blockquote><p class='note'>Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
+<div class='card' data-statement='S-sam-fuqua-2'><blockquote class='answer'>I am open to reconsidering the DDA because there is some evidence of its effectiveness in strengthening downtowns elsewhere.</blockquote><p class='note'>Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf'>2026 Mayoral and City Council Candidate Questions — Sam Fuqua</a></p></div>
+<h3>Governance</h3>
+<div class='card' data-statement='S-sam-fuqua-4'><details class='quote'><summary>I am committed not only to making myself available to meet with business owners on a regular basis, but also to proactively seeking them out to listen to their input, ask questions (that probably…</summary><blockquote class='answer'>I am committed not only to making myself available to meet with business owners on a regular basis, but also to proactively seeking them out to listen to their input, ask questions (that probably lead to more questions), explain my positions and also sometimes change my mind based on new information.</blockquote></details><p class='note'>Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf'>2026 Mayoral and City Council Candidate Questions — Sam Fuqua</a></p></div>
+<h3>Housing</h3>
+<div class='card' data-statement='S-sam-fuqua-0'><blockquote class='answer'>Yes. No additional comment submitted.</blockquote><p class='note'>Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
+<h3>Public safety</h3>
+<div class='card' data-statement='S-sam-fuqua-3'><details class='quote'><summary>Businesses should expect the City to enforce ordinances and preserve public safety in all commercial and residential districts but we should target our resources where we have the biggest challenges,…</summary><blockquote class='answer'>Businesses should expect the City to enforce ordinances and preserve public safety in all commercial and residential districts but we should target our resources where we have the biggest challenges, including Downtown and on The Hill .</blockquote></details><p class='note'>Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf'>2026 Mayoral and City Council Candidate Questions — Sam Fuqua</a></p></div>
+<h3>What reporters wrote</h3>
+<p class='note'>These are the reporter's words about the candidate, not the candidate's own.</p>
+<div class='card' data-statement='S-sam-fuqua-5'><div class='meta'>Richard Valenty reporting Sam Fuqua’s interview · downtown</div><blockquote class='answer'>Fuqua said he would have voted against sending the DDA proposal to DDA voters had he been on Council for the mid-2026 vote.</blockquote><p class='note'>Richard Valenty · 2026-09-20 · <a href='https://richardvalenty.com/2026/09/fuqua-pay-his-familys-boulder-opportunities-forward/'>Candidate interview: Sam Fuqua</a></p></div>
+<div class='card' data-statement='S-sam-fuqua-6'><div class='meta'>Daily Camera reporter (reporting Sam Fuqua) · housing</div><blockquote class='answer'>Fuqua also wants the partner developers and agencies to build market-rate, middle-income housing on city-owned land.</blockquote><p class='note'>Daily Camera · 2026-09-04 · <a href='https://www.dailycamera.com/2026/09/04/sam-fuqua-boulder-city-council'>Candidate profile: Sam Fuqua</a></p></div>
+<h2 id='endorsers'>Who endorses them</h2>
+<p class='note'>Grouped so you can see who is backing whom. Not ranked, not scored. Each line says where the endorsement comes from.</p>
+
+<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<dl class='legend'>
+<dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
+<dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
+<dt>City filing</dt><dd>A committee's registration with the city clerk names the candidate or measure it supports.</dd>
+<dt>News listing</dt><dd>A news outlet lists the endorsement, but we did not find the endorser's own statement.</dd>
+</dl>
+<p class='note'>Titles (e.g. “U.S. Representative”) are as printed on the cited page and describe the person, not an endorsement by their office. A blank title means the source did not give one.</p>
+</details>
+
+<h3>Organizations and committees <span class='note'>(3)</span></h3>
+<ul class='edges'><li><a href='../orgs/better-boulder.html'>Better Boulder</a><span class='prov prov-endorser_statement' data-edge='E31' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li><a href='../orgs/boulder-progressives.html'>Boulder Progressives</a><span class='prov prov-endorser_statement' data-edge='E10' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election'>Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)</a> · 2026-08-21</span></li><li><a href='../orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a><span class='prov prov-filing' data-edge='E59' data-provenance='filing'><span class='prov-label'>City filing</span>. Committee registration with the city clerk names this. <a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&amp;committeeID=318'>City of Boulder Statement of Organization: Boulder Progressives UCC</a></span></li></ul>
+<h3>Current elected officials <span class='note'>(5)</span></h3>
+<ul class='edges'><li><a href='../people/aaron-brockett.html'>Aaron Brockett</a>, Boulder mayor<span class='prov prov-campaign_claim' data-edge='E72' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Aaron Brockett</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/kathy-gebhardt.html'>Kathy Gebhardt</a>, Colorado State Board of Education member<span class='prov prov-campaign_claim' data-edge='E106' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Kathy Gebhardt</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/claire-levy.html'>Claire Levy</a>, Boulder County commissioner<span class='prov prov-campaign_claim' data-edge='E115' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Claire Levy</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/tina-marquis.html'>Tina Marquis</a>, Boulder city councilmember<span class='prov prov-campaign_claim' data-edge='E119' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Tina Marquis</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/lesley-smith.html'>Lesley Smith</a>, Colorado state representative<span class='prov prov-campaign_claim' data-edge='E95' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Lesley Smith</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li></ul>
+<h3>Former elected officials <span class='note'>(4)</span></h3>
+<ul class='edges'><li><a href='../people/adrian-fine.html'>Adrian Fine</a>, former Palo Alto mayor<span class='prov prov-campaign_claim' data-edge='E181' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Adrian Fine</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/jill-grano.html'>Jill Grano</a>, former Boulder city councilmember; 2026 council candidate<span class='prov prov-campaign_claim' data-edge='E133' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Jill Grano</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/lisa-sweeney-miran.html'>Lisa Sweeney-Miran</a>, former BVSD Board of Education vice president<span class='prov prov-campaign_claim' data-edge='E175' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Lisa Sweeney-Miran</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li><li><a href='../people/will-toor.html'>Will Toor</a>, former Boulder mayor and Boulder County commissioner<span class='prov prov-campaign_claim' data-edge='E162' data-provenance='campaign_claim'><span class='prov-label'>Sam Fuqua campaign lists Will Toor</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.fuquaforcouncil.com/endorsements'>Endorsements – Sam Fuqua for Boulder City Council</a></span></li></ul>
+<h2 id='gave'>Endorsements they have given (2026)</h2>
+<p class='note'>A personal endorsement, not one by any office they hold.</p>
+<ul class='edges'><li>Endorses: <a href='../people/aaron-brockett.html'>Aaron Brockett</a> (mayor)<span class='prov prov-campaign_claim' data-edge='E198' data-provenance='campaign_claim'><span class='prov-label'>Aaron Brockett campaign lists Sam Fuqua</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://brockett4mayor.org/endorsements/'>Endorsements – Aaron Brockett For Mayor</a></span></li><li>Endorses: <a href='../people/tina-marquis.html'>Tina Marquis</a> (council)<span class='prov prov-campaign_claim' data-edge='E199' data-provenance='campaign_claim'><span class='prov-label'>Tina Marquis campaign lists Sam Fuqua</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.tinaforboulder.com/endorsements'>Endorsements – Tina Marquis for Boulder City Council</a></span></li></ul>
+<p class='empty'>No earlier questionnaire answers on file.</p>
 <h2 id='money'>Money</h2>
 <p>2026: raised $7,761 · spent $170.06 · matching received $7,361 · cash on hand $14,951.94 (Sam Fuqua For Boulder, as of 2026-08-26).</p>
 <p class='note'>Clerk contribution total includes $400.00 in loans.</p>
@@ -161,7 +217,8 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="../sources.html">Sources</a> ·
   <a href="../forums.html">Forums</a> ·
-  <a href="../find.html">Questions</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
   <a href="../finance.html">Money</a> ·
   <a href="../questionnaires.html">Questionnaires</a> ·
   <a href="../print/index.html">Print</a> ·

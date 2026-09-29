@@ -239,3 +239,151 @@ CREATE INDEX IF NOT EXISTS idx_measures_election ON measures(election_id);
 CREATE INDEX IF NOT EXISTS idx_finance_person ON finance_snapshots(person_id);
 CREATE INDEX IF NOT EXISTS idx_finance_lines_snap ON finance_line_items(snapshot_id);
 CREATE INDEX IF NOT EXISTS idx_finance_lines_person ON finance_line_items(person_id);
+
+-- ---------------------------------------------------------------------------
+-- 2026 evidence graph. Loaded only from data/harvest/2026/*.json (see
+-- tools/approve_2026.py for the audit decisions that produced those files).
+-- ---------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS person_titles (
+  person_id INTEGER NOT NULL REFERENCES people(id),
+  title TEXT NOT NULL,              -- office/title exactly as printed on the cited page
+  weight_group TEXT NOT NULL CHECK (weight_group IN ('current_elected','former_elected','other_individual')),
+  source_id INTEGER NOT NULL REFERENCES sources(id),
+  as_of TEXT,
+  PRIMARY KEY (person_id)
+);
+
+CREATE TABLE IF NOT EXISTS org_profiles (
+  org_id INTEGER PRIMARY KEY REFERENCES organizations(id),
+  endorser_kind TEXT NOT NULL,      -- organization | committee | newspaper
+  legal_form TEXT,
+  founded INTEGER,
+  summary TEXT,
+  mission_text TEXT,
+  mission_source_id INTEGER REFERENCES sources(id),
+  funding_text TEXT,
+  funding_source_id INTEGER REFERENCES sources(id),
+  process_text TEXT,
+  process_source_id INTEGER REFERENCES sources(id),
+  as_of TEXT
+);
+
+CREATE TABLE IF NOT EXISTS org_leadership (
+  id INTEGER PRIMARY KEY,
+  org_id INTEGER NOT NULL REFERENCES organizations(id),
+  name TEXT NOT NULL,
+  person_id INTEGER REFERENCES people(id),
+  role TEXT,
+  is_current INTEGER NOT NULL DEFAULT 1,
+  as_of TEXT,
+  source_id INTEGER NOT NULL REFERENCES sources(id),
+  notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS org_past_endorsements (
+  id INTEGER PRIMARY KEY,
+  org_id INTEGER NOT NULL REFERENCES organizations(id),
+  year INTEGER NOT NULL,
+  label TEXT NOT NULL,
+  source_id INTEGER NOT NULL REFERENCES sources(id)
+);
+
+CREATE TABLE IF NOT EXISTS org_relations (
+  org_id INTEGER NOT NULL REFERENCES organizations(id),
+  related_org_id INTEGER NOT NULL REFERENCES organizations(id),
+  relation TEXT NOT NULL,
+  source_id INTEGER REFERENCES sources(id),
+  PRIMARY KEY (org_id, related_org_id)
+);
+
+CREATE TABLE IF NOT EXISTS profile_sources (
+  org_id INTEGER REFERENCES organizations(id),
+  person_id INTEGER REFERENCES people(id),
+  candidacy_id INTEGER REFERENCES candidacies(id),
+  source_id INTEGER NOT NULL REFERENCES sources(id)
+);
+
+CREATE TABLE IF NOT EXISTS candidate_profiles (
+  candidacy_id INTEGER PRIMARY KEY REFERENCES candidacies(id),
+  summary TEXT,
+  occupation TEXT,
+  years_in_boulder TEXT,
+  prior_office TEXT,
+  research_notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS statements (
+  id TEXT PRIMARY KEY,
+  candidacy_id INTEGER NOT NULL REFERENCES candidacies(id),
+  person_id INTEGER NOT NULL REFERENCES people(id),
+  topic TEXT NOT NULL,
+  text TEXT NOT NULL,
+  verbatim INTEGER NOT NULL,
+  speaker TEXT NOT NULL,            -- who is talking: the candidate, or the reporter
+  speaker_is_candidate INTEGER NOT NULL,
+  publisher TEXT NOT NULL,
+  source_id INTEGER NOT NULL REFERENCES sources(id),
+  published_on TEXT,
+  kind TEXT NOT NULL,
+  status TEXT NOT NULL CHECK (status IN ('published','held')),
+  hold_reason TEXT,
+  CHECK (status = 'published' OR hold_reason IS NOT NULL)
+);
+
+CREATE TABLE IF NOT EXISTS measure_details (
+  measure_id INTEGER PRIMARY KEY REFERENCES measures(id),
+  plain_summary TEXT,
+  yes_means TEXT,
+  no_means TEXT,
+  fiscal_text TEXT,
+  fiscal_source_id INTEGER REFERENCES sources(id),
+  council_vote_text TEXT,
+  council_vote_source_id INTEGER REFERENCES sources(id),
+  language_source_id INTEGER REFERENCES sources(id),
+  unknowns TEXT
+);
+
+-- An endorsement is an edge: exactly one endorser (org or person), exactly one
+-- target (a candidacy, a city measure, or a labelled non-city ballot item),
+-- and always a source. provenance says whose voice the source is.
+CREATE TABLE IF NOT EXISTS endorsements (
+  id TEXT PRIMARY KEY,              -- E<n> = index in research file; M<n> = from measures file
+  endorser_org_id INTEGER REFERENCES organizations(id),
+  endorser_person_id INTEGER REFERENCES people(id),
+  candidacy_id INTEGER REFERENCES candidacies(id),
+  measure_id INTEGER REFERENCES measures(id),
+  target_label TEXT,                -- county/regional item not in the measures table
+  position TEXT NOT NULL CHECK (position IN ('endorse','oppose')),
+  rank INTEGER,                     -- ranked-choice order when the source gives one
+  provenance TEXT NOT NULL CHECK (provenance IN ('endorser_statement','campaign_claim','filing','news_report')),
+  claimed_by TEXT,                  -- whose page makes the claim (campaign_claim / news_report)
+  source_id INTEGER NOT NULL REFERENCES sources(id),
+  published_on TEXT,
+  status TEXT NOT NULL CHECK (status IN ('published','held')),
+  audit_result TEXT,
+  audit_note TEXT,
+  notes TEXT,
+  CHECK ((endorser_org_id IS NULL) <> (endorser_person_id IS NULL)),
+  CHECK ((candidacy_id IS NOT NULL) + (measure_id IS NOT NULL) + (target_label IS NOT NULL) = 1),
+  CHECK (provenance NOT IN ('campaign_claim','news_report') OR claimed_by IS NOT NULL)
+);
+
+-- A journalist's summary of several candidates at once. Rendered as one
+-- attributed line; never fanned out into per-person answers.
+CREATE TABLE IF NOT EXISTS reported_lines (
+  id INTEGER PRIMARY KEY,
+  question_id INTEGER REFERENCES questions(id),
+  measure_id INTEGER REFERENCES measures(id),
+  source_id INTEGER NOT NULL REFERENCES sources(id),
+  reporter TEXT NOT NULL,
+  text TEXT NOT NULL,
+  reported_on TEXT,
+  notes TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_endorse_cand ON endorsements(candidacy_id);
+CREATE INDEX IF NOT EXISTS idx_endorse_org ON endorsements(endorser_org_id);
+CREATE INDEX IF NOT EXISTS idx_endorse_person ON endorsements(endorser_person_id);
+CREATE INDEX IF NOT EXISTS idx_endorse_measure ON endorsements(measure_id);
+CREATE INDEX IF NOT EXISTS idx_statements_person ON statements(person_id);

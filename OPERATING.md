@@ -8,7 +8,8 @@ A sourced map of **City of Boulder** mayor and council races (plus city ballot m
 
 Three zooms:
 
-- **Year** = that year’s ballot (`2026.html`, `2025.html`, …). Home *is* the current ballot, with the questions asked that cycle at the top.
+- **Home** = the 2026 voter guide: key dates, candidates with endorser summaries, city measures.
+- **Year** = that year’s ballot (`2026.html`, `2025.html`, …), with the questions asked that cycle.
 - **Person** = dossier across years (`people/<slug>.html`), questions newest-first. A yes/no is an answer to that question, not a topic score.
 - **Question × year** = people on *that* ballot who answered *that year’s* prompt (`issues/<slug>-<year>.html`). Do not copy an earlier year’s answer onto this year’s page.
 
@@ -38,6 +39,18 @@ GitHub Pages serves `docs/` from `main`. After a merge to `main`, Pages rebuilds
 3. If it is a new year, add the year to `YEARS` in `build.py` and to `how` / council `seats`. Rebuild will pick up the year page from the loop.
 
 Do not invent campaign URLs, attendance, or nos from silence. If only four people were named as endorsing a measure, store those four.
+
+## 2026 evidence graph (endorsements, organizations, statements)
+
+Loaded only from committed JSON in `data/harvest/2026/` by `ingest_2026.py`; no facts are typed into Python. Those files are produced by `tools/approve_2026.py` from the research folder, and every audit decision (held quotes, held edges, display names, dated board roles, ranked-choice order) is an explicit constant at the top of that script. To change a decision, edit the constant, re-run it, and review the JSON diff.
+
+Rules the tests enforce (`tests/test_graph_2026.py`):
+
+- Every endorsement has a source and a `provenance`: `endorser_statement` (the group's own release, or a news story reprinting it), `campaign_claim` (only source is the candidate's or ballot campaign's own site), `filing` (city committee registration), `news_report` (an outlet lists it; no endorser statement found). Campaign claims always render as “X campaign lists Y”.
+- `status='held'` rows (statements or edges) are loaded but never rendered.
+- A journalist's group summary goes in `reported_lines`, attributed to the outlet. Never fan it out into per-person yes/no answers.
+- Ranked-choice endorsements keep `rank`.
+- Endorser grouping (organizations / current elected / former elected / other individuals) uses only the title printed on the cited page. No title → “other individuals”. It is presentation, not a score.
 
 ## Adding a questionnaire
 

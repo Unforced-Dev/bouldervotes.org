@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="index.html">Boulder Votes</a>
     <div class="rail"><a class="" href="2026.html">2026</a><a class="" href="2025.html">2025</a><a class="" href="2023.html">2023</a><a class="" href="2021.html">2021</a><a class="" href="2019.html">2019</a><a class="on" href="2017.html">2017</a></div>
-    <nav class="util"><a href="find.html">Questions</a><a href="issues.html">Issues</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
+    <nav class="util"><a href="index.html">2026 guide</a><a href="index.html#measures">Measures</a><a href="orgs.html">Organizations</a><a href="civics.html">Civics 101</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="issues.html">Issues</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -211,7 +232,8 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="sources.html">Sources</a> ·
   <a href="forums.html">Forums</a> ·
-  <a href="find.html">Questions</a> ·
+  <a href="civics.html">Civics 101</a> ·
+  <a href="orgs.html">Organizations</a> ·
   <a href="finance.html">Money</a> ·
   <a href="questionnaires.html">Questionnaires</a> ·
   <a href="print/index.html">Print</a> ·

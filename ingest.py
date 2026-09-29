@@ -22,7 +22,7 @@ def _cid(cur, person: str, year: int) -> int | None:
            JOIN races r ON r.id=c.race_id
            JOIN elections e ON e.id=r.election_id
            WHERE p.full_name=? AND e.year=?""",
-        (person, year),
+        ({"David Martus": "Dave Martus"}.get(person, person), year),
     )
     row = cur.fetchone()
     return row[0] if row else None
@@ -1251,41 +1251,24 @@ def ingest_brl_2026_field(cur, *, pid: dict, add_source, org_brl: int, org_chamb
         ),
     )
     qid = cur.lastrowid
-    yes = [
-        "Aaron Brockett", "Taishya Adams", "Tina Marquis", "Tara Winer", "Ryan Schuchard",
-        "Sam Fuqua", "Jamillah Richmond",
-    ]
-    no = [
-        "Aquiles La Grave", "Fred Smith", "Lisa Ann Jacobs", "Benita Duran",
-        "Ryan Jamieson", "Scott Rendleman", "Rachel Rose Isaacson", "Jill Grano", "Lynn Segal",
-    ]
-    verbatim_yes = (
-        "Reported by Boulder Reporting Lab, Aug 30 2026: all five incumbent candidates support the measure, "
-        "citing more than $400 million in deferred maintenance. Sam Fuqua and Jamillah Richmond also support it."
-    )
-    verbatim_no = (
-        "Reported by Boulder Reporting Lab, Aug 30 2026: many challengers oppose the measure, arguing voters have not "
-        "received enough information about how the money would be spent."
-    )
-    for person in yes:
+    # Earlier builds fanned BRL's group summary out into one yes/no per
+    # candidate. A journalist's grouping is not each person's answer, and
+    # "many challengers oppose" names no one. Keep it as BRL's own two lines,
+    # attributed to BRL, and do not assign a stance to anyone from them.
+    cur.execute("SELECT id FROM measures WHERE slug='2026-rec-safety-bond'")
+    row = cur.fetchone()
+    bond_mid = row[0] if row else None
+    for text in (
+        "All five incumbent candidates support the measure, citing more than $400 million in deferred "
+        "maintenance; Sam Fuqua and Jamillah Richmond also support it.",
+        "Many challengers oppose the measure, arguing voters have not received enough information about "
+        "how the money would be spent.",
+    ):
         cur.execute(
-            """INSERT INTO answers
-               (candidacy_id, person_id, question_id, source_id, event_id, kind,
-                stance, verbatim, answered_on, notes)
-               VALUES (?,?,?,?,?,?,?,?,?,?)""",
-            (_cid(cur, person, 2026), pid[person], qid, src, None, "interview",
-             "yes", verbatim_yes, "2026-08-30",
-             "Journalist grouping of stated positions, not a written questionnaire."),
-        )
-    for person in no:
-        cur.execute(
-            """INSERT INTO answers
-               (candidacy_id, person_id, question_id, source_id, event_id, kind,
-                stance, verbatim, answered_on, notes)
-               VALUES (?,?,?,?,?,?,?,?,?,?)""",
-            (_cid(cur, person, 2026), pid[person], qid, src, None, "interview",
-             "no", verbatim_no, "2026-08-30",
-             "Journalist grouping of stated positions, not a written questionnaire."),
+            """INSERT INTO reported_lines (question_id, measure_id, source_id, reporter, text, reported_on, notes)
+               VALUES (?,?,?,?,?,?,?)""",
+            (qid, bond_mid, src, "Boulder Reporting Lab", text, "2026-08-30",
+             "Journalist grouping (paraphrased). Not a per-candidate answer; no stance is recorded for any individual from this line."),
         )
 
     rec = "https://www.youtube.com/watch?v=rusBhvHOeCc"

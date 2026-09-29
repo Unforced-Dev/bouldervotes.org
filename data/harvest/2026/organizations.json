@@ -1,0 +1,3444 @@
+[
+ {
+  "slug": "plan-boulder-county",
+  "name": "PLAN-Boulder County",
+  "kind": "organization",
+  "website": "https://planboulder.org/",
+  "legal_form": null,
+  "mission_quote": {
+   "text": "Protect and enhance Boulder County’s environment and unique character.",
+   "source_url": "https://planboulder.org/"
+  },
+  "founded": 1959,
+  "leadership": [
+   {
+    "name": "Allyn Feinberg",
+    "role": "Chair",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Dick Harris",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Lisa Spalding",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "John Spitzer",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "George Gerstle",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Corina Julca",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Karen Hollweg",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Crystal Gray",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Cindy Warren",
+    "role": "Board member",
+    "source_url": "https://planboulder.org/the-board",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": {
+   "text": "2026 endorsements were based on the combined candidate forum held with Open Boulder and Better Boulder and its PLAN-Boulder County questionnaire.",
+   "source_url": "https://planboulder.org/plan-boulder-county-endorsements"
+  },
+  "past_endorsements": [
+   {
+    "year": 2023,
+    "candidate_or_measure": "Bob Yates (mayor)",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Terri Brncic (council)",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Tina Marquis (council)",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Jenny Robins (council)",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Tara Winer (council)",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "County Issue 1A open space tax",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "County Issue 1B affordable housing tax",
+    "source_url": "https://planboulder.org/boulder-election-2023"
+   }
+  ],
+  "summary": "A citizen-led Boulder County organization tracing its history to the 1959 Blue Line campaign. Its 2026 endorsements were based on a joint forum and its questionnaire; its published mayoral endorsements specify ranked-choice order.",
+  "sources": [
+   "https://planboulder.org/",
+   "https://planboulder.org/the-board",
+   "https://planboulder.org/plan-boulder-county-endorsements",
+   "https://planboulder.org/boulder-election-2023"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "better-boulder",
+  "name": "Better Boulder",
+  "kind": "organization",
+  "website": "https://betterboulder.com/",
+  "legal_form": null,
+  "mission_quote": {
+   "text": "The mission of Better Boulder is to create vibrant, livable, and connected communities through land use planning and policy.",
+   "source_url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/"
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Mark McIntyre",
+    "role": "Chair",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Bryan Bowen",
+    "role": "Vice Chair",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Aaron Spear",
+    "role": "Treasurer",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Eric Budd",
+    "role": "Leadership team",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jan Burton",
+    "role": "Leadership team",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Philip Ogren",
+    "role": "Leadership team",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Martha Roskowski",
+    "role": "Leadership team",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "John Tayer",
+    "role": "Board member",
+    "source_url": "https://betterboulder.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Receives $15 membership fees and grants from non-profit organizations supporting its community-sustainability goals; board members serve unpaid. Specific grantmakers are not named on the cited page.",
+   "source_url": "https://betterboulder.com/about-us/"
+  },
+  "endorsement_process": {
+   "text": "The board reviewed 2026 mayoral and council questionnaires and participation in a collaborative candidate forum before endorsing.",
+   "source_url": "https://betterboulder.com/better-boulder-2026-endorsements/"
+  },
+  "past_endorsements": [
+   {
+    "year": 2019,
+    "candidate_or_measure": "Aaron Brockett",
+    "source_url": "https://betterboulder.com/candidate-endorsements/"
+   },
+   {
+    "year": 2019,
+    "candidate_or_measure": "Benita Duran",
+    "source_url": "https://betterboulder.com/candidate-endorsements/"
+   },
+   {
+    "year": 2019,
+    "candidate_or_measure": "Rachel Friend",
+    "source_url": "https://betterboulder.com/candidate-endorsements/"
+   },
+   {
+    "year": 2019,
+    "candidate_or_measure": "Junie Joseph",
+    "source_url": "https://betterboulder.com/candidate-endorsements/"
+   },
+   {
+    "year": 2019,
+    "candidate_or_measure": "Mark McIntyre",
+    "source_url": "https://betterboulder.com/candidate-endorsements/"
+   },
+   {
+    "year": 2019,
+    "candidate_or_measure": "Bob Yates",
+    "source_url": "https://betterboulder.com/candidate-endorsements/"
+   },
+   {
+    "year": 2021,
+    "candidate_or_measure": "Matt Benjamin",
+    "source_url": "https://betterboulder.com/candidate-endorsements-2021/"
+   },
+   {
+    "year": 2021,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://betterboulder.com/candidate-endorsements-2021/"
+   },
+   {
+    "year": 2021,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://betterboulder.com/candidate-endorsements-2021/"
+   },
+   {
+    "year": 2021,
+    "candidate_or_measure": "Dan Williams",
+    "source_url": "https://betterboulder.com/candidate-endorsements-2021/"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Aaron Brockett (mayor)",
+    "source_url": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Tara Winer",
+    "source_url": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Ryan Schuchard",
+    "source_url": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Taishya Adams",
+    "source_url": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/"
+   },
+   {
+    "year": 2023,
+    "candidate_or_measure": "Waylon Lewis",
+    "source_url": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Matt Benjamin",
+    "source_url": "https://betterboulder.com/better-boulder-endorsements-2025/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://betterboulder.com/better-boulder-endorsements-2025/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://betterboulder.com/better-boulder-endorsements-2025/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Mark Wallach",
+    "source_url": "https://betterboulder.com/better-boulder-endorsements-2025/"
+   }
+  ],
+  "summary": "Better Boulder advocates on land use, housing, transportation and related local policies. Its volunteer board published a seven-person council slate and mayoral endorsement after questionnaires and a joint forum.",
+  "sources": [
+   "https://betterboulder.com/about-us/",
+   "https://betterboulder.com/board-of-directors/",
+   "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
+   "https://betterboulder.com/candidate-endorsements/",
+   "https://betterboulder.com/candidate-endorsements-2021/",
+   "https://betterboulder.com/2023-better-boulder-candidate-endorsements/",
+   "https://betterboulder.com/better-boulder-endorsements-2025/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "open-boulder",
+  "name": "Open Boulder",
+  "kind": "organization",
+  "website": "https://openboulder.org/",
+  "legal_form": "501(c)(4); separate Open Boulder Foundation is 501(c)(3)",
+  "mission_quote": {
+   "text": "Open Boulder advocates for pragmatic policies that are focused on local issues and improve the lives of Boulder residents.",
+   "source_url": "https://openboulder.org/"
+  },
+  "founded": 2014,
+  "leadership": [
+   {
+    "name": "Jan Burton",
+    "role": "Chair",
+    "source_url": "https://openboulder.org/c4-board-members/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Andrea Meneghel",
+    "role": "Secretary",
+    "source_url": "https://openboulder.org/c4-board-members/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Leslie Durgin",
+    "role": "Board member",
+    "source_url": "https://openboulder.org/c4-board-members/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Sam Weaver",
+    "role": "Board member",
+    "source_url": "https://openboulder.org/c4-board-members/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Solicits donations to its 501(c)(4) and separate 501(c)(3) foundation; its 2026 UCC disclosed $200 from Jan Burton and Terri Brncic as of Sept. 22. Its separately reported IEO listed $2,000 in advertising but no contributors in that report.",
+   "source_url": "https://openboulder.org/join/"
+  },
+  "endorsement_process": {
+   "text": "The board evaluated candidates with questionnaires, a joint forum, and personal interviews.",
+   "source_url": "https://openboulder.org/vote-news-opinions/"
+  },
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Jenny Robins",
+    "source_url": "https://openboulder.org/historic-voting-information/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Rob Kaplan",
+    "source_url": "https://openboulder.org/historic-voting-information/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Matt Benjamin",
+    "source_url": "https://openboulder.org/historic-voting-information/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Mark Wallach",
+    "source_url": "https://openboulder.org/historic-voting-information/"
+   }
+  ],
+  "summary": "Open Boulder describes itself as a nonpartisan local-policy organization. It has a 501(c)(4) and a separate education-focused 501(c)(3) foundation; its 2026 council slate has five names and a separately registered UCC.",
+  "sources": [
+   "https://openboulder.org/",
+   "https://openboulder.org/c4-board-members/",
+   "https://openboulder.org/vote-news-opinions/",
+   "https://openboulder.org/historic-voting-information/",
+   "https://openboulder.org/join/",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-progressives",
+  "name": "Boulder Progressives",
+  "kind": "organization",
+  "website": "https://www.boulderprogressives.org/",
+  "legal_form": null,
+  "mission_quote": {
+   "text": "Boulder Progressives is committed to creating a community that is welcoming, inclusive, accessible, and safe for all.",
+   "source_url": "https://www.boulderprogressives.org/"
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Eric Budd",
+    "role": "Board executive team",
+    "source_url": "https://www.boulderprogressives.org/board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Sean Haney",
+    "role": "Board executive team",
+    "source_url": "https://www.boulderprogressives.org/board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Claudia Hanson Thiem",
+    "role": "Board executive team",
+    "source_url": "https://www.boulderprogressives.org/board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jane Hummer",
+    "role": "Board executive team",
+    "source_url": "https://www.boulderprogressives.org/board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Katie Malzbender",
+    "role": "Board executive team",
+    "source_url": "https://www.boulderprogressives.org/board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Mike Mills",
+    "role": "Board executive team",
+    "source_url": "https://www.boulderprogressives.org/board",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jamillah Richmond",
+    "role": "Board member (as described in the group's Aug. 18 and Sept. 12, 2026 releases)",
+    "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
+    "current": false,
+    "as_of": "2026-09-12",
+    "note": "Not listed on the group's board page as of Sept. 24, 2026; her present role is unconfirmed. Historical listing, not current leadership."
+   }
+  ],
+  "funding": {
+   "text": "Accepts donations; its registered 2026 UCC disclosed $2,935 in contributions from named individuals as of Sept. 24, 2026. Its separate group-wide funding was not verified.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881"
+  },
+  "endorsement_process": {
+   "text": "Its Aug. 18 release says Richmond entered after the initial endorsement process concluded; a later release says it completed her evaluation before a full endorsement. Detailed ballot/criteria are not specified in these sources.",
+   "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/"
+  },
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Matt Benjamin",
+    "source_url": "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements"
+   }
+  ],
+  "summary": "Boulder Progressives advocates on housing, transportation and social, racial, economic and environmental justice. It published a mayoral endorsement and six council endorsements for 2026 and registered a UCC to support them.",
+  "sources": [
+   "https://www.boulderprogressives.org/",
+   "https://www.boulderprogressives.org/board",
+   "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "https://www.boulderprogressives.org/voter-guide",
+   "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "sierra-club-indian-peaks",
+  "name": "Sierra Club Indian Peaks Group",
+  "kind": "organization",
+  "website": "https://www.sierraclub.org/colorado/indian-peaks",
+  "legal_form": "Local group of Sierra Club; Sierra Club political program (group-specific legal form not established)",
+  "mission_quote": {
+   "text": "The mission of the Sierra Club political program is to preserve the environment through nonpartisan grassroots political action.",
+   "source_url": "https://www.sierraclub.org/colorado/indian-peaks/politics-and-issues"
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Steve Welter",
+    "role": "Political Committee contact",
+    "source_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": {
+   "text": "The group says its political program aims to elect candidates who support environmental protection; a 2026 press release explains policy reasons for each endorsement. Questionnaire/interview details not established.",
+   "source_url": "https://www.sierraclub.org/colorado/indian-peaks/politics-and-issues"
+  },
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Matt Benjamin",
+    "source_url": "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements"
+   }
+  ],
+  "summary": "The Indian Peaks Group is Sierra Club’s Boulder County local group. Its 2026 release endorses one mayoral candidate and five council candidates; a favorable “nod” to an additional ranked-choice option is not treated as a formal endorsement.",
+  "sources": [
+   "https://www.sierraclub.org/colorado/indian-peaks/politics-and-issues",
+   "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-area-labor-council",
+  "name": "Boulder Area Labor Council, AFL-CIO",
+  "kind": "organization",
+  "website": "https://coaflcio.org/boulder-area-labor-council-afl-cio",
+  "legal_form": "AFL-CIO area labor council",
+  "mission_quote": {
+   "text": "The council's mission is to help working families with wage, benefit and working condition and broad working family issues.",
+   "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us"
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Alejandra Beatty",
+    "role": "President",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Dragan Mejic",
+    "role": "Secretary-Treasurer",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Eric Snodgrass",
+    "role": "Trustee",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": {
+   "text": "The 2025 endorsements were announced by its Committee on Political Education (COPE); its 2026 release says it engaged and interviewed candidates.",
+   "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
+  },
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Max Lord",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Rachel Rose Isaacson",
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
+   }
+  ],
+  "summary": "An AFL-CIO area labor council covering six Colorado counties, with roots it traces to the Louisville Labor Council around 1870. It issued ranked-choice mayoral recommendations, three council endorsements and positions on county ballot questions in September 2026.",
+  "sources": [
+   "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
+   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-chamber",
+  "name": "Boulder Chamber",
+  "kind": "organization",
+  "website": "https://www.boulderchamber.com/",
+  "legal_form": "Nonprofit business chamber; tax classification not established",
+  "mission_quote": {
+   "text": "To build a strong community by supporting local for-profit and non-profit businesses, advocating for a strong business environment, and sustaining economic vitality.",
+   "source_url": "https://www.boulderchamber.com/about-us/"
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "John Tayer",
+    "role": "President and CEO",
+    "source_url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Danica Powell",
+    "role": "Board chair",
+    "source_url": "https://www.boulderchamber.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Cheryl Liguori",
+    "role": "Board vice chair",
+    "source_url": "https://www.boulderchamber.com/board-of-directors/",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jonathan Singer",
+    "role": "Senior director of policy programs",
+    "source_url": "https://www.boulderchamber.com/policy-programs/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Offers paid business memberships, donations and sponsorship/partner tiers; member dues published from $395/year for solopreneurs on its membership page.",
+   "source_url": "https://www.boulderchamber.com/membership-levels/"
+  },
+  "endorsement_process": {
+   "text": "Community Affairs Council reviewed ballot measures and the Board of Directors approved positions; the Chamber explicitly states it does not endorse candidates for public office.",
+   "source_url": "https://www.boulderchamber.com/policy-programs/"
+  },
+  "past_endorsements": [],
+  "summary": "A nonprofit regional business chamber whose policy council and board take positions on ballot measures. Its website says it does not endorse candidates, so its 2026 graph edges are ballot positions only.",
+  "sources": [
+   "https://www.boulderchamber.com/about-us/",
+   "https://www.boulderchamber.com/policy-programs/",
+   "https://www.boulderchamber.com/board-of-directors/",
+   "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
+   "https://www.boulderchamber.com/membership-levels/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-progressives-ucc",
+  "name": "Boulder Progressives UCC",
+  "kind": "committee",
+  "website": "https://boulderprogressives.org/",
+  "legal_form": "City-registered unofficial candidate committee (2026-UCC-017)",
+  "mission_quote": {
+   "text": "To support candidates for the offices of Mayor and City Council - Aaron Brockett, Ryan Schuchard, Jill Grano, Sam Fuqua, Tina Marquis, Rachel Isaacson, and Jamillah Richmond.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318"
+  },
+  "founded": 2026,
+  "leadership": [
+   {
+    "name": "Eric Budd",
+    "role": "Treasurer",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Kristen Eller",
+    "role": "Co-chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Lisa Sweeney-Miran",
+    "role": "Co-chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "City report showed $2,935 contributions and $150.21 expenditures as of filing Sept. 24, 2026; contribution detail names individual donors including candidates Aaron Brockett, Jill Grano, Sam Fuqua and Christina Marquis.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Boulder Progressives’ separately registered committee for candidate support. Its filed purpose lists seven candidates; the city campaign-finance report discloses its individual donors and spending.",
+  "sources": [
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881",
+   "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary"
+  ],
+  "weight_group": "organization",
+  "related": [
+   {
+    "slug": "boulder-progressives",
+    "relation": "registered candidate committee of",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318"
+   }
+  ]
+ },
+ {
+  "slug": "open-boulder-2026-ucc",
+  "name": "Open Boulder 2026 UCC",
+  "kind": "committee",
+  "website": "https://openboulder.org/",
+  "legal_form": "City-registered unofficial candidate committee (2026-UCC-026)",
+  "mission_quote": {
+   "text": "The purpose of the UCC is to support the candidacy of Jill Grano, Benita Duran, Tara Winer, Tina Marquis, and Ryan Jamieson.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327"
+  },
+  "founded": 2026,
+  "leadership": [
+   {
+    "name": "Terri Brncic",
+    "role": "Treasurer",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jan Burton",
+    "role": "Chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "The Sept. 22, 2026 city filing reports two $100 contributions, from Jan Burton and Terri Brncic, and no spending.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "The 2026 unofficial candidate committee registered by Open Boulder supports five council candidates. It is distinct from the Open Boulder independent-expenditure-only filer.",
+  "sources": [
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873",
+   "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary"
+  ],
+  "weight_group": "organization",
+  "related": [
+   {
+    "slug": "open-boulder",
+    "relation": "registered candidate committee of",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327"
+   }
+  ]
+ },
+ {
+  "slug": "open-boulder-ieo",
+  "name": "Open Boulder independent-expenditure-only filer",
+  "kind": "committee",
+  "website": "https://openboulder.org/",
+  "legal_form": "City independent-expenditure-only filer (2026-IEO-025)",
+  "mission_quote": {
+   "text": "Independent Expenditure Only",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861"
+  },
+  "founded": 2026,
+  "leadership": [
+   {
+    "name": "Jan Burton",
+    "role": "Contact",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=326",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Sept. 14 report lists a $2,000 advertising expenditure to 4 Degrees Digital; it contains no contribution ledger. The city summary shows $0 contributions for this filer as of Sept. 22.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "City-registered independent-expenditure-only filer under the name Open Boulder. Its disclosed advertising report does not identify a candidate; no candidate edge is inferred from that spending entry.",
+  "sources": [
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=326",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3876",
+   "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary"
+  ],
+  "weight_group": "organization",
+  "related": [
+   {
+    "slug": "open-boulder",
+    "relation": "independent-expenditure filer registered under the name of",
+    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861"
+   }
+  ]
+ },
+ {
+  "slug": "boulder-firefighters-stronger-boulder",
+  "name": "Boulder Firefighters for a Stronger Boulder",
+  "kind": "committee",
+  "website": "https://strongerboulder.com/",
+  "legal_form": "City ballot measure committee (2026-BMC-002)",
+  "mission_quote": {
+   "text": "Vote YES on 2L",
+   "source_url": "https://strongerboulder.com/"
+  },
+  "founded": 2026,
+  "leadership": [
+   {
+    "name": "Jayne Dixon-Weber",
+    "role": "Co-chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=303",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "John Teague",
+    "role": "Co-chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=303",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jamie Baker",
+    "role": "Treasurer",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=303",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Sept. 22 report lists $29,600.81 total contributions and $23,670.26 spending. The Boulder Association of Firefighters/IAFF Local 900 supplied $28,669.81 in cash plus $684 in-kind in that statement.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "A city-registered ballot committee campaigning for Ballot Question 2L. Its disclosure lists substantial support from IAFF Local 900; it is not a council-candidate endorsement organization.",
+  "sources": [
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=303",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832",
+   "https://strongerboulder.com/",
+   "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary"
+  ],
+  "weight_group": "organization",
+  "related": [
+   {
+    "slug": "boulder-firefighters-local-900",
+    "relation": "ballot committee funded mainly by",
+    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832"
+   }
+  ]
+ },
+ {
+  "slug": "no-on-2k-demand-fiscal-responsibility",
+  "name": "No on 2K: Demand Fiscal Responsibility",
+  "kind": "committee",
+  "website": null,
+  "legal_form": "City ballot measure committee (2026-BMC-027)",
+  "mission_quote": {
+   "text": "No on 2K: Demand Fiscal Responsibility",
+   "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328"
+  },
+  "founded": 2026,
+  "leadership": [
+   {
+    "name": "Jan Burton",
+    "role": "Chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Terri Brncic",
+    "role": "Treasurer",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Sept. 22 report shows $3,436.18 contributions from Terri Brncic, KC Becker, Jan Burton, Eli Feldman, Grant Couch, Sam Weaver, and John Tayer; $201.65 expenditures.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3870"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "A city-registered committee whose filed name states its opposition to Ballot Issue 2K. Its officers and individual donors are reported in city campaign-finance records.",
+  "sources": [
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3870",
+   "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "vacancy-to-vitality",
+  "name": "Vacancy to Vitality",
+  "kind": "committee",
+  "website": "https://www.bouldervacancytax.org/",
+  "legal_form": "City ballot measure committee (2026-BMC-001)",
+  "mission_quote": {
+   "text": "Vote Yes on 2J!",
+   "source_url": "https://www.bouldervacancytax.org/"
+  },
+  "founded": 2026,
+  "leadership": [
+   {
+    "name": "Doug Hamilton",
+    "role": "Chair",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=302",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Peter Carney",
+    "role": "Treasurer",
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=302",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Sept. 22 report shows $319.06 cumulative contributions and $299.06 expenditures. The current report lists five $37.39 contributions from Doug Hamilton; earlier contributions are reflected in the previous-total line.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3875"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "A city ballot committee advocating for the residential vacancy excise tax, Ballot Issue 2J. Its campaign site states its YES position and the city filing names its officers.",
+  "sources": [
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=302",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3875",
+   "https://www.bouldervacancytax.org/",
+   "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-firefighters-local-900",
+  "name": "Boulder Association of Firefighters, IAFF Local 900",
+  "kind": "organization",
+  "website": "https://www.boulderfirefighters.org/",
+  "legal_form": "IAFF local labor union",
+  "mission_quote": {
+   "text": "The mission of the Boulder Association of Firefighters, IAFF Local 900, is grounded in our dedication to provide for and protect the men and women",
+   "source_url": "https://www.boulderfirefighters.org/about/about-us"
+  },
+  "founded": 1948,
+  "leadership": [
+   {
+    "name": "Brian Marron",
+    "role": "President",
+    "source_url": "https://www.boulderfirefighters.org/about/board-members",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Joe Vogel",
+    "role": "Vice President",
+    "source_url": "https://www.boulderfirefighters.org/about/board-members",
+    "current": true,
+    "as_of": "2026-09-24"
+   },
+   {
+    "name": "Jamie Baker",
+    "role": "Secretary/Treasurer",
+    "source_url": "https://www.boulderfirefighters.org/about/board-members",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Union supplied $28,669.81 cash and $684 in-kind to the 2L ballot committee in its Sept. 22 city filing.",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "IAFF Local 900 is the union for Boulder firefighters, formed in 1948. It funded the separately registered ballot committee advocating for 2L; the committee, rather than the union, has a direct ballot-position graph edge here.",
+  "sources": [
+   "https://www.boulderfirefighters.org/about/about-us",
+   "https://www.boulderfirefighters.org/about/board-members",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-county-dsa",
+  "name": "Boulder County Democratic Socialists of America",
+  "kind": "organization",
+  "website": null,
+  "legal_form": "Local DSA chapter (specific tax status not verified)",
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Boulder Reporting Lab lists “Boulder DSA” as a 2026 endorser of Taishya Adams, Jamillah Richmond’s campaign lists it, and the vacancy-tax campaign displays its logo among supporters of 2J. No accessible chapter-authored 2026 statement, chapter leadership list or funding disclosure was verified.",
+  "sources": [
+   "https://www.jamillahanewvoice.com/endorsements",
+   "https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/",
+   "https://www.bouldervacancytax.org/endorsements"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "run-on-climate",
+  "name": "Run on Climate",
+  "kind": "organization",
+  "website": "https://runonclimate.org/",
+  "legal_form": null,
+  "mission_quote": {
+   "text": "Fighting the Climate Crisis Starts Locally",
+   "source_url": "https://runonclimate.org/"
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": {
+   "text": "Solicits donations; no specific campaign donor list was found on the cited page.",
+   "source_url": "https://runonclimate.org/"
+  },
+  "endorsement_process": {
+   "text": "The organization invites nominations for its 2026 electoral program and says it supports local candidates running on a platform of bold climate action.",
+   "source_url": "https://runonclimate.org/"
+  },
+  "past_endorsements": [],
+  "summary": "Run on Climate provides support to local climate-policy advocates and electoral candidates. Ryan Schuchard lists it as a 2026 endorser; an independent announcement was not verified.",
+  "sources": [
+   "https://runonclimate.org/",
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "transform-rtd",
+  "name": "Transform RTD",
+  "kind": "organization",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Ryan Schuchard’s campaign lists Transform RTD among its 2026 organizational endorsers. The group’s legal structure, leaders, process and funding were not verified in an accessible primary source.",
+  "sources": [
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "reimagine-south-boulder-recreation",
+  "name": "Reimagine South Boulder Recreation Advocacy Group",
+  "kind": "organization",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "A logo for this group appears in the organizational endorsement section of Tara Winer’s campaign page. No independent group website, legal form, board or endorsement process was verified.",
+  "sources": [
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "colorado-working-families-party",
+  "name": "Colorado Working Families Party",
+  "kind": "organization",
+  "website": "https://workingfamilies.org/state/colorado/",
+  "legal_form": "State chapter of a political party",
+  "mission_quote": {
+   "text": "Our mission is to empower people, organizations, and communities to build a multiracial and feminist populist movement",
+   "source_url": "https://workingfamilies.org/state/colorado/"
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Wynn Howell",
+    "role": "Colorado state director",
+    "source_url": "https://workingfamilies.org/2025/09/colorado-working-families-party-announces-municipal-school-board-and-ballot-measure-endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "Colorado chapter solicits contributions through its official site; donor identities for a 2026 Boulder endorsement were not established.",
+   "source_url": "https://workingfamilies.org/state/colorado/"
+  },
+  "endorsement_process": {
+   "text": "Its Colorado page links to an application for its endorsement; a Boulder-specific process was not verified.",
+   "source_url": "https://workingfamilies.org/state/colorado/"
+  },
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://workingfamilies.org/2025/09/colorado-working-families-party-announces-municipal-school-board-and-ballot-measure-endorsements/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://workingfamilies.org/2025/09/colorado-working-families-party-announces-municipal-school-board-and-ballot-measure-endorsements/"
+   }
+  ],
+  "summary": "The Colorado chapter of the Working Families Party endorsed two Boulder council candidates in 2025. Its 2026 candidate listing and Colorado page reviewed here did not name a Boulder municipal candidate as of Sept. 24, 2026.",
+  "sources": [
+   "https://workingfamilies.org/state/colorado/",
+   "https://workingfamilies.org/2025/09/colorado-working-families-party-announces-municipal-school-board-and-ballot-measure-endorsements/",
+   "https://workingfamilies.org/candidates/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "new-era-colorado-action-fund",
+  "name": "New Era Colorado Action Fund",
+  "kind": "organization",
+  "website": "https://neweracoloradoaction.org/",
+  "legal_form": "Action fund (specific tax classification not established)",
+  "mission_quote": {
+   "text": "New Era Colorado Action Fund is reinventing politics for a new generation through innovative social and political action.",
+   "source_url": "https://neweracoloradoaction.org/who-we-are/"
+  },
+  "founded": 2006,
+  "leadership": [
+   {
+    "name": "Christina Soliz",
+    "role": "Executive director",
+    "source_url": "https://neweracoloradoaction.org/new-era-colorado-action-fund-endorses-state-primary-candidates",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": {
+   "text": "The site solicits donations; no Boulder-specific 2026 donor ledger was verified.",
+   "source_url": "https://neweracoloradoaction.org/donate/"
+  },
+  "endorsement_process": null,
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Rachel Rose Isaacson",
+    "source_url": "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/"
+   }
+  ],
+  "summary": "New Era Colorado Action Fund organizes young voters and has made local-candidate endorsements. Its 2025 release listed three Boulder council candidates; a 2026 Boulder slate was not located as of Sept. 24.",
+  "sources": [
+   "https://neweracoloradoaction.org/who-we-are/",
+   "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/",
+   "https://neweracoloradoaction.org/press-releases"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "daily-camera-editorial-board",
+  "name": "Daily Camera Editorial Board",
+  "kind": "newspaper",
+  "website": "https://www.dailycamera.com/",
+  "legal_form": "Newspaper editorial board (business legal form not verified)",
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [
+   {
+    "year": 2025,
+    "candidate_or_measure": "Matt Benjamin",
+    "source_url": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Lauren Folkerts",
+    "source_url": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Nicole Speer",
+    "source_url": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/"
+   },
+   {
+    "year": 2025,
+    "candidate_or_measure": "Mark Wallach",
+    "source_url": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/"
+   }
+  ],
+  "summary": "The Daily Camera editorial board endorsed four council incumbents in 2025. No board-authored 2026 Boulder municipal endorsement was verified through Sept. 24; letters from readers are not editorial-board endorsements.",
+  "sources": [
+   "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/",
+   "https://www.dailycamera.com/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-weekly",
+  "name": "Boulder Weekly",
+  "kind": "newspaper",
+  "website": "https://boulderweekly.com/",
+  "legal_form": "Newspaper (business legal form not verified)",
+  "mission_quote": {
+   "text": "BOULDER COUNTY’S INDEPENDENT VOICE",
+   "source_url": "https://boulderweekly.com/special-editions/vote-guide/"
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": {
+   "text": "Its vote guides use candidate questionnaires and publish endorsements; no detailed 2026 process was verified.",
+   "source_url": "https://boulderweekly.com/special-editions/vote-guide/"
+  },
+  "past_endorsements": [],
+  "summary": "Boulder Weekly publishes election guides and endorsements. Its vote-guide page reviewed here showed older guides, and no 2026 Boulder mayor/council slate was verified by Sept. 24.",
+  "sources": [
+   "https://boulderweekly.com/special-editions/vote-guide/",
+   "https://boulderweekly.com/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-county-democratic-party",
+  "name": "Boulder County Democratic Party",
+  "kind": "organization",
+  "website": "https://www.bocodems.org/",
+  "legal_form": "County party organization",
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "The county party publishes information about partisan county and state candidates. No 2026 City of Boulder nonpartisan mayor/council endorsement was verified on its candidate page by Sept. 24.",
+  "sources": [
+   "https://www.bocodems.org/2026-candidates/"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "boulder-police-officers-association",
+  "name": "Boulder Police Officers Association",
+  "kind": "organization",
+  "website": null,
+  "legal_form": "Police collective-bargaining association",
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "City records identify the Boulder Police Officers Association as an exclusive bargaining agent for covered police employees. No municipal 2026 candidate or ballot endorsement by the association was verified.",
+  "sources": [
+   "https://bouldercolorado.gov/city-boulder-and-boulder-police-officers-association-2026-collective-bargaining-agreement"
+  ],
+  "weight_group": "organization",
+  "related": []
+ },
+ {
+  "slug": "aaron-brockett",
+  "name": "Aaron Brockett",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Aaron Brockett",
+    "role": "Boulder mayor",
+    "source_url": "https://www.fuquaforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Aaron Brockett is identified as Boulder mayor on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder mayor",
+  "title_source_url": "https://www.fuquaforcouncil.com/endorsements",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "joe-neguse",
+  "name": "Joe Neguse",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Joe Neguse",
+    "role": "U.S. Representative for Colorado’s 2nd District",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Joe Neguse is identified as U.S. Representative for Colorado’s 2nd District on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "U.S. Representative for Colorado’s 2nd District",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "judy-amabile",
+  "name": "Judy Amabile",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Judy Amabile",
+    "role": "Colorado state senator",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Judy Amabile is identified as Colorado state senator on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.benitaduran.com/new-page-2",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.rachelrose4boulder.com/",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Colorado state senator",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "junie-joseph",
+  "name": "Junie Joseph",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Junie Joseph",
+    "role": "Colorado state representative",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Junie Joseph is identified as Colorado state representative on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jamillahanewvoice.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.rachelrose4boulder.com/",
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "title": "Colorado state representative",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "lesley-smith",
+  "name": "Lesley Smith",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Lesley Smith",
+    "role": "Colorado state representative",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Lesley Smith is identified as Colorado state representative on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Colorado state representative",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "michael-dougherty",
+  "name": "Michael Dougherty",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Michael Dougherty",
+    "role": "Boulder County district attorney",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Michael Dougherty is identified as Boulder County district attorney on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.benitaduran.com/new-page-2",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder County district attorney",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "kathy-gebhardt",
+  "name": "Kathy Gebhardt",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Kathy Gebhardt",
+    "role": "Colorado State Board of Education member",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Kathy Gebhardt is identified as Colorado State Board of Education member on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Colorado State Board of Education member",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "ashley-stolzmann",
+  "name": "Ashley Stolzmann",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Ashley Stolzmann",
+    "role": "Boulder County commissioner",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Ashley Stolzmann is identified as Boulder County commissioner on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://www.benitaduran.com/new-page-2",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder County commissioner",
+  "title_source_url": "https://www.jillforcouncil.com/endorsements",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "claire-levy",
+  "name": "Claire Levy",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Claire Levy",
+    "role": "Boulder County commissioner",
+    "source_url": "https://www.fuquaforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Claire Levy is identified as Boulder County commissioner on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder County commissioner",
+  "title_source_url": "https://www.fuquaforcouncil.com/endorsements",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "tina-marquis",
+  "name": "Tina Marquis",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Tina Marquis",
+    "role": "Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Tina Marquis is identified as Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "ryan-schuchard",
+  "name": "Ryan Schuchard",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Ryan Schuchard",
+    "role": "Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Ryan Schuchard is identified as Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "tara-winer",
+  "name": "Tara Winer",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Tara Winer",
+    "role": "Boulder mayor pro tem/councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Tara Winer is identified as Boulder mayor pro tem/councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.benitaduran.com/new-page-2",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder mayor pro tem/councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "jill-grano",
+  "name": "Jill Grano",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Jill Grano",
+    "role": "former Boulder city councilmember; 2026 council candidate",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Jill Grano is identified as former Boulder city councilmember; 2026 council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jamillahanewvoice.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "former Boulder city councilmember; 2026 council candidate",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "matt-benjamin",
+  "name": "Matt Benjamin",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Matt Benjamin",
+    "role": "Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Matt Benjamin is identified as Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "rob-kaplan",
+  "name": "Rob Kaplan",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Rob Kaplan",
+    "role": "Boulder city councilmember",
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Rob Kaplan is identified as Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Boulder city councilmember",
+  "title_source_url": "https://rjforboulder.com/endorsements.html",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "nicole-speer",
+  "name": "Nicole Speer",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Nicole Speer",
+    "role": "Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Nicole Speer is identified as Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "title": "Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "rachel-friend",
+  "name": "Rachel Friend",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Rachel Friend",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Rachel Friend is identified as former Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "steve-fenberg",
+  "name": "Steve Fenberg",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Steve Fenberg",
+    "role": "former Colorado Senate president",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Steve Fenberg is identified as former Colorado Senate president on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "former Colorado Senate president",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "kc-becker",
+  "name": "KC Becker",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "KC Becker",
+    "role": "former Colorado House speaker",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "KC Becker is identified as former Colorado House speaker on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "former Colorado House speaker",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "will-toor",
+  "name": "Will Toor",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Will Toor",
+    "role": "former Boulder mayor and Boulder County commissioner",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Will Toor is identified as former Boulder mayor and Boulder County commissioner on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "title": "former Boulder mayor and Boulder County commissioner",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "jan-burton",
+  "name": "Jan Burton",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Jan Burton",
+    "role": "former Boulder city councilmember; Open Boulder chair",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Jan Burton is identified as former Boulder city councilmember; Open Boulder chair on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "former Boulder city councilmember; Open Boulder chair",
+  "title_source_url": "https://www.jillforcouncil.com/endorsements",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "sam-weaver",
+  "name": "Sam Weaver",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Sam Weaver",
+    "role": "former Boulder mayor",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Sam Weaver is identified as former Boulder mayor on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "former Boulder mayor",
+  "title_source_url": "https://www.jillforcouncil.com/endorsements",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "jenn-kaaoush",
+  "name": "Jenn Kaaoush",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Jenn Kaaoush",
+    "role": "Superior mayor pro tem",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Jenn Kaaoush is identified as Superior mayor pro tem on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.jamillahanewvoice.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements"
+  ],
+  "title": "Superior mayor pro tem",
+  "title_source_url": "https://www.jillforcouncil.com/endorsements",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "lisa-sweeney-miran",
+  "name": "Lisa Sweeney-Miran",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Lisa Sweeney-Miran",
+    "role": "former BVSD Board of Education vice president",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Lisa Sweeney-Miran is identified as former BVSD Board of Education vice president on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jamillahanewvoice.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "former BVSD Board of Education vice president",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "adrian-fine",
+  "name": "Adrian Fine",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Adrian Fine",
+    "role": "former Palo Alto mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Adrian Fine is identified as former Palo Alto mayor on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.fuquaforcouncil.com/endorsements",
+   "https://www.jamillahanewvoice.com/endorsements",
+   "https://www.jillforcouncil.com/endorsements"
+  ],
+  "title": "former Palo Alto mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "edie-hooton",
+  "name": "Edie Hooton",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Edie Hooton",
+    "role": "former Colorado state representative",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Edie Hooton is identified as former Colorado state representative on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "former Colorado state representative",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "saul-tapia-vega",
+  "name": "Saul Tapia Vega",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Saul Tapia Vega",
+    "role": "Lafayette mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Saul Tapia Vega is identified as Lafayette mayor on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "Lafayette mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "lynn-guissinger",
+  "name": "Lynn Guissinger",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Lynn Guissinger",
+    "role": "RTD board director",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Lynn Guissinger is identified as RTD board director on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.benitaduran.com/new-page-2",
+   "https://www.jillforcouncil.com/endorsements",
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "title": "RTD board director",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "lauren-folkerts",
+  "name": "Lauren Folkerts",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Lauren Folkerts",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Lauren Folkerts is identified as former Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://www.ryanwithboulder.com/endorsements"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://www.ryanwithboulder.com/endorsements",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "lisa-morzel",
+  "name": "Lisa Morzel",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Lisa Morzel",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Lisa Morzel is identified as former Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.jillforcouncil.com/endorsements"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://www.jillforcouncil.com/endorsements",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "sam-fuqua",
+  "name": "Sam Fuqua",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Sam Fuqua",
+    "role": "former BVSD Board of Education president; 2026 council candidate",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Sam Fuqua is identified as former BVSD Board of Education president; 2026 council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/",
+   "https://www.tinaforboulder.com/endorsements"
+  ],
+  "title": "former BVSD Board of Education president; 2026 council candidate",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "benita-duran",
+  "name": "Benita Duran",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Benita Duran",
+    "role": "Boulder Library District trustee; 2026 council candidate",
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Benita Duran is identified as Boulder Library District trustee; 2026 council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "Boulder Library District trustee; 2026 council candidate",
+  "title_source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+  "weight_group": "other_individual",
+  "related": []
+ },
+ {
+  "slug": "david-martus",
+  "name": "Dave Martus",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "David Martus",
+    "role": "2026 Boulder city council candidate",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "David Martus is identified as 2026 Boulder city council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+  "sources": [
+   "https://rjforboulder.com/endorsements.html",
+   "https://www.jillforcouncil.com/endorsements"
+  ],
+  "title": "2026 Boulder city council candidate",
+  "title_source_url": "https://www.jillforcouncil.com/endorsements",
+  "weight_group": "other_individual",
+  "related": []
+ },
+ {
+  "slug": "kyle-brown",
+  "name": "Kyle Brown",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Kyle Brown",
+    "role": "Colorado state representative",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Kyle Brown is listed as Colorado state representative on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Colorado state representative",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "janice-marchman",
+  "name": "Janice Marchman",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Janice Marchman",
+    "role": "Colorado state senator",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Janice Marchman is listed as Colorado state senator on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Colorado state senator",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "karen-mccormick",
+  "name": "Karen McCormick",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Karen McCormick",
+    "role": "Colorado state representative",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Karen McCormick is listed as Colorado state representative on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Colorado state representative",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "kathy-plomer",
+  "name": "Kathy Plomer",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Kathy Plomer",
+    "role": "Colorado State Board of Education member",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Kathy Plomer is listed as Colorado State Board of Education member on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Colorado State Board of Education member",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "manny-rutinel",
+  "name": "Manny Rutinel",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Manny Rutinel",
+    "role": "Democratic congressional nominee",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Manny Rutinel is listed as Democratic congressional nominee on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Democratic congressional nominee",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "other_individual",
+  "related": []
+ },
+ {
+  "slug": "brianna-titone",
+  "name": "Brianna Titone",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Brianna Titone",
+    "role": "Colorado state representative",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Brianna Titone is listed as Colorado state representative on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Colorado state representative",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "mike-foote",
+  "name": "Mike Foote",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Mike Foote",
+    "role": "former Colorado state senator",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Mike Foote is listed as former Colorado state senator on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Colorado state senator",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "rollie-heath",
+  "name": "Rollie Heath",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Rollie Heath",
+    "role": "former Colorado state senator",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Rollie Heath is listed as former Colorado state senator on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Colorado state senator",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "elise-jones",
+  "name": "Elise Jones",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Elise Jones",
+    "role": "former Boulder County commissioner",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Elise Jones is listed as former Boulder County commissioner on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder County commissioner",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "leslie-durgin",
+  "name": "Leslie Durgin",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Leslie Durgin",
+    "role": "former Boulder mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Leslie Durgin is listed as former Boulder mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "angelique-espinoza",
+  "name": "Angelique Espinoza",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Angelique Espinoza",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Angelique Espinoza is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "zan-jones",
+  "name": "Zan Jones",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Zan Jones",
+    "role": "former Boulder mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Zan Jones is listed as former Boulder mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "mirabai-nagle",
+  "name": "Mirabai Nagle",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Mirabai Nagle",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Mirabai Nagle is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "tim-plass",
+  "name": "Tim Plass",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Tim Plass",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Tim Plass is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "andy-schultheiss",
+  "name": "Andy Schultheiss",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Andy Schultheiss",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Andy Schultheiss is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "andrew-shoemaker",
+  "name": "Andrew Shoemaker",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Andrew Shoemaker",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Andrew Shoemaker is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "adam-swetlik",
+  "name": "Adam Swetlik",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Adam Swetlik",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Adam Swetlik is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "mark-wallach",
+  "name": "Mark Wallach",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Mark Wallach",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Mark Wallach is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "bob-yates",
+  "name": "Bob Yates",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Bob Yates",
+    "role": "former Boulder city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Bob Yates is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Boulder city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "emily-baer",
+  "name": "Emily Baer",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Emily Baer",
+    "role": "Erie city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Emily Baer is listed as Erie city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Erie city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "michael-box",
+  "name": "Michael Box",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Michael Box",
+    "role": "Jamestown mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Michael Box is listed as Jamestown mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Jamestown mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "susie-hidalgo-fahring",
+  "name": "Susie Hidalgo-Fahring",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Susie Hidalgo-Fahring",
+    "role": "Longmont mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Susie Hidalgo-Fahring is listed as Longmont mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Longmont mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "kris-larsen",
+  "name": "Kris Larsen",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Kris Larsen",
+    "role": "Nederland city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Kris Larsen is listed as Nederland city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Nederland city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "chris-leh",
+  "name": "Chris Leh",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Chris Leh",
+    "role": "Louisville mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Chris Leh is listed as Louisville mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Louisville mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "stephanie-miller",
+  "name": "Stephanie Miller",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Stephanie Miller",
+    "role": "Superior city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Stephanie Miller is listed as Superior city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "Superior city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "chris-nicholson",
+  "name": "Chris Nicholson",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Chris Nicholson",
+    "role": "RTD board member",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Chris Nicholson is listed as RTD board member on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "RTD board member",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "karen-bigelow",
+  "name": "Karen Bigelow",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Karen Bigelow",
+    "role": "former Thornton city councilmember",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Karen Bigelow is listed as former Thornton city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Thornton city councilmember",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "clint-folsom",
+  "name": "Clint Folsom",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Clint Folsom",
+    "role": "former Superior mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Clint Folsom is listed as former Superior mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Superior mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "billy-giblin",
+  "name": "Billy Giblin",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Billy Giblin",
+    "role": "former Nederland mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Billy Giblin is listed as former Nederland mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Nederland mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "hollie-rogin",
+  "name": "Hollie Rogin",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Hollie Rogin",
+    "role": "former Lyons mayor",
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Hollie Rogin is listed as former Lyons mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://brockett4mayor.org/endorsements/"
+  ],
+  "title": "former Lyons mayor",
+  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "weight_group": "former_elected",
+  "related": []
+ }
+]

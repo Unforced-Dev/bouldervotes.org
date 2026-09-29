@@ -1,0 +1,308 @@
+[
+ {
+  "name": "Taishya Adams",
+  "research_name": "Taishya Adams",
+  "race": "mayor",
+  "campaign_url": "https://www.adamsforboulder.com/",
+  "bio": {
+   "summary": "Adams is a sitting Boulder councilmember seeking the mayor’s office. She emphasizes climate resilience, affordability and a stronger policy role for council.",
+   "occupation": "Nonprofit founder",
+   "years_in_boulder": "moved to Boulder in summer 2013",
+   "prior_office": "Boulder city councilmember, elected 2023",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/taishya-adams-2/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Fred Smith",
+  "research_name": "Fred Smith",
+  "race": "mayor",
+  "campaign_url": "https://gratefulfredinstead.com/",
+  "bio": {
+   "summary": "Smith has run for Boulder council four times and is now a mayoral candidate. Known as “The Grateful Fred,” he proposes a local income tax on high earners, which would require a change in state law.",
+   "occupation": "Laborer",
+   "years_in_boulder": "moved to Boulder in the 1980s",
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/fred-smith/"
+   ]
+  },
+  "notes": "Source availability is narrower than for questionnaire respondents; silence is not a policy position. The city elections page lists “Fred Smith,” while the official campaign-finance list calls the ballot name “Grateful Fred Instead” and records legal name Michael Smith: https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=candidateList ."
+ },
+ {
+  "name": "Aaron Brockett",
+  "research_name": "Aaron Brockett",
+  "race": "mayor",
+  "campaign_url": "https://brockett4mayor.org/",
+  "bio": {
+   "summary": "Brockett is seeking another term as Boulder mayor, a role he has held since 2021. His campaign points to housing, homelessness, climate resilience and city finances.",
+   "occupation": "Mayor",
+   "years_in_boulder": "moved to Boulder in 2003",
+   "prior_office": "Boulder mayor since 2021; city councilmember since 2015; previously Boulder Planning Board",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/aaron-brockett-2/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Jameson Goldstein",
+  "research_name": "Jameson Goldstein",
+  "race": "mayor",
+  "campaign_url": "https://www.jamoformayor.org/",
+  "bio": {
+   "summary": "Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU Boulder student. His proposals include changes to housing taxation and ending the city’s Flock Safety camera contract.",
+   "occupation": "Student",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/jamo-goldstein/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Lisa Ann Jacobs",
+  "research_name": "Lisa Ann Jacobs",
+  "race": "mayor",
+  "campaign_url": null,
+  "bio": {
+   "summary": "Jacobs is a 2026 Boulder mayoral candidate. Yellow Scene reported that she emphasized fiscal sustainability, litigation and transparency at an August candidate forum.",
+   "occupation": null,
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates",
+    "https://yellowscene.com/2026/09/05/17-candidates-take-the-stage-at-boulder-chambers-first-2026-election-forum/"
+   ]
+  },
+  "notes": "No BRL individual profile, Better Boulder answer, DBP PDF, or verified campaign website located by September 24, 2026; do not infer positions on other issues. The city campaign-finance list marks her website “To be developed”: https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=candidateList . The city candidate-video showcase includes her introduction, but a transcript was not available here: https://vimeo.com/showcase/12421306 ."
+ },
+ {
+  "name": "Aquiles La Grave",
+  "research_name": "Aquiles La Grave",
+  "race": "mayor",
+  "campaign_url": "https://boulder.vote/",
+  "bio": {
+   "summary": "La Grave is an entrepreneur seeking the mayor’s office for the first time. He stresses government accountability, public safety and local economic activity.",
+   "occupation": "Entrepreneur",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/aquiles-la-grave/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Rachel Rose Isaacson",
+  "research_name": "Rachel Rose Isaacson",
+  "race": "council",
+  "campaign_url": "https://www.rachelrose4boulder.com/",
+  "bio": {
+   "summary": "Isaacson is again seeking a Boulder council seat after a previous campaign. Her stated priorities include housing affordability, climate resilience, city government and local businesses.",
+   "occupation": "Barista",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/rachel-rose-isaacson-2/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Tara Winer",
+  "research_name": "Tara Winer",
+  "race": "council",
+  "campaign_url": "https://www.taraforboulder.com/",
+  "bio": {
+   "summary": "Winer is a sitting Boulder councilmember and mayor pro tem seeking reelection. She cites city services, streamlined processes and the local economy among her priorities.",
+   "occupation": "Senior brand manager",
+   "years_in_boulder": null,
+   "prior_office": "Boulder city councilmember and mayor pro tem",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/tara-winer-2/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Ryan Schuchard",
+  "research_name": "Ryan Schuchard",
+  "race": "council",
+  "campaign_url": "https://www.ryanwithboulder.com/",
+  "bio": {
+   "summary": "Schuchard is a sitting Boulder councilmember seeking another term. He focuses on living costs, wildfire and climate resilience, and the effectiveness of city government.",
+   "occupation": "Climate solutions consultant",
+   "years_in_boulder": "moved to Boulder in 2019",
+   "prior_office": "Boulder city councilmember, elected 2023",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/ryan-schuchard-2/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Jill Grano",
+  "research_name": "Jill Grano",
+  "race": "council",
+  "campaign_url": "https://www.jillforcouncil.com/",
+  "bio": {
+   "summary": "Grano previously served on Boulder City Council and is running again. Her campaign focuses on middle-income housing, local economic activity and trust in city spending.",
+   "occupation": "Real estate agent",
+   "years_in_boulder": "first moved to Boulder in 2002; returned in 2007",
+   "prior_office": "Boulder city councilmember, elected 2017; resigned 2019",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/jill-grano/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Benita Duran",
+  "research_name": "Benita Duran",
+  "race": "council",
+  "campaign_url": "https://www.benitaduran.com/",
+  "bio": {
+   "summary": "Duran is a government consultant running for Boulder council. She emphasizes affordability, the local economy, wildfire preparedness and public safety.",
+   "occupation": "Government consultant",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/benita-duran/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Ryan Jamieson",
+  "research_name": "Ryan Jamieson",
+  "race": "council",
+  "campaign_url": "https://rjforboulder.com/",
+  "bio": {
+   "summary": "Jamieson is a cybersecurity consultant seeking a Boulder council seat. His campaign focuses on code reform, fiscal oversight, housing and wildfire preparedness.",
+   "occupation": "Cybersecurity consultant",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/ryan-jamieson/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Lee Gilbert",
+  "research_name": "Lee Gilbert",
+  "race": "council",
+  "campaign_url": "https://lee4boulder.com/",
+  "bio": {
+   "summary": "Gilbert is an engineering consultant running for council for the first time. He focuses his campaign on reviewing major transportation projects, especially the Baseline corridor.",
+   "occupation": "Engineering consultant",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/lee-gilbert/",
+    "https://lee4boulder.com/"
+   ]
+  },
+  "notes": "Source availability is narrower than for questionnaire respondents; silence is not a policy position."
+ },
+ {
+  "name": "Tina Marquis",
+  "research_name": "Tina Marquis",
+  "race": "council",
+  "campaign_url": "https://www.tinaforboulder.com/",
+  "bio": {
+   "summary": "Marquis is a sitting councilmember seeking a second term. Her priorities include family housing, homelessness, wildfire resilience and accountable government.",
+   "occupation": "City councilmember",
+   "years_in_boulder": null,
+   "prior_office": "Boulder city councilmember, elected 2023; previously BVSD school board",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/tina-marquis-2/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Jamillah Richmond",
+  "research_name": "Jamillah Richmond",
+  "race": "council",
+  "campaign_url": "https://www.jamillahanewvoice.com/",
+  "bio": {
+   "summary": "Richmond is a first-time council candidate and a diversity and education consultant. She advocates community-led governance, affordable housing and support for workers and small businesses.",
+   "occupation": "Diversity and education consultant",
+   "years_in_boulder": "moved to Boulder in 2019",
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/jamillah-richmond/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Sam Fuqua",
+  "research_name": "Sam Fuqua",
+  "race": "council",
+  "campaign_url": "https://www.fuquaforcouncil.com/",
+  "bio": {
+   "summary": "Fuqua previously served on the Boulder Valley school board and is now seeking a council seat. He prioritizes affordable family housing, climate resilience and government transparency.",
+   "occupation": "Radio journalist",
+   "years_in_boulder": null,
+   "prior_office": "Boulder Valley School District board member",
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/sam-fuqua/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Lynn Segal",
+  "research_name": "Lynn Segal",
+  "race": "council",
+  "campaign_url": null,
+  "bio": {
+   "summary": "Segal is a retired ultrasonographer running for Boulder council. She advocates municipal ownership of utilities and seeks to reduce the university’s influence on development.",
+   "occupation": "Retired ultrasonographer",
+   "years_in_boulder": null,
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/lynn-segal/"
+   ]
+  },
+  "notes": "Source availability is narrower than for questionnaire respondents; silence is not a policy position."
+ },
+ {
+  "name": "Dave Martus",
+  "research_name": "David Martus",
+  "race": "council",
+  "campaign_url": "https://daveforboulder.com/",
+  "bio": {
+   "summary": "Martus is a first-time council candidate and a senior adviser with a background in institutional finance. He emphasizes budget oversight, government trust and changes to land-use regulation.",
+   "occupation": "Senior advisor",
+   "years_in_boulder": "moved to Boulder in 1985",
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/david-martus/"
+   ]
+  },
+  "notes": ""
+ },
+ {
+  "name": "Scott Rendleman",
+  "research_name": "Scott Rendleman",
+  "race": "council",
+  "campaign_url": null,
+  "bio": {
+   "summary": "Rendleman is an attorney running for council for the first time. His stated priorities include wildfire preparedness, housing affordability and trust in city government.",
+   "occupation": "Attorney",
+   "years_in_boulder": "moved to Boulder in 2011",
+   "prior_office": null,
+   "sources": [
+    "https://boulderreportinglab.org/govpack_profiles/scott-rendleman/"
+   ]
+  },
+  "notes": ""
+ }
+]

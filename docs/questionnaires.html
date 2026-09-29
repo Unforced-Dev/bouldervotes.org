@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="index.html">Boulder Votes</a>
     <div class="rail"><a class="" href="2026.html">2026</a><a class="" href="2025.html">2025</a><a class="" href="2023.html">2023</a><a class="" href="2021.html">2021</a><a class="" href="2019.html">2019</a><a class="" href="2017.html">2017</a></div>
-    <nav class="util"><a href="find.html">Questions</a><a href="issues.html">Issues</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
+    <nav class="util"><a href="index.html">2026 guide</a><a href="index.html#measures">Measures</a><a href="orgs.html">Organizations</a><a href="civics.html">Civics 101</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="issues.html">Issues</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -137,6 +158,24 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <p class='lede'>Written candidate Q&amp;A we have located. Full verbatim is ingested only when we copied it into the database (BRL, Boulder Beat). Everything else is linked, not scored.</p>
 <p>The Chamber does send questions every cycle; the 2025 extended-response PDF is the one we have as a file. PLAN used a questionnaire for 2025 endorsements and did not publish the dump on the endorsement page. Open Boulder published 2025 PDFs for eight of eleven candidates. Better Boulder co-hosted the 2025 VOTES! forum with PLAN and Open Boulder (first year of that collaboration).</p>
 <table><tr><th>Year</th><th>Source</th></tr>
+<tr><td>2026</td><td><a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf'>2026 Mayoral and City Council Candidate Questions — Aaron Brockett</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aquiles.pdf'>2026 Mayoral and City Council Candidate Questions — Aquiles La Grave</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-benita.pdf'>2026 Mayoral and City Council Candidate Questions — Benita Duran</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jamillah.pdf'>2026 Mayoral and City Council Candidate Questions — Jamillah Richmond</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jill.pdf'>2026 Mayoral and City Council Candidate Questions — Jill Grano</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-lynn.pdf'>2026 Mayoral and City Council Candidate Questions — Lynn Segal</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-rachel.pdf'>2026 Mayoral and City Council Candidate Questions — Rachel Rose Isaacson</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-j.pdf'>2026 Mayoral and City Council Candidate Questions — Ryan Jamieson</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf'>2026 Mayoral and City Council Candidate Questions — Ryan Schuchard</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf'>2026 Mayoral and City Council Candidate Questions — Sam Fuqua</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-scott.pdf'>2026 Mayoral and City Council Candidate Questions — Scott Rendleman</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-taishya.pdf'>2026 Mayoral and City Council Candidate Questions — Taishya Adams</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf'>2026 Mayoral and City Council Candidate Questions — Tara Winer</a></td></tr>
+<tr><td>2026</td><td><a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf'>2026 Mayoral and City Council Candidate Questions — Tina Marquis</a></td></tr>
+<tr><td>2026</td><td><a href='https://daveforboulder.com/assets/docs/Boulder%20Chamber%20of%20Commerce%20Questionnaire.pdf'>2026 candidate questionnaire — David Martus</a></td></tr>
+<tr><td>2026</td><td><a href='https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/'>Where do Boulder’s 2026 Mayorial Candidates Stand?</a></td></tr>
 <tr><td>2025</td><td>Boulder Chamber · <a href='https://www.boulderchamber.com/assets/pdf/2025-BCC_BallotScorecard-ExtendedResponses-FNL'>2025 Boulder Chamber ballot scorecard — extended candidate responses</a><div class='meta'>Chamber sent written questions to 2025 council candidates and published extended responses as a PDF. Not ingested as scored stances here — the PDF is the source.</div></td></tr>
 <tr><td>2025</td><td>Boulder Reporting Lab · <a href='https://boulderreportinglab.org/2025/10/05/2025-boulder-city-council-election-how-candidates-say-their-life-experiences-would-shape-their-work-on-council/'>2025 Boulder City Council election: How candidates say their life experiences would shape their work on council</a><div class='meta'>BRL candidate questionnaire. Verbatim answers harvested 2026-08-27.</div></td></tr>
 <tr><td>2025</td><td>Boulder Reporting Lab · <a href='https://boulderreportinglab.org/2025/10/12/2025-boulder-city-council-election-where-candidates-stand-on-priorities-for-the-city-budget/'>2025 Boulder City Council election: Where candidates stand on city budget priorities</a><div class='meta'>BRL candidate questionnaire. Verbatim answers harvested 2026-08-27.</div></td></tr>
@@ -169,7 +208,8 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="sources.html">Sources</a> ·
   <a href="forums.html">Forums</a> ·
-  <a href="find.html">Questions</a> ·
+  <a href="civics.html">Civics 101</a> ·
+  <a href="orgs.html">Organizations</a> ·
   <a href="finance.html">Money</a> ·
   <a href="questionnaires.html">Questionnaires</a> ·
   <a href="print/index.html">Print</a> ·

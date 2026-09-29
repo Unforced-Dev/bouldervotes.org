@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>November 2026 — Boulder Votes</title>
+<title>2026 ballot details — Boulder Votes</title>
 <style>
 :root {
   --paper: #f4efe6;
@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="index.html">Boulder Votes</a>
     <div class="rail"><a class="on" href="2026.html">2026</a><a class="" href="2025.html">2025</a><a class="" href="2023.html">2023</a><a class="" href="2021.html">2021</a><a class="" href="2019.html">2019</a><a class="" href="2017.html">2017</a></div>
-    <nav class="util"><a href="find.html">Questions</a><a href="issues.html">Issues</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
+    <nav class="util"><a href="index.html">2026 guide</a><a href="index.html#measures">Measures</a><a href="orgs.html">Organizations</a><a href="civics.html">Civics 101</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="issues.html">Issues</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -168,7 +189,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <h2 id='council'>City council · 5 seats · 13 candidates</h2>
 <p class='note'>Five seats because Wallach resigned July 23 (before Aug 1) and Adams is running for mayor. Not on this ballot (terms through 2028): Benjamin, Speer, Kaplan. <a href='finance.html'>Money raised</a> · <a href='print/index.html'>Print a sheet</a>.</p>
 <div class="card">
-          <h3><a href="people/benita-duran.html">Benita Duran</a> </h3>
+          <h3><a href="people/benita-duran.html">Benita Duran</a>  · <a href='https://www.benitaduran.com/'>campaign</a></h3>
           <div class='meta'>Also: 2019 council lost</div><div class='meta'>Raised $0</div>
         </div>
 <div class="card">
@@ -176,7 +197,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
           <div class='meta'>Raised $7,761 · matching $7,361</div>
         </div>
 <div class="card">
-          <h3><a href="people/lee-gilbert.html">Lee Gilbert</a> </h3>
+          <h3><a href="people/lee-gilbert.html">Lee Gilbert</a>  · <a href='https://lee4boulder.com/'>campaign</a></h3>
           <div class='meta'>Raised $0</div>
         </div>
 <div class="card">
@@ -196,7 +217,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
           <div class='meta'>Also: 2023 council elected</div><div class='meta'>Raised $8,949.13 · matching $8,949.12</div>
         </div>
 <div class="card">
-          <h3><a href="people/david-martus.html">David Martus</a> </h3>
+          <h3><a href="people/dave-martus.html">Dave Martus</a>  · <a href='https://daveforboulder.com/'>campaign</a></h3>
           <div class='meta'>Raised $0</div>
         </div>
 <div class="card">
@@ -221,13 +242,13 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
         </div>
 <h2 id='money'>Money so far</h2>
 <p class='note'>City clerk contributions &amp; expenditures, retrieved 2026-09-01. Not TRACER. $0 means they filed that, not that we guessed. <a href='finance.html'>Donors, spending, and source</a>.</p>
-<table><tr><th>Candidate</th><th class='num'>Raised</th><th class='num'>Spent</th><th class='num'>Matching</th></tr><tr><td><a href='people/tara-winer.html'>Tara Winer</a></td><td class='num'>$12,555</td><td class='num'>$1,228.03</td><td class='num'>$12,366</td></tr><tr><td><a href='people/aaron-brockett.html'>Aaron Brockett</a></td><td class='num'>$8,975</td><td class='num'>$2,138.01</td><td class='num'>$8,975</td></tr><tr><td><a href='people/tina-marquis.html'>Tina Marquis</a></td><td class='num'>$8,949.13</td><td class='num'>$439.82</td><td class='num'>$8,949.12</td></tr><tr><td><a href='people/ryan-schuchard.html'>Ryan Schuchard</a></td><td class='num'>$8,418.16</td><td class='num'>$5,148.97</td><td class='num'>$8,376</td></tr><tr><td><a href='people/sam-fuqua.html'>Sam Fuqua</a></td><td class='num'>$7,761</td><td class='num'>$170.06</td><td class='num'>$7,361</td></tr><tr><td><a href='people/jill-grano.html'>Jill Grano</a></td><td class='num'>$7,651.59</td><td class='num'>$538.55</td><td class='num'>$7,651.59</td></tr><tr><td><a href='people/aquiles-la-grave.html'>Aquiles La Grave</a></td><td class='num'>$5,865</td><td class='num'>$1,664.74</td><td class='num'>$0</td></tr><tr><td><a href='people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></td><td class='num'>$5,397.17</td><td class='num'>$392.68</td><td class='num'>$5,201</td></tr><tr><td><a href='people/jamillah-richmond.html'>Jamillah Richmond</a></td><td class='num'>$1,935</td><td class='num'>$174.64</td><td class='num'>$1,915</td></tr><tr><td><a href='people/ryan-jamieson.html'>Ryan Jamieson</a></td><td class='num'>$50</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/taishya-adams.html'>Taishya Adams</a></td><td class='num'>$0</td><td class='num'>$34.99</td><td class='num'>$0</td></tr><tr><td><a href='people/benita-duran.html'>Benita Duran</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/lee-gilbert.html'>Lee Gilbert</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/jameson-goldstein.html'>Jameson Goldstein</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/david-martus.html'>David Martus</a></td><td class='num'>$0</td><td class='num'>$10.46</td><td class='num'>$0</td></tr><tr><td><a href='people/scott-rendleman.html'>Scott Rendleman</a></td><td class='num'>$0</td><td class='num'>$462.27</td><td class='num'>$0</td></tr><tr><td><a href='people/lynn-segal.html'>Lynn Segal</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/fred-smith.html'>Fred Smith</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr></table>
+<table><tr><th>Candidate</th><th class='num'>Raised</th><th class='num'>Spent</th><th class='num'>Matching</th></tr><tr><td><a href='people/tara-winer.html'>Tara Winer</a></td><td class='num'>$12,555</td><td class='num'>$1,228.03</td><td class='num'>$12,366</td></tr><tr><td><a href='people/aaron-brockett.html'>Aaron Brockett</a></td><td class='num'>$8,975</td><td class='num'>$2,138.01</td><td class='num'>$8,975</td></tr><tr><td><a href='people/tina-marquis.html'>Tina Marquis</a></td><td class='num'>$8,949.13</td><td class='num'>$439.82</td><td class='num'>$8,949.12</td></tr><tr><td><a href='people/ryan-schuchard.html'>Ryan Schuchard</a></td><td class='num'>$8,418.16</td><td class='num'>$5,148.97</td><td class='num'>$8,376</td></tr><tr><td><a href='people/sam-fuqua.html'>Sam Fuqua</a></td><td class='num'>$7,761</td><td class='num'>$170.06</td><td class='num'>$7,361</td></tr><tr><td><a href='people/jill-grano.html'>Jill Grano</a></td><td class='num'>$7,651.59</td><td class='num'>$538.55</td><td class='num'>$7,651.59</td></tr><tr><td><a href='people/aquiles-la-grave.html'>Aquiles La Grave</a></td><td class='num'>$5,865</td><td class='num'>$1,664.74</td><td class='num'>$0</td></tr><tr><td><a href='people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></td><td class='num'>$5,397.17</td><td class='num'>$392.68</td><td class='num'>$5,201</td></tr><tr><td><a href='people/jamillah-richmond.html'>Jamillah Richmond</a></td><td class='num'>$1,935</td><td class='num'>$174.64</td><td class='num'>$1,915</td></tr><tr><td><a href='people/ryan-jamieson.html'>Ryan Jamieson</a></td><td class='num'>$50</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/taishya-adams.html'>Taishya Adams</a></td><td class='num'>$0</td><td class='num'>$34.99</td><td class='num'>$0</td></tr><tr><td><a href='people/benita-duran.html'>Benita Duran</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/lee-gilbert.html'>Lee Gilbert</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/jameson-goldstein.html'>Jameson Goldstein</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/dave-martus.html'>Dave Martus</a></td><td class='num'>$0</td><td class='num'>$10.46</td><td class='num'>$0</td></tr><tr><td><a href='people/scott-rendleman.html'>Scott Rendleman</a></td><td class='num'>$0</td><td class='num'>$462.27</td><td class='num'>$0</td></tr><tr><td><a href='people/lynn-segal.html'>Lynn Segal</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr><tr><td><a href='people/fred-smith.html'>Fred Smith</a></td><td class='num'>$0</td><td class='num'>$0</td><td class='num'>$0</td></tr></table>
 <h2 id='measures'>City measures</h2>
-<div class='card'><h3>Building Boulder Together: Recreation and Safety Bond</h3><div class='meta'>bond · referred</div><p>Authorizes up to $400 million of general-obligation debt (maximum repayment cost $650 million) repaid by a new property tax, up to $32.5 million a year. City example: about $400 a year on a $1 million home if the full…</p></div>
-<div class='card'><h3>Charter debt-limit calculation (actual vs. assessed value)</h3><div class='meta'>charter · referred</div><p>Amends Charter §97 so the city’s debt limit is 3% of the actual value of taxable property, not the assessed value. City says this matches how most Colorado municipalities and the state calculate the cap, and would allow…</p></div>
-<div class='card'><h3>Collective bargaining for firefighters (new Charter §73)</h3><div class='meta'>charter · referred</div><p>Moves full-time firefighters’ collective-bargaining rights from contract/ordinance into the charter. Bargain over safety, wages, benefits, and terms of employment except reserved management rights. Impasse: non-binding…</p></div>
+<div class='card'><h3>2J: <a href='measures/2026-2j.html'>Vacancy excise tax</a></h3><div class='meta'>tax · on_ballot</div><p>About $4,000 a year on a residential property occupied 183 days or fewer, CPI-adjusted, never below $4,000, never above $7,000. Estimated $6 million in 2028, the first full collection year. Revenue is general city…</p></div>
+<div class='card'><h3>2K: <a href='measures/2026-2k.html'>Building Boulder Together: Recreation and Safety Bond</a></h3><div class='meta'>bond · on_ballot</div><p>Authorizes up to $400 million of general-obligation debt (maximum repayment cost $650 million) repaid by a new property tax, up to $32.5 million a year. City example: about $400 a year on a $1 million home if the full…</p></div>
+<div class='card'><h3>2L: <a href='measures/2026-2l.html'>Collective bargaining for firefighters (new Charter §73)</a></h3><div class='meta'>charter · on_ballot</div><p>Moves full-time firefighters’ collective-bargaining rights from contract/ordinance into the charter. Bargain over safety, wages, benefits, and terms of employment except reserved management rights. Impasse: non-binding…</p></div>
+<div class='card'><h3>2M: <a href='measures/2026-2m.html'>Charter debt-limit calculation (actual vs. assessed value)</a></h3><div class='meta'>charter · on_ballot</div><p>Amends Charter §97 so the city’s debt limit is 3% of the actual value of taxable property, not the assessed value. City says this matches how most Colorado municipalities and the state calculate the cap, and would allow…</p></div>
 <div class='card'><h3>Downtown Development Authority referral</h3><div class='meta'>other · not_referred</div><p>Would have asked district electors (residents, property owners, qualified business tenants inside a downtown / Civic Area / University Hill boundary — city estimated ~2,500 electors) to form a 30-year DDA with…</p></div>
-<div class='card'><h3>Vacancy excise tax</h3><div class='meta'>tax · referred</div><p>About $4,000 a year on a residential property occupied 183 days or fewer, CPI-adjusted, never below $4,000, never above $7,000. Estimated $6 million in 2028, the first full collection year. Revenue is general city…</p></div>
 <h2>Forums</h2>
 <ul>
 <li>2026-06-06 Boulder Progressives Raucous Caucus</li>
@@ -240,7 +261,8 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="sources.html">Sources</a> ·
   <a href="forums.html">Forums</a> ·
-  <a href="find.html">Questions</a> ·
+  <a href="civics.html">Civics 101</a> ·
+  <a href="orgs.html">Organizations</a> ·
   <a href="finance.html">Money</a> ·
   <a href="questionnaires.html">Questionnaires</a> ·
   <a href="print/index.html">Print</a> ·
