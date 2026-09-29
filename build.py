@@ -696,6 +696,7 @@ def main() -> None:
     hub = [
         "<h1>Issues</h1>",
         "<p class='lede'>Each year is the questions asked that cycle. A 2023 yes/no about a 2023 measure is not a 2026 position. Open a person to see what they have said across years.</p>",
+        "<h2>Browse issues</h2>",
     ]
     for slug, name, desc in all_issues():
         ys = issue_years(slug)
@@ -780,6 +781,8 @@ def main() -> None:
                 ans = answers_for_question(qu["id"], ballot_ids)
                 if len(qs_this) > 1:
                     body.append(f"<h2>{esc(qu['prompt'])}</h2>")
+                else:
+                    body.append("<h2>Candidate answers</h2>")
                 body.append(f"<p class='note'>{esc(kind_label(qu['kind']))}</p>")
                 if ans:
                     src = ans[0]
