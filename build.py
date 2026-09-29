@@ -14,8 +14,8 @@ import re
 import sqlite3
 from pathlib import Path
 
-from build_2026 import EXTRA_CSS, Graph2026
-from build_forums_2026 import FORUM_CSS, Forums2026
+from build_2026 import Graph2026
+from build_forums_2026 import Forums2026
 from ingest_2026 import civics_markdown
 
 ROOT = Path(__file__).resolve().parent
@@ -23,172 +23,9 @@ DB = ROOT / "data" / "bouldervotes.db"
 OUT = ROOT / "docs"
 YEARS = (2026, 2025, 2023, 2021, 2019, 2017)
 
-CSS = """
-/* Boulder Votes: civic, calm, print-grade. Tokens: see vault note
-   Projects/Boulder Votes/UI pass 2026-09-29. Contrast on --paper:
-   ink 17.2:1, muted 9.7:1, link 8.9:1 (all AAA). */
-:root {
-  --paper: #fbf8f2;
-  --panel: #f2ede3;
-  --ink: #161513;
-  --muted: #45403a;
-  --rule: #c8bfae;
-  --rule-strong: #6b6358;
-  --link: #14487a;
-  --link-visited: #5b3577;
-  --focus: #ffd21f;
-  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --measure: 40rem;
-  /* legacy names kept so older markup stays neutral */
-  --mark: var(--ink);
-  --won: var(--ink);
-  --chip: var(--panel);
-}
-* { box-sizing: border-box; }
-html { font-size: 125%; -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: var(--serif);
-  line-height: 1.6;
-  font-kerning: normal;
-}
-.skip { position: absolute; left: -999px; top: 0; }
-.skip:focus { left: 0.5rem; top: 0.5rem; z-index: 10; padding: 0.5rem 0.8rem; background: var(--focus); color: var(--ink); }
-header.site { background: var(--paper); border-bottom: 3px double var(--ink); }
-.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
-.header-inner { padding-top: 0.9rem; padding-bottom: 0.5rem; }
-.brand { font-size: 1.45rem; font-weight: 700; text-decoration: none; color: var(--ink); letter-spacing: 0.01em; }
-.brand:visited { color: var(--ink); }
-.tagline { margin: 0.1rem 0 0.4rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
-nav.primary ul, nav.past ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
-nav.primary ul { gap: 0 0.1rem; margin-left: -0.55rem; }
-nav.primary a {
-  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.55rem;
-  font-family: var(--sans); font-size: 0.9rem; font-weight: 600; color: var(--ink);
-  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
-}
-nav.primary a:visited { color: var(--ink); }
-nav.primary a[aria-current] { text-decoration-thickness: 3px; }
-nav.past { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.1rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 0.2rem; }
-nav.past a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.4rem; color: var(--link); }
-nav.past a[aria-current] { font-weight: 700; color: var(--ink); text-decoration-thickness: 3px; }
-main { padding-bottom: 1rem; }
-h1, h2, h3, h4 { line-height: 1.2; text-wrap: balance; }
-h1 { font-size: 2.1rem; margin: 1.4rem 0 0.6rem; letter-spacing: -0.005em; }
-h2 { font-size: 1.5rem; margin: 2.6rem 0 0.7rem; padding-top: 0.6rem; border-top: 2px solid var(--ink); }
-h3 { font-size: 1.2rem; margin: 1.5rem 0 0.4rem; }
-h4 { font-size: 1.05rem; margin: 1rem 0 0.3rem; }
-p, li, dd { max-width: var(--measure); }
-p { margin: 0.6rem 0; }
-ul, ol { padding-left: 1.3rem; }
-li { margin: 0.3rem 0; }
-.lede { font-size: 1.15rem; line-height: 1.5; margin-top: 0; }
-.intro { font-size: 1.2rem; line-height: 1.5; margin: 1.2rem 0 0.4rem; max-width: 38rem; }
-.note, .empty, .meta { color: var(--muted); font-size: 0.9rem; }
-.empty { font-style: italic; }
-a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
-a:visited { color: var(--link-visited); }
-a:hover { text-decoration-thickness: 2px; }
-a:focus-visible, summary:focus-visible {
-  outline: 3px solid var(--ink); outline-offset: 2px; background: var(--focus); color: var(--ink);
-  text-decoration: none; border-radius: 1px;
-}
-.kicker { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
-.crumb { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin: 1rem 0 0; }
-.crumb a { display: inline-block; padding: 0.35rem 0; }
-.jump { font-family: var(--sans); font-size: 0.9rem; margin: 0.6rem 0 1.2rem; display: flex; flex-wrap: wrap; gap: 0 0.3rem; }
-.jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; border: 1px solid var(--rule-strong); background: var(--paper); margin: 0 0 0.35rem; }
-/* cards: one outline, no accent rails, same for every candidate */
-.card {
-  border: 1px solid var(--rule-strong);
-  padding: 0.8rem 1rem;
-  margin: 0 0 0.8rem;
-  background: var(--paper);
-}
-.card > :first-child { margin-top: 0; }
-.card > :last-child { margin-bottom: 0; }
-.card h3 { margin: 0 0 0.3rem; font-size: 1.2rem; }
-.card .meta { margin: 0.2rem 0; }
-.chips { margin-top: 0.35rem; }
-.chip, .pill {
-  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.6rem; margin: 0 0.3rem 0.3rem 0;
-  font-family: var(--sans); font-size: 0.85rem; border: 1px solid var(--rule-strong); color: var(--ink); background: var(--paper);
-}
-.pill.on { background: var(--ink); color: var(--paper); }
-.badge { display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--rule-strong); color: var(--muted); padding: 0.05rem 0.4rem; margin: 0 0.25rem; vertical-align: 0.2em; }
-.choice {
-  display: block; border: 1px solid var(--rule-strong); padding: 0.8rem 1rem; margin: 0.5rem 0;
-  color: var(--link); background: var(--paper); font-size: 1.05rem;
-}
-.choice:hover { background: var(--panel); }
-.choice .meta { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; text-decoration: none; font-family: var(--sans); }
-/* stances: neutral. The word carries the meaning, never a colour. */
-.stance { font-family: var(--sans); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.8rem; color: var(--ink); }
-.stance.yes, .stance.no, .stance.mixed { color: var(--ink); }
-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.6rem 0 1.2rem; font-variant-numeric: tabular-nums; }
-th, td { text-align: left; padding: 0.45rem 0.5rem 0.45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-th { font-family: var(--sans); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.03em; border-bottom: 2px solid var(--ink); }
-.num { font-variant-numeric: tabular-nums; text-align: right; }
-.won { font-weight: 700; }
-.matrix td, .matrix th { text-align: center; }
-.matrix th:first-child, .matrix td:first-child { text-align: left; }
-details { margin: 0.4rem 0; }
-details > summary { cursor: pointer; min-height: 44px; padding: 0.4rem 0; }
-details.quote > summary::after { content: " Read the full answer"; font-family: var(--sans); font-size: 0.85rem; color: var(--link); text-decoration: underline; white-space: nowrap; }
-details.quote[open] > summary::after { content: " Hide"; }
-details.quote[open] > summary { color: var(--muted); }
-details.fold > summary { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; color: var(--link); text-decoration: underline; }
-blockquote.answer { margin: 0.4rem 0 0.6rem; padding: 0.1rem 0 0.1rem 1rem; border-left: 3px solid var(--ink); font-size: 1rem; max-width: var(--measure); }
-footer { margin: 3rem auto 1.5rem; padding-top: 1rem; border-top: 3px double var(--ink); color: var(--muted); font-family: var(--sans); font-size: 0.85rem; line-height: 2; }
-footer p { margin: 0.3rem 0; }
-/* candidate summary block */
-.summary { border: 2px solid var(--ink); background: var(--panel); padding: 1rem 1.1rem; margin: 0.4rem 0 1.4rem; }
-.summary h1 { margin: 0.1rem 0 0.4rem; }
-.summary p { margin: 0.4rem 0; }
-.summary .jump { margin: 0.7rem 0 0; }
-.summary .jump a { background: var(--paper); }
-/* home */
-.who-list { display: grid; gap: 0.8rem; }
-.who-list .card { margin: 0; }
-.card .more { font-family: var(--sans); font-size: 0.9rem; margin-top: 0.5rem; }
-.card .more a { display: inline-flex; align-items: center; min-height: 44px; }
-.howto li { margin: 0.5rem 0; }
-@media (max-width: 640px) {
-  .tagline, nav.past { display: none; }
-  .header-inner { padding-top: 0.6rem; padding-bottom: 0.2rem; }
-  nav.primary a { padding: 0 0.5rem; font-size: 0.88rem; }
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.35rem; }
-  .header-inner, main, footer { padding: 0 0.9rem; }
-  .card, .summary { padding: 0.75rem 0.8rem; }
-  table { font-size: 0.85rem; display: block; overflow-x: auto; }
-}
-@media print {
-  html { font-size: 11pt; }
-  body { background: #fff; line-height: 1.35; }
-  p { margin: 0.35rem 0; }
-  blockquote.answer { margin: 0.25rem 0 0.35rem; }
-  .card { padding: 0.5rem 0.7rem; margin-bottom: 0.5rem; }
-  header.site { border-bottom: 1px solid #000; }
-  .tagline, nav.primary, nav.past, .skip, .jump, .print-hint, footer { display: none; }
-  .header-inner, main { max-width: none; padding: 0; }
-  .brand { font-size: 1rem; }
-  a { color: inherit; text-decoration: none; }
-  h1 { font-size: 1.6rem; margin-top: 0.4rem; }
-  h2 { font-size: 1.2rem; margin: 1rem 0 0.4rem; break-after: avoid; }
-  h3 { font-size: 1.05rem; break-after: avoid; }
-  .card, .summary { border-color: #777; background: #fff; break-inside: avoid; }
-  /* Closed <details> render nothing in print unless forced open. */
-  details > summary { display: none; }
-  details::details-content { content-visibility: visible; display: block; }
-  details > *:not(summary) { display: block; }
-  table { display: table; }
-  @page { size: letter; margin: 0.5in 0.55in; }
-}
-"""
+# All styling lives in static/css/site.css (copied to docs/css/). Tokens and
+# rationale: Parachute vault "Projects/Boulder Votes/UI overhaul 2026-09-29".
+STATIC = ROOT / "static"
 
 
 def esc(s: object) -> str:
@@ -302,72 +139,150 @@ def render_answer(verbatim: str | None, stance: str | None, notes: str | None = 
     return quote_block(text, fold=fold)
 
 
+# At most five primary items (tests/test_design.py). Everything else lives
+# under Learn, in the footer, or in the year switcher.
 PRIMARY_NAV = (
-    ("index.html", "2026 guide"),
-    ("index.html#mayor", "Candidates"),
-    ("index.html#measures", "Measures"),
-    ("civics.html", "Civics 101"),
-    ("orgs.html", "Organizations"),
-    ("finance.html", "Money"),
-    ("compare.html", "Forum answers"),
-    ("print/index.html", "Print"),
-    ("about.html", "About"),
+    ("mayor", "index.html#mayor", "Mayor", "Mayor"),
+    ("council", "index.html#council", "Council", "Council"),
+    ("measures", "index.html#measures", "Ballot measures", "Measures"),
+    ("forums", "compare.html", "Forums", "Forums"),
+    ("learn", "learn.html", "Learn", "Learn"),
 )
+ARCHIVE_YEARS = tuple(y for y in YEARS if y != 2026)
 
 TAGLINE = "An independent, nonpartisan, sourced guide to City of Boulder elections."
 
+# Inline wordmark: three Flatirons slabs over a ballot line. Accent via currentColor.
+LOGO_SVG = (
+    '<svg viewBox="0 0 40 40" role="img" aria-label="Boulder Votes logo" focusable="false">'
+    '<rect width="40" height="40" rx="9" fill="currentColor"/>'
+    '<path d="M7 29 L13.5 12 L17 20.5 L21 9 L26.5 21 L29.5 15 L34 29 Z" fill="#fff"/>'
+    '<path d="M13.5 12 L15.2 29 M21 9 L22.6 29 M29.5 15 L30.6 29" stroke="currentColor" stroke-width="1.6" opacity=".55"/>'
+    '<rect x="7" y="31" width="27" height="2.6" rx="1.3" fill="#fff"/></svg>'
+)
 
-def page(title: str, body: str, *, prefix: str = "", year: int | None = None, current: str | None = None) -> str:
+
+def page(title: str, body: str, *, prefix: str = "", year: int | None = None, current: str | None = None,
+         head_extra: str = "") -> str:
+    """Site chrome. `current` is a PRIMARY_NAV key ("mayor", "council", "measures",
+    "forums", "learn") or None (home)."""
     primary = []
-    for href, label in PRIMARY_NAV:
-        cur = ' aria-current="page"' if current == href else ""
-        primary.append(f'<li><a href="{prefix}{href}"{cur}>{label}</a></li>')
-    past = []
-    for y in YEARS:
-        cur = ' aria-current="page"' if y == year and y != 2026 else ""
-        label = f"{y}" if y != 2026 else "2026 ballot"
-        past.append(f'<a href="{prefix}{y}.html"{cur}>{label}</a>')
+    for key, href, label, short in PRIMARY_NAV:
+        cur = ' aria-current="page"' if current == key else ""
+        text = label if label == short else f'<span class="nav-long">{label}</span><span class="nav-short">{short}</span>'
+        primary.append(f'<li><a href="{prefix}{href}"{cur}>{text}</a></li>')
+    shown_year = year if year in ARCHIVE_YEARS else 2026
+    year_items = "".join(
+        f'<li><a href="{prefix}{"index" if y == 2026 else y}.html"'
+        f'{" aria-current=page" if y == shown_year else ""}>{y if y != 2026 else "2026 (this election)"}</a></li>'
+        for y in YEARS
+    )
+    yearbar = ""
+    if year in ARCHIVE_YEARS:
+        chips = "".join(
+            f'<a href="{prefix}{"index" if y == 2026 else y}.html"{" aria-current=page" if y == year else ""}>{y}</a>'
+            for y in YEARS
+        )
+        yearbar = (f'<nav class="yearbar" aria-label="Elections by year"><div class="wrap">'
+                   f'<span>Past election archive:</span>{chips}</div></nav>')
     home = f"{prefix}index.html"
+    past_links = "".join(f'<li><a href="{prefix}{y}.html">{y} city election</a></li>' for y in ARCHIVE_YEARS)
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} — Boulder Votes</title>
-<style>{CSS}{EXTRA_CSS}{FORUM_CSS}</style>
-</head>
+<link rel="preload" href="{prefix}fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{prefix}fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{prefix}css/site.css">
+<meta name="theme-color" content="#1d5c63">
+{head_extra}</head>
 <body>
 <a class="skip" href="#content">Skip to main content</a>
 <header class="site">
-  <div class="header-inner">
-    <a class="brand" href="{home}">Boulder Votes</a>
-    <p class="tagline">{esc(TAGLINE)}</p>
+  <div class="bar">
+    <a class="brand" href="{home}">{LOGO_SVG}<span><span class="brand-name">Boulder Votes</span><span class="brand-sub">City of Boulder · November 3, 2026</span></span></a>
     <nav class="primary" aria-label="Main"><ul>{''.join(primary)}</ul></nav>
-    <nav class="past" aria-label="Elections by year"><span>Elections:</span> {' '.join(past)}</nav>
+    <details class="years"><summary><span class="visually-hidden">Election year: </span>{shown_year}</summary><ul>{year_items}</ul></details>
   </div>
 </header>
-<main id="content">
+{yearbar}<main id="content">
 {body}
 </main>
-<footer>
-  <p>City of Boulder only. Cited, not scored, not an endorsement. Nobody here tells you how to vote.</p>
-  <p>Elections by year: {' · '.join(f'<a href="{prefix}{y}.html">{y}</a>' for y in YEARS)}</p>
-  <p><a href="{prefix}issues.html">Issues</a> ·
-  <a href="{prefix}sources.html">Sources</a> ·
-  <a href="{prefix}forums.html">Forums</a> ·
-  <a href="{prefix}civics.html">Civics 101</a> ·
-  <a href="{prefix}orgs.html">Organizations</a> ·
-  <a href="{prefix}people.html">People</a> ·
-  <a href="{prefix}finance.html">Money</a> ·
-  <a href="{prefix}questionnaires.html">Questionnaires</a> ·
-  <a href="{prefix}print/index.html">Print</a> ·
-  <a href="{prefix}measures.html">All measures</a> ·
-  <a href="{prefix}about.html">About</a> ·
-  <a href="https://bouldervotes.org/">bouldervotes.org</a></p>
+<footer class="site">
+  <div class="footer-inner">
+    <div>
+      <h2>Boulder Votes</h2>
+      <p>{esc(TAGLINE)}</p>
+      <p>City of Boulder only. Cited, not scored, not an endorsement. Nobody here tells you how to vote.</p>
+    </div>
+    <div>
+      <h2>2026 election</h2>
+      <ul>
+        <li><a href="{prefix}index.html#mayor">Mayor</a></li>
+        <li><a href="{prefix}index.html#council">City Council</a></li>
+        <li><a href="{prefix}index.html#measures">Ballot measures</a></li>
+        <li><a href="{prefix}compare.html">Forum answers, side by side</a></li>
+        <li><a href="{prefix}print/index.html">Printable sheets</a></li>
+        <li><a href="{prefix}2026.html">2026 ballot details</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Learn</h2>
+      <ul>
+        <li><a href="{prefix}civics.html">Civics 101</a></li>
+        <li><a href="{prefix}orgs.html">Endorsing organizations</a></li>
+        <li><a href="{prefix}finance.html">Campaign money</a></li>
+        <li><a href="{prefix}issues.html">Issues</a></li>
+        <li><a href="{prefix}people.html">People</a></li>
+        <li><a href="{prefix}forums.html">Forum calendar</a></li>
+        <li><a href="{prefix}questionnaires.html">Questionnaires</a></li>
+        <li><a href="{prefix}measures.html">All measures</a></li>
+        <li><a href="{prefix}sources.html">Sources</a></li>
+        <li><a href="{prefix}about.html">About this guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Earlier elections</h2>
+      <ul>{past_links}</ul>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
 """
+
+
+def panelize(html_body: str) -> str:
+    """Wrap each <h2>-led section in a card. Presentation only: no text changes."""
+    parts = re.split(r"(?=<h2[ >])", html_body)
+    out = [parts[0]]
+    for chunk in parts[1:]:
+        out.append(f"<section class='panel'>{chunk}</section>")
+    return "".join(out)
+
+
+def money_stats(snap) -> str:
+    """Big-number summary of one finance snapshot."""
+    cells = [("Raised", snap["contributions"]), ("Spent", snap["expenditures"]),
+             ("Matching funds received", snap["matching_received"])]
+    if snap["cash_on_hand"] is not None:
+        cells.append(("Cash on hand", snap["cash_on_hand"]))
+    return "<ul class='stats'>" + "".join(
+        f"<li><span class='v'>{dollars(v)}</span><span class='k'>{k}</span></li>" for k, v in cells) + "</ul>"
+
+
+def copy_static() -> None:
+    """static/ -> docs/ (css, fonts, candidate photos)."""
+    import shutil
+    for sub in ("css", "fonts", "img"):
+        src = STATIC / sub
+        if src.exists():
+            dst = OUT / sub
+            if dst.exists():
+                shutil.rmtree(dst)
+            shutil.copytree(src, dst)
 
 
 def main() -> None:
@@ -375,6 +290,7 @@ def main() -> None:
     con.row_factory = sqlite3.Row
     q = con.execute
     OUT.mkdir(parents=True, exist_ok=True)
+    copy_static()
     (OUT / "people").mkdir(exist_ok=True)
     (OUT / "issues").mkdir(exist_ok=True)
     (OUT / "print").mkdir(exist_ok=True)
@@ -748,7 +664,7 @@ def main() -> None:
             f"<div class='meta'>{esc(ongoing)} · {esc(desc or '')}</div>"
             f"<div class='chips' style='margin-top:0.4rem'>{pills}</div></div>"
         )
-    (OUT / "issues.html").write_text(page("Issues", "\n".join(hub)), encoding="utf-8")
+    (OUT / "issues.html").write_text(page("Issues", "\n".join(hub), current="learn"), encoding="utf-8")
 
     def questions_for(slug: str, year: int):
         if slug == "other":
@@ -904,7 +820,7 @@ def main() -> None:
         else:
             later.append(li)
     plist.extend(later)
-    (OUT / "people.html").write_text(page("People", "\n".join(plist)), encoding="utf-8")
+    (OUT / "people.html").write_text(page("People", "\n".join(plist), current="learn"), encoding="utf-8")
 
     # ----- person dossiers -----
     for p in people:
@@ -1035,18 +951,11 @@ def main() -> None:
                        WHERE snapshot_id=? AND direction='expenditure'""",
                     (snap["id"],),
                 ).fetchone()[0]
+                bits.append(money_stats(snap))
                 bits.append(
-                    f"<p>{snap['year']}: raised {dollars(snap['contributions'])} · "
-                    f"spent {dollars(snap['expenditures'])} · "
-                    f"matching received {dollars(snap['matching_received'])}"
-                    + (
-                        f" · cash on hand {dollars(snap['cash_on_hand'])}"
-                        if snap["cash_on_hand"] is not None
-                        else ""
-                    )
-                    + f" ({esc(snap['committee_name'])}"
+                    f"<p class='note'>{snap['year']} · {esc(snap['committee_name'])}"
                     + (f", as of {esc(snap['reported_on'])}" if snap["reported_on"] else "")
-                    + ").</p>"
+                    + ".</p>"
                 )
                 if snap["notes"]:
                     bits.append(f"<p class='note'>{esc(plain(snap['notes']))}</p>")
@@ -1106,10 +1015,15 @@ def main() -> None:
             bits.append("</ul>")
 
         latest = cands[0]["year"] if cands else None
+        nav_key = None
         if cand26:
-            bits.insert(0, graph.candidate_summary(p["id"], "\n".join(bits), p["slug"]))
+            rest = "\n".join(bits)
+            body_html = graph.candidate_summary(p["id"], rest, p["slug"]) + panelize(rest)
+            nav_key = "mayor" if cand26["office_slug"] == "mayor" else "council"
+        else:
+            body_html = "\n".join(bits)
         (OUT / "people" / f"{p['slug']}.html").write_text(
-            page(p["full_name"], "\n".join(bits), prefix="../", year=latest),
+            page(p["full_name"], body_html, prefix="../", year=latest if not cand26 else 2026, current=nav_key),
             encoding="utf-8",
         )
 
@@ -1146,13 +1060,13 @@ def main() -> None:
                 flag = "attended" if a["attended"] == 1 else "did not attend" if a["attended"] == 0 else "unknown"
                 ev_html.append(f"<li><a href='{esc(person_href(a['slug']))}'>{esc(a['full_name'])}</a> — {flag}</li>")
             ev_html.append("</ul>")
-    (OUT / "forums.html").write_text(page("Forums", "\n".join(ev_html)), encoding="utf-8")
+    (OUT / "forums.html").write_text(page("Forums", "\n".join(ev_html), current="forums"), encoding="utf-8")
 
     meas_html = ["<h1>City measures</h1>"]
     for year in YEARS:
         meas_html.append(f"<h2>{year}</h2>")
         meas_html.append(measure_cards(year))
-    (OUT / "measures.html").write_text(page("Measures", "\n".join(meas_html)), encoding="utf-8")
+    (OUT / "measures.html").write_text(page("Measures", "\n".join(meas_html), current="measures"), encoding="utf-8")
 
     sources = q(
         """SELECT s.*, o.name AS org FROM sources s
@@ -1166,7 +1080,7 @@ def main() -> None:
             f"<td><a href='{esc(s['url'])}'>{esc(s['title'])}</a></td></tr>"
         )
     (OUT / "sources.html").write_text(
-        page("Sources", f"<h1>Sources</h1><p>The catalog. Quoted claims live on people and issue pages.</p><table>{''.join(src_rows)}</table>"),
+        page("Sources", f"<p class='crumb'><a href='learn.html'>Learn</a></p><h1>Sources</h1><p>The catalog. Quoted claims live on people and issue pages.</p><table>{''.join(src_rows)}</table>"),
         encoding="utf-8",
     )
 
@@ -1193,7 +1107,7 @@ def main() -> None:
         "<p class='note'>Forum videos, including YouTube, live on the <a href='forums.html'>forums</a> page. "
         "We do not invent spoken quotes from a journalist’s grouping or an auto-transcript.</p>"
     )
-    (OUT / "questionnaires.html").write_text(page("Questionnaires", "\n".join(qn_html)), encoding="utf-8")
+    (OUT / "questionnaires.html").write_text(page("Questionnaires", "\n".join(qn_html), current="learn"), encoding="utf-8")
 
     # ----- print packet: a short sheet per 2026 candidate; answers never folded -----
     def print_sheet(row, office: str) -> str:
@@ -1437,14 +1351,40 @@ def main() -> None:
             )
         fin_html.append(f"<table>{''.join(body)}</table>")
     fin_html.append("<p><a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php'>Open the clerk app</a> to read each statement.</p>")
-    (OUT / "finance.html").write_text(page("Money", "\n".join(fin_html), year=2026), encoding="utf-8")
+    (OUT / "finance.html").write_text(page("Campaign money", "\n".join(fin_html), year=2026, current="learn"), encoding="utf-8")
+
+    learn = [
+        "<p class='eyebrow'>Learn</p>",
+        "<h1>Background for the 2026 city ballot</h1>",
+        "<p class='lede'>How Boulder's city government works, who is endorsing, where the campaign money comes from, "
+        "and where every fact on this site came from.</p>",
+        "<div class='link-grid'>",
+    ]
+    for href, label, blurb in (
+        ("civics.html", "Civics 101", "How the council, the mayor and ranked-choice voting work, with sources."),
+        ("orgs.html", "Endorsing organizations", "Who each group is, how it decides, what we know about its money, and whom it endorsed."),
+        ("finance.html", "Campaign money", "City clerk filings: raised, spent, matching funds, and donors, for every candidate."),
+        ("compare.html", "Forum answers, side by side", "The same forum question, every candidate we quote, in ballot order."),
+        ("forums.html", "Forum calendar", "Every candidate forum, recordings, and who attended."),
+        ("issues.html", "Issues", "Questions asked each cycle, grouped by topic, with the answers on file."),
+        ("people.html", "People", "Every candidate and endorser in this guide, across years."),
+        ("questionnaires.html", "Questionnaires", "Written candidate questionnaires we have located, with links."),
+        ("print/index.html", "Printable sheets", "A short sheet for each 2026 candidate. Every answer prints in full."),
+        ("sources.html", "Sources", "The full catalog of documents behind this guide."),
+        ("about.html", "About this guide", "Who it is for, how to read it, and what we will not do."),
+    ):
+        learn.append(f"<a class='choice' href='{href}'><strong>{label}</strong><span class='meta'>{blurb}</span></a>")
+    learn.append("</div>")
+    learn.append("<h2>Earlier City of Boulder elections</h2><p class='chips'>"
+                 + "".join(f"<a class='pill' href='{y}.html'>{y}</a>" for y in ARCHIVE_YEARS) + "</p>")
+    (OUT / "learn.html").write_text(page("Learn", "\n".join(learn), current="learn"), encoding="utf-8")
 
     about = """
     <h1>About</h1>
     <p>Boulder Votes is a map of City of Boulder elections for people who have to mark a ballot, especially older voters. It is not a feed, not a quiz, and not a scorecard.</p>
     <h2>How to use it</h2>
     <ul>
-      <li><strong>The 2026 guide</strong> (home page) — key dates, every mayor and council candidate with a one-line bio and who endorses them, and the four city measures.</li>
+      <li><strong>The 2026 guide</strong> (home page) — key dates with where today falls, every mayor and council candidate with a one-line bio and who endorses them, and the four city measures.</li>
       <li><strong>A candidate</strong> — bio, positions in their own words with the source, endorsers grouped (organizations, current elected officials, former elected officials, other individuals), and money.</li>
       <li><strong>An organization</strong> — who they are, how they decide, what we know about their funding, and whom they endorsed.</li>
       <li><strong>Where an endorsement comes from</strong> — every endorsement line is labelled: the endorser's own statement, a city committee filing, or “X campaign lists Y” when the only source is the candidate's own website.</li>
@@ -1453,12 +1393,12 @@ def main() -> None:
       <li><strong>A question</strong> — people on that year’s ballot who answered it. We do not copy an earlier year’s answer onto this year’s page.</li>
       <li><strong>Print</strong> — a short sheet per 2026 candidate (usually one or two pages), with every answer printed in full. File → Print.</li>
     </ul>
-    <p>Years on the rail run 2017–2026. 2015 and earlier are out of scope for now.</p>
+    <p>The election archive runs 2017–2026 (use the year menu at the top right, or the footer). 2015 and earlier are out of scope for now.</p>
     <p>A number without a source is not published. Two quotes are never averaged. We do not score candidates. A yes/no is an answer to the question on the card — never a stand-in for a whole topic like “city budget.”</p>
     <p>Municipal campaign-finance filings are with the <a href="https://bouldercolorado.gov/elections/election-committee-filings">city clerk</a>, not TRACER. 2026 totals and itemized donors live on each candidate’s page (below what they have said) and on <a href="finance.html">Money</a>. $0 is a filed zero. Past-year dollars are not copied (the live clerk app only serves 2026; Laserfiche is a JS archive).</p>
     <p>No JavaScript. Large type. Printing any page prints the folded answers in full.</p>
     """
-    (OUT / "about.html").write_text(page("About", about), encoding="utf-8")
+    (OUT / "about.html").write_text(page("About", about, current="learn"), encoding="utf-8")
 
     # keep old race URLs from breaking
     (OUT / "2026-mayor.html").write_text(

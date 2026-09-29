@@ -287,8 +287,10 @@ class TestBuiltHtml(unittest.TestCase):
         self.assertIn("supportive services", s)
         self.assertIn("<blockquote class='answer'>", s)
         self.assertNotIn("One letter-size sheet", s)
-        # The shared CSS also opens all other pages' folded answers in print.
-        self.assertIn("details::details-content { content-visibility: visible; display: block; }", s)
+        # The shared stylesheet (linked from every page) opens all folded answers in print.
+        self.assertIn('href="../css/site.css"', s)
+        css = (DOCS / "css" / "site.css").read_text(encoding="utf-8")
+        self.assertIn("details::details-content { content-visibility: visible; display: block; }", css)
 
     def test_home_key_facts(self):
         s = self.pages[DOCS / "index.html"]

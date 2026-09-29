@@ -38,12 +38,6 @@ TOPIC_LABELS = [
     ("other", "Other topics"),
 ]
 
-FORUM_CSS = """
-.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
-.forum-answer .who { font-weight: 700; }
-table.grid td:first-child { width: 28%; }
-table.grid blockquote.answer { margin: 0.2rem 0; }
-"""
 
 
 def esc(s: object) -> str:
@@ -161,7 +155,7 @@ class Forums2026:
         if r["tnote"]:
             bits.append(f"<p class='note'>Transcript note: {esc(r['tnote'])}</p>")
         bits.append(
-            f"<p class='note'>{TRANSCRIPT_NOTE} <a href='{esc(r['watch'])}'>Watch at {ts(r['start'])}</a> · "
+            f"<p class='note'>{TRANSCRIPT_NOTE} <a class='watch' href='{esc(r['watch'])}'>Watch at {ts(r['start'])}</a> · "
             f"<a href='{esc(r['source_url'])}'>{esc(r['source_title'])}</a></p>")
         return "".join(bits)
 
@@ -256,7 +250,7 @@ class Forums2026:
                 for r in rows:
                     b.append(self.card(r, "../", show_who=True, show_question=False, show_forum=False))
             (self.out / "forums" / f"{slug}.html").write_text(
-                self.page(f["short"] + " (" + f["date"] + ")", "\n".join(b), prefix="../", year=2026), encoding="utf-8")
+                self.page(f["short"] + " (" + f["date"] + ")", "\n".join(b), prefix="../", year=2026, current="forums"), encoding="utf-8")
 
     def forum_index_html(self) -> str:
         b = ["<h2>2026 forums: every quoted answer</h2>",
@@ -275,7 +269,7 @@ class Forums2026:
                  "candidate we quote answering it, in the order their names appear on the ballot. There are no scores and no summary of who is "
                  "right. A yes/no appears only where the candidate said yes or no (support/oppose) in so many words; "
                  "a blank means they did not, or hedged — read the quote. " + TRANSCRIPT_NOTE + "</p>")
-        idx = ["<h1>Same question, every candidate</h1>",
+        idx = ["<p class='eyebrow'>Forums · candidates in their own words</p>", "<h1>Same question, every candidate</h1>",
                "<p class='lede'>Questions asked at 2026 candidate forums that three or more candidates answered, "
                "with each candidate's own words side by side.</p>", label]
         cur = None
@@ -288,10 +282,10 @@ class Forums2026:
             rows = self.question_rows(slug, qi)
             n = len({r["person_id"] for r in rows})
             idx.append(f"<a class='choice' href='compare/{self.compare_slug(slug, qi)}.html'>{esc(q['prompt'])}"
-                       f"<span class='meta'>{n} candidates</span></a>")
+                       f"<span class='meta num'>{n} candidates</span></a>")
             self._write_compare_page(slug, qi, label)
         (self.out / "compare.html").write_text(
-            self.page("Same question, every candidate", "\n".join(idx), year=2026), encoding="utf-8")
+            self.page("Same question, every candidate", "\n".join(idx), year=2026, current="forums"), encoding="utf-8")
 
     def _write_compare_page(self, slug: str, qi: int, label: str) -> None:
         f = self.forums[slug]
@@ -330,7 +324,7 @@ class Forums2026:
         b.append("<p class='note'>Candidates not listed were not quoted by us on this question — absent, not called on, "
                  "or not captured in our extract. That is not a position.</p>")
         (self.out / "compare" / f"{self.compare_slug(slug, qi)}.html").write_text(
-            self.page(q["prompt"][:70], "\n".join(b), prefix="../", year=2026), encoding="utf-8")
+            self.page(q["prompt"][:70], "\n".join(b), prefix="../", year=2026, current="forums"), encoding="utf-8")
 
     def issue_answer(self, answer_id: int) -> str:
         """Body of an issue-page card for a forum-video answer ('' if not one)."""

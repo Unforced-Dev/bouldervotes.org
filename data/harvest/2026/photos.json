@@ -1,0 +1,173 @@
+{
+ "retrieved_on": "2026-09-29",
+ "policy": "Headshots only from the candidate's own campaign website or an official City of Boulder page (the city's 2026 candidate page has no photos). Cropped square, resized to 320px WebP, unaltered otherwise. Credit line links to the campaign website. Candidates without a sourced photograph get a neutral monogram tile of the same size. Same treatment for every candidate; no photo is chosen to flatter or not.",
+ "photos": [
+  {
+   "slug": "taishya-adams",
+   "name": "Taishya Adams",
+   "file": "img/candidates/taishya-adams.webp",
+   "source_url": "https://www.adamsforboulder.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/64c9b8993a371d21ef65e52c/7445d18d-de1b-4021-8779-01ad9ab9b3b7/AdamsforBoulder_Taishya+Adams_Boulder+WideShot_July+2023.jpg",
+   "credit": "Photo: adamsforboulder.com (campaign website)",
+   "credit_url": "https://www.adamsforboulder.com/"
+  },
+  {
+   "slug": "aaron-brockett",
+   "name": "Aaron Brockett",
+   "file": "img/candidates/aaron-brockett.webp",
+   "source_url": "https://brockett4mayor.org/",
+   "image_url": "https://brockett4mayor.org/wp-content/uploads/2026/09/IMG_4272.jpeg",
+   "credit": "Photo: brockett4mayor.org (campaign website)",
+   "credit_url": "https://brockett4mayor.org/",
+   "note": "Candid event photo; the campaign site has no single-person portrait."
+  },
+  {
+   "slug": "jameson-goldstein",
+   "name": "Jameson Goldstein",
+   "file": "img/candidates/jameson-goldstein.webp",
+   "source_url": "https://www.jamoformayor.org/official-biography",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6a6e3f9e435a9d092a3459ba/d84c1755-aec2-4750-baab-4787e22596d6/DSC_0280-2.jpg",
+   "credit": "Photo: jamoformayor.org (campaign website)",
+   "credit_url": "https://www.jamoformayor.org/official-biography",
+   "note": "From the campaign's \"Official biography\" page."
+  },
+  {
+   "slug": "aquiles-la-grave",
+   "name": "Aquiles La Grave",
+   "file": "img/candidates/aquiles-la-grave.webp",
+   "source_url": "https://boulder.vote/",
+   "image_url": "https://boulder.vote/assets/aquiles-800.jpg",
+   "credit": "Photo: boulder.vote (campaign website)",
+   "credit_url": "https://boulder.vote/"
+  },
+  {
+   "slug": "rachel-rose-isaacson",
+   "name": "Rachel Rose Isaacson",
+   "file": "img/candidates/rachel-rose-isaacson.webp",
+   "source_url": "https://www.rachelrose4boulder.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/683e43af7c5d4c0234d616e0/fe4995ce-6c77-4e7b-97a4-b781afac9acb/Headshot.jpg",
+   "credit": "Photo: rachelrose4boulder.com (campaign website)",
+   "credit_url": "https://www.rachelrose4boulder.com/"
+  },
+  {
+   "slug": "tara-winer",
+   "name": "Tara Winer",
+   "file": "img/candidates/tara-winer.webp",
+   "source_url": "https://www.taraforboulder.com/",
+   "image_url": "https://www.taraforboulder.com/images/headshot2.png",
+   "credit": "Photo: taraforboulder.com (campaign website)",
+   "credit_url": "https://www.taraforboulder.com/"
+  },
+  {
+   "slug": "ryan-schuchard",
+   "name": "Ryan Schuchard",
+   "file": "img/candidates/ryan-schuchard.webp",
+   "source_url": "https://www.ryanwithboulder.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6574e2e2b626bb4dfbfddcec/5648af49-090d-4e31-9ae3-fcba21cffcbb/IMG_1104.jpg",
+   "credit": "Photo: ryanwithboulder.com (campaign website)",
+   "credit_url": "https://www.ryanwithboulder.com/"
+  },
+  {
+   "slug": "jill-grano",
+   "name": "Jill Grano",
+   "file": "img/candidates/jill-grano.webp",
+   "source_url": "https://www.jillforcouncil.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6a563bdb5fb6a778a923e4b1/1ddf72ee-03d4-4bec-b45f-e769a6e26bde/Jill+Grano-007.jpg",
+   "credit": "Photo: jillforcouncil.com (campaign website)",
+   "credit_url": "https://www.jillforcouncil.com/"
+  },
+  {
+   "slug": "benita-duran",
+   "name": "Benita Duran",
+   "file": "img/candidates/benita-duran.webp",
+   "source_url": "https://www.benitaduran.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6a721c00bab2107646ec480b/39b8e39d-871f-42bd-99be-32f6611e7595/unnamed-2.jpg",
+   "credit": "Photo: benitaduran.com (campaign website)",
+   "credit_url": "https://www.benitaduran.com/"
+  },
+  {
+   "slug": "ryan-jamieson",
+   "name": "Ryan Jamieson",
+   "file": "img/candidates/ryan-jamieson.webp",
+   "source_url": "https://rjforboulder.com/",
+   "image_url": "https://rjforboulder.com/assets/brl_portrait.jpg",
+   "credit": "Photo: rjforboulder.com (campaign website)",
+   "credit_url": "https://rjforboulder.com/",
+   "note": "The site footer reads \"All rights reserved\"; used as the candidate's own published portrait, credited and linked, same as every other candidate."
+  },
+  {
+   "slug": "lee-gilbert",
+   "name": "Lee Gilbert",
+   "file": "img/candidates/lee-gilbert.webp",
+   "source_url": "https://lee4boulder.com/",
+   "image_url": "https://lee4boulder.com/assets/lee-gilbert.jpg",
+   "credit": "Photo: lee4boulder.com (campaign website)",
+   "credit_url": "https://lee4boulder.com/"
+  },
+  {
+   "slug": "tina-marquis",
+   "name": "Tina Marquis",
+   "file": "img/candidates/tina-marquis.webp",
+   "source_url": "https://www.tinaforboulder.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/649db3236002ad4ba3b7278c/c2d42e3c-5681-4e78-997c-6f4a1ab7e9a2/tina-headshots-karenjacot-121.jpg",
+   "credit": "Photo: tinaforboulder.com (campaign website)",
+   "credit_url": "https://www.tinaforboulder.com/",
+   "note": "The file name on the campaign site credits the photographer (Karen Jacot)."
+  },
+  {
+   "slug": "jamillah-richmond",
+   "name": "Jamillah Richmond",
+   "file": "img/candidates/jamillah-richmond.webp",
+   "source_url": "https://www.jamillahanewvoice.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6a80fee3e8f7b161c24605cb/5c5e3ba3-6eab-498e-8ec1-7e333c240421/IMG_8940.jpeg",
+   "credit": "Photo: jamillahanewvoice.com (campaign website)",
+   "credit_url": "https://www.jamillahanewvoice.com/"
+  },
+  {
+   "slug": "sam-fuqua",
+   "name": "Sam Fuqua",
+   "file": "img/candidates/sam-fuqua.webp",
+   "source_url": "https://www.fuquaforcouncil.com/",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6a837ce41a66bb6889a31625/ec69de62-1f1a-41a3-814d-9b1f967d6799/in+front+of+NoBo.jpg",
+   "credit": "Photo: fuquaforcouncil.com (campaign website)",
+   "credit_url": "https://www.fuquaforcouncil.com/"
+  },
+  {
+   "slug": "dave-martus",
+   "name": "Dave Martus",
+   "file": "img/candidates/dave-martus.webp",
+   "source_url": "https://daveforboulder.com/",
+   "image_url": "https://daveforboulder.com/assets/dm-headshot.jpg",
+   "credit": "Photo: daveforboulder.com (campaign website)",
+   "credit_url": "https://daveforboulder.com/"
+  },
+  {
+   "slug": "lisa-ann-jacobs",
+   "name": "Lisa Ann Jacobs",
+   "file": null,
+   "monogram": true,
+   "reason": "No campaign website on file, and no photo on an official City of Boulder page."
+  },
+  {
+   "slug": "fred-smith",
+   "name": "Fred Smith",
+   "file": null,
+   "monogram": true,
+   "reason": "The campaign website (gratefulfredinstead.com) shows an illustrated poster, not a photograph."
+  },
+  {
+   "slug": "scott-rendleman",
+   "name": "Scott Rendleman",
+   "file": null,
+   "monogram": true,
+   "reason": "No campaign website on file, and no photo on an official City of Boulder page."
+  },
+  {
+   "slug": "lynn-segal",
+   "name": "Lynn Segal",
+   "file": null,
+   "monogram": true,
+   "reason": "No campaign website on file, and no photo on an official City of Boulder page."
+  }
+ ]
+}
