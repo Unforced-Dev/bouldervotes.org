@@ -13,6 +13,7 @@ Trust rules rendered here:
 """
 from __future__ import annotations
 
+from build_plain import plain
 import html
 import json
 import re
@@ -220,7 +221,7 @@ class Forums2026:
                  f"<p class='lede'>{nice_date(f['date'])}"
                  + (f" · {esc(f['venue'])}" if f["venue"] else "") + "</p>",
                  f"<p>Hosted by {esc(', '.join(f['hosts']))}.</p>",
-                 f"<p class='note'>{esc(f['notes'])}</p>",
+                 f"<p class='note'>{esc(plain(f['notes']))}</p>",
                  "<h2>Recordings</h2><ul>"]
             for rec in f["recordings"]:
                 url = f"https://www.youtube.com/watch?v={rec['youtube_id']}"
@@ -232,7 +233,7 @@ class Forums2026:
                 extra = " <span class='note'>(no quotes taken from this part)</span>" if rec.get("no_quotes") else ""
                 b.append(f"<li><a href='{url}'>{esc(rec['title'])}</a> ({esc(rec['uploader'])}){segs}{extra}</li>")
             b.append("</ul>")
-            b.append(f"<p class='note'>Date: {esc(f['date_source'])}</p>")
+            b.append(f"<p class='note'>Date: {esc(plain(f['date_source']))}</p>")
             if f.get("absent_statement_read"):
                 b.append("<p class='note'>Did not attend; the moderator read their submitted statement: "
                          + esc(", ".join(f["absent_statement_read"])) + ".</p>")
@@ -263,7 +264,7 @@ class Forums2026:
         for slug, f in sorted(self.forums.items(), key=lambda kv: kv[1]["date"]):
             n = sum(1 for r in self.rows if r["event"] == slug)
             b.append(f"<li><a href='forums/{esc(slug)}.html'>{esc(f['short'])}</a> · {nice_date(f['date'])} · "
-                     f"{n} quoted answers</li>")
+                     f"{n} quoted answer{'s' if n != 1 else ''}</li>")
         b.append("</ul>")
         return "\n".join(b)
 

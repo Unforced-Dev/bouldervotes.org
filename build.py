@@ -10,6 +10,7 @@ Voter chrome, not an essay:
 from __future__ import annotations
 
 import html
+import re
 import sqlite3
 from pathlib import Path
 
@@ -213,13 +214,51 @@ def dollars(n: object) -> str:
     return f"${x:,.2f}"
 
 
-def kind_label(kind: str | None) -> str:
+def human_label(value: object) -> str:
+    """Raw database enum -> plain English. Anything unrecognized loses its
+    underscores so snake_case never reaches a page."""
+    v = "" if value is None else str(value).strip()
     return {
+        # measure status
+        "on_ballot": "on the ballot",
+        "not_referred": "not placed on the ballot",
+        "referred": "referred to the ballot",
+        "passed": "passed",
+        "failed": "failed",
+        # candidacy status
+        "certified": "on the ballot",
+        "withdrawn": "withdrew",
+        "elected": "elected",
+        "lost": "lost",
+        # source / question kinds
+        "campaign_site": "campaign website",
         "questionnaire": "questionnaire",
-        "forum": "forum",
         "interview": "interview",
         "article": "press",
-    }.get(kind or "", kind or "source")
+        "forum": "forum",
+        "video": "video",
+        "official": "official record",
+        "results": "election results",
+        # committee kinds
+        "official_candidate": "official candidate committee",
+        "unofficial_candidate": "unofficial candidate committee",
+        "ballot_measure": "ballot-measure committee",
+        # endorser kinds
+        "organization": "organization",
+        "committee": "committee",
+        "newspaper": "newspaper",
+    }.get(v, v.replace("_", " "))
+
+
+def kind_label(kind: str | None) -> str:
+    return human_label(kind) or "source"
+
+
+def plural(n: int, word: str) -> str:
+    return f"{n} {word}{'' if n == 1 else 's'}"
+
+
+from build_plain import plain  # noqa: E402  (notes only, never quotes)
 
 
 def quote_block(verbatim: str, fold: bool = True) -> str:
@@ -426,7 +465,7 @@ def main() -> None:
             if row["campaign_url"]
             else ""
         )
-        status = "" if year == 2026 else f"<div class='meta'>{esc(row['status'])}</div>"
+        status = "" if year == 2026 else f"<div class='meta'>{esc(human_label(row['status']))}</div>"
         money = ""
         if year == 2026:
             snap = finance_for(row["person_id"], 2026)
@@ -502,13 +541,13 @@ def main() -> None:
                     else f"Failed · yes {m['yes_votes']:,} ({pct:.0f}%)"
                 )
             else:
-                result = m["status"]
+                result = human_label(m["status"])
             title_html = esc(m["title"])
             if year == 2026 and m["letter"]:
                 title_html = f"<a href='{prefix}measures/2026-{esc(m['letter'].lower())}.html'>{title_html}</a>"
             bits.append(
                 f"<div class='card'><h3>{letter}{title_html}</h3>"
-                f"<div class='meta'>{esc(m['kind'])} · {esc(result)}</div>"
+                f"<div class='meta'>{esc(human_label(m['kind']))} · {esc(result)}</div>"
                 f"<p>{esc(clip(m['summary'] or '', 220))}</p></div>"
             )
         return "\n".join(bits)
@@ -855,7 +894,7 @@ def main() -> None:
             t = q("SELECT title FROM person_titles WHERE person_id=?", (p["id"],)).fetchone()
             ytxt = f"2026 endorser · {t[0]}" if t else "2026 endorser"
         n_ans = q("SELECT COUNT(*) FROM answers WHERE person_id=?", (p["id"],)).fetchone()[0]
-        extra = f" · {n_ans} answers" if n_ans else ""
+        extra = f" · {plural(n_ans, 'answer')}" if n_ans else ""
         snap = finance_for(p["id"], 2026) if p["id"] in on_2026 else None
         if snap:
             extra += f" · raised {dollars(snap['contributions'])}"
@@ -916,7 +955,7 @@ def main() -> None:
             bits.append(f"<p class='crumb'><a href='../people.html'>People</a></p>")
             bits.append(f"<h1>{esc(p['full_name'])}</h1>")
             if p["notes"]:
-                bits.append(f"<p class='lede'>{esc(p['notes'])}</p>")
+                bits.append(f"<p class='lede'>{esc(plain(p['notes']))}</p>")
         history: list[str] = []
 
         # timeline
@@ -929,7 +968,7 @@ def main() -> None:
             if c["matching_funds"]:
                 flags.append("matching funds")
             extra = f" ({', '.join(flags)})" if flags else ""
-            outcome = "on the ballot" if c["status"] == "certified" else c["status"]
+            outcome = human_label(c["status"])
             rmatch = [r for r in res if r["year"] == c["year"] and r["office"] == c["office_slug"]]
             if rmatch:
                 last = rmatch[-1]
@@ -1010,7 +1049,7 @@ def main() -> None:
                     + ").</p>"
                 )
                 if snap["notes"]:
-                    bits.append(f"<p class='note'>{esc(snap['notes'])}</p>")
+                    bits.append(f"<p class='note'>{esc(plain(snap['notes']))}</p>")
                 bits.append(
                     f"<p class='note'>{n_donors} contribution line{'' if n_donors == 1 else 's'}, "
                     f"{n_exp} expenditure{'' if n_exp == 1 else 's'}. City clerk, not TRACER. "
@@ -1091,7 +1130,7 @@ def main() -> None:
         ev_html.append(f"<h3>{esc(e['name'])}</h3>")
         ev_html.append(f"<p>{esc(e['starts_on'])} · {esc(e['venue'] or 'venue not recorded')} · {esc(e['host'] or '')}{rec}</p>")
         if e["notes"]:
-            ev_html.append(f"<p class='note'>{esc(e['notes'])}</p>")
+            ev_html.append(f"<p class='note'>{esc(plain(e['notes']))}</p>")
         apps = q(
             """SELECT p.full_name, p.slug, a.attended FROM event_appearances a
                JOIN people p ON p.id=a.person_id
@@ -1123,7 +1162,7 @@ def main() -> None:
     src_rows = ["<tr><th>Year</th><th>Kind</th><th>Source</th></tr>"]
     for s in sources:
         src_rows.append(
-            f"<tr><td>{s['year'] or ''}</td><td>{esc(s['kind'])}</td>"
+            f"<tr><td>{s['year'] or ''}</td><td>{esc(human_label(s['kind']))}</td>"
             f"<td><a href='{esc(s['url'])}'>{esc(s['title'])}</a></td></tr>"
         )
     (OUT / "sources.html").write_text(
@@ -1133,7 +1172,7 @@ def main() -> None:
 
     qn_html = [
         "<h1>Questionnaires</h1>",
-        "<p class='lede'>Written candidate Q&amp;A we have located. Full verbatim is ingested only when we copied it into the database (BRL, Boulder Beat). Everything else is linked, not scored.</p>",
+        "<p class='lede'>Written candidate Q&amp;A we have located. We copied the full text word for word only where we transcribed it ourselves (BRL, Boulder Beat). Everything else is linked, not scored.</p>",
         "<p>The Chamber does send questions every cycle; the 2025 extended-response PDF is the one we have as a file. PLAN used a questionnaire for 2025 endorsements and did not publish the dump on the endorsement page. Open Boulder published 2025 PDFs for eight of eleven candidates. Better Boulder co-hosted the 2025 VOTES! forum with PLAN and Open Boulder (first year of that collaboration).</p>",
     ]
     qn_rows = q(
@@ -1145,7 +1184,7 @@ def main() -> None:
     qn_html.append("<table><tr><th>Year</th><th>Source</th></tr>")
     for s in qn_rows:
         org = f"{esc(s['org'])} · " if s["org"] else ""
-        note = f"<div class='meta'>{esc(s['notes'])}</div>" if s["notes"] else ""
+        note = f"<div class='meta'>{esc(plain(s['notes']))}</div>" if s["notes"] else ""
         qn_html.append(
             f"<tr><td>{s['year'] or ''}</td><td>{org}<a href='{esc(s['url'])}'>{esc(s['title'])}</a>{note}</td></tr>"
         )
@@ -1201,7 +1240,7 @@ def main() -> None:
         tbody = ["<tr><th>Year</th><th>Office</th><th>Outcome</th></tr>"]
         for c in cands:
             tbody.append(
-                f"<tr><td>{c['year']}</td><td>{esc(c['office'])}</td><td>{esc(c['status'])}</td></tr>"
+                f"<tr><td>{c['year']}</td><td>{esc(c['office'])}</td><td>{esc(human_label(c['status']))}</td></tr>"
             )
         bits.append(f"<table>{''.join(tbody)}</table>")
         if answers:
@@ -1235,7 +1274,7 @@ def main() -> None:
                 f"Clerk matching-funds flag: {money_flag}. Not TRACER.</p>"
             )
             if snap["notes"]:
-                bits.append(f"<p class='note'>{esc(snap['notes'])}</p>")
+                bits.append(f"<p class='note'>{esc(plain(snap['notes']))}</p>")
         else:
             bits.append(
                 f"<p>Matching funds: {money_flag}. Filings: "
@@ -1317,7 +1356,7 @@ def main() -> None:
         "<p class='lede'>City of Boulder committee filings, not TRACER. Retrieved 2026-09-01 from the live clerk app. $0 is a filed zero, not a missing record. Cents come from the latest CandE statement; the clerk’s summary table rounds to dollars.</p>",
         "<p class='note'>Past-year dollars: the live app only serves 2026. Historical filings sit in the city’s "
         "<a href='https://documents.bouldercolorado.gov/WebLink/Browse.aspx?id=59131'>Laserfiche archive</a> "
-        "(cookie/JS). This pass could not list that folder. Matching-funds asterisks on the clerk candidate list are separate from the matching-received column here.</p>",
+        "(cookie/JS). We could not list that folder this time. Matching-funds asterisks on the clerk candidate list are separate from the matching-received column here.</p>",
     ]
     candidates = [r for r in fin_rows if r["committee_kind"] == "official_candidate" and r["person_id"]]
     cand_ids = {r["id"] for r in candidates}
@@ -1349,7 +1388,7 @@ def main() -> None:
         if noted:
             fin_html.append("<ul class='note'>")
             for r in noted:
-                fin_html.append(f"<li><a href='{esc(person_href(r['slug']))}'>{esc(r['full_name'])}</a> — {esc(r['notes'])}</li>")
+                fin_html.append(f"<li><a href='{esc(person_href(r['slug']))}'>{esc(r['full_name'])}</a> — {esc(plain(r['notes']))}</li>")
             fin_html.append("</ul>")
 
     cross = q(
@@ -1389,7 +1428,7 @@ def main() -> None:
         )
         body = ["<tr><th>Committee</th><th>Kind</th><th class='num'>Raised</th><th class='num'>Spent</th><th>As of</th></tr>"]
         for r in other:
-            kind = (r["committee_kind"] or "").replace("_", " ")
+            kind = human_label(r["committee_kind"])
             body.append(
                 f"<tr><td>{esc(r['committee_name'])}</td><td>{esc(kind)}</td>"
                 f"<td class='num'>{dollars(r['contributions'])}</td>"
