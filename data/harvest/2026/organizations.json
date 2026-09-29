@@ -1020,7 +1020,7 @@
   "slug": "boulder-county-dsa",
   "name": "Boulder County Democratic Socialists of America",
   "kind": "organization",
-  "website": null,
+  "website": "https://boulderdsa.org/",
   "legal_form": "Local DSA chapter (specific tax status not verified)",
   "mission_quote": {
    "text": "",
@@ -3103,8 +3103,8 @@
   "leadership": [
    {
     "name": "Emily Baer",
-    "role": "Erie city councilmember",
-    "source_url": "https://brockett4mayor.org/endorsements/",
+    "role": "Erie town councilmember",
+    "source_url": "https://erieco.gov/318/Town-Council",
     "current": true,
     "as_of": "2026-09-24"
    }
@@ -3112,12 +3112,12 @@
   "funding": null,
   "endorsement_process": null,
   "past_endorsements": [],
-  "summary": "Emily Baer is listed as Erie city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "summary": "Emily Baer is listed as Erie town councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office. Title corrected to the official roster (2026-09-29); the campaign page's wording differed.",
   "sources": [
    "https://brockett4mayor.org/endorsements/"
   ],
-  "title": "Erie city councilmember",
-  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "title": "Erie town councilmember",
+  "title_source_url": "https://erieco.gov/318/Town-Council",
   "weight_group": "current_elected",
   "related": []
  },
@@ -3199,8 +3199,8 @@
   "leadership": [
    {
     "name": "Kris Larsen",
-    "role": "Nederland city councilmember",
-    "source_url": "https://brockett4mayor.org/endorsements/",
+    "role": "Nederland town trustee",
+    "source_url": "https://www.nederlandco.org/1231/Board-of-Trustees",
     "current": true,
     "as_of": "2026-09-24"
    }
@@ -3208,12 +3208,12 @@
   "funding": null,
   "endorsement_process": null,
   "past_endorsements": [],
-  "summary": "Kris Larsen is listed as Nederland city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "summary": "Kris Larsen is listed as Nederland town trustee on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office. Title corrected to the official roster (2026-09-29); the campaign page's wording differed.",
   "sources": [
    "https://brockett4mayor.org/endorsements/"
   ],
-  "title": "Nederland city councilmember",
-  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "title": "Nederland town trustee",
+  "title_source_url": "https://www.nederlandco.org/1231/Board-of-Trustees",
   "weight_group": "current_elected",
   "related": []
  },
@@ -3263,8 +3263,8 @@
   "leadership": [
    {
     "name": "Stephanie Miller",
-    "role": "Superior city councilmember",
-    "source_url": "https://brockett4mayor.org/endorsements/",
+    "role": "Superior town councilmember",
+    "source_url": "https://www.superiorcolorado.gov/Government/Town-Council/Town-Council/Stephanie-Miller-Council-Member",
     "current": true,
     "as_of": "2026-09-24"
    }
@@ -3272,12 +3272,12 @@
   "funding": null,
   "endorsement_process": null,
   "past_endorsements": [],
-  "summary": "Stephanie Miller is listed as Superior city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+  "summary": "Stephanie Miller is listed as Superior town councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office. Title corrected to the official roster (2026-09-29); the campaign page's wording differed.",
   "sources": [
    "https://brockett4mayor.org/endorsements/"
   ],
-  "title": "Superior city councilmember",
-  "title_source_url": "https://brockett4mayor.org/endorsements/",
+  "title": "Superior town councilmember",
+  "title_source_url": "https://www.superiorcolorado.gov/Government/Town-Council/Town-Council/Stephanie-Miller-Council-Member",
   "weight_group": "current_elected",
   "related": []
  },
@@ -3439,6 +3439,70 @@
   "title": "former Lyons mayor",
   "title_source_url": "https://brockett4mayor.org/endorsements/",
   "weight_group": "former_elected",
+  "related": []
+ },
+ {
+  "slug": "guyleen-castriotta",
+  "name": "Guyleen Castriotta",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Guyleen Castriotta",
+    "role": "Broomfield mayor",
+    "source_url": "https://www.broomfield.org/2694/Mayor-Guyleen-Castriotta",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Guyleen Castriotta is listed as Mayor of Broomfield on Tara Winer's 2026 endorsement page. This is a personal endorsement, not one made by the office.",
+  "sources": [
+   "https://www.taraforboulder.com/endorsements/content/endorsers/"
+  ],
+  "title": "Broomfield mayor",
+  "title_source_url": "https://www.broomfield.org/2694/Mayor-Guyleen-Castriotta",
+  "weight_group": "current_elected",
+  "related": []
+ },
+ {
+  "slug": "andrea-meneghel",
+  "name": "Andrea Meneghel",
+  "kind": "person",
+  "website": null,
+  "legal_form": null,
+  "mission_quote": {
+   "text": "",
+   "source_url": ""
+  },
+  "founded": null,
+  "leadership": [
+   {
+    "name": "Andrea Meneghel",
+    "role": "Open Boulder board member",
+    "source_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+    "current": true,
+    "as_of": "2026-09-24"
+   }
+  ],
+  "funding": null,
+  "endorsement_process": null,
+  "past_endorsements": [],
+  "summary": "Boulder Reporting Lab (Sept. 16, 2026) describes Andrea Meneghel as an Open Boulder board member who endorsed Aquiles La Grave individually. Not an elected office.",
+  "sources": [
+   "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/"
+  ],
+  "title": "Open Boulder board member",
+  "title_source_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+  "weight_group": "other_individual",
   "related": []
  }
 ]

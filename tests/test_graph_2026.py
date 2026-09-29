@@ -19,7 +19,7 @@ DB = ROOT / "data" / "bouldervotes.db"
 DOCS = ROOT / "docs"
 H = ROOT / "data" / "harvest" / "2026"
 
-AUDIT_HELD = {"E68", "E69", "E71", "E77", "E139", "E235"}
+AUDIT_HELD = {"E69", "E71", "E77", "E139", "E235"}
 HELD_STATEMENTS = {
     ("Jameson Goldstein", "privacy"), ("Aquiles La Grave", "budget"), ("Rachel Rose Isaacson", "housing"),
     ("Tara Winer", "budget"), ("Ryan Schuchard", "climate"), ("Jill Grano", "housing"), ("Dave Martus", "budget"),
@@ -146,7 +146,7 @@ class TestData(unittest.TestCase):
 
     def test_audit_held_edges_are_campaign_claims(self):
         con = db()
-        rows = {r["id"]: r for r in con.execute("SELECT * FROM endorsements WHERE id IN (%s)" % ",".join("?" * 6), tuple(AUDIT_HELD))}
+        rows = {r["id"]: r for r in con.execute("SELECT * FROM endorsements WHERE id IN (%s)" % ",".join("?" * len(AUDIT_HELD)), tuple(AUDIT_HELD))}
         self.assertEqual(set(rows), AUDIT_HELD)
         for r in rows.values():
             self.assertEqual(r["provenance"], "campaign_claim", r["id"])
@@ -155,7 +155,7 @@ class TestData(unittest.TestCase):
     def test_ranked_choice_ranks_kept(self):
         con = db()
         got = {r[0]: r[1] for r in con.execute("SELECT id, rank FROM endorsements WHERE rank IS NOT NULL")}
-        self.assertEqual(got, {"E0": 1, "E1": 2, "E46": 1, "E47": 2})
+        self.assertEqual(got, {"E0": 1, "E1": 2, "E46": 1, "E47": 2, "E204": 1})
 
     def test_no_bond_fanout(self):
         con = db()
@@ -167,6 +167,52 @@ class TestData(unittest.TestCase):
         ).fetchone()[0]
         self.assertEqual(n, 0, "journalist grouping must not become per-candidate bond answers")
         self.assertGreaterEqual(con.execute("SELECT COUNT(*) FROM reported_lines").fetchone()[0], 1)
+
+    def test_every_edge_has_verification_ledger_entry(self):
+        edges = json.loads((H / "endorsements.json").read_text())
+        ledger = {x["id"]: x for x in json.loads((H / "endorsement_verification.json").read_text())}
+        self.assertEqual({e["id"] for e in edges}, set(ledger))
+        for e in edges:
+            v = ledger[e["id"]]
+            self.assertIn(v["result"], {"PASS", "CORRECTED", "HOLD", "REMOVE"}, e["id"])
+            self.assertTrue(v["evidence_url"].startswith("http"), e["id"])
+            self.assertRegex(v["checked_on"], r"^\d{4}-\d{2}-\d{2}$")
+            self.assertTrue(v["note"].strip(), e["id"])
+            self.assertEqual(e["verification"]["result"], v["result"], e["id"])
+            if v["result"] == "REMOVE":
+                self.assertNotEqual(e["status"], "published", e["id"])
+            if v["result"] == "HOLD":
+                self.assertNotEqual(e["provenance"], "endorser_statement", e["id"])
+
+    def test_endorser_statements_have_endorser_authored_source(self):
+        from tools.approve_2026 import AUTHORED_ELSEWHERE, domain
+        orgs = {o["slug"]: o for o in json.loads((H / "organizations.json").read_text())}
+
+        def site(u):
+            return ".".join(domain(u).split(".")[-2:])
+
+        for e in json.loads((H / "endorsements.json").read_text()):
+            if e["provenance"] != "endorser_statement":
+                continue
+            self.assertIsNone(e["claimed_by"], e["id"])
+            url = e["source_url"]
+            own = orgs[e["endorser_slug"]].get("website")
+            if own and site(own) == site(url):
+                continue
+            self.assertTrue(any(k in url for k in AUTHORED_ELSEWHERE),
+                            f"{e['id']}: endorser_statement source {url} is not endorser-authored")
+
+    def test_sept29_backfill_and_upgrades(self):
+        con = db()
+        rows = {r["id"]: r for r in con.execute("SELECT id, provenance, claimed_by FROM endorsements")}
+        for eid in ("B1", "B2"):
+            self.assertEqual(rows[eid]["provenance"], "news_report")
+        for eid in ("E68", "E204"):
+            self.assertEqual(rows[eid]["provenance"], "endorser_statement")
+        dead = con.execute(
+            "SELECT COUNT(*) FROM endorsements e JOIN sources s ON s.id=e.source_id "
+            "WHERE s.url LIKE '%plan-boulder-county-endorsements%'").fetchone()[0]
+        self.assertEqual(dead, 0, "the dead PLAN URL must not be cited")
 
     def test_richmond_board_role_historical(self):
         con = db()

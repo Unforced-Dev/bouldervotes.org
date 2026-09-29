@@ -11,15 +11,21 @@
   "rank": 1,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Mayor, first-choice (ranked choice) endorsement; release spells the name 'LaGrave'."
+  "notes": "Mayor, ranked-choice first choice ('We are ranking Aquiles as our first and strongest choice'). The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement and ranks Aquiles first, Taishya second. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E1",
@@ -33,15 +39,21 @@
   "rank": 2,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Mayor, second-choice ranked-choice endorsement ('Our endorsement for a second place vote is Taishya Adams')."
+  "notes": "Mayor, ranked-choice second choice ('and Taishya as our second choice'). The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement and ranks Aquiles first, Taishya second. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E2",
@@ -55,12 +67,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": null,
-  "notes": "City Council endorsement (release lists 'Dave Martus')."
+  "notes": "City Council endorsement. The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E3",
@@ -74,12 +92,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": null,
-  "notes": "City Council endorsement (release lists 'Dave Martus')."
+  "notes": "City Council endorsement. The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E4",
@@ -93,12 +117,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": null,
-  "notes": "City Council endorsement (release lists 'Dave Martus')."
+  "notes": "City Council endorsement. The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E5",
@@ -112,12 +142,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": null,
-  "notes": "City Council endorsement (release lists 'Dave Martus')."
+  "notes": "City Council endorsement. The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E6",
@@ -131,12 +167,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://planboulder.org/plan-boulder-county-endorsements",
-  "source_title": "2026 PLAN-Boulder County Endorsements",
-  "published_on": "2026-09-18",
+  "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+  "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-28",
   "status": "published",
   "audit": null,
-  "notes": "City Council endorsement (release lists 'Dave Martus')."
+  "notes": "City Council endorsement. The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "note": "Cited URL planboulder.org/plan-boulder-county-endorsements now returns 404 and has no Wayback capture. PLAN's own live page (dated Sept. 28, 2026) makes the same endorsement. Source replaced; published_on set to the date the page states. BRL reported the La Grave endorsement on Sept. 15."
+  }
  },
  {
   "id": "E7",
@@ -150,15 +192,21 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
-  "source_title": "Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)",
-  "published_on": "2026-08-21",
+  "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+  "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+  "published_on": "2026-08-19",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Mayor (re-endorsement). Press release is dated Aug. 18; hosting page published Aug. 21."
+  "notes": "Mayor (re-endorsement). Press release is dated Aug. 18; hosting page published Aug. 21.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "note": "Boulder Progressives' own blog post (dated 19 Aug 2026) names this endorsement; it replaces the Yellow Scene repost of the release as the source. published_on 2026-08-21 -> 2026-08-19."
+  }
  },
  {
   "id": "E8",
@@ -172,12 +220,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
-  "source_title": "Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)",
-  "published_on": "2026-08-21",
+  "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+  "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+  "published_on": "2026-08-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21."
+  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "note": "Boulder Progressives' own blog post (dated 19 Aug 2026) names this endorsement; it replaces the Yellow Scene repost of the release as the source. published_on 2026-08-21 -> 2026-08-19."
+  }
  },
  {
   "id": "E9",
@@ -191,12 +245,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
-  "source_title": "Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)",
-  "published_on": "2026-08-21",
+  "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+  "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+  "published_on": "2026-08-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21."
+  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "note": "Boulder Progressives' own blog post (dated 19 Aug 2026) names this endorsement; it replaces the Yellow Scene repost of the release as the source. published_on 2026-08-21 -> 2026-08-19."
+  }
  },
  {
   "id": "E10",
@@ -210,12 +270,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
-  "source_title": "Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)",
-  "published_on": "2026-08-21",
+  "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+  "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+  "published_on": "2026-08-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21."
+  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "note": "Boulder Progressives' own blog post (dated 19 Aug 2026) names this endorsement; it replaces the Yellow Scene repost of the release as the source. published_on 2026-08-21 -> 2026-08-19."
+  }
  },
  {
   "id": "E11",
@@ -229,12 +295,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
-  "source_title": "Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)",
-  "published_on": "2026-08-21",
+  "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+  "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+  "published_on": "2026-08-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21."
+  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "note": "Boulder Progressives' own blog post (dated 19 Aug 2026) names this endorsement; it replaces the Yellow Scene repost of the release as the source. published_on 2026-08-21 -> 2026-08-19."
+  }
  },
  {
   "id": "E12",
@@ -248,12 +320,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
-  "source_title": "Boulder Progressives Announces Strongest Slate Ever for 2026 City Council Election (press release, Yellow Scene)",
-  "published_on": "2026-08-21",
+  "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+  "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+  "published_on": "2026-08-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21."
+  "notes": "City Council. Release names her 'Jill Adler Grano'. Press release is dated Aug. 18; hosting page published Aug. 21.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "note": "Boulder Progressives' own blog post (dated 19 Aug 2026) names this endorsement; it replaces the Yellow Scene repost of the release as the source. published_on 2026-08-21 -> 2026-08-19."
+  }
  },
  {
   "id": "E13",
@@ -275,7 +353,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Full endorsement Sept. 12, 2026; on Aug. 18 BP had 'recognized'/supported her because she entered after its process closed. The September 12 release calls her a board member; the current board roster does not list her, so present membership is unconfirmed. Press release is dated Sept. 12; hosting page published Sept. 20. Aug. 18 release recognized/supported her; the Sept. 12 release confers full endorsement."
+  "notes": "Full endorsement Sept. 12, 2026; on Aug. 18 BP had 'recognized'/supported her because she entered after its process closed. The September 12 release calls her a board member; the current board roster does not list her, so present membership is unconfirmed. Press release is dated Sept. 12; hosting page published Sept. 20. Aug. 18 release recognized/supported her; the Sept. 12 release confers full endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E14",
@@ -289,15 +373,21 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
-  "source_title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
-  "published_on": "2026-09-20",
+  "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+  "source_title": "Our 2026 ballot measure positions (Boulder Progressives)",
+  "published_on": "2026-09-16",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "YES recommendation. BP also took positions on statewide measures (not recorded here). Press release is dated Sept. 12; hosting page published Sept. 20."
+  "notes": "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "note": "Boulder Progressives' own post 'Our 2026 ballot measure positions' (dated 16 Sep 2026) shows VOTE YES; it replaces the Yellow Scene repost. published_on 2026-09-20 -> 2026-09-16."
+  }
  },
  {
   "id": "E15",
@@ -311,15 +401,21 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
-  "source_title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
-  "published_on": "2026-09-20",
+  "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+  "source_title": "Our 2026 ballot measure positions (Boulder Progressives)",
+  "published_on": "2026-09-16",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "YES recommendation. BP also took positions on statewide measures (not recorded here). Press release is dated Sept. 12; hosting page published Sept. 20."
+  "notes": "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "note": "Boulder Progressives' own post 'Our 2026 ballot measure positions' (dated 16 Sep 2026) shows VOTE YES; it replaces the Yellow Scene repost. published_on 2026-09-20 -> 2026-09-16."
+  }
  },
  {
   "id": "E16",
@@ -333,12 +429,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
-  "source_title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
-  "published_on": "2026-09-20",
+  "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+  "source_title": "Our 2026 ballot measure positions (Boulder Progressives)",
+  "published_on": "2026-09-16",
   "status": "published",
   "audit": null,
-  "notes": "YES recommendation. BP also took positions on statewide measures (not recorded here). Press release is dated Sept. 12; hosting page published Sept. 20."
+  "notes": "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "note": "Boulder Progressives' own post 'Our 2026 ballot measure positions' (dated 16 Sep 2026) shows VOTE YES; it replaces the Yellow Scene repost. published_on 2026-09-20 -> 2026-09-16."
+  }
  },
  {
   "id": "E17",
@@ -352,12 +454,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
-  "source_title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
-  "published_on": "2026-09-20",
+  "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+  "source_title": "Our 2026 ballot measure positions (Boulder Progressives)",
+  "published_on": "2026-09-16",
   "status": "published",
   "audit": null,
-  "notes": "YES recommendation. BP also took positions on statewide measures (not recorded here). Press release is dated Sept. 12; hosting page published Sept. 20."
+  "notes": "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "note": "Boulder Progressives' own post 'Our 2026 ballot measure positions' (dated 16 Sep 2026) shows VOTE YES; it replaces the Yellow Scene repost. published_on 2026-09-20 -> 2026-09-16."
+  }
  },
  {
   "id": "E18",
@@ -371,12 +479,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
-  "source_title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
-  "published_on": "2026-09-20",
+  "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+  "source_title": "Our 2026 ballot measure positions (Boulder Progressives)",
+  "published_on": "2026-09-16",
   "status": "published",
   "audit": null,
-  "notes": "YES recommendation. BP also took positions on statewide measures (not recorded here). Press release is dated Sept. 12; hosting page published Sept. 20."
+  "notes": "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "note": "Boulder Progressives' own post 'Our 2026 ballot measure positions' (dated 16 Sep 2026) shows VOTE YES; it replaces the Yellow Scene repost. published_on 2026-09-20 -> 2026-09-16."
+  }
  },
  {
   "id": "E19",
@@ -390,12 +504,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
-  "source_title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
-  "published_on": "2026-09-20",
+  "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+  "source_title": "Our 2026 ballot measure positions (Boulder Progressives)",
+  "published_on": "2026-09-16",
   "status": "published",
   "audit": null,
-  "notes": "YES recommendation. BP also took positions on statewide measures (not recorded here). Press release is dated Sept. 12; hosting page published Sept. 20."
+  "notes": "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "note": "Boulder Progressives' own post 'Our 2026 ballot measure positions' (dated 16 Sep 2026) shows VOTE YES; it replaces the Yellow Scene repost. published_on 2026-09-20 -> 2026-09-16."
+  }
  },
  {
   "id": "E20",
@@ -417,7 +537,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Mayor. Release adds 'a nod to Taishya Adams' for additional ranked-choice picks but does not formally endorse her. The release's 'nod' to Taishya Adams for additional ranked-choice picks is not a formal endorsement and is not recorded as one."
+  "notes": "Mayor. Release adds 'a nod to Taishya Adams' for additional ranked-choice picks but does not formally endorse her. The release's 'nod' to Taishya Adams for additional ranked-choice picks is not a formal endorsement and is not recorded as one.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E21",
@@ -436,7 +562,13 @@
   "published_on": "2026-09-17",
   "status": "published",
   "audit": null,
-  "notes": "City Council."
+  "notes": "City Council.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E22",
@@ -455,7 +587,13 @@
   "published_on": "2026-09-17",
   "status": "published",
   "audit": null,
-  "notes": "City Council."
+  "notes": "City Council.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E23",
@@ -474,7 +612,13 @@
   "published_on": "2026-09-17",
   "status": "published",
   "audit": null,
-  "notes": "City Council."
+  "notes": "City Council.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E24",
@@ -493,7 +637,13 @@
   "published_on": "2026-09-17",
   "status": "published",
   "audit": null,
-  "notes": "City Council."
+  "notes": "City Council.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E25",
@@ -512,7 +662,13 @@
   "published_on": "2026-09-17",
   "status": "published",
   "audit": null,
-  "notes": "City Council."
+  "notes": "City Council.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E26",
@@ -526,15 +682,21 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
-  "source_title": "Boulder Chamber Takes Measured Approach to 2026 Ballot Measures (press release, Yellow Scene)",
-  "published_on": "2026-09-12",
+  "source_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+  "source_title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
+  "published_on": "2026-09-09",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates."
+  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+   "note": "The Chamber's own release on boulderchamber.com (dated Sept. 9, 2026) states this position; it replaces the Yellow Scene repost dated Sept. 12. published_on -> 2026-09-09."
+  }
  },
  {
   "id": "E27",
@@ -548,15 +710,21 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
-  "source_title": "Boulder Chamber Takes Measured Approach to 2026 Ballot Measures (press release, Yellow Scene)",
-  "published_on": "2026-09-12",
+  "source_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+  "source_title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
+  "published_on": "2026-09-09",
   "status": "published",
   "audit": {
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates."
+  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+   "note": "The Chamber's own release on boulderchamber.com (dated Sept. 9, 2026) states this position; it replaces the Yellow Scene repost dated Sept. 12. published_on -> 2026-09-09."
+  }
  },
  {
   "id": "E28",
@@ -570,12 +738,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
-  "source_title": "Boulder Chamber Takes Measured Approach to 2026 Ballot Measures (press release, Yellow Scene)",
-  "published_on": "2026-09-12",
+  "source_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+  "source_title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
+  "published_on": "2026-09-09",
   "status": "published",
   "audit": null,
-  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates."
+  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+   "note": "The Chamber's own release on boulderchamber.com (dated Sept. 9, 2026) states this position; it replaces the Yellow Scene repost dated Sept. 12. published_on -> 2026-09-09."
+  }
  },
  {
   "id": "E29",
@@ -589,12 +763,18 @@
   "rank": null,
   "provenance": "endorser_statement",
   "claimed_by": null,
-  "source_url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
-  "source_title": "Boulder Chamber Takes Measured Approach to 2026 Ballot Measures (press release, Yellow Scene)",
-  "published_on": "2026-09-12",
+  "source_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+  "source_title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
+  "published_on": "2026-09-09",
   "status": "published",
   "audit": null,
-  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates."
+  "notes": "Chamber press release names measures without city ballot letters; letters mapped from Boulder Progressives' list of the same measures. Chamber also opposed statewide fentanyl penalties measure. Chamber states it does not endorse candidates.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+   "note": "The Chamber's own release on boulderchamber.com (dated Sept. 9, 2026) states this position; it replaces the Yellow Scene repost dated Sept. 12. published_on -> 2026-09-09."
+  }
  },
  {
   "id": "E30",
@@ -616,7 +796,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Mayor."
+  "notes": "Mayor.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E31",
@@ -635,7 +821,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E32",
@@ -654,7 +846,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E33",
@@ -673,7 +871,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E34",
@@ -692,7 +896,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E35",
@@ -711,7 +921,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E36",
@@ -730,7 +946,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E37",
@@ -749,7 +971,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp."
+  "notes": "City Council; seven endorsees for five seats. Date is the page's WordPress timestamp.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E38",
@@ -771,7 +999,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "SUPPORT. Passenger rail support is 'with a caveat' (keep and expand bus service). On 201 BB backs Option 2 (3 district + 2 at-large). BB took NO POSITION on the $400M bond (2K); not recorded as an endorsement. Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established."
+  "notes": "SUPPORT. Passenger rail support is 'with a caveat' (keep and expand bus service). On 201 BB backs Option 2 (3 district + 2 at-large). BB took NO POSITION on the $400M bond (2K); not recorded as an endorsement. Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E39",
@@ -790,7 +1024,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "SUPPORT. Passenger rail support is 'with a caveat' (keep and expand bus service). On 201 BB backs Option 2 (3 district + 2 at-large). BB took NO POSITION on the $400M bond (2K); not recorded as an endorsement. Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established."
+  "notes": "SUPPORT. Passenger rail support is 'with a caveat' (keep and expand bus service). On 201 BB backs Option 2 (3 district + 2 at-large). BB took NO POSITION on the $400M bond (2K); not recorded as an endorsement. Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E40",
@@ -809,7 +1049,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "SUPPORT. Passenger rail support is 'with a caveat' (keep and expand bus service). On 201 BB backs Option 2 (3 district + 2 at-large). BB took NO POSITION on the $400M bond (2K); not recorded as an endorsement. Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established."
+  "notes": "SUPPORT. Passenger rail support is 'with a caveat' (keep and expand bus service). On 201 BB backs Option 2 (3 district + 2 at-large). BB took NO POSITION on the $400M bond (2K); not recorded as an endorsement. Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E41",
@@ -831,7 +1077,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five."
+  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://openboulder.org/vote-news-opinions/",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E42",
@@ -850,7 +1102,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five."
+  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://openboulder.org/vote-news-opinions/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E43",
@@ -869,7 +1127,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five."
+  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://openboulder.org/vote-news-opinions/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E44",
@@ -888,7 +1152,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five."
+  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://openboulder.org/vote-news-opinions/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E45",
@@ -907,7 +1177,13 @@
   "published_on": "2026-09-14",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five."
+  "notes": "City Council. Open Boulder made no mayoral endorsement (per BRL, 2026-09-16). Donations to its Unofficial Candidates Committee support these five.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://openboulder.org/vote-news-opinions/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E46",
@@ -929,7 +1205,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "Mayor, ranked-choice first recommendation ('recommending ... Taishya Adams, followed by current mayor Aaron Brockett'). Media release is dated Sept. 18; hosting page published Sept. 19."
+  "notes": "Mayor, ranked-choice first recommendation ('recommending ... Taishya Adams, followed by current mayor Aaron Brockett'). Media release is dated Sept. 18; hosting page published Sept. 19.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E47",
@@ -948,7 +1230,13 @@
   "published_on": "2026-09-19",
   "status": "published",
   "audit": null,
-  "notes": "Mayor, ranked-choice second recommendation. Media release is dated Sept. 18; hosting page published Sept. 19."
+  "notes": "Mayor, ranked-choice second recommendation. Media release is dated Sept. 18; hosting page published Sept. 19.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E48",
@@ -967,7 +1255,13 @@
   "published_on": "2026-09-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Media release is dated Sept. 18; hosting page published Sept. 19."
+  "notes": "City Council. Media release is dated Sept. 18; hosting page published Sept. 19.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E49",
@@ -986,7 +1280,13 @@
   "published_on": "2026-09-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Media release is dated Sept. 18; hosting page published Sept. 19."
+  "notes": "City Council. Media release is dated Sept. 18; hosting page published Sept. 19.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E50",
@@ -1005,7 +1305,13 @@
   "published_on": "2026-09-19",
   "status": "published",
   "audit": null,
-  "notes": "City Council. Media release is dated Sept. 18; hosting page published Sept. 19."
+  "notes": "City Council. Media release is dated Sept. 18; hosting page published Sept. 19.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E51",
@@ -1024,7 +1330,13 @@
   "published_on": "2026-09-19",
   "status": "published",
   "audit": null,
-  "notes": "County measures on the City of Boulder voters' ballot. Media release is dated Sept. 18; hosting page published Sept. 19."
+  "notes": "County measures on the City of Boulder voters' ballot. Media release is dated Sept. 18; hosting page published Sept. 19.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E52",
@@ -1046,7 +1358,13 @@
    "result": "pass",
    "note": "Checked against the live cited page, Sept. 24, 2026."
   },
-  "notes": "County measures on the City of Boulder voters' ballot. Media release is dated Sept. 18; hosting page published Sept. 19. The labor council's release says \"Vote No on 3to5 Commissioners\"; the Question 200 label comes from other election coverage, not the release itself."
+  "notes": "County measures on the City of Boulder voters' ballot. Media release is dated Sept. 18; hosting page published Sept. 19. The labor council's release says \"Vote No on 3to5 Commissioners\"; the Question 200 label comes from other election coverage, not the release itself.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "note": "Cited page names the endorser in support of this target. Also in the Sept. 24 audit sample (pass)."
+  }
  },
  {
   "id": "E53",
@@ -1065,7 +1383,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": ""
+  "notes": "",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://strongerboulder.com/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E54",
@@ -1084,7 +1408,13 @@
   "published_on": "2026-09-17",
   "status": "published",
   "audit": null,
-  "notes": "Committee name explicitly states No on 2K; position drawn from its filed name."
+  "notes": "Committee name explicitly states No on 2K; position drawn from its filed name.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E55",
@@ -1103,7 +1433,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": ""
+  "notes": "",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.bouldervacancytax.org/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E56",
@@ -1122,7 +1458,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E57",
@@ -1141,7 +1483,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E58",
@@ -1160,7 +1508,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E59",
@@ -1179,7 +1533,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E60",
@@ -1198,7 +1558,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E61",
@@ -1217,7 +1583,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E62",
@@ -1236,7 +1608,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-017. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E63",
@@ -1255,7 +1633,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E64",
@@ -1274,7 +1658,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E65",
@@ -1293,7 +1683,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E66",
@@ -1312,7 +1708,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E67",
@@ -1331,7 +1733,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance."
+  "notes": "Filed purpose explicitly says committee supports these candidates; 2026-UCC-026. Separate node from sponsoring organization to preserve funding/provenance.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "note": "City clerk committee filing lists this candidate (fetched Sept. 29; server needs its missing TLS intermediate)."
+  }
  },
  {
   "id": "E68",
@@ -1343,17 +1751,20 @@
   "measure_label": null,
   "position": "endorse",
   "rank": null,
-  "provenance": "campaign_claim",
-  "claimed_by": "Jamillah Richmond campaign",
-  "source_url": "https://www.jamillahanewvoice.com/endorsements",
-  "source_title": "Endorsements – Jamillah, A New Voice for Boulder",
-  "published_on": null,
+  "provenance": "endorser_statement",
+  "claimed_by": null,
+  "source_url": "https://www.instagram.com/p/DdFbfKijZtU/",
+  "source_title": "@boulderdsa on Instagram: DSA endorses Taishya Adams and Jamillah Richmond",
+  "published_on": "2026-09-09",
   "status": "published",
-  "audit": {
-   "result": "hold_as_campaign_claim",
-   "note": "Audit HOLD: Richmond campaign lists Boulder DSA; no DSA-authored 2026 announcement located."
-  },
-  "notes": "Listed as Boulder DSA on candidate’s endorsement page; no independent 2026 chapter statement located."
+  "audit": null,
+  "notes": "Boulder County DSA's own post: 'proud to endorse Taishya Adams ... for Boulder Mayor, Jamillah Richmond ... for Boulder City Council'. The account is the one linked from boulderdsa.org.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.instagram.com/p/DdFbfKijZtU/",
+   "note": "Upgraded to endorser_statement. Sept. 9, 2026 post by @boulderdsa (the account linked from boulderdsa.org): 'Boulder County Democratic Socialists of America is proud to endorse ... Jamillah Richmond ... for Boulder City Council'. Resolves the Sept. 24 audit hold."
+  }
  },
  {
   "id": "E69",
@@ -1375,7 +1786,13 @@
    "result": "hold_as_campaign_claim",
    "note": "Audit HOLD: Schuchard's site says he earned this endorsement; no group-authored statement cited."
   },
-  "notes": "Candidate site lists group among endorsements; independent statement not located."
+  "notes": "Candidate site lists group among endorsements; independent statement not located.",
+  "verification": {
+   "result": "HOLD",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://runonclimate.org/candidates",
+   "note": "Campaign claim only. Run on Climate's candidate page lists Schuchard under '2023 Candidates', not '2026 Candidates'; no 2026 statement from the group found."
+  }
  },
  {
   "id": "E70",
@@ -1394,7 +1811,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Candidate site lists group among endorsements; independent statement not located."
+  "notes": "Candidate site lists group among endorsements; independent statement not located.",
+  "verification": {
+   "result": "HOLD",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Campaign claim only (logo and text on Schuchard's page). No Transform RTD website or statement found; the group has no website on file."
+  }
  },
  {
   "id": "E71",
@@ -1416,7 +1839,13 @@
    "result": "hold_as_campaign_claim",
    "note": "Audit HOLD: Winer campaign displays the group's logo (image alt text); no dated group announcement."
   },
-  "notes": "Logo on candidate’s Endorsements by Organizations section."
+  "notes": "Logo on candidate’s Endorsements by Organizations section.",
+  "verification": {
+   "result": "HOLD",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Campaign claim (logo alt text). BRL's Winer profile also says the group 'has endorsed her' (news, not the group's statement). The group's Facebook page could not be read without login."
+  }
  },
  {
   "id": "E72",
@@ -1435,7 +1864,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E73",
@@ -1454,7 +1889,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E74",
@@ -1473,7 +1914,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E75",
@@ -1492,7 +1939,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E76",
@@ -1511,7 +1964,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E77",
@@ -1533,7 +1992,13 @@
    "result": "hold_as_campaign_claim",
    "note": "Audit HOLD: Brockett campaign names Neguse; the cited page is the candidate's claim, not a Neguse statement. Personal support does not imply his congressional office endorsed."
   },
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "HOLD",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Campaign claim; no Neguse-authored statement found. Unchanged from the Sept. 24 audit."
+  }
  },
  {
   "id": "E78",
@@ -1552,7 +2017,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E79",
@@ -1571,7 +2042,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E80",
@@ -1590,7 +2067,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E81",
@@ -1609,7 +2092,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E82",
@@ -1628,7 +2117,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E83",
@@ -1647,7 +2142,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E84",
@@ -1666,7 +2167,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E85",
@@ -1685,7 +2192,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E86",
@@ -1704,7 +2217,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E87",
@@ -1723,7 +2242,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.benitaduran.com/new-page-2",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E88",
@@ -1742,7 +2267,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.rachelrose4boulder.com/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E89",
@@ -1761,7 +2292,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E90",
@@ -1780,7 +2317,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E91",
@@ -1799,7 +2342,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E92",
@@ -1818,7 +2367,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jamillahanewvoice.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E93",
@@ -1837,7 +2392,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.rachelrose4boulder.com/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E94",
@@ -1856,7 +2417,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E95",
@@ -1875,7 +2442,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E96",
@@ -1894,7 +2467,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E97",
@@ -1913,7 +2492,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E98",
@@ -1932,7 +2517,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E99",
@@ -1951,7 +2542,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E100",
@@ -1970,7 +2567,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E101",
@@ -1989,7 +2592,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E102",
@@ -2008,7 +2617,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E103",
@@ -2027,7 +2642,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E104",
@@ -2046,7 +2667,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.benitaduran.com/new-page-2",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E105",
@@ -2065,7 +2692,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E106",
@@ -2084,7 +2717,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E107",
@@ -2103,7 +2742,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E108",
@@ -2122,7 +2767,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E109",
@@ -2141,7 +2792,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E110",
@@ -2160,7 +2817,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E111",
@@ -2179,7 +2842,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E112",
@@ -2198,7 +2867,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E113",
@@ -2217,7 +2892,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E114",
@@ -2236,7 +2917,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.benitaduran.com/new-page-2",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E115",
@@ -2255,7 +2942,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E116",
@@ -2274,7 +2967,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E117",
@@ -2293,7 +2992,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E118",
@@ -2312,7 +3017,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E119",
@@ -2331,7 +3042,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E120",
@@ -2350,7 +3067,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E121",
@@ -2369,7 +3092,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E122",
@@ -2388,7 +3117,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E123",
@@ -2407,7 +3142,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E124",
@@ -2426,7 +3167,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E125",
@@ -2445,7 +3192,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E126",
@@ -2464,7 +3217,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E127",
@@ -2483,7 +3242,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E128",
@@ -2502,7 +3267,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E129",
@@ -2521,7 +3292,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E130",
@@ -2540,7 +3317,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E131",
@@ -2559,7 +3342,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.benitaduran.com/new-page-2",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E132",
@@ -2578,7 +3367,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E133",
@@ -2597,7 +3392,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E134",
@@ -2616,7 +3417,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E135",
@@ -2635,7 +3442,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E136",
@@ -2654,7 +3467,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E137",
@@ -2673,7 +3492,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jamillahanewvoice.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E138",
@@ -2692,7 +3517,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E139",
@@ -2714,7 +3545,13 @@
    "result": "hold_as_campaign_claim",
    "note": "Audit HOLD: Jamieson campaign lists Benjamin on an 'ENDORSED BY' card; not a Benjamin-authored announcement."
   },
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "HOLD",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements",
+   "note": "Campaign claim ('ENDORSED BY' card, JS-rendered); no Benjamin-authored statement found. Unchanged from the Sept. 24 audit."
+  }
  },
  {
   "id": "E140",
@@ -2733,7 +3570,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E141",
@@ -2752,7 +3595,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E142",
@@ -2771,7 +3620,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements.html",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E143",
@@ -2790,7 +3645,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E144",
@@ -2809,7 +3670,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E145",
@@ -2828,7 +3695,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E146",
@@ -2847,7 +3720,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E147",
@@ -2866,7 +3745,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E148",
@@ -2885,7 +3770,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E149",
@@ -2904,7 +3795,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E150",
@@ -2923,7 +3820,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E151",
@@ -2942,7 +3845,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E152",
@@ -2961,7 +3870,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E153",
@@ -2980,7 +3895,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E154",
@@ -2999,7 +3920,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E155",
@@ -3018,7 +3945,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E156",
@@ -3037,7 +3970,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E157",
@@ -3056,7 +3995,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E158",
@@ -3075,7 +4020,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E159",
@@ -3094,7 +4045,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E160",
@@ -3113,7 +4070,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E161",
@@ -3132,7 +4095,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E162",
@@ -3151,7 +4120,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E163",
@@ -3170,7 +4145,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E164",
@@ -3189,7 +4170,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E165",
@@ -3208,7 +4195,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements.html",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E166",
@@ -3227,7 +4220,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E167",
@@ -3246,7 +4245,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E168",
@@ -3265,7 +4270,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E169",
@@ -3284,7 +4295,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements.html",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E170",
@@ -3303,7 +4320,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E171",
@@ -3322,7 +4345,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E172",
@@ -3341,7 +4370,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jamillahanewvoice.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E173",
@@ -3360,7 +4395,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements.html",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E174",
@@ -3379,7 +4420,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E175",
@@ -3398,7 +4445,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E176",
@@ -3417,7 +4470,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E177",
@@ -3436,7 +4495,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E178",
@@ -3455,7 +4520,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jamillahanewvoice.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E179",
@@ -3474,7 +4545,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E180",
@@ -3493,7 +4570,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E181",
@@ -3512,7 +4595,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.fuquaforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E182",
@@ -3531,7 +4620,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E183",
@@ -3550,7 +4645,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jamillahanewvoice.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E184",
@@ -3569,7 +4670,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E185",
@@ -3588,7 +4695,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E186",
@@ -3607,7 +4720,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E187",
@@ -3626,7 +4745,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E188",
@@ -3645,7 +4770,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E189",
@@ -3664,7 +4795,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E190",
@@ -3683,7 +4820,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E191",
@@ -3702,7 +4845,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E192",
@@ -3721,7 +4870,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E193",
@@ -3740,7 +4895,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E194",
@@ -3759,7 +4920,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.benitaduran.com/new-page-2",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E195",
@@ -3778,7 +4945,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E196",
@@ -3797,7 +4970,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E197",
@@ -3816,7 +4995,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements.html",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E198",
@@ -3835,7 +5020,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E199",
@@ -3854,7 +5045,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.tinaforboulder.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E200",
@@ -3873,7 +5070,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E201",
@@ -3892,7 +5095,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E202",
@@ -3911,7 +5120,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office."
+  "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://rjforboulder.com/endorsements.html",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E203",
@@ -3930,7 +5145,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Better Boulder explicitly recommends Option 2 on Question 201; separate from its YES position on expansion (Question 200). Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established."
+  "notes": "Better Boulder explicitly recommends Option 2 on Question 201; separate from its YES position on expansion (Question 200). Source page metadata says first published 2026-08-24 and modified 2026-09-21; the date this particular position was first posted is not established.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
+   "note": "Cited page names the endorser in support of this target."
+  }
  },
  {
   "id": "E204",
@@ -3941,15 +5162,21 @@
   "measure_letter": null,
   "measure_label": null,
   "position": "endorse",
-  "rank": null,
-  "provenance": "news_report",
-  "claimed_by": "Boulder Reporting Lab candidate card",
-  "source_url": "https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/",
-  "source_title": "Meet the 19 candidates running for Boulder mayor and City Council in 2026",
-  "published_on": null,
+  "rank": 1,
+  "provenance": "endorser_statement",
+  "claimed_by": null,
+  "source_url": "https://www.instagram.com/p/DdFbfKijZtU/",
+  "source_title": "@boulderdsa on Instagram: DSA endorses Taishya Adams and Jamillah Richmond",
+  "published_on": "2026-09-09",
   "status": "published",
   "audit": null,
-  "notes": "Boulder Reporting Lab candidate card lists “Boulder DSA” as Adams’s endorser; chapter-authored statement not verified."
+  "notes": "Boulder County DSA's own post endorses Adams for mayor. Its Sept. 15 post says 'Rank @adamsforboulder first for Mayor' (https://www.instagram.com/reel/DdUvpOWtXXN/).",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.instagram.com/p/DdFbfKijZtU/",
+   "note": "Upgraded from news_report to endorser_statement. Same Sept. 9 @boulderdsa post endorses Taishya Adams for mayor. Rank 1 added: the Sept. 15 @boulderdsa reel says 'Rank @adamsforboulder first for Mayor' (https://www.instagram.com/reel/DdUvpOWtXXN/)."
+  }
  },
  {
   "id": "E205",
@@ -3968,7 +5195,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E206",
@@ -3987,7 +5220,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E207",
@@ -4006,7 +5245,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E208",
@@ -4025,7 +5270,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E209",
@@ -4044,7 +5295,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E210",
@@ -4063,7 +5320,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E211",
@@ -4082,7 +5345,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E212",
@@ -4101,7 +5370,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E213",
@@ -4120,7 +5395,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E214",
@@ -4139,7 +5420,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E215",
@@ -4158,7 +5445,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E216",
@@ -4177,7 +5470,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E217",
@@ -4196,7 +5495,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E218",
@@ -4215,7 +5520,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E219",
@@ -4234,7 +5545,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E220",
@@ -4253,7 +5570,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E221",
@@ -4272,7 +5595,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E222",
@@ -4291,7 +5620,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E223",
@@ -4310,7 +5645,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E224",
@@ -4329,7 +5670,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://erieco.gov/318/Town-Council",
+   "note": "Name, target and page PASS. Title corrected to 'Erie town councilmember' (Erie Town Council roster: Council Member District 3)."
+  }
  },
  {
   "id": "E225",
@@ -4348,7 +5695,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E226",
@@ -4367,7 +5720,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E227",
@@ -4386,7 +5745,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.nederlandco.org/1231/Board-of-Trustees",
+   "note": "Name, target and page PASS. Title corrected: Nederland has a Board of Trustees (official roster lists Kristopher Larsen, Trustee, 2024-2028); the campaign page's 'Nederland City Council' is shown as 'Nederland town trustee'."
+  }
  },
  {
   "id": "E228",
@@ -4405,7 +5770,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E229",
@@ -4424,7 +5795,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "CORRECTED",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.superiorcolorado.gov/Government/Town-Council/Town-Council/Stephanie-Miller-Council-Member",
+   "note": "Name, target and page PASS. Title corrected to 'Superior town councilmember' (Town of Superior roster: Council Member)."
+  }
  },
  {
   "id": "E230",
@@ -4443,7 +5820,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E231",
@@ -4462,7 +5845,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E232",
@@ -4481,7 +5870,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E233",
@@ -4500,7 +5895,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E234",
@@ -4519,7 +5920,13 @@
   "published_on": null,
   "status": "published",
   "audit": null,
-  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement."
+  "notes": "Listed as a personal endorsement on the campaign page; title is the campaign’s description, not institutional endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://brockett4mayor.org/endorsements/",
+   "note": "Cited page names the endorser in support of this target (campaign's claim; no endorser-authored statement found)."
+  }
  },
  {
   "id": "E235",
@@ -4541,7 +5948,113 @@
    "result": "hold_as_campaign_claim",
    "note": "Audit HOLD: the pro-2J committee's support page shows a Boulder County DSA logo; no chapter statement found."
   },
-  "notes": "Candidate/ballot committee’s support page displays a Boulder County DSA logo under “Support for Boulder’s Vacancy Tax”; no chapter-authored 2026 statement independently located."
+  "notes": "Candidate/ballot committee’s support page displays a Boulder County DSA logo under “Support for Boulder’s Vacancy Tax”; no chapter-authored 2026 statement independently located.",
+  "verification": {
+   "result": "HOLD",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.bouldervacancytax.org/endorsements",
+   "note": "Ballot-campaign claim (DSA logo). The chapter's Sept. 28 post says members vote on its November voter guide at the Oct. 3 general meeting; no DSA statement on 2J yet."
+  }
+ },
+ {
+  "id": "U1",
+  "endorser": "PLAN-Boulder County",
+  "endorser_type": "organization",
+  "endorser_slug": "plan-boulder-county",
+  "candidate": null,
+  "measure_letter": "2J",
+  "measure_label": null,
+  "position": "oppose",
+  "rank": null,
+  "provenance": "endorser_statement",
+  "claimed_by": null,
+  "source_url": "https://planboulder.org/2026-ballot-issue-endorsements",
+  "source_title": "2026 Ballot Issue Endorsements",
+  "published_on": "2026-09-27",
+  "status": "published",
+  "audit": null,
+  "notes": "PLAN-Boulder explicitly says No on 2J; not inferred from its mayor/council slate.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-ballot-issue-endorsements",
+   "note": "New edge. PLAN's own page (Sept. 27, 2026): 'City of Boulder Ballot Issue 2J - No'."
+  }
+ },
+ {
+  "id": "U2",
+  "endorser": "PLAN-Boulder County",
+  "endorser_type": "organization",
+  "endorser_slug": "plan-boulder-county",
+  "candidate": null,
+  "measure_letter": "2K",
+  "measure_label": null,
+  "position": "oppose",
+  "rank": null,
+  "provenance": "endorser_statement",
+  "claimed_by": null,
+  "source_url": "https://planboulder.org/2026-ballot-issue-endorsements",
+  "source_title": "2026 Ballot Issue Endorsements",
+  "published_on": "2026-09-27",
+  "status": "published",
+  "audit": null,
+  "notes": "PLAN-Boulder explicitly says No on 2K.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-ballot-issue-endorsements",
+   "note": "New edge. PLAN's own page (Sept. 27, 2026): 'City of Boulder Ballot Issue 2K - No'."
+  }
+ },
+ {
+  "id": "U3",
+  "endorser": "Guyleen Castriotta",
+  "endorser_type": "person",
+  "endorser_slug": "guyleen-castriotta",
+  "candidate": "Tara Winer",
+  "measure_letter": null,
+  "measure_label": null,
+  "position": "endorse",
+  "rank": null,
+  "provenance": "campaign_claim",
+  "claimed_by": "Tara Winer campaign",
+  "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+  "source_title": "Tara Winer's Endorsers",
+  "published_on": null,
+  "status": "published",
+  "audit": null,
+  "notes": "Newly observed on live campaign page September 29, 2026; prior archived page is an old 2023 slate, so first-publication date cannot be established. Listed as Broomfield mayor; personal endorsement, not a city endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "note": "New edge (campaign claim). Winer's page lists 'Guyleen Castriotta, Mayor of Broomfield'; first-publication date unknown."
+  }
+ },
+ {
+  "id": "U4",
+  "endorser": "Leslie Durgin",
+  "endorser_type": "person",
+  "endorser_slug": "leslie-durgin",
+  "candidate": "Jill Grano",
+  "measure_letter": null,
+  "measure_label": null,
+  "position": "endorse",
+  "rank": null,
+  "provenance": "campaign_claim",
+  "claimed_by": "Jill Grano campaign",
+  "source_url": "https://www.jillforcouncil.com/endorsements",
+  "source_title": "Endorsements — Jill for City Council",
+  "published_on": null,
+  "status": "published",
+  "audit": null,
+  "notes": "Newly observed on live campaign page September 29, 2026; absent September 10 archive, but may have appeared September 11–24. Listed as former Boulder mayor; personal endorsement.",
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://www.jillforcouncil.com/endorsements",
+   "note": "New edge (campaign claim). Grano's page lists 'Leslie Durgin, former Mayor of Boulder'; first-publication date unknown."
+  }
  },
  {
   "id": "M1",
@@ -4560,6 +6073,87 @@
   "rank": null,
   "claimed_by": null,
   "status": "published",
-  "audit": null
+  "audit": null,
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://boulderreportinglab.org/2026/08/30/kc-becker-boulder-deserves-a-better-bond-proposal-not-a-400-million-blank-check",
+   "note": "Signed op-ed by KC Becker ends 'until it does, I'm voting no.' Endorser-authored."
+  }
+ },
+ {
+  "id": "N1",
+  "endorser": "PLAN-Boulder County",
+  "endorser_type": "organization",
+  "endorser_slug": "plan-boulder-county",
+  "candidate": null,
+  "position": "endorse",
+  "provenance": "endorser_statement",
+  "claimed_by": null,
+  "source_url": "https://planboulder.org/2026-ballot-issue-endorsements",
+  "source_title": "2026 Ballot Issue Endorsements (PLAN-Boulder County)",
+  "published_on": "2026-09-27",
+  "notes": "PLAN-Boulder's own page: 'Boulder County Ballot Question 200 - Yes'. PLAN also says No on statewide Proposition 137 (not recorded here).",
+  "measure_letter": null,
+  "measure_label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+  "rank": null,
+  "status": "published",
+  "audit": null,
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://planboulder.org/2026-ballot-issue-endorsements",
+   "note": "New edge. PLAN's own page (Sept. 27, 2026): 'Boulder County Ballot Question 200 - Yes'."
+  }
+ },
+ {
+  "id": "B1",
+  "endorser": "Jan Burton",
+  "endorser_type": "person",
+  "endorser_slug": "jan-burton",
+  "candidate": "Aquiles La Grave",
+  "position": "endorse",
+  "provenance": "news_report",
+  "claimed_by": "Boulder Reporting Lab (Sept. 16 report)",
+  "source_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+  "source_title": "Boulder mayoral candidate Aquiles La Grave faces lawsuit and campaign finance complaint (Boulder Reporting Lab)",
+  "published_on": "2026-09-16",
+  "notes": "BRL: 'Burton and another Open Boulder board member, Andrea Meneghel, have endorsed him individually.' Burton is also a La Grave campaign adviser. Open Boulder itself made no mayoral endorsement.",
+  "measure_letter": null,
+  "measure_label": null,
+  "rank": null,
+  "status": "published",
+  "audit": null,
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+   "note": "Backfill (news_report). BRL, Sept. 16, 2026: 'Burton and another Open Boulder board member, Andrea Meneghel, have endorsed him individually.' No Burton-authored statement found."
+  }
+ },
+ {
+  "id": "B2",
+  "endorser": "Andrea Meneghel",
+  "endorser_type": "person",
+  "endorser_slug": "andrea-meneghel",
+  "candidate": "Aquiles La Grave",
+  "position": "endorse",
+  "provenance": "news_report",
+  "claimed_by": "Boulder Reporting Lab (Sept. 16 report)",
+  "source_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+  "source_title": "Boulder mayoral candidate Aquiles La Grave faces lawsuit and campaign finance complaint (Boulder Reporting Lab)",
+  "published_on": "2026-09-16",
+  "notes": "BRL: 'Burton and another Open Boulder board member, Andrea Meneghel, have endorsed him individually.' Open Boulder itself made no mayoral endorsement.",
+  "measure_letter": null,
+  "measure_label": null,
+  "rank": null,
+  "status": "published",
+  "audit": null,
+  "verification": {
+   "result": "PASS",
+   "checked_on": "2026-09-29",
+   "evidence_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+   "note": "Backfill (news_report). Same BRL Sept. 16 sentence names Andrea Meneghel as an individual La Grave endorser. No Meneghel-authored statement found."
+  }
  }
 ]

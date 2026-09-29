@@ -49,8 +49,8 @@ HELD_STATEMENTS = {
 }
 
 # --- rule 1: audit-held edges that must render as campaign claims -----------
+# (E68 left this list on Sept. 29: the chapter's own Sept. 9 post endorses Richmond.)
 AUDIT_HELD_EDGES = {
-    68: "Audit HOLD: Richmond campaign lists Boulder DSA; no DSA-authored 2026 announcement located.",
     69: "Audit HOLD: Schuchard's site says he earned this endorsement; no group-authored statement cited.",
     71: "Audit HOLD: Winer campaign displays the group's logo (image alt text); no dated group announcement.",
     77: "Audit HOLD: Brockett campaign names Neguse; the cited page is the candidate's claim, not a Neguse statement. Personal support does not imply his congressional office endorsed.",
@@ -62,9 +62,114 @@ AUDIT_HELD_EDGES = {
 # own release and no endorser-authored statement was located (audit: "apply the
 # same rule ... E70, E204"). Shown with its own visible label, never as the
 # endorser's voice.
-NEWS_REPORT_EDGES = {
-    204: "Boulder Reporting Lab candidate card",
+NEWS_REPORT_EDGES: dict[int, str] = {
+    # E204 (DSA -> Adams) was upgraded Sept. 29; see SOURCE_CORRECTIONS.
 }
+
+# ---------------------------------------------------------------------------
+# Sept. 29, 2026 full verification (bv-research/endorsement_verification_2026.json).
+# Every edge has a ledger entry; the decisions that change data are below.
+# ---------------------------------------------------------------------------
+VERIFIED_ON = "2026-09-29"
+PLAN_2026 = "https://planboulder.org/2026-city-council-candidate-endorsements"
+PLAN_BALLOT_2026 = "https://planboulder.org/2026-ballot-issue-endorsements"
+BP_SLATE = "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/"
+BP_MEASURES = "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/"
+CHAMBER_RELEASE = "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/"
+DSA_SEPT9 = "https://www.instagram.com/p/DdFbfKijZtU/"
+BRL_SEPT16 = ("https://boulderreportinglab.org/2026/09/16/"
+              "boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/")
+
+# Edge index -> (source_url, source_title, published_on, replacement notes or None).
+# Used when the cited page is dead, or when the endorser's own page exists
+# (preferred over a repost). published_on is only what the page itself states.
+SOURCE_CORRECTIONS: dict[int, tuple[str, str, str | None, str | None]] = {}
+_PLAN_T = "2026 Candidate Endorsements (PLAN-Boulder County)"
+SOURCE_CORRECTIONS[0] = (PLAN_2026, _PLAN_T, "2026-09-28",
+                         "Mayor, ranked-choice first choice ('We are ranking Aquiles as our first and strongest choice'). "
+                         "The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.")
+SOURCE_CORRECTIONS[1] = (PLAN_2026, _PLAN_T, "2026-09-28",
+                         "Mayor, ranked-choice second choice ('and Taishya as our second choice'). "
+                         "The originally cited planboulder.org/plan-boulder-county-endorsements page now returns 404 and was never archived.")
+for _i in range(2, 7):
+    SOURCE_CORRECTIONS[_i] = (PLAN_2026, _PLAN_T, "2026-09-28",
+                              "City Council endorsement. The originally cited planboulder.org/plan-boulder-county-endorsements "
+                              "page now returns 404 and was never archived.")
+for _i in range(7, 13):
+    SOURCE_CORRECTIONS[_i] = (BP_SLATE, "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+                              "2026-08-19", None)
+for _i in range(14, 20):
+    SOURCE_CORRECTIONS[_i] = (BP_MEASURES, "Our 2026 ballot measure positions (Boulder Progressives)", "2026-09-16",
+                              "VOTE YES on the group's own ballot-measure post. BP also took statewide positions (not recorded here).")
+for _i in range(26, 30):
+    SOURCE_CORRECTIONS[_i] = (CHAMBER_RELEASE, "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
+                              "2026-09-09", None)
+SOURCE_CORRECTIONS[68] = (DSA_SEPT9, "@boulderdsa on Instagram: DSA endorses Taishya Adams and Jamillah Richmond", "2026-09-09",
+                          "Boulder County DSA's own post: 'proud to endorse Taishya Adams ... for Boulder Mayor, Jamillah Richmond "
+                          "... for Boulder City Council'. The account is the one linked from boulderdsa.org.")
+SOURCE_CORRECTIONS[204] = SOURCE_CORRECTIONS[68][:3] + (
+    "Boulder County DSA's own post endorses Adams for mayor. Its Sept. 15 post says 'Rank @adamsforboulder first for Mayor' "
+    "(https://www.instagram.com/reel/DdUvpOWtXXN/).",)
+
+# Edge index -> provenance forced by the verification (endorser's own source found).
+PROVENANCE_UPGRADES = {68: "endorser_statement", 204: "endorser_statement"}
+
+# Endorser-statement sources NOT on the endorser's own website, with why they
+# still count as the endorser's own words. Anything else must be on the
+# endorser's website (tests enforce this).
+AUTHORED_ELSEWHERE = {
+    "yellowscene.com/2026/08/21/": "verbatim_press_release",
+    "yellowscene.com/2026/09/17/": "verbatim_press_release",
+    "yellowscene.com/2026/09/19/": "verbatim_press_release",
+    "yellowscene.com/2026/09/20/": "verbatim_press_release",
+    "yellowscene.com/2026/09/12/": "verbatim_press_release",
+    "instagram.com/p/DdFbfKijZtU": "endorser_social_account",
+    "boulderreportinglab.org/2026/08/30/kc-becker": "signed_op_ed",
+}
+
+# Organization websites missing from the research file.
+ORG_WEBSITE = {"boulder-county-dsa": "https://boulderdsa.org/"}
+
+# Person-endorser titles corrected against the official government roster
+# (the campaign page's wording was wrong for the kind of government).
+TITLE_CORRECTIONS = {
+    "kris-larsen": ("Nederland town trustee", "https://www.nederlandco.org/1231/Board-of-Trustees"),
+    "emily-baer": ("Erie town councilmember", "https://erieco.gov/318/Town-Council"),
+    "stephanie-miller": ("Superior town councilmember",
+                         "https://www.superiorcolorado.gov/Government/Town-Council/Town-Council/Stephanie-Miller-Council-Member"),
+}
+
+# Person endorsers added by this pass (no profile in the research file).
+NEW_PERSON_PROFILES = [
+    ("guyleen-castriotta", "Guyleen Castriotta", "Broomfield mayor", "https://www.broomfield.org/2694/Mayor-Guyleen-Castriotta",
+     "Guyleen Castriotta is listed as Mayor of Broomfield on Tara Winer's 2026 endorsement page. This is a personal endorsement, not one made by the office.",
+     ["https://www.taraforboulder.com/endorsements/content/endorsers/"]),
+    ("andrea-meneghel", "Andrea Meneghel", "Open Boulder board member", BRL_SEPT16,
+     "Boulder Reporting Lab (Sept. 16, 2026) describes Andrea Meneghel as an Open Boulder board member who endorsed Aquiles La Grave individually. Not an elected office.",
+     [BRL_SEPT16]),
+]
+
+# Edges added by this pass. The research update file supplies U1-U4.
+UPDATE_EDGE_IDS = ["U1", "U2", "U3", "U4"]
+NEW_EDGES = [
+    {"id": "N1", "endorser": "PLAN-Boulder County", "endorser_type": "organization", "endorser_slug": "plan-boulder-county",
+     "candidate": None, "measure": "Boulder County Question 200: Expand Board of Commissioners to Five", "position": "endorse",
+     "provenance": "endorser_statement", "claimed_by": None, "source_url": PLAN_BALLOT_2026,
+     "source_title": "2026 Ballot Issue Endorsements (PLAN-Boulder County)", "published_on": "2026-09-27",
+     "notes": "PLAN-Boulder's own page: 'Boulder County Ballot Question 200 - Yes'. PLAN also says No on statewide Proposition 137 (not recorded here)."},
+    {"id": "B1", "endorser": "Jan Burton", "endorser_type": "person", "endorser_slug": "jan-burton",
+     "candidate": "Aquiles La Grave", "measure": None, "position": "endorse",
+     "provenance": "news_report", "claimed_by": "Boulder Reporting Lab (Sept. 16 report)", "source_url": BRL_SEPT16,
+     "source_title": "Boulder mayoral candidate Aquiles La Grave faces lawsuit and campaign finance complaint (Boulder Reporting Lab)",
+     "published_on": "2026-09-16",
+     "notes": "BRL: 'Burton and another Open Boulder board member, Andrea Meneghel, have endorsed him individually.' Burton is also a La Grave campaign adviser. Open Boulder itself made no mayoral endorsement."},
+    {"id": "B2", "endorser": "Andrea Meneghel", "endorser_type": "person", "endorser_slug": "andrea-meneghel",
+     "candidate": "Aquiles La Grave", "measure": None, "position": "endorse",
+     "provenance": "news_report", "claimed_by": "Boulder Reporting Lab (Sept. 16 report)", "source_url": BRL_SEPT16,
+     "source_title": "Boulder mayoral candidate Aquiles La Grave faces lawsuit and campaign finance complaint (Boulder Reporting Lab)",
+     "published_on": "2026-09-16",
+     "notes": "BRL: 'Burton and another Open Boulder board member, Andrea Meneghel, have endorsed him individually.' Open Boulder itself made no mayoral endorsement."},
+]
 
 # Measure positions that appear only in measures_2026.json (not in the edge
 # file). Added as edges so the measure pages and the endorser pages agree.
@@ -88,7 +193,7 @@ EXTRA_MEASURE_EDGES = [
 AUDIT_PASS_EDGES = {0, 1, 7, 13, 14, 15, 20, 26, 27, 30, 38, 41, 46, 52}
 
 # --- rule 6: ranked-choice order, from the source wording in each edge's notes
-RANK = {0: 1, 1: 2, 46: 1, 47: 2}
+RANK = {0: 1, 1: 2, 46: 1, 47: 2, 204: 1}
 
 # Extra notes the audit asked for, appended to the edge's own notes.
 EXTRA_NOTES = {
@@ -125,7 +230,7 @@ ORG_RELATIONS = [
 ELECTED_WORDS = (
     "mayor", "councilmember", "senator", "representative", "commissioner",
     "district attorney", "board of education", "house speaker", "senate president",
-    "rtd board",
+    "rtd board", "town trustee", "town councilmember",
 )
 
 
@@ -142,7 +247,7 @@ def weight_group(kind: str, title: str | None) -> str:
     if not t:
         return "other_individual"
     first = t.split(";")[0].strip()
-    if "nominee" in first or first.endswith("candidate") or "trustee" in first:
+    if "nominee" in first or first.endswith("candidate") or ("trustee" in first and "town trustee" not in first):
         return "other_individual"
     elected = any(w in first for w in ELECTED_WORDS)
     if not elected:
@@ -207,11 +312,31 @@ def main() -> None:
         assert "dailycamera.com" in c["statements"][i]["source_url"], (name, i)
 
     # ---------------- organizations / endorser profiles ----------------
+    orgs = list(orgs)
+    have_slugs = {o["slug"] for o in orgs}
+    for slug, name, role, role_src, summary, sources in NEW_PERSON_PROFILES:
+        if slug in have_slugs:
+            continue
+        orgs.append({
+            "slug": slug, "name": name, "kind": "person", "website": None, "legal_form": None,
+            "mission_quote": {"text": "", "source_url": ""}, "founded": None,
+            "leadership": [{"name": name, "role": role, "source_url": role_src}],
+            "funding": None, "endorsement_process": None, "past_endorsements": [],
+            "summary": summary, "sources": sources,
+        })
     by_slug = {o["slug"]: o for o in orgs}
     out_orgs = []
     for o in orgs:
         o = json.loads(json.dumps(o))  # deep copy
         o["name"] = DISPLAY_NAME.get(o["name"], o["name"])
+        if o["slug"] in ORG_WEBSITE and not o.get("website"):
+            o["website"] = ORG_WEBSITE[o["slug"]]
+        if o["slug"] in TITLE_CORRECTIONS and o["leadership"]:
+            role, role_src = TITLE_CORRECTIONS[o["slug"]]
+            o["summary"] = o["summary"].replace(o["leadership"][0]["role"], role, 1) + (
+                f" Title corrected to the official roster ({VERIFIED_ON}); the campaign page's wording differed.")
+            o["leadership"][0]["role"] = role
+            o["leadership"][0]["source_url"] = role_src
         title = title_src = None
         if o["kind"] == "person":
             if o["leadership"]:
@@ -240,8 +365,17 @@ def main() -> None:
         out_orgs.append(o)
 
     # ---------------- endorsements ----------------
+    ledger = {x["id"]: x for x in json.loads((src / "endorsement_verification_2026.json").read_text())}
+    update = {f"U{k + 1}": x for k, x in enumerate(json.loads((src / "endorsements_2026_update.json").read_text()))}
+    assert list(update) == UPDATE_EDGE_IDS, list(update)
+    edges = [dict(e) for e in edges]
+    for i, (url, title, pub, note) in SOURCE_CORRECTIONS.items():
+        edges[i].update(source_url=url, source_title=title, published_on=pub)
+        if note:
+            edges[i]["notes"] = note
     out_edges = []
-    for i, e in enumerate(edges):
+    work = [(f"E{i}", i, e) for i, e in enumerate(edges)] + [(k, None, e) for k, e in update.items()]
+    for eid, i, e in work:
         d = domain(e["source_url"])
         target = e["candidate"]
         target = DISPLAY_NAME.get(target, target) if target else None
@@ -260,6 +394,11 @@ def main() -> None:
         if i in NEWS_REPORT_EDGES:
             prov = "news_report"
             claimed_by = NEWS_REPORT_EDGES[i]
+        if i in PROVENANCE_UPGRADES:
+            prov = PROVENANCE_UPGRADES[i]
+            claimed_by = None
+        if i is None:
+            assert prov == e["provenance"], (eid, prov, e["provenance"])
         if i in AUDIT_HELD_EDGES:
             assert prov == "campaign_claim", (i, prov)
         letter = None
@@ -281,7 +420,7 @@ def main() -> None:
         endorser = e["endorser"]
         endorser = DISPLAY_NAME.get(endorser, endorser)
         out_edges.append({
-            "id": f"E{i}",
+            "id": eid,
             "endorser": endorser,
             "endorser_type": e["endorser_type"],
             "endorser_slug": e["endorser_slug"],
@@ -289,7 +428,7 @@ def main() -> None:
             "measure_letter": letter,
             "measure_label": label,
             "position": e["position"],
-            "rank": RANK.get(i),
+            "rank": RANK.get(i) if i is not None else None,
             "provenance": prov,
             "claimed_by": claimed_by,
             "source_url": e["source_url"],
@@ -312,6 +451,27 @@ def main() -> None:
             "candidate": None, "measure_label": None, "rank": None, "claimed_by": None,
             "status": "published", "audit": None,
         })
+    for x in NEW_EDGES:
+        assert x["endorser_slug"] in by_slug, x["endorser_slug"]
+        letter = next((v for k, v in MEASURE_LETTER.items() if (x["measure"] or "").startswith(k)), None)
+        out_edges.append({
+            **{k: x[k] for k in ("id", "endorser", "endorser_type", "endorser_slug", "candidate", "position",
+                                 "provenance", "claimed_by", "source_url", "source_title", "published_on", "notes")},
+            "measure_letter": letter, "measure_label": None if letter or not x["measure"] else x["measure"],
+            "rank": None, "status": "published", "audit": None,
+        })
+
+    # Sept. 29 verification: every edge carries its ledger entry; REMOVE drops it
+    # from the published graph (kept in the ledger as the record).
+    ids = [x["id"] for x in out_edges]
+    assert len(ids) == len(set(ids)), "duplicate edge ids"
+    assert set(ids) == set(ledger), (set(ids) ^ set(ledger))
+    for x in out_edges:
+        v = ledger[x["id"]]
+        x["verification"] = {k: v[k] for k in ("result", "checked_on", "evidence_url", "note")}
+        if v["result"] == "REMOVE":
+            x["status"] = "removed"
+    shutil.copyfile(src / "endorsement_verification_2026.json", OUT / "endorsement_verification.json")
 
     (OUT / "candidates.json").write_text(json.dumps(out_cands, indent=1, ensure_ascii=False) + "\n")
     (OUT / "statements.json").write_text(json.dumps(out_stmts, indent=1, ensure_ascii=False) + "\n")
