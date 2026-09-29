@@ -13,6 +13,7 @@ Trust rules rendered here (see tools/approve_2026.py for where data is set):
 """
 from __future__ import annotations
 
+from build_plain import plain
 import html
 import json
 import re
@@ -364,6 +365,7 @@ class Graph2026:
 
     # ------------------------------------------------------------ person page sections
     def person_sections(self, person_id: int, prefix: str = "../") -> str:
+        from build import human_label  # late import: build.py imports this module
         bits: list[str] = []
         cand = self.q(
             """SELECT c.id, o.name AS office, o.slug AS office_slug, cp.*
@@ -390,7 +392,7 @@ class Graph2026:
                 bits.append("<p class='note'>Bio sources: " + ", ".join(
                     f"<a href='{esc(r['url'])}'>{esc(re.sub(r'^https?://(www\\.)?', '', r['url']).split('/')[0])}</a>" for r in srcs) + "</p>")
             if cand["research_notes"]:
-                bits.append(f"<p class='note'>{esc(cand['research_notes'])}</p>")
+                bits.append(f"<p class='note'>{esc(plain(cand['research_notes']))}</p>")
 
             # statements
             pub = self.statements(person_id)
@@ -409,7 +411,7 @@ class Graph2026:
                     date = f" · {esc(s['published_on'])}" if s["published_on"] else ""
                     bits.append(
                         f"<div class='card' data-statement='{esc(s['id'])}'>{self.quote(s['text'])}"
-                        f"<p class='note'>Source: {esc(s['publisher'])} · {esc(s['kind'].replace('_', ' '))}{date} · "
+                        f"<p class='note'>Source: {esc(s['publisher'])} · {esc(human_label(s['kind']))}{date} · "
                         f"<a href='{esc(s['source_url'])}'>{esc(s['source_title'])}</a></p></div>"
                     )
             else:
@@ -452,7 +454,7 @@ class Graph2026:
             bits.append("<h2>Organization roles on file</h2><ul>")
             for r in roles:
                 when = "" if r["is_current"] else " <strong>(historical listing, not current)</strong>"
-                note = f" <span class='note'>{esc(r['notes'])}</span>" if r["notes"] else ""
+                note = f" <span class='note'>{esc(plain(r['notes']))}</span>" if r["notes"] else ""
                 bits.append(f"<li><a href='{prefix}orgs/{esc(r['slug'])}.html'>{esc(r['name'])}</a>: {esc(r['role'])}{when} "
                             f"<a href='{esc(r['url'])}'>source</a>{note}</li>")
             bits.append("</ul>")
@@ -575,6 +577,7 @@ class Graph2026:
         (self.out / "orgs.html").write_text(self.page("Organizations", "\n".join(idx), year=2026), encoding="utf-8")
 
     def _write_org_pages(self, rows) -> None:
+        from build import human_label  # late import: build.py imports this module
         for r in rows:
             oid = r["org_id"]
 
@@ -585,7 +588,7 @@ class Graph2026:
                 return f" <a href='{esc(u)}'>source</a>"
 
             b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../orgs.html'>Organizations</a></p>", f"<h1>{esc(r['name'])}</h1>"]
-            meta = [esc(r["endorser_kind"])]
+            meta = [esc(human_label(r["endorser_kind"]))]
             if r["legal_form"]:
                 meta.append(esc(r["legal_form"]))
             if r["founded"]:
@@ -617,7 +620,7 @@ class Graph2026:
                 for l in lead:
                     nm = f"<a href='../people/{esc(l['pslug'])}.html'>{esc(l['name'])}</a>" if l["pslug"] else esc(l["name"])
                     when = "" if l["is_current"] else " <strong>(historical listing, not current)</strong>"
-                    note = f" <span class='note'>{esc(l['notes'])}</span>" if l["notes"] else ""
+                    note = f" <span class='note'>{esc(plain(l['notes']))}</span>" if l["notes"] else ""
                     b.append(f"<li>{nm} — {esc(l['role'])}{when} <a href='{esc(l['url'])}'>source</a>{note}</li>")
                 b.append("</ul>")
             b.append("<h2>Money</h2>")
