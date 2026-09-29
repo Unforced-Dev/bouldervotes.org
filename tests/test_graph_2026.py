@@ -252,6 +252,32 @@ class TestBuiltHtml(unittest.TestCase):
         self.assertIn("civics.html", s)
         self.assertNotRegex(s.lower(), r"\bwe recommend\b|\bscore:")
 
+    def test_home_lists_candidates_in_ballot_order(self):
+        order = json.loads((H / "ballot_order.json").read_text())
+        self.assertTrue(order["source_url"].startswith("https://bouldercolorado.gov/"))
+        s = self.pages[DOCS / "index.html"]
+        self.assertNotIn("Alphabetical order", s)
+        self.assertIn("Listed in the order they appear on your ballot", s)
+        self.assertIn(order["source_url"], s)
+        for race, anchor, nxt in (("mayor", "id='mayor'", "id='council'"), ("council", "id='council'", "id='measures'")):
+            section = s[s.index(anchor):s.index(nxt)]
+            shown = re.findall(r"<h3><a href='people/[^']+'>([^<]+)</a></h3>", section)
+            self.assertEqual(shown, order["races"][race], race)
+        year = self.pages[DOCS / "2026.html"]
+        pos = [year.index(f">{n}<") for n in order["races"]["mayor"]]
+        self.assertEqual(pos, sorted(pos))
+
+    def test_ballot_positions_loaded(self):
+        order = json.loads((H / "ballot_order.json").read_text())
+        con = db()
+        for race, names in order["races"].items():
+            rows = con.execute(
+                """SELECT p.full_name FROM candidacies c JOIN people p ON p.id=c.person_id
+                   JOIN races r ON r.id=c.race_id JOIN elections e ON e.id=r.election_id
+                   JOIN offices o ON o.id=r.office_id WHERE e.year=2026 AND o.slug=?
+                   ORDER BY c.ballot_position""", (race,)).fetchall()
+            self.assertEqual([r[0] for r in rows], names)
+
     def test_martus_display_name(self):
         s = self.pages[DOCS / "index.html"]
         self.assertIn("Dave Martus", s)

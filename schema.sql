@@ -61,6 +61,7 @@ CREATE TABLE IF NOT EXISTS candidacies (
   certified_on TEXT,                -- ISO date
   matching_funds INTEGER NOT NULL DEFAULT 0,
   campaign_url TEXT,
+  ballot_position INTEGER,          -- 1-based order on the ballot; NULL where not recorded
   notes TEXT,
   UNIQUE (person_id, race_id)
 );

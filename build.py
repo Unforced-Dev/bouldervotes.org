@@ -360,7 +360,7 @@ def main() -> None:
                       c.status, c.is_incumbent, c.matching_funds, c.campaign_url, c.certified_on
                FROM candidacies c JOIN people p ON p.id=c.person_id
                WHERE c.race_id=?
-               ORDER BY p.sort_name""",
+               ORDER BY c.ballot_position IS NULL, c.ballot_position, p.sort_name""",
             (rid,),
         ).fetchall()
 
@@ -723,14 +723,22 @@ def main() -> None:
         ).fetchall()
 
     def answers_for_question(qid: int, person_ids: set[int] | None = None):
+        # Ballot order for the question's own year (mayor first, then council), else alphabetical.
         rows = q(
             """SELECT a.id, p.id AS person_id, p.slug, p.full_name, a.stance, a.verbatim, a.notes,
                       s.title AS source_title, s.url AS source_url
                FROM answers a
                JOIN people p ON p.id=a.person_id
                JOIN sources s ON s.id=a.source_id
+               JOIN questions qq ON qq.id=a.question_id
+               LEFT JOIN (SELECT c.person_id, e.year, MIN(CASE o.slug WHEN 'mayor' THEN 0 ELSE 100 END
+                                  + c.ballot_position) AS bpos
+                          FROM candidacies c JOIN races r ON r.id=c.race_id
+                          JOIN elections e ON e.id=r.election_id JOIN offices o ON o.id=r.office_id
+                          WHERE c.ballot_position IS NOT NULL GROUP BY c.person_id, e.year) b
+                 ON b.person_id=p.id AND b.year=qq.year
                WHERE a.question_id=?
-               ORDER BY p.sort_name""",
+               ORDER BY b.bpos IS NULL, b.bpos, p.sort_name""",
             (qid,),
         ).fetchall()
         if person_ids is None:
@@ -823,7 +831,10 @@ def main() -> None:
 
     # ----- people index -----
     people = q("SELECT * FROM people ORDER BY sort_name").fetchall()
-    on_2026 = {r["person_id"] for r in candidates_for(2026, "mayor") + candidates_for(2026, "council")}
+    ballot_2026 = [r["person_id"] for r in candidates_for(2026, "mayor") + candidates_for(2026, "council")]
+    on_2026 = set(ballot_2026)
+    # 2026 candidates first, in ballot order (mayor, then council); everyone else alphabetical.
+    people = sorted(people, key=lambda p: ballot_2026.index(p["id"]) if p["id"] in on_2026 else len(ballot_2026))
     plist = [
         "<h1>People</h1>",
         "<p class='lede'>A person lasts across years. Open a dossier for the questions they have actually answered, newest year first.</p>",
@@ -1083,7 +1094,11 @@ def main() -> None:
             ev_html.append(f"<p class='note'>{esc(e['notes'])}</p>")
         apps = q(
             """SELECT p.full_name, p.slug, a.attended FROM event_appearances a
-               JOIN people p ON p.id=a.person_id WHERE a.event_id=? ORDER BY p.sort_name""",
+               JOIN people p ON p.id=a.person_id
+               LEFT JOIN candidacies c ON c.id=a.candidacy_id
+               LEFT JOIN races r ON r.id=c.race_id LEFT JOIN offices o ON o.id=r.office_id
+               WHERE a.event_id=?
+               ORDER BY c.ballot_position IS NULL, o.slug != 'mayor', c.ballot_position, p.sort_name""",
             (e["id"],),
         ).fetchall()
         if apps:

@@ -1,0 +1,32 @@
+{
+ "retrieved_on": "2026-09-29",
+ "source_url": "https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates",
+ "source_title": "2026 City of Boulder Mayoral and City Council Candidates (City of Boulder)",
+ "source_note": "The city clerk's candidate page lists candidates in this order and says its candidate videos (https://vimeo.com/showcase/12421306) \"are presented in the order that their names will appear on the ballot\"; the showcase runs in the same order. Cross-check: at the League of Women Voters forum (https://youtu.be/pT9IeGL6deg) the moderator said \"the candidates are seated in the order they will appear on the general election ballot\" and called them in this order in both the council and mayoral segments.",
+ "cross_check_url": "https://youtu.be/pT9IeGL6deg",
+ "races": {
+  "mayor": [
+   "Lisa Ann Jacobs",
+   "Taishya Adams",
+   "Aaron Brockett",
+   "Jameson Goldstein",
+   "Fred Smith",
+   "Aquiles La Grave"
+  ],
+  "council": [
+   "Lee Gilbert",
+   "Sam Fuqua",
+   "Ryan Schuchard",
+   "Jamillah Richmond",
+   "Benita Duran",
+   "Tara Winer",
+   "Rachel Rose Isaacson",
+   "Dave Martus",
+   "Scott Rendleman",
+   "Jill Grano",
+   "Ryan Jamieson",
+   "Lynn Segal",
+   "Tina Marquis"
+  ]
+ }
+}
