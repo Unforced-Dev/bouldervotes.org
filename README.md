@@ -18,8 +18,11 @@ Live: https://bouldervotes.org/ (GitHub Pages; custom domain). Mirror: https://u
 cd ~/REPOS/bouldervotes.org
 python3 harvest_brl.py       # optional; writes data/harvest/brl_questionnaires.json
 python3 harvest_finance.py   # optional; writes data/harvest/finance_2026.json from the city clerk
+python3 tools/approve_2026.py ../bv-research   # optional; regenerates data/harvest/2026/*.json from research + audit
 python3 seed.py              # rebuilds data/bouldervotes.db from schema + seed + harvest
 python3 build.py             # writes static HTML to docs/ (GitHub Pages)
+python3 -m unittest          # FK integrity, sources, trust rules, built-HTML labels, local links
+python3 tools/check_links.py # broken local links under docs/
 open docs/index.html
 ```
 
@@ -42,6 +45,7 @@ Python 3 stdlib only. No npm, no framework. How to extend it: [OPERATING.md](OPE
 - 2026 questions on the home page (bond, airport) — not a quiz; earlier-year answers stay on the person, not filed under 2026
 - 2026 campaign-finance from the city clerk app: raised / spent / matching, itemized donors and expenditures on each dossier
 - City ballot measures 2017–2026
+- **2026 evidence graph** (from `data/harvest/2026/`): candidate bios and sourced statements (7 held pending verification), 237 endorsement edges with provenance (endorser's own statement / campaign claim / city filing / news listing), 24 organization and committee profiles, 63 person-endorser titles, full text and supporters/opponents for city measures 2J–2M, and a Civics 101 page
 
 What’s *not* in it: invented positions, scored “matches,” Chamber 2026 written questionnaires (not published yet — the forum tape is), past-year finance dollar totals (Laserfiche not listed this pass), county/BVSD races, 2015 and earlier.
 

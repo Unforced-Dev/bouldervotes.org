@@ -9,6 +9,7 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
+from ingest_2026 import ingest_2026_graph
 from ingest import (
     ingest_beat_2023,
     ingest_brl_2026_field,
@@ -198,7 +199,7 @@ def main() -> None:
         "Jamillah Richmond",
         "Sam Fuqua",
         "Lynn Segal",
-        "David Martus",
+        "Dave Martus",
         "Scott Rendleman",
         "Jennifer Robins",
         "Terri Brncic",
@@ -255,10 +256,13 @@ def main() -> None:
         "Taishya Adams": "Elected to council 2023; entered the 2026 mayoral race (cannot also run for her council seat).",
         "Sam Fuqua": "Name as certified by the city clerk Aug 2026. Not yet independently biographed in this seed.",
         "Michael Christy": "2021 council candidate. Some coverage spells the first name Michel; certified results list Michael Christy.",
+        "Dave Martus": "Ballot name per the city's certified-candidate roster. Some research and finance records use David Martus; same person.",
         "Tara Winer": "Elected 2021 in fifth place (two-year term), then 2023 (four-year). Named mayor pro tem Dec 4 2025.",
     }
     for n in names:
         pid[n] = add_person(n, notes_by_name.get(n))
+    # Finance harvest and research files use the legal first name.
+    pid["David Martus"] = pid["Dave Martus"]
 
     def cand(person: str, race: int, status: str, incumbent: int = 0,
              certified_on: str | None = None, matching: int = 0,
@@ -408,7 +412,7 @@ def main() -> None:
         campaign_url="https://www.fuquaforcouncil.com/",
     )
     cand("Lynn Segal", r2026_council, "certified", 0, "2026-08-20")
-    cand("David Martus", r2026_council, "certified", 0, "2026-08-24")
+    cand("Dave Martus", r2026_council, "certified", 0, "2026-08-24")
     cand("Scott Rendleman", r2026_council, "certified", 0, "2026-08-24")
 
     cid = {
@@ -829,6 +833,9 @@ def main() -> None:
         org_brl=org_brl, org_chamber=org_chamber, org_better=org_better,
     )
     ingest_finance_2026(cur, pid=pid, add_source=add_source, org_city=org_city)
+    graph = ingest_2026_graph(
+        cur, pid=pid, add_person=add_person, add_source=add_source, slugify=slug,
+    )
 
     # --- results ---
     # 2023 mayor RCV (official summary of votes)
@@ -978,6 +985,7 @@ def main() -> None:
     n_fin = cur.execute("SELECT COUNT(*) FROM finance_snapshots").fetchone()[0]
     n_lines = cur.execute("SELECT COUNT(*) FROM finance_line_items").fetchone()[0]
     con.close()
+    print(f"2026 graph: {graph}")
     print(f"wrote {DB} people={n_people} candidacies={n_cand} answers={n_ans} results={n_res} sources={n_src} finance={n_fin} line_items={n_lines}")
 
 

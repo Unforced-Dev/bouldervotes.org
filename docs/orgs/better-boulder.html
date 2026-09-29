@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Better Boulder — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<p class='crumb'><a href='../orgs.html'>Organizations</a></p>
+<h1>Better Boulder</h1>
+<p class='note'>organization</p>
+<p><a href='https://betterboulder.com/'>https://betterboulder.com/</a></p>
+<h2>Who they are</h2>
+<p>Better Boulder advocates on land use, housing, transportation and related local policies. Its volunteer board published a seven-person council slate and mayoral endorsement after questionnaires and a joint forum.</p>
+<p>In their words: <q>The mission of Better Boulder is to create vibrant, livable, and connected communities through land use planning and policy.</q> <a href='https://betterboulder.com/2026-rtd-ballot-measure-endorsements/'>source</a></p>
+<h2>Leadership on file</h2><ul>
+<li><a href='../people/mark-mcintyre.html'>Mark McIntyre</a> — Chair <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li>Bryan Bowen — Vice Chair <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li>Aaron Spear — Treasurer <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li><a href='../people/eric-budd.html'>Eric Budd</a> — Leadership team <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li><a href='../people/jan-burton.html'>Jan Burton</a> — Leadership team <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li>Philip Ogren — Leadership team <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li>Martha Roskowski — Leadership team <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+<li>John Tayer — Board member <a href='https://betterboulder.com/board-of-directors/'>source</a></li>
+</ul>
+<h2>Money</h2>
+<p>Receives $15 membership fees and grants from non-profit organizations supporting its community-sustainability goals; board members serve unpaid. Specific grantmakers are not named on the cited page. <a href='https://betterboulder.com/about-us/'>source</a></p>
+<h2>How they decide</h2>
+<p>The board reviewed 2026 mayoral and council questionnaires and participation in a collaborative candidate forum before endorsing. <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>source</a></p>
+<h2 id='endorsements'>2026 positions</h2>
+
+<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<dl class='legend'>
+<dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
+<dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
+<dt>City filing</dt><dd>A committee's registration with the city clerk names the candidate or measure it supports.</dd>
+<dt>News listing</dt><dd>A news outlet lists the endorsement, but we did not find the endorser's own statement.</dd>
+</dl>
+<p class='note'>Titles (e.g. “U.S. Representative”) are as printed on the cited page and describe the person, not an endorsement by their office. A blank title means the source did not give one.</p>
+</details>
+
+<h3>Candidates</h3><ul class='edges'><li>Endorses: <a href='../people/aaron-brockett.html'>Aaron Brockett</a> (mayor)<span class='prov prov-endorser_statement' data-edge='E30' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/sam-fuqua.html'>Sam Fuqua</a> (council)<span class='prov prov-endorser_statement' data-edge='E31' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/jill-grano.html'>Jill Grano</a> (council)<span class='prov prov-endorser_statement' data-edge='E32' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/ryan-jamieson.html'>Ryan Jamieson</a> (council)<span class='prov prov-endorser_statement' data-edge='E33' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/tina-marquis.html'>Tina Marquis</a> (council)<span class='prov prov-endorser_statement' data-edge='E34' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/jamillah-richmond.html'>Jamillah Richmond</a> (council)<span class='prov prov-endorser_statement' data-edge='E35' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/ryan-schuchard.html'>Ryan Schuchard</a> (council)<span class='prov prov-endorser_statement' data-edge='E36' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li><li>Endorses: <a href='../people/tara-winer.html'>Tara Winer</a> (council)<span class='prov prov-endorser_statement' data-edge='E37' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/better-boulder-2026-endorsements/'>Better Boulder 2026 Endorsements</a> · 2026-09-14</span></li></ul>
+<h3>City measures</h3><ul class='edges'><li>Supports: <a href='../measures/2026-2j.html'>City 2J: Vacancy excise tax</a><span class='prov prov-endorser_statement' data-edge='E38' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/2026-rtd-ballot-measure-endorsements/'>2026 RTD &amp; Ballot Measure Endorsements - Better Boulder</a></span></li></ul>
+<h3>Other ballot items</h3><ul class='edges'><li>Supports: Ballot Issue 7A: Front Range Passenger Rail District <span class='note'>(not a City of Boulder measure)</span><span class='prov prov-endorser_statement' data-edge='E39' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/2026-rtd-ballot-measure-endorsements/'>2026 RTD &amp; Ballot Measure Endorsements - Better Boulder</a></span></li><li>Supports: Boulder County Question 200: Expand Board of Commissioners to Five <span class='note'>(not a City of Boulder measure)</span><span class='prov prov-endorser_statement' data-edge='E40' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/2026-rtd-ballot-measure-endorsements/'>2026 RTD &amp; Ballot Measure Endorsements - Better Boulder</a></span></li><li>Supports: Boulder County Question 201: Commissioner Election Method (Option 2: 3 district + 2 at-large) <span class='note'>(not a City of Boulder measure)</span><span class='prov prov-endorser_statement' data-edge='E203' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://betterboulder.com/2026-rtd-ballot-measure-endorsements/'>2026 RTD &amp; Ballot Measure Endorsements - Better Boulder</a></span></li></ul>
+<p class='note'>Only positions this group (or a campaign, as labelled) has published. No position on file for a race or measure is not a no.</p>
+<h2>Earlier endorsements</h2><ul>
+<li>2025: Matt Benjamin <a href='https://betterboulder.com/better-boulder-endorsements-2025/'>source</a></li>
+<li>2025: Lauren Folkerts <a href='https://betterboulder.com/better-boulder-endorsements-2025/'>source</a></li>
+<li>2025: Nicole Speer <a href='https://betterboulder.com/better-boulder-endorsements-2025/'>source</a></li>
+<li>2025: Mark Wallach <a href='https://betterboulder.com/better-boulder-endorsements-2025/'>source</a></li>
+<li>2023: Aaron Brockett (mayor) <a href='https://betterboulder.com/2023-better-boulder-candidate-endorsements/'>source</a></li>
+<li>2023: Tara Winer <a href='https://betterboulder.com/2023-better-boulder-candidate-endorsements/'>source</a></li>
+<li>2023: Ryan Schuchard <a href='https://betterboulder.com/2023-better-boulder-candidate-endorsements/'>source</a></li>
+<li>2023: Taishya Adams <a href='https://betterboulder.com/2023-better-boulder-candidate-endorsements/'>source</a></li>
+<li>2023: Waylon Lewis <a href='https://betterboulder.com/2023-better-boulder-candidate-endorsements/'>source</a></li>
+<li>2021: Matt Benjamin <a href='https://betterboulder.com/candidate-endorsements-2021/'>source</a></li>
+<li>2021: Lauren Folkerts <a href='https://betterboulder.com/candidate-endorsements-2021/'>source</a></li>
+<li>2021: Nicole Speer <a href='https://betterboulder.com/candidate-endorsements-2021/'>source</a></li>
+<li>2021: Dan Williams <a href='https://betterboulder.com/candidate-endorsements-2021/'>source</a></li>
+<li>2019: Aaron Brockett <a href='https://betterboulder.com/candidate-endorsements/'>source</a></li>
+<li>2019: Benita Duran <a href='https://betterboulder.com/candidate-endorsements/'>source</a></li>
+<li>2019: Rachel Friend <a href='https://betterboulder.com/candidate-endorsements/'>source</a></li>
+<li>2019: Junie Joseph <a href='https://betterboulder.com/candidate-endorsements/'>source</a></li>
+<li>2019: Mark McIntyre <a href='https://betterboulder.com/candidate-endorsements/'>source</a></li>
+<li>2019: Bob Yates <a href='https://betterboulder.com/candidate-endorsements/'>source</a></li>
+</ul>
+<h2>Profile sources</h2><ul class='note'><li><a href='https://betterboulder.com/about-us/'>https://betterboulder.com/about-us/</a></li><li><a href='https://betterboulder.com/board-of-directors/'>https://betterboulder.com/board-of-directors/</a></li><li><a href='https://betterboulder.com/better-boulder-2026-endorsements/'>https://betterboulder.com/better-boulder-2026-endorsements/</a></li><li><a href='https://betterboulder.com/2026-rtd-ballot-measure-endorsements/'>https://betterboulder.com/2026-rtd-ballot-measure-endorsements/</a></li><li><a href='https://betterboulder.com/candidate-endorsements/'>https://betterboulder.com/candidate-endorsements/</a></li><li><a href='https://betterboulder.com/candidate-endorsements-2021/'>https://betterboulder.com/candidate-endorsements-2021/</a></li><li><a href='https://betterboulder.com/2023-better-boulder-candidate-endorsements/'>https://betterboulder.com/2023-better-boulder-candidate-endorsements/</a></li><li><a href='https://betterboulder.com/better-boulder-endorsements-2025/'>https://betterboulder.com/better-boulder-endorsements-2025/</a></li></ul>
+<p class='note'>Profile compiled 2026-09-24.</p>
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="../sources.html">Sources</a> ·
+  <a href="../forums.html">Forums</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
+  <a href="../finance.html">Money</a> ·
+  <a href="../questionnaires.html">Questionnaires</a> ·
+  <a href="../print/index.html">Print</a> ·
+  <a href="../measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>

@@ -13,6 +13,9 @@ import html
 import sqlite3
 from pathlib import Path
 
+from build_2026 import EXTRA_CSS, Graph2026
+from ingest_2026 import civics_markdown
+
 ROOT = Path(__file__).resolve().parent
 DB = ROOT / "data" / "bouldervotes.db"
 OUT = ROOT / "docs"
@@ -216,10 +219,13 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None) ->
         on = " on" if y == year else ""
         rail.append(f'<a class="{on.strip()}" href="{prefix}{y}.html">{y}</a>')
     util = [
-        f'<a href="{prefix}find.html">Questions</a>',
-        f'<a href="{prefix}issues.html">Issues</a>',
+        f'<a href="{prefix}index.html">2026 guide</a>',
+        f'<a href="{prefix}index.html#measures">Measures</a>',
+        f'<a href="{prefix}orgs.html">Organizations</a>',
+        f'<a href="{prefix}civics.html">Civics 101</a>',
         f'<a href="{prefix}people.html">People</a>',
         f'<a href="{prefix}finance.html">Money</a>',
+        f'<a href="{prefix}issues.html">Issues</a>',
         f'<a href="{prefix}print/index.html">Print</a>',
         f'<a href="{prefix}about.html">About</a>',
     ]
@@ -230,7 +236,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None) ->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} — Boulder Votes</title>
-<style>{CSS}</style>
+<style>{CSS}{EXTRA_CSS}</style>
 </head>
 <body>
 <header>
@@ -247,7 +253,8 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None) ->
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="{prefix}sources.html">Sources</a> ·
   <a href="{prefix}forums.html">Forums</a> ·
-  <a href="{prefix}find.html">Questions</a> ·
+  <a href="{prefix}civics.html">Civics 101</a> ·
+  <a href="{prefix}orgs.html">Organizations</a> ·
   <a href="{prefix}finance.html">Money</a> ·
   <a href="{prefix}questionnaires.html">Questionnaires</a> ·
   <a href="{prefix}print/index.html">Print</a> ·
@@ -414,7 +421,7 @@ def main() -> None:
             (year,),
         ).fetchall()
 
-    def measure_cards(year: int) -> str:
+    def measure_cards(year: int, prefix: str = "") -> str:
         rows = measures_for_year(year)
         if not rows:
             return '<p class="empty">No city measures recorded.</p>'
@@ -431,8 +438,11 @@ def main() -> None:
                 )
             else:
                 result = m["status"]
+            title_html = esc(m["title"])
+            if year == 2026 and m["letter"]:
+                title_html = f"<a href='{prefix}measures/2026-{esc(m['letter'].lower())}.html'>{title_html}</a>"
             bits.append(
-                f"<div class='card'><h3>{letter}{esc(m['title'])}</h3>"
+                f"<div class='card'><h3>{letter}{title_html}</h3>"
                 f"<div class='meta'>{esc(m['kind'])} · {esc(result)}</div>"
                 f"<p>{esc(clip(m['summary'] or '', 220))}</p></div>"
             )
@@ -597,16 +607,19 @@ def main() -> None:
             bits.append("</ul>")
             bits.append(f"<p class='note'><a href='forums.html'>Attendance and notes</a></p>")
         html_page = page(
-            "November 2026" if as_home else f"{year} election",
+            "2026 ballot details" if as_home else f"{year} election",
             "\n".join(bits),
             year=year,
         )
-        (OUT / ("index.html" if as_home else f"{year}.html")).write_text(html_page, encoding="utf-8")
-        if as_home:
-            (OUT / "2026.html").write_text(html_page, encoding="utf-8")
+        (OUT / f"{year}.html").write_text(html_page, encoding="utf-8")
 
     for y in YEARS:
         write_year_page(y, as_home=(y == 2026))
+    graph = Graph2026(con, OUT, page)
+    graph.write_home()
+    graph.write_orgs()
+    graph.write_measures()
+    graph.write_civics(civics_markdown())
 
     # ----- issues hub -----
     hub = [
@@ -722,7 +735,8 @@ def main() -> None:
                             f"That is not a no.</p>"
                         )
                 else:
-                    body.append(f"<p class='empty'>No one on the {year} ballot answered this prompt.</p>")
+                    reported = graph.reported_lines_for_question(qu["id"], "../")
+                    body.append(reported or f"<p class='empty'>No one on the {year} ballot answered this prompt.</p>")
             dest = OUT / "issues" / f"{slug}-{year}.html"
             dest.write_text(page(f"{name} {year}", "\n".join(body), prefix="../", year=year), encoding="utf-8")
             written_year_pages.add(dest.name)
@@ -751,7 +765,10 @@ def main() -> None:
                WHERE c.person_id=? ORDER BY e.year DESC""",
             (p["id"],),
         ).fetchall()
-        ytxt = ", ".join(f"{y['year']} {y['office']}" for y in years) or "no candidacy"
+        ytxt = ", ".join(f"{y['year']} {y['office']}" for y in years)
+        if not ytxt:
+            t = q("SELECT title FROM person_titles WHERE person_id=?", (p["id"],)).fetchone()
+            ytxt = f"2026 endorser · {t[0]}" if t else "2026 endorser"
         n_ans = q("SELECT COUNT(*) FROM answers WHERE person_id=?", (p["id"],)).fetchone()[0]
         extra = f" · {n_ans} answers" if n_ans else ""
         snap = finance_for(p["id"], 2026) if p["id"] in on_2026 else None
@@ -847,8 +864,10 @@ def main() -> None:
                 f"<a href='#money'>Donors and spending</a>.</p>"
             )
 
+        bits.append(graph.person_sections(p["id"]))
+
         if answers:
-            bits.append("<h2>What they have said</h2>")
+            bits.append("<h2>Questionnaire answers by year</h2>")
             bits.append(
                 "<p class='note'>Newest year first. Each card is one question. A yes/no is an answer to that question — not a position on the whole topic.</p>"
             )
@@ -866,8 +885,10 @@ def main() -> None:
                 bits.append(render_answer(a["verbatim"], a["stance"], a["notes"]))
                 bits.append(f"<p class='note'><a href='{esc(a['source_url'])}'>{esc(a['source_title'])}</a></p>")
                 bits.append("</div>")
+        elif not cands:
+            pass
         else:
-            bits.append("<p class='empty'>No sourced answers on file yet.</p>")
+            bits.append("<p class='empty'>No earlier questionnaire answers on file.</p>")
 
         if snaps:
             bits.append("<h2 id='money'>Money</h2>")
@@ -1168,30 +1189,15 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    qs_2026 = questions_this_year(2026)
-    find_home = [
-        "<h1>Questions asked in 2026</h1>",
-        "<p class='lede'>Not a quiz. These are the questions on file for this cycle. Open one to read who answered, in the source’s words.</p>",
-    ]
-    for qu in qs_2026:
-        find_home.append(
-            f"<a class='choice' href='{esc(issue_href(qu['slug'], 2026))}'>{esc(qu['prompt'])}"
-            f"<span class='meta'>{esc(kind_label(qu['kind']))}</span></a>"
-        )
-    find_home.append(
-        "<p class='note'>Housing, homelessness, and budget quotes from earlier races live on each person’s page. "
-        "We do not file a 2023 yes/no under 2026.</p>"
-        "<p><a href='2026.html'>The 2026 ballot</a> · <a href='people.html'>A person</a> · "
-        "<a href='print/index.html'>Print a sheet</a> · <a href='finance.html'>Money</a></p>"
-    )
-    (OUT / "find.html").write_text(page("Questions", "\n".join(find_home), year=2026), encoding="utf-8")
+    # find.html (the "Questions" hub) is retired; the 2026 guide is the entry point.
+    stale = OUT / "find.html"
+    if stale.exists():
+        stale.unlink()
     quiz_gone = page(
         "Moved",
-        "<p class='crumb'><a href='../find.html'>Questions</a></p>"
-        "<h1>This quiz is gone</h1>"
-        "<p>It turned a question into a team. The 2026 questions are listed on "
-        "<a href='../find.html'>Questions</a> and on the <a href='../index.html'>home page</a>.</p>"
-        "<p><a href='../issues/bond-2026.html'>The $400 million rec and safety bond</a></p>",
+        "<h1>This page has moved</h1>"
+        "<p>The 2026 guide starts on the <a href='../index.html'>home page</a>. "
+        "The $400 million rec and safety bond is <a href='../measures/2026-2k.html'>ballot measure 2K</a>.</p>",
         prefix="../",
         year=2026,
     )
@@ -1301,7 +1307,11 @@ def main() -> None:
     <p>Boulder Votes is a map of City of Boulder elections for people who have to mark a ballot, especially older voters. It is not a feed, not a quiz, and not a scorecard.</p>
     <h2>How to use it</h2>
     <ul>
-      <li><strong>A year</strong> — that year’s ballot, and the questions asked that cycle. 2026 currently has two: the rec/safety bond, and FAA grants at the airport.</li>
+      <li><strong>The 2026 guide</strong> (home page) — key dates, every mayor and council candidate with a one-line bio and who endorses them, and the four city measures.</li>
+      <li><strong>A candidate</strong> — bio, positions in their own words with the source, endorsers grouped (organizations, current elected officials, former elected officials, other individuals), and money.</li>
+      <li><strong>An organization</strong> — who they are, how they decide, what we know about their funding, and whom they endorsed.</li>
+      <li><strong>Where an endorsement comes from</strong> — every endorsement line is labelled: the endorser's own statement, a city committee filing, or “X campaign lists Y” when the only source is the candidate's own website.</li>
+      <li><strong>A year</strong> — that year’s ballot, and the questions asked that cycle.</li>
       <li><strong>A person</strong> — the questions they have answered, newest year first. A 2023 yes/no is labelled 2023 and named as that question. It is not a 2026 position.</li>
       <li><strong>A question</strong> — people on that year’s ballot who answered it. We do not copy an earlier year’s answer onto this year’s page.</li>
       <li><strong>Print</strong> — one letter-size sheet per 2026 candidate. File → Print.</li>
@@ -1322,6 +1332,14 @@ def main() -> None:
         page("2026 council", "<h1>2026 council</h1><p>Moved onto the <a href='2026.html'>2026 ballot</a>.</p>", year=2026),
         encoding="utf-8",
     )
+
+    # Old slug before the ballot-name fix (city roster lists "Dave Martus").
+    for sub in ("people", "print"):
+        (OUT / sub / "david-martus.html").write_text(
+            page("Moved", f"<h1>Dave Martus</h1><p>This page moved to <a href='dave-martus.html'>Dave Martus</a> "
+                 "(the name on the ballot).</p>", prefix="../", year=2026),
+            encoding="utf-8",
+        )
 
     print(f"wrote {len(list(OUT.rglob('*.html')))} html files into {OUT}")
     con.close()

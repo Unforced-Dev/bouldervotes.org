@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="../index.html">Boulder Votes</a>
     <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
-    <nav class="util"><a href="../find.html">Questions</a><a href="../issues.html">Issues</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -141,13 +162,17 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td>2026</td><td>Boulder City Council</td><td>certified</td></tr><tr><td>2025</td><td>Boulder City Council</td><td>lost</td></tr></table>
 <h2>What they have said</h2>
 <div class='card'><div class='meta'>2026 · Municipal airport</div><h3>Would you support accepting federal FAA grants that could require Boulder to keep the municipal airport open in perpetuity?</h3><p><strong>No</strong>. Reported by Boulder Reporting Lab from the June 6 2026 Raucous Caucus. Not a written questionnaire; a journalist&#x27;s grouping of spoken answers.</p><p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p><p class='note'><a href='https://boulderreportinglab.org/2026/06/07/boulder-city-council-candidates-preview-election-year-debates-over-housing-airport-and-wages/'>Boulder City Council candidates preview election-year battles over housing, airport and wages</a></p></div>
-<div class='card'><div class='meta'>2026 · Rec and safety bond</div><h3>Do you support the $400 million recreation and safety bond on the November 2026 ballot?</h3><p><strong>No</strong>. Reported by Boulder Reporting Lab, Aug 30 2026: many challengers oppose the measure, arguing voters have not received enough information about how the money would be spent.</p><p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p><p class='note'><a href='https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/'>Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)</a></p></div>
 <div class='card'><div class='meta'>2025 · This race / other</div><h3>What perspective or lived experience would you bring to city council, and how would it shape your approach to policy?</h3><details class='quote'><summary>My civic journey began early, organizing and volunteering at 14, and by 17, drafting state legislation to protect LGBTQ+ youth in Ohio. That…</summary><blockquote class='answer'>My civic journey began early, organizing and volunteering at 14, and by 17, drafting state legislation to protect LGBTQ+ youth in Ohio. That formative experience taught me the power of young people stepping into leadership, and it continues to shape how I approach public service. Since then, I have earned a bachelor’s in Political Economics and a master’s in Public Administration and Leadership, with specialized training in public budgeting, fiscal and policy analysis, and strategic resource management. These skills are essential for making responsible, transparent, and equitable decisions on City Council.
 
 Before making Boulder my home, I worked in regenerative education, organizing internationally attended conferences that empowered communities to cultivate resilience in the face of economic, social, and environmental turbulence. Here in Boulder, I stay grounded in daily life advancing ecological stewardship as a Pollinator Ambassador with Cool Boulder, and connecting with neighbors every day as a barista at South Side Walnut Café.
 
 I am running to be Boulder’s first Gen Z councilmember not only to ensure my generation has a voice at the table, but to bring informed, systems-level thinking and collaborative leadership to address the challenges we face today and those ahead.</blockquote></details><p class='note'><a href='https://boulderreportinglab.org/2025/10/05/2025-boulder-city-council-election-how-candidates-say-their-life-experiences-would-shape-their-work-on-council/'>2025 Boulder City Council election: How candidates say their life experiences would shape their work on council</a></p></div>
 <div class='card'><div class='meta'>2025 · Homelessness</div><h3>Should Boulder enforce its camping ban when the All Roads shelter is full?</h3><details class='quote'><summary>No. No one should be legally punished simply because our city lacks adequate services or safe alternatives. In those moments, the responsibility is…</summary><blockquote class='answer'>No. No one should be legally punished simply because our city lacks adequate services or safe alternatives. In those moments, the responsibility is on us as a community to ensure people have legal and humane alternative places to be. At the same time, when shelter or services are available, I believe individuals should be accountable to the city’s current laws. Balancing compassion with accountability is essential, and the real solution lies in expanding services and creating pathways so no one is left without options.</blockquote></details><p class='note'><a href='https://boulderreportinglab.org/2025/10/06/2025-boulder-city-council-election-where-candidates-stand-on-the-camping-ban/'>2025 Boulder City Council election: Where candidates stand on the camping ban</a></p></div>
+<div class='card'><div class='meta'>2025 · Wildfire resilience</div><h3>Should Boulder require existing homes (not just new construction) to meet wildfire mitigation standards — such as clearing five feet around structures and banning wood fences near homes?</h3><details class='quote'><summary>Yes. Wildfire risk is one of the greatest threats facing Boulder, and the areas at the highest risk could require mitigation and home hardening as a…</summary><blockquote class='answer'>Yes. Wildfire risk is one of the greatest threats facing Boulder, and the areas at the highest risk could require mitigation and home hardening as a critical step in protecting lives, homes, and our community as a whole. That said, I believe these requirements must be paired with strong support systems so that the burden doesn’t fall unfairly on homeowners, especially those with limited resources. This means exploring subsidies, grants, and technical assistance to make compliance realistic and equitable.
+
+As someone who has worked on resilience and ecological stewardship, I see this as both a safety measure and an opportunity to build smarter, more sustainable systems. Clear standards such as defensible space around structures and fire-resistant materials can drastically reduce community-wide risk. But enforcement must go hand in hand with education, collaboration, and financial support.
+
+Ultimately, my approach is to treat wildfire mitigation not as an individual responsibility alone, but as a shared commitment to community safety.</blockquote></details><p class='note'><a href='https://boulderreportinglab.org/2025/10/07/2025-boulder-city-council-election-where-candidates-stand-on-making-the-city-more-wildfire-resilient/'>2025 Boulder City Council election: Where candidates stand on wildfire mitigation</a></p></div>
 <h2>Money</h2>
 <p>Raised $5,397.17 · spent $392.68 · matching received $5,201 · 131 contribution lines (as of 2026-08-10, Rachel Rose for Boulder). Clerk matching-funds flag: yes. Not TRACER.</p>
 <p class='note'>Clerk contribution total includes $196.17 in loans.</p>
@@ -157,7 +182,8 @@ I am running to be Boulder’s first Gen Z councilmember not only to ensure my g
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="../sources.html">Sources</a> ·
   <a href="../forums.html">Forums</a> ·
-  <a href="../find.html">Questions</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
   <a href="../finance.html">Money</a> ·
   <a href="../questionnaires.html">Questionnaires</a> ·
   <a href="../print/index.html">Print</a> ·

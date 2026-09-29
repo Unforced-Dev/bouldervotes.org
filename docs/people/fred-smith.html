@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="../index.html">Boulder Votes</a>
     <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
-    <nav class="util"><a href="../find.html">Questions</a><a href="../issues.html">Issues</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -138,15 +159,36 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <h2>Campaigns</h2>
 <table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td><a href='../2026.html'>2026</a></td><td>Mayor of Boulder · <a href='https://gratefulfredinstead.com/'>campaign</a></td><td>certified</td></tr></table>
 <p class='note'>2026: raised $0 · spent $0 · matching $0. <a href='#money'>Donors and spending</a>.</p>
-<h2>What they have said</h2>
-<p class='note'>Newest year first. Each card is one question. A yes/no is an answer to that question — not a position on the whole topic.</p>
-<h2>2026</h2>
-<div class='card' id='q-252'>
-<div class='meta'><a href='../2026.html'>2026</a> · interview · Rec and safety bond</div>
-<h3>Do you support the $400 million recreation and safety bond on the November 2026 ballot?</h3>
-<p><strong>No</strong>. Reported by Boulder Reporting Lab, Aug 30 2026: many challengers oppose the measure, arguing voters have not received enough information about how the money would be spent.</p><p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p>
-<p class='note'><a href='https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/'>Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)</a></p>
-</div>
+<h2 id='bio'>2026 candidate for Mayor of Boulder</h2>
+<p>Smith has run for Boulder council four times and is now a mayoral candidate. Known as “The Grateful Fred,” he proposes a local income tax on high earners, which would require a change in state law.</p>
+<ul><li><strong>Occupation:</strong> Laborer</li><li><strong>In Boulder:</strong> moved to Boulder in the 1980s</li></ul>
+<p class='note'>Bio sources: <a href='https://boulderreportinglab.org/govpack_profiles/fred-smith/'>boulderreportinglab.org</a></p>
+<p class='note'>Source availability is narrower than for questionnaire respondents; silence is not a policy position. The city elections page lists “Fred Smith,” while the official campaign-finance list calls the ballot name “Grateful Fred Instead” and records legal name Michael Smith: https://webapps.bouldercolorado.gov/election/report.php?electionID=25&amp;report=candidateList .</p>
+<h2 id='positions'>In their own words</h2>
+<p class='note'>Short passages from questionnaires, interviews and the campaign site, each with its source. Grouped by topic. Nothing here is a score; a topic with no quote means we have no quote, not a position.</p>
+<h3>Budget</h3>
+<div class='card' data-statement='S-fred-smith-2'><blockquote class='answer'>Students deserve a real voice in how Boulder raises and spends money, not a seat at the table after the decisions are made.</blockquote><p class='note'>Campaign website: Fred Smith · campaign site · <a href='https://gratefulfredinstead.com/'>Campaign priorities: Fred Smith</a></p></div>
+<h3>What reporters wrote</h3>
+<p class='note'>These are the reporter's words about the candidate, not the candidate's own.</p>
+<div class='card' data-statement='S-fred-smith-4'><div class='meta'>Fred Smith campaign · arts</div><blockquote class='answer'>Fred wants Kinetics back at the Boulder Reservoir on the first Saturday in May.</blockquote><p class='note'>Campaign website: Fred Smith · <a href='https://gratefulfredinstead.com/'>Campaign priorities: Fred Smith</a></p></div>
+<div class='card' data-statement='S-fred-smith-1'><div class='meta'>Peter Constas (reporting the candidate) · budget</div><blockquote class='answer'>Smith fiercely opposed the TABOR Act and described how progressive taxes could strengthen the city.</blockquote><p class='note'>Yellow Scene · 2026-09-05 · <a href='https://yellowscene.com/2026/09/05/17-candidates-take-the-stage-at-boulder-chambers-first-2026-election-forum/'>Profile source: Lisa Ann Jacobs</a></p></div>
+<div class='card' data-statement='S-fred-smith-3'><div class='meta'>Fred Smith campaign · budget</div><blockquote class='answer'>Fred&#x27;s proposal is a 10% city tax on household income above $184,500.</blockquote><p class='note'>Campaign website: Fred Smith · <a href='https://gratefulfredinstead.com/'>Campaign priorities: Fred Smith</a></p></div>
+<div class='card' data-statement='S-fred-smith-0'><div class='meta'>Boulder Reporting Lab reporter · housing</div><details class='quote'><summary>Smith proposes a 10% city income tax on household income above $184,500, which he estimates would generate $185 million annually. Because TABOR prohibits Colorado municipalities from imposing income…</summary><blockquote class='answer'>Smith proposes a 10% city income tax on household income above $184,500, which he estimates would generate $185 million annually. Because TABOR prohibits Colorado municipalities from imposing income taxes, Smith proposes pursuing a statewide ballot measure to authorize such taxes. He proposes using the revenue for public facilities, childcare, affordable housing and mental health care.</blockquote></details><p class='note'>Boulder Reporting Lab · 2026-08-28 · <a href='https://boulderreportinglab.org/govpack_profiles/fred-smith/'>Profile source: Fred Smith</a></p></div>
+<h2 id='endorsers'>Who endorses them</h2>
+<p class='note'>Grouped so you can see who is backing whom. Not ranked, not scored. Each line says where the endorsement comes from.</p>
+
+<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<dl class='legend'>
+<dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
+<dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
+<dt>City filing</dt><dd>A committee's registration with the city clerk names the candidate or measure it supports.</dd>
+<dt>News listing</dt><dd>A news outlet lists the endorsement, but we did not find the endorser's own statement.</dd>
+</dl>
+<p class='note'>Titles (e.g. “U.S. Representative”) are as printed on the cited page and describe the person, not an endorsement by their office. A blank title means the source did not give one.</p>
+</details>
+
+<p class='empty'>No endorsements on file. That is not opposition, and not a position on any issue.</p>
+<p class='empty'>No earlier questionnaire answers on file.</p>
 <h2 id='money'>Money</h2>
 <p>2026: raised $0 · spent $0 · matching received $0 · cash on hand $0 (Grateful Fred Instead, as of 2026-08-14).</p>
 <p class='note'>0 contribution lines, 0 expenditures. City clerk, not TRACER. <a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&amp;committeeID=311'>Clerk statements</a> · <a href='../finance.html'>Everyone</a>.</p>
@@ -155,7 +197,8 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="../sources.html">Sources</a> ·
   <a href="../forums.html">Forums</a> ·
-  <a href="../find.html">Questions</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
   <a href="../finance.html">Money</a> ·
   <a href="../questionnaires.html">Questionnaires</a> ·
   <a href="../print/index.html">Print</a> ·

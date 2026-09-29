@@ -122,6 +122,27 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   @page { size: letter; margin: 0.55in; }
   h1 { font-size: 1.45rem; }
 }
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
 </style>
 </head>
 <body>
@@ -129,7 +150,7 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
   <div class="header-inner">
     <a class="brand" href="../index.html">Boulder Votes</a>
     <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
-    <nav class="util"><a href="../find.html">Questions</a><a href="../issues.html">Issues</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
   </div>
 </header>
 <main>
@@ -141,11 +162,11 @@ footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid 
 <table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td>2026</td><td>Mayor of Boulder</td><td>certified</td></tr><tr><td>2023</td><td>Mayor of Boulder</td><td>elected</td></tr><tr><td>2019</td><td>Boulder City Council</td><td>elected</td></tr></table>
 <h2>What they have said</h2>
 <div class='card'><div class='meta'>2026 · Municipal airport</div><h3>Would you support accepting federal FAA grants that could require Boulder to keep the municipal airport open in perpetuity?</h3><p><strong>Yes</strong>. Reported by Boulder Reporting Lab from the June 6 2026 Raucous Caucus. Not a written questionnaire; a journalist&#x27;s grouping of spoken answers.</p><p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p><p class='note'><a href='https://boulderreportinglab.org/2026/06/07/boulder-city-council-candidates-preview-election-year-debates-over-housing-airport-and-wages/'>Boulder City Council candidates preview election-year battles over housing, airport and wages</a></p></div>
-<div class='card'><div class='meta'>2026 · Rec and safety bond</div><h3>Do you support the $400 million recreation and safety bond on the November 2026 ballot?</h3><p><strong>Yes</strong>. Reported by Boulder Reporting Lab, Aug 30 2026: all five incumbent candidates support the measure, citing more than $400 million in deferred maintenance. Sam Fuqua and Jamillah Richmond also support it.</p><p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p><p class='note'><a href='https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/'>Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)</a></p></div>
 <div class='card'><div class='meta'>2023 · Homelessness</div><h3>What do you think are the most promising initiatives for reducing homelessness?</h3><details class='quote'><summary>The need for additional solutions for unhoused community members is great. I firmly support the creation of more permanent supportive housing using…</summary><blockquote class='answer'>The need for additional solutions for unhoused community members is great. I firmly support the creation of more permanent supportive housing using the “housing first” model as well as interim solutions like tiny home villages and safe outdoor spaces like those implemented in Denver.
 
 We also need to ensure better access to mental health and substance use treatment options, including with transitional housing. Another important piece of the puzzle is opening the day services centers to connect people experiencing homelessness with services and housing. We can make many of these initiatives possible by leveraging state Proposition 123 funding.</blockquote></details><p class='note'><a href='https://boulderreportinglab.org/2023/10/04/2023-boulder-city-council-election-where-the-candidates-stand-on-homelessness-solutions/'>2023 Boulder City Council election: Where the candidates stand on homelessness solutions</a></p></div>
 <div class='card'><div class='meta'>2023 · Homelessness</div><h3>What approach would you take to address camping in our parks, on our bike paths and along our waterways?</h3><details class='quote'><summary>A key part of the approach needs to be giving people more sheltering, service and housing options so they have alternatives to camping in town. But…</summary><blockquote class='answer'>A key part of the approach needs to be giving people more sheltering, service and housing options so they have alternatives to camping in town. But we also need to continue the enforcement of the city’s camping ban so that we don’t have permanent encampments in town with the trash, sanitation and safety issues that accompany them. That is why I supported adding a second clean up team earlier this year. We also have increased enforcement around Boulder High and now confiscate propane tanks on sight. We also now require people to move immediately if they are obstructing bike paths or other rights of way.</blockquote></details><p class='note'><a href='https://boulderreportinglab.org/2023/10/11/2023-boulder-city-council-election-where-the-candidates-stand-on-homeless-encampments/'>2023 Boulder City Council election: Where the candidates stand on homeless encampments</a></p></div>
+<div class='card'><div class='meta'>2023 · Housing</div><h3>What is your plan for increasing Boulder’s affordable housing supply?</h3><details class='quote'><summary>This is a critically important issue given the depth of Boulder’s housing crisis. One of our biggest opportunities is converting older business parks…</summary><blockquote class='answer'>This is a critically important issue given the depth of Boulder’s housing crisis. One of our biggest opportunities is converting older business parks and strip malls into vibrant, mixed-use, 15-minute neighborhoods with a diversity of housing types and prices. We’re working on this in East Boulder and the Boulder Junction area and we need to continue those efforts. I am a proponent of revising our zoning codes to permit smaller, more affordable housing units. By allowing for diverse housing types like duplexes, triplexes and accessory dwelling units (ADUs), we can boost the supply of “missing middle” housing while preserving the unique character of our neighborhoods. Reducing parking requirements in new developments would lower costs as well. Reducing some of the complications and delays in our permitting process would help with housing costs and availability as well.</blockquote></details><p class='note'><a href='https://boulderreportinglab.org/2023/10/09/2023-boulder-city-council-election-where-the-candidates-stand-on-affordable-housing/'>2023 Boulder City Council election: Where the candidates stand on affordable housing</a></p></div>
 <h2>Money</h2>
 <p>Raised $8,975 · spent $2,138.01 · matching received $8,975 · 103 contribution lines (as of 2026-08-13, Aaron Brockett for Mayor). Clerk matching-funds flag: yes. Not TRACER.</p>
 <p class='note'><a href='../people/aaron-brockett.html'>Full dossier</a> · <a href='../2026.html'>2026 ballot</a></p>
@@ -154,7 +175,8 @@ We also need to ensure better access to mental health and substance use treatmen
   City of Boulder only. Cited, not scored, not an endorsement.
   <a href="../sources.html">Sources</a> ·
   <a href="../forums.html">Forums</a> ·
-  <a href="../find.html">Questions</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
   <a href="../finance.html">Money</a> ·
   <a href="../questionnaires.html">Questionnaires</a> ·
   <a href="../print/index.html">Print</a> ·

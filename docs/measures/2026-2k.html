@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2K: Building Boulder Together: Recreation and Safety Bond — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<p class='crumb'><a href='../index.html#measures'>2026 ballot</a> · <a href='../measures.html'>All city measures</a></p>
+<h1>2K: Building Boulder Together: Recreation and Safety Bond</h1>
+<p class='lede'>This would authorize up to $400 million in city borrowing, repaid with additional property taxes, for recreation and public-safety buildings and other capital projects. The ballot lists example projects, including both recreation centers, fire stations, a police/911 building, the Penfield Tate II building and the Municipal Service Center; exact allocations are not fixed in the ballot question. The maximum repayment with financing costs is $650 million. The city&#x27;s project guide identifies intended projects and estimated costs, not a binding project-by-project appropriation.</p>
+<p><strong>A YES vote means:</strong> Authorize up to $400 million in general-obligation debt and a property-tax levy to repay it, within the ballot&#x27;s stated annual tax and total repayment ceilings.</p>
+<p><strong>A NO vote means:</strong> Do not authorize this bond and its associated property-tax increase; existing building needs would still have to be addressed through other choices or existing funds.</p>
+<h2>Money</h2><p>Debt cap $400 million, maximum total repayment $650 million, and annual tax increase up to $32.5 million. The city estimates that, if it borrowed the full $400 million, a $1 million residential property would pay about $400 more each year for roughly 20 years; borrowing less or in stages changes the tax impact. The listed project estimates total more than $400 million, so not every estimate is guaranteed to be fully covered by this bond. <a href='https://bouldercolorado.gov/guide/recreation-and-safety-bond'>source</a></p>
+<h2>How it got on the ballot</h2><p>Council unanimously referred the bond at its August 6 meeting, then scheduled final ballot wording with an explicit lap pool for August 20; the current city ballot guide carries that amended language. The precise final-reading roll call has not been independently confirmed here. <a href='https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/'>source</a></p>
+<h2>Full ballot text</h2>
+<p><a href='https://bouldercolorado.gov/2026-city-boulder-ballot-measures'>Official text on the City of Boulder website</a></p>
+<details class='quote'><summary>Read the full ballot wording here</summary><blockquote class='answer' style='white-space:pre-line'>Shall City of Boulder debt be increased up to $400,000,000, with a maximum repayment cost up to $650,000,000, and shall city taxes be increased up to $32,500,000 annually for the purpose of financing the construction, renovation, or replacement of community recreation, safety infrastructure, and other capital projects, such as:
+(I) the South Boulder Recreation Center, including a lap pool;
+(II) the North Boulder Recreation Center, including aquatics amenities and improvements needed to co-locate West Age Well Senior Center;
+(III) fire stations (to sustain emergency and wildfire response capabilities);
+(IV) a new Public Safety Building for police and 911 services;
+(V) Penfield Tate II Municipal Building; and
+(VI) the Municipal Service Center (to support infrastructure services, such as snow removal, utility maintenance, and city street operations);
+In order to support recreation, safety, and critical infrastructure needs for community members of all ages; 
+Through the issuance and payment of general obligation debt, with such debt containing such terms, not inconsistent herewith, as the City Council may determine; and in connection therewith, 
+Shall ad valorem property taxes be levied without limitation as to the rate, but not more than the amounts listed above, to generate an amount sufficient in each year to pay the principal of, premium, if any, and interest on such debt or any refunding debt (or to create a reserve for such payment); and 
+Shall the proceeds of such debt and reserves and the revenues from such taxes and any investment income earned from such proceeds and revenues be collected and spent without limitation or condition as a voter-approved revenue change and an exception to the limits that would otherwise apply under article x, section 20 of the Colorado constitution or any other law?</blockquote></details>
+<h2 id='positions'>Who supports it, who opposes it</h2>
+
+<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<dl class='legend'>
+<dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
+<dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
+<dt>City filing</dt><dd>A committee's registration with the city clerk names the candidate or measure it supports.</dd>
+<dt>News listing</dt><dd>A news outlet lists the endorsement, but we did not find the endorser's own statement.</dd>
+</dl>
+<p class='note'>Titles (e.g. “U.S. Representative”) are as printed on the cited page and describe the person, not an endorsement by their office. A blank title means the source did not give one.</p>
+</details>
+
+<h3>Supports</h3>
+<ul class='edges'><li><a href='../orgs/boulder-progressives.html'>Boulder Progressives</a><span class='prov prov-endorser_statement' data-edge='E15' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/'>Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)</a> · 2026-09-20</span></li></ul>
+<h3>Opposes</h3>
+<ul class='edges'><li><a href='../people/kc-becker.html'>KC Becker</a>, former Colorado House speaker<span class='prov prov-endorser_statement' data-edge='M1' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://boulderreportinglab.org/2026/08/30/kc-becker-boulder-deserves-a-better-bond-proposal-not-a-400-million-blank-check'>KC Becker: Boulder deserves a better bond proposal, not a $400 million blank check (opinion, Boulder Reporting Lab)</a> · 2026-08-30</span></li><li><a href='../orgs/boulder-chamber.html'>Boulder Chamber</a><span class='prov prov-endorser_statement' data-edge='E26' data-provenance='endorser_statement'><span class='prov-label'>Endorser's own statement</span>.  <a href='https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements'>Boulder Chamber Takes Measured Approach to 2026 Ballot Measures (press release, Yellow Scene)</a> · 2026-09-12</span></li><li><a href='../orgs/no-on-2k-demand-fiscal-responsibility.html'>No on 2K: Demand Fiscal Responsibility</a><span class='prov prov-filing' data-edge='E54' data-provenance='filing'><span class='prov-label'>City filing</span>. Committee registration with the city clerk names this. <a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&amp;committeeID=328'>Statement of Organization: No on 2K</a> · 2026-09-17</span></li></ul>
+<h3>What reporters said about the candidates</h3>
+<p class='card'>Boulder Reporting Lab reported (2026-08-30): All five incumbent candidates support the measure, citing more than $400 million in deferred maintenance; Sam Fuqua and Jamillah Richmond also support it. <a href='https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/'>Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)</a><span class='note'> — a reporter's summary of the field, not each candidate's own answer. We do not assign a yes or no to anyone from it.</span></p>
+<p class='card'>Boulder Reporting Lab reported (2026-08-30): Many challengers oppose the measure, arguing voters have not received enough information about how the money would be spent. <a href='https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/'>Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)</a><span class='note'> — a reporter's summary of the field, not each candidate's own answer. We do not assign a yes or no to anyone from it.</span></p>
+<h2>What we don't know yet</h2><ul><li>Final August 20 roll-call vote for 2K not independently confirmed from minutes; only the August 6 unanimous referral and final text are confirmed here.</li></ul>
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="../sources.html">Sources</a> ·
+  <a href="../forums.html">Forums</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
+  <a href="../finance.html">Money</a> ·
+  <a href="../questionnaires.html">Questionnaires</a> ·
+  <a href="../print/index.html">Print</a> ·
+  <a href="../measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>
