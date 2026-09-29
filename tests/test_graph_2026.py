@@ -161,7 +161,9 @@ class TestData(unittest.TestCase):
         con = db()
         n = con.execute(
             """SELECT COUNT(*) FROM answers a JOIN questions q ON q.id=a.question_id
-               WHERE q.issue_slug='bond' AND q.year=2026"""
+               JOIN sources s ON s.id=a.source_id
+               WHERE q.issue_slug='bond' AND q.year=2026
+                 AND NOT (a.kind='forum' AND s.kind='video')"""
         ).fetchone()[0]
         self.assertEqual(n, 0, "journalist grouping must not become per-candidate bond answers")
         self.assertGreaterEqual(con.execute("SELECT COUNT(*) FROM reported_lines").fetchone()[0], 1)

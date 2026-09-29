@@ -456,6 +456,7 @@ class Graph2026:
                 f"<p>{esc(m['plain_summary'] or m['summary'])}</p></div>"
             )
         b.append("<h2>More</h2><ul>"
+                 "<li><a href='compare.html'>What candidates said at forums</a> — the same question, every candidate, in their own words</li>"
                  "<li><a href='orgs.html'>Organizations that endorse</a> — who they are, how they decide, who funds them</li>"
                  "<li><a href='finance.html'>Campaign money</a> — city clerk filings</li>"
                  "<li><a href='2026.html'>2026 ballot details</a> — questions asked this cycle, forums, money table</li>"
@@ -620,6 +621,9 @@ class Graph2026:
                 b.append(f"<p class='card'>{esc(ln['reporter'])} reported ({esc(ln['reported_on'])}): {esc(ln['text'])} "
                          f"<a href='{esc(ln['url'])}'>{esc(ln['title'])}</a><span class='note'> — a reporter's summary of the field, "
                          f"not each candidate's own answer. We do not assign a yes or no to anyone from it.</span></p>")
+            extra = getattr(self, "measure_extra", None)
+            if extra:
+                b.append(extra(m["letter"], "../"))
             unknowns = json.loads(m["unknowns"] or "[]")
             if unknowns:
                 b.append("<h2>What we don't know yet</h2><ul>" + "".join(f"<li>{esc(u)}</li>" for u in unknowns) + "</ul>")

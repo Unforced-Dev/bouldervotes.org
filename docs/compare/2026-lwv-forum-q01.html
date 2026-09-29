@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opening statement (one minute) — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+
+.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
+.forum-answer .who { font-weight: 700; }
+table.grid td:first-child { width: 28%; }
+table.grid blockquote.answer { margin: 0.2rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../compare.html">Forum answers</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<p class='crumb'><a href='../compare.html'>Same question, every candidate</a> · <a href='../forums/2026-lwv-forum.html#q01'>League of Women Voters forum</a></p>
+<h1>Opening statement (one minute)</h1>
+<p class='note'>Asked at the League of Women Voters of Boulder County City Council and Mayoral Candidate Forums, September 26, 2026.</p>
+<p class='note'><strong>How to read this.</strong> Each page puts one forum question next to every candidate we quote answering it, in the order they spoke. There are no scores and no summary of who is right. A yes/no appears only where the candidate said yes or no (support/oppose) in so many words; a blank means they did not, or hedged — read the quote. Automatic transcript; check the recording.</p>
+<table class='grid'><tr><th>Candidate</th><th>In their words</th></tr><tr data-person='lee-gilbert'><td><a href='../people/lee-gilbert.html'>Lee Gilbert</a></td><td><blockquote class='answer'>A vote for me is a vote of no confidence in Boulder&#x27;s road projects.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=509s'>Watch at 8:29</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='sam-fuqua'><td><a href='../people/sam-fuqua.html'>Sam Fuqua</a></td><td><blockquote class='answer'>We all know too many families can&#x27;t afford to live in our town, and that&#x27;s why affordable housing is my top priority.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=564s'>Watch at 9:24</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='ryan-schuchard'><td><a href='../people/ryan-schuchard.html'>Ryan Schuchard</a></td><td><blockquote class='answer'>First, to cut the cost of living so that everybody can afford to live here.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=643s'>Watch at 10:43</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='jamillah-richmond'><td><a href='../people/jamillah-richmond.html'>Jamillah Richmond</a></td><td><blockquote class='answer'>We have a lot of people that are working here but not living here because they can&#x27;t afford to and I think that that is an issue.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=711s'>Watch at 11:51</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='tara-winer'><td><a href='../people/tara-winer.html'>Tara Winer</a></td><td><blockquote class='answer'>I take accessibility and availability to the community seriously, which is why I give out my cell phone number</blockquote><p class='note'>Transcript note: Winer was absent (out of state); moderator read her submitted statement per League policy.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=830s'>Watch at 13:50</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='rachel-rose-isaacson'><td><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></td><td><blockquote class='answer'>we are facing rising cost of living, job loss, structural deficit, and increased wildfire risk.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=911s'>Watch at 15:11</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='dave-martus'><td><a href='../people/dave-martus.html'>Dave Martus</a></td><td><blockquote class='answer'>the superpower I would bring to council is financial acumen.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=961s'>Watch at 16:01</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='scott-rendleman'><td><a href='../people/scott-rendleman.html'>Scott Rendleman</a></td><td><blockquote class='answer'>I will advocate for the people who feel that their voices have not been heard.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1053s'>Watch at 17:33</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='jill-grano'><td><a href='../people/jill-grano.html'>Jill Grano</a></td><td><blockquote class='answer'>we&#x27;ve built 4,000 units in the last decade, and our non-resident population hasn&#x27;t grown by one single person.</blockquote><p class='note'>Transcript note: &#x27;non-resident&#x27; likely &#x27;resident&#x27; (Whisper); at the Chamber forum she said &#x27;our population has not grown by one single person&#x27;.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1100s'>Watch at 18:20</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p><blockquote class='answer'>pair supply with demand and look at investor-driven acquisitions on the Hill in particular.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1110s'>Watch at 18:30</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='ryan-jamieson'><td><a href='../people/ryan-jamieson.html'>Ryan Jamieson</a></td><td><blockquote class='answer'>I&#x27;m also pushing to create a independent city auditor, and I&#x27;m going to focus significantly on wildfire remediation.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1170s'>Watch at 19:30</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='lynn-segal'><td><a href='../people/lynn-segal.html'>Lynn Segal</a></td><td><blockquote class='answer'>And I&#x27;m against CU South. I&#x27;m for municipalization.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1198s'>Watch at 19:58</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p><blockquote class='answer'>$40 million for Alpine Balsam, now $366 million. Not OK.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1238s'>Watch at 20:38</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr><tr data-person='tina-marquis'><td><a href='../people/tina-marquis.html'>Tina Marquis</a></td><td><blockquote class='answer'>The other piece that I am focused on is more sticky housing. This is the kind of housing where someone can stay, not just rent for one to two years</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1285s'>Watch at 21:25</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></td></tr></table>
+<p class='note'>Candidates not listed were not quoted by us on this question — absent, not called on, or not captured in our extract. That is not a position.</p>
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="../sources.html">Sources</a> ·
+  <a href="../forums.html">Forums</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
+  <a href="../finance.html">Money</a> ·
+  <a href="../questionnaires.html">Questionnaires</a> ·
+  <a href="../print/index.html">Print</a> ·
+  <a href="../measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>

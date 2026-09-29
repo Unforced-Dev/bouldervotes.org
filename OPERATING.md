@@ -62,6 +62,10 @@ Binary `stance` (`yes` / `no` / `mixed`) only when the source is actually binary
 
 `events` + `event_appearances`. Attendance only when a published source named who showed. Link `recording_url` when a video exists. Spoken answers become `answers` with `kind=forum` and `event_id` set — they file onto issue pages, they do not lengthen the year page.
 
+### 2026 forum transcripts
+
+`python3 tools/approve_forums_2026.py ../bv-research ../bv-transcribe/transcripts` copies the 330 reviewed claims to `data/harvest/2026/forum_claims.json`, event facts to `forums.json`, and the Whisper transcripts to `data/harvest/2026/transcripts/`. Editorial decisions live only in that tool's named constants: `FORUMS_2026`, `FORUM_QUESTIONS`, `FORUM_STANCES` (the only place a yes/no is set, keyed by candidate + video + quote prefix; only for 2J, 2K, CAN/bus lanes, proportional-representation study session; caveated answers stay unlabelled with a note) and `FORUM_HOLDS` (attribution doubtful; not rendered). `ingest_forums_2026.py` loads them; `build_forums_2026.py` renders candidate sections, `forums/<slug>.html`, `compare.html` + `compare/*.html` and the 2J/2K measure sections. Every quote shows "Automatic transcript; check the recording." and a watch link; speaking-order attributions show the medium-confidence caveat. `tests/test_forums_2026.py` checks every quote against the committed transcript.
+
 ## Publishing
 
 Work in a git worktree, not on `main`. Branch, commit, PR to `unforcedagi/bouldervotes.org`, merge when the Pages tree in `docs/` is the thing you want live.
@@ -83,4 +87,4 @@ Municipal filings are the city clerk (`election-committee-filings`), not TRACER.
 - Verbatim ingest of Chamber 2025 extended PDF and Open Boulder 2025 PDFs (catalogued, not copied into `answers` yet).
 - Past-year campaign-finance dollar totals (Laserfiche archive is JS/cookie; 2026 live app is harvested, including itemized donors).
 - 2015 and earlier cycles.
-- Forum transcripts as quotes (videos are linked; do not invent spoken words from a journalist’s grouping).
+- Forum transcripts as quotes beyond the reviewed 2026 set (do not invent spoken words from a journalist’s grouping).

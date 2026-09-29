@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the city is run 2026 — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+
+.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
+.forum-answer .who { font-weight: 700; }
+table.grid td:first-child { width: 28%; }
+table.grid blockquote.answer { margin: 0.2rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../compare.html">Forum answers</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<p class='crumb'><a href='../issues.html'>Issues</a> · <a href='governance.html'>How the city is run</a></p>
+<h1>How the city is run · 2026</h1>
+<p class='note'>2026 · How the city is run. This issue in: <a class='pill on' href='governance-2026.html'>2026</a> </p>
+<p>People on the 2026 ballot who answered this cycle’s question. We do not copy an earlier year’s yes/no onto this page.</p>
+<h2>The mayor has a unique role in building consensus and setting council priorities. How would you use that leadership role to bring council, city staff, and the business community together around a clear economic strategy and hold the city accountable for measurable progress?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p>
+<div class='card'><h3><a href='../people/taishya-adams.html'>Taishya Adams</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>we need to better engage our borders and our commissions in the work that we&#x27;re doing, as well as in addition to our businesses and recognizing that all of our businesses are not the same.</blockquote><p class='note'>Transcript note: &#x27;borders&#x27; = boards (Whisper).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=1690s'>Watch at 28:10</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aaron-brockett.html'>Aaron Brockett</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>Start with what staff is recommending. It&#x27;s not always the direction we should go. Work with the colleagues. Work with the community.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=1852s'>Watch at 30:52</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>What we have is not a failure of values. Everybody here has incredible values. It&#x27;s a failure of delivery.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=1959s'>Watch at 32:39</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/fred-smith.html'>Fred Smith</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I think the city of Boulder is too strict on codes.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=1876s'>Watch at 31:16</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<p class='note'>15 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>A citizen group has developed a proposal for the city to hire a performance auditor, different from a financial auditor, and to fund a small department to support that auditor; this auditor would report to city council, with an audit committee in the 2027 budget. Do you support this or think it is necessary?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p>
+<div class='card'><h3><a href='../people/taishya-adams.html'>Taishya Adams</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>I would also recommend a director of research and evaluation,</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=3919s'>Watch at 1:05:19</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aaron-brockett.html'>Aaron Brockett</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>the good news is that the city actually hired a performance auditor a few months ago,</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Speaker references council financial strategies committee; sequence-based.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=3868s'>Watch at 1:04:28</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>it&#x27;s not only going to help us evaluate whether our programs are efficiently achieving goals</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=3754s'>Watch at 1:02:34</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/ryan-jamieson.html'>Ryan Jamieson</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>what you&#x27;d want to be able to create is an audit committee</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=4149s'>Watch at 1:09:09</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<p class='note'>15 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>Given the strong city manager / weak mayor structure of our city&#x27;s government, how would you approach your role as mayor to set the council&#x27;s overall objectives?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p>
+<div class='card'><h3><a href='../people/taishya-adams.html'>Taishya Adams</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>I would recommend that we move to a quarterly and have specific milestones and reporting</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=5014s'>Watch at 1:23:34</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aaron-brockett.html'>Aaron Brockett</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>I worked closely with all of our colleagues to shape a vision for where our community can go</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=5144s'>Watch at 1:25:44</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><blockquote class='answer'>we must demand a governing vision and we must measure against that governing vision again and again.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=5100s'>Watch at 1:25:00</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div>
+<p class='note'>16 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>If elected mayor, how would you use your leadership role to help ensure that adopted plans are translated into action and that major projects are delivered responsibly and within budget?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p>
+<div class='card'><h3><a href='../people/taishya-adams.html'>Taishya Adams</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>We are going to have more extreme heat. We are going to have more wildfires. And arts plays a critical role in not only communication and education, but climate grief.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=507s'>Watch at 8:27</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aaron-brockett.html'>Aaron Brockett</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>As we have a dashboard that tracks with each one of them how they&#x27;re going, what percent are they complete and what steps are coming next. I&#x27;d like to see us do that with other major plans.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=356s'>Watch at 5:56</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>It&#x27;s a $350 million project that&#x27;s going to house about 300 employees, so over a million dollars per employee.</blockquote><p class='note'>Transcript note: Referring to Alpine-Balsam.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=719s'>Watch at 11:59</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>I think the best way that we can do this is by bringing in an independent auditor.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=742s'>Watch at 12:22</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>we need to rethink in changing the measurement rubric for the city manager and we need a city auditor.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Moderator&#x27;s announced order put La Grave second; intro garbled.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=444s'>Watch at 7:24</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>That means firing city of Boulder workers who are slow, ineffective, and not doing their jobs.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=588s'>Watch at 9:48</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/fred-smith.html'>Fred Smith</a></h3><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><blockquote class='answer'>I&#x27;m a super majority guy. I think in big decisions you should have a two-thirds majority for them to pass.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Fifth in moderator&#x27;s announced order (after Jacobs); not re-named.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=637s'>Watch at 10:37</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div>
+<p class='note'>13 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>Do you agree or disagree that our city council is adequately representative of the social, political and economic interests of Boulder? Would you support a study session on proportional representation?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p>
+<h2>Yes</h2>
+<div class='card'><h3><a href='../people/sam-fuqua.html'>Sam Fuqua</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><p><span class='stance yes'>Yes</span> on a study session on proportional representation, in the candidate's own words below.</p><blockquote class='answer'>I would support a study session on this issue</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4846s'>Watch at 1:20:46</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><p><span class='stance yes'>Yes</span> on a study session on proportional representation, in the candidate's own words below.</p><blockquote class='answer'>I do support us having a study session</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4409s'>Watch at 1:13:29</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/benita-duran.html'>Benita Duran</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>I think our public engagement needs a refresh and a fix.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=5035s'>Watch at 1:23:55</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/lee-gilbert.html'>Lee Gilbert</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>Well, clearly the council is not representative of the people.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4788s'>Watch at 1:19:48</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/jill-grano.html'>Jill Grano</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><p class='note'>No yes/no label: Not sure a study session solves it; not a yes or no.</p><blockquote class='answer'>We don&#x27;t have proportional representation. I think the question is, what do we do about that? I&#x27;m not sure that a study session solves that</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4534s'>Watch at 1:15:34</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>I do not think that there&#x27;s proportionate representation on council currently.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4372s'>Watch at 1:12:52</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/ryan-jamieson.html'>Ryan Jamieson</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>I also don&#x27;t think that we need to strive for proportionality across the board</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4628s'>Watch at 1:17:08</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/tina-marquis.html'>Tina Marquis</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><p class='note'>No yes/no label: &#x27;Open to&#x27; a study session; not labelled.</p><blockquote class='answer'>I am open to a study session on that specific methodology.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4730s'>Watch at 1:18:50</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/dave-martus.html'>Dave Martus</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>So overall, I think we&#x27;re representing the community very well.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4442s'>Watch at 1:14:02</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/scott-rendleman.html'>Scott Rendleman</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><p class='note'>No yes/no label: Interested in hearing more; not a yes or no.</p><blockquote class='answer'>In terms of a study session, I&#x27;d be interested in hearing more about whether that would make sense</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4498s'>Watch at 1:14:58</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/jamillah-richmond.html'>Jamillah Richmond</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>So we do need to have more representation, more diversity</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4980s'>Watch at 1:23:00</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/ryan-schuchard.html'>Ryan Schuchard</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>But I don&#x27;t know about proportional representation.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4908s'>Watch at 1:21:48</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/lynn-segal.html'>Lynn Segal</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>I don&#x27;t think people are being represented.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4657s'>Watch at 1:17:37</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<p class='note'>7 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>What are the unique roles of the Boulder mayor that make the job different from being a city council member?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p>
+<div class='card'><h3><a href='../people/taishya-adams.html'>Taishya Adams</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>being able to be at the table every week to determine what our city&#x27;s agenda is going to be</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8067s'>Watch at 2:14:27</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aaron-brockett.html'>Aaron Brockett</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>Also, convening is an important, incredibly important part of the role.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8165s'>Watch at 2:16:05</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>Because right now the people of Boulder don&#x27;t feel like they&#x27;re heard.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8233s'>Watch at 2:17:13</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>I believe the Mayor has a sacred apolitical duty to ensure that all members of Council succeed.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8318s'>Watch at 2:18:38</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>Failure in Boulder should never be an orphan, and it should be the Mayor who stands in that space.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8373s'>Watch at 2:19:33</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>Instead, our Mayor and City Councillors are going into executive sessions without giving notice.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8405s'>Watch at 2:20:05</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/fred-smith.html'>Fred Smith</a></h3><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><blockquote class='answer'>Why wouldn&#x27;t you want 19 and 20 year olds in the bars?</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=8310s'>Watch at 2:18:30</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div>
+<p class='note'>13 on this ballot are not in the source for this question. That is not a no.</p>
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="../sources.html">Sources</a> ·
+  <a href="../forums.html">Forums</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
+  <a href="../finance.html">Money</a> ·
+  <a href="../questionnaires.html">Questionnaires</a> ·
+  <a href="../print/index.html">Print</a> ·
+  <a href="../measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>

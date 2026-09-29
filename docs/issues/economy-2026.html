@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business and the local economy 2026 — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+
+.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
+.forum-answer .who { font-weight: 700; }
+table.grid td:first-child { width: 28%; }
+table.grid blockquote.answer { margin: 0.2rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../compare.html">Forum answers</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<p class='crumb'><a href='../issues.html'>Issues</a> · <a href='economy.html'>Business and the local economy</a></p>
+<h1>Business and the local economy · 2026</h1>
+<p class='note'>2026 · Business and the local economy. This issue in: <a class='pill on' href='economy-2026.html'>2026</a> </p>
+<p>People on the 2026 ballot who answered this cycle’s question. We do not copy an earlier year’s yes/no onto this page.</p>
+<h2>What role do you see public and private partnerships playing in some of our greatest areas of need?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p>
+<div class='card'><h3><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I&#x27;d be really curious about ways that we can work together with childcare providers, and especially with this new tax that we&#x27;re considering</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=3682s'>Watch at 1:01:22</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/tina-marquis.html'>Tina Marquis</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>we identified a problem with our unsheltered homeless population and looked to see how we could support them and also maintain our public safety goals.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Moderator called &#x27;Lee and Tina&#x27;; third of the three named respondents.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=3800s'>Watch at 1:03:20</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<p class='note'>17 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>If elected, what is the single most important new initiative you would pursue in your first year to improve Boulder&#x27;s business climate? Are there any past policies the Council has adopted you would consider reversing?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p>
+<div class='card'><h3><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>We need to start looking at two-hour parking to start bringing folks into our downtown businesses.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=4386s'>Watch at 1:13:06</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/scott-rendleman.html'>Scott Rendleman</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>my initiative for businesses would be to revisit how we structure some form of downtown development before it.</blockquote><p class='note'>Transcript note: Refers to the Downtown Development Authority (DDA); &#x27;before it&#x27; likely &#x27;authority&#x27;.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=4496s'>Watch at 1:14:56</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/tara-winer.html'>Tara Winer</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>My number one is always going to be do something about Title IX, and that is our land use code</blockquote><p class='note'>Transcript note: &#x27;Title IX&#x27; = Title 9 (Boulder land use code).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=4415s'>Watch at 1:13:35</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/tara-winer.html'>Tara Winer</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>the amount of time it takes to get a permit is insane.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=4448s'>Watch at 1:14:08</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<p class='note'>16 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>What specific strategies would you recommend that the City of Boulder initiate to recruit and retain businesses in our community? What kinds of industries or businesses would you target?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p>
+<div class='card'><h3><a href='../people/lee-gilbert.html'>Lee Gilbert</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I work on strategies to reduce the cost, both in terms of permitting and also in terms of local tax districts and things.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=5206s'>Watch at 1:26:46</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/jamillah-richmond.html'>Jamillah Richmond</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I&#x27;d like to look at opportunities and ways for us to address the start of costs of creating businesses in the community.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=5259s'>Watch at 1:27:39</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/fred-smith.html'>Fred Smith</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>if you&#x27;re going to live in Boulder, they got to be better paying jobs because people can&#x27;t live in Boulder on $15 an hour jobs.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=5170s'>Watch at 1:26:10</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<p class='note'>16 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>What specific actions would you take to ensure Latino entrepreneurs have equitable access to city contracts, business resources, commercial space, and economic opportunities?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p>
+<div class='card'><h3><a href='../people/benita-duran.html'>Benita Duran</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I believe that there is a real need to aggressively partner with chambers.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=5517s'>Watch at 1:31:57</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<p class='note'>18 on this ballot are not in the source for this question. That is not a no.</p>
+<h2>If elected, what specific actions would you take to support downtown businesses, encourage investment, and make economic vitality a priority?</h2>
+<p class='note'>forum</p>
+<p class='note'><a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p>
+<div class='card'><h3><a href='../people/taishya-adams.html'>Taishya Adams</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>We have 16,000 acres of agricultural land in our city. Why aren&#x27;t we creating stronger partnerships so that we can reduce those food costs</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Third of the called respondents (garbled &#x27;Venetatia&#x27;).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=6073s'>Watch at 1:41:13</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/scott-rendleman.html'>Scott Rendleman</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I would have an initiative where we look at where can we get savings and make it more affordable for businesses to open.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=5938s'>Watch at 1:38:58</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<div class='card'><h3><a href='../people/lynn-segal.html'>Lynn Segal</a></h3><p class='note'><a href='../forums/2026-chamber-forum.html'>Boulder Chamber forum</a> · August 26, 2026</p><blockquote class='answer'>I think the DBA wouldn&#x27;t be necessary if we stopped the war in Iran</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Moderator called &#x27;Scott, Lynn, Taishya&#x27; (garbled) then &#x27;Wendy&#x27;; second respondent.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=CQlalpB7N5w&amp;t=5976s'>Watch at 1:39:36</a> · <a href='https://www.youtube.com/watch?v=CQlalpB7N5w'>2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)</a></p></div>
+<p class='note'>16 on this ballot are not in the source for this question. That is not a no.</p>
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="../sources.html">Sources</a> ·
+  <a href="../forums.html">Forums</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
+  <a href="../finance.html">Money</a> ·
+  <a href="../questionnaires.html">Questionnaires</a> ·
+  <a href="../print/index.html">Print</a> ·
+  <a href="../measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>
