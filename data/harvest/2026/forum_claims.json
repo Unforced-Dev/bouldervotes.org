@@ -1017,7 +1017,7 @@
   "audited_on": "2026-09-29"
  },
  {
-  "candidate": "Lee Gilbert",
+  "candidate": "Lynn Segal",
   "forum": "Boulder Chamber City Council & Mayoral Candidate Forum (2026-08-26, eTown)",
   "youtube_id": "CQlalpB7N5w",
   "start_seconds": 3734,
@@ -1026,6 +1026,7 @@
   "quote": "Public-private partnerships have always kind of disturbed me because it seems to usually be that the private part is making off like a thief.",
   "topic": "other",
   "attribution_confidence": "high",
+  "note": "Moderator's cue ('Lynn, and then Tina') is garbled in the transcript; speaker confirmed by a listener to the recording, 2026-09-29.",
   "id": "FC045",
   "research_index": 44,
   "event": "2026-chamber-forum",
@@ -1035,8 +1036,8 @@
   "stance_about": null,
   "stance": null,
   "stance_note": null,
-  "status": "held",
-  "hold_reason": "Attribution doubtful. The moderator's cue is garbled ('Alright, Lea and Mantina' at 1:02:09) and the answer's theme (money going to war, federal spending) matches Lynn Segal's answers at this forum (0:56:58 and 1:39:36), not Lee Gilbert's transportation platform. Hold until a listener confirms the voice.",
+  "status": "published",
+  "hold_reason": null,
   "audited_on": "2026-09-29"
  },
  {
@@ -1048,8 +1049,8 @@
   "question": "What role do you see public and private partnerships playing in some of our greatest areas of need?",
   "quote": "we identified a problem with our unsheltered homeless population and looked to see how we could support them and also maintain our public safety goals.",
   "topic": "homelessness/safety",
-  "attribution_confidence": "medium",
-  "note": "Moderator called 'Lee and Tina'; third of the three named respondents.",
+  "attribution_confidence": "high",
+  "note": "Moderator called 'Lynn, and then Tina' (garbled in the transcript; confirmed by a listener).",
   "id": "FC046",
   "research_index": 45,
   "event": "2026-chamber-forum",
