@@ -278,11 +278,8 @@ FORUM_STANCES = {
 # ---------------------------------------------------------------- holds
 # (candidate, youtube_id, quote prefix) -> reason. Held claims are not rendered.
 FORUM_HOLDS = {
-    ("Lee Gilbert", C, "Public-private partnerships have always kind of disturbed me"): (
-        "Attribution doubtful. The moderator's cue is garbled ('Alright, Lea and Mantina' at 1:02:09) and the "
-        "answer's theme (money going to war, federal spending) matches Lynn Segal's answers at this forum "
-        "(0:56:58 and 1:39:36), not Lee Gilbert's transportation platform. Hold until a listener confirms the voice."
-    ),
+    # FC045 released 2026-09-29: Aaron listened to the Chamber recording at 1:02:09 and confirmed the
+    # moderator says "Lynn, and then Tina"; the claim is now attributed to Lynn Segal in the research drafts.
 }
 
 
