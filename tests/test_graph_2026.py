@@ -224,6 +224,26 @@ class TestBuiltHtml(unittest.TestCase):
         for f, s in self.pages.items():
             self.assertNotRegex(s, r'href=["\'](\.\./)*find\.html', str(f))
 
+    def test_home_intro_states_what_the_site_is(self):
+        from build_2026 import HOME_INTRO
+        s = self.pages[DOCS / "index.html"]
+        self.assertIn(HOME_INTRO.replace("'", "&#x27;"), s)
+        self.assertIn("independent, nonpartisan guide", s)
+        self.assertIn("Who's running for mayor", s)
+        self.assertIn("Who's running for city council", s)
+        self.assertIn("What's on the ballot", s)
+        self.assertIn("How to use this guide", s)
+
+    def test_print_sheet_answers_not_folded(self):
+        """A closed details element hides answers even if print CSS sets blockquote display:block."""
+        s = self.pages[DOCS / "print" / "tara-winer.html"]
+        self.assertNotIn("<details class='quote'>", s)
+        self.assertIn("supportive services", s)
+        self.assertIn("<blockquote class='answer'>", s)
+        self.assertNotIn("One letter-size sheet", s)
+        # The shared CSS also opens all other pages' folded answers in print.
+        self.assertIn("details::details-content { content-visibility: visible; display: block; }", s)
+
     def test_home_key_facts(self):
         s = self.pages[DOCS / "index.html"]
         self.assertIn("October 2", s)

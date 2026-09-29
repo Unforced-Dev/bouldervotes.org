@@ -28,31 +28,45 @@ GROUPS = [
 
 KEY_DATES_URL = "https://bouldercounty.gov/elections/information/"
 
+HOME_INTRO = (
+    "Boulder Votes is an independent, nonpartisan guide to the City of Boulder's "
+    "November 3, 2026 election: who is running for mayor and city council, what the four "
+    "city ballot measures would do, and where every fact comes from."
+)
+
 EXTRA_CSS = """
-a { text-decoration: underline; text-underline-offset: 0.15em; }
-p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
-.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
-.prov-label { font-weight: 700; }
-.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
-.prov-endorser_statement .prov-label { color: var(--won); }
-.prov-filing .prov-label { color: var(--link); }
-ul.edges { list-style: none; padding-left: 0; }
-ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
-.rank { font-weight: 700; }
-.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
-.keydates p { margin: 0.25rem 0; }
+p, li, td, th, blockquote, h1, h2, h3, h4, dd { overflow-wrap: break-word; }
+/* provenance: one neutral treatment; the label's words carry the meaning */
+.prov { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 0.2rem; line-height: 1.45; }
+.prov-label { font-family: var(--sans); font-weight: 700; font-size: 0.82rem; color: var(--ink); }
+ul.edges { list-style: none; padding-left: 0; margin: 0.4rem 0 1rem; }
+ul.edges > li { border-top: 1px solid var(--rule); padding: 0.6rem 0; margin: 0; max-width: var(--measure); }
+ul.edges > li:last-child { border-bottom: 1px solid var(--rule); }
+.rank { font-family: var(--sans); font-size: 0.85rem; font-weight: 700; border: 1px solid var(--rule-strong); padding: 0 0.35rem; margin-left: 0.25rem; }
+.keydates { border: 2px solid var(--ink); padding: 0.9rem 1.1rem; background: var(--panel); margin: 1rem 0 1.4rem; }
+.keydates h2 { border: 0; padding: 0; margin: 0 0 0.4rem; font-size: 1.2rem; font-family: var(--sans); letter-spacing: 0.02em; }
+.keydates p { margin: 0.35rem 0; }
 .bigdate { font-size: 1.15rem; font-weight: 700; }
 .held { color: var(--muted); font-style: italic; }
-.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dt { font-weight: 700; margin-top: 0.5rem; }
 .legend dd { margin-left: 0; }
-@media (max-width: 480px) {
-  table { font-size: 0.82rem; }
-  th, td { padding-right: 0.25rem; }
+/* measure: Yes means / No means, identical weight */
+dl.yesno { border: 2px solid var(--ink); background: var(--panel); margin: 1rem 0 1.4rem; padding: 0; }
+dl.yesno > div { padding: 0.8rem 1.1rem; }
+dl.yesno > div + div { border-top: 1px solid var(--rule-strong); }
+dl.yesno dt { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; margin: 0 0 0.2rem; }
+dl.yesno dd { margin: 0; }
+.bio-line { font-size: 1.1rem; }
+.facts { list-style: none; padding: 0; margin: 0.5rem 0; }
+.facts li { margin: 0.2rem 0; }
+@media print {
+  .prov { color: #333; }
+  dl.yesno { background: #fff; }
 }
 """
 
 PROV_LEGEND = """
-<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<details class='fold'><summary>What the labels on each endorsement mean</summary>
 <dl class='legend'>
 <dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
 <dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
@@ -298,6 +312,54 @@ class Graph2026:
         return (f"<details class='quote'><summary>{esc(cut)}</summary>"
                 f"<blockquote class='answer'>{esc(compact)}</blockquote></details>")
 
+    # ------------------------------------------------------------ candidate summary (top of page)
+    def candidate_summary(self, person_id: int, body: str, slug: str) -> str:
+        """Office, bio line and jump links. Same fields in the same order for every
+        2026 candidate, mayor or council, so no one gets a different treatment."""
+        row = self.q(
+            """SELECT p.full_name, o.name AS office, o.slug AS office_slug, c.is_incumbent,
+                      c.campaign_url, cp.summary
+               FROM candidacies c JOIN people p ON p.id=c.person_id
+               JOIN races r ON r.id=c.race_id JOIN elections e ON e.id=r.election_id
+               JOIN offices o ON o.id=r.office_id LEFT JOIN candidate_profiles cp ON cp.candidacy_id=c.id
+               WHERE c.person_id=? AND e.year=2026""",
+            (person_id,),
+        ).fetchone()
+        race = "Mayor" if row["office_slug"] == "mayor" else "City Council"
+        anchor = "mayor" if row["office_slug"] == "mayor" else "council"
+        kicker = f"Running for {esc(row['office'])} · 2026"
+        if row["is_incumbent"]:
+            kicker += " · Incumbent"
+        jumps = []
+        for anchor_id, label in (("bio", "About"), ("positions", "Positions"), ("forums", "At the forums"),
+                                 ("endorsers", "Endorsements"), ("money", "Money"),
+                                 ("questionnaires", "Past answers"), ("campaigns", "Campaigns")):
+            if f"id='{anchor_id}'" in body or f'id="{anchor_id}"' in body:
+                jumps.append(f"<a href='#{anchor_id}'>{label}</a>")
+        snap = self.q("SELECT * FROM finance_snapshots WHERE person_id=? AND year=2026", (person_id,)).fetchone()
+        money = ""
+        if snap:
+            def d(n):
+                if n is None:
+                    return "—"
+                x = float(n)
+                return f"${x:,.0f}" if abs(x - round(x)) < 0.005 else f"${x:,.2f}"
+            money = (f"<p class='note'>Money (city clerk{', as of ' + esc(snap['reported_on']) if snap['reported_on'] else ''}): "
+                     f"raised {d(snap['contributions'])} · spent {d(snap['expenditures'])} · "
+                     f"matching funds received {d(snap['matching_received'])}.</p>")
+        site = (f" · <a href='{esc(row['campaign_url'])}'>Campaign website</a>" if row["campaign_url"] else "")
+        return (
+            f"<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../index.html#{anchor}'>{race}</a></p>"
+            f"<div class='summary'>"
+            f"<p class='kicker'>{kicker}</p>"
+            f"<h1>{esc(row['full_name'])}</h1>"
+            + (f"<p class='bio-line'>{esc(first_sentence(row['summary']))}</p>" if row["summary"] else "")
+            + money
+            + f"<nav class='jump' aria-label='On this page'>{''.join(jumps)}</nav>"
+            f"<p class='note print-hint'><a href='../print/{esc(slug)}.html'>Printable sheet</a>{site}</p>"
+            f"</div>"
+        )
+
     # ------------------------------------------------------------ person page sections
     def person_sections(self, person_id: int, prefix: str = "../") -> str:
         bits: list[str] = []
@@ -311,7 +373,7 @@ class Graph2026:
         title = self.q("SELECT pt.*, s.url, s.title AS stitle FROM person_titles pt JOIN sources s ON s.id=pt.source_id WHERE person_id=?",
                        (person_id,)).fetchone()
         if cand:
-            bits.append(f"<h2 id='bio'>2026 candidate for {esc(cand['office'])}</h2>")
+            bits.append(f"<h2 id='bio'>About this candidate</h2>")
             if cand["summary"]:
                 bits.append(f"<p>{esc(cand['summary'])}</p>")
             facts = []
@@ -319,7 +381,7 @@ class Graph2026:
                 if cand[k]:
                     facts.append(f"<li><strong>{lab}:</strong> {esc(cand[k])}</li>")
             if facts:
-                bits.append("<ul>" + "".join(facts) + "</ul>")
+                bits.append("<ul class='facts'>" + "".join(facts) + "</ul>")
             srcs = self.q("""SELECT DISTINCT s.url FROM profile_sources ps JOIN sources s ON s.id=ps.source_id
                              WHERE ps.candidacy_id=?""", (cand["id"],)).fetchall()
             if srcs:
@@ -340,12 +402,12 @@ class Graph2026:
                 cur_topic = None
                 for s in own:
                     if s["topic"] != cur_topic:
-                        bits.append(f"<h3>{esc(s['topic'].replace('-', ' ').capitalize())}</h3>")
+                        bits.append(f"<h3>{esc(s['topic'].replace('-', ' ').capitalize())}</h3>")  # topic
                         cur_topic = s["topic"]
                     date = f" · {esc(s['published_on'])}" if s["published_on"] else ""
                     bits.append(
                         f"<div class='card' data-statement='{esc(s['id'])}'>{self.quote(s['text'])}"
-                        f"<p class='note'>{esc(s['publisher'])} · {esc(s['kind'].replace('_', ' '))}{date} · "
+                        f"<p class='note'>Source: {esc(s['publisher'])} · {esc(s['kind'].replace('_', ' '))}{date} · "
                         f"<a href='{esc(s['source_url'])}'>{esc(s['source_title'])}</a></p></div>"
                     )
             else:
@@ -368,7 +430,7 @@ class Graph2026:
                 )
 
             edges = self.endorsements("e.candidacy_id=?", (cand["id"],))
-            bits.append("<h2 id='endorsers'>Who endorses them</h2>")
+            bits.append("<h2 id='endorsers'>Endorsements</h2>")
             bits.append("<p class='note'>Grouped so you can see who is backing whom. Not ranked, not scored. "
                         "Each line says where the endorsement comes from.</p>")
             bits.append(PROV_LEGEND)
@@ -408,62 +470,78 @@ class Graph2026:
                        LEFT JOIN measure_details md ON md.measure_id=m.id
                        WHERE e.year=2026 AND m.letter IS NOT NULL ORDER BY m.letter""").fetchall()
         b = [
-            "<h1>Boulder's November 3, 2026 election</h1>",
-            "<p class='lede'>A plain guide to the City of Boulder ballot: who is running, what each measure does, "
-            "and who is backing whom — every fact with its source. We do not endorse, score, or recommend.</p>",
-            "<div class='keydates'>"
+            "<h1>Boulder's November 3, 2026 city election</h1>",
+            f"<p class='intro' id='what-this-is'>{esc(HOME_INTRO)}</p>",
+            "<p>We do not endorse, score, or recommend. Every quote, endorsement and dollar figure links to where it came from.</p>",
+            "<section class='keydates' aria-labelledby='dates'>"
+            "<h2 id='dates'>Key dates</h2>"
             "<p class='bigdate'>Ballots are mailed starting Friday, October 2.</p>"
             "<p class='bigdate'>Your ballot must be <em>received</em> by 7 p.m. Tuesday, November 3.</p>"
-            "<p class='note'>Mail it early or use a 24-hour drop box (they open October 2). "
-            f"Dates from <a href='{KEY_DATES_URL}'>Boulder County Elections</a>. October 2 is the planned mailing date, not a delivery guarantee.</p>"
-            "</div>",
-            "<h2>What is on your ballot</h2>",
-            "<ul>"
-            f"<li><a href='#mayor'>Mayor</a> — {len(mayor)} candidates, one seat. You <strong>rank</strong> your choices (ranked-choice voting).</li>"
-            f"<li><a href='#council'>City Council</a> — {len(council)} candidates for five seats. Vote for up to five; the top five win.</li>"
-            f"<li><a href='#measures'>City measures</a> — {len(ms)} questions: " + ", ".join(esc(m['letter']) for m in ms) + ".</li>"
-            "</ul>",
-            "<p>New to how the city works? Read <a href='civics.html'>Civics 101</a>: who decides what, how ranked-choice works, and who pays for campaigns.</p>",
+            "<p>Mail it early or use a 24-hour drop box (they open October 2).</p>"
+            f"<p class='note'>Dates from <a href='{KEY_DATES_URL}'>Boulder County Elections</a>. October 2 is the planned mailing date, not a delivery guarantee.</p>"
+            "</section>",
+            "<p><strong>On your city ballot:</strong> "
+            f"<a href='#mayor'>Mayor</a> ({len(mayor)} candidates, one seat, you <strong>rank</strong> your choices) · "
+            f"<a href='#council'>City Council</a> ({len(council)} candidates for five seats; vote for up to five) · "
+            f"<a href='#measures'>{len(ms)} city measures</a> (" + ", ".join(esc(m['letter']) for m in ms) + ").</p>",
             "<p class='note'>County, state, school-board and regional items are also on your ballot; this site covers the City of Boulder only.</p>",
         ]
 
         def cards(rows, office):
-            out = []
+            out = ["<div class='who-list'>"]
             for r in rows:
                 edges = self.endorsements("e.candidacy_id=?", (r["candidacy_id"],))
-                inc = " <span class='badge inc'>incumbent</span>" if r["is_incumbent"] else ""
+                inc = " · Incumbent" if r["is_incumbent"] else ""
+                label = "Mayor" if office == "mayor" else "City Council"
+                bio = esc(first_sentence(r["summary"])) if r["summary"] else "<span class='empty'>No bio on file yet.</span>"
                 out.append(
-                    f"<div class='card'><h3><a href='people/{esc(r['slug'])}.html'>{esc(r['full_name'])}</a>{inc}</h3>"
-                    f"<p>{esc(first_sentence(r['summary']))}</p>"
+                    f"<article class='card cand-card'>"
+                    f"<p class='kicker'>{label}{inc}</p>"
+                    f"<h3><a href='people/{esc(r['slug'])}.html'>{esc(r['full_name'])}</a></h3>"
+                    f"<p>{bio}</p>"
                     f"<p class='meta'><strong>Endorsers:</strong> {self.summary_line(edges, '')}</p>"
-                    f"<p class='meta'><a href='people/{esc(r['slug'])}.html#positions'>In their own words</a> · "
-                    f"<a href='people/{esc(r['slug'])}.html#endorsers'>All endorsers</a> · "
-                    f"<a href='people/{esc(r['slug'])}.html#money'>Money</a></p></div>"
+                    f"<p class='more'><a href='people/{esc(r['slug'])}.html'>Read about {esc(r['full_name'])}: positions, endorsements, money</a></p>"
+                    f"</article>"
                 )
+            out.append("</div>")
             return "\n".join(out)
 
-        b.append(f"<h2 id='mayor'>Mayor · {len(mayor)} candidates</h2>")
-        b.append("<p class='note'>Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. "
-                 "Some groups endorsed a 1st and a 2nd choice; we show the rank they gave. Alphabetical order.</p>")
+        b.append(f"<h2 id='mayor'>Who's running for mayor</h2>")
+        b.append(f"<p>{len(mayor)} candidates for one seat. Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. "
+                 "Some groups endorsed a 1st and a 2nd choice; we show the rank they gave.</p>"
+                 "<p class='note'>Alphabetical order, the same as everywhere on this site.</p>")
         b.append(cards(mayor, "mayor"))
-        b.append(f"<h2 id='council'>City Council · {len(council)} candidates for 5 seats</h2>")
-        b.append("<p class='note'>Alphabetical order. “Campaign-listed” means the only source is the candidate's own website.</p>")
+        b.append(f"<h2 id='council'>Who's running for city council</h2>")
+        b.append(f"<p>{len(council)} candidates for five seats. Vote for up to five; the five with the most votes win.</p>"
+                 "<p class='note'>Alphabetical order. “Campaign-listed” means the only source is the candidate's own website.</p>")
         b.append(cards(council, "council"))
-        b.append("<h2 id='measures'>City measures</h2>")
+        b.append("<h2 id='measures'>What's on the ballot</h2>")
+        b.append("<p>Four city measures. Each page starts with what a Yes vote and a No vote mean, then the money, "
+                 "the full ballot wording, and who supports or opposes it.</p>")
         for m in ms:
             b.append(
-                f"<div class='card'><h3><a href='measures/2026-{esc(m['letter'].lower())}.html'>{esc(m['letter'])}: {esc(m['title'])}</a></h3>"
-                f"<p>{esc(m['plain_summary'] or m['summary'])}</p></div>"
+                f"<article class='card'><p class='kicker'>Ballot measure {esc(m['letter'])}</p>"
+                f"<h3><a href='measures/2026-{esc(m['letter'].lower())}.html'>{esc(m['letter'])}: {esc(m['title'])}</a></h3>"
+                f"<p>{esc(first_sentence(m['plain_summary'] or m['summary']))}</p>"
+                f"<p class='more'><a href='measures/2026-{esc(m['letter'].lower())}.html'>What Yes and No mean on {esc(m['letter'])}</a></p></article>"
             )
-        b.append("<h2>More</h2><ul>"
+        b.append("<h2 id='how-to-use'>How to use this guide</h2>"
+                 "<ol class='howto'>"
+                 "<li><strong>Start with a race.</strong> Open a candidate above. The top of each page says the office, a one-line bio, and links to their positions, forum answers, endorsements and money.</li>"
+                 "<li><strong>Read their own words.</strong> Quotes come with the source under them. Long answers fold; tap “Read the full answer”.</li>"
+                 "<li><strong>Check where an endorsement comes from.</strong> Each one is labelled: the endorser's own statement, a city filing, a news listing, or “X campaign lists Y” when only the campaign says so.</li>"
+                 "<li><strong>Read a measure.</strong> Each measure page leads with what Yes and No mean.</li>"
+                 "<li><strong>Print it.</strong> Every candidate has a <a href='print/index.html'>printable sheet</a>. New to city government? Read <a href='civics.html'>Civics 101</a>.</li>"
+                 "</ol>")
+        b.append("<h2 id='more'>More</h2><ul>"
                  "<li><a href='compare.html'>What candidates said at forums</a> — the same question, every candidate, in their own words</li>"
                  "<li><a href='orgs.html'>Organizations that endorse</a> — who they are, how they decide, who funds them</li>"
                  "<li><a href='finance.html'>Campaign money</a> — city clerk filings</li>"
                  "<li><a href='2026.html'>2026 ballot details</a> — questions asked this cycle, forums, money table</li>"
-                 "<li><a href='print/index.html'>Print a one-page sheet per candidate</a></li>"
+                 "<li><a href='print/index.html'>Printable sheets for every candidate</a></li>"
                  "<li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, "
                  "<a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>")
-        (self.out / "index.html").write_text(self.page("Boulder 2026 election guide", "\n".join(b), year=2026), encoding="utf-8")
+        (self.out / "index.html").write_text(self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current="index.html"), encoding="utf-8")
 
     def write_orgs(self) -> None:
         (self.out / "orgs").mkdir(exist_ok=True)
@@ -498,7 +576,7 @@ class Graph2026:
                 u = self.q("SELECT url FROM sources WHERE id=?", (sid,)).fetchone()[0]
                 return f" <a href='{esc(u)}'>source</a>"
 
-            b = ["<p class='crumb'><a href='../orgs.html'>Organizations</a></p>", f"<h1>{esc(r['name'])}</h1>"]
+            b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../orgs.html'>Organizations</a></p>", f"<h1>{esc(r['name'])}</h1>"]
             meta = [esc(r["endorser_kind"])]
             if r["legal_form"]:
                 meta.append(esc(r["legal_form"]))
@@ -589,18 +667,20 @@ class Graph2026:
                 u = self.q("SELECT url FROM sources WHERE id=?", (sid,)).fetchone()[0]
                 return f" <a href='{esc(u)}'>source</a>"
 
-            b = ["<p class='crumb'><a href='../index.html#measures'>2026 ballot</a> · <a href='../measures.html'>All city measures</a></p>",
+            b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../index.html#measures'>Measures</a> › "
+                 f"{esc(m['letter'])}</p>",
+                 f"<p class='kicker'>City of Boulder ballot measure {esc(m['letter'])} · 2026</p>",
                  f"<h1>{esc(m['letter'])}: {esc(m['title'])}</h1>",
-                 f"<p class='lede'>{esc(m['plain_summary'])}</p>",
-                 f"<p><strong>A YES vote means:</strong> {esc(m['yes_means'])}</p>",
-                 f"<p><strong>A NO vote means:</strong> {esc(m['no_means'])}</p>"]
+                 f"<dl class='yesno'><div><dt>A YES vote means</dt><dd>{esc(m['yes_means'])}</dd></div>"
+                 f"<div><dt>A NO vote means</dt><dd>{esc(m['no_means'])}</dd></div></dl>",
+                 f"<h2 id='summary'>In plain words</h2><p>{esc(m['plain_summary'])}</p>"]
             if m["fiscal_text"]:
                 b.append(f"<h2>Money</h2><p>{esc(m['fiscal_text'])}{srclink(m['fiscal_source_id'])}</p>")
             if m["council_vote_text"]:
                 b.append(f"<h2>How it got on the ballot</h2><p>{esc(m['council_vote_text'])}{srclink(m['council_vote_source_id'])}</p>")
             b.append("<h2>Full ballot text</h2>")
             b.append(f"<p><a href='{esc(m['lang_url'])}'>Official text on the City of Boulder website</a></p>")
-            b.append(f"<details class='quote'><summary>Read the full ballot wording here</summary>"
+            b.append(f"<details class='fold'><summary>Read the full ballot wording here</summary>"
                      f"<blockquote class='answer' style='white-space:pre-line'>{esc(m['ballot_language'])}</blockquote></details>")
             edges = self.endorsements("e.measure_id=?", (m["measure_id"],))
             b.append("<h2 id='positions'>Who supports it, who opposes it</h2>")

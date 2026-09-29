@@ -74,7 +74,7 @@ Local git identity in this repo is `unforcedagi` / `unforcedagi@users.noreply.gi
 
 ## Print packet
 
-`build.py` writes `docs/print/<slug>.html` for every 2026 candidate and `docs/print/index.html`. One letter-size sheet: timeline, issue grid, three quotes, clerk raised/spent/matching. No JavaScript. File → Print.
+`build.py` writes `docs/print/<slug>.html` for every 2026 candidate and `docs/print/index.html`. A short sheet (usually one or two letter pages): campaigns, up to four answers printed in full (never inside `<details>`), clerk raised/spent/matching. No JavaScript. File → Print. Site-wide print CSS also forces every closed `<details>` open (`::details-content`), so printing any page prints folded answers.
 
 ## Campaign finance
 
