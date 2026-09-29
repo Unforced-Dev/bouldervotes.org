@@ -41,7 +41,7 @@ Python 3 stdlib only. No npm, no framework. How to extend it: [OPERATING.md](OPE
 - Boulder Beat 2023 emailed yes/no questionnaire (rent stabilization, occupancy, encampments, oversight, 2A, Safe Zones)
 - Catalog of Chamber / Open Boulder / PLAN / Boulder Weekly questionnaires (linked; verbatim ingested only for BRL and Beat)
 - Forum calendar 2017–2026 with recordings where they exist (including the 2025 VOTES! collaborative forum)
-- One-sheet print packet for each 2026 candidate
+- Printable sheet for each 2026 candidate (usually one or two pages; answers print in full)
 - 2026 questions on the home page (bond, airport) — not a quiz; earlier-year answers stay on the person, not filed under 2026
 - 2026 campaign-finance from the city clerk app: raised / spent / matching, itemized donors and expenditures on each dossier
 - City ballot measures 2017–2026

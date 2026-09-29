@@ -5,194 +5,241 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dave Martus — Boulder Votes</title>
 <style>
+/* Boulder Votes: civic, calm, print-grade. Tokens: see vault note
+   Projects/Boulder Votes/UI pass 2026-09-29. Contrast on --paper:
+   ink 17.2:1, muted 9.7:1, link 8.9:1 (all AAA). */
 :root {
-  --paper: #f4efe6;
-  --ink: #1c1916;
-  --muted: #5c5348;
-  --rule: #d4c7b0;
-  --link: #1f4b73;
-  --link-visited: #5a3d6e;
-  --mark: #8b2e1a;
-  --won: #215c3a;
-  --chip: #efe6d6;
+  --paper: #fbf8f2;
+  --panel: #f2ede3;
+  --ink: #161513;
+  --muted: #45403a;
+  --rule: #c8bfae;
+  --rule-strong: #6b6358;
+  --link: #14487a;
+  --link-visited: #5b3577;
+  --focus: #ffd21f;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 40rem;
+  /* legacy names kept so older markup stays neutral */
+  --mark: var(--ink);
+  --won: var(--ink);
+  --chip: var(--panel);
 }
 * { box-sizing: border-box; }
-html { font-size: 19px; scroll-behavior: smooth; }
+html { font-size: 125%; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  line-height: 1.45;
+  font-family: var(--serif);
+  line-height: 1.6;
+  font-kerning: normal;
 }
-header {
-  position: sticky; top: 0; z-index: 5;
-  background: var(--paper);
-  border-bottom: 2px solid var(--ink);
-}
+.skip { position: absolute; left: -999px; top: 0; }
+.skip:focus { left: 0.5rem; top: 0.5rem; z-index: 10; padding: 0.5rem 0.8rem; background: var(--focus); color: var(--ink); }
+header.site { background: var(--paper); border-bottom: 3px double var(--ink); }
 .header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
-.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
-.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
-.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
-.rail a, .pill {
-  display: inline-block;
-  padding: 0.12rem 0.55rem;
-  border: 1px solid var(--ink);
-  text-decoration: none;
-  color: var(--ink);
-  font-size: 0.9rem;
+.header-inner { padding-top: 0.9rem; padding-bottom: 0.5rem; }
+.brand { font-size: 1.45rem; font-weight: 700; text-decoration: none; color: var(--ink); letter-spacing: 0.01em; }
+.brand:visited { color: var(--ink); }
+.tagline { margin: 0.1rem 0 0.4rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
+nav.primary ul, nav.past ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+nav.primary ul { gap: 0 0.1rem; margin-left: -0.55rem; }
+nav.primary a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.55rem;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 600; color: var(--ink);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
 }
-.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
-.rail .sep { color: var(--muted); margin: 0 0.25rem; }
-nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
-nav.util a { color: var(--link); }
-h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
-h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
-h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
-p, li { max-width: 42rem; }
-.lede { font-size: 1.05rem; margin-top: 0; }
-.note, .empty { color: var(--muted); font-size: 0.92rem; }
+nav.primary a:visited { color: var(--ink); }
+nav.primary a[aria-current] { text-decoration-thickness: 3px; }
+nav.past { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.1rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 0.2rem; }
+nav.past a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.4rem; color: var(--link); }
+nav.past a[aria-current] { font-weight: 700; color: var(--ink); text-decoration-thickness: 3px; }
+main { padding-bottom: 1rem; }
+h1, h2, h3, h4 { line-height: 1.2; text-wrap: balance; }
+h1 { font-size: 2.1rem; margin: 1.4rem 0 0.6rem; letter-spacing: -0.005em; }
+h2 { font-size: 1.5rem; margin: 2.6rem 0 0.7rem; padding-top: 0.6rem; border-top: 2px solid var(--ink); }
+h3 { font-size: 1.2rem; margin: 1.5rem 0 0.4rem; }
+h4 { font-size: 1.05rem; margin: 1rem 0 0.3rem; }
+p, li, dd { max-width: var(--measure); }
+p { margin: 0.6rem 0; }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+.lede { font-size: 1.15rem; line-height: 1.5; margin-top: 0; }
+.intro { font-size: 1.2rem; line-height: 1.5; margin: 1.2rem 0 0.4rem; max-width: 38rem; }
+.note, .empty, .meta { color: var(--muted); font-size: 0.9rem; }
 .empty { font-style: italic; }
-a { color: var(--link); }
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 a:visited { color: var(--link-visited); }
-.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
-.jump a { margin-right: 0.8rem; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--ink); outline-offset: 2px; background: var(--focus); color: var(--ink);
+  text-decoration: none; border-radius: 1px;
+}
+.kicker { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.crumb { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin: 1rem 0 0; }
+.crumb a { display: inline-block; padding: 0.35rem 0; }
+.jump { font-family: var(--sans); font-size: 0.9rem; margin: 0.6rem 0 1.2rem; display: flex; flex-wrap: wrap; gap: 0 0.3rem; }
+.jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; border: 1px solid var(--rule-strong); background: var(--paper); margin: 0 0 0.35rem; }
+/* cards: one outline, no accent rails, same for every candidate */
 .card {
-  border: 1px solid var(--rule);
-  padding: 0.65rem 0.8rem;
-  margin: 0 0 0.55rem;
-  background: #f8f3ea;
+  border: 1px solid var(--rule-strong);
+  padding: 0.8rem 1rem;
+  margin: 0 0 0.8rem;
+  background: var(--paper);
 }
-.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
-.card .meta { color: var(--muted); font-size: 0.88rem; }
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1.2rem; }
+.card .meta { margin: 0.2rem 0; }
 .chips { margin-top: 0.35rem; }
-.chip {
-  display: inline-block;
-  font-size: 0.78rem;
-  border: 1px solid var(--rule);
-  background: var(--chip);
-  padding: 0.05rem 0.4rem;
-  margin: 0 0.25rem 0.25rem 0;
-  text-decoration: none;
-  color: var(--ink);
+.chip, .pill {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.6rem; margin: 0 0.3rem 0.3rem 0;
+  font-family: var(--sans); font-size: 0.85rem; border: 1px solid var(--rule-strong); color: var(--ink); background: var(--paper);
 }
-.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
-.badge.match { border-color: var(--mark); color: var(--mark); }
-.badge.inc { border-color: var(--won); color: var(--won); }
+.pill.on { background: var(--ink); color: var(--paper); }
+.badge { display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--rule-strong); color: var(--muted); padding: 0.05rem 0.4rem; margin: 0 0.25rem; vertical-align: 0.2em; }
 .choice {
-  display: block;
-  border: 2px solid var(--ink);
-  padding: 0.7rem 0.9rem;
-  margin: 0.45rem 0;
-  text-decoration: none;
-  color: var(--ink);
-  background: #f8f3ea;
-  font-size: 1.05rem;
+  display: block; border: 1px solid var(--rule-strong); padding: 0.8rem 1rem; margin: 0.5rem 0;
+  color: var(--link); background: var(--paper); font-size: 1.05rem;
 }
-.choice:hover { background: var(--chip); }
-.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
-.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
-.stance.yes { color: var(--won); }
-.stance.no { color: var(--mark); }
-.stance.mixed { color: var(--muted); }
-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
-th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-th { font-weight: 600; }
+.choice:hover { background: var(--panel); }
+.choice .meta { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; text-decoration: none; font-family: var(--sans); }
+/* stances: neutral. The word carries the meaning, never a colour. */
+.stance { font-family: var(--sans); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.8rem; color: var(--ink); }
+.stance.yes, .stance.no, .stance.mixed { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.6rem 0 1.2rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.45rem 0.5rem 0.45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--sans); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.03em; border-bottom: 2px solid var(--ink); }
 .num { font-variant-numeric: tabular-nums; text-align: right; }
-.won { color: var(--won); font-weight: 600; }
+.won { font-weight: 700; }
 .matrix td, .matrix th { text-align: center; }
 .matrix th:first-child, .matrix td:first-child { text-align: left; }
-.matrix a { text-decoration: none; }
-details.quote { margin: 0.25rem 0; }
-details.quote > summary { cursor: pointer; }
-details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
-details.quote[open] > summary::after { content: " — hide"; }
-blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
-.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
-footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+details { margin: 0.4rem 0; }
+details > summary { cursor: pointer; min-height: 44px; padding: 0.4rem 0; }
+details.quote > summary::after { content: " Read the full answer"; font-family: var(--sans); font-size: 0.85rem; color: var(--link); text-decoration: underline; white-space: nowrap; }
+details.quote[open] > summary::after { content: " Hide"; }
+details.quote[open] > summary { color: var(--muted); }
+details.fold > summary { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; color: var(--link); text-decoration: underline; }
+blockquote.answer { margin: 0.4rem 0 0.6rem; padding: 0.1rem 0 0.1rem 1rem; border-left: 3px solid var(--ink); font-size: 1rem; max-width: var(--measure); }
+footer { margin: 3rem auto 1.5rem; padding-top: 1rem; border-top: 3px double var(--ink); color: var(--muted); font-family: var(--sans); font-size: 0.85rem; line-height: 2; }
+footer p { margin: 0.3rem 0; }
+/* candidate summary block */
+.summary { border: 2px solid var(--ink); background: var(--panel); padding: 1rem 1.1rem; margin: 0.4rem 0 1.4rem; }
+.summary h1 { margin: 0.1rem 0 0.4rem; }
+.summary p { margin: 0.4rem 0; }
+.summary .jump { margin: 0.7rem 0 0; }
+.summary .jump a { background: var(--paper); }
+/* home */
+.who-list { display: grid; gap: 0.8rem; }
+.who-list .card { margin: 0; }
+.card .more { font-family: var(--sans); font-size: 0.9rem; margin-top: 0.5rem; }
+.card .more a { display: inline-flex; align-items: center; min-height: 44px; }
+.howto li { margin: 0.5rem 0; }
 @media (max-width: 640px) {
-  html { font-size: 18px; }
+  .tagline, nav.past { display: none; }
+  .header-inner { padding-top: 0.6rem; padding-bottom: 0.2rem; }
+  nav.primary a { padding: 0 0.5rem; font-size: 0.88rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+  .header-inner, main, footer { padding: 0 0.9rem; }
+  .card, .summary { padding: 0.75rem 0.8rem; }
+  table { font-size: 0.85rem; display: block; overflow-x: auto; }
 }
 @media print {
-  header { position: static; }
-  nav.util, .jump, .print-hint { display: none; }
+  html { font-size: 11pt; }
+  body { background: #fff; line-height: 1.35; }
+  p { margin: 0.35rem 0; }
+  blockquote.answer { margin: 0.25rem 0 0.35rem; }
+  .card { padding: 0.5rem 0.7rem; margin-bottom: 0.5rem; }
+  header.site { border-bottom: 1px solid #000; }
+  .tagline, nav.primary, nav.past, .skip, .jump, .print-hint, footer { display: none; }
+  .header-inner, main { max-width: none; padding: 0; }
+  .brand { font-size: 1rem; }
   a { color: inherit; text-decoration: none; }
-  details.quote > summary { display: none; }
-  details.quote > blockquote { display: block; }
-  @page { size: letter; margin: 0.55in; }
-  h1 { font-size: 1.45rem; }
+  h1 { font-size: 1.6rem; margin-top: 0.4rem; }
+  h2 { font-size: 1.2rem; margin: 1rem 0 0.4rem; break-after: avoid; }
+  h3 { font-size: 1.05rem; break-after: avoid; }
+  .card, .summary { border-color: #777; background: #fff; break-inside: avoid; }
+  /* Closed <details> render nothing in print unless forced open. */
+  details > summary { display: none; }
+  details::details-content { content-visibility: visible; display: block; }
+  details > *:not(summary) { display: block; }
+  table { display: table; }
+  @page { size: letter; margin: 0.5in 0.55in; }
 }
 
-a { text-decoration: underline; text-underline-offset: 0.15em; }
-p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
-.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
-.prov-label { font-weight: 700; }
-.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
-.prov-endorser_statement .prov-label { color: var(--won); }
-.prov-filing .prov-label { color: var(--link); }
-ul.edges { list-style: none; padding-left: 0; }
-ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
-.rank { font-weight: 700; }
-.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
-.keydates p { margin: 0.25rem 0; }
+p, li, td, th, blockquote, h1, h2, h3, h4, dd { overflow-wrap: break-word; }
+/* provenance: one neutral treatment; the label's words carry the meaning */
+.prov { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 0.2rem; line-height: 1.45; }
+.prov-label { font-family: var(--sans); font-weight: 700; font-size: 0.82rem; color: var(--ink); }
+ul.edges { list-style: none; padding-left: 0; margin: 0.4rem 0 1rem; }
+ul.edges > li { border-top: 1px solid var(--rule); padding: 0.6rem 0; margin: 0; max-width: var(--measure); }
+ul.edges > li:last-child { border-bottom: 1px solid var(--rule); }
+.rank { font-family: var(--sans); font-size: 0.85rem; font-weight: 700; border: 1px solid var(--rule-strong); padding: 0 0.35rem; margin-left: 0.25rem; }
+.keydates { border: 2px solid var(--ink); padding: 0.9rem 1.1rem; background: var(--panel); margin: 1rem 0 1.4rem; }
+.keydates h2 { border: 0; padding: 0; margin: 0 0 0.4rem; font-size: 1.2rem; font-family: var(--sans); letter-spacing: 0.02em; }
+.keydates p { margin: 0.35rem 0; }
 .bigdate { font-size: 1.15rem; font-weight: 700; }
 .held { color: var(--muted); font-style: italic; }
-.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dt { font-weight: 700; margin-top: 0.5rem; }
 .legend dd { margin-left: 0; }
-@media (max-width: 480px) {
-  table { font-size: 0.82rem; }
-  th, td { padding-right: 0.25rem; }
+/* measure: Yes means / No means, identical weight */
+dl.yesno { border: 2px solid var(--ink); background: var(--panel); margin: 1rem 0 1.4rem; padding: 0; }
+dl.yesno > div { padding: 0.8rem 1.1rem; }
+dl.yesno > div + div { border-top: 1px solid var(--rule-strong); }
+dl.yesno dt { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; margin: 0 0 0.2rem; }
+dl.yesno dd { margin: 0; }
+.bio-line { font-size: 1.1rem; }
+.facts { list-style: none; padding: 0; margin: 0.5rem 0; }
+.facts li { margin: 0.2rem 0; }
+@media print {
+  .prov { color: #333; }
+  dl.yesno { background: #fff; }
 }
-
-.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
-.forum-answer .who { font-weight: 700; }
-table.grid td:first-child { width: 28%; }
-table.grid blockquote.answer { margin: 0.2rem 0; }
 </style>
 </head>
 <body>
-<header>
+<a class="skip" href="#content">Skip to main content</a>
+<header class="site">
   <div class="header-inner">
     <a class="brand" href="../index.html">Boulder Votes</a>
-    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
-    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../compare.html">Forum answers</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+    <p class="tagline">An independent, nonpartisan, sourced guide to City of Boulder elections.</p>
+    <nav class="primary" aria-label="Main"><ul><li><a href="../index.html">2026 guide</a></li><li><a href="../index.html#mayor">Candidates</a></li><li><a href="../index.html#measures">Measures</a></li><li><a href="../civics.html">Civics 101</a></li><li><a href="../orgs.html">Organizations</a></li><li><a href="../finance.html">Money</a></li><li><a href="../print/index.html">Print</a></li><li><a href="../about.html">About</a></li></ul></nav>
+    <nav class="past" aria-label="Elections by year"><span>Elections:</span> <a href="../2026.html">2026 ballot</a> <a href="../2025.html">2025</a> <a href="../2023.html">2023</a> <a href="../2021.html">2021</a> <a href="../2019.html">2019</a> <a href="../2017.html">2017</a></nav>
   </div>
 </header>
-<main>
-<h1>Dave Martus</h1>
-<p class='print-hint'><a href='../print/dave-martus.html'>Print this candidate (one letter-size sheet)</a></p>
-<p class='lede'>Ballot name per the city&#x27;s certified-candidate roster. Some research and finance records use David Martus; same person.</p>
-<h2>Campaigns</h2>
-<table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td><a href='../2026.html'>2026</a></td><td>Boulder City Council · <a href='https://daveforboulder.com/'>campaign</a></td><td>certified</td></tr></table>
-<p class='note'>2026: raised $0 · spent $10.46 · matching $0. <a href='#money'>Donors and spending</a>.</p>
-<h2 id='bio'>2026 candidate for Boulder City Council</h2>
+<main id="content">
+<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../index.html#council'>City Council</a></p><div class='summary'><p class='kicker'>Running for Boulder City Council · 2026</p><h1>Dave Martus</h1><p class='bio-line'>Martus is a first-time council candidate and a senior adviser with a background in institutional finance.</p><p class='note'>Money (city clerk, as of 2026-08-27): raised $0 · spent $10.46 · matching funds received $0.</p><nav class='jump' aria-label='On this page'><a href='#bio'>About</a><a href='#positions'>Positions</a><a href='#endorsers'>Endorsements</a><a href='#money'>Money</a><a href='#campaigns'>Campaigns</a></nav><p class='note print-hint'><a href='../print/dave-martus.html'>Printable sheet</a> · <a href='https://daveforboulder.com/'>Campaign website</a></p></div>
+<h2 id='bio'>About this candidate</h2>
 <p>Martus is a first-time council candidate and a senior adviser with a background in institutional finance. He emphasizes budget oversight, government trust and changes to land-use regulation.</p>
-<ul><li><strong>Occupation:</strong> Senior advisor</li><li><strong>In Boulder:</strong> moved to Boulder in 1985</li></ul>
+<ul class='facts'><li><strong>Occupation:</strong> Senior advisor</li><li><strong>In Boulder:</strong> moved to Boulder in 1985</li></ul>
 <p class='note'>Bio sources: <a href='https://boulderreportinglab.org/govpack_profiles/david-martus/'>boulderreportinglab.org</a></p>
 <h2 id='positions'>In their own words</h2>
 <p class='note'>Short passages from questionnaires, interviews and the campaign site, each with its source. Grouped by topic. Nothing here is a score; a topic with no quote means we have no quote, not a position.</p>
 <h3>Airport</h3>
-<div class='card' data-statement='S-dave-martus-9'><blockquote class='answer'>I support the continued operation of the airport and the acceptance of FAA funding.</blockquote><p class='note'>Boulder Chamber · questionnaire · <a href='https://daveforboulder.com/assets/docs/Boulder%20Chamber%20of%20Commerce%20Questionnaire.pdf'>2026 candidate questionnaire — David Martus</a></p></div>
+<div class='card' data-statement='S-dave-martus-9'><blockquote class='answer'>I support the continued operation of the airport and the acceptance of FAA funding.</blockquote><p class='note'>Source: Boulder Chamber · questionnaire · <a href='https://daveforboulder.com/assets/docs/Boulder%20Chamber%20of%20Commerce%20Questionnaire.pdf'>2026 candidate questionnaire — David Martus</a></p></div>
 <h3>Downtown</h3>
-<div class='card' data-statement='S-dave-martus-3'><blockquote class='answer'>In general, I do not believe fragmenting the city into siloed revenue sources and spending pools is the best approach.</blockquote><p class='note'>Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
-<div class='card' data-statement='S-dave-martus-5'><blockquote class='answer'>I support the fundamental mission of a DDA, but the lack of detailed coordination with impacted agencies would have led me to vote no as well.</blockquote><p class='note'>Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></p></div>
+<div class='card' data-statement='S-dave-martus-3'><blockquote class='answer'>In general, I do not believe fragmenting the city into siloed revenue sources and spending pools is the best approach.</blockquote><p class='note'>Source: Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
+<div class='card' data-statement='S-dave-martus-5'><blockquote class='answer'>I support the fundamental mission of a DDA, but the lack of detailed coordination with impacted agencies would have led me to vote no as well.</blockquote><p class='note'>Source: Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></p></div>
 <h3>Governance</h3>
-<div class='card' data-statement='S-dave-martus-4'><blockquote class='answer'>I believe the city’s current top three priorities are: 1) long-term financial stability; 2) wildfire and public-safety resilience; and 3) housing policy.</blockquote><p class='note'>Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
-<div class='card' data-statement='S-dave-martus-7'><details class='quote'><summary>I spent 25 years in institutional finance building consensus among people with different views, and I would bring that same approach to Council: listen first, be clear about facts and tradeoffs, and…</summary><blockquote class='answer'>I spent 25 years in institutional finance building consensus among people with different views, and I would bring that same approach to Council: listen first, be clear about facts and tradeoffs, and work toward practical agreement.</blockquote></details><p class='note'>Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></p></div>
+<div class='card' data-statement='S-dave-martus-4'><blockquote class='answer'>I believe the city’s current top three priorities are: 1) long-term financial stability; 2) wildfire and public-safety resilience; and 3) housing policy.</blockquote><p class='note'>Source: Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
+<div class='card' data-statement='S-dave-martus-7'><details class='quote'><summary>I spent 25 years in institutional finance building consensus among people with different views, and I would bring that same approach to Council: listen first, be clear about facts and tradeoffs, and…</summary><blockquote class='answer'>I spent 25 years in institutional finance building consensus among people with different views, and I would bring that same approach to Council: listen first, be clear about facts and tradeoffs, and work toward practical agreement.</blockquote></details><p class='note'>Source: Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></p></div>
 <h3>Housing</h3>
-<div class='card' data-statement='S-dave-martus-1'><blockquote class='answer'>No. If higher density is part of the solution, I believe it should be focused in areas of the city that provide more benefits.</blockquote><p class='note'>Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
+<div class='card' data-statement='S-dave-martus-1'><blockquote class='answer'>No. If higher density is part of the solution, I believe it should be focused in areas of the city that provide more benefits.</blockquote><p class='note'>Source: Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
 <h3>Public safety</h3>
-<div class='card' data-statement='S-dave-martus-6'><blockquote class='answer'>Businesses should be able to expect a public safety presence to match their operating hours.</blockquote><p class='note'>Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></p></div>
+<div class='card' data-statement='S-dave-martus-6'><blockquote class='answer'>Businesses should be able to expect a public safety presence to match their operating hours.</blockquote><p class='note'>Source: Downtown Boulder Partnership · questionnaire · 2026-09-21 · <a href='https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf'>2026 Mayoral and City Council Candidate Questions — David Martus</a></p></div>
 <h3>Transportation</h3>
-<div class='card' data-statement='S-dave-martus-2'><blockquote class='answer'>Yes. The build-out should proceed if the outcome is positive, the cost is reasonable, and lessons from completed projects are incorporated.</blockquote><p class='note'>Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
+<div class='card' data-statement='S-dave-martus-2'><blockquote class='answer'>Yes. The build-out should proceed if the outcome is positive, the cost is reasonable, and lessons from completed projects are incorporated.</blockquote><p class='note'>Source: Better Boulder · questionnaire · 2026-09-13 · <a href='https://betterboulder.com/2026-city-council-candidate-questionnaire'>2026 City Council Candidate Questionnaire</a></p></div>
 <h3>What reporters wrote</h3>
 <p class='note'>These are the reporter's words about the candidate, not the candidate's own.</p>
 <div class='card' data-statement='S-dave-martus-0'><div class='meta'>Boulder Reporting Lab reporter · governance</div><blockquote class='answer'>David Martus is a first-time candidate for Boulder City Council, running on a platform of fiscal stewardship, increasing trust in government and reducing regulation and bureaucracy.</blockquote><p class='note'>Boulder Reporting Lab · 2026-08-28 · <a href='https://boulderreportinglab.org/govpack_profiles/david-martus/'>Profile source: Dave Martus</a></p></div>
 <p class='held'>1 further passage (Daily Camera) held back: our audit could not yet match the quoted text to the article. Not shown until verified.</p>
-<h2 id='endorsers'>Who endorses them</h2>
+<h2 id='endorsers'>Endorsements</h2>
 <p class='note'>Grouped so you can see who is backing whom. Not ranked, not scored. Each line says where the endorsement comes from.</p>
 
-<details class='quote'><summary>What the labels on each endorsement mean</summary>
+<details class='fold'><summary>What the labels on each endorsement mean</summary>
 <dl class='legend'>
 <dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
 <dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
@@ -207,47 +254,30 @@ table.grid blockquote.answer { margin: 0.2rem 0; }
 <h2 id='gave'>Endorsements they have given (2026)</h2>
 <p class='note'>A personal endorsement, not one by any office they hold.</p>
 <ul class='edges'><li>Endorses: <a href='../people/jill-grano.html'>Jill Grano</a> (council)<span class='prov prov-campaign_claim' data-edge='E201' data-provenance='campaign_claim'><span class='prov-label'>Jill Grano campaign lists Dave Martus</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://www.jillforcouncil.com/endorsements'>Endorsements – Jill for City Council</a></span></li><li>Endorses: <a href='../people/ryan-jamieson.html'>Ryan Jamieson</a> (council)<span class='prov prov-campaign_claim' data-edge='E202' data-provenance='campaign_claim'><span class='prov-label'>Ryan Jamieson campaign lists Dave Martus</span>. Campaign&#x27;s claim; we did not find the endorser&#x27;s own statement. <a href='https://rjforboulder.com/endorsements.html'>Endorsements – Ryan Jamieson</a></span></li></ul>
-<h2 id='forums'>At the forums, in their own words</h2>
-<p class='note'>Short passages from 2026 candidate forums, grouped by topic, each with the question asked and a link to that moment in the recording. Automatic transcript; check the recording. A topic with no quote means we have no quote, not a position. <a href='../compare.html'>Compare answers to the same question</a>.</p>
-<h3>Housing</h3>
-<div class='card forum-answer' data-claim='FC181' data-confidence='high'><div class='meta'>2026 · forum · Housing</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI? (submitted by co-sponsor EFAA)</h3><blockquote class='answer'>What are the opportunities there to repurpose them into the type of housing that&#x27;s needed in the community because the infrastructure is there.</blockquote><p class='note'>Transcript note: Refers to city properties vacated when offices move to the Western City Campus (Alpine-Balsam).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=2418s'>Watch at 40:18</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<div class='card forum-answer' data-claim='FC231' data-confidence='high'><div class='meta'>2026 · forum · Housing</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>Ballot issue 2J, the residential vacancy excise tax, would be a tax of approximately $4,000 on residential property vacant for more than half the year. Do you support this tax and will it generate enough income to pay for administering this complex program? (30 seconds)</h3><p><span class='stance no'>No</span> on 2J (the vacancy tax), in the candidate's own words below.</p><blockquote class='answer'>No, and it&#x27;s for the exact second half of the question, the complexity of administrating it.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=5095s'>Watch at 1:24:55</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<h3>Budget, debt and the 2K bond</h3>
-<div class='card forum-answer' data-claim='FC080' data-confidence='high'><div class='meta'>2026 · forum</div><p class='note'><a href='../forums/2026-votes-forum.html'>PLAN / Open Boulder / Better Boulder forum</a> · September 2, 2026</p><h3>Opening introduction (two minutes)</h3><blockquote class='answer'>I think that fiscal stewardship is a key trait to bring as part of the city council team.</blockquote><p class='note'>Transcript note: Name transcribed &#x27;Dave Martis&#x27;.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0&amp;t=1180s'>Watch at 19:40</a> · <a href='https://www.youtube.com/watch?v=gdZzGJNB7g0'>City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)</a></p></div><!-- /forum-answer -->
-<div class='card forum-answer' data-claim='FC136' data-confidence='high'><div class='meta'>2026 · forum</div><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><h3>Final one-minute statement</h3><blockquote class='answer'>fiscal transparency and good stewardship of capital. And why is that important to the arts? Because through that, I think we can make the pie bigger.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1055s'>Watch at 17:35</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
-<div class='card forum-answer' data-claim='FC154' data-confidence='high'><div class='meta'>2026 · forum</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>Opening statement (one minute)</h3><blockquote class='answer'>the superpower I would bring to council is financial acumen.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=961s'>Watch at 16:01</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<div class='card forum-answer' data-claim='FC169' data-confidence='high'><div class='meta'>2026 · forum</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>If elected, name your top three priorities, and do you believe the city is currently moving in the right direction on those priorities?</h3><blockquote class='answer'>I think the bond issue that&#x27;s coming up is going to be a no, and it&#x27;s not a no because people don&#x27;t agree with supporting these facilities.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=1668s'>Watch at 27:48</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<div class='card forum-answer' data-claim='FC193' data-confidence='high'><div class='meta'>2026 · forum · Rec and safety bond</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>Boulder voters are being asked to authorize $400 million in new debt through additional property taxes for recreation, public safety and other city facilities as part of ballot issue 2K. Do you support this measure? Why or why not?</h3><p><span class='stance no'>No</span> on 2K (the $400 million bond), in the candidate's own words below.</p><blockquote class='answer'>As I mentioned earlier, I&#x27;m a no vote on this.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=3088s'>Watch at 51:28</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<h3>Transportation</h3>
-<div class='card forum-answer' data-claim='FC206' data-confidence='high'><div class='meta'>2026 · forum · Transportation</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>What are your feelings about the bus-only lanes and the core arterial network (CAN)? Should Boulder continue prioritizing protected bike lanes?</h3><blockquote class='answer'>So we need to measure it. It can&#x27;t be permanent if it&#x27;s not going right.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=3787s'>Watch at 1:03:07</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<h3>Arts and culture</h3>
-<div class='card forum-answer' data-claim='FC120' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='note'><a href='../forums/2026-arts-forum.html'>Arts and culture forum</a> · September 15, 2026</p><h3>What changes would you support to make Boulder easier for creative activity and small cultural businesses to operate in?</h3><blockquote class='answer'>The second would be to introduce a dashboard where if you&#x27;re a creative, you&#x27;re an artist, you can go there</blockquote><p class='note'>Transcript note: Self-identified as &#x27;Dave Morris&#x27; (Whisper).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=419s'>Watch at 6:59</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
-<h3>Other topics</h3>
-<div class='card forum-answer' data-claim='FC220' data-confidence='high'><div class='meta'>2026 · forum · How the city is run</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>Do you agree or disagree that our city council is adequately representative of the social, political and economic interests of Boulder? Would you support a study session on proportional representation?</h3><blockquote class='answer'>So overall, I think we&#x27;re representing the community very well.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=4442s'>Watch at 1:14:02</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
-<div class='card forum-answer' data-claim='FC255' data-confidence='high'><div class='meta'>2026 · forum</div><p class='note'><a href='../forums/2026-lwv-forum.html'>League of Women Voters forum</a> · September 26, 2026</p><h3>Tell us about one city issue on which you changed your position after considering new evidence or another perspective. What changed your mind?</h3><blockquote class='answer'>I think the DDA can help deliver that.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=pT9IeGL6deg&amp;t=6026s'>Watch at 1:40:26</a> · <a href='https://www.youtube.com/watch?v=pT9IeGL6deg'>September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)</a></p></div><!-- /forum-answer -->
 <p class='empty'>No earlier questionnaire answers on file.</p>
 <h2 id='money'>Money</h2>
 <p>2026: raised $0 · spent $10.46 · matching received $0 · cash on hand $-10.46 (David Martus for Boulder City Council, as of 2026-08-27).</p>
 <p class='note'>0 contribution lines, 1 expenditure. City clerk, not TRACER. <a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&amp;committeeID=325'>Clerk statements</a> · <a href='../finance.html'>Everyone</a>.</p>
-<h3>Spent on</h3>
-<table><tr><th>Payee</th><th>Purpose</th><th>Date</th><th class='num'>Amount</th></tr><tr><td>Cloudflare.com</td><td>website domain</td><td>2026-08-27</td><td class='num'>$10.46</td></tr></table>
-<h2>Forums</h2><ul>
-<li>2026-09-26 League of Women Voters of Boulder County City Council and Mayoral Candidate Forums — attended · <a href="https://www.youtube.com/watch?v=pT9IeGL6deg">recording</a></li>
-<li>2026-09-15 2026 City Council Candidates Forum on Arts and Culture — attended · <a href="https://www.youtube.com/watch?v=PlXLjT1gH5U">recording</a></li>
-<li>2026-09-02 Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder) — attended · <a href="https://www.youtube.com/watch?v=gdZzGJNB7g0">recording</a></li>
-</ul>
+<details class='fold'><summary>Spent on: all 1 expenditure lines</summary>
+<table><tr><th>Payee</th><th>Purpose</th><th>Date</th><th class='num'>Amount</th></tr><tr><td>Cloudflare.com</td><td>website domain</td><td>2026-08-27</td><td class='num'>$10.46</td></tr></table></details>
+<h2 id='campaigns'>Campaigns</h2>
+<table><tr><th>Year</th><th>Office</th><th>Outcome</th></tr><tr><td><a href='../2026.html'>2026</a></td><td>Boulder City Council · <a href='https://daveforboulder.com/'>campaign</a></td><td>on the ballot</td></tr></table>
 </main>
 <footer>
-  City of Boulder only. Cited, not scored, not an endorsement.
+  <p>City of Boulder only. Cited, not scored, not an endorsement. Nobody here tells you how to vote.</p>
+  <p>Elections by year: <a href="../2026.html">2026</a> · <a href="../2025.html">2025</a> · <a href="../2023.html">2023</a> · <a href="../2021.html">2021</a> · <a href="../2019.html">2019</a> · <a href="../2017.html">2017</a></p>
+  <p><a href="../issues.html">Issues</a> ·
   <a href="../sources.html">Sources</a> ·
   <a href="../forums.html">Forums</a> ·
   <a href="../civics.html">Civics 101</a> ·
   <a href="../orgs.html">Organizations</a> ·
+  <a href="../people.html">People</a> ·
   <a href="../finance.html">Money</a> ·
   <a href="../questionnaires.html">Questionnaires</a> ·
   <a href="../print/index.html">Print</a> ·
   <a href="../measures.html">All measures</a> ·
-  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+  <a href="../about.html">About</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a></p>
 </footer>
 </body>
 </html>

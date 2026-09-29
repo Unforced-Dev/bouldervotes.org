@@ -23,122 +23,169 @@ OUT = ROOT / "docs"
 YEARS = (2026, 2025, 2023, 2021, 2019, 2017)
 
 CSS = """
+/* Boulder Votes: civic, calm, print-grade. Tokens: see vault note
+   Projects/Boulder Votes/UI pass 2026-09-29. Contrast on --paper:
+   ink 17.2:1, muted 9.7:1, link 8.9:1 (all AAA). */
 :root {
-  --paper: #f4efe6;
-  --ink: #1c1916;
-  --muted: #5c5348;
-  --rule: #d4c7b0;
-  --link: #1f4b73;
-  --link-visited: #5a3d6e;
-  --mark: #8b2e1a;
-  --won: #215c3a;
-  --chip: #efe6d6;
+  --paper: #fbf8f2;
+  --panel: #f2ede3;
+  --ink: #161513;
+  --muted: #45403a;
+  --rule: #c8bfae;
+  --rule-strong: #6b6358;
+  --link: #14487a;
+  --link-visited: #5b3577;
+  --focus: #ffd21f;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 40rem;
+  /* legacy names kept so older markup stays neutral */
+  --mark: var(--ink);
+  --won: var(--ink);
+  --chip: var(--panel);
 }
 * { box-sizing: border-box; }
-html { font-size: 19px; scroll-behavior: smooth; }
+html { font-size: 125%; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  line-height: 1.45;
+  font-family: var(--serif);
+  line-height: 1.6;
+  font-kerning: normal;
 }
-header {
-  position: sticky; top: 0; z-index: 5;
-  background: var(--paper);
-  border-bottom: 2px solid var(--ink);
-}
+.skip { position: absolute; left: -999px; top: 0; }
+.skip:focus { left: 0.5rem; top: 0.5rem; z-index: 10; padding: 0.5rem 0.8rem; background: var(--focus); color: var(--ink); }
+header.site { background: var(--paper); border-bottom: 3px double var(--ink); }
 .header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
-.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
-.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
-.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
-.rail a, .pill {
-  display: inline-block;
-  padding: 0.12rem 0.55rem;
-  border: 1px solid var(--ink);
-  text-decoration: none;
-  color: var(--ink);
-  font-size: 0.9rem;
+.header-inner { padding-top: 0.9rem; padding-bottom: 0.5rem; }
+.brand { font-size: 1.45rem; font-weight: 700; text-decoration: none; color: var(--ink); letter-spacing: 0.01em; }
+.brand:visited { color: var(--ink); }
+.tagline { margin: 0.1rem 0 0.4rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
+nav.primary ul, nav.past ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+nav.primary ul { gap: 0 0.1rem; margin-left: -0.55rem; }
+nav.primary a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.55rem;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 600; color: var(--ink);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
 }
-.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
-.rail .sep { color: var(--muted); margin: 0 0.25rem; }
-nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
-nav.util a { color: var(--link); }
-h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
-h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
-h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
-p, li { max-width: 42rem; }
-.lede { font-size: 1.05rem; margin-top: 0; }
-.note, .empty { color: var(--muted); font-size: 0.92rem; }
+nav.primary a:visited { color: var(--ink); }
+nav.primary a[aria-current] { text-decoration-thickness: 3px; }
+nav.past { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.1rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 0.2rem; }
+nav.past a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.4rem; color: var(--link); }
+nav.past a[aria-current] { font-weight: 700; color: var(--ink); text-decoration-thickness: 3px; }
+main { padding-bottom: 1rem; }
+h1, h2, h3, h4 { line-height: 1.2; text-wrap: balance; }
+h1 { font-size: 2.1rem; margin: 1.4rem 0 0.6rem; letter-spacing: -0.005em; }
+h2 { font-size: 1.5rem; margin: 2.6rem 0 0.7rem; padding-top: 0.6rem; border-top: 2px solid var(--ink); }
+h3 { font-size: 1.2rem; margin: 1.5rem 0 0.4rem; }
+h4 { font-size: 1.05rem; margin: 1rem 0 0.3rem; }
+p, li, dd { max-width: var(--measure); }
+p { margin: 0.6rem 0; }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+.lede { font-size: 1.15rem; line-height: 1.5; margin-top: 0; }
+.intro { font-size: 1.2rem; line-height: 1.5; margin: 1.2rem 0 0.4rem; max-width: 38rem; }
+.note, .empty, .meta { color: var(--muted); font-size: 0.9rem; }
 .empty { font-style: italic; }
-a { color: var(--link); }
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 a:visited { color: var(--link-visited); }
-.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
-.jump a { margin-right: 0.8rem; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--ink); outline-offset: 2px; background: var(--focus); color: var(--ink);
+  text-decoration: none; border-radius: 1px;
+}
+.kicker { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.crumb { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin: 1rem 0 0; }
+.crumb a { display: inline-block; padding: 0.35rem 0; }
+.jump { font-family: var(--sans); font-size: 0.9rem; margin: 0.6rem 0 1.2rem; display: flex; flex-wrap: wrap; gap: 0 0.3rem; }
+.jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; border: 1px solid var(--rule-strong); background: var(--paper); margin: 0 0 0.35rem; }
+/* cards: one outline, no accent rails, same for every candidate */
 .card {
-  border: 1px solid var(--rule);
-  padding: 0.65rem 0.8rem;
-  margin: 0 0 0.55rem;
-  background: #f8f3ea;
+  border: 1px solid var(--rule-strong);
+  padding: 0.8rem 1rem;
+  margin: 0 0 0.8rem;
+  background: var(--paper);
 }
-.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
-.card .meta { color: var(--muted); font-size: 0.88rem; }
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1.2rem; }
+.card .meta { margin: 0.2rem 0; }
 .chips { margin-top: 0.35rem; }
-.chip {
-  display: inline-block;
-  font-size: 0.78rem;
-  border: 1px solid var(--rule);
-  background: var(--chip);
-  padding: 0.05rem 0.4rem;
-  margin: 0 0.25rem 0.25rem 0;
-  text-decoration: none;
-  color: var(--ink);
+.chip, .pill {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.6rem; margin: 0 0.3rem 0.3rem 0;
+  font-family: var(--sans); font-size: 0.85rem; border: 1px solid var(--rule-strong); color: var(--ink); background: var(--paper);
 }
-.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
-.badge.match { border-color: var(--mark); color: var(--mark); }
-.badge.inc { border-color: var(--won); color: var(--won); }
+.pill.on { background: var(--ink); color: var(--paper); }
+.badge { display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--rule-strong); color: var(--muted); padding: 0.05rem 0.4rem; margin: 0 0.25rem; vertical-align: 0.2em; }
 .choice {
-  display: block;
-  border: 2px solid var(--ink);
-  padding: 0.7rem 0.9rem;
-  margin: 0.45rem 0;
-  text-decoration: none;
-  color: var(--ink);
-  background: #f8f3ea;
-  font-size: 1.05rem;
+  display: block; border: 1px solid var(--rule-strong); padding: 0.8rem 1rem; margin: 0.5rem 0;
+  color: var(--link); background: var(--paper); font-size: 1.05rem;
 }
-.choice:hover { background: var(--chip); }
-.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
-.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
-.stance.yes { color: var(--won); }
-.stance.no { color: var(--mark); }
-.stance.mixed { color: var(--muted); }
-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
-th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-th { font-weight: 600; }
+.choice:hover { background: var(--panel); }
+.choice .meta { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; text-decoration: none; font-family: var(--sans); }
+/* stances: neutral. The word carries the meaning, never a colour. */
+.stance { font-family: var(--sans); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.8rem; color: var(--ink); }
+.stance.yes, .stance.no, .stance.mixed { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.6rem 0 1.2rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.45rem 0.5rem 0.45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--sans); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.03em; border-bottom: 2px solid var(--ink); }
 .num { font-variant-numeric: tabular-nums; text-align: right; }
-.won { color: var(--won); font-weight: 600; }
+.won { font-weight: 700; }
 .matrix td, .matrix th { text-align: center; }
 .matrix th:first-child, .matrix td:first-child { text-align: left; }
-.matrix a { text-decoration: none; }
-details.quote { margin: 0.25rem 0; }
-details.quote > summary { cursor: pointer; }
-details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
-details.quote[open] > summary::after { content: " — hide"; }
-blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
-.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
-footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+details { margin: 0.4rem 0; }
+details > summary { cursor: pointer; min-height: 44px; padding: 0.4rem 0; }
+details.quote > summary::after { content: " Read the full answer"; font-family: var(--sans); font-size: 0.85rem; color: var(--link); text-decoration: underline; white-space: nowrap; }
+details.quote[open] > summary::after { content: " Hide"; }
+details.quote[open] > summary { color: var(--muted); }
+details.fold > summary { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; color: var(--link); text-decoration: underline; }
+blockquote.answer { margin: 0.4rem 0 0.6rem; padding: 0.1rem 0 0.1rem 1rem; border-left: 3px solid var(--ink); font-size: 1rem; max-width: var(--measure); }
+footer { margin: 3rem auto 1.5rem; padding-top: 1rem; border-top: 3px double var(--ink); color: var(--muted); font-family: var(--sans); font-size: 0.85rem; line-height: 2; }
+footer p { margin: 0.3rem 0; }
+/* candidate summary block */
+.summary { border: 2px solid var(--ink); background: var(--panel); padding: 1rem 1.1rem; margin: 0.4rem 0 1.4rem; }
+.summary h1 { margin: 0.1rem 0 0.4rem; }
+.summary p { margin: 0.4rem 0; }
+.summary .jump { margin: 0.7rem 0 0; }
+.summary .jump a { background: var(--paper); }
+/* home */
+.who-list { display: grid; gap: 0.8rem; }
+.who-list .card { margin: 0; }
+.card .more { font-family: var(--sans); font-size: 0.9rem; margin-top: 0.5rem; }
+.card .more a { display: inline-flex; align-items: center; min-height: 44px; }
+.howto li { margin: 0.5rem 0; }
 @media (max-width: 640px) {
-  html { font-size: 18px; }
+  .tagline, nav.past { display: none; }
+  .header-inner { padding-top: 0.6rem; padding-bottom: 0.2rem; }
+  nav.primary a { padding: 0 0.5rem; font-size: 0.88rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+  .header-inner, main, footer { padding: 0 0.9rem; }
+  .card, .summary { padding: 0.75rem 0.8rem; }
+  table { font-size: 0.85rem; display: block; overflow-x: auto; }
 }
 @media print {
-  header { position: static; }
-  nav.util, .jump, .print-hint { display: none; }
+  html { font-size: 11pt; }
+  body { background: #fff; line-height: 1.35; }
+  p { margin: 0.35rem 0; }
+  blockquote.answer { margin: 0.25rem 0 0.35rem; }
+  .card { padding: 0.5rem 0.7rem; margin-bottom: 0.5rem; }
+  header.site { border-bottom: 1px solid #000; }
+  .tagline, nav.primary, nav.past, .skip, .jump, .print-hint, footer { display: none; }
+  .header-inner, main { max-width: none; padding: 0; }
+  .brand { font-size: 1rem; }
   a { color: inherit; text-decoration: none; }
-  details.quote > summary { display: none; }
-  details.quote > blockquote { display: block; }
-  @page { size: letter; margin: 0.55in; }
-  h1 { font-size: 1.45rem; }
+  h1 { font-size: 1.6rem; margin-top: 0.4rem; }
+  h2 { font-size: 1.2rem; margin: 1rem 0 0.4rem; break-after: avoid; }
+  h3 { font-size: 1.05rem; break-after: avoid; }
+  .card, .summary { border-color: #777; background: #fff; break-inside: avoid; }
+  /* Closed <details> render nothing in print unless forced open. */
+  details > summary { display: none; }
+  details::details-content { content-visibility: visible; display: block; }
+  details > *:not(summary) { display: block; }
+  table { display: table; }
+  @page { size: letter; margin: 0.5in 0.55in; }
 }
 """
 
@@ -175,10 +222,12 @@ def kind_label(kind: str | None) -> str:
     }.get(kind or "", kind or "source")
 
 
-def quote_block(verbatim: str) -> str:
+def quote_block(verbatim: str, fold: bool = True) -> str:
+    """Short answers show whole. Long ones fold on screen; print CSS opens them.
+    fold=False (print sheets) never wraps in <details>, so nothing can be hidden."""
     text = verbatim or ""
     compact = " ".join(text.split())
-    if len(compact) <= 180:
+    if len(compact) <= 180 or not fold:
         return f"<blockquote class='answer'>{esc(text)}</blockquote>"
     return (
         f"<details class='quote'><summary>{esc(clip(compact, 150))}</summary>"
@@ -186,7 +235,7 @@ def quote_block(verbatim: str) -> str:
     )
 
 
-def render_answer(verbatim: str | None, stance: str | None, notes: str | None = None) -> str:
+def render_answer(verbatim: str | None, stance: str | None, notes: str | None = None, fold: bool = True) -> str:
     """Show the actual answer. Never let a yes/no stand in for a different question."""
     text = verbatim or ""
     compact = " ".join(text.split())
@@ -211,26 +260,34 @@ def render_answer(verbatim: str | None, stance: str | None, notes: str | None = 
             lead
             + "<p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p>"
         )
-    return quote_block(text)
+    return quote_block(text, fold=fold)
 
 
-def page(title: str, body: str, *, prefix: str = "", year: int | None = None) -> str:
-    rail = []
+PRIMARY_NAV = (
+    ("index.html", "2026 guide"),
+    ("index.html#mayor", "Candidates"),
+    ("index.html#measures", "Measures"),
+    ("civics.html", "Civics 101"),
+    ("orgs.html", "Organizations"),
+    ("finance.html", "Money"),
+    ("compare.html", "Forum answers"),
+    ("print/index.html", "Print"),
+    ("about.html", "About"),
+)
+
+TAGLINE = "An independent, nonpartisan, sourced guide to City of Boulder elections."
+
+
+def page(title: str, body: str, *, prefix: str = "", year: int | None = None, current: str | None = None) -> str:
+    primary = []
+    for href, label in PRIMARY_NAV:
+        cur = ' aria-current="page"' if current == href else ""
+        primary.append(f'<li><a href="{prefix}{href}"{cur}>{label}</a></li>')
+    past = []
     for y in YEARS:
-        on = " on" if y == year else ""
-        rail.append(f'<a class="{on.strip()}" href="{prefix}{y}.html">{y}</a>')
-    util = [
-        f'<a href="{prefix}index.html">2026 guide</a>',
-        f'<a href="{prefix}index.html#measures">Measures</a>',
-        f'<a href="{prefix}orgs.html">Organizations</a>',
-        f'<a href="{prefix}civics.html">Civics 101</a>',
-        f'<a href="{prefix}people.html">People</a>',
-        f'<a href="{prefix}finance.html">Money</a>',
-        f'<a href="{prefix}issues.html">Issues</a>',
-        f'<a href="{prefix}compare.html">Forum answers</a>',
-        f'<a href="{prefix}print/index.html">Print</a>',
-        f'<a href="{prefix}about.html">About</a>',
-    ]
+        cur = ' aria-current="page"' if y == year and y != 2026 else ""
+        label = f"{y}" if y != 2026 else "2026 ballot"
+        past.append(f'<a href="{prefix}{y}.html"{cur}>{label}</a>')
     home = f"{prefix}index.html"
     return f"""<!doctype html>
 <html lang="en">
@@ -241,27 +298,33 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None) ->
 <style>{CSS}{EXTRA_CSS}{FORUM_CSS}</style>
 </head>
 <body>
-<header>
+<a class="skip" href="#content">Skip to main content</a>
+<header class="site">
   <div class="header-inner">
     <a class="brand" href="{home}">Boulder Votes</a>
-    <div class="rail">{''.join(rail)}</div>
-    <nav class="util">{''.join(util)}</nav>
+    <p class="tagline">{esc(TAGLINE)}</p>
+    <nav class="primary" aria-label="Main"><ul>{''.join(primary)}</ul></nav>
+    <nav class="past" aria-label="Elections by year"><span>Elections:</span> {' '.join(past)}</nav>
   </div>
 </header>
-<main>
+<main id="content">
 {body}
 </main>
 <footer>
-  City of Boulder only. Cited, not scored, not an endorsement.
+  <p>City of Boulder only. Cited, not scored, not an endorsement. Nobody here tells you how to vote.</p>
+  <p>Elections by year: {' · '.join(f'<a href="{prefix}{y}.html">{y}</a>' for y in YEARS)}</p>
+  <p><a href="{prefix}issues.html">Issues</a> ·
   <a href="{prefix}sources.html">Sources</a> ·
   <a href="{prefix}forums.html">Forums</a> ·
   <a href="{prefix}civics.html">Civics 101</a> ·
   <a href="{prefix}orgs.html">Organizations</a> ·
+  <a href="{prefix}people.html">People</a> ·
   <a href="{prefix}finance.html">Money</a> ·
   <a href="{prefix}questionnaires.html">Questionnaires</a> ·
   <a href="{prefix}print/index.html">Print</a> ·
   <a href="{prefix}measures.html">All measures</a> ·
-  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+  <a href="{prefix}about.html">About</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a></p>
 </footer>
 </body>
 </html>
@@ -833,12 +896,17 @@ def main() -> None:
             (p["id"],),
         ).fetchall()
 
-        bits = [f"<h1>{esc(p['full_name'])}</h1>"]
-        if p["notes"]:
-            bits.append(f"<p class='lede'>{esc(p['notes'])}</p>")
+        cand26 = next((c for c in cands if c["year"] == 2026), None)
+        bits = []
+        if not cand26:
+            bits.append(f"<p class='crumb'><a href='../people.html'>People</a></p>")
+            bits.append(f"<h1>{esc(p['full_name'])}</h1>")
+            if p["notes"]:
+                bits.append(f"<p class='lede'>{esc(p['notes'])}</p>")
+        history: list[str] = []
 
         # timeline
-        bits.append("<h2>Campaigns</h2>")
+        history.append("<h2 id='campaigns'>Campaigns</h2>")
         tbody = ["<tr><th>Year</th><th>Office</th><th>Outcome</th></tr>"]
         for c in cands:
             flags = []
@@ -847,7 +915,7 @@ def main() -> None:
             if c["matching_funds"]:
                 flags.append("matching funds")
             extra = f" ({', '.join(flags)})" if flags else ""
-            outcome = c["status"]
+            outcome = "on the ballot" if c["status"] == "certified" else c["status"]
             rmatch = [r for r in res if r["year"] == c["year"] and r["office"] == c["office_slug"]]
             if rmatch:
                 last = rmatch[-1]
@@ -857,42 +925,44 @@ def main() -> None:
                 f"<tr><td><a href='../{c['year']}.html'>{c['year']}</a></td>"
                 f"<td>{esc(c['office'])}{extra}{site}</td><td>{esc(outcome)}</td></tr>"
             )
-        bits.append(f"<table>{''.join(tbody)}</table>")
+        history.append(f"<table>{''.join(tbody)}</table>")
 
         snaps = q(
             "SELECT * FROM finance_snapshots WHERE person_id=? ORDER BY year DESC",
             (p["id"],),
         ).fetchall()
-        if snaps:
+        if snaps and not cand26:
             snap0 = snaps[0]
-            bits.append(
+            history.append(
                 f"<p class='note'>{snap0['year']}: raised {dollars(snap0['contributions'])} · "
                 f"spent {dollars(snap0['expenditures'])} · "
                 f"matching {dollars(snap0['matching_received'])}. "
                 f"<a href='#money'>Donors and spending</a>.</p>"
             )
 
+        if not cand26:
+            bits.extend(history)
         bits.append(graph.person_sections(p["id"]))
         bits.append(forums.person_section(p["id"]))
 
         if answers:
-            bits.append("<h2>Questionnaire answers by year</h2>")
+            bits.append("<h2 id='questionnaires'>Questionnaire answers by year</h2>")
             bits.append(
                 "<p class='note'>Newest year first. Each card is one question. A yes/no is an answer to that question — not a position on the whole topic.</p>"
             )
             current_year = None
             for a in answers:
                 if a["q_year"] != current_year:
-                    bits.append(f"<h2>{a['q_year']}</h2>")
+                    bits.append(f"<h3>{a['q_year']}</h3>")
                     current_year = a["q_year"]
                 bits.append(f"<div class='card' id='q-{a['id']}'>")
                 bits.append(
                     f"<div class='meta'><a href='../{a['q_year']}.html'>{a['q_year']}</a> · "
                     f"{esc(kind_label(a['q_kind']))} · {esc(a['issue_name'])}</div>"
                 )
-                bits.append(f"<h3>{esc(a['prompt'])}</h3>")
+                bits.append(f"<h4>{esc(a['prompt'])}</h4>")
                 bits.append(render_answer(a["verbatim"], a["stance"], a["notes"]))
-                bits.append(f"<p class='note'><a href='{esc(a['source_url'])}'>{esc(a['source_title'])}</a></p>")
+                bits.append(f"<p class='note'>Source: <a href='{esc(a['source_url'])}'>{esc(a['source_title'])}</a></p>")
                 bits.append("</div>")
         elif not cands:
             pass
@@ -941,7 +1011,7 @@ def main() -> None:
                     (snap["id"],),
                 ).fetchall()
                 if contribs:
-                    bits.append("<h3>Who gave</h3>")
+                    bits.append(f"<details class='fold'><summary>Who gave: all {len(contribs)} contribution lines</summary>")
                     body = ["<tr><th>Name</th><th>Type</th><th>Date</th><th class='num'>Amount</th></tr>"]
                     for item in contribs:
                         label = esc(item["display_name"])
@@ -952,7 +1022,7 @@ def main() -> None:
                             f"<td>{esc(item['occurred_on'] or '—')}</td>"
                             f"<td class='num'>{dollars(item['amount'])}</td></tr>"
                         )
-                    bits.append(f"<table>{''.join(body)}</table>")
+                    bits.append(f"<table>{''.join(body)}</table></details>")
                 spends = q(
                     """SELECT display_name, purpose, occurred_on, amount
                        FROM finance_line_items
@@ -961,7 +1031,7 @@ def main() -> None:
                     (snap["id"],),
                 ).fetchall()
                 if spends:
-                    bits.append("<h3>Spent on</h3>")
+                    bits.append(f"<details class='fold'><summary>Spent on: all {len(spends)} expenditure lines</summary>")
                     body = ["<tr><th>Payee</th><th>Purpose</th><th>Date</th><th class='num'>Amount</th></tr>"]
                     for item in spends:
                         body.append(
@@ -969,10 +1039,13 @@ def main() -> None:
                             f"<td>{esc(item['occurred_on'] or '—')}</td>"
                             f"<td class='num'>{dollars(item['amount'])}</td></tr>"
                         )
-                    bits.append(f"<table>{''.join(body)}</table>")
+                    bits.append(f"<table>{''.join(body)}</table></details>")
+
+        if cand26:
+            bits.extend(history)
 
         if appearances:
-            bits.append("<h2>Forums</h2><ul>")
+            bits.append("<h2 id='attendance'>Forum attendance</h2><ul>")
             for a in appearances:
                 flag = "attended" if a["attended"] == 1 else "did not attend" if a["attended"] == 0 else "unknown"
                 rec = f' · <a href="{esc(a["recording_url"])}">recording</a>' if a["recording_url"] else ""
@@ -980,11 +1053,8 @@ def main() -> None:
             bits.append("</ul>")
 
         latest = cands[0]["year"] if cands else None
-        if any(c["year"] == 2026 for c in cands):
-            bits.insert(
-                1,
-                f"<p class='print-hint'><a href='../print/{esc(p['slug'])}.html'>Print this candidate (one letter-size sheet)</a></p>",
-            )
+        if cand26:
+            bits.insert(0, graph.candidate_summary(p["id"], "\n".join(bits), p["slug"]))
         (OUT / "people" / f"{p['slug']}.html").write_text(
             page(p["full_name"], "\n".join(bits), prefix="../", year=latest),
             encoding="utf-8",
@@ -1068,7 +1138,7 @@ def main() -> None:
     )
     (OUT / "questionnaires.html").write_text(page("Questionnaires", "\n".join(qn_html)), encoding="utf-8")
 
-    # ----- print packet: one letter-size sheet per 2026 candidate -----
+    # ----- print packet: a short sheet per 2026 candidate; answers never folded -----
     def print_sheet(row, office: str) -> str:
         answers = q(
             """SELECT a.verbatim, a.stance, a.notes, q.prompt, q.year AS q_year, q.kind AS q_kind,
@@ -1104,7 +1174,7 @@ def main() -> None:
             else ""
         )
         bits = [
-            f"<p class='print-hint'>File → Print. One letter-size sheet. Not an endorsement.</p>",
+            f"<p class='print-hint'>File → Print. A short sheet: usually one or two letter-size pages. Every answer prints in full. Not an endorsement.</p>",
             f"<h1>{esc(row['full_name'])}</h1>",
             f"<p class='lede'>2026 {esc(office)}{flag_txt}</p>",
             site,
@@ -1122,8 +1192,8 @@ def main() -> None:
             for a in answers:
                 bits.append(
                     f"<div class='card'><div class='meta'>{a['q_year']} · {esc(a['issue_name'])}</div>"
-                    f"<h3>{esc(a['prompt'])}</h3>{render_answer(a['verbatim'], a['stance'], a['notes'])}"
-                    f"<p class='note'><a href='{esc(a['source_url'])}'>{esc(a['source_title'])}</a></p></div>"
+                    f"<h3>{esc(a['prompt'])}</h3>{render_answer(a['verbatim'], a['stance'], a['notes'], fold=False)}"
+                    f"<p class='note'>Source: <a href='{esc(a['source_url'])}'>{esc(a['source_title'])}</a></p></div>"
                 )
                 n += 1
                 if n >= 4:
@@ -1161,7 +1231,7 @@ def main() -> None:
 
     print_index = [
         "<h1>Print packet</h1>",
-        "<p class='lede'>One letter-size sheet per 2026 candidate: timeline, the questions they have answered, clerk totals. Print from the browser.</p>",
+        "<p class='lede'>A short printable sheet for each 2026 candidate: their campaigns, up to four answers printed in full, and city clerk money totals. Most sheets are one or two letter-size pages.</p>",
         "<p class='print-hint'>Open a sheet, then File → Print. No JavaScript.</p>",
         "<h2>Mayor</h2>",
     ]
@@ -1324,12 +1394,12 @@ def main() -> None:
       <li><strong>A year</strong> — that year’s ballot, and the questions asked that cycle.</li>
       <li><strong>A person</strong> — the questions they have answered, newest year first. A 2023 yes/no is labelled 2023 and named as that question. It is not a 2026 position.</li>
       <li><strong>A question</strong> — people on that year’s ballot who answered it. We do not copy an earlier year’s answer onto this year’s page.</li>
-      <li><strong>Print</strong> — one letter-size sheet per 2026 candidate. File → Print.</li>
+      <li><strong>Print</strong> — a short sheet per 2026 candidate (usually one or two pages), with every answer printed in full. File → Print.</li>
     </ul>
     <p>Years on the rail run 2017–2026. 2015 and earlier are out of scope for now.</p>
     <p>A number without a source is not published. Two quotes are never averaged. We do not score candidates. A yes/no is an answer to the question on the card — never a stand-in for a whole topic like “city budget.”</p>
     <p>Municipal campaign-finance filings are with the <a href="https://bouldercolorado.gov/elections/election-committee-filings">city clerk</a>, not TRACER. 2026 totals and itemized donors live on each candidate’s page (below what they have said) and on <a href="finance.html">Money</a>. $0 is a filed zero. Past-year dollars are not copied (the live clerk app only serves 2026; Laserfiche is a JS archive).</p>
-    <p>No JavaScript. Large type. Print unfolds the folded answers.</p>
+    <p>No JavaScript. Large type. Printing any page prints the folded answers in full.</p>
     """
     (OUT / "about.html").write_text(page("About", about), encoding="utf-8")
 

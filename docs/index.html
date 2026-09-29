@@ -5,208 +5,269 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boulder 2026 election guide — Boulder Votes</title>
 <style>
+/* Boulder Votes: civic, calm, print-grade. Tokens: see vault note
+   Projects/Boulder Votes/UI pass 2026-09-29. Contrast on --paper:
+   ink 17.2:1, muted 9.7:1, link 8.9:1 (all AAA). */
 :root {
-  --paper: #f4efe6;
-  --ink: #1c1916;
-  --muted: #5c5348;
-  --rule: #d4c7b0;
-  --link: #1f4b73;
-  --link-visited: #5a3d6e;
-  --mark: #8b2e1a;
-  --won: #215c3a;
-  --chip: #efe6d6;
+  --paper: #fbf8f2;
+  --panel: #f2ede3;
+  --ink: #161513;
+  --muted: #45403a;
+  --rule: #c8bfae;
+  --rule-strong: #6b6358;
+  --link: #14487a;
+  --link-visited: #5b3577;
+  --focus: #ffd21f;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 40rem;
+  /* legacy names kept so older markup stays neutral */
+  --mark: var(--ink);
+  --won: var(--ink);
+  --chip: var(--panel);
 }
 * { box-sizing: border-box; }
-html { font-size: 19px; scroll-behavior: smooth; }
+html { font-size: 125%; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  line-height: 1.45;
+  font-family: var(--serif);
+  line-height: 1.6;
+  font-kerning: normal;
 }
-header {
-  position: sticky; top: 0; z-index: 5;
-  background: var(--paper);
-  border-bottom: 2px solid var(--ink);
-}
+.skip { position: absolute; left: -999px; top: 0; }
+.skip:focus { left: 0.5rem; top: 0.5rem; z-index: 10; padding: 0.5rem 0.8rem; background: var(--focus); color: var(--ink); }
+header.site { background: var(--paper); border-bottom: 3px double var(--ink); }
 .header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
-.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
-.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
-.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
-.rail a, .pill {
-  display: inline-block;
-  padding: 0.12rem 0.55rem;
-  border: 1px solid var(--ink);
-  text-decoration: none;
-  color: var(--ink);
-  font-size: 0.9rem;
+.header-inner { padding-top: 0.9rem; padding-bottom: 0.5rem; }
+.brand { font-size: 1.45rem; font-weight: 700; text-decoration: none; color: var(--ink); letter-spacing: 0.01em; }
+.brand:visited { color: var(--ink); }
+.tagline { margin: 0.1rem 0 0.4rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
+nav.primary ul, nav.past ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+nav.primary ul { gap: 0 0.1rem; margin-left: -0.55rem; }
+nav.primary a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.55rem;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 600; color: var(--ink);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
 }
-.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
-.rail .sep { color: var(--muted); margin: 0 0.25rem; }
-nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
-nav.util a { color: var(--link); }
-h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
-h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
-h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
-p, li { max-width: 42rem; }
-.lede { font-size: 1.05rem; margin-top: 0; }
-.note, .empty { color: var(--muted); font-size: 0.92rem; }
+nav.primary a:visited { color: var(--ink); }
+nav.primary a[aria-current] { text-decoration-thickness: 3px; }
+nav.past { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.1rem; font-family: var(--sans); font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 0.2rem; }
+nav.past a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.4rem; color: var(--link); }
+nav.past a[aria-current] { font-weight: 700; color: var(--ink); text-decoration-thickness: 3px; }
+main { padding-bottom: 1rem; }
+h1, h2, h3, h4 { line-height: 1.2; text-wrap: balance; }
+h1 { font-size: 2.1rem; margin: 1.4rem 0 0.6rem; letter-spacing: -0.005em; }
+h2 { font-size: 1.5rem; margin: 2.6rem 0 0.7rem; padding-top: 0.6rem; border-top: 2px solid var(--ink); }
+h3 { font-size: 1.2rem; margin: 1.5rem 0 0.4rem; }
+h4 { font-size: 1.05rem; margin: 1rem 0 0.3rem; }
+p, li, dd { max-width: var(--measure); }
+p { margin: 0.6rem 0; }
+ul, ol { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+.lede { font-size: 1.15rem; line-height: 1.5; margin-top: 0; }
+.intro { font-size: 1.2rem; line-height: 1.5; margin: 1.2rem 0 0.4rem; max-width: 38rem; }
+.note, .empty, .meta { color: var(--muted); font-size: 0.9rem; }
 .empty { font-style: italic; }
-a { color: var(--link); }
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 a:visited { color: var(--link-visited); }
-.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
-.jump a { margin-right: 0.8rem; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--ink); outline-offset: 2px; background: var(--focus); color: var(--ink);
+  text-decoration: none; border-radius: 1px;
+}
+.kicker { font-family: var(--sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.crumb { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin: 1rem 0 0; }
+.crumb a { display: inline-block; padding: 0.35rem 0; }
+.jump { font-family: var(--sans); font-size: 0.9rem; margin: 0.6rem 0 1.2rem; display: flex; flex-wrap: wrap; gap: 0 0.3rem; }
+.jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; border: 1px solid var(--rule-strong); background: var(--paper); margin: 0 0 0.35rem; }
+/* cards: one outline, no accent rails, same for every candidate */
 .card {
-  border: 1px solid var(--rule);
-  padding: 0.65rem 0.8rem;
-  margin: 0 0 0.55rem;
-  background: #f8f3ea;
+  border: 1px solid var(--rule-strong);
+  padding: 0.8rem 1rem;
+  margin: 0 0 0.8rem;
+  background: var(--paper);
 }
-.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
-.card .meta { color: var(--muted); font-size: 0.88rem; }
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1.2rem; }
+.card .meta { margin: 0.2rem 0; }
 .chips { margin-top: 0.35rem; }
-.chip {
-  display: inline-block;
-  font-size: 0.78rem;
-  border: 1px solid var(--rule);
-  background: var(--chip);
-  padding: 0.05rem 0.4rem;
-  margin: 0 0.25rem 0.25rem 0;
-  text-decoration: none;
-  color: var(--ink);
+.chip, .pill {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.6rem; margin: 0 0.3rem 0.3rem 0;
+  font-family: var(--sans); font-size: 0.85rem; border: 1px solid var(--rule-strong); color: var(--ink); background: var(--paper);
 }
-.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
-.badge.match { border-color: var(--mark); color: var(--mark); }
-.badge.inc { border-color: var(--won); color: var(--won); }
+.pill.on { background: var(--ink); color: var(--paper); }
+.badge { display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--rule-strong); color: var(--muted); padding: 0.05rem 0.4rem; margin: 0 0.25rem; vertical-align: 0.2em; }
 .choice {
-  display: block;
-  border: 2px solid var(--ink);
-  padding: 0.7rem 0.9rem;
-  margin: 0.45rem 0;
-  text-decoration: none;
-  color: var(--ink);
-  background: #f8f3ea;
-  font-size: 1.05rem;
+  display: block; border: 1px solid var(--rule-strong); padding: 0.8rem 1rem; margin: 0.5rem 0;
+  color: var(--link); background: var(--paper); font-size: 1.05rem;
 }
-.choice:hover { background: var(--chip); }
-.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
-.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
-.stance.yes { color: var(--won); }
-.stance.no { color: var(--mark); }
-.stance.mixed { color: var(--muted); }
-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
-th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-th { font-weight: 600; }
+.choice:hover { background: var(--panel); }
+.choice .meta { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; text-decoration: none; font-family: var(--sans); }
+/* stances: neutral. The word carries the meaning, never a colour. */
+.stance { font-family: var(--sans); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.8rem; color: var(--ink); }
+.stance.yes, .stance.no, .stance.mixed { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 0.6rem 0 1.2rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.45rem 0.5rem 0.45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--sans); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.03em; border-bottom: 2px solid var(--ink); }
 .num { font-variant-numeric: tabular-nums; text-align: right; }
-.won { color: var(--won); font-weight: 600; }
+.won { font-weight: 700; }
 .matrix td, .matrix th { text-align: center; }
 .matrix th:first-child, .matrix td:first-child { text-align: left; }
-.matrix a { text-decoration: none; }
-details.quote { margin: 0.25rem 0; }
-details.quote > summary { cursor: pointer; }
-details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
-details.quote[open] > summary::after { content: " — hide"; }
-blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
-.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
-footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+details { margin: 0.4rem 0; }
+details > summary { cursor: pointer; min-height: 44px; padding: 0.4rem 0; }
+details.quote > summary::after { content: " Read the full answer"; font-family: var(--sans); font-size: 0.85rem; color: var(--link); text-decoration: underline; white-space: nowrap; }
+details.quote[open] > summary::after { content: " Hide"; }
+details.quote[open] > summary { color: var(--muted); }
+details.fold > summary { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; color: var(--link); text-decoration: underline; }
+blockquote.answer { margin: 0.4rem 0 0.6rem; padding: 0.1rem 0 0.1rem 1rem; border-left: 3px solid var(--ink); font-size: 1rem; max-width: var(--measure); }
+footer { margin: 3rem auto 1.5rem; padding-top: 1rem; border-top: 3px double var(--ink); color: var(--muted); font-family: var(--sans); font-size: 0.85rem; line-height: 2; }
+footer p { margin: 0.3rem 0; }
+/* candidate summary block */
+.summary { border: 2px solid var(--ink); background: var(--panel); padding: 1rem 1.1rem; margin: 0.4rem 0 1.4rem; }
+.summary h1 { margin: 0.1rem 0 0.4rem; }
+.summary p { margin: 0.4rem 0; }
+.summary .jump { margin: 0.7rem 0 0; }
+.summary .jump a { background: var(--paper); }
+/* home */
+.who-list { display: grid; gap: 0.8rem; }
+.who-list .card { margin: 0; }
+.card .more { font-family: var(--sans); font-size: 0.9rem; margin-top: 0.5rem; }
+.card .more a { display: inline-flex; align-items: center; min-height: 44px; }
+.howto li { margin: 0.5rem 0; }
 @media (max-width: 640px) {
-  html { font-size: 18px; }
+  .tagline, nav.past { display: none; }
+  .header-inner { padding-top: 0.6rem; padding-bottom: 0.2rem; }
+  nav.primary a { padding: 0 0.5rem; font-size: 0.88rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+  .header-inner, main, footer { padding: 0 0.9rem; }
+  .card, .summary { padding: 0.75rem 0.8rem; }
+  table { font-size: 0.85rem; display: block; overflow-x: auto; }
 }
 @media print {
-  header { position: static; }
-  nav.util, .jump, .print-hint { display: none; }
+  html { font-size: 11pt; }
+  body { background: #fff; line-height: 1.35; }
+  p { margin: 0.35rem 0; }
+  blockquote.answer { margin: 0.25rem 0 0.35rem; }
+  .card { padding: 0.5rem 0.7rem; margin-bottom: 0.5rem; }
+  header.site { border-bottom: 1px solid #000; }
+  .tagline, nav.primary, nav.past, .skip, .jump, .print-hint, footer { display: none; }
+  .header-inner, main { max-width: none; padding: 0; }
+  .brand { font-size: 1rem; }
   a { color: inherit; text-decoration: none; }
-  details.quote > summary { display: none; }
-  details.quote > blockquote { display: block; }
-  @page { size: letter; margin: 0.55in; }
-  h1 { font-size: 1.45rem; }
+  h1 { font-size: 1.6rem; margin-top: 0.4rem; }
+  h2 { font-size: 1.2rem; margin: 1rem 0 0.4rem; break-after: avoid; }
+  h3 { font-size: 1.05rem; break-after: avoid; }
+  .card, .summary { border-color: #777; background: #fff; break-inside: avoid; }
+  /* Closed <details> render nothing in print unless forced open. */
+  details > summary { display: none; }
+  details::details-content { content-visibility: visible; display: block; }
+  details > *:not(summary) { display: block; }
+  table { display: table; }
+  @page { size: letter; margin: 0.5in 0.55in; }
 }
 
-a { text-decoration: underline; text-underline-offset: 0.15em; }
-p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
-.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
-.prov-label { font-weight: 700; }
-.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
-.prov-endorser_statement .prov-label { color: var(--won); }
-.prov-filing .prov-label { color: var(--link); }
-ul.edges { list-style: none; padding-left: 0; }
-ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
-.rank { font-weight: 700; }
-.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
-.keydates p { margin: 0.25rem 0; }
+p, li, td, th, blockquote, h1, h2, h3, h4, dd { overflow-wrap: break-word; }
+/* provenance: one neutral treatment; the label's words carry the meaning */
+.prov { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 0.2rem; line-height: 1.45; }
+.prov-label { font-family: var(--sans); font-weight: 700; font-size: 0.82rem; color: var(--ink); }
+ul.edges { list-style: none; padding-left: 0; margin: 0.4rem 0 1rem; }
+ul.edges > li { border-top: 1px solid var(--rule); padding: 0.6rem 0; margin: 0; max-width: var(--measure); }
+ul.edges > li:last-child { border-bottom: 1px solid var(--rule); }
+.rank { font-family: var(--sans); font-size: 0.85rem; font-weight: 700; border: 1px solid var(--rule-strong); padding: 0 0.35rem; margin-left: 0.25rem; }
+.keydates { border: 2px solid var(--ink); padding: 0.9rem 1.1rem; background: var(--panel); margin: 1rem 0 1.4rem; }
+.keydates h2 { border: 0; padding: 0; margin: 0 0 0.4rem; font-size: 1.2rem; font-family: var(--sans); letter-spacing: 0.02em; }
+.keydates p { margin: 0.35rem 0; }
 .bigdate { font-size: 1.15rem; font-weight: 700; }
 .held { color: var(--muted); font-style: italic; }
-.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dt { font-weight: 700; margin-top: 0.5rem; }
 .legend dd { margin-left: 0; }
-@media (max-width: 480px) {
-  table { font-size: 0.82rem; }
-  th, td { padding-right: 0.25rem; }
+/* measure: Yes means / No means, identical weight */
+dl.yesno { border: 2px solid var(--ink); background: var(--panel); margin: 1rem 0 1.4rem; padding: 0; }
+dl.yesno > div { padding: 0.8rem 1.1rem; }
+dl.yesno > div + div { border-top: 1px solid var(--rule-strong); }
+dl.yesno dt { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; margin: 0 0 0.2rem; }
+dl.yesno dd { margin: 0; }
+.bio-line { font-size: 1.1rem; }
+.facts { list-style: none; padding: 0; margin: 0.5rem 0; }
+.facts li { margin: 0.2rem 0; }
+@media print {
+  .prov { color: #333; }
+  dl.yesno { background: #fff; }
 }
-
-.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
-.forum-answer .who { font-weight: 700; }
-table.grid td:first-child { width: 28%; }
-table.grid blockquote.answer { margin: 0.2rem 0; }
 </style>
 </head>
 <body>
-<header>
+<a class="skip" href="#content">Skip to main content</a>
+<header class="site">
   <div class="header-inner">
     <a class="brand" href="index.html">Boulder Votes</a>
-    <div class="rail"><a class="on" href="2026.html">2026</a><a class="" href="2025.html">2025</a><a class="" href="2023.html">2023</a><a class="" href="2021.html">2021</a><a class="" href="2019.html">2019</a><a class="" href="2017.html">2017</a></div>
-    <nav class="util"><a href="index.html">2026 guide</a><a href="index.html#measures">Measures</a><a href="orgs.html">Organizations</a><a href="civics.html">Civics 101</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="issues.html">Issues</a><a href="compare.html">Forum answers</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
+    <p class="tagline">An independent, nonpartisan, sourced guide to City of Boulder elections.</p>
+    <nav class="primary" aria-label="Main"><ul><li><a href="index.html" aria-current="page">2026 guide</a></li><li><a href="index.html#mayor">Candidates</a></li><li><a href="index.html#measures">Measures</a></li><li><a href="civics.html">Civics 101</a></li><li><a href="orgs.html">Organizations</a></li><li><a href="finance.html">Money</a></li><li><a href="print/index.html">Print</a></li><li><a href="about.html">About</a></li></ul></nav>
+    <nav class="past" aria-label="Elections by year"><span>Elections:</span> <a href="2026.html">2026 ballot</a> <a href="2025.html">2025</a> <a href="2023.html">2023</a> <a href="2021.html">2021</a> <a href="2019.html">2019</a> <a href="2017.html">2017</a></nav>
   </div>
 </header>
-<main>
-<h1>Boulder's November 3, 2026 election</h1>
-<p class='lede'>A plain guide to the City of Boulder ballot: who is running, what each measure does, and who is backing whom — every fact with its source. We do not endorse, score, or recommend.</p>
-<div class='keydates'><p class='bigdate'>Ballots are mailed starting Friday, October 2.</p><p class='bigdate'>Your ballot must be <em>received</em> by 7 p.m. Tuesday, November 3.</p><p class='note'>Mail it early or use a 24-hour drop box (they open October 2). Dates from <a href='https://bouldercounty.gov/elections/information/'>Boulder County Elections</a>. October 2 is the planned mailing date, not a delivery guarantee.</p></div>
-<h2>What is on your ballot</h2>
-<ul><li><a href='#mayor'>Mayor</a> — 6 candidates, one seat. You <strong>rank</strong> your choices (ranked-choice voting).</li><li><a href='#council'>City Council</a> — 13 candidates for five seats. Vote for up to five; the top five win.</li><li><a href='#measures'>City measures</a> — 4 questions: 2J, 2K, 2L, 2M.</li></ul>
-<p>New to how the city works? Read <a href='civics.html'>Civics 101</a>: who decides what, how ranked-choice works, and who pays for campaigns.</p>
+<main id="content">
+<h1>Boulder's November 3, 2026 city election</h1>
+<p class='intro' id='what-this-is'>Boulder Votes is an independent, nonpartisan guide to the City of Boulder&#x27;s November 3, 2026 election: who is running for mayor and city council, what the four city ballot measures would do, and where every fact comes from.</p>
+<p>We do not endorse, score, or recommend. Every quote, endorsement and dollar figure links to where it came from.</p>
+<section class='keydates' aria-labelledby='dates'><h2 id='dates'>Key dates</h2><p class='bigdate'>Ballots are mailed starting Friday, October 2.</p><p class='bigdate'>Your ballot must be <em>received</em> by 7 p.m. Tuesday, November 3.</p><p>Mail it early or use a 24-hour drop box (they open October 2).</p><p class='note'>Dates from <a href='https://bouldercounty.gov/elections/information/'>Boulder County Elections</a>. October 2 is the planned mailing date, not a delivery guarantee.</p></section>
+<p><strong>On your city ballot:</strong> <a href='#mayor'>Mayor</a> (6 candidates, one seat, you <strong>rank</strong> your choices) · <a href='#council'>City Council</a> (13 candidates for five seats; vote for up to five) · <a href='#measures'>4 city measures</a> (2J, 2K, 2L, 2M).</p>
 <p class='note'>County, state, school-board and regional items are also on your ballot; this site covers the City of Boulder only.</p>
-<h2 id='mayor'>Mayor · 6 candidates</h2>
-<p class='note'>Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. Some groups endorsed a 1st and a 2nd choice; we show the rank they gave. Alphabetical order.</p>
-<div class='card'><h3><a href='people/taishya-adams.html'>Taishya Adams</a></h3><p>Adams is a sitting Boulder councilmember seeking the mayor’s office.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a> (1st choice); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a> (2nd choice); <a href='orgs/boulder-county-dsa.html'>Boulder County Democratic Socialists of America</a> (news listing).</p><p class='meta'><a href='people/taishya-adams.html#positions'>In their own words</a> · <a href='people/taishya-adams.html#endorsers'>All endorsers</a> · <a href='people/taishya-adams.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/aaron-brockett.html'>Aaron Brockett</a> <span class='badge inc'>incumbent</span></h3><p>Brockett is seeking another term as Boulder mayor, a role he has held since 2021.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a> (2nd choice); <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 25 current elected officials, 26 former elected officials, 1 other individual — listed by the campaign.</p><p class='meta'><a href='people/aaron-brockett.html#positions'>In their own words</a> · <a href='people/aaron-brockett.html#endorsers'>All endorsers</a> · <a href='people/aaron-brockett.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/jameson-goldstein.html'>Jameson Goldstein</a></h3><p>Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU Boulder student.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='meta'><a href='people/jameson-goldstein.html#positions'>In their own words</a> · <a href='people/jameson-goldstein.html#endorsers'>All endorsers</a> · <a href='people/jameson-goldstein.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p>La Grave is an entrepreneur seeking the mayor’s office for the first time.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a> (1st choice).</p><p class='meta'><a href='people/aquiles-la-grave.html#positions'>In their own words</a> · <a href='people/aquiles-la-grave.html#endorsers'>All endorsers</a> · <a href='people/aquiles-la-grave.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></h3><p>Jacobs is a 2026 Boulder mayoral candidate.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='meta'><a href='people/lisa-ann-jacobs.html#positions'>In their own words</a> · <a href='people/lisa-ann-jacobs.html#endorsers'>All endorsers</a> · <a href='people/lisa-ann-jacobs.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/fred-smith.html'>Fred Smith</a></h3><p>Smith has run for Boulder council four times and is now a mayoral candidate.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='meta'><a href='people/fred-smith.html#positions'>In their own words</a> · <a href='people/fred-smith.html#endorsers'>All endorsers</a> · <a href='people/fred-smith.html#money'>Money</a></p></div>
-<h2 id='council'>City Council · 13 candidates for 5 seats</h2>
-<p class='note'>Alphabetical order. “Campaign-listed” means the only source is the candidate's own website.</p>
-<div class='card'><h3><a href='people/benita-duran.html'>Benita Duran</a></h3><p>Duran is a government consultant running for Boulder council.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing). Individuals: 5 current elected officials — listed by the campaign.</p><p class='meta'><a href='people/benita-duran.html#positions'>In their own words</a> · <a href='people/benita-duran.html#endorsers'>All endorsers</a> · <a href='people/benita-duran.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/sam-fuqua.html'>Sam Fuqua</a></h3><p>Fuqua previously served on the Boulder Valley school board and is now seeking a council seat.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing). Individuals: 5 current elected officials, 4 former elected officials — listed by the campaign.</p><p class='meta'><a href='people/sam-fuqua.html#positions'>In their own words</a> · <a href='people/sam-fuqua.html#endorsers'>All endorsers</a> · <a href='people/sam-fuqua.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/lee-gilbert.html'>Lee Gilbert</a></h3><p>Gilbert is an engineering consultant running for council for the first time.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='meta'><a href='people/lee-gilbert.html#positions'>In their own words</a> · <a href='people/lee-gilbert.html#endorsers'>All endorsers</a> · <a href='people/lee-gilbert.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/jill-grano.html'>Jill Grano</a></h3><p>Grano previously served on Boulder City Council and is running again.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 14 current elected officials, 9 former elected officials, 1 other individual — listed by the campaign.</p><p class='meta'><a href='people/jill-grano.html#positions'>In their own words</a> · <a href='people/jill-grano.html#endorsers'>All endorsers</a> · <a href='people/jill-grano.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></h3><p>Isaacson is again seeking a Boulder council seat after a previous campaign.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 2 current elected officials — listed by the campaign.</p><p class='meta'><a href='people/rachel-rose-isaacson.html#positions'>In their own words</a> · <a href='people/rachel-rose-isaacson.html#endorsers'>All endorsers</a> · <a href='people/rachel-rose-isaacson.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/ryan-jamieson.html'>Ryan Jamieson</a></h3><p>Jamieson is a cybersecurity consultant seeking a Boulder council seat.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>. Individuals: 3 current elected officials, 3 former elected officials, 1 other individual — listed by the campaign.</p><p class='meta'><a href='people/ryan-jamieson.html#positions'>In their own words</a> · <a href='people/ryan-jamieson.html#endorsers'>All endorsers</a> · <a href='people/ryan-jamieson.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/tina-marquis.html'>Tina Marquis</a> <span class='badge inc'>incumbent</span></h3><p>Marquis is a sitting councilmember seeking a second term.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>; <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 12 current elected officials, 6 former elected officials — listed by the campaign.</p><p class='meta'><a href='people/tina-marquis.html#positions'>In their own words</a> · <a href='people/tina-marquis.html#endorsers'>All endorsers</a> · <a href='people/tina-marquis.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/dave-martus.html'>Dave Martus</a></h3><p>Martus is a first-time council candidate and a senior adviser with a background in institutional finance.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>.</p><p class='meta'><a href='people/dave-martus.html#positions'>In their own words</a> · <a href='people/dave-martus.html#endorsers'>All endorsers</a> · <a href='people/dave-martus.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/scott-rendleman.html'>Scott Rendleman</a></h3><p>Rendleman is an attorney running for council for the first time.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='meta'><a href='people/scott-rendleman.html#positions'>In their own words</a> · <a href='people/scott-rendleman.html#endorsers'>All endorsers</a> · <a href='people/scott-rendleman.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/jamillah-richmond.html'>Jamillah Richmond</a></h3><p>Richmond is a first-time council candidate and a diversity and education consultant.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-county-dsa.html'>Boulder County Democratic Socialists of America</a> (campaign-listed); <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing). Individuals: 2 current elected officials, 3 former elected officials — listed by the campaign.</p><p class='meta'><a href='people/jamillah-richmond.html#positions'>In their own words</a> · <a href='people/jamillah-richmond.html#endorsers'>All endorsers</a> · <a href='people/jamillah-richmond.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/ryan-schuchard.html'>Ryan Schuchard</a> <span class='badge inc'>incumbent</span></h3><p>Schuchard is a sitting Boulder councilmember seeking another term.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>; <a href='orgs/run-on-climate.html'>Run on Climate</a> (campaign-listed); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>; <a href='orgs/transform-rtd.html'>Transform RTD</a> (campaign-listed). Individuals: 13 current elected officials, 5 former elected officials — listed by the campaign.</p><p class='meta'><a href='people/ryan-schuchard.html#positions'>In their own words</a> · <a href='people/ryan-schuchard.html#endorsers'>All endorsers</a> · <a href='people/ryan-schuchard.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/lynn-segal.html'>Lynn Segal</a></h3><p>Segal is a retired ultrasonographer running for Boulder council.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='meta'><a href='people/lynn-segal.html#positions'>In their own words</a> · <a href='people/lynn-segal.html#endorsers'>All endorsers</a> · <a href='people/lynn-segal.html#money'>Money</a></p></div>
-<div class='card'><h3><a href='people/tara-winer.html'>Tara Winer</a> <span class='badge inc'>incumbent</span></h3><p>Winer is a sitting Boulder councilmember and mayor pro tem seeking reelection.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>; <a href='orgs/reimagine-south-boulder-recreation.html'>Reimagine South Boulder Recreation Advocacy Group</a> (campaign-listed); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 12 current elected officials, 8 former elected officials, 1 other individual — listed by the campaign.</p><p class='meta'><a href='people/tara-winer.html#positions'>In their own words</a> · <a href='people/tara-winer.html#endorsers'>All endorsers</a> · <a href='people/tara-winer.html#money'>Money</a></p></div>
-<h2 id='measures'>City measures</h2>
-<div class='card'><h3><a href='measures/2026-2j.html'>2J: Vacancy excise tax</a></h3><p>This would tax homes occupied for 183 days or fewer in a year, starting at $4,000 per vacant home. The tax could rise with inflation to no more than $7,000; money would support general city services rather than a dedicated housing fund. The ballot&#x27;s $6 million figure is an estimate for 2028, not a guaranteed collection amount.</p></div>
-<div class='card'><h3><a href='measures/2026-2k.html'>2K: Building Boulder Together: Recreation and Safety Bond</a></h3><p>This would authorize up to $400 million in city borrowing, repaid with additional property taxes, for recreation and public-safety buildings and other capital projects. The ballot lists example projects, including both recreation centers, fire stations, a police/911 building, the Penfield Tate II building and the Municipal Service Center; exact allocations are not fixed in the ballot question. The maximum repayment with financing costs is $650 million. The city&#x27;s project guide identifies intended projects and estimated costs, not a binding project-by-project appropriation.</p></div>
-<div class='card'><h3><a href='measures/2026-2l.html'>2L: Collective bargaining for firefighters (new Charter §73)</a></h3><p>This would put full-time firefighters&#x27; collective-bargaining rights into the city charter. Bargaining already exists under a city contract and ordinance; the measure would make the right a charter provision and establish a process for unresolved disputes, potentially ending in a city vote. The city retains certain management rights defined in the proposed amendment.</p></div>
-<div class='card'><h3><a href='measures/2026-2m.html'>2M: Charter debt-limit calculation (actual vs. assessed value)</a></h3><p>This would calculate the city&#x27;s charter debt limit using actual property value instead of assessed value while retaining the three-percent rate. Because actual value is larger, it would increase the city&#x27;s legal borrowing capacity. It is a companion question to the $400 million bond, but passing 2M alone would not issue that bond or directly impose the bond&#x27;s property tax.</p></div>
-<h2>More</h2><ul><li><a href='compare.html'>What candidates said at forums</a> — the same question, every candidate, in their own words</li><li><a href='orgs.html'>Organizations that endorse</a> — who they are, how they decide, who funds them</li><li><a href='finance.html'>Campaign money</a> — city clerk filings</li><li><a href='2026.html'>2026 ballot details</a> — questions asked this cycle, forums, money table</li><li><a href='print/index.html'>Print a one-page sheet per candidate</a></li><li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, <a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>
+<h2 id='mayor'>Who's running for mayor</h2>
+<p>6 candidates for one seat. Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. Some groups endorsed a 1st and a 2nd choice; we show the rank they gave.</p><p class='note'>Alphabetical order, the same as everywhere on this site.</p>
+<div class='who-list'>
+<article class='card cand-card'><p class='kicker'>Mayor</p><h3><a href='people/taishya-adams.html'>Taishya Adams</a></h3><p>Adams is a sitting Boulder councilmember seeking the mayor’s office.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a> (1st choice); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a> (2nd choice); <a href='orgs/boulder-county-dsa.html'>Boulder County Democratic Socialists of America</a> (news listing).</p><p class='more'><a href='people/taishya-adams.html'>Read about Taishya Adams: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>Mayor · Incumbent</p><h3><a href='people/aaron-brockett.html'>Aaron Brockett</a></h3><p>Brockett is seeking another term as Boulder mayor, a role he has held since 2021.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a> (2nd choice); <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 25 current elected officials, 26 former elected officials, 1 other individual — listed by the campaign.</p><p class='more'><a href='people/aaron-brockett.html'>Read about Aaron Brockett: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>Mayor</p><h3><a href='people/jameson-goldstein.html'>Jameson Goldstein</a></h3><p>Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU Boulder student.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='more'><a href='people/jameson-goldstein.html'>Read about Jameson Goldstein: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>Mayor</p><h3><a href='people/aquiles-la-grave.html'>Aquiles La Grave</a></h3><p>La Grave is an entrepreneur seeking the mayor’s office for the first time.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a> (1st choice).</p><p class='more'><a href='people/aquiles-la-grave.html'>Read about Aquiles La Grave: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>Mayor</p><h3><a href='people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></h3><p>Jacobs is a 2026 Boulder mayoral candidate.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='more'><a href='people/lisa-ann-jacobs.html'>Read about Lisa Ann Jacobs: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>Mayor</p><h3><a href='people/fred-smith.html'>Fred Smith</a></h3><p>Smith has run for Boulder council four times and is now a mayoral candidate.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='more'><a href='people/fred-smith.html'>Read about Fred Smith: positions, endorsements, money</a></p></article>
+</div>
+<h2 id='council'>Who's running for city council</h2>
+<p>13 candidates for five seats. Vote for up to five; the five with the most votes win.</p><p class='note'>Alphabetical order. “Campaign-listed” means the only source is the candidate's own website.</p>
+<div class='who-list'>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/benita-duran.html'>Benita Duran</a></h3><p>Duran is a government consultant running for Boulder council.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing). Individuals: 5 current elected officials — listed by the campaign.</p><p class='more'><a href='people/benita-duran.html'>Read about Benita Duran: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/sam-fuqua.html'>Sam Fuqua</a></h3><p>Fuqua previously served on the Boulder Valley school board and is now seeking a council seat.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing). Individuals: 5 current elected officials, 4 former elected officials — listed by the campaign.</p><p class='more'><a href='people/sam-fuqua.html'>Read about Sam Fuqua: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/lee-gilbert.html'>Lee Gilbert</a></h3><p>Gilbert is an engineering consultant running for council for the first time.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='more'><a href='people/lee-gilbert.html'>Read about Lee Gilbert: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/jill-grano.html'>Jill Grano</a></h3><p>Grano previously served on Boulder City Council and is running again.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 14 current elected officials, 9 former elected officials, 1 other individual — listed by the campaign.</p><p class='more'><a href='people/jill-grano.html'>Read about Jill Grano: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></h3><p>Isaacson is again seeking a Boulder council seat after a previous campaign.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 2 current elected officials — listed by the campaign.</p><p class='more'><a href='people/rachel-rose-isaacson.html'>Read about Rachel Rose Isaacson: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/ryan-jamieson.html'>Ryan Jamieson</a></h3><p>Jamieson is a cybersecurity consultant seeking a Boulder council seat.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>. Individuals: 3 current elected officials, 3 former elected officials, 1 other individual — listed by the campaign.</p><p class='more'><a href='people/ryan-jamieson.html'>Read about Ryan Jamieson: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council · Incumbent</p><h3><a href='people/tina-marquis.html'>Tina Marquis</a></h3><p>Marquis is a sitting councilmember seeking a second term.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>; <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 12 current elected officials, 6 former elected officials — listed by the campaign.</p><p class='more'><a href='people/tina-marquis.html'>Read about Tina Marquis: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/dave-martus.html'>Dave Martus</a></h3><p>Martus is a first-time council candidate and a senior adviser with a background in institutional finance.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>.</p><p class='more'><a href='people/dave-martus.html'>Read about Dave Martus: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/scott-rendleman.html'>Scott Rendleman</a></h3><p>Rendleman is an attorney running for council for the first time.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='more'><a href='people/scott-rendleman.html'>Read about Scott Rendleman: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/jamillah-richmond.html'>Jamillah Richmond</a></h3><p>Richmond is a first-time council candidate and a diversity and education consultant.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-county-dsa.html'>Boulder County Democratic Socialists of America</a> (campaign-listed); <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing). Individuals: 2 current elected officials, 3 former elected officials — listed by the campaign.</p><p class='more'><a href='people/jamillah-richmond.html'>Read about Jamillah Richmond: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council · Incumbent</p><h3><a href='people/ryan-schuchard.html'>Ryan Schuchard</a></h3><p>Schuchard is a sitting Boulder councilmember seeking another term.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/boulder-area-labor-council.html'>Boulder Area Labor Council, AFL-CIO</a>; <a href='orgs/boulder-progressives.html'>Boulder Progressives</a>; <a href='orgs/boulder-progressives-ucc.html'>Boulder Progressives UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>; <a href='orgs/run-on-climate.html'>Run on Climate</a> (campaign-listed); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>; <a href='orgs/transform-rtd.html'>Transform RTD</a> (campaign-listed). Individuals: 13 current elected officials, 5 former elected officials — listed by the campaign.</p><p class='more'><a href='people/ryan-schuchard.html'>Read about Ryan Schuchard: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council</p><h3><a href='people/lynn-segal.html'>Lynn Segal</a></h3><p>Segal is a retired ultrasonographer running for Boulder council.</p><p class='meta'><strong>Endorsers:</strong> No endorsements on file.</p><p class='more'><a href='people/lynn-segal.html'>Read about Lynn Segal: positions, endorsements, money</a></p></article>
+<article class='card cand-card'><p class='kicker'>City Council · Incumbent</p><h3><a href='people/tara-winer.html'>Tara Winer</a></h3><p>Winer is a sitting Boulder councilmember and mayor pro tem seeking reelection.</p><p class='meta'><strong>Endorsers:</strong> Organizations: <a href='orgs/better-boulder.html'>Better Boulder</a>; <a href='orgs/open-boulder.html'>Open Boulder</a>; <a href='orgs/open-boulder-2026-ucc.html'>Open Boulder 2026 UCC</a> (city filing); <a href='orgs/plan-boulder-county.html'>PLAN-Boulder County</a>; <a href='orgs/reimagine-south-boulder-recreation.html'>Reimagine South Boulder Recreation Advocacy Group</a> (campaign-listed); <a href='orgs/sierra-club-indian-peaks.html'>Sierra Club Indian Peaks Group</a>. Individuals: 12 current elected officials, 8 former elected officials, 1 other individual — listed by the campaign.</p><p class='more'><a href='people/tara-winer.html'>Read about Tara Winer: positions, endorsements, money</a></p></article>
+</div>
+<h2 id='measures'>What's on the ballot</h2>
+<p>Four city measures. Each page starts with what a Yes vote and a No vote mean, then the money, the full ballot wording, and who supports or opposes it.</p>
+<article class='card'><p class='kicker'>Ballot measure 2J</p><h3><a href='measures/2026-2j.html'>2J: Vacancy excise tax</a></h3><p>This would tax homes occupied for 183 days or fewer in a year, starting at $4,000 per vacant home.</p><p class='more'><a href='measures/2026-2j.html'>What Yes and No mean on 2J</a></p></article>
+<article class='card'><p class='kicker'>Ballot measure 2K</p><h3><a href='measures/2026-2k.html'>2K: Building Boulder Together: Recreation and Safety Bond</a></h3><p>This would authorize up to $400 million in city borrowing, repaid with additional property taxes, for recreation and public-safety buildings and other capital projects.</p><p class='more'><a href='measures/2026-2k.html'>What Yes and No mean on 2K</a></p></article>
+<article class='card'><p class='kicker'>Ballot measure 2L</p><h3><a href='measures/2026-2l.html'>2L: Collective bargaining for firefighters (new Charter §73)</a></h3><p>This would put full-time firefighters&#x27; collective-bargaining rights into the city charter.</p><p class='more'><a href='measures/2026-2l.html'>What Yes and No mean on 2L</a></p></article>
+<article class='card'><p class='kicker'>Ballot measure 2M</p><h3><a href='measures/2026-2m.html'>2M: Charter debt-limit calculation (actual vs. assessed value)</a></h3><p>This would calculate the city&#x27;s charter debt limit using actual property value instead of assessed value while retaining the three-percent rate.</p><p class='more'><a href='measures/2026-2m.html'>What Yes and No mean on 2M</a></p></article>
+<h2 id='how-to-use'>How to use this guide</h2><ol class='howto'><li><strong>Start with a race.</strong> Open a candidate above. The top of each page says the office, a one-line bio, and links to their positions, forum answers, endorsements and money.</li><li><strong>Read their own words.</strong> Quotes come with the source under them. Long answers fold; tap “Read the full answer”.</li><li><strong>Check where an endorsement comes from.</strong> Each one is labelled: the endorser's own statement, a city filing, a news listing, or “X campaign lists Y” when only the campaign says so.</li><li><strong>Read a measure.</strong> Each measure page leads with what Yes and No mean.</li><li><strong>Print it.</strong> Every candidate has a <a href='print/index.html'>printable sheet</a>. New to city government? Read <a href='civics.html'>Civics 101</a>.</li></ol>
+<h2 id='more'>More</h2><ul><li><a href='orgs.html'>Organizations that endorse</a> — who they are, how they decide, who funds them</li><li><a href='finance.html'>Campaign money</a> — city clerk filings</li><li><a href='2026.html'>2026 ballot details</a> — questions asked this cycle, forums, money table</li><li><a href='print/index.html'>Printable sheets for every candidate</a></li><li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, <a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>
 </main>
 <footer>
-  City of Boulder only. Cited, not scored, not an endorsement.
+  <p>City of Boulder only. Cited, not scored, not an endorsement. Nobody here tells you how to vote.</p>
+  <p>Elections by year: <a href="2026.html">2026</a> · <a href="2025.html">2025</a> · <a href="2023.html">2023</a> · <a href="2021.html">2021</a> · <a href="2019.html">2019</a> · <a href="2017.html">2017</a></p>
+  <p><a href="issues.html">Issues</a> ·
   <a href="sources.html">Sources</a> ·
   <a href="forums.html">Forums</a> ·
   <a href="civics.html">Civics 101</a> ·
   <a href="orgs.html">Organizations</a> ·
+  <a href="people.html">People</a> ·
   <a href="finance.html">Money</a> ·
   <a href="questionnaires.html">Questionnaires</a> ·
   <a href="print/index.html">Print</a> ·
   <a href="measures.html">All measures</a> ·
-  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+  <a href="about.html">About</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a></p>
 </footer>
 </body>
 </html>
