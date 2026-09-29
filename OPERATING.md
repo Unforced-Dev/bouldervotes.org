@@ -49,6 +49,8 @@ Rules the tests enforce (`tests/test_graph_2026.py`):
 - Every endorsement has a source and a `provenance`: `endorser_statement` (the group's own release, or a news story reprinting it), `campaign_claim` (only source is the candidate's or ballot campaign's own site), `filing` (city committee registration), `news_report` (an outlet lists it; no endorser statement found). Campaign claims always render as “X campaign lists Y”.
 - `status='held'` rows (statements or edges) are loaded but never rendered.
 - A journalist's group summary goes in `reported_lines`, attributed to the outlet. Never fan it out into per-person yes/no answers.
+- Every edge has an entry in the verification ledger (`data/harvest/2026/endorsement_verification.json`, copied from `bv-research/endorsement_verification_2026.json`): `PASS | CORRECTED | HOLD | REMOVE`, `checked_on`, `evidence_url`, `note`. `REMOVE` edges are kept as a record but not published; `HOLD` edges can never be `endorser_statement`.
+- An `endorser_statement` edge must cite the endorser's own website, or a source listed in `AUTHORED_ELSEWHERE` in `approve_2026.py` (verbatim press-release repost, the endorser's verified social account, a signed op-ed). A campaign's listing never counts. Source replacements, provenance upgrades, roster title fixes and new edges from a verification pass are constants in `approve_2026.py` (`SOURCE_CORRECTIONS`, `PROVENANCE_UPGRADES`, `TITLE_CORRECTIONS`, `NEW_EDGES`).
 - Ranked-choice endorsements keep `rank`.
 - Endorser grouping (organizations / current elected / former elected / other individuals) uses only the title printed on the cited page. No title → “other individuals”. It is presentation, not a score.
 
