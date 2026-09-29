@@ -19,6 +19,8 @@ import re
 import sqlite3
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parent
+
 GROUPS = [
     ("organization", "Organizations and committees"),
     ("current_elected", "Current elected officials"),
@@ -187,7 +189,7 @@ class Graph2026:
                JOIN races r ON r.id=c.race_id JOIN elections e ON e.id=r.election_id
                JOIN offices o ON o.id=r.office_id
                LEFT JOIN candidate_profiles cp ON cp.candidacy_id=c.id
-               WHERE e.year=2026 AND o.slug=? ORDER BY p.sort_name""",
+               WHERE e.year=2026 AND o.slug=? ORDER BY c.ballot_position IS NULL, c.ballot_position, p.sort_name""",
             (office,),
         ).fetchall()
 
@@ -462,6 +464,12 @@ class Graph2026:
             bits.append("<ul class='edges'>" + "".join(self.edge_li(e, prefix, "target") for e in given) + "</ul>")
         return "\n".join(bits)
 
+    @staticmethod
+    def ballot_order_note() -> str:
+        o = json.loads((ROOT / "data" / "harvest" / "2026" / "ballot_order.json").read_text(encoding="utf-8"))
+        return (f"Listed in the order they appear on your ballot (source: "
+                f"<a href='{esc(o['source_url'])}'>City of Boulder candidate list</a>).")
+
     # ------------------------------------------------------------ pages
     def write_home(self) -> None:
         mayor = self.candidates("mayor")
@@ -509,11 +517,11 @@ class Graph2026:
         b.append(f"<h2 id='mayor'>Who's running for mayor</h2>")
         b.append(f"<p>{len(mayor)} candidates for one seat. Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. "
                  "Some groups endorsed a 1st and a 2nd choice; we show the rank they gave.</p>"
-                 "<p class='note'>Alphabetical order, the same as everywhere on this site.</p>")
+                 f"<p class='note'>{self.ballot_order_note()}</p>")
         b.append(cards(mayor, "mayor"))
         b.append(f"<h2 id='council'>Who's running for city council</h2>")
         b.append(f"<p>{len(council)} candidates for five seats. Vote for up to five; the five with the most votes win.</p>"
-                 "<p class='note'>Alphabetical order. “Campaign-listed” means the only source is the candidate's own website.</p>")
+                 f"<p class='note'>{self.ballot_order_note()} “Campaign-listed” means the only source is the candidate's own website.</p>")
         b.append(cards(council, "council"))
         b.append("<h2 id='measures'>What's on the ballot</h2>")
         b.append("<p>Four city measures. Each page starts with what a Yes vote and a No vote mean, then the money, "

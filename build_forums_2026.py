@@ -79,6 +79,12 @@ class Forums2026:
         self.doc = json.loads((H2026 / "forums.json").read_text(encoding="utf-8"))
         self.forums = {f["slug"]: f for f in self.doc["forums"]}
         self.rows = self._load()
+        # Official 2026 ballot order: mayor race first, then council (ballot_order.json via seed).
+        self.ballot_rank = {r[0]: r[1] for r in con.execute(
+            """SELECT c.person_id, MIN(CASE o.slug WHEN 'mayor' THEN 0 ELSE 100 END + c.ballot_position)
+               FROM candidacies c JOIN races r ON r.id=c.race_id JOIN elections e ON e.id=r.election_id
+               JOIN offices o ON o.id=r.office_id
+               WHERE e.year=2026 AND c.ballot_position IS NOT NULL GROUP BY c.person_id""")}
 
     # ------------------------------------------------------------ data
     def _load(self) -> list[dict]:
@@ -265,7 +271,7 @@ class Forums2026:
     def write_compare(self) -> None:
         (self.out / "compare").mkdir(exist_ok=True)
         label = ("<p class='note'><strong>How to read this.</strong> Each page puts one forum question next to every "
-                 "candidate we quote answering it, in the order they spoke. There are no scores and no summary of who is "
+                 "candidate we quote answering it, in the order their names appear on the ballot. There are no scores and no summary of who is "
                  "right. A yes/no appears only where the candidate said yes or no (support/oppose) in so many words; "
                  "a blank means they did not, or hedged — read the quote. " + TRANSCRIPT_NOTE + "</p>")
         idx = ["<h1>Same question, every candidate</h1>",
@@ -294,6 +300,8 @@ class Forums2026:
         for r in rows:
             if r["person_id"] not in people:
                 people.append(r["person_id"])
+        people.sort(key=lambda pid: (self.ballot_rank.get(pid, 999),
+                                     next(r["sort_name"] for r in rows if r["person_id"] == pid)))
         has_stance = any(r["stance"] for r in rows)
         b = ["<p class='crumb'><a href='../compare.html'>Same question, every candidate</a> · "
              f"<a href='../forums/{esc(slug)}.html#q{qi + 1:02d}'>{esc(f['short'])}</a></p>",

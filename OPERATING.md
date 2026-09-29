@@ -52,6 +52,10 @@ Rules the tests enforce (`tests/test_graph_2026.py`):
 - Ranked-choice endorsements keep `rank`.
 - Endorser grouping (organizations / current elected / former elected / other individuals) uses only the title printed on the cited page. No title → “other individuals”. It is presentation, not a score.
 
+### Ballot order
+
+2026 candidates are listed in official ballot order wherever candidates are listed (home, year page, people index, issue and compare pages, print packet). The order lives only in `data/harvest/2026/ballot_order.json` with its source URL; `ingest_2026.py` writes it to `candidacies.ballot_position` and fails if a 2026 candidate is missing. Forum pages and the measure-page forum quotes stay in speaking order. Earlier years stay alphabetical (no ballot order recorded).
+
 ## Adding a questionnaire
 
 Preferred: harvest into `data/harvest/` (see `harvest_brl.py`) then ingest. For a small yes/no sheet, a function in `ingest.py` is fine — `ingest_beat_2023` is the pattern.

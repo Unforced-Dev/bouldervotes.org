@@ -241,6 +241,22 @@ def ingest_2026_graph(cur, *, pid: dict, add_person, add_source, slugify) -> dic
              audit.get("result"), audit.get("note"), e.get("notes") or None),
         )
 
+    # ---- official ballot order (data/harvest/2026/ballot_order.json) ----
+    order = load("ballot_order.json")
+    placed = 0
+    for race, names in order["races"].items():
+        for i, name in enumerate(names, 1):
+            cid = candidacy(name)
+            cur.execute(
+                """SELECT o.slug FROM candidacies c JOIN races r ON r.id=c.race_id
+                   JOIN offices o ON o.id=r.office_id WHERE c.id=?""", (cid,))
+            if cur.fetchone()[0] != race:
+                raise SystemExit(f"ballot_order.json: {name} is not a 2026 {race} candidate")
+            cur.execute("UPDATE candidacies SET ballot_position=? WHERE id=?", (i, cid))
+            placed += 1
+    if placed != len(cands):
+        raise SystemExit(f"ballot_order.json covers {placed} candidates; candidates.json has {len(cands)}")
+
     cur.execute("SELECT COUNT(*) FROM endorsements")
     n_e = cur.fetchone()[0]
     cur.execute("SELECT COUNT(*) FROM statements WHERE status='published'")
