@@ -31,42 +31,78 @@ GROUPS = [
 
 KEY_DATES_URL = "https://bouldercounty.gov/elections/information/"
 
+# Key dates, as published by Boulder County Elections (KEY_DATES_URL, checked 2026-09-29).
+KEY_DATES = [
+    ("2026-10-02", "Oct 2", "Ballots mailed; 24-hour drop boxes open"),
+    ("2026-10-19", "Oct 19", "Vote Centers open for in-person voting"),
+    ("2026-10-26", "Oct 26", "Last recommended day to return a ballot by mail"),
+    ("2026-11-03", "Nov 3", "Election Day: ballots must be received by 7 p.m."),
+]
+
+PHOTOS = {p["slug"]: p for p in json.loads(
+    (ROOT / "data" / "harvest" / "2026" / "photos.json").read_text(encoding="utf-8"))["photos"]}
+
+
+def initials(name: str) -> str:
+    parts = [w for w in name.split() if w[:1].isalpha()]
+    return (parts[0][0] + parts[-1][0]).upper() if len(parts) > 1 else name[:1].upper()
+
+
+def face(slug: str, name: str, prefix: str, size: int = 96) -> str:
+    """Sourced campaign photo, or a neutral monogram tile of the same size.
+    Decorative next to the name (alt=""), so screen readers do not hear it twice."""
+    ph = PHOTOS.get(slug)
+    if ph and ph.get("file"):
+        return (f"<img class='face' src='{prefix}{esc(ph['file'])}' alt='' width='{size}' height='{size}' "
+                f"loading='lazy' decoding='async'>")
+    return f"<span class='face mono' aria-hidden='true' style='width:{size}px;height:{size}px'>{esc(initials(name))}</span>"
+
+
+def photo_credit(slug: str) -> str:
+    ph = PHOTOS.get(slug)
+    if ph and ph.get("file"):
+        return f"<a href='{esc(ph['credit_url'])}'>{esc(ph['credit'])}</a>"
+    return "No photo: " + esc(ph["reason"]) if ph else "No photo on file."
+
+
+def timeline(today) -> str:
+    """Key dates with where the build date falls. Computed at build time; labelled 'as of'."""
+    import datetime as dt
+    items, nxt = [], None
+    today_li = (f"<li class='today' aria-current='date'><time class='d' datetime='{today.isoformat()}'>"
+                f"{today.strftime('%b %-d')}</time><span class='t'>Today</span></li>")
+    for iso, short, label in KEY_DATES:
+        d = dt.date.fromisoformat(iso)
+        if d > today and nxt is None:
+            items.append(today_li)
+        state = "done" if d < today else ("today" if d == today else "")
+        if nxt is None and d >= today:
+            nxt = (d, label)
+        cls = f" class='{state}'" if state else ""
+        items.append(f"<li{cls}><time class='d' datetime='{iso}'>{short}</time><span class='t'>{esc(label)}</span></li>")
+    if nxt:
+        days = (nxt[0] - today).days
+        when = "today" if days == 0 else ("tomorrow" if days == 1 else f"in {days} days")
+        count = f"<p class='countdown'>Next: {esc(nxt[1].split(';')[0].split(':')[0])} {when}.</p>"
+    else:
+        count = "<p class='countdown'>Election Day has passed.</p>"
+    nice = today.strftime("%B %-d, %Y")
+    return (
+        "<section class='timeline' aria-labelledby='dates'>"
+        f"<div class='timeline-head'><h2 id='dates'>Key dates</h2><span class='asof'>As of {nice}</span></div>"
+        f"{count}<ol>{''.join(items)}</ol>"
+        "<p class='note'>Ballots are mailed starting Friday, October 2. Your ballot must be <em>received</em> by "
+        "7 p.m. Tuesday, November 3. Mail it early or use a 24-hour drop box (they open October 2). "
+        f"Dates from <a href='{KEY_DATES_URL}'>Boulder County Elections</a>. October 2 is the planned mailing date, "
+        "not a delivery guarantee.</p></section>"
+    )
+
 HOME_INTRO = (
     "Boulder Votes is an independent, nonpartisan guide to the City of Boulder's "
     "November 3, 2026 election: who is running for mayor and city council, what the four "
     "city ballot measures would do, and where every fact comes from."
 )
 
-EXTRA_CSS = """
-p, li, td, th, blockquote, h1, h2, h3, h4, dd { overflow-wrap: break-word; }
-/* provenance: one neutral treatment; the label's words carry the meaning */
-.prov { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 0.2rem; line-height: 1.45; }
-.prov-label { font-family: var(--sans); font-weight: 700; font-size: 0.82rem; color: var(--ink); }
-ul.edges { list-style: none; padding-left: 0; margin: 0.4rem 0 1rem; }
-ul.edges > li { border-top: 1px solid var(--rule); padding: 0.6rem 0; margin: 0; max-width: var(--measure); }
-ul.edges > li:last-child { border-bottom: 1px solid var(--rule); }
-.rank { font-family: var(--sans); font-size: 0.85rem; font-weight: 700; border: 1px solid var(--rule-strong); padding: 0 0.35rem; margin-left: 0.25rem; }
-.keydates { border: 2px solid var(--ink); padding: 0.9rem 1.1rem; background: var(--panel); margin: 1rem 0 1.4rem; }
-.keydates h2 { border: 0; padding: 0; margin: 0 0 0.4rem; font-size: 1.2rem; font-family: var(--sans); letter-spacing: 0.02em; }
-.keydates p { margin: 0.35rem 0; }
-.bigdate { font-size: 1.15rem; font-weight: 700; }
-.held { color: var(--muted); font-style: italic; }
-.legend dt { font-weight: 700; margin-top: 0.5rem; }
-.legend dd { margin-left: 0; }
-/* measure: Yes means / No means, identical weight */
-dl.yesno { border: 2px solid var(--ink); background: var(--panel); margin: 1rem 0 1.4rem; padding: 0; }
-dl.yesno > div { padding: 0.8rem 1.1rem; }
-dl.yesno > div + div { border-top: 1px solid var(--rule-strong); }
-dl.yesno dt { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em; margin: 0 0 0.2rem; }
-dl.yesno dd { margin: 0; }
-.bio-line { font-size: 1.1rem; }
-.facts { list-style: none; padding: 0; margin: 0.5rem 0; }
-.facts li { margin: 0.2rem 0; }
-@media print {
-  .prov { color: #333; }
-  dl.yesno { background: #fff; }
-}
-"""
 
 PROV_LEGEND = """
 <details class='fold'><summary>What the labels on each endorsement mean</summary>
@@ -83,6 +119,12 @@ PROV_LEGEND = """
 
 def esc(s: object) -> str:
     return html.escape("" if s is None else str(s))
+
+
+def panelize_sections(html_body: str) -> str:
+    """Wrap each <h2>-led section in a card (presentation only)."""
+    parts = re.split(r"(?=<h2[ >])", html_body)
+    return parts[0] + "".join(f"<section class='panel'>{c}</section>" for c in parts[1:])
 
 
 def ordinal(n: int) -> str:
@@ -348,19 +390,23 @@ class Graph2026:
                 x = float(n)
                 return f"${x:,.0f}" if abs(x - round(x)) < 0.005 else f"${x:,.2f}"
             money = (f"<p class='note'>Money (city clerk{', as of ' + esc(snap['reported_on']) if snap['reported_on'] else ''}): "
-                     f"raised {d(snap['contributions'])} · spent {d(snap['expenditures'])} · "
-                     f"matching funds received {d(snap['matching_received'])}.</p>")
-        site = (f" · <a href='{esc(row['campaign_url'])}'>Campaign website</a>" if row["campaign_url"] else "")
+                     f"raised <span class='num'>{d(snap['contributions'])}</span> · spent <span class='num'>{d(snap['expenditures'])}</span> · "
+                     f"matching funds received <span class='num'>{d(snap['matching_received'])}</span>.</p>")
+        actions = [f"<a class='btn secondary' href='../print/{esc(slug)}.html'>Print this candidate</a>"]
+        if row["campaign_url"]:
+            actions.append(f"<a class='btn secondary' href='{esc(row['campaign_url'])}'>Campaign website</a>")
         return (
             f"<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../index.html#{anchor}'>{race}</a></p>"
-            f"<div class='summary'>"
+            f"<div class='profile summary'>"
+            f"<figure>{face(slug, row['full_name'], '../', 180)}<figcaption>{photo_credit(slug)}</figcaption></figure>"
+            f"<div class='who'>"
             f"<p class='kicker'>{kicker}</p>"
             f"<h1>{esc(row['full_name'])}</h1>"
             + (f"<p class='bio-line'>{esc(first_sentence(row['summary']))}</p>" if row["summary"] else "")
             + money
             + f"<nav class='jump' aria-label='On this page'>{''.join(jumps)}</nav>"
-            f"<p class='note print-hint'><a href='../print/{esc(slug)}.html'>Printable sheet</a>{site}</p>"
-            f"</div>"
+            f"<p class='actions print-hint'>{''.join(actions)}</p>"
+            f"</div></div>"
         )
 
     # ------------------------------------------------------------ person page sections
@@ -479,36 +525,47 @@ class Graph2026:
         ms = self.q("""SELECT m.*, md.plain_summary FROM measures m JOIN elections e ON e.id=m.election_id
                        LEFT JOIN measure_details md ON md.measure_id=m.id
                        WHERE e.year=2026 AND m.letter IS NOT NULL ORDER BY m.letter""").fetchall()
+        import datetime as dt
+        import os
+        today = dt.date.fromisoformat(os.environ.get("BV_TODAY") or dt.date.today().isoformat())
+        codes = "".join(
+            f"<li><span class='code'>{esc(m['letter'])}</span><span>{esc(m['title'])}</span></li>" for m in ms)
         b = [
-            "<h1>Boulder's November 3, 2026 city election</h1>",
-            f"<p class='intro' id='what-this-is'>{esc(HOME_INTRO)}</p>",
-            "<p>We do not endorse, score, or recommend. Every quote, endorsement and dollar figure links to where it came from.</p>",
-            "<section class='keydates' aria-labelledby='dates'>"
-            "<h2 id='dates'>Key dates</h2>"
-            "<p class='bigdate'>Ballots are mailed starting Friday, October 2.</p>"
-            "<p class='bigdate'>Your ballot must be <em>received</em> by 7 p.m. Tuesday, November 3.</p>"
-            "<p>Mail it early or use a 24-hour drop box (they open October 2).</p>"
-            f"<p class='note'>Dates from <a href='{KEY_DATES_URL}'>Boulder County Elections</a>. October 2 is the planned mailing date, not a delivery guarantee.</p>"
-            "</section>",
-            "<p><strong>On your city ballot:</strong> "
-            f"<a href='#mayor'>Mayor</a> ({len(mayor)} candidates, one seat, you <strong>rank</strong> your choices) · "
-            f"<a href='#council'>City Council</a> ({len(council)} candidates for five seats; vote for up to five) · "
-            f"<a href='#measures'>{len(ms)} city measures</a> (" + ", ".join(esc(m['letter']) for m in ms) + ").</p>",
+            "<div class='hero'>",
+            "<p class='eyebrow'>City of Boulder · Election Day Tuesday, November 3, 2026</p>",
+            "<h1>Everything on your Boulder city ballot, with sources</h1>",
+            "<p class='intro'>We do not endorse, score, or recommend. Every quote, endorsement and dollar figure links to where it came from.</p>",
+            "</div>",
+            timeline(today),
+            "<h2 class='visually-hidden'>On your city ballot</h2>",
+            "<div class='races'>",
+            f"<a class='race' href='#mayor'><span class='kicker'>Mayor</span><h3>Mayor</h3>"
+            f"<p class='rule'>Rank your choices</p><p>{len(mayor)} candidates for one seat. Mark a 1st choice, and a 2nd, 3rd … if you like.</p>"
+            f"<span class='go'>See the {len(mayor)} candidates</span></a>",
+            f"<a class='race' href='#council'><span class='kicker'>City Council</span><h3>City Council</h3>"
+            f"<p class='rule'>Vote for up to five</p><p>{len(council)} candidates for five seats. The five with the most votes win.</p>"
+            f"<span class='go'>See the {len(council)} candidates</span></a>",
+            f"<a class='race' href='#measures'><span class='kicker'>Ballot measures</span><h3>{len(ms)} city measures</h3>"
+            f"<ul class='codes'>{codes}</ul><span class='go'>What Yes and No mean</span></a>",
+            "</div>",
+            f"<p class='about-line' id='what-this-is'>{esc(HOME_INTRO)}</p>",
             "<p class='note'>County, state, school-board and regional items are also on your ballot; this site covers the City of Boulder only.</p>",
         ]
 
         def cards(rows, office):
             out = ["<div class='who-list'>"]
-            for r in rows:
+            for i, r in enumerate(rows, 1):
                 edges = self.endorsements("e.candidacy_id=?", (r["candidacy_id"],))
                 inc = " · Incumbent" if r["is_incumbent"] else ""
                 label = "Mayor" if office == "mayor" else "City Council"
                 bio = esc(first_sentence(r["summary"])) if r["summary"] else "<span class='empty'>No bio on file yet.</span>"
                 out.append(
                     f"<article class='card cand-card'>"
-                    f"<p class='kicker'>{label}{inc}</p>"
+                    f"<div class='cand-top'>{face(r['slug'], r['full_name'], '', 96)}<div>"
+                    f"<p class='ballot-pos'>Ballot position {i}</p>"
                     f"<h3><a href='people/{esc(r['slug'])}.html'>{esc(r['full_name'])}</a></h3>"
-                    f"<p>{bio}</p>"
+                    f"<p class='office'>{label}{inc}</p></div></div>"
+                    f"<p class='bio'>{bio}</p>"
                     f"<p class='meta'><strong>Endorsers:</strong> {self.summary_line(edges, '')}</p>"
                     f"<p class='more'><a href='people/{esc(r['slug'])}.html'>Read about {esc(r['full_name'])}: positions, endorsements, money</a></p>"
                     f"</article>"
@@ -516,25 +573,27 @@ class Graph2026:
             out.append("</div>")
             return "\n".join(out)
 
-        b.append(f"<h2 id='mayor'>Who's running for mayor</h2>")
+        b.append(f"<div class='section-head'><h2 id='mayor'>Who's running for mayor</h2><span class='count'>{len(mayor)} candidates · 1 seat · ranked choice</span></div>")
         b.append(f"<p>{len(mayor)} candidates for one seat. Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. "
                  "Some groups endorsed a 1st and a 2nd choice; we show the rank they gave.</p>"
                  f"<p class='note'>{self.ballot_order_note()}</p>")
         b.append(cards(mayor, "mayor"))
-        b.append(f"<h2 id='council'>Who's running for city council</h2>")
+        b.append(f"<div class='section-head'><h2 id='council'>Who's running for city council</h2><span class='count'>{len(council)} candidates · 5 seats · vote for up to 5</span></div>")
         b.append(f"<p>{len(council)} candidates for five seats. Vote for up to five; the five with the most votes win.</p>"
                  f"<p class='note'>{self.ballot_order_note()} “Campaign-listed” means the only source is the candidate's own website.</p>")
         b.append(cards(council, "council"))
-        b.append("<h2 id='measures'>What's on the ballot</h2>")
+        b.append(f"<div class='section-head'><h2 id='measures'>What's on the ballot</h2><span class='count'>{len(ms)} city measures</span></div>")
         b.append("<p>Four city measures. Each page starts with what a Yes vote and a No vote mean, then the money, "
                  "the full ballot wording, and who supports or opposes it.</p>")
+        b.append("<div class='measure-list'>")
         for m in ms:
             b.append(
                 f"<article class='card'><p class='kicker'>Ballot measure {esc(m['letter'])}</p>"
-                f"<h3><a href='measures/2026-{esc(m['letter'].lower())}.html'>{esc(m['letter'])}: {esc(m['title'])}</a></h3>"
+                f"<h3><span class='code'>{esc(m['letter'])}</span><a href='measures/2026-{esc(m['letter'].lower())}.html'>{esc(m['title'])}</a></h3>"
                 f"<p>{esc(first_sentence(m['plain_summary'] or m['summary']))}</p>"
                 f"<p class='more'><a href='measures/2026-{esc(m['letter'].lower())}.html'>What Yes and No mean on {esc(m['letter'])}</a></p></article>"
             )
+        b.append("</div>")
         b.append("<h2 id='how-to-use'>How to use this guide</h2>"
                  "<ol class='howto'>"
                  "<li><strong>Start with a race.</strong> Open a candidate above. The top of each page says the office, a one-line bio, and links to their positions, forum answers, endorsements and money.</li>"
@@ -543,7 +602,7 @@ class Graph2026:
                  "<li><strong>Read a measure.</strong> Each measure page leads with what Yes and No mean.</li>"
                  "<li><strong>Print it.</strong> Every candidate has a <a href='print/index.html'>printable sheet</a>. New to city government? Read <a href='civics.html'>Civics 101</a>.</li>"
                  "</ol>")
-        b.append("<h2 id='more'>More</h2><ul>"
+        b.append("<h2 id='more'>More in this guide</h2><ul>"
                  "<li><a href='compare.html'>What candidates said at forums</a> — the same question, every candidate, in their own words</li>"
                  "<li><a href='orgs.html'>Organizations that endorse</a> — who they are, how they decide, who funds them</li>"
                  "<li><a href='finance.html'>Campaign money</a> — city clerk filings</li>"
@@ -551,7 +610,7 @@ class Graph2026:
                  "<li><a href='print/index.html'>Printable sheets for every candidate</a></li>"
                  "<li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, "
                  "<a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>")
-        (self.out / "index.html").write_text(self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current="index.html"), encoding="utf-8")
+        (self.out / "index.html").write_text(self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current=None), encoding="utf-8")
 
     def write_orgs(self) -> None:
         (self.out / "orgs").mkdir(exist_ok=True)
@@ -574,7 +633,7 @@ class Graph2026:
                 idx.append(f"<div class='card'><h3><a href='orgs/{esc(r['slug'])}.html'>{esc(r['name'])}</a></h3>"
                            f"<p>{esc(first_sentence(r['summary']))}</p><div class='meta'>{note}</div></div>")
             self._write_org_pages(chunk)
-        (self.out / "orgs.html").write_text(self.page("Organizations", "\n".join(idx), year=2026), encoding="utf-8")
+        (self.out / "orgs.html").write_text(self.page("Endorsing organizations", "\n".join(idx), year=2026, current="learn"), encoding="utf-8")
 
     def _write_org_pages(self, rows) -> None:
         from build import human_label  # late import: build.py imports this module
@@ -587,7 +646,7 @@ class Graph2026:
                 u = self.q("SELECT url FROM sources WHERE id=?", (sid,)).fetchone()[0]
                 return f" <a href='{esc(u)}'>source</a>"
 
-            b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../orgs.html'>Organizations</a></p>", f"<h1>{esc(r['name'])}</h1>"]
+            b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../learn.html'>Learn</a> › <a href='../orgs.html'>Endorsing organizations</a></p>", f"<h1>{esc(r['name'])}</h1>"]
             meta = [esc(human_label(r["endorser_kind"]))]
             if r["legal_form"]:
                 meta.append(esc(r["legal_form"]))
@@ -664,7 +723,7 @@ class Graph2026:
                     f"<li><a href='{esc(s['url'])}'>{esc(s['url'])}</a></li>" for s in srcs) + "</ul>")
             b.append(f"<p class='note'>Profile compiled {esc(r['as_of'])}.</p>")
             (self.out / "orgs" / f"{r['slug']}.html").write_text(
-                self.page(r["name"], "\n".join(b), prefix="../", year=2026), encoding="utf-8")
+                self.page(r["name"], panelize_sections("\n".join(b)), prefix="../", year=2026, current="learn"), encoding="utf-8")
 
     def write_measures(self) -> None:
         (self.out / "measures").mkdir(exist_ok=True)
@@ -681,10 +740,12 @@ class Graph2026:
             b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../index.html#measures'>Measures</a> › "
                  f"{esc(m['letter'])}</p>",
                  f"<p class='kicker'>City of Boulder ballot measure {esc(m['letter'])} · 2026</p>",
-                 f"<h1>{esc(m['letter'])}: {esc(m['title'])}</h1>",
+                 f"<h1><span class='code code-lg'>{esc(m['letter'])}</span> {esc(m['title'])}</h1>",
                  f"<dl class='yesno'><div><dt>A YES vote means</dt><dd>{esc(m['yes_means'])}</dd></div>"
                  f"<div><dt>A NO vote means</dt><dd>{esc(m['no_means'])}</dd></div></dl>",
                  f"<h2 id='summary'>In plain words</h2><p>{esc(m['plain_summary'])}</p>"]
+            head_bits = b[:4]
+            head = "\n".join(head_bits)
             if m["fiscal_text"]:
                 b.append(f"<h2>Money</h2><p>{esc(m['fiscal_text'])}{srclink(m['fiscal_source_id'])}</p>")
             if m["council_vote_text"]:
@@ -719,12 +780,12 @@ class Graph2026:
             if unknowns:
                 b.append("<h2>What we don't know yet</h2><ul>" + "".join(f"<li>{esc(u)}</li>" for u in unknowns) + "</ul>")
             (self.out / "measures" / f"2026-{m['letter'].lower()}.html").write_text(
-                self.page(f"{m['letter']}: {m['title']}", "\n".join(b), prefix="../", year=2026), encoding="utf-8")
+                self.page(f"{m['letter']}: {m['title']}", head + panelize_sections("\n".join(b[len(head_bits):])), prefix="../", year=2026, current="measures"), encoding="utf-8")
 
     def write_civics(self, md: str) -> None:
         body = md_to_html(md)
         body += "<p class='note'>Compiled September 2026. Each paragraph links its source. Not a recommendation on how to vote.</p>"
-        (self.out / "civics.html").write_text(self.page("Civics 101", body, year=2026), encoding="utf-8")
+        (self.out / "civics.html").write_text(self.page("Civics 101", body, year=2026, current="learn"), encoding="utf-8")
 
     def reported_lines_for_question(self, qid: int, prefix: str) -> str:
         lines = self.q("""SELECT rl.*, s.url, s.title FROM reported_lines rl JOIN sources s ON s.id=rl.source_id
