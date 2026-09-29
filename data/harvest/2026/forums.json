@@ -1,0 +1,488 @@
+{
+ "audited_on": "2026-09-29",
+ "new_issues": [
+  {
+   "slug": "arts",
+   "name": "Arts and culture",
+   "description": "Cultural funding, creative spaces, the arts blueprint."
+  },
+  {
+   "slug": "economy",
+   "name": "Business and the local economy",
+   "description": "Downtown, small business, recruiting employers, public-private partnerships."
+  },
+  {
+   "slug": "land-use",
+   "name": "Land use and growth",
+   "description": "Title 9 land-use code, Area III, permitting and development review."
+  },
+  {
+   "slug": "governance",
+   "name": "How the city is run",
+   "description": "The mayor's role, council and staff, auditing, representation."
+  }
+ ],
+ "forums": [
+  {
+   "slug": "2026-chamber-forum",
+   "name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+   "short": "Boulder Chamber forum",
+   "date": "2026-08-26",
+   "hosts": [
+    "Boulder Chamber"
+   ],
+   "venue": "eTown, 1535 Spruce St., Boulder",
+   "date_source": "Boulder Chamber event listing (already in seed.py); Daily Camera Aug 27 2026 writeup.",
+   "notes": "Season-opener at eTown. Council and mayoral candidates on one stage. Daily Camera (Aug 27) reported 17 of 19 candidates present.",
+   "recordings": [
+    {
+     "youtube_id": "CQlalpB7N5w",
+     "title": "2026 | Boulder City Council Candidate Forum",
+     "uploader": "Boulder Chamber",
+     "uploaded": "2026-09-17",
+     "part": null,
+     "segments": [
+      {
+       "label": "Council and mayoral candidates together",
+       "start": 0
+      }
+     ]
+    }
+   ],
+   "absent_statement_read": [],
+   "questions": [
+    {
+     "prompt": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "The mayor has a unique role in building consensus and setting council priorities. How would you use that leadership role to bring council, city staff, and the business community together around a clear economic strategy and hold the city accountable for measurable progress?",
+     "issue_slug": "governance",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Boulder Area Rental Housing Association question on rental housing (question wording not captured in the recording/transcript)",
+     "issue_slug": "housing",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What are your thoughts on the highest and best uses for Area 3 Planning Reserve? And what resources and tools can the City of Boulder use to help the land comprising Area 3 Planning Reserve achieve its highest and best use, particularly as it relates to bringing utilities and infrastructure to this site?",
+     "issue_slug": "land-use",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Tell us one city issue on which you changed your position after considering new evidence or another perspective.",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What role do you see public and private partnerships playing in some of our greatest areas of need?",
+     "issue_slug": "economy",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Lightning round: Boulder voters will consider authorizing up to $400 million in new debt paid through additional property taxes (recreation, public safety, other city facilities). Do you support this measure? (one-sentence explanation)",
+     "issue_slug": "bond",
+     "stance_about": "2K (the $400 million bond)",
+     "measure": "2K"
+    },
+    {
+     "prompt": "If elected, what is the single most important new initiative you would pursue in your first year to improve Boulder's business climate? Are there any past policies the Council has adopted you would consider reversing?",
+     "issue_slug": "economy",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Do you support continuing to prioritize alternatives to driving, or do you think the city should shift more investment back towards roads and automobile capacity?",
+     "issue_slug": "transportation",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What specific strategies would you recommend that the City of Boulder initiate to recruit and retain businesses in our community? What kinds of industries or businesses would you target?",
+     "issue_slug": "economy",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What specific actions would you take to ensure Latino entrepreneurs have equitable access to city contracts, business resources, commercial space, and economic opportunities?",
+     "issue_slug": "economy",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What specific strategies would you recommend for improving our permitting and development review process? And what standard would you set as our benchmark?",
+     "issue_slug": "land-use",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "If elected, what specific actions would you take to support downtown businesses, encourage investment, and make economic vitality a priority?",
+     "issue_slug": "economy",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "In your first two years on city council, what specific land use or housing policy would you champion? What types of housing would you prioritize? How would you accomplish this?",
+     "issue_slug": "housing",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Choose another mayoral candidate. Identify one strength or policy idea that person would bring to city leadership and explain how you look forward to working together.",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Name one issue on which you believe you could work constructively with this candidate.",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    }
+   ]
+  },
+  {
+   "slug": "2026-votes-forum",
+   "name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+   "short": "PLAN / Open Boulder / Better Boulder forum",
+   "date": "2026-09-02",
+   "hosts": [
+    "Better Boulder",
+    "PLAN-Boulder County",
+    "Open Boulder"
+   ],
+   "venue": null,
+   "date_source": "Better Boulder event page (already in ingest.py); video title 'Candidate-Forum - 090226'.",
+   "notes": "Co-hosted by PLAN-Boulder County, Open Boulder and Better Boulder. Moderator: KC Becker (Better Boulder post). Recording by greenlight studios. Several question wordings are partly garbled in the automatic transcript and are marked as such.",
+   "recordings": [
+    {
+     "youtube_id": "gdZzGJNB7g0",
+     "title": "City of Boulder Colorado Candidate-Forum - 090226",
+     "uploader": "greenlight studios",
+     "uploaded": "2026-09-07",
+     "part": null,
+     "segments": [
+      {
+       "label": "Council and mayoral candidates together",
+       "start": 0
+      }
+     ]
+    }
+   ],
+   "absent_statement_read": [],
+   "questions": [
+    {
+     "prompt": "Opening introduction (two minutes)",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Title 9 of our city code is our land use code. Some council and community members are advocating for a complete rewrite of this title. Do you support or oppose this, and do you think now is the right time to undertake this effort?",
+     "issue_slug": "land-use",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Core Arterial Network / Iris Avenue transportation question (wording partly garbled in transcript)",
+     "issue_slug": "transportation",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Open space budget priorities question (wording partly garbled in transcript)",
+     "issue_slug": "budget",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Infrastructure bond / oversight question (wording partly garbled in transcript)",
+     "issue_slug": "bond",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "A citizen group has developed a proposal for the city to hire a performance auditor, different from a financial auditor, and to fund a small department to support that auditor; this auditor would report to city council, with an audit committee in the 2027 budget. Do you support this or think it is necessary?",
+     "issue_slug": "governance",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Wildfire question: mandatory home-hardening/defensible-space compliance and how to fund it (wording partly garbled in transcript)",
+     "issue_slug": "wildfire",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Given the strong city manager / weak mayor structure of our city's government, how would you approach your role as mayor to set the council's overall objectives?",
+     "issue_slug": "governance",
+     "stance_about": null,
+     "measure": null
+    }
+   ]
+  },
+  {
+   "slug": "2026-arts-forum",
+   "name": "2026 City Council Candidates Forum on Arts and Culture",
+   "short": "Arts and culture forum",
+   "date": "2026-09-15",
+   "hosts": [
+    "Boulder County Arts Alliance",
+    "Boulder Chamber",
+    "Create Boulder"
+   ],
+   "venue": "Boulder Chamber, 2440 Pearl St., Boulder",
+   "date_source": "YouTube description: 'Event Date: Tuesday, September 15th 2026 / Venue: Boulder Chamber, 2440 Pearl St.'",
+   "notes": "Presented by Boulder County Arts Alliance, the Boulder Chamber and Create Boulder; moderated by Justin Veach, BCAA board president. Posted in five parts. Written lightning-round answers are linked from the video description and are not copied here.",
+   "recordings": [
+    {
+     "youtube_id": "PlXLjT1gH5U",
+     "title": "(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture",
+     "uploader": "Boulder County Arts Alliance",
+     "uploaded": "2026-09-16",
+     "part": 1,
+     "segments": [
+      {
+       "label": "Council candidates",
+       "start": 0
+      }
+     ]
+    },
+    {
+     "youtube_id": "Syj4_V5cQOk",
+     "title": "(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture",
+     "uploader": "Boulder County Arts Alliance",
+     "uploaded": "2026-09-17",
+     "part": 2,
+     "segments": [
+      {
+       "label": "Council candidates",
+       "start": 0
+      }
+     ]
+    },
+    {
+     "youtube_id": "1At-W2cR9Mk",
+     "title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture",
+     "uploader": "Boulder County Arts Alliance",
+     "uploaded": "2026-09-17",
+     "part": 3,
+     "segments": [
+      {
+       "label": "Council and mayoral candidates",
+       "start": 0
+      }
+     ]
+    },
+    {
+     "youtube_id": "Q1PXyt_DLqw",
+     "title": "(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture",
+     "uploader": "Boulder County Arts Alliance",
+     "uploaded": "2026-09-17",
+     "part": 4,
+     "segments": [
+      {
+       "label": "Closing statements",
+       "start": 0
+      }
+     ]
+    },
+    {
+     "youtube_id": "szDYv-0rIgU",
+     "title": "(Pt 5/5) 2026 City Council Candidates Forum on Arts and Culture",
+     "uploader": "Boulder County Arts Alliance",
+     "uploaded": "2026-09-17",
+     "part": 5,
+     "segments": [],
+     "no_quotes": true
+    }
+   ],
+   "absent_statement_read": [],
+   "questions": [
+    {
+     "prompt": "What is one action you would prioritize during your term to strengthen Boulder's creative ecosystem and keep Boulder competitive?",
+     "issue_slug": "arts",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "How should the city use these tools [tax increment financing, special districts, public-private partnerships, city-owned assets] to strengthen cultural infrastructure and create more vibrant commercial and civic areas?",
+     "issue_slug": "arts",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What measures would you support to ensure future CCRS non-profit capital investments are transparent, guided by clear public priorities and evaluation criteria, and directed toward significant projects that create visible, lasting community value?",
+     "issue_slug": "arts",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What would you do as a council member to make Boulder's budget, debt commitments, use of dedicated taxes, and major capital priorities more transparent and understandable to the public?",
+     "issue_slug": "budget",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What changes would you support to make Boulder easier for creative activity and small cultural businesses to operate in?",
+     "issue_slug": "arts",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Final council-candidate arts question on implementing adopted plans/priorities (question wording partly lost at the Pt 2/Pt 3 video split)",
+     "issue_slug": "arts",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "If elected mayor, how would you use your leadership role to help ensure that adopted plans are translated into action and that major projects are delivered responsibly and within budget?",
+     "issue_slug": "governance",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Final one-minute statement",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    }
+   ]
+  },
+  {
+   "slug": "2026-lwv-forum",
+   "name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+   "short": "League of Women Voters forum",
+   "date": "2026-09-26",
+   "hosts": [
+    "League of Women Voters of Boulder County",
+    "Emergency Family Assistance Association (EFAA)"
+   ],
+   "venue": null,
+   "date_source": "City of Boulder YouTube title 'September 26, 2026 League of Women Voters of Boulder County Candidate Forum' (uploaded 2026-09-28); description chapters.",
+   "notes": "Sponsored by the League of Women Voters of Boulder County with co-sponsor EFAA. Moderator: Martine Elinor (as transcribed). Recorded for Channel 8. Council forum first, then the mayoral forum at noon. Candidates sat in ballot order. Tara Winer was out of state; by League policy the moderator read her submitted opening statement.",
+   "recordings": [
+    {
+     "youtube_id": "pT9IeGL6deg",
+     "title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum",
+     "uploader": "City of Boulder",
+     "uploaded": "2026-09-28",
+     "part": null,
+     "segments": [
+      {
+       "label": "City Council forum",
+       "start": 0
+      },
+      {
+       "label": "Mayoral forum",
+       "start": 7504
+      }
+     ]
+    }
+   ],
+   "absent_statement_read": [
+    "Tara Winer"
+   ],
+   "questions": [
+    {
+     "prompt": "Opening statement (one minute)",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "If elected, name your top three priorities, and do you believe the city is currently moving in the right direction on those priorities?",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI? (submitted by co-sponsor EFAA)",
+     "issue_slug": "housing",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Boulder voters are being asked to authorize $400 million in new debt through additional property taxes for recreation, public safety and other city facilities as part of ballot issue 2K. Do you support this measure? Why or why not?",
+     "issue_slug": "bond",
+     "stance_about": "2K (the $400 million bond)",
+     "measure": "2K"
+    },
+    {
+     "prompt": "What are your feelings about the bus-only lanes and the core arterial network (CAN)? Should Boulder continue prioritizing protected bike lanes?",
+     "issue_slug": "transportation",
+     "stance_about": "the Core Arterial Network / bus-only lanes",
+     "measure": null
+    },
+    {
+     "prompt": "Do you agree or disagree that our city council is adequately representative of the social, political and economic interests of Boulder? Would you support a study session on proportional representation?",
+     "issue_slug": "governance",
+     "stance_about": "a study session on proportional representation",
+     "measure": null
+    },
+    {
+     "prompt": "Ballot issue 2J, the residential vacancy excise tax, would be a tax of approximately $4,000 on residential property vacant for more than half the year. Do you support this tax and will it generate enough income to pay for administering this complex program? (30 seconds)",
+     "issue_slug": "housing",
+     "stance_about": "2J (the vacancy tax)",
+     "measure": "2J"
+    },
+    {
+     "prompt": "Tell us about one city issue on which you changed your position after considering new evidence or another perspective. What changed your mind?",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Mayoral opening statement (one minute)",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "What are the unique roles of the Boulder mayor that make the job different from being a city council member?",
+     "issue_slug": "governance",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "(EFA) What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI?",
+     "issue_slug": "housing",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Ballot measure 2K: Boulder voters will consider authorizing up to $400 million in new debt through additional property taxes for recreation, public safety and other city facilities. Do you support this measure? Why or why not?",
+     "issue_slug": "bond",
+     "stance_about": "2K (the $400 million bond)",
+     "measure": "2K"
+    },
+    {
+     "prompt": "What types of housing would you prioritize? How are you as mayor going to promote housing for middle-income families?",
+     "issue_slug": "housing",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Ballot issue 2J, the residential vacancy excise tax (~$4,000 on residential property vacant more than half the year). Do you support this tax and will it generate enough income to pay for administering it?",
+     "issue_slug": "housing",
+     "stance_about": "2J (the vacancy tax)",
+     "measure": "2J"
+    },
+    {
+     "prompt": "If elected, what is the single most important new initiative you would pursue during your first year as mayor? (30 seconds)",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    }
+   ]
+  }
+ ]
+}

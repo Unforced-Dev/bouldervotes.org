@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Same question, every candidate — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+
+.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
+.forum-answer .who { font-weight: 700; }
+table.grid td:first-child { width: 28%; }
+table.grid blockquote.answer { margin: 0.2rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="2026.html">2026</a><a class="" href="2025.html">2025</a><a class="" href="2023.html">2023</a><a class="" href="2021.html">2021</a><a class="" href="2019.html">2019</a><a class="" href="2017.html">2017</a></div>
+    <nav class="util"><a href="index.html">2026 guide</a><a href="index.html#measures">Measures</a><a href="orgs.html">Organizations</a><a href="civics.html">Civics 101</a><a href="people.html">People</a><a href="finance.html">Money</a><a href="issues.html">Issues</a><a href="compare.html">Forum answers</a><a href="print/index.html">Print</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<h1>Same question, every candidate</h1>
+<p class='lede'>Questions asked at 2026 candidate forums that three or more candidates answered, with each candidate's own words side by side.</p>
+<p class='note'><strong>How to read this.</strong> Each page puts one forum question next to every candidate we quote answering it, in the order they spoke. There are no scores and no summary of who is right. A yes/no appears only where the candidate said yes or no (support/oppose) in so many words; a blank means they did not, or hedged — read the quote. Automatic transcript; check the recording.</p>
+<h2>Boulder Chamber forum · August 26, 2026</h2>
+<a class='choice' href='compare/2026-chamber-forum-q01.html'>If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?<span class='meta'>17 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q02.html'>The mayor has a unique role in building consensus and setting council priorities. How would you use that leadership role to bring council, city staff, and the business community together around a clear economic strategy and hold the city accountable for measurable progress?<span class='meta'>4 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q04.html'>What are your thoughts on the highest and best uses for Area 3 Planning Reserve? And what resources and tools can the City of Boulder use to help the land comprising Area 3 Planning Reserve achieve its highest and best use, particularly as it relates to bringing utilities and infrastructure to this site?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q05.html'>Tell us one city issue on which you changed your position after considering new evidence or another perspective.<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q08.html'>If elected, what is the single most important new initiative you would pursue in your first year to improve Boulder&#x27;s business climate? Are there any past policies the Council has adopted you would consider reversing?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q09.html'>Do you support continuing to prioritize alternatives to driving, or do you think the city should shift more investment back towards roads and automobile capacity?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q10.html'>What specific strategies would you recommend that the City of Boulder initiate to recruit and retain businesses in our community? What kinds of industries or businesses would you target?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-chamber-forum-q13.html'>If elected, what specific actions would you take to support downtown businesses, encourage investment, and make economic vitality a priority?<span class='meta'>3 candidates</span></a>
+<h2>PLAN / Open Boulder / Better Boulder forum · September 2, 2026</h2>
+<a class='choice' href='compare/2026-votes-forum-q01.html'>Opening introduction (two minutes)<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-votes-forum-q02.html'>Title 9 of our city code is our land use code. Some council and community members are advocating for a complete rewrite of this title. Do you support or oppose this, and do you think now is the right time to undertake this effort?<span class='meta'>4 candidates</span></a>
+<a class='choice' href='compare/2026-votes-forum-q06.html'>A citizen group has developed a proposal for the city to hire a performance auditor, different from a financial auditor, and to fund a small department to support that auditor; this auditor would report to city council, with an audit committee in the 2027 budget. Do you support this or think it is necessary?<span class='meta'>4 candidates</span></a>
+<a class='choice' href='compare/2026-votes-forum-q07.html'>Wildfire question: mandatory home-hardening/defensible-space compliance and how to fund it (wording partly garbled in transcript)<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-votes-forum-q08.html'>Given the strong city manager / weak mayor structure of our city&#x27;s government, how would you approach your role as mayor to set the council&#x27;s overall objectives?<span class='meta'>3 candidates</span></a>
+<h2>Arts and culture forum · September 15, 2026</h2>
+<a class='choice' href='compare/2026-arts-forum-q02.html'>How should the city use these tools [tax increment financing, special districts, public-private partnerships, city-owned assets] to strengthen cultural infrastructure and create more vibrant commercial and civic areas?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-arts-forum-q03.html'>What measures would you support to ensure future CCRS non-profit capital investments are transparent, guided by clear public priorities and evaluation criteria, and directed toward significant projects that create visible, lasting community value?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-arts-forum-q04.html'>What would you do as a council member to make Boulder&#x27;s budget, debt commitments, use of dedicated taxes, and major capital priorities more transparent and understandable to the public?<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-arts-forum-q06.html'>Final council-candidate arts question on implementing adopted plans/priorities (question wording partly lost at the Pt 2/Pt 3 video split)<span class='meta'>3 candidates</span></a>
+<a class='choice' href='compare/2026-arts-forum-q07.html'>If elected mayor, how would you use your leadership role to help ensure that adopted plans are translated into action and that major projects are delivered responsibly and within budget?<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-arts-forum-q08.html'>Final one-minute statement<span class='meta'>15 candidates</span></a>
+<h2>League of Women Voters forum · September 26, 2026</h2>
+<a class='choice' href='compare/2026-lwv-forum-q01.html'>Opening statement (one minute)<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q02.html'>If elected, name your top three priorities, and do you believe the city is currently moving in the right direction on those priorities?<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q03.html'>What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI? (submitted by co-sponsor EFAA)<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q04.html'>Boulder voters are being asked to authorize $400 million in new debt through additional property taxes for recreation, public safety and other city facilities as part of ballot issue 2K. Do you support this measure? Why or why not?<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q05.html'>What are your feelings about the bus-only lanes and the core arterial network (CAN)? Should Boulder continue prioritizing protected bike lanes?<span class='meta'>18 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q06.html'>Do you agree or disagree that our city council is adequately representative of the social, political and economic interests of Boulder? Would you support a study session on proportional representation?<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q07.html'>Ballot issue 2J, the residential vacancy excise tax, would be a tax of approximately $4,000 on residential property vacant for more than half the year. Do you support this tax and will it generate enough income to pay for administering this complex program? (30 seconds)<span class='meta'>12 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q08.html'>Tell us about one city issue on which you changed your position after considering new evidence or another perspective. What changed your mind?<span class='meta'>18 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q09.html'>Mayoral opening statement (one minute)<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q10.html'>What are the unique roles of the Boulder mayor that make the job different from being a city council member?<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q11.html'>(EFA) What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI?<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q12.html'>Ballot measure 2K: Boulder voters will consider authorizing up to $400 million in new debt through additional property taxes for recreation, public safety and other city facilities. Do you support this measure? Why or why not?<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q13.html'>What types of housing would you prioritize? How are you as mayor going to promote housing for middle-income families?<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q14.html'>Ballot issue 2J, the residential vacancy excise tax (~$4,000 on residential property vacant more than half the year). Do you support this tax and will it generate enough income to pay for administering it?<span class='meta'>6 candidates</span></a>
+<a class='choice' href='compare/2026-lwv-forum-q15.html'>If elected, what is the single most important new initiative you would pursue during your first year as mayor? (30 seconds)<span class='meta'>6 candidates</span></a>
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="sources.html">Sources</a> ·
+  <a href="forums.html">Forums</a> ·
+  <a href="civics.html">Civics 101</a> ·
+  <a href="orgs.html">Organizations</a> ·
+  <a href="finance.html">Money</a> ·
+  <a href="questionnaires.html">Questionnaires</a> ·
+  <a href="print/index.html">Print</a> ·
+  <a href="measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>

@@ -14,6 +14,7 @@ import sqlite3
 from pathlib import Path
 
 from build_2026 import EXTRA_CSS, Graph2026
+from build_forums_2026 import FORUM_CSS, Forums2026
 from ingest_2026 import civics_markdown
 
 ROOT = Path(__file__).resolve().parent
@@ -226,6 +227,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None) ->
         f'<a href="{prefix}people.html">People</a>',
         f'<a href="{prefix}finance.html">Money</a>',
         f'<a href="{prefix}issues.html">Issues</a>',
+        f'<a href="{prefix}compare.html">Forum answers</a>',
         f'<a href="{prefix}print/index.html">Print</a>',
         f'<a href="{prefix}about.html">About</a>',
     ]
@@ -236,7 +238,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None) ->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} — Boulder Votes</title>
-<style>{CSS}{EXTRA_CSS}</style>
+<style>{CSS}{EXTRA_CSS}{FORUM_CSS}</style>
 </head>
 <body>
 <header>
@@ -502,7 +504,9 @@ def main() -> None:
                       COALESCE(i.name,'This race / other') AS name
                FROM questions q
                LEFT JOIN issues i ON i.slug=q.issue_slug
-               WHERE q.year=?
+               WHERE q.year=? AND q.id NOT IN (
+                 SELECT a.question_id FROM answers a JOIN sources s ON s.id=a.source_id
+                 WHERE a.kind='forum' AND s.kind='video')
                ORDER BY q.id""",
             (year,),
         ).fetchall()
@@ -616,10 +620,14 @@ def main() -> None:
     for y in YEARS:
         write_year_page(y, as_home=(y == 2026))
     graph = Graph2026(con, OUT, page)
+    forums = Forums2026(con, OUT, page)
+    graph.measure_extra = forums.measure_section
     graph.write_home()
     graph.write_orgs()
     graph.write_measures()
     graph.write_civics(civics_markdown())
+    forums.write_forum_pages()
+    forums.write_compare()
 
     # ----- issues hub -----
     hub = [
@@ -725,7 +733,7 @@ def main() -> None:
                             used_ids.add(a["id"])
                             body.append(
                                 f"<div class='card'><h3><a href='{esc(person_href(a['slug'], '../'))}'>{esc(a['full_name'])}</a></h3>"
-                                f"{render_answer(a['verbatim'], a['stance'], a['notes'])}"
+                                f"{forums.issue_answer(a['id']) or render_answer(a['verbatim'], a['stance'], a['notes'])}"
                                 f"</div>"
                             )
                     silent = [r for r in ballot if r["person_id"] not in {a["person_id"] for a in ans}]
@@ -803,7 +811,7 @@ def main() -> None:
                JOIN questions q ON q.id=a.question_id
                JOIN sources s ON s.id=a.source_id
                LEFT JOIN issues i ON i.slug=q.issue_slug
-               WHERE a.person_id=?
+               WHERE a.person_id=? AND NOT (a.kind='forum' AND s.kind='video')
                ORDER BY q.year DESC, q.id""",
             (p["id"],),
         ).fetchall()
@@ -865,6 +873,7 @@ def main() -> None:
             )
 
         bits.append(graph.person_sections(p["id"]))
+        bits.append(forums.person_section(p["id"]))
 
         if answers:
             bits.append("<h2>Questionnaire answers by year</h2>")
@@ -982,7 +991,8 @@ def main() -> None:
         )
 
     # forums / measures / sources / about remain available, not in primary nav
-    ev_html = ["<h1>Forums</h1>", "<p>The calendar behind the year pages. Attendance only when a published source named who showed.</p>"]
+    ev_html = ["<h1>Forums</h1>", "<p>The calendar behind the year pages. Attendance only when a published source named who showed.</p>",
+               forums.forum_index_html(), "<h2>Calendar</h2>"]
     all_events = q(
         """SELECT e.*, o.name AS host FROM events e
            LEFT JOIN organizations o ON o.id=e.host_org_id ORDER BY e.starts_on DESC"""
@@ -1069,7 +1079,7 @@ def main() -> None:
                JOIN questions q ON q.id=a.question_id
                JOIN sources s ON s.id=a.source_id
                LEFT JOIN issues i ON i.slug=q.issue_slug
-               WHERE a.person_id=?
+               WHERE a.person_id=? AND NOT (a.kind='forum' AND s.kind='video')
                ORDER BY q.year DESC, a.id""",
             (row["person_id"],),
         ).fetchall()

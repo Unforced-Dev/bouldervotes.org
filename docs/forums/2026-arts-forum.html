@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arts and culture forum (2026-09-15) — Boulder Votes</title>
+<style>
+:root {
+  --paper: #f4efe6;
+  --ink: #1c1916;
+  --muted: #5c5348;
+  --rule: #d4c7b0;
+  --link: #1f4b73;
+  --link-visited: #5a3d6e;
+  --mark: #8b2e1a;
+  --won: #215c3a;
+  --chip: #efe6d6;
+}
+* { box-sizing: border-box; }
+html { font-size: 19px; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+.header-inner, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.1rem; }
+.header-inner { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.brand { font-size: 1.2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+.rail { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 0.45rem; align-items: center; }
+.rail a, .pill {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.rail a.on, .pill.on { background: var(--ink); color: var(--paper); }
+.rail .sep { color: var(--muted); margin: 0 0.25rem; }
+nav.util { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; font-size: 0.9rem; }
+nav.util a { color: var(--link); }
+h1 { font-size: 1.7rem; line-height: 1.15; margin: 1.1rem 0 0.5rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.45rem; }
+h3 { font-size: 1.02rem; margin: 1rem 0 0.3rem; }
+p, li { max-width: 42rem; }
+.lede { font-size: 1.05rem; margin-top: 0; }
+.note, .empty { color: var(--muted); font-size: 0.92rem; }
+.empty { font-style: italic; }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+.jump { font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+.jump a { margin-right: 0.8rem; }
+.card {
+  border: 1px solid var(--rule);
+  padding: 0.65rem 0.8rem;
+  margin: 0 0 0.55rem;
+  background: #f8f3ea;
+}
+.card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+.card .meta { color: var(--muted); font-size: 0.88rem; }
+.chips { margin-top: 0.35rem; }
+.chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  border: 1px solid var(--rule);
+  background: var(--chip);
+  padding: 0.05rem 0.4rem;
+  margin: 0 0.25rem 0.25rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.badge { display: inline-block; font-size: 0.72rem; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--ink); padding: 0.02rem 0.35rem; margin-right: 0.25rem; }
+.badge.match { border-color: var(--mark); color: var(--mark); }
+.badge.inc { border-color: var(--won); color: var(--won); }
+.choice {
+  display: block;
+  border: 2px solid var(--ink);
+  padding: 0.7rem 0.9rem;
+  margin: 0.45rem 0;
+  text-decoration: none;
+  color: var(--ink);
+  background: #f8f3ea;
+  font-size: 1.05rem;
+}
+.choice:hover { background: var(--chip); }
+.choice .meta { font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+.stance { font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-size: 0.78rem; }
+.stance.yes { color: var(--won); }
+.stance.no { color: var(--mark); }
+.stance.mixed { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.5rem 0 1rem; }
+th, td { text-align: left; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; text-align: right; }
+.won { color: var(--won); font-weight: 600; }
+.matrix td, .matrix th { text-align: center; }
+.matrix th:first-child, .matrix td:first-child { text-align: left; }
+.matrix a { text-decoration: none; }
+details.quote { margin: 0.25rem 0; }
+details.quote > summary { cursor: pointer; }
+details.quote > summary::after { content: " — full"; color: var(--link); font-size: 0.88rem; }
+details.quote[open] > summary::after { content: " — hide"; }
+blockquote.answer { margin: 0.35rem 0; padding-left: 0.7rem; border-left: 3px solid var(--rule); font-size: 0.95rem; }
+.crumb { font-size: 0.9rem; color: var(--muted); margin: 0.8rem 0 0; }
+footer { margin: 2.5rem auto 1.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  html { font-size: 18px; }
+}
+@media print {
+  header { position: static; }
+  nav.util, .jump, .print-hint { display: none; }
+  a { color: inherit; text-decoration: none; }
+  details.quote > summary { display: none; }
+  details.quote > blockquote { display: block; }
+  @page { size: letter; margin: 0.55in; }
+  h1 { font-size: 1.45rem; }
+}
+
+a { text-decoration: underline; text-underline-offset: 0.15em; }
+p, li, td, th, blockquote, h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; }
+.prov { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 0.1rem; }
+.prov-label { font-weight: 700; }
+.prov-campaign_claim .prov-label, .prov-news_report .prov-label { color: var(--mark); }
+.prov-endorser_statement .prov-label { color: var(--won); }
+.prov-filing .prov-label { color: var(--link); }
+ul.edges { list-style: none; padding-left: 0; }
+ul.edges > li { border-bottom: 1px solid var(--rule); padding: 0.45rem 0; }
+.rank { font-weight: 700; }
+.keydates { border: 2px solid var(--ink); padding: 0.7rem 0.9rem; background: #f8f3ea; margin: 0.6rem 0 1rem; }
+.keydates p { margin: 0.25rem 0; }
+.bigdate { font-size: 1.15rem; font-weight: 700; }
+.held { color: var(--muted); font-style: italic; }
+.legend dt { font-weight: 700; margin-top: 0.4rem; }
+.legend dd { margin-left: 0; }
+@media (max-width: 480px) {
+  table { font-size: 0.82rem; }
+  th, td { padding-right: 0.25rem; }
+}
+
+.caveat { color: var(--mark); font-size: 0.9rem; margin: 0.2rem 0; }
+.forum-answer .who { font-weight: 700; }
+table.grid td:first-child { width: 28%; }
+table.grid blockquote.answer { margin: 0.2rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Boulder Votes</a>
+    <div class="rail"><a class="on" href="../2026.html">2026</a><a class="" href="../2025.html">2025</a><a class="" href="../2023.html">2023</a><a class="" href="../2021.html">2021</a><a class="" href="../2019.html">2019</a><a class="" href="../2017.html">2017</a></div>
+    <nav class="util"><a href="../index.html">2026 guide</a><a href="../index.html#measures">Measures</a><a href="../orgs.html">Organizations</a><a href="../civics.html">Civics 101</a><a href="../people.html">People</a><a href="../finance.html">Money</a><a href="../issues.html">Issues</a><a href="../compare.html">Forum answers</a><a href="../print/index.html">Print</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+<p class='crumb'><a href='../forums.html'>Forums</a> · <a href='../compare.html'>Same question, every candidate</a></p>
+<h1>2026 City Council Candidates Forum on Arts and Culture</h1>
+<p class='lede'>September 15, 2026 · Boulder Chamber, 2440 Pearl St., Boulder</p>
+<p>Hosted by Boulder County Arts Alliance, Boulder Chamber, Create Boulder.</p>
+<p class='note'>Presented by Boulder County Arts Alliance, the Boulder Chamber and Create Boulder; moderated by Justin Veach, BCAA board president. Posted in five parts. Written lightning-round answers are linked from the video description and are not copied here.</p>
+<h2>Recordings</h2><ul>
+<li><a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture</a> (Boulder County Arts Alliance)</li>
+<li><a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture</a> (Boulder County Arts Alliance)</li>
+<li><a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture</a> (Boulder County Arts Alliance)</li>
+<li><a href='https://www.youtube.com/watch?v=Q1PXyt_DLqw'>(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture</a> (Boulder County Arts Alliance)</li>
+<li><a href='https://www.youtube.com/watch?v=szDYv-0rIgU'>(Pt 5/5) 2026 City Council Candidates Forum on Arts and Culture</a> (Boulder County Arts Alliance) <span class='note'>(no quotes taken from this part)</span></li>
+</ul>
+<p class='note'>Date: YouTube description: &#x27;Event Date: Tuesday, September 15th 2026 / Venue: Boulder Chamber, 2440 Pearl St.&#x27;</p>
+<h2>Questions and answers, in speaking order</h2>
+<p class='note'>Each question, then each candidate we quote, in the order they spoke. These are short passages, not full answers: use the watch link to hear the whole answer. Automatic transcript; check the recording. A candidate not listed under a question was not quoted by us on it; that is not a position.</p>
+<h3 id='q01'>What is one action you would prioritize during your term to strengthen Boulder&#x27;s creative ecosystem and keep Boulder competitive?</h3>
+<p class='note'><a href='../issues/arts-2026.html'>issue page</a></p>
+<div class='card forum-answer' data-claim='FC109' data-confidence='medium'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/tara-winer.html'>Tara Winer</a></p><blockquote class='answer'>What I would do, and this is going to be, it might have a few heads turning, is bring back the DBA.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: &#x27;DBA&#x27; = DDA (downtown development authority). Second of drawn names; Ryan Jamieson later says &#x27;the DDA, as Tara mentioned&#x27;.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=702s'>Watch at 11:42</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC110' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></p><blockquote class='answer'>You see a lot of these real estate companies, what they&#x27;re doing is essentially leaving these areas vacant because it&#x27;s more cost effective for them to keep prices high than to lower them</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=804s'>Watch at 13:24</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q02'>How should the city use these tools [tax increment financing, special districts, public-private partnerships, city-owned assets] to strengthen cultural infrastructure and create more vibrant commercial and civic areas?</h3>
+<p class='note'><a href='../issues/arts-2026.html'>issue page</a> · <a href='../compare/2026-arts-forum-q02.html'>side by side</a></p>
+<div class='card forum-answer' data-claim='FC111' data-confidence='medium'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></p><blockquote class='answer'>So I would clearly look for monies that are available for doing art therapy.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: First of drawn names (&#x27;Lisa and ... Ryan Jameson&#x27;); speaker identifies as a medical doctor.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=1008s'>Watch at 16:48</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC112' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/benita-duran.html'>Benita Duran</a></p><blockquote class='answer'>I think that kind of financing, bond financing, private sector partnering is what we need to look at to help accelerate some of the projects</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=1099s'>Watch at 18:19</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC113' data-confidence='medium'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/ryan-jamieson.html'>Ryan Jamieson</a></p><blockquote class='answer'>Colorado Springs threw a half million dollars from their DDA towards artist spaces. There&#x27;s no reason that we shouldn&#x27;t be able to do that.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Third of drawn names (Lisa, Benita, Ryan Jameson).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=1169s'>Watch at 19:29</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q03'>What measures would you support to ensure future CCRS non-profit capital investments are transparent, guided by clear public priorities and evaluation criteria, and directed toward significant projects that create visible, lasting community value?</h3>
+<p class='note'><a href='../issues/arts-2026.html'>issue page</a> · <a href='../compare/2026-arts-forum-q03.html'>side by side</a></p>
+<div class='card forum-answer' data-claim='FC114' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/taishya-adams.html'>Taishya Adams</a></p><blockquote class='answer'>we need to have some hard conversations about how are we going to deal with the urgent and important, but also recognizing the long-term necessity to invest in the arts.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=1461s'>Watch at 24:21</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC115' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/aaron-brockett.html'>Aaron Brockett</a></p><blockquote class='answer'>I would like for us to, in addition, find targeted opportunity to make larger investments in specific organizations to have more of those transformational effects.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=1526s'>Watch at 25:26</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC116' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/scott-rendleman.html'>Scott Rendleman</a></p><blockquote class='answer'>I believe that we need an imitated performance monitor that measures our outcomes on our programs</blockquote><p class='note'>Transcript note: Likely &#x27;independent performance monitor&#x27; (Whisper).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U&amp;t=1562s'>Watch at 26:02</a> · <a href='https://www.youtube.com/watch?v=PlXLjT1gH5U'>(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q04'>What would you do as a council member to make Boulder&#x27;s budget, debt commitments, use of dedicated taxes, and major capital priorities more transparent and understandable to the public?</h3>
+<p class='note'><a href='../issues/budget-2026.html'>issue page</a> · <a href='../compare/2026-arts-forum-q04.html'>side by side</a></p>
+<div class='card forum-answer' data-claim='FC117' data-confidence='medium'><div class='meta'>2026 · forum · City budget</div><p class='who'><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></p><blockquote class='answer'>We need to have clear public dashboards that clearly illustrate exactly where money&#x27;s going, why.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: First of drawn names (&#x27;... Rose Isaacson, Lynn Segal, and Ryan Schuchard&#x27;).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=97s'>Watch at 1:37</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC118' data-confidence='medium'><div class='meta'>2026 · forum · City budget</div><p class='who'><a href='../people/lynn-segal.html'>Lynn Segal</a></p><blockquote class='answer'>The planning board is going to approve a density increase at Naropa University in about a half an hour.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Second of drawn names.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=161s'>Watch at 2:41</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC119' data-confidence='high'><div class='meta'>2026 · forum · City budget</div><p class='who'><a href='../people/ryan-schuchard.html'>Ryan Schuchard</a></p><blockquote class='answer'>we&#x27;ve got to strengthen our balance sheet. We need more predictable and flexible sources of funding.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=233s'>Watch at 3:53</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q05'>What changes would you support to make Boulder easier for creative activity and small cultural businesses to operate in?</h3>
+<p class='note'><a href='../issues/arts-2026.html'>issue page</a></p>
+<div class='card forum-answer' data-claim='FC120' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/dave-martus.html'>Dave Martus</a></p><blockquote class='answer'>The second would be to introduce a dashboard where if you&#x27;re a creative, you&#x27;re an artist, you can go there</blockquote><p class='note'>Transcript note: Self-identified as &#x27;Dave Morris&#x27; (Whisper).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=419s'>Watch at 6:59</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC121' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/sam-fuqua.html'>Sam Fuqua</a></p><blockquote class='answer'>I do support reviewing our permitting and land use regulations to make it simpler for artists and arts organizations to be in this town.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=464s'>Watch at 7:44</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC122' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/sam-fuqua.html'>Sam Fuqua</a></p><blockquote class='answer'>The other thing I would focus on is creating more permanently affordable housing for everybody, including artists</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk&amp;t=474s'>Watch at 7:54</a> · <a href='https://www.youtube.com/watch?v=Syj4_V5cQOk'>(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q06'>Final council-candidate arts question on implementing adopted plans/priorities (question wording partly lost at the Pt 2/Pt 3 video split)</h3>
+<p class='note'><a href='../issues/arts-2026.html'>issue page</a> · <a href='../compare/2026-arts-forum-q06.html'>side by side</a></p>
+<div class='card forum-answer' data-claim='FC123' data-confidence='medium'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/fred-smith.html'>Fred Smith</a></p><blockquote class='answer'>I&#x27;m saying we need to work on the revenue stream, it&#x27;s not the expense stream</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Pt 3 begins mid-answer; Fred Smith was first of the three named (Smith, Marquis, Richmond).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=71s'>Watch at 1:11</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC124' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/tina-marquis.html'>Tina Marquis</a></p><blockquote class='answer'>making sure that we have a clear way of identifying our priorities for investment, which types of public private partnerships would we prioritize</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=111s'>Watch at 1:51</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC125' data-confidence='high'><div class='meta'>2026 · forum · Arts and culture</div><p class='who'><a href='../people/jamillah-richmond.html'>Jamillah Richmond</a></p><blockquote class='answer'>Most of the artists that I know don&#x27;t live in Boulder and I think that that&#x27;s important.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=183s'>Watch at 3:03</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q07'>If elected mayor, how would you use your leadership role to help ensure that adopted plans are translated into action and that major projects are delivered responsibly and within budget?</h3>
+<p class='note'><a href='../issues/governance-2026.html'>issue page</a> · <a href='../compare/2026-arts-forum-q07.html'>side by side</a></p>
+<div class='card forum-answer' data-claim='FC126' data-confidence='high'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/aaron-brockett.html'>Aaron Brockett</a></p><blockquote class='answer'>As we have a dashboard that tracks with each one of them how they&#x27;re going, what percent are they complete and what steps are coming next. I&#x27;d like to see us do that with other major plans.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=356s'>Watch at 5:56</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC127' data-confidence='medium'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></p><blockquote class='answer'>we need to rethink in changing the measurement rubric for the city manager and we need a city auditor.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Moderator&#x27;s announced order put La Grave second; intro garbled.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=444s'>Watch at 7:24</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC128' data-confidence='high'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/taishya-adams.html'>Taishya Adams</a></p><blockquote class='answer'>We are going to have more extreme heat. We are going to have more wildfires. And arts plays a critical role in not only communication and education, but climate grief.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=507s'>Watch at 8:27</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC129' data-confidence='high'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/lisa-ann-jacobs.html'>Lisa Ann Jacobs</a></p><blockquote class='answer'>That means firing city of Boulder workers who are slow, ineffective, and not doing their jobs.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=588s'>Watch at 9:48</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC130' data-confidence='medium'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/fred-smith.html'>Fred Smith</a></p><blockquote class='answer'>I&#x27;m a super majority guy. I think in big decisions you should have a two-thirds majority for them to pass.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Fifth in moderator&#x27;s announced order (after Jacobs); not re-named.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=637s'>Watch at 10:37</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC131' data-confidence='high'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></p><blockquote class='answer'>It&#x27;s a $350 million project that&#x27;s going to house about 300 employees, so over a million dollars per employee.</blockquote><p class='note'>Transcript note: Referring to Alpine-Balsam.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=719s'>Watch at 11:59</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC132' data-confidence='high'><div class='meta'>2026 · forum · How the city is run</div><p class='who'><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></p><blockquote class='answer'>I think the best way that we can do this is by bringing in an independent auditor.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=742s'>Watch at 12:22</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<h3 id='q08'>Final one-minute statement</h3>
+<p class='note'><a href='../compare/2026-arts-forum-q08.html'>side by side</a></p>
+<div class='card forum-answer' data-claim='FC133' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/tara-winer.html'>Tara Winer</a></p><blockquote class='answer'>So I want us to remain relevant and dynamic and reduce red tape</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=875s'>Watch at 14:35</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC134' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/ryan-jamieson.html'>Ryan Jamieson</a></p><blockquote class='answer'>We say that we value the arts, but we make it hard to open up a gallery.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=930s'>Watch at 15:30</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC135' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/jameson-goldstein.html'>Jameson Goldstein</a></p><blockquote class='answer'>I would say that artists are a lot more important than businessmen because they create the culture that businessmen operate within.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Third of drawn names (Winer, Jamieson, Goldstein, Martus, Segal).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=994s'>Watch at 16:34</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC136' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/dave-martus.html'>Dave Martus</a></p><blockquote class='answer'>fiscal transparency and good stewardship of capital. And why is that important to the arts? Because through that, I think we can make the pie bigger.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1055s'>Watch at 17:35</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC137' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/lynn-segal.html'>Lynn Segal</a></p><blockquote class='answer'>Every development that goes on here just increases the wealth disparity</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Fifth of drawn names.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1129s'>Watch at 18:49</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC138' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/benita-duran.html'>Benita Duran</a></p><blockquote class='answer'>We need an implementation plan that relates to arts and cultural investment</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1204s'>Watch at 20:04</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC139' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/tina-marquis.html'>Tina Marquis</a></p><blockquote class='answer'>If I&#x27;m reelected, I hope to continue to focus on how we prioritize funding</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Third of drawn names (Duran, Jacobs, Marquis, La Grave, Brockett).</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1354s'>Watch at 22:34</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC140' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/aquiles-la-grave.html'>Aquiles La Grave</a></p><blockquote class='answer'>I really do believe that the art holds the key for our economic recovery</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1401s'>Watch at 23:21</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC141' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/aaron-brockett.html'>Aaron Brockett</a></p><blockquote class='answer'>In fact, in 2024 we granted $1.4 million and that&#x27;s since gone up to $2 million as of 2026.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Fifth of drawn names; speaker describes joining council in 2015.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1476s'>Watch at 24:36</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC142' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/scott-rendleman.html'>Scott Rendleman</a></p><blockquote class='answer'>Art funding should be transparent so that we can tell our community members when we spend on art funding that it was worthwhile and enriched the community.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1599s'>Watch at 26:39</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC143' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/jamillah-richmond.html'>Jamillah Richmond</a></p><blockquote class='answer'>It is important that as we look forward, that we think about creating funding and supporting funding for the arts</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1658s'>Watch at 27:38</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC144' data-confidence='high'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/rachel-rose-isaacson.html'>Rachel Rose Isaacson</a></p><blockquote class='answer'>the average income from being an artist in Boulder is under $19,000.</blockquote><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1701s'>Watch at 28:21</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC145' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/sam-fuqua.html'>Sam Fuqua</a></p><blockquote class='answer'>another thing I will prioritize in addition to these common themes is access to the arts for everybody.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Fifth of last seven drawn names; speaker cites managing a children&#x27;s arts nonprofit.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk&amp;t=1856s'>Watch at 30:56</a> · <a href='https://www.youtube.com/watch?v=1At-W2cR9Mk'>(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC146' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/fred-smith.html'>Fred Smith</a></p><blockquote class='answer'>if we build it tomorrow, it&#x27;d be the cheapest time to build it.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Sixth of drawn names; Pt 4 opens with this speaker.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Q1PXyt_DLqw&amp;t=28s'>Watch at 0:28</a> · <a href='https://www.youtube.com/watch?v=Q1PXyt_DLqw'>(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+<div class='card forum-answer' data-claim='FC147' data-confidence='medium'><div class='meta'>2026 · forum</div><p class='who'><a href='../people/taishya-adams.html'>Taishya Adams</a></p><blockquote class='answer'>We need to invest in our values, and our budget doesn&#x27;t currently reflect that.</blockquote><p class='caveat'>Speaker identified from speaking order; the moderator did not name them.</p><p class='note'>Transcript note: Last drawn name; speaker says &#x27;as mayor&#x27;.</p><p class='note'>Automatic transcript; check the recording. <a href='https://www.youtube.com/watch?v=Q1PXyt_DLqw&amp;t=120s'>Watch at 2:00</a> · <a href='https://www.youtube.com/watch?v=Q1PXyt_DLqw'>(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)</a></p></div><!-- /forum-answer -->
+</main>
+<footer>
+  City of Boulder only. Cited, not scored, not an endorsement.
+  <a href="../sources.html">Sources</a> ·
+  <a href="../forums.html">Forums</a> ·
+  <a href="../civics.html">Civics 101</a> ·
+  <a href="../orgs.html">Organizations</a> ·
+  <a href="../finance.html">Money</a> ·
+  <a href="../questionnaires.html">Questionnaires</a> ·
+  <a href="../print/index.html">Print</a> ·
+  <a href="../measures.html">All measures</a> ·
+  <a href="https://bouldervotes.org/">bouldervotes.org</a>
+</footer>
+</body>
+</html>

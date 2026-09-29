@@ -46,6 +46,7 @@ Python 3 stdlib only. No npm, no framework. How to extend it: [OPERATING.md](OPE
 - 2026 campaign-finance from the city clerk app: raised / spent / matching, itemized donors and expenditures on each dossier
 - City ballot measures 2017–2026
 - **2026 evidence graph** (from `data/harvest/2026/`): candidate bios and sourced statements (7 held pending verification), 237 endorsement edges with provenance (endorser's own statement / campaign claim / city filing / news listing), 24 organization and committee profiles, 63 person-endorser titles, full text and supporters/opponents for city measures 2J–2M, and a Civics 101 page
+- **2026 forum answers** (from `data/harvest/2026/forum_claims.json`): 329 transcript-quoted answers from four forums (Chamber, PLAN/Open/Better, Arts & Culture, League of Women Voters), each with a timestamped watch link; per-forum pages, “same question, every candidate” comparison pages, and forum quotes on the 2J/2K pages
 
 What’s *not* in it: invented positions, scored “matches,” Chamber 2026 written questionnaires (not published yet — the forum tape is), past-year finance dollar totals (Laserfiche not listed this pass), county/BVSD races, 2015 and earlier.
 

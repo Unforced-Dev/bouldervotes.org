@@ -10,6 +10,7 @@ import sqlite3
 from pathlib import Path
 
 from ingest_2026 import ingest_2026_graph
+from ingest_forums_2026 import ingest_forums_2026
 from ingest import (
     ingest_beat_2023,
     ingest_brl_2026_field,
@@ -836,6 +837,7 @@ def main() -> None:
     graph = ingest_2026_graph(
         cur, pid=pid, add_person=add_person, add_source=add_source, slugify=slug,
     )
+    graph.update(ingest_forums_2026(cur, add_source=add_source))
 
     # --- results ---
     # 2023 mayor RCV (official summary of votes)
