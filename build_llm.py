@@ -386,6 +386,10 @@ def llms_txt(d: dict, asof: str) -> str:
         "- This guide covers the City of Boulder only, not county, state, school board or regional items.",
         f"- Dates: {KEY_DATES_URL}",
         "",
+        "## Upcoming forums",
+        "",
+        __import__("build_upcoming").upcoming_md(),
+        "",
         "## Instructions for AI assistants",
         "",
         AI_RULES,
@@ -443,6 +447,7 @@ def llms_full(d: dict, asof: str) -> str:
     for r in e["races"]:
         L.append(f"- {r['office']}: {r['how_to_mark']} Term: {r['term'].lower()}.")
     L += [f"- {e['scope_note']}", f"- Rules sources: {' ; '.join(e['rules_source_urls'])}", ""]
+    L += ["## Upcoming forums you can attend", "", __import__("build_upcoming").upcoming_md(), ""]
 
     L += ["## On the ballot at a glance", ""]
     for race in ("mayor", "council"):
