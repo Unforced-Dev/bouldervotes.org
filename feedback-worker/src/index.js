@@ -157,6 +157,13 @@ async function handleForm(request, env) {
     if (tooBig(request)) throw new Reject("too_large");
     const form = await request.formData();
     const input = Object.fromEntries([...form.entries()].map(([k, v]) => [k, typeof v === "string" ? v : ""]));
+    if (!str(input.page)) {
+      // Without JavaScript the form can't prefill "which page"; the footer link's ?page= is still in the Referer.
+      try {
+        const ref = new URL(request.headers.get("Referer") || "");
+        if (ref.origin === env.SITE_ORIGIN) input.page = ref.searchParams.get("page") || "";
+      } catch {}
+    }
     page = str(input.page).slice(0, LIMITS.page_url_max);
     input.submitter_type = "person"; // the web form is for people; agents use the JSON endpoint
     await store(request, env, validate(input));
