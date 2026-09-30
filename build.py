@@ -433,6 +433,116 @@ def main() -> None:
             chunks.append(f"<table>{''.join(body)}</table>")
         return "\n".join(chunks)
 
+    # Archive: the outcome comes before the old questions, with source links.
+    def archive_results(year: int) -> str:
+        sections = ["<section class='archive-outcome' aria-labelledby='outcome'><h2 id='outcome'>Results at a glance</h2>"]
+        any_results = False
+        for office, label in (("mayor", "Mayor"), ("council", "City council")):
+            rid = race_id(year, office)
+            if rid is None:
+                continue
+            rows = q("""SELECT p.full_name, p.slug, res.round, res.votes, res.vote_share,
+                               res.elected, s.url AS source_url
+                        FROM results res JOIN candidacies c ON c.id=res.candidacy_id
+                        JOIN people p ON p.id=c.person_id
+                        LEFT JOIN sources s ON s.id=res.source_id
+                        WHERE c.race_id=? ORDER BY res.round, res.votes DESC""", (rid,)).fetchall()
+            sections.append(f"<h3>{label}</h3>")
+            if not rows:
+                sections.append("<p>We don't have vote totals for this race. "
+                                "<a href='https://electionresults.bouldercounty.gov/'>See Boulder County's official results</a>.</p>")
+                continue
+            any_results = True
+            max_round = max(r['round'] for r in rows)
+            winners = [r for r in rows if r['elected'] and r['round'] == max_round]
+            # In a multi-round count, keep the final elected marks; none from earlier rounds.
+            if not winners:
+                winners = [r for r in rows if r['elected']]
+            if winners:
+                cards = []
+                for r in winners:
+                    share = f" · {r['vote_share']:g}%" if r['vote_share'] is not None else ""
+                    cards.append(f"<div class='archive-winner'><span class='archive-mono' aria-hidden='true'>{esc(initials(r['full_name']))}</span>"
+                                 f"<div><span class='badge elected'>Elected</span><h4><a href='{esc(person_href(r['slug']))}'>{esc(r['full_name'])}</a></h4>"
+                                 f"<span class='archive-num'>{r['votes']:,}</span> <span class='meta'>votes{share}</span></div></div>")
+                sections.append(f"<div class='archive-winners'>{''.join(cards)}</div>")
+            else:
+                sections.append("<p>Elected candidates are not marked in our results data. "
+                                "<a href='https://electionresults.bouldercounty.gov/'>See official results</a>.</p>")
+            sources = list(dict.fromkeys(r['source_url'] for r in rows if r['source_url']))
+            if sources:
+                sections.append("<p class='note'>Official results: " + " · ".join(
+                    f"<a href='{esc(url)}'>{'recount' if 'Recount' in url else 'Boulder County'}</a>"
+                    for url in sources) + "</p>")
+            if max_round > 1:
+                sections.append("<details class='archive-rounds'><summary>Mayor's ranked-choice count, round by round</summary>")
+                for rnd in sorted({r['round'] for r in rows}):
+                    sections.append(f"<h4>Round {rnd}</h4><div class='archive-round-grid'>")
+                    for r in (r for r in rows if r['round']==rnd):
+                        share = f" ({r['vote_share']:g}%)" if r['vote_share'] is not None else ""
+                        sections.append(f"<p><a href='{esc(person_href(r['slug']))}'>{esc(r['full_name'])}</a>: "
+                                        f"{r['votes']:,} votes{share}</p>")
+                    sections.append("</div>")
+                sections.append("</details>")
+        measures = measures_for_year(year)
+        if measures:
+            sections.append("<h3>City measures</h3><div class='archive-measures'>")
+            for m in measures:
+                if m['yes_votes'] is None or m['no_votes'] is None:
+                    sections.append(f"<div class='archive-measure'><strong>{esc(m['letter'] or m['title'])}</strong> "
+                                    "No result on file. <a href='https://electionresults.bouldercounty.gov/'>Official results</a></div>")
+                    continue
+                any_results = True
+                total = m['yes_votes']+m['no_votes']
+                pct = f"{m['yes_votes']/total*100:.1f}" if total else "0.0"
+                source = q("SELECT s.url FROM measure_results mr LEFT JOIN sources s ON s.id=mr.source_id WHERE mr.measure_id=?",(m['id'],)).fetchone()
+                link = f" <a href='{esc(source[0])}'>Official count</a>" if source and source[0] else ""
+                sections.append(f"<div class='archive-measure'><span class='archive-code'>{esc(m['letter'] or m['title'])}</span> "
+                                f"<strong>{'Passed' if m['result_passed'] else 'Failed'}</strong>"
+                                f"<span class='archive-num'>{pct}%</span><span class='meta'>yes · {m['yes_votes']:,} yes, {m['no_votes']:,} no</span>{link}</div>")
+            sections.append("</div>")
+        if not any_results:
+            sections.append("<p>No election results on file for this year. "
+                            "<a href='https://electionresults.bouldercounty.gov/'>Check Boulder County's official results</a>.</p>")
+        return '\n'.join(sections + ['</section>'])
+
+    def initials(name: str) -> str:
+        parts = name.split()
+        return (parts[0][0] + parts[-1][0]).upper() if len(parts)>1 else name[:2].upper()
+
+    def archive_candidate(row, year: int) -> str:
+        result = q("""SELECT res.round, res.votes, res.vote_share, res.elected, res.place,
+                             s.url AS source_url
+                      FROM results res LEFT JOIN sources s ON s.id=res.source_id
+                      WHERE res.candidacy_id=? ORDER BY res.round DESC LIMIT 1""",
+                   (row['candidacy_id'],)).fetchone()
+        badge = "<span class='badge elected'>Elected</span>" if result and result['elected'] else ""
+        if result:
+            share = f" · {result['vote_share']:g}%" if result['vote_share'] is not None else ""
+            rnd = f" · last recorded round {result['round']}" if result['round']>1 else ""
+            outcome = (f"<span class='archive-num'>{result['votes']:,}</span> votes{share}{rnd}"
+                       + (f" · <a href='{esc(result['source_url'])}'>Official result</a>" if result['source_url'] else ""))
+        else:
+            outcome = ("No result on file · <a href='https://electionresults.bouldercounty.gov/'>"
+                       "Boulder County official results</a>")
+        site = f" · <a href='{esc(row['campaign_url'])}'>campaign</a>" if row['campaign_url'] else ""
+        prior = prior_years(row['person_id'],year)
+        prior_bits = []
+        for p in prior:
+            bit = f"{p['year']} {p['office']}"
+            if p['elected']:
+                bit += " elected"
+            elif p['status'] == "lost":
+                bit += " lost"
+            prior_bits.append(bit)
+        returning = " · Also: " + ', '.join(prior_bits) if prior_bits else ""
+        flags = ("<span class='badge inc'>incumbent</span>" if row['is_incumbent'] else "") + ("<span class='badge match'>matching funds</span>" if row['matching_funds'] else "")
+        status = "" if result and result['elected'] else esc(human_label(row['status']))
+        return (f"<article class='card archive-candidate'><span class='archive-mono' aria-hidden='true'>{esc(initials(row['full_name']))}</span>"
+                f"<div><h3><a href='{esc(person_href(row['slug']))}'>{esc(row['full_name'])}</a> {badge}{flags}{site}</h3>"
+                f"<p class='meta'>{status}{esc(returning)}</p>"
+                f"<p class='archive-count'>{outcome}</p></div></article>")
+
     def measures_for_year(year: int):
         return q(
             """SELECT m.*, mr.yes_votes, mr.no_votes, mr.passed AS result_passed
@@ -545,13 +655,15 @@ def main() -> None:
             2017: "Five council seats, no directly elected mayor. Top four: four-year terms; fifth: two-year. 31,765 city ballots; 72,574 active city voters.",
         }[year]
         jump = '<p class="jump">'
-        if qs_year:
-            jump += '<a href="#questions">Questions</a>'
+        if year != 2026:
+            jump += '<a href="#outcome">Results</a>'
         if mayor:
             jump += '<a href="#mayor">Mayor</a>'
         if council:
             jump += '<a href="#council">Council</a>'
         jump += '<a href="#measures">Measures</a>'
+        if qs_year:
+            jump += '<a href="#questions">Questions</a>'
         if year == 2026:
             jump += '<a href="#money">Money</a>'
         jump += "</p>"
@@ -560,23 +672,12 @@ def main() -> None:
             f"<p class='lede'>{esc(how)}</p>",
             jump,
         ]
-        if qs_year:
-            bits.append(f"<h2 id='questions'>Questions asked in {year}</h2>")
-            bits.append(
-                "<p class='note'>Questions candidates were asked this year. "
-                "Answers from earlier years are on each person's page.</p>"
-            )
-            for qu in qs_year:
-                bits.append(
-                    f"<a class='choice' href='{esc(issue_href(qu['slug'], year))}'>{esc(qu['prompt'])}"
-                    f"<span class='meta'>{esc(kind_label(qu['kind']))}</span></a>"
-                )
+        if year != 2026:
+            bits.append(archive_results(year))
         if mayor:
             bits.append(f"<h2 id='mayor'>Mayor · {len(mayor)} candidates</h2>")
-            if year != 2026:
-                bits.append(results_table(year, "mayor"))
             for r in mayor:
-                bits.append(candidate_card(r, year, "mayor"))
+                bits.append(candidate_card(r, year, "mayor") if year == 2026 else archive_candidate(r, year))
         if council:
             seats = {2026: 5, 2025: 4, 2023: 4, 2021: 5, 2019: 6, 2017: 5}[year]
             bits.append(f"<h2 id='council'>City council · {seats} seats · {len(council)} candidates</h2>")
@@ -592,10 +693,8 @@ def main() -> None:
                     "<p class='note'>Six seats because Jill Grano resigned in January 2019. "
                     "Fifth place (Swetlik) and sixth place (Wallach) served two-year terms.</p>"
                 )
-            if year != 2026:
-                bits.append(results_table(year, "council"))
             for r in council:
-                bits.append(candidate_card(r, year, "council"))
+                bits.append(candidate_card(r, year, "council") if year == 2026 else archive_candidate(r, year))
             if year == 2026:
                 money = q(
                     """SELECT p.full_name, p.slug, f.contributions, f.expenditures, f.matching_received, f.reported_on
@@ -631,6 +730,17 @@ def main() -> None:
                 )
             bits.append("</ul>")
             bits.append(f"<p class='note'><a href='forums.html'>Attendance and notes</a></p>")
+        if qs_year:
+            bits.append(f"<h2 id='questions'>Questions asked in {year}</h2>")
+            bits.append(
+                "<p class='note'>Questions candidates were asked this year. "
+                "Answers from earlier years are on each person's page.</p>"
+            )
+            for qu in qs_year:
+                bits.append(
+                    f"<a class='choice' href='{esc(issue_href(qu['slug'], year))}'>{esc(qu['prompt'])}"
+                    f"<span class='meta'>{esc(kind_label(qu['kind']))}</span></a>"
+                )
         html_page = page(
             "2026 ballot details" if as_home else f"{year} election",
             "\n".join(bits),

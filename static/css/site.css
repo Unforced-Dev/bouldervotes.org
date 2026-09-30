@@ -145,6 +145,36 @@ details.years a { display: flex; align-items: center; min-height: 44px; padding:
 details.years a:hover { background: var(--sunk); }
 details.years a[aria-current] { color: var(--accent); font-weight: 700; }
 
+/* archived elections: start with the count, then every candidate */
+.archive-outcome { margin: var(--s5) 0 var(--s7); padding: var(--s4) var(--s5); background: var(--sunk); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.archive-outcome h2 { margin: 0 0 var(--s4); }
+.archive-outcome h3 { margin: var(--s5) 0 var(--s3); font-size: var(--fs-lg); }
+.archive-winners { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr)); gap: var(--s3); }
+.archive-winner { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: flex; align-items: center; gap: var(--s3); padding: var(--s3); min-width: 0; }
+.archive-winner h4 { margin: 2px 0 var(--s1); font-size: var(--fs-md); }
+.archive-winner .meta { display: inline; }
+.archive-mono { width: 52px; height: 52px; flex: 0 0 52px; display: grid; place-items: center; font: 700 var(--fs-lg) var(--sans); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink-2); }
+.badge.elected { background: var(--ink); color: var(--paper); margin: 0; }
+.archive-num { font: 700 1.5rem/1.2 var(--sans); font-variant-numeric: tabular-nums lining-nums; color: var(--ink); }
+.archive-outcome .note { margin: var(--s2) 0; }
+.archive-measures { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr)); gap: var(--s3); }
+.archive-measure { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--s3); display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1) var(--s2); font-family: var(--sans); }
+.archive-measure .archive-num { font-size: 1.45rem; margin-left: auto; }
+.archive-measure .meta { flex-basis: 100%; margin: 0; font-size: var(--fs-xs); }
+.archive-measure > a { font-size: var(--fs-xs); }
+.archive-code { display: inline-block; width: max-content; font: 700 var(--fs-sm) var(--sans); padding: 1px 8px; background: var(--sunk); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); }
+.archive-rounds { padding-top: var(--s2); }
+.archive-rounds summary { min-height: 44px; cursor: pointer; font-family: var(--sans); font-weight: 700; }
+.archive-rounds h4 { margin: var(--s3) 0 var(--s1); }
+.archive-round-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr)); gap: 0 var(--s4); }
+.archive-round-grid p { margin: var(--s1) 0; font-size: var(--fs-sm); }
+.archive-candidate { display: flex; gap: var(--s4); align-items: flex-start; max-width: 54rem; }
+.archive-candidate > div { min-width: 0; }
+.archive-candidate h3 { margin: 0 0 var(--s1); }
+.archive-candidate .archive-count { margin: var(--s1) 0 0; font-family: var(--sans); font-size: var(--fs-sm); }
+.archive-candidate .archive-num { font-size: var(--fs-lg); }
+@media (max-width: 540px) { .archive-outcome { padding: var(--s3); } .archive-candidate { gap: var(--s3); } .archive-mono { width: 44px; height: 44px; flex-basis: 44px; font-size: var(--fs-md); } }
+
 /* year strip on archive pages */
 .yearbar { background: var(--sunk); border-bottom: 1px solid var(--line); font-family: var(--sans); font-size: var(--fs-xs); }
 .yearbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s1) var(--s2); padding-top: var(--s2); padding-bottom: var(--s2); }
