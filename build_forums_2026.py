@@ -22,7 +22,7 @@ from pathlib import Path
 
 H2026 = Path(__file__).resolve().parent / "data" / "harvest" / "2026"
 
-TRANSCRIPT_NOTE = "Automatic transcript; check the recording."
+TRANSCRIPT_NOTE = "Quoted from an automatic transcript. Check the recording."
 MEDIUM_CAVEAT = "Speaker identified from speaking order; the moderator did not name them."
 COMPARE_MIN = 3  # a question needs at least this many candidates to get a comparison page
 
@@ -143,7 +143,7 @@ class Forums2026:
             word = {"yes": "Yes", "no": "No", "mixed": "Mixed"}[r["stance"]]
             extra = f" <span class='note'>{esc(r['snote'])}</span>" if r["snote"] else ""
             return (f"<p><span class='stance {r['stance']}'>{word}</span> on {esc(r['stance_about'])}, "
-                    f"in the candidate's own words below.{extra}</p>")
+                    f"in their words below.{extra}</p>")
         if r["stance_about"] and r["snote"]:
             return f"<p class='note'>No yes/no label: {esc(r['snote'])}</p>"
         return ""
@@ -189,9 +189,9 @@ class Forums2026:
         if not mine:
             return ""
         b = ["<h2 id='forums'>At the forums, in their own words</h2>",
-             "<p class='note'>Short passages from 2026 candidate forums, grouped by topic, each with the question asked "
-             "and a link to that moment in the recording. " + TRANSCRIPT_NOTE + " A topic with no quote means we have "
-             "no quote, not a position. <a href='" + prefix + "compare.html'>Compare answers to the same question</a>.</p>"]
+             "<p class='note'>Short passages from 2026 candidate forums, by topic, with the question and a link to that moment "
+             "in the recording. " + TRANSCRIPT_NOTE + " If a topic is missing, we have no quote on it. "
+             "<a href='" + prefix + "compare.html'>Compare answers to the same question</a>.</p>"]
         labels = dict(TOPIC_LABELS)
         for key, label in TOPIC_LABELS:
             chunk = [r for r in mine if r["topic"] == key]
@@ -232,9 +232,9 @@ class Forums2026:
                 b.append("<p class='note'>Did not attend; the moderator read their submitted statement: "
                          + esc(", ".join(f["absent_statement_read"])) + ".</p>")
             b.append("<h2>Questions and answers, in speaking order</h2>")
-            b.append("<p class='note'>Each question, then each candidate we quote, in the order they spoke. These are "
-                     "short passages, not full answers: use the watch link to hear the whole answer. " + TRANSCRIPT_NOTE +
-                     " A candidate not listed under a question was not quoted by us on it; that is not a position.</p>")
+            b.append("<p class='note'>Each question, then the candidates we quote, in the order they spoke. These are short passages. "
+                     "Use the watch link to hear the whole answer. " + TRANSCRIPT_NOTE +
+                     " If a candidate isn't listed under a question, we didn't quote them on it.</p>")
             for qi, q in enumerate(f["questions"]):
                 rows = self.question_rows(slug, qi)
                 if not rows:
@@ -254,7 +254,7 @@ class Forums2026:
 
     def forum_index_html(self) -> str:
         b = ["<h2>2026 forums: every quoted answer</h2>",
-             "<p><a href='compare.html'>Same question, every candidate</a> — forum answers side by side.</p><ul>"]
+             "<p>See <a href='compare.html'>forum answers side by side</a>.</p><ul>"]
         for slug, f in sorted(self.forums.items(), key=lambda kv: kv[1]["date"]):
             n = sum(1 for r in self.rows if r["event"] == slug)
             b.append(f"<li><a href='forums/{esc(slug)}.html'>{esc(f['short'])}</a> · {nice_date(f['date'])} · "
@@ -265,13 +265,11 @@ class Forums2026:
     # ------------------------------------------------------------ comparison
     def write_compare(self) -> None:
         (self.out / "compare").mkdir(exist_ok=True)
-        label = ("<p class='note'><strong>How to read this.</strong> Each page puts one forum question next to every "
-                 "candidate we quote answering it, in the order their names appear on the ballot. There are no scores and no summary of who is "
-                 "right. A yes/no appears only where the candidate said yes or no (support/oppose) in so many words; "
-                 "a blank means they did not, or hedged — read the quote. " + TRANSCRIPT_NOTE + "</p>")
+        label = ("<p class='note'>Each page shows one forum question and every candidate we quote on it, in ballot order. "
+                 "There are no scores. We mark yes or no only when the candidate said it outright. A blank means "
+                 "they didn't, so read the quote. " + TRANSCRIPT_NOTE + "</p>")
         idx = ["<p class='eyebrow'>Forums · candidates in their own words</p>", "<h1>Same question, every candidate</h1>",
-               "<p class='lede'>Questions asked at 2026 candidate forums that three or more candidates answered, "
-               "with each candidate's own words side by side.</p>", label]
+               "<p class='lede'>Forum questions that three or more candidates answered, with their words side by side.</p>", label]
         cur = None
         for slug, qi in self.compared():
             f = self.forums[slug]
@@ -319,10 +317,10 @@ class Forums2026:
             body.append(row)
         b.append(f"<table class='grid'>{''.join(body)}</table>")
         if has_stance:
-            b.append(f"<p class='note'>Yes/no is about {esc(q['stance_about'])}, and appears only where the candidate "
-                     "said it explicitly. A blank is not a position either way.</p>")
-        b.append("<p class='note'>Candidates not listed were not quoted by us on this question — absent, not called on, "
-                 "or not captured in our extract. That is not a position.</p>")
+            b.append(f"<p class='note'>Yes or no refers to {esc(q['stance_about'])}, marked only when the candidate "
+                     "said it outright. A blank means they didn't say.</p>")
+        b.append("<p class='note'>If a candidate isn't listed, we didn't quote them on this question. They may have been "
+                  "absent or not called on.</p>")
         (self.out / "compare" / f"{self.compare_slug(slug, qi)}.html").write_text(
             self.page(q["prompt"][:70], "\n".join(b), prefix="../", year=2026, current="forums"), encoding="utf-8")
 
@@ -342,8 +340,8 @@ class Forums2026:
             return ""
         b = ["<h2 id='forums'>What candidates said at forums</h2>",
              "<p class='note'>Candidates' own words when asked about " + esc(letter) + " at 2026 forums, in speaking "
-             "order. A yes/no label appears only where the candidate said yes or no in so many words; otherwise read "
-             "the quote. " + TRANSCRIPT_NOTE + " This is not an endorsement tally.</p>"]
+             "order. We mark yes or no only when the candidate said it outright; otherwise read "
+             "the quote. " + TRANSCRIPT_NOTE + "</p>"]
         cur = None
         for r in rows:
             if r["event"] != cur:

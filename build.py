@@ -127,14 +127,14 @@ def render_answer(verbatim: str | None, stance: str | None, notes: str | None = 
             extra = f" {esc(extra)}"
         return (
             f"<p><strong>{esc(word)}</strong>.{extra} "
-            f"<span class='note'>Boulder Beat emailed yes/no — not a written explanation.</span></p>"
+            f"<span class='note'>Boulder Beat asked for a yes or no by email. The candidate did not explain it.</span></p>"
         )
     if grouping:
         word = {"yes": "Yes", "no": "No", "mixed": "Mixed"}.get((stance or "").lower())
         lead = f"<p><strong>{esc(word)}</strong>. {esc(compact)}</p>" if word else f"<p>{esc(compact)}</p>"
         return (
             lead
-            + "<p class='note'>Journalist grouping of stated positions, not a written answer from the candidate.</p>"
+            + "<p class='note'>A reporter grouped the candidates by position. This is not the candidate's own written answer.</p>"
         )
     return quote_block(text, fold=fold)
 
@@ -150,7 +150,7 @@ PRIMARY_NAV = (
 )
 ARCHIVE_YEARS = tuple(y for y in YEARS if y != 2026)
 
-TAGLINE = "An independent, nonpartisan, sourced guide to City of Boulder elections."
+TAGLINE = "A nonpartisan guide to City of Boulder elections. Every fact links to its source."
 
 # Inline wordmark: three Flatirons slabs over a ballot line. Accent via currentColor.
 LOGO_SVG = (
@@ -215,7 +215,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
     <div>
       <h2>Boulder Votes</h2>
       <p>{esc(TAGLINE)}</p>
-      <p>City of Boulder only. Cited, not scored, not an endorsement. Nobody here tells you how to vote.</p>
+      <p>Covers the City of Boulder only. We don't endorse candidates or measures.</p>
     </div>
     <div>
       <h2>2026 election</h2>
@@ -534,7 +534,7 @@ def main() -> None:
         council = candidates_for(year, "council")
         qs_year = questions_this_year(year)
         how = {
-            2026: "Mayor is ranked-choice (one seat). Council is plurality — five highest vote-getters win. Four city measures are also on the ballot.",
+            2026: "You rank the candidates for mayor. For council, vote for up to five; the top five win. Four city measures are also on the ballot.",
             2025: "Four council seats, no mayor. Last odd-year municipal election.",
             2023: "First direct ranked-choice mayor, four council seats. 34,249 city ballots counted.",
             2021: "Five council seats, no directly elected mayor. Top four: four-year terms; fifth: two-year. 33,772 city ballots; 68,885 active city voters.",
@@ -560,8 +560,8 @@ def main() -> None:
         if qs_year:
             bits.append(f"<h2 id='questions'>Questions asked in {year}</h2>")
             bits.append(
-                "<p class='note'>These are the questions on file for this cycle — not a quiz, not a score. "
-                "Earlier answers from people who ran before live on their pages.</p>"
+                "<p class='note'>Questions candidates were asked this year. "
+                "Answers from earlier years are on each person's page.</p>"
             )
             for qu in qs_year:
                 bits.append(
@@ -602,8 +602,8 @@ def main() -> None:
                 if money:
                     bits.append("<h2 id='money'>Money so far</h2>")
                     bits.append(
-                        "<p class='note'>City clerk contributions &amp; expenditures, retrieved 2026-09-01. "
-                        "Not TRACER. $0 means they filed that, not that we guessed. "
+                        "<p class='note'>From city clerk filings, retrieved 2026-09-01 (city races don't file with the state's TRACER system). "
+                        "A $0 is what the campaign reported. "
                         "<a href='finance.html'>Donors, spending, and source</a>.</p>"
                     )
                     rows = ["<tr><th>Candidate</th><th class='num'>Raised</th><th class='num'>Spent</th><th class='num'>Matching</th></tr>"]
@@ -650,7 +650,7 @@ def main() -> None:
     # ----- issues hub -----
     hub = [
         "<h1>Issues</h1>",
-        "<p class='lede'>Each year is the questions asked that cycle. A 2023 yes/no about a 2023 measure is not a 2026 position. Open a person to see what they have said across years.</p>",
+        "<p class='lede'>Questions candidates were asked, sorted by topic and year. A 2023 answer is about the 2023 question, so read it as that, not as a 2026 position. Open a person to see everything they have said.</p>",
         "<h2>Browse issues</h2>",
     ]
     for slug, name, desc in all_issues():
@@ -710,7 +710,7 @@ def main() -> None:
         if desc:
             bits.append(f"<p class='lede'>{esc(desc)}</p>")
         if len(ys) > 1:
-            bits.append(f"<p>Asked in {', '.join(str(y) for y in ys)}. The question wording changes; the issue persists.</p>")
+            bits.append(f"<p>Asked in {', '.join(str(y) for y in ys)}. The wording changes from year to year.</p>")
         elif ys:
             bits.append(f"<p>On the record in {ys[0]} so far.</p>")
         bits.append(
@@ -738,7 +738,7 @@ def main() -> None:
                 f"<h1>{esc(qs_this[0]['prompt'] if len(qs_this) == 1 else name + ' · ' + str(year))}</h1>",
                 f"<p class='note'>{year} · {esc(name)}. This issue in: {year_pills}</p>",
                 f"<p>People on the {year} ballot who answered this cycle’s question. "
-                f"We do not copy an earlier year’s yes/no onto this page.</p>",
+                f"Answers from earlier years stay on those years' pages.</p>",
             ]
             for qu in qs_this:
                 ans = answers_for_question(qu["id"], ballot_ids)
@@ -769,7 +769,7 @@ def main() -> None:
                     if silent:
                         body.append(
                             f"<p class='note'>{len(silent)} on this ballot are not in the source for this question. "
-                            f"That is not a no.</p>"
+                            f"Silence is not a no.</p>"
                         )
                 else:
                     reported = graph.reported_lines_for_question(qu["id"], "../")
@@ -792,7 +792,7 @@ def main() -> None:
     people = sorted(people, key=lambda p: ballot_2026.index(p["id"]) if p["id"] in on_2026 else len(ballot_2026))
     plist = [
         "<h1>People</h1>",
-        "<p class='lede'>A person lasts across years. Open a dossier for the questions they have actually answered, newest year first.</p>",
+        "<p class='lede'>Everyone who has run for Boulder council or mayor since 2017, plus 2026 endorsers. Open a name to see what they have said, newest first.</p>",
         "<h2>On the 2026 ballot</h2>",
     ]
     later = ["<h2>Earlier cycles only</h2>"]
@@ -917,7 +917,7 @@ def main() -> None:
         if answers:
             bits.append("<h2 id='questionnaires'>Questionnaire answers by year</h2>")
             bits.append(
-                "<p class='note'>Newest year first. Each card is one question. A yes/no is an answer to that question — not a position on the whole topic.</p>"
+                "<p class='note'>Newest first. A yes or no answers only the question on that card, not the whole topic.</p>"
             )
             current_year = None
             for a in answers:
@@ -1028,7 +1028,7 @@ def main() -> None:
         )
 
     # forums / measures / sources / about remain available, not in primary nav
-    ev_html = ["<h1>Forums</h1>", "<p>The calendar behind the year pages. Attendance only when a published source named who showed.</p>",
+    ev_html = ["<h1>Forums</h1>", "<p>Every candidate forum we know of, with recordings. We list who attended only when a published source says so.</p>",
                forums.forum_index_html(), "<h2>Calendar</h2>"]
     all_events = q(
         """SELECT e.*, o.name AS host FROM events e
@@ -1080,13 +1080,13 @@ def main() -> None:
             f"<td><a href='{esc(s['url'])}'>{esc(s['title'])}</a></td></tr>"
         )
     (OUT / "sources.html").write_text(
-        page("Sources", f"<p class='crumb'><a href='learn.html'>Learn</a></p><h1>Sources</h1><p>The catalog. Quoted claims live on people and issue pages.</p><table>{''.join(src_rows)}</table>"),
+        page("Sources", f"<p class='crumb'><a href='learn.html'>Learn</a></p><h1>Sources</h1><p>Every document this guide cites. Quotes appear on the people and issue pages.</p><table>{''.join(src_rows)}</table>"),
         encoding="utf-8",
     )
 
     qn_html = [
         "<h1>Questionnaires</h1>",
-        "<p class='lede'>Written candidate Q&amp;A we have located. We copied the full text word for word only where we transcribed it ourselves (BRL, Boulder Beat). Everything else is linked, not scored.</p>",
+        "<p class='lede'>Written questionnaires candidates filled out. We reprint answers word for word from Boulder Reporting Lab and Boulder Beat. The rest are linked.</p>",
         "<p>The Chamber does send questions every cycle; the 2025 extended-response PDF is the one we have as a file. PLAN used a questionnaire for 2025 endorsements and did not publish the dump on the endorsement page. Open Boulder published 2025 PDFs for eight of eleven candidates. Better Boulder co-hosted the 2025 VOTES! forum with PLAN and Open Boulder (first year of that collaboration).</p>",
     ]
     qn_rows = q(
@@ -1105,7 +1105,7 @@ def main() -> None:
     qn_html.append("</table>")
     qn_html.append(
         "<p class='note'>Forum videos, including YouTube, live on the <a href='forums.html'>forums</a> page. "
-        "We do not invent spoken quotes from a journalist’s grouping or an auto-transcript.</p>"
+        "Spoken quotes come only from recordings, with a link to the moment.</p>"
     )
     (OUT / "questionnaires.html").write_text(page("Questionnaires", "\n".join(qn_html), current="learn"), encoding="utf-8")
 
@@ -1145,7 +1145,7 @@ def main() -> None:
             else ""
         )
         bits = [
-            f"<p class='print-hint'>File → Print. A short sheet: usually one or two letter-size pages. Every answer prints in full. Not an endorsement.</p>",
+            f"<p class='print-hint'>File → Print. Usually one or two pages. Every answer prints in full.</p>",
             f"<h1>{esc(row['full_name'])}</h1>",
             f"<p class='lede'>2026 {esc(office)}{flag_txt}</p>",
             site,
@@ -1202,7 +1202,7 @@ def main() -> None:
 
     print_index = [
         "<h1>Print packet</h1>",
-        "<p class='lede'>A short printable sheet for each 2026 candidate: their campaigns, up to four answers printed in full, and city clerk money totals. Most sheets are one or two letter-size pages.</p>",
+        "<p class='lede'>One printable sheet per 2026 candidate, with past races, up to four answers in full, and money from city filings. Most run one or two pages.</p>",
         "<p class='print-hint'>Open a sheet, then File → Print. No JavaScript.</p>",
         "<h2>Mayor</h2>",
     ]
@@ -1267,10 +1267,10 @@ def main() -> None:
     ).fetchall()
     fin_html = [
         "<h1>Campaign money — 2026</h1>",
-        "<p class='lede'>City of Boulder committee filings, not TRACER. Retrieved 2026-09-01 from the live clerk app. $0 is a filed zero, not a missing record. Cents come from the latest CandE statement; the clerk’s summary table rounds to dollars.</p>",
+        "<p class='lede'>From City of Boulder clerk filings, retrieved 2026-09-01. City races don't report to the state's TRACER system. A $0 means the campaign filed a zero. Cents come from each campaign's latest statement; the clerk's summary table rounds to dollars.</p>",
         "<p class='note'>Past-year dollars: the live app only serves 2026. Historical filings sit in the city’s "
         "<a href='https://documents.bouldercolorado.gov/WebLink/Browse.aspx?id=59131'>Laserfiche archive</a> "
-        "(cookie/JS). We could not list that folder this time. Matching-funds asterisks on the clerk candidate list are separate from the matching-received column here.</p>",
+        "(needs cookies and JavaScript). We couldn't read that folder, so past years have no dollar figures here. The asterisks on the clerk's candidate list mark who signed up for matching funds; the Matching column here is money actually received.</p>",
     ]
     candidates = [r for r in fin_rows if r["committee_kind"] == "official_candidate" and r["person_id"]]
     cand_ids = {r["id"] for r in candidates}
@@ -1321,8 +1321,8 @@ def main() -> None:
     if cross:
         fin_html.append("<h2>People in this database who gave to a 2026 candidate</h2>")
         fin_html.append(
-            "<p class='note'>Only names that already exist as people in this map (candidates, officeholders). "
-            "Everyone else is on the candidate’s dossier. Not a complete donor graph.</p>"
+            "<p class='note'>Only donors who are also candidates or officeholders in this guide. "
+            "Every other donor is listed on the candidate's page.</p>"
         )
         body = ["<tr><th>Gave</th><th>To</th><th>Type</th><th>Date</th><th class='num'>Amount</th></tr>"]
         for r in cross:
@@ -1356,13 +1356,12 @@ def main() -> None:
     learn = [
         "<p class='eyebrow'>Learn</p>",
         "<h1>Background for the 2026 city ballot</h1>",
-        "<p class='lede'>How Boulder's city government works, who is endorsing, where the campaign money comes from, "
-        "and where every fact on this site came from.</p>",
+        "<p class='lede'>How city government works, who endorses whom, and who is paying for the campaigns.</p>",
         "<div class='link-grid'>",
     ]
     for href, label, blurb in (
         ("civics.html", "Civics 101", "How the council, the mayor and ranked-choice voting work, with sources."),
-        ("orgs.html", "Endorsing organizations", "Who each group is, how it decides, what we know about its money, and whom it endorsed."),
+        ("orgs.html", "Endorsing organizations", "Who each group is, how it picks candidates, and whom it endorsed."),
         ("finance.html", "Campaign money", "City clerk filings: raised, spent, matching funds, and donors, for every candidate."),
         ("compare.html", "Forum answers, side by side", "The same forum question, every candidate we quote, in ballot order."),
         ("forums.html", "Forum calendar", "Every candidate forum, recordings, and who attended."),
@@ -1371,7 +1370,7 @@ def main() -> None:
         ("questionnaires.html", "Questionnaires", "Written candidate questionnaires we have located, with links."),
         ("print/index.html", "Printable sheets", "A short sheet for each 2026 candidate. Every answer prints in full."),
         ("sources.html", "Sources", "The full catalog of documents behind this guide."),
-        ("about.html", "About this guide", "Who it is for, how to read it, and what we will not do."),
+        ("about.html", "About this guide", "Who runs this guide and how it works."),
     ):
         learn.append(f"<a class='choice' href='{href}'><strong>{label}</strong><span class='meta'>{blurb}</span></a>")
     learn.append("</div>")
@@ -1380,23 +1379,21 @@ def main() -> None:
     (OUT / "learn.html").write_text(page("Learn", "\n".join(learn), current="learn"), encoding="utf-8")
 
     about = """
-    <h1>About</h1>
-    <p>Boulder Votes is a map of City of Boulder elections for people who have to mark a ballot, especially older voters. It is not a feed, not a quiz, and not a scorecard.</p>
-    <h2>How to use it</h2>
+    <h1>About Boulder Votes</h1>
+    <p>Boulder Votes is a guide to City of Boulder elections, written with older voters in mind. It covers the mayor and city council races and the city ballot measures.</p>
+    <h2>What we won't do</h2>
+    <p>We don't endorse, rank or score candidates or measures, and we don't tell you how to vote. We treat every candidate the same way and list them in ballot order.</p>
+    <h2>Where the facts come from</h2>
+    <p>Every quote, endorsement and dollar figure links to the page it came from. If we can't source a number, we leave it out. Quotes are word for word. Forum quotes come from automatic transcripts, so each one links to that moment in the recording.</p>
+    <p>Each endorsement says where it comes from: the endorser's own statement, a city filing, a news listing, or “X campaign lists Y” when only the candidate's website says so. A yes or no answers only the question on that card. A 2023 answer is labelled 2023.</p>
+    <p>Campaign money comes from the <a href="https://bouldercolorado.gov/elections/election-committee-filings">city clerk</a>. City races don't report to the state's TRACER system. You'll find 2026 totals and donors on each candidate's page and on the <a href="finance.html">money page</a>. A $0 means the campaign filed a zero. Past years have no dollar figures because the city's archive for them needs a browser to open.</p>
+    <h2>What's here</h2>
     <ul>
-      <li><strong>The 2026 guide</strong> (home page) — key dates with where today falls, every mayor and council candidate with a one-line bio and who endorses them, and the four city measures.</li>
-      <li><strong>A candidate</strong> — bio, positions in their own words with the source, endorsers grouped (organizations, current elected officials, former elected officials, other individuals), and money.</li>
-      <li><strong>An organization</strong> — who they are, how they decide, what we know about their funding, and whom they endorsed.</li>
-      <li><strong>Where an endorsement comes from</strong> — every endorsement line is labelled: the endorser's own statement, a city committee filing, or “X campaign lists Y” when the only source is the candidate's own website.</li>
-      <li><strong>A year</strong> — that year’s ballot, and the questions asked that cycle.</li>
-      <li><strong>A person</strong> — the questions they have answered, newest year first. A 2023 yes/no is labelled 2023 and named as that question. It is not a 2026 position.</li>
-      <li><strong>A question</strong> — people on that year’s ballot who answered it. We do not copy an earlier year’s answer onto this year’s page.</li>
-      <li><strong>Print</strong> — a short sheet per 2026 candidate (usually one or two pages), with every answer printed in full. File → Print.</li>
+      <li>The <a href="index.html">2026 guide</a>: key dates, every candidate with a short bio and endorsements, and the four measures.</li>
+      <li>A page for each candidate with their words, endorsements and money, and a <a href="print/index.html">printable sheet</a>.</li>
+      <li>Pages for <a href="orgs.html">endorsing groups</a>, <a href="issues.html">issues</a>, and every city election since 2017 (the year menu at top right, or the footer).</li>
     </ul>
-    <p>The election archive runs 2017–2026 (use the year menu at the top right, or the footer). 2015 and earlier are out of scope for now.</p>
-    <p>A number without a source is not published. Two quotes are never averaged. We do not score candidates. A yes/no is an answer to the question on the card — never a stand-in for a whole topic like “city budget.”</p>
-    <p>Municipal campaign-finance filings are with the <a href="https://bouldercolorado.gov/elections/election-committee-filings">city clerk</a>, not TRACER. 2026 totals and itemized donors live on each candidate’s page (below what they have said) and on <a href="finance.html">Money</a>. $0 is a filed zero. Past-year dollars are not copied (the live clerk app only serves 2026; Laserfiche is a JS archive).</p>
-    <p>No JavaScript. Large type. Printing any page prints the folded answers in full.</p>
+    <p>The site works without JavaScript and prints cleanly. Folded answers print in full.</p>
     """
     (OUT / "about.html").write_text(page("About", about, current="learn"), encoding="utf-8")
 
