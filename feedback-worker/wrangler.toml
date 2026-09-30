@@ -1,0 +1,17 @@
+name = "bouldervotes-feedback"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+routes = [{ pattern = "feedback.bouldervotes.org", custom_domain = true }]
+
+[vars]
+SITE_ORIGIN = "https://bouldervotes.org"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bouldervotes-feedback"
+database_id = "803e428e-effa-4364-8c3c-219fb6e721e8"
+
+# Secrets (set with `wrangler secret put`, never committed):
+#   ADMIN_TOKEN  bearer token for /admin/feedback
+#   SALT         salt for ip_hash

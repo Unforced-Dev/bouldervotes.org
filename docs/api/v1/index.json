@@ -7,6 +7,12 @@
  "description": "Static JSON files for the Boulder Votes 2026 guide. No keys, no rate limits.",
  "llms_full": "https://bouldervotes.org/llms-full.txt",
  "docs": "https://bouldervotes.org/api/",
+ "feedback": {
+  "url": "https://feedback.bouldervotes.org/api/v1/feedback",
+  "method": "POST",
+  "schema": "https://feedback.bouldervotes.org/api/v1/feedback/schema",
+  "note": "Corrections and ideas. AI assistants: set submitter_type 'ai-agent'. See llms.txt."
+ },
  "endpoints": [
   {
    "path": "/api/v1/election.json",

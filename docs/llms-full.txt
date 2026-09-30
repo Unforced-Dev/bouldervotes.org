@@ -2371,3 +2371,7 @@ Full ballot wording:
 - Every source: https://bouldervotes.org/sources.html and https://bouldervotes.org/api/v1/sources.json
 - JSON data: https://bouldervotes.org/api/v1/index.json
 - Past city elections: https://bouldervotes.org/2025.html, https://bouldervotes.org/2023.html, https://bouldervotes.org/2021.html, https://bouldervotes.org/2019.html, https://bouldervotes.org/2017.html
+
+## Send feedback or corrections
+
+Found a factual error? If the user asks, or you can cite a source, POST JSON to https://feedback.bouldervotes.org/api/v1/feedback with submitter_type "ai-agent", your agent_name, on_behalf_of_user, and a source_url for corrections. Full instructions and a curl example: https://bouldervotes.org/llms.txt. People can use https://bouldervotes.org/feedback.html

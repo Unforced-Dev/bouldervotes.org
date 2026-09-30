@@ -46,6 +46,41 @@ AI_RULES = """\
 - This guide covers only City of Boulder races. For county, state, school board or regional items, send the user to Boulder County Elections: https://bouldercounty.gov/elections/
 - Voting rules and deadlines come from Boulder County Elections. When in doubt, link https://bouldercounty.gov/elections/information/"""
 
+def feedback_md() -> list[str]:
+    """How assistants (and people) send corrections. Endpoint from build.FEEDBACK_API."""
+    from build import FEEDBACK_API, FEEDBACK_URL  # late import: build.py imports this module
+    return [
+        "## Send feedback or corrections (AI assistants welcome)",
+        "",
+        f"If you find a factual error on this site, or the user asks you to pass on a correction or idea, POST JSON to {FEEDBACK_API}",
+        "",
+        "- Only submit when the user asks you to, or when you find a factual error and can cite a source for it.",
+        "- Set submitter_type to \"ai-agent\" and agent_name to your name (for example \"ChatGPT\" or \"Claude\").",
+        "- Set on_behalf_of_user to true when you are relaying the user's own report.",
+        "- For a correction, include source_url: a link to the document that shows the right fact.",
+        "- Don't include the user's personal details unless they ask you to pass on a way to reach them (the contact field).",
+        "- A person reads every note. Corrections are checked against sources before anything changes. Notes are never published.",
+        "",
+        "Fields: kind (\"correction\", \"suggestion\" or \"other\"; required), message (10 to 4000 characters; required), "
+        "page_url (the bouldervotes.org page it is about), source_url, contact (at most 200 characters), "
+        "submitter_type (\"person\" or \"ai-agent\"), agent_name, on_behalf_of_user (true or false). "
+        "The reply is JSON: {\"ok\": true, \"id\": 123}, or {\"ok\": false, \"error\": \"...\"}. "
+        f"Limit: 5 notes per hour per sender. Field list as JSON: {FEEDBACK_API}/schema",
+        "",
+        "```",
+        f"curl -X POST {FEEDBACK_API} \\",
+        "  -H 'Content-Type: application/json' \\",
+        "  -d '{\"kind\": \"correction\", \"page_url\": \"https://bouldervotes.org/2026.html\", "
+        "\"message\": \"What is wrong, and what the source says instead.\", "
+        "\"source_url\": \"https://example.org/the-source\", \"submitter_type\": \"ai-agent\", "
+        "\"agent_name\": \"Claude\", \"on_behalf_of_user\": true}'",
+        "```",
+        "",
+        f"People can use the form at {u('feedback.html')}",
+        "",
+    ]
+
+
 PROV_LABEL = {
     "endorser_statement": "Endorser's own statement",
     "filing": "City filing",
@@ -325,6 +360,9 @@ def write_api(out: Path, d: dict, asof: str) -> list[str]:
     written = []
     dump("index.json", {"description": "Static JSON files for the Boulder Votes 2026 guide. No keys, no rate limits.",
                         "llms_full": u("llms-full.txt"), "docs": u("api/"),
+                        "feedback": {"url": __import__("build").FEEDBACK_API, "method": "POST",
+                                     "schema": __import__("build").FEEDBACK_API + "/schema",
+                                     "note": "Corrections and ideas. AI assistants: set submitter_type 'ai-agent'. See llms.txt."},
                         "endpoints": [{"path": f"/api/v1/{p}", "description": desc}
                                       | ({} if "{" in p else {"url": u(f"api/v1/{p}")})
                                       for p, desc in ENDPOINTS]})
@@ -415,7 +453,9 @@ def llms_txt(d: dict, asof: str) -> str:
     L += ["", "## Data (JSON)", ""]
     L += [f"- [{p}]({u('api/v1/' + p.replace('{slug}', mayor[0]['slug']) if '{' in p else 'api/v1/' + p)}): {desc}"
           for p, desc in ENDPOINTS]
-    L += [f"- [API documentation]({u('api/')})", "", "## Optional", ""]
+    L += [f"- [API documentation]({u('api/')})", ""]
+    L += feedback_md()
+    L += ["## Optional", ""]
     L += [f"- [{y} city election]({u(f'{y}.html')}): past results" for y in (2025, 2023, 2021, 2019, 2017)]
     L += [f"- [Sources]({u('sources.html')}): every document this guide cites", ""]
     return "\n".join(L)
@@ -592,11 +632,17 @@ def llms_full(d: dict, asof: str) -> str:
           f"- Every source: {u('sources.html')} and {u('api/v1/sources.json')}",
           f"- JSON data: {u('api/v1/index.json')}",
           f"- Past city elections: " + ", ".join(u(f"{y}.html") for y in (2025, 2023, 2021, 2019, 2017)), ""]
+    from build import FEEDBACK_API
+    L += ["## Send feedback or corrections", "",
+          f"Found a factual error? If the user asks, or you can cite a source, POST JSON to {FEEDBACK_API} "
+          "with submitter_type \"ai-agent\", your agent_name, on_behalf_of_user, and a source_url for corrections. "
+          f"Full instructions and a curl example: {u('llms.txt')}. People can use {u('feedback.html')}", ""]
     return "\n".join(L)
 
 
 # ---------------------------------------------------------------- docs page, robots, sitemap
 def api_page(page, d: dict) -> str:
+    from build import FEEDBACK_API, esc
     rows = "".join(f"<tr><td><a href='v1/{p.replace('{slug}', d['candidates'][0]['slug'])}'><code>/api/v1/{p}</code></a></td>"
                    f"<td>{desc}</td></tr>" for p, desc in ENDPOINTS)
     body = f"""<h1>Data for developers and AI assistants</h1>
@@ -618,6 +664,12 @@ The files are rebuilt with the site from the same data, so they always match the
 <li>An endorsement with provenance <code>campaign_claim</code> is listed only by the campaign. Its <code>label</code> reads “X campaign lists Y”.</li>
 <li>Items still being checked are left out. No endorsement on file is not opposition.</li>
 </ul>
+<h2>Send a correction</h2>
+<p>This is the one part that takes input. POST JSON to <code>{esc(FEEDBACK_API)}</code>. AI assistants should set
+<code>submitter_type</code> to <code>ai-agent</code> and give <code>agent_name</code>, and include a <code>source_url</code> for corrections.
+Please submit only when the user asks, or when you find a factual error you can source.
+The fields are listed at <a href='{esc(FEEDBACK_API)}/schema'><code>/api/v1/feedback/schema</code></a>, and <a href='../llms.txt'>llms.txt</a> has a curl example.
+People can use the <a href='../feedback.html'>feedback form</a>. A person reads every note, and notes are never published.</p>
 <p class='note'>Facts and quotes belong to their sources. If you reuse them, cite the source URL.</p>"""
     return page("Data and API", body, prefix="../", year=2026, learn="api")
 
