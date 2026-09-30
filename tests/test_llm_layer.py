@@ -124,13 +124,13 @@ class TestLlmLayer(unittest.TestCase):
         ld = [json.loads(x) for x in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)]
         self.assertEqual({x["@type"] for x in ld[0]}, {"WebSite", "Event"})
         text = strip_html(s)[:4000]
-        self.assertIn("https://bouldervotes.org/llms-full.txt", text)
+        self.assertIn("https://bouldervotes.org/llms.txt", text)  # inside the copy-paste prompt
         for n in ballot_names():
             self.assertIn(n, text)
         for k in ("November 3", "October 2", "7 p.m.", "2J", "2K", "2L", "2M"):
             self.assertIn(k, text)
-        # the pointer is visible text, not hidden
-        self.assertNotRegex(s, r"class='ai-note'[^>]*hidden|ai-note[^{]*\{[^}]*display:\s*none")
+        # no human-visible banner addressed only to AI assistants
+        self.assertNotIn("For AI assistants", strip_html(s))
 
     def test_every_page_footer_points_to_llms_full(self):
         for f in DOCS.rglob("*.html"):
@@ -145,3 +145,11 @@ class TestLlmLayer(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestAskPrompt(unittest.TestCase):
+    def test_prompt_points_at_llms_txt(self):
+        from build_llm import AI_PROMPT
+        self.assertIn("https://bouldervotes.org/llms.txt", AI_PROMPT)
+        s = (DOCS / "index.html").read_text(encoding="utf-8")
+        self.assertIn("https://bouldervotes.org/llms.txt", s)
