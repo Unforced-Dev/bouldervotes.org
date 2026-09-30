@@ -198,6 +198,9 @@ CREATE TABLE IF NOT EXISTS finance_snapshots (
   in_kind REAL,
   cash_on_hand REAL,
   reported_on TEXT,
+  report_label TEXT,                -- clerk's name for the latest statement, e.g. "42nd day before election"
+  report_url TEXT,                  -- that statement's CandE page
+  retrieved_on TEXT,                -- when we pulled it from the clerk app
   reports_url TEXT,
   source_id INTEGER REFERENCES sources(id),
   notes TEXT

@@ -1256,14 +1256,17 @@
   ],
   "finance": {
    "committee": "Friends of Ryan Schuchard",
-   "contributions": 8418.16,
-   "expenditures": 5148.97,
-   "matching_funds_received": 8376.0,
-   "cash_on_hand": 11645.19,
-   "as_of": "2026-08-26",
+   "contributions": 11721.0,
+   "expenditures": 5738.37,
+   "matching_funds_received": 11721.0,
+   "cash_on_hand": 17703.63,
+   "as_of": "2026-09-22",
+   "report": "42nd day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3866",
+   "retrieved_on": "2026-09-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=308",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": "Clerk contribution total includes $117.16 in loans."
+   "notes": "Clerk contribution total includes $334.60 in loans."
   },
   "source_urls": [
    "https://betterboulder.com/2026-city-council-candidate-questionnaire",

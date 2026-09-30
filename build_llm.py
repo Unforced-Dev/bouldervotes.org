@@ -184,7 +184,9 @@ def collect(con: sqlite3.Connection, forums) -> dict:
             "committee_kind": f["committee_kind"], "candidate_slug": f["slug"], "candidate": f["full_name"],
             "contributions": f["contributions"], "expenditures": f["expenditures"],
             "matching_funds_received": f["matching_received"], "cash_on_hand": f["cash_on_hand"],
-            "as_of": f["reported_on"], "reports_url": f["reports_url"], "source_url": f["source_url"],
+            "as_of": f["reported_on"], "report": f["report_label"], "report_url": f["report_url"],
+            "retrieved_on": f["retrieved_on"],
+            "reports_url": f["reports_url"], "source_url": f["source_url"],
             "notes": f["notes"],
             "line_items": [dict(i) for i in items],
         })
@@ -232,6 +234,7 @@ def collect(con: sqlite3.Connection, forums) -> dict:
                 "endorsements": my_edges,
                 "finance": {k: fin[k] for k in ("committee", "contributions", "expenditures",
                                                  "matching_funds_received", "cash_on_hand", "as_of",
+                                                 "report", "report_url", "retrieved_on",
                                                  "reports_url", "source_url", "notes")} if fin else None,
                 "source_urls": sorted({*bio_src, *(s["url"] for s in stm), *(e["source_url"] for e in my_edges),
                                        *(x["recording_url"] for x in my_quotes),
@@ -343,7 +346,10 @@ def write_api(out: Path, d: dict, asof: str) -> list[str]:
     dump("endorsements.json", {"note": "Silence is not opposition. 'Campaign claim' means only the campaign's own site says so.",
                                "endorsements": d["endorsements"]})
     dump("finance.json", {"note": "City of Boulder clerk filings (city races do not report to the state's TRACER system). "
-                                  "A 0 is a filed zero.", "committees": d["finance"]})
+                                  "A 0 is a filed zero. as_of is the filing date of each committee's latest report "
+                                  "(named in 'report'); retrieved_on is when bouldervotes.org pulled it.",
+                          "retrieved_on": next((f["retrieved_on"] for f in d["finance"] if f["retrieved_on"]), None),
+                          "committees": d["finance"]})
     dump("sources.json", {"sources": d["sources"]})
     written += [f"api/v1/{p}" for p, _ in ENDPOINTS if "{" not in p] + ["api/v1/index.json"]
     return written
@@ -477,7 +483,8 @@ def llms_full(d: dict, asof: str) -> str:
                 L.append(f"Raised ${f['contributions']:,.2f}; spent ${f['expenditures']:,.2f}; matching funds received "
                          f"${f['matching_funds_received']:,.2f}"
                          + (f"; cash on hand ${f['cash_on_hand']:,.2f}" if f["cash_on_hand"] is not None else "")
-                         + f". As of {f['as_of']}, {f['committee']}. City clerk filing: {f['reports_url']}")
+                         + f". As of {f['as_of']}, the {f['report'] or 'latest'} report ({f['committee']}); "
+                         f"retrieved {f['retrieved_on']}. City clerk filing: {f['report_url'] or f['reports_url']}")
                 if f["notes"]:
                     L.append(f"Note: {clean(f['notes'])}")
             else:

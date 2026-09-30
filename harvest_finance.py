@@ -12,8 +12,11 @@ is a JS/cookie archive and is not harvested here.
 """
 from __future__ import annotations
 
+import datetime
 import json
+import os
 import re
+import ssl
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
@@ -54,9 +57,25 @@ PERSON_ALIASES = {
 }
 
 
+# The clerk server does not send its DigiCert intermediate, so strict clients
+# fail verification. Add that public intermediate (committed, from
+# cacerts.digicert.com) to the normal trust store; verification stays on.
+INTERMEDIATE = ROOT / "data" / "certs" / "digicert-global-g2-tls-rsa-sha256-2020-ca1.pem"
+
+
+def _ssl_context() -> ssl.SSLContext:
+    ctx = ssl.create_default_context()
+    if INTERMEDIATE.exists():
+        ctx.load_verify_locations(cafile=str(INTERMEDIATE))
+    return ctx
+
+
+_CTX = _ssl_context()
+
+
 def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    with urllib.request.urlopen(req, timeout=30, context=_CTX) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
 
@@ -190,6 +209,8 @@ def parse_committee_list(html: str) -> list[dict]:
                     kind = "official_candidate"
                 elif "unofficial" in label:
                     kind = "unofficial_candidate"
+                elif "independent expenditure" in label:
+                    kind = "independent_expenditure"
                 elif "ballot measure" in label:
                     kind = "ballot_measure"
                 continue
@@ -210,6 +231,8 @@ def parse_committee_list(html: str) -> list[dict]:
                 section = "official_candidate"
             elif "unofficial" in low:
                 section = "unofficial_candidate"
+            elif "independent expenditure" in low:
+                section = "independent_expenditure"
             elif "ballot measure" in low:
                 section = "ballot_measure"
             for m in re.finditer(
@@ -501,7 +524,7 @@ def harvest() -> dict:
         })
 
     return {
-        "retrieved_on": "2026-09-01",
+        "retrieved_on": os.environ.get("BV_RETRIEVED_ON") or datetime.date.today().isoformat(),
         "summary_url": summary_url,
         "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
         "list_url": BASE + "committeeFilings.php",

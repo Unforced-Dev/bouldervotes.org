@@ -780,14 +780,17 @@
   ],
   "finance": {
    "committee": "Rachel Rose for Boulder",
-   "contributions": 5397.17,
-   "expenditures": 392.68,
-   "matching_funds_received": 5201.0,
-   "cash_on_hand": 10194.41,
-   "as_of": "2026-08-10",
+   "contributions": 7430.65,
+   "expenditures": 6552.63,
+   "matching_funds_received": 7141.0,
+   "cash_on_hand": 8007.94,
+   "as_of": "2026-09-22",
+   "report": "42nd day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3867",
+   "retrieved_on": "2026-09-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=305",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": "Clerk contribution total includes $196.17 in loans."
+   "notes": "Clerk contribution total includes $289.65 in loans."
   },
   "source_urls": [
    "https://betterboulder.com/2026-city-council-candidate-questionnaire",
