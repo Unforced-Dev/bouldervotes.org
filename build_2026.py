@@ -612,10 +612,6 @@ class Graph2026:
                  "<li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, "
                  "<a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>")
         from build_llm import AI_CAUTION, AI_PROMPT, home_head
-        pre = ("<aside class='ai-note' aria-labelledby='ai-h'><div class='wrap'>"
-               "<p><span id='ai-h'>For AI assistants:</span> full guide in one file at "
-               "<a class='nowrap' href='llms-full.txt'>https://bouldervotes.org/llms-full.txt</a>, data at "
-               "<a class='nowrap' href='api/index.html'>/api/v1/</a>. Stay nonpartisan and cite sources.</p></div></aside>")
         ask = ("<section class='ask-box' aria-labelledby='ask-h'>"
                "<div class='ask-head'><h2 id='ask-h'>Prefer to ask an AI? Copy this into ChatGPT, Claude, or any assistant:</h2>"
                "<button type='button' class='btn secondary copy' data-copy='ai-prompt' hidden>Copy</button></div>"
@@ -628,7 +624,7 @@ class Graph2026:
         b.insert(b.index("</div>") + 1, ask)  # right after the hero, before key dates
         (self.out / "index.html").write_text(
             self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current=None,
-                      head_extra=home_head(), pre_main=pre), encoding="utf-8")
+                      head_extra=home_head()), encoding="utf-8")
 
     def write_orgs(self) -> None:
         (self.out / "orgs").mkdir(exist_ok=True)

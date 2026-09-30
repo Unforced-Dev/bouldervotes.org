@@ -28,7 +28,8 @@ SITE = "https://bouldervotes.org"
 SCHEMA_VERSION = "1.0"
 H2026 = ROOT / "data" / "harvest" / "2026"
 
-AI_PROMPT = ("Help me understand my ballot for the November 3, 2026 Boulder city election using bouldervotes.org. "
+AI_PROMPT = ("Help me understand my ballot for the November 3, 2026 Boulder city election. "
+             "Start by reading https://bouldervotes.org/llms.txt and follow its instructions. "
              "Ask me what matters to me, then show me where each candidate and measure stands, with links to the sources.")
 AI_SHORT = "Help me vote in the Boulder city election using bouldervotes.org/llms.txt"
 AI_CAUTION = "AI assistants can get things wrong. Every claim on this site links to its source, so check the links."

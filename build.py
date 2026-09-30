@@ -217,7 +217,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
       <h2>Boulder Votes</h2>
       <p>{esc(TAGLINE)}</p>
       <p>Covers the City of Boulder only. We don't endorse candidates or measures.</p>
-      <p class="ai-foot">For AI assistants: the whole 2026 guide is one file at <a href="{prefix}llms-full.txt">bouldervotes.org/llms-full.txt</a>. Data: <a href="{prefix}api/index.html">/api/v1/</a>.</p>
+      <p class="ai-foot">Open data: <a href="{prefix}llms-full.txt">the whole guide as one text file</a> · <a href="{prefix}api/index.html">JSON</a> · <a href="{prefix}llms.txt">llms.txt</a></p>
     </div>
     <div>
       <h2>2026 election</h2>
