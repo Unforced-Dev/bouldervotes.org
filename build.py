@@ -153,6 +153,64 @@ ARCHIVE_YEARS = tuple(y for y in YEARS if y != 2026)
 
 TAGLINE = "A nonpartisan guide to City of Boulder elections. Every fact links to its source."
 
+# One place to change the repository address.
+REPO_URL = "https://github.com/Unforced-Dev/bouldervotes.org"
+
+# The Learn section: hub groups, in order. (key, href, label, one plain line).
+# Keys with a page of their own get the section menu; the rest are links out.
+LEARN_GROUPS = (
+    ("How voting works", (
+        ("civics", "civics.html", "Civics 101", "Who runs the city, what it can decide, and how ranked-choice voting for mayor works."),
+    )),
+    ("Who's behind the campaigns", (
+        ("orgs", "orgs.html", "Endorsing organizations", "Who each group is, how it picks candidates, and whom it endorsed."),
+        ("finance", "finance.html", "Campaign money", "City clerk filings: raised, spent, matching funds and donors for every committee."),
+    )),
+    ("What candidates have said", (
+        ("issues", "issues.html", "Issues", "Questions asked each cycle, grouped by topic, with the answers on file."),
+        ("people", "people.html", "People", "Every candidate and endorser in this guide, across years."),
+        ("questionnaires", "questionnaires.html", "Questionnaires", "Written candidate questionnaires we found, with links."),
+        ("forums", "forums.html", "Forum calendar", "Every candidate forum, with recordings."),
+        ("compare", "compare.html", "Forum answers, side by side", "One forum question, every candidate we quote, in ballot order."),
+        ("print", "print/index.html", "Printable sheets", "One sheet per 2026 candidate. Every answer prints in full."),
+    )),
+    ("Where our facts come from", (
+        ("sources", "sources.html", "Sources", "Every document this guide cites."),
+        ("about", "about.html", "About this guide", "Who runs it, how it works, and what we won't do."),
+        ("api", "api/index.html", "Open data", "The whole guide as plain text and JSON, for AI assistants and developers."),
+    )),
+)
+LEARN_PAGES = {k: (href, label) for _, items in LEARN_GROUPS for k, href, label, _ in items}
+# Listed in the Learn menu but built as part of another section (Forums, print), so no section menu on them.
+LEARN_LINK_ONLY = {"compare", "print"}
+
+
+def learn_nav(key: str, prefix: str = "", trail: str | None = None) -> str:
+    """Breadcrumb plus the Learn section menu. A list at desktop, a <details> at phone width. No JS."""
+    href, label = LEARN_PAGES[key]
+    crumb = f"<a href='{prefix}learn.html'>Learn</a> › "
+    crumb += f"<a href='{prefix}{href}'>{esc(label)}</a> › {esc(trail)}" if trail else esc(label)
+
+    def groups() -> str:
+        out = []
+        for title, items in LEARN_GROUPS:
+            links = "".join(
+                f"<li><a href='{prefix}{h}'{' aria-current=\"page\"' if k == key else ''}>{esc(lab)}</a></li>"
+                for k, h, lab, _ in items)
+            out.append(f"<div><h2>{esc(title)}</h2><ul>{links}</ul></div>")
+        years = "".join(f"<li><a href='{prefix}{y}.html'>{y}</a></li>" for y in ARCHIVE_YEARS)
+        out.append(f"<div><h2>Past elections</h2><ul class='years-inline'>{years}</ul></div>")
+        return "".join(out)
+
+    menu = groups()
+    return (f"<nav class='learn-nav' aria-label='Learn section'>"
+            f"<p class='crumb'>{crumb}</p>"
+            f"<details class='learn-menu'><summary>More in Learn</summary><div class='learn-groups'>{menu}"
+            f"<p class='learn-hub'><a href='{prefix}learn.html'>All Learn pages</a></p></div></details>"
+            f"<div class='learn-side'><p class='learn-hub'><a href='{prefix}learn.html'>Learn</a></p>"
+            f"<div class='learn-groups'>{menu}</div></div>"
+            f"</nav>")
+
 # Inline wordmark: three Flatirons slabs over a ballot line. Accent via currentColor.
 OG_IMAGE = "https://bouldervotes.org/img/og-card.png?v=1"  # bump v= to bust Facebook/iMessage caches
 OG_DESC = ("Nonpartisan guide to the Nov. 3, 2026 City of Boulder election: mayor, council and measures 2J–2M, "
@@ -168,9 +226,11 @@ LOGO_SVG = (
 
 
 def page(title: str, body: str, *, prefix: str = "", year: int | None = None, current: str | None = None,
-         head_extra: str = "", pre_main: str = "") -> str:
+         head_extra: str = "", pre_main: str = "", learn: str | None = None, learn_trail: str | None = None) -> str:
     """Site chrome. `current` is a PRIMARY_NAV key ("mayor", "council", "measures",
-    "forums", "learn") or None (home)."""
+    "forums", "learn") or None (home). `learn` is a LEARN_PAGES key: adds the section menu."""
+    if learn and not current:
+        current = "learn"
     primary = []
     for key, href, label, short in PRIMARY_NAV:
         cur = ' aria-current="page"' if current == key else ""
@@ -190,6 +250,9 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
         )
         yearbar = (f'<nav class="yearbar" aria-label="Elections by year"><div class="wrap">'
                    f'<span>Past election archive:</span>{chips}</div></nav>')
+    if learn:
+        body = (f"<div class='learn-layout'>{learn_nav(learn, prefix, learn_trail)}"
+                f"<div class='learn-body'>\n{body}\n</div></div>")
     home = f"{prefix}index.html"
     past_links = "".join(f'<li><a href="{prefix}{y}.html">{y} city election</a></li>' for y in ARCHIVE_YEARS)
     return f"""<!doctype html>
@@ -233,6 +296,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
       <p>{esc(TAGLINE)}</p>
       <p>Covers the City of Boulder only. We don't endorse candidates or measures.</p>
       <p class="ai-foot">Open data: <a href="{prefix}llms-full.txt">the whole guide as one text file</a> · <a href="{prefix}api/index.html">JSON</a> · <a href="{prefix}llms.txt">llms.txt</a></p>
+      <p><a href="{REPO_URL}">Source code on GitHub</a></p>
     </div>
     <div>
       <h2>2026 election</h2>
@@ -248,6 +312,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
     <div>
       <h2>Learn</h2>
       <ul>
+        <li><a href="{prefix}learn.html">All Learn pages</a></li>
         <li><a href="{prefix}civics.html">Civics 101</a></li>
         <li><a href="{prefix}orgs.html">Endorsing organizations</a></li>
         <li><a href="{prefix}finance.html">Campaign money</a></li>
@@ -829,7 +894,7 @@ def main() -> None:
             f"<div class='meta'>{esc(ongoing)} · {esc(desc or '')}</div>"
             f"<div class='chips' style='margin-top:0.4rem'>{pills}</div></div>"
         )
-    (OUT / "issues.html").write_text(page("Issues", "\n".join(hub), current="learn"), encoding="utf-8")
+    (OUT / "issues.html").write_text(page("Issues", "\n".join(hub), learn="issues"), encoding="utf-8")
 
     def questions_for(slug: str, year: int):
         if slug == "other":
@@ -985,7 +1050,7 @@ def main() -> None:
         else:
             later.append(li)
     plist.extend(later)
-    (OUT / "people.html").write_text(page("People", "\n".join(plist), current="learn"), encoding="utf-8")
+    (OUT / "people.html").write_text(page("People", "\n".join(plist), learn="people"), encoding="utf-8")
 
     # ----- person dossiers -----
     for p in people:
@@ -1224,7 +1289,7 @@ def main() -> None:
                 flag = "attended" if a["attended"] == 1 else "did not attend" if a["attended"] == 0 else "unknown"
                 ev_html.append(f"<li><a href='{esc(person_href(a['slug']))}'>{esc(a['full_name'])}</a> — {flag}</li>")
             ev_html.append("</ul>")
-    (OUT / "forums.html").write_text(page("Forums", "\n".join(ev_html), current="forums"), encoding="utf-8")
+    (OUT / "forums.html").write_text(page("Forums", "\n".join(ev_html), current="forums", learn="forums"), encoding="utf-8")
 
     meas_html = ["<h1>City measures</h1>"]
     for year in YEARS:
@@ -1244,7 +1309,7 @@ def main() -> None:
             f"<td><a href='{esc(s['url'])}'>{esc(s['title'])}</a></td></tr>"
         )
     (OUT / "sources.html").write_text(
-        page("Sources", f"<p class='crumb'><a href='learn.html'>Learn</a></p><h1>Sources</h1><p>Every document this guide cites. Quotes appear on the people and issue pages.</p><table>{''.join(src_rows)}</table>"),
+        page("Sources", f"<h1>Sources</h1><p>Every document this guide cites. Quotes appear on the people and issue pages.</p><table>{''.join(src_rows)}</table>", learn="sources"),
         encoding="utf-8",
     )
 
@@ -1271,7 +1336,7 @@ def main() -> None:
         "<p class='note'>Forum videos, including YouTube, live on the <a href='forums.html'>forums</a> page. "
         "Spoken quotes come only from recordings, with a link to the moment.</p>"
     )
-    (OUT / "questionnaires.html").write_text(page("Questionnaires", "\n".join(qn_html), current="learn"), encoding="utf-8")
+    (OUT / "questionnaires.html").write_text(page("Questionnaires", "\n".join(qn_html), learn="questionnaires"), encoding="utf-8")
 
     # ----- print packet: a short sheet per 2026 candidate; answers never folded -----
     def print_sheet(row, office: str) -> str:
@@ -1523,30 +1588,21 @@ def main() -> None:
             )
         fin_html.append(f"<table>{''.join(body)}</table>")
     fin_html.append("<p><a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php'>Open the clerk app</a> to read each statement.</p>")
-    (OUT / "finance.html").write_text(page("Campaign money", "\n".join(fin_html), year=2026, current="learn"), encoding="utf-8")
+    (OUT / "finance.html").write_text(page("Campaign money", "\n".join(fin_html), year=2026, learn="finance"), encoding="utf-8")
 
     learn = [
         "<p class='eyebrow'>Learn</p>",
         "<h1>Background for the 2026 city ballot</h1>",
-        "<p class='lede'>How city government works, who endorses whom, and who is paying for the campaigns.</p>",
-        "<div class='link-grid'>",
+        "<p class='lede'>How city government works, who is behind the campaigns, and where our facts come from.</p>",
     ]
-    for href, label, blurb in (
-        ("civics.html", "Civics 101", "How the council, the mayor and ranked-choice voting work, with sources."),
-        ("orgs.html", "Endorsing organizations", "Who each group is, how it picks candidates, and whom it endorsed."),
-        ("finance.html", "Campaign money", "City clerk filings: raised, spent, matching funds, and donors, for every candidate."),
-        ("compare.html", "Forum answers, side by side", "The same forum question, every candidate we quote, in ballot order."),
-        ("forums.html", "Forum calendar", "Every candidate forum, recordings, and who attended."),
-        ("issues.html", "Issues", "Questions asked each cycle, grouped by topic, with the answers on file."),
-        ("people.html", "People", "Every candidate and endorser in this guide, across years."),
-        ("questionnaires.html", "Questionnaires", "Written candidate questionnaires we have located, with links."),
-        ("print/index.html", "Printable sheets", "A short sheet for each 2026 candidate. Every answer prints in full."),
-        ("sources.html", "Sources", "The full catalog of documents behind this guide."),
-        ("api/index.html", "Data and API", "The whole guide as plain text and JSON, for AI assistants and developers."),
-        ("about.html", "About this guide", "Who runs this guide and how it works."),
-    ):
-        learn.append(f"<a class='choice' href='{href}'><strong>{label}</strong><span class='meta'>{blurb}</span></a>")
-    learn.append("</div>")
+    for title, items in LEARN_GROUPS:
+        learn.append(f"<section class='learn-group'><h2>{esc(title)}</h2><div class='link-grid'>")
+        for _key, href, label, blurb in items:
+            learn.append(f"<a class='choice' href='{href}'><strong>{esc(label)}</strong><span class='meta'>{esc(blurb)}</span></a>")
+        learn.append("</div></section>")
+    learn.append("<section class='learn-group'><h2>Past elections</h2>"
+                 "<p>Results, candidates and answers from every City of Boulder election since 2017.</p><p class='chips'>"
+                 + "".join(f"<a class='pill' href='{y}.html'>{y}</a>" for y in ARCHIVE_YEARS) + "</p></section>")
     from build_llm import AI_CAUTION, AI_SHORT, AI_PROMPT
     learn.append(
         "<section class='panel ask-ai' id='ask-ai'><h2>Ask an AI</h2>"
@@ -1558,8 +1614,6 @@ def main() -> None:
         "<a href='llms-full.txt'>llms-full.txt</a>, or the <a href='api/index.html'>JSON data</a>. "
         "That file asks it to stay nonpartisan and cite a source for every claim.</p>"
         f"<p class='note'>{esc(AI_CAUTION)}</p></section>")
-    learn.append("<h2>Earlier City of Boulder elections</h2><p class='chips'>"
-                 + "".join(f"<a class='pill' href='{y}.html'>{y}</a>" for y in ARCHIVE_YEARS) + "</p>")
     (OUT / "learn.html").write_text(page("Learn", "\n".join(learn), current="learn"), encoding="utf-8")
 
     about = """
@@ -1578,8 +1632,10 @@ def main() -> None:
       <li>Pages for <a href="orgs.html">endorsing groups</a>, <a href="issues.html">issues</a>, and every city election since 2017 (the year menu at top right, or the footer).</li>
     </ul>
     <p>The site works without JavaScript and prints cleanly. Folded answers print in full.</p>
-    """
-    (OUT / "about.html").write_text(page("About", about, current="learn"), encoding="utf-8")
+    <h2>Source code and data</h2>
+    <p>The code that builds this site and the data behind it are public: <a href="{REPO_URL}">source code on GitHub</a>. The same facts are available as <a href="api/index.html">plain text and JSON</a>.</p>
+    """.replace("{REPO_URL}", REPO_URL)
+    (OUT / "about.html").write_text(page("About", about, learn="about"), encoding="utf-8")
 
     # keep old race URLs from breaking
     (OUT / "2026-mayor.html").write_text(

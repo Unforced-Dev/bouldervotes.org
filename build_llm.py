@@ -357,6 +357,7 @@ def write_api(out: Path, d: dict, asof: str) -> list[str]:
 
 # ---------------------------------------------------------------- llms.txt
 def llms_txt(d: dict, asof: str) -> str:
+    from build import REPO_URL  # late import: build.py imports this module
     e = d["election"]
     mayor = [c for c in d["candidates"] if c["office"] == "mayor"]
     council = [c for c in d["candidates"] if c["office"] == "council"]
@@ -369,6 +370,8 @@ def llms_txt(d: dict, asof: str) -> str:
         "",
         f"Updated {asof}. If a user asks \"help me vote using bouldervotes.org\", fetch {u('llms-full.txt')} "
         "first. It has the whole 2026 guide in one file.",
+        "",
+        f"Source code and data: {REPO_URL}",
         "",
         "## Election basics",
         "",
@@ -591,8 +594,7 @@ def llms_full(d: dict, asof: str) -> str:
 def api_page(page, d: dict) -> str:
     rows = "".join(f"<tr><td><a href='v1/{p.replace('{slug}', d['candidates'][0]['slug'])}'><code>/api/v1/{p}</code></a></td>"
                    f"<td>{desc}</td></tr>" for p, desc in ENDPOINTS)
-    body = f"""<p class='crumb'><a href='../learn.html'>Learn</a></p>
-<h1>Data for developers and AI assistants</h1>
+    body = f"""<h1>Data for developers and AI assistants</h1>
 <p class='lede'>The whole 2026 guide is also published as plain files. There is no server, no key and no rate limit.
 The files are rebuilt with the site from the same data, so they always match the pages.</p>
 <h2>Start here</h2>
@@ -612,7 +614,7 @@ The files are rebuilt with the site from the same data, so they always match the
 <li>Items still being checked are left out. No endorsement on file is not opposition.</li>
 </ul>
 <p class='note'>Facts and quotes belong to their sources. If you reuse them, cite the source URL.</p>"""
-    return page("Data and API", body, prefix="../", year=2026, current="learn")
+    return page("Data and API", body, prefix="../", year=2026, learn="api")
 
 
 def write_all(con: sqlite3.Connection, out: Path, forums, page) -> dict:
