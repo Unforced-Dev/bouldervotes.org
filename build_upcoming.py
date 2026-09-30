@@ -17,6 +17,7 @@ DATA = ROOT / "data" / "harvest" / "2026" / "forums_upcoming.json"
 
 # Plain notes a voter needs. Keyed by event id; the organizer page is the source.
 VOTER_NOTES = {
+    "2026-09-30-bolo-barha-council-mayor": "In person. Focused on housing and property rights. Free for BOLO and BARHA members; the page doesn't say whether others pay, so call 303-442-3585. Networking follows.",
     "2026-10-06-eof-plan-mayoral-climate": "Online. Register on Zoom to get the link. The Zoom page gives the start time only.",
     "2026-10-13-eof-plan-council-climate": "Online. Register on Zoom to get the link. One outside calendar lists this as a mayoral forum; the organizer's page says City Council candidates.",
     "2026-10-14-brl-kgnu-mayoral-debate": "In person. Free, but get a ticket. Neither host has said whether it will be broadcast or recorded.",

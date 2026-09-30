@@ -22,6 +22,7 @@ class TestUpcomingForums(unittest.TestCase):
         from build_upcoming import upcoming
         self.assertEqual(upcoming(dt.date(2026, 11, 4)), [])
         self.assertEqual(len(upcoming(dt.date(2026, 10, 1))), 5)
+        self.assertEqual(len(upcoming(dt.date(2026, 9, 30))), 6)
 
     def test_rendered_on_forums_page_and_llms(self):
         s = (DOCS / "forums.html").read_text(encoding="utf-8")

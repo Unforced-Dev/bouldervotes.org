@@ -1,160 +1,192 @@
 [
- {
-  "id": "2026-10-06-eof-plan-mayoral-climate",
-  "title": "Climate & Energy Empower Hour with Boulder Mayoral Candidates",
-  "hosts": [
-   "Empower Our Future (EOF)",
-   "PLAN-Boulder County"
-  ],
-  "date": "2026-10-06",
-  "start_time": "18:00",
-  "end_time": "19:00",
-  "end_time_source": "Colorado Coalition for a Livable Climate calendar and CRES Facebook post (Zoom page gives start time only)",
-  "venue_name": "online (Zoom webinar)",
-  "venue_address": null,
-  "in_person": false,
-  "livestream_url": "https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ",
-  "recording_plan": null,
-  "races": [
-   "mayor"
-  ],
-  "topic": "climate and energy",
-  "candidates_invited_or_confirmed": null,
-  "registration_url": "https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ",
-  "cost": null,
-  "accessibility": null,
-  "source_url": "https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ",
-  "source_quote": "Climate & Energy Empower Hour with Boulder Mayoral Candidates ... Oct 6, 2026 06:00 PM in Mountain Time (US and Canada) ... Co-sponsored by EOF and PLAN-Boulder.",
-  "secondary_sources": [
-   "https://colivableclimate.org/event/empower-hour-boulder-mayoral-candidate-forum/",
-   "https://www.facebook.com/ColoradoRenewableEnergySociety/posts/mark-your-calendarsempower-our-future-is-hosting-two-empower-hours-in-october-fe/1601944755298855/"
-  ],
-  "retrieved_on": "2026-09-30",
-  "confidence": "confirmed",
-  "notes": "Source is the organizer's Zoom registration page. empowerourfuture.org returned a bot block, so its own events page could not be read."
- },
- {
-  "id": "2026-10-13-eof-plan-council-climate",
-  "title": "Climate & Energy Empower Hour (and a half) with Boulder's City Council Candidates",
-  "hosts": [
-   "Empower Our Future (EOF)",
-   "PLAN-Boulder County"
-  ],
-  "date": "2026-10-13",
-  "start_time": "18:00",
-  "end_time": "19:30",
-  "end_time_source": "Zoom page says '1.5 hour event'; CRES post says 6-7:30 PM",
-  "venue_name": "online (Zoom webinar)",
-  "venue_address": null,
-  "in_person": false,
-  "livestream_url": "https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ",
-  "recording_plan": null,
-  "races": [
-   "council"
-  ],
-  "topic": "climate and energy",
-  "candidates_invited_or_confirmed": null,
-  "registration_url": "https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ",
-  "cost": null,
-  "accessibility": null,
-  "source_url": "https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ",
-  "source_quote": "Climate & Energy Empower Hour (and a half) with Boulder's City Council Candidates ... Oct 13, 2026 06:00 PM in Mountain Time (US and Canada) ... this climate- & energy-focused 1.5 hour event. Co-sponsored by EOF and PLAN-Boulder.",
-  "secondary_sources": [
-   "https://www.facebook.com/ColoradoRenewableEnergySociety/posts/mark-your-calendarsempower-our-future-is-hosting-two-empower-hours-in-october-fe/1601944755298855/",
-   "https://colivableclimate.org/event/empower-hour-boulder-mayoral-candidate-forum-2/"
-  ],
-  "retrieved_on": "2026-09-30",
-  "confidence": "confirmed",
-  "notes": "CONFLICT: the colivableclimate.org calendar labels Oct 13 'Boulder Mayoral Candidate Forum'. The organizer's Zoom page and the CRES post both say City Council candidates, so this record uses council."
- },
- {
-  "id": "2026-10-14-brl-kgnu-mayoral-debate",
-  "title": "City of Boulder Mayoral Debate: Hosted by Boulder Reporting Lab and KGNU",
-  "hosts": [
-   "Boulder Reporting Lab",
-   "KGNU Community Radio"
-  ],
-  "date": "2026-10-14",
-  "start_time": "12:00",
-  "end_time": "14:00",
-  "venue_name": "KGNU Community Media & Cultural Center",
-  "venue_address": "1720 14th St., Boulder, CO",
-  "in_person": true,
-  "livestream_url": null,
-  "recording_plan": null,
-  "races": [
-   "mayor"
-  ],
-  "candidates_invited_or_confirmed": null,
-  "registration_url": "https://www.zeffy.com/en-US/ticketing/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu-community-radio",
-  "cost": "free (free ticket; BRL: 'free and open to the public')",
-  "accessibility": "Brown-bag lunch event; no specific accessibility details stated",
-  "source_url": "https://kgnu.org/spotlight/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu/",
-  "source_quote": "Wednesday, Oct. 14, 2026 | Noon-2 p.m. KGNU Community Media & Cultural Center | 1720 14th St., Boulder",
-  "secondary_sources": [
-   "https://boulderreportinglab.org/newsletter/%F0%9F%8F%98%EF%B8%8F-after-150-years-should-niwot-become-its-own-town/",
-   "https://www.zeffy.com/en-US/ticketing/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu-community-radio"
-  ],
-  "retrieved_on": "2026-09-30",
-  "confidence": "confirmed",
-  "notes": "Both hosts' own pages give the same date, time and place. Neither says whether it will be broadcast, livestreamed or recorded."
- },
- {
-  "id": "2026-10-14-lwv-ballot-issues-pearl",
-  "title": "Ballot Issues Presentation - The Pearl at Boulder Creek Retirement Community",
-  "hosts": [
-   "League of Women Voters of Boulder County"
-  ],
-  "date": "2026-10-14",
-  "start_time": "10:30",
-  "end_time": "11:30",
-  "venue_name": "The Pearl at Boulder Creek Retirement Community",
-  "venue_address": "2525 Taft Drive, Boulder, CO 80302",
-  "in_person": true,
-  "livestream_url": null,
-  "recording_plan": null,
-  "races": [
-   "ballot measures: State of Colorado, Boulder County, City of Boulder (2J, 2K, 2L, 2M implied by 'City of Boulder' issues; not individually listed)"
-  ],
-  "measure_only": true,
-  "format": "nonpartisan explanatory presentation, not a debate",
-  "candidates_invited_or_confirmed": null,
-  "registration_url": null,
-  "cost": null,
-  "accessibility": "Registration is not required",
-  "source_url": "https://www.lwvbc.org/content.aspx?page_id=4002&club_id=629866&item_id=3062040",
-  "source_quote": "Wednesday, October 14, 2026, 10:30 AM until 11:30 AM ... 2525 Taft Drive Boulder, CO 80302 ... The League will present/explain issues from the State of Colorado, Boulder County, and the City of Boulder. Anyone interested in learning about what is on the ballot this year is welcome.",
-  "retrieved_on": "2026-09-30",
-  "confidence": "confirmed",
-  "notes": "Held inside a retirement community. The page says 'anyone interested ... is welcome' but gives no visitor-entry instructions. Cost is not stated."
- },
- {
-  "id": "2026-10-15-lwv-ballot-issues-frasier",
-  "title": "Ballot Issues Presentation - Frasier Retirement Community",
-  "hosts": [
-   "League of Women Voters of Boulder County"
-  ],
-  "date": "2026-10-15",
-  "start_time": "14:00",
-  "end_time": "15:30",
-  "venue_name": "Frasier Retirement Community",
-  "venue_address": "350 Ponca Place, Boulder, CO 80303",
-  "in_person": true,
-  "livestream_url": null,
-  "recording_plan": null,
-  "races": [
-   "ballot measures: State of Colorado, Boulder County, City of Boulder (not individually listed)"
-  ],
-  "measure_only": true,
-  "format": "nonpartisan explanatory presentation, not a debate",
-  "candidates_invited_or_confirmed": null,
-  "registration_url": null,
-  "cost": null,
-  "accessibility": "Registration is not required",
-  "source_url": "https://www.lwvbc.org/content.aspx?page_id=4002&club_id=629866&item_id=3065039",
-  "source_quote": "Thursday, October 15, 2026, 2:00 PM until 3:30 PM ... 350 Ponca Place Boulder, CO 80303 ... The League will present/explain issues from the State of Colorado, Boulder County, and the City of Boulder.",
-  "retrieved_on": "2026-09-30",
-  "confidence": "confirmed",
-  "notes": "Held inside a retirement community. The page says 'anyone interested ... is welcome' but gives no visitor-entry instructions."
- }
+  {
+    "id": "2026-10-06-eof-plan-mayoral-climate",
+    "title": "Climate & Energy Empower Hour with Boulder Mayoral Candidates",
+    "hosts": [
+      "Empower Our Future (EOF)",
+      "PLAN-Boulder County"
+    ],
+    "date": "2026-10-06",
+    "start_time": "18:00",
+    "end_time": "19:00",
+    "end_time_source": "Colorado Coalition for a Livable Climate calendar and CRES Facebook post (Zoom page gives start time only)",
+    "venue_name": "online (Zoom webinar)",
+    "venue_address": null,
+    "in_person": false,
+    "livestream_url": "https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ",
+    "recording_plan": null,
+    "races": [
+      "mayor"
+    ],
+    "topic": "climate and energy",
+    "candidates_invited_or_confirmed": null,
+    "registration_url": "https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ",
+    "cost": null,
+    "accessibility": null,
+    "source_url": "https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ",
+    "source_quote": "Climate & Energy Empower Hour with Boulder Mayoral Candidates ... Oct 6, 2026 06:00 PM in Mountain Time (US and Canada) ... Co-sponsored by EOF and PLAN-Boulder.",
+    "secondary_sources": [
+      "https://colivableclimate.org/event/empower-hour-boulder-mayoral-candidate-forum/",
+      "https://www.facebook.com/ColoradoRenewableEnergySociety/posts/mark-your-calendarsempower-our-future-is-hosting-two-empower-hours-in-october-fe/1601944755298855/"
+    ],
+    "retrieved_on": "2026-09-30",
+    "confidence": "confirmed",
+    "notes": "Source is the organizer's Zoom registration page. empowerourfuture.org returned a bot block, so its own events page could not be read."
+  },
+  {
+    "id": "2026-10-13-eof-plan-council-climate",
+    "title": "Climate & Energy Empower Hour (and a half) with Boulder's City Council Candidates",
+    "hosts": [
+      "Empower Our Future (EOF)",
+      "PLAN-Boulder County"
+    ],
+    "date": "2026-10-13",
+    "start_time": "18:00",
+    "end_time": "19:30",
+    "end_time_source": "Zoom page says '1.5 hour event'; CRES post says 6-7:30 PM",
+    "venue_name": "online (Zoom webinar)",
+    "venue_address": null,
+    "in_person": false,
+    "livestream_url": "https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ",
+    "recording_plan": null,
+    "races": [
+      "council"
+    ],
+    "topic": "climate and energy",
+    "candidates_invited_or_confirmed": null,
+    "registration_url": "https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ",
+    "cost": null,
+    "accessibility": null,
+    "source_url": "https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ",
+    "source_quote": "Climate & Energy Empower Hour (and a half) with Boulder's City Council Candidates ... Oct 13, 2026 06:00 PM in Mountain Time (US and Canada) ... this climate- & energy-focused 1.5 hour event. Co-sponsored by EOF and PLAN-Boulder.",
+    "secondary_sources": [
+      "https://www.facebook.com/ColoradoRenewableEnergySociety/posts/mark-your-calendarsempower-our-future-is-hosting-two-empower-hours-in-october-fe/1601944755298855/",
+      "https://colivableclimate.org/event/empower-hour-boulder-mayoral-candidate-forum-2/"
+    ],
+    "retrieved_on": "2026-09-30",
+    "confidence": "confirmed",
+    "notes": "CONFLICT: the colivableclimate.org calendar labels Oct 13 'Boulder Mayoral Candidate Forum'. The organizer's Zoom page and the CRES post both say City Council candidates, so this record uses council."
+  },
+  {
+    "id": "2026-10-14-brl-kgnu-mayoral-debate",
+    "title": "City of Boulder Mayoral Debate: Hosted by Boulder Reporting Lab and KGNU",
+    "hosts": [
+      "Boulder Reporting Lab",
+      "KGNU Community Radio"
+    ],
+    "date": "2026-10-14",
+    "start_time": "12:00",
+    "end_time": "14:00",
+    "venue_name": "KGNU Community Media & Cultural Center",
+    "venue_address": "1720 14th St., Boulder, CO",
+    "in_person": true,
+    "livestream_url": null,
+    "recording_plan": null,
+    "races": [
+      "mayor"
+    ],
+    "candidates_invited_or_confirmed": null,
+    "registration_url": "https://www.zeffy.com/en-US/ticketing/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu-community-radio",
+    "cost": "free (free ticket; BRL: 'free and open to the public')",
+    "accessibility": "Brown-bag lunch event; no specific accessibility details stated",
+    "source_url": "https://kgnu.org/spotlight/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu/",
+    "source_quote": "Wednesday, Oct. 14, 2026 | Noon-2 p.m. KGNU Community Media & Cultural Center | 1720 14th St., Boulder",
+    "secondary_sources": [
+      "https://boulderreportinglab.org/newsletter/%F0%9F%8F%98%EF%B8%8F-after-150-years-should-niwot-become-its-own-town/",
+      "https://www.zeffy.com/en-US/ticketing/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu-community-radio"
+    ],
+    "retrieved_on": "2026-09-30",
+    "confidence": "confirmed",
+    "notes": "Both hosts' own pages give the same date, time and place. Neither says whether it will be broadcast, livestreamed or recorded."
+  },
+  {
+    "id": "2026-10-14-lwv-ballot-issues-pearl",
+    "title": "Ballot Issues Presentation - The Pearl at Boulder Creek Retirement Community",
+    "hosts": [
+      "League of Women Voters of Boulder County"
+    ],
+    "date": "2026-10-14",
+    "start_time": "10:30",
+    "end_time": "11:30",
+    "venue_name": "The Pearl at Boulder Creek Retirement Community",
+    "venue_address": "2525 Taft Drive, Boulder, CO 80302",
+    "in_person": true,
+    "livestream_url": null,
+    "recording_plan": null,
+    "races": [
+      "ballot measures: State of Colorado, Boulder County, City of Boulder (2J, 2K, 2L, 2M implied by 'City of Boulder' issues; not individually listed)"
+    ],
+    "measure_only": true,
+    "format": "nonpartisan explanatory presentation, not a debate",
+    "candidates_invited_or_confirmed": null,
+    "registration_url": null,
+    "cost": null,
+    "accessibility": "Registration is not required",
+    "source_url": "https://www.lwvbc.org/content.aspx?page_id=4002&club_id=629866&item_id=3062040",
+    "source_quote": "Wednesday, October 14, 2026, 10:30 AM until 11:30 AM ... 2525 Taft Drive Boulder, CO 80302 ... The League will present/explain issues from the State of Colorado, Boulder County, and the City of Boulder. Anyone interested in learning about what is on the ballot this year is welcome.",
+    "retrieved_on": "2026-09-30",
+    "confidence": "confirmed",
+    "notes": "Held inside a retirement community. The page says 'anyone interested ... is welcome' but gives no visitor-entry instructions. Cost is not stated."
+  },
+  {
+    "id": "2026-10-15-lwv-ballot-issues-frasier",
+    "title": "Ballot Issues Presentation - Frasier Retirement Community",
+    "hosts": [
+      "League of Women Voters of Boulder County"
+    ],
+    "date": "2026-10-15",
+    "start_time": "14:00",
+    "end_time": "15:30",
+    "venue_name": "Frasier Retirement Community",
+    "venue_address": "350 Ponca Place, Boulder, CO 80303",
+    "in_person": true,
+    "livestream_url": null,
+    "recording_plan": null,
+    "races": [
+      "ballot measures: State of Colorado, Boulder County, City of Boulder (not individually listed)"
+    ],
+    "measure_only": true,
+    "format": "nonpartisan explanatory presentation, not a debate",
+    "candidates_invited_or_confirmed": null,
+    "registration_url": null,
+    "cost": null,
+    "accessibility": "Registration is not required",
+    "source_url": "https://www.lwvbc.org/content.aspx?page_id=4002&club_id=629866&item_id=3065039",
+    "source_quote": "Thursday, October 15, 2026, 2:00 PM until 3:30 PM ... 350 Ponca Place Boulder, CO 80303 ... The League will present/explain issues from the State of Colorado, Boulder County, and the City of Boulder.",
+    "retrieved_on": "2026-09-30",
+    "confidence": "confirmed",
+    "notes": "Held inside a retirement community. The page says 'anyone interested ... is welcome' but gives no visitor-entry instructions."
+  },
+  {
+    "id": "2026-09-30-bolo-barha-council-mayor",
+    "title": "BOLO/BARHA 2026 Boulder City Council & Mayoral Candidate Forum",
+    "hosts": [
+      "BOLO REALTORS®",
+      "Boulder Area Rental Housing Association"
+    ],
+    "date": "2026-09-30",
+    "start_time": "15:00",
+    "end_time": "17:00",
+    "venue_name": "Boulder Marriott",
+    "venue_address": "2660 Canyon Blvd, Boulder, CO 80302",
+    "in_person": true,
+    "registration_url": "https://members.bolorealtors.com/calendar/details/bolo-barha-2026-boulder-city-council-mayoral-candidate-forum-1923337",
+    "cost": "Free for BOLO and BARHA members; the page does not state a price for others",
+    "livestream_url": null,
+    "recording_plan": null,
+    "races": [
+      "mayor",
+      "council"
+    ],
+    "candidates_invited_or_confirmed": null,
+    "accessibility": null,
+    "source_url": "https://members.bolorealtors.com/calendar/details/bolo-barha-2026-boulder-city-council-mayoral-candidate-forum-1923337",
+    "source_quote": "Wednesday, September 30, 2026 (3:00 PM - 6:30 PM) (MDT) ... The Candidate Forum will be from 3:00 pm to 5:00 pm, Networking and Happy Hour immediately following. This event is free for BOLO and BARHA Members.",
+    "retrieved_on": "2026-09-30",
+    "confidence": "confirmed",
+    "topic": "housing and property rights",
+    "end_time_source": "organizer page",
+    "secondary_sources": [],
+    "notes": "Found by Aaron. An older listing (id 1907835) and an Oct 8 registration page are dead; the live organizer page says Sept 30."
+  }
 ]
