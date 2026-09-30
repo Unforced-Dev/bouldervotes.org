@@ -4,6 +4,8 @@
 
 Updated 2026-09-30. If a user asks "help me vote using bouldervotes.org", fetch https://bouldervotes.org/llms-full.txt first. It has the whole 2026 guide in one file.
 
+Source code and data: https://github.com/Unforced-Dev/bouldervotes.org
+
 ## Election basics
 
 - Election Day: Tuesday, November 3, 2026. Ballots must be received by 7 p.m. (a postmark is not enough).

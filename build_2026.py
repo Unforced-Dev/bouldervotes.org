@@ -647,7 +647,7 @@ class Graph2026:
                 idx.append(f"<div class='card'><h3><a href='orgs/{esc(r['slug'])}.html'>{esc(r['name'])}</a></h3>"
                            f"<p>{esc(first_sentence(r['summary']))}</p><div class='meta'>{note}</div></div>")
             self._write_org_pages(chunk)
-        (self.out / "orgs.html").write_text(self.page("Endorsing organizations", "\n".join(idx), year=2026, current="learn"), encoding="utf-8")
+        (self.out / "orgs.html").write_text(self.page("Endorsing organizations", "\n".join(idx), year=2026, learn="orgs"), encoding="utf-8")
 
     def _write_org_pages(self, rows) -> None:
         from build import human_label  # late import: build.py imports this module
@@ -660,7 +660,7 @@ class Graph2026:
                 u = self.q("SELECT url FROM sources WHERE id=?", (sid,)).fetchone()[0]
                 return f" <a href='{esc(u)}'>source</a>"
 
-            b = ["<p class='crumb'><a href='../index.html'>2026 guide</a> › <a href='../learn.html'>Learn</a> › <a href='../orgs.html'>Endorsing organizations</a></p>", f"<h1>{esc(r['name'])}</h1>"]
+            b = [f"<h1>{esc(r['name'])}</h1>"]
             meta = [esc(human_label(r["endorser_kind"]))]
             if r["legal_form"]:
                 meta.append(esc(r["legal_form"]))
@@ -737,7 +737,7 @@ class Graph2026:
                     f"<li><a href='{esc(s['url'])}'>{esc(s['url'])}</a></li>" for s in srcs) + "</ul>")
             b.append(f"<p class='note'>Profile compiled {esc(r['as_of'])}.</p>")
             (self.out / "orgs" / f"{r['slug']}.html").write_text(
-                self.page(r["name"], panelize_sections("\n".join(b)), prefix="../", year=2026, current="learn"), encoding="utf-8")
+                self.page(r["name"], panelize_sections("\n".join(b)), prefix="../", year=2026, learn="orgs", learn_trail=r["name"]), encoding="utf-8")
 
     def write_measures(self) -> None:
         (self.out / "measures").mkdir(exist_ok=True)
@@ -799,7 +799,7 @@ class Graph2026:
     def write_civics(self, md: str) -> None:
         body = md_to_html(md)
         body += "<p class='note'>Written September 2026. Each paragraph links its source.</p>"
-        (self.out / "civics.html").write_text(self.page("Civics 101", body, year=2026, current="learn"), encoding="utf-8")
+        (self.out / "civics.html").write_text(self.page("Civics 101", body, year=2026, learn="civics"), encoding="utf-8")
 
     def reported_lines_for_question(self, qid: int, prefix: str) -> str:
         lines = self.q("""SELECT rl.*, s.url, s.title FROM reported_lines rl JOIN sources s ON s.id=rl.source_id
