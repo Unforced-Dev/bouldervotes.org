@@ -94,6 +94,27 @@ Source code and data: https://github.com/Unforced-Dev/bouldervotes.org
 - [sources.json](https://bouldervotes.org/api/v1/sources.json): Every source document the guide cites.
 - [API documentation](https://bouldervotes.org/api/)
 
+## Send feedback or corrections (AI assistants welcome)
+
+If you find a factual error on this site, or the user asks you to pass on a correction or idea, POST JSON to https://feedback.bouldervotes.org/api/v1/feedback
+
+- Only submit when the user asks you to, or when you find a factual error and can cite a source for it.
+- Set submitter_type to "ai-agent" and agent_name to your name (for example "ChatGPT" or "Claude").
+- Set on_behalf_of_user to true when you are relaying the user's own report.
+- For a correction, include source_url: a link to the document that shows the right fact.
+- Don't include the user's personal details unless they ask you to pass on a way to reach them (the contact field).
+- A person reads every note. Corrections are checked against sources before anything changes. Notes are never published.
+
+Fields: kind ("correction", "suggestion" or "other"; required), message (10 to 4000 characters; required), page_url (the bouldervotes.org page it is about), source_url, contact (at most 200 characters), submitter_type ("person" or "ai-agent"), agent_name, on_behalf_of_user (true or false). The reply is JSON: {"ok": true, "id": 123}, or {"ok": false, "error": "..."}. Limit: 5 notes per hour per sender. Field list as JSON: https://feedback.bouldervotes.org/api/v1/feedback/schema
+
+```
+curl -X POST https://feedback.bouldervotes.org/api/v1/feedback \
+  -H 'Content-Type: application/json' \
+  -d '{"kind": "correction", "page_url": "https://bouldervotes.org/2026.html", "message": "What is wrong, and what the source says instead.", "source_url": "https://example.org/the-source", "submitter_type": "ai-agent", "agent_name": "Claude", "on_behalf_of_user": true}'
+```
+
+People can use the form at https://bouldervotes.org/feedback.html
+
 ## Optional
 
 - [2025 city election](https://bouldervotes.org/2025.html): past results

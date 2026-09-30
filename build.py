@@ -9,6 +9,7 @@ Voter chrome, not an essay:
 """
 from __future__ import annotations
 
+import json
 import html
 import re
 import sqlite3
@@ -156,6 +157,13 @@ TAGLINE = "A nonpartisan guide to City of Boulder elections. Every fact links to
 # One place to change the repository address.
 REPO_URL = "https://github.com/Unforced-Dev/bouldervotes.org"
 
+# The feedback collector (Cloudflare Worker + D1, source in feedback-worker/).
+# The HTML form posts here; AI agents POST JSON to FEEDBACK_API.
+FEEDBACK_URL = "https://feedback.bouldervotes.org/"
+FEEDBACK_API = FEEDBACK_URL + "api/v1/feedback"
+# Footer placeholder, replaced with each page's own path after the build.
+PAGE_PATH_TOKEN = "__BV_PAGE_PATH__"
+
 # The Learn section: hub groups, in order. (key, href, label, one plain line).
 # Keys with a page of their own get the section menu; the rest are links out.
 LEARN_GROUPS = (
@@ -178,6 +186,7 @@ LEARN_GROUPS = (
         ("sources", "sources.html", "Sources", "Every document this guide cites."),
         ("about", "about.html", "About this guide", "Who runs it, how it works, and what we won't do."),
         ("api", "api/index.html", "Open data", "The whole guide as plain text and JSON, for AI assistants and developers."),
+        ("feedback", "feedback.html", "Suggest a fix or an idea", "Spot a mistake or something missing? Tell us."),
     )),
 )
 LEARN_PAGES = {k: (href, label) for _, items in LEARN_GROUPS for k, href, label, _ in items}
@@ -297,6 +306,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
       <p>Covers the City of Boulder only. We don't endorse candidates or measures.</p>
       <p class="ai-foot">Open data: <a href="{prefix}llms-full.txt">the whole guide as one text file</a> · <a href="{prefix}api/index.html">JSON</a> · <a href="{prefix}llms.txt">llms.txt</a></p>
       <p><a href="{REPO_URL}">Source code on GitHub</a></p>
+      <p class="fix-foot"><a href="{prefix}feedback.html?page={PAGE_PATH_TOKEN}">Spot a mistake? Tell us</a></p>
     </div>
     <div>
       <h2>2026 election</h2>
@@ -324,6 +334,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
         <li><a href="{prefix}sources.html">Sources</a></li>
         <li><a href="{prefix}api/index.html">Data and API</a></li>
         <li><a href="{prefix}about.html">About this guide</a></li>
+        <li><a href="{prefix}feedback.html">Suggest a fix or an idea</a></li>
       </ul>
     </div>
     <div>
@@ -389,6 +400,83 @@ def money_stats(snap) -> str:
         cells.append(("Cash on hand", snap["cash_on_hand"]))
     return "<ul class='stats'>" + "".join(
         f"<li><span class='v'>{dollars(v)}</span><span class='k'>{k}</span></li>" for k, v in cells) + "</ul>"
+
+
+FEEDBACK_ERRORS = {
+    # Worker error code -> what the reader sees. Anything else gets the default line.
+    "message_too_short": "Your note was too short. Please write at least a few words.",
+    "message_too_long": "Your note was too long. Please keep it under 4,000 characters.",
+    "too_many_links": "Your note had more links than words. Please add a few words about what's wrong.",
+    "contact_too_long": "The contact line was too long. An email address or a name is enough.",
+    "source_url_invalid": "The source link didn't look like a web address. It should start with https://",
+    "rate_limited": "We got several notes from you in the last hour. Please try again later.",
+    "busy": "We have had a lot of notes today. Please try again tomorrow.",
+}
+
+
+def feedback_body() -> str:
+    """Suggest a fix or an idea. A plain HTML form that works with no JavaScript.
+    Thanks and error states show via :target (#sent, #problem); a few lines of JS
+    only prefill the page field and name the exact problem."""
+    errs = json.dumps(FEEDBACK_ERRORS)
+    return f"""<h1>Suggest a fix or an idea</h1>
+<p class='lede'>Found a mistake, a broken link or something missing? Tell us here. You don't need an account.</p>
+<section id='sent' class='form-status' tabindex='-1'>
+<h2>Thank you. We got your note.</h2>
+<p>We read every note. If you left an email and asked a question, we'll reply.</p>
+<p><a href='index.html'>Back to the guide</a> · <a href='#form'>Send another note</a></p>
+</section>
+<section id='problem' class='form-status problem' tabindex='-1'>
+<h2>Your note was not sent</h2>
+<p id='problem-reason'>Something in the form needs a fix. Check it below and try again.</p>
+</section>
+<form id='form' class='feedback-form' method='post' action='{FEEDBACK_URL}'>
+<fieldset class='kinds'>
+<legend>What kind of note is this?</legend>
+<label class='radio'><input type='radio' name='kind' value='correction' checked><span><strong>A correction</strong><span class='meta'>Something on the site is wrong.</span></span></label>
+<label class='radio'><input type='radio' name='kind' value='suggestion'><span><strong>An idea</strong><span class='meta'>Something to add or change.</span></span></label>
+<label class='radio'><input type='radio' name='kind' value='other'><span><strong>Something else</strong></span></label>
+</fieldset>
+<div class='field'>
+<label for='page'>Which page? <span class='opt'>(optional)</span></label>
+<input id='page' name='page' type='text' maxlength='500' autocomplete='off' placeholder='For example: the mayor page'>
+</div>
+<div class='field'>
+<label for='message'>Your note</label>
+<p class='hint' id='message-hint'>What's wrong, or what would help? At least a few words.</p>
+<textarea id='message' name='message' rows='7' required minlength='10' maxlength='4000' aria-describedby='message-hint'></textarea>
+</div>
+<div class='field'>
+<label for='source_url'>Link to a source <span class='opt'>(optional)</span></label>
+<p class='hint' id='source-hint'>For a correction, a link to the page that shows the right fact helps us check it.</p>
+<input id='source_url' name='source_url' type='text' inputmode='url' maxlength='1000' autocomplete='off' aria-describedby='source-hint' placeholder='https://'>
+</div>
+<div class='field'>
+<label for='contact'>Your email or name <span class='opt'>(optional)</span></label>
+<p class='hint' id='contact-hint'>Only if you'd like a reply. We can't write back without it.</p>
+<input id='contact' name='contact' type='text' maxlength='200' autocomplete='email' aria-describedby='contact-hint'>
+</div>
+<div class='hp' aria-hidden='true'><label for='homepage'>Leave this box empty</label><input id='homepage' name='homepage' type='text' tabindex='-1' autocomplete='off'></div>
+<p><button class='btn' type='submit'>Send</button></p>
+<p class='note'>We read every note. Corrections are checked against sources before we change anything. We don't publish your note or share your contact.</p>
+</form>
+<script>(function(){{var q=new URLSearchParams(location.search),E={errs};
+var p=q.get('page'),f=document.getElementById('page');if(p&&f&&!f.value)f.value=p;
+var e=q.get('error'),r=document.getElementById('problem-reason');if(e&&E[e]&&r)r.textContent=E[e];
+if(q.get('sent')==='1'&&location.hash!=='#sent')location.hash='sent';
+if(e&&location.hash!=='#problem')location.hash='problem';}})();</script>"""
+
+
+def stamp_page_paths() -> None:
+    """Fill each footer's 'Spot a mistake?' link with that page's own path."""
+    from urllib.parse import quote
+    for f in OUT.rglob("*.html"):
+        s = f.read_text(encoding="utf-8")
+        if PAGE_PATH_TOKEN not in s:
+            continue
+        rel = f.relative_to(OUT).as_posix()
+        path = "/" if rel == "index.html" else "/" + rel
+        f.write_text(s.replace(PAGE_PATH_TOKEN, quote(path, safe="/")), encoding="utf-8")
 
 
 def copy_static() -> None:
@@ -1656,9 +1744,12 @@ def main() -> None:
             encoding="utf-8",
         )
 
+    (OUT / "feedback.html").write_text(page("Suggest a fix or an idea", feedback_body(), learn="feedback"), encoding="utf-8")
+
     from build_llm import write_all
     stats = write_all(con, OUT, forums, page)
     add_page_urls(OUT)
+    stamp_page_paths()
     print(f"wrote {len(list(OUT.rglob('*.html')))} html files into {OUT}; llms-full.txt {stats['full_bytes']:,} bytes, "
           f"{stats['api_files']} JSON files")
     con.close()
