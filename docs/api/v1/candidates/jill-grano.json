@@ -1448,14 +1448,17 @@
   ],
   "finance": {
    "committee": "Jill for Council",
-   "contributions": 7651.59,
-   "expenditures": 538.55,
-   "matching_funds_received": 7651.59,
-   "cash_on_hand": 14764.63,
-   "as_of": "2026-08-11",
+   "contributions": 11176.54,
+   "expenditures": 3520.64,
+   "matching_funds_received": 11182.62,
+   "cash_on_hand": 18838.52,
+   "as_of": "2026-09-22",
+   "report": "42nd day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3874",
+   "retrieved_on": "2026-09-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=309",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": null
+   "notes": "As filed, matching funds received ($11,182.62) are higher than total contributions ($11,176.54); shown as the clerk report states them."
   },
   "source_urls": [
    "https://betterboulder.com/2026-city-council-candidate-questionnaire",

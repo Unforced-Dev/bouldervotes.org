@@ -426,11 +426,14 @@
   "endorsements": [],
   "finance": {
    "committee": "Elect Lisa Mayor",
-   "contributions": 0.0,
-   "expenditures": 0.0,
+   "contributions": 239.86,
+   "expenditures": 239.86,
    "matching_funds_received": 0.0,
    "cash_on_hand": 0.0,
-   "as_of": "2026-08-28",
+   "as_of": "2026-09-27",
+   "report": "42nd day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3883",
+   "retrieved_on": "2026-09-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=321",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null

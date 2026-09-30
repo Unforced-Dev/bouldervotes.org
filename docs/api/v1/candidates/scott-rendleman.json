@@ -567,11 +567,14 @@
   "endorsements": [],
   "finance": {
    "committee": "Rendleman for Boulder",
-   "contributions": 0.0,
-   "expenditures": 462.27,
+   "contributions": 3150.0,
+   "expenditures": 643.07,
    "matching_funds_received": 0.0,
-   "cash_on_hand": -462.27,
-   "as_of": "2026-08-28",
+   "cash_on_hand": 2506.93,
+   "as_of": "2026-09-22",
+   "report": "42nd day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3860",
+   "retrieved_on": "2026-09-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=322",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null

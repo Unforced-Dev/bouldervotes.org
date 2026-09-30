@@ -23,7 +23,7 @@ Python 3 stdlib only (plus the sqlite3 module). From the repo root:
 
 ```bash
 python3 harvest_brl.py       # optional; hits BRL WP JSON, writes data/harvest/brl_questionnaires.json
-python3 harvest_finance.py   # optional; hits the city clerk app, writes data/harvest/finance_2026.json
+python3 tools/refresh_finance_2026.py   # optional; re-pulls city clerk filings into data/harvest/finance_2026.json and prints before/after
 python3 seed.py              # destroys and rebuilds data/bouldervotes.db
 python3 build.py             # writes static HTML into docs/
 ```
@@ -84,7 +84,20 @@ Local git identity in this repo is `unforcedagi` / `unforcedagi@users.noreply.gi
 
 ## Campaign finance
 
-Municipal filings are the city clerk (`election-committee-filings`), not TRACER. Matching-funds flags hang on `candidacies.matching_funds`. Dollar totals and itemized contributions/expenditures for 2026 live in `finance_snapshots` / `finance_line_items`, harvested by `harvest_finance.py` from the live clerk HTML (no JS required for the numbers). $0 is a filed zero. Do not invent dollar amounts. Re-run the harvest when new statements land.
+Municipal filings are the city clerk (`election-committee-filings`), not TRACER. Matching-funds flags hang on `candidacies.matching_funds`. Dollar totals and itemized contributions/expenditures for 2026 live in `finance_snapshots` / `finance_line_items`, harvested by `harvest_finance.py` from the live clerk HTML (no JS required for the numbers). $0 is a filed zero. Do not invent dollar amounts.
+
+Refresh after each city filing date (2026: Sept. 22, Oct. 6, Oct. 13, Oct. 20, Oct. 29, Dec. 3; see bouldercolorado.gov/election-guidelines):
+
+```bash
+python3 tools/refresh_finance_2026.py        # harvest + before/after table + flags
+python3 tools/refresh_finance_2026.py --compare   # table only, vs git HEAD
+python3 seed.py && python3 build.py && python3 -m unittest && python3 tools/check_links.py
+```
+
+- The table compares against the committed JSON at HEAD. Read the flags: a total that went DOWN, matching above contributions, new or vanished committees, and committees with no new report. Investigate before committing; never smooth a figure. Oddities that are real get a note in `ingest_finance_2026` so the page says "as filed".
+- `retrieved_on` is today's date (override with `BV_RETRIEVED_ON=YYYY-MM-DD`). Each snapshot stores the clerk's report name (`report_label`), its filing date (`reported_on`) and the statement URL (`report_url`); pages and the API show all three.
+- The clerk server omits its DigiCert intermediate certificate. `harvest_finance.py` adds the public intermediate from `data/certs/` to the trust store; TLS verification stays on. Never switch verification off.
+- A committee with no new report keeps its last figures, and its row names that older report.
 
 ## What is parked
 

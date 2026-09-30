@@ -388,7 +388,8 @@ class Graph2026:
                     return "—"
                 x = float(n)
                 return f"${x:,.0f}" if abs(x - round(x)) < 0.005 else f"${x:,.2f}"
-            money = (f"<p class='note'>Money (city clerk{', as of ' + esc(snap['reported_on']) if snap['reported_on'] else ''}): "
+            from build import report_line  # late import: build.py imports this module
+            money = (f"<p class='note'>Money (city clerk; {esc(report_line(snap))}): "
                      f"raised <span class='num'>{d(snap['contributions'])}</span> · spent <span class='num'>{d(snap['expenditures'])}</span> · "
                      f"matching funds received <span class='num'>{d(snap['matching_received'])}</span>.</p>")
         actions = [f"<a class='btn secondary' href='../print/{esc(slug)}.html'>Print this candidate</a>"]

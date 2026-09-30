@@ -1141,10 +1141,13 @@
   "finance": {
    "committee": "Tara Winer for Council",
    "contributions": 12555.0,
-   "expenditures": 1228.03,
+   "expenditures": 5052.09,
    "matching_funds_received": 12366.0,
-   "cash_on_hand": 23692.97,
-   "as_of": "2026-08-18",
+   "cash_on_hand": 19868.91,
+   "as_of": "2026-09-28",
+   "report": "42nd day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3884",
+   "retrieved_on": "2026-09-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=306",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null

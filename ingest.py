@@ -1390,17 +1390,23 @@ def ingest_finance_2026(cur, *, pid: dict, add_source, org_city: int) -> None:
         loan_total = sum(
             c["amount"] for c in row.get("contributions", []) if (c.get("contrib_type") or "").lower() == "loan"
         )
+        last_st = (row.get("statements") or [{}])[-1]
         notes = None
         if not person and row.get("kind") == "official_candidate":
             notes = "Official committee on the clerk app; not on the certified 2026 candidate list."
         elif loan_total:
             notes = f"Clerk contribution total includes ${loan_total:,.2f} in loans."
+        mr, ct = row.get("matching_received") or 0, row.get("contributions_total") or 0
+        if mr > ct + 0.005:
+            extra = (f"As filed, matching funds received (${mr:,.2f}) are higher than total contributions "
+                     f"(${ct:,.2f}); shown as the clerk report states them.")
+            notes = f"{notes} {extra}" if notes else extra
         cur.execute(
             """INSERT INTO finance_snapshots
                (person_id, candidacy_id, year, committee_name, committee_number, clerk_committee_id,
                 committee_kind, contributions, expenditures, matching_received, in_kind, cash_on_hand,
-                reported_on, reports_url, source_id, notes)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                reported_on, report_label, report_url, retrieved_on, reports_url, source_id, notes)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (
                 person_id,
                 candidacy_id,
@@ -1415,6 +1421,9 @@ def ingest_finance_2026(cur, *, pid: dict, add_source, org_city: int) -> None:
                 row.get("in_kind"),
                 row.get("cash_on_hand"),
                 row.get("reported_on"),
+                last_st.get("label"),
+                last_st.get("url"),
+                data["retrieved_on"],
                 row.get("reports_url"),
                 src,
                 notes,

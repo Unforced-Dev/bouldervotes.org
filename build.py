@@ -80,6 +80,7 @@ def human_label(value: object) -> str:
         "official_candidate": "official candidate committee",
         "unofficial_candidate": "unofficial candidate committee",
         "ballot_measure": "ballot-measure committee",
+        "independent_expenditure": "independent expenditure only",
         # endorser kinds
         "organization": "organization",
         "committee": "committee",
@@ -278,6 +279,41 @@ def panelize(html_body: str) -> str:
     for chunk in parts[1:]:
         out.append(f"<section class='panel'>{chunk}</section>")
     return "".join(out)
+
+
+def nice_iso(iso: str | None) -> str:
+    """2026-09-22 -> Sept. 22, 2026 (AP style)."""
+    if not iso:
+        return "—"
+    months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."]
+    y, m, d = iso[:10].split("-")
+    return f"{months[int(m) - 1]} {int(d)}, {y}"
+
+
+def report_line(snap) -> str:
+    """Which clerk report a finance snapshot comes from, and when we pulled it."""
+    keys = snap.keys()
+    label = snap["report_label"] if "report_label" in keys else None
+    bits = []
+    if label:
+        bits.append(f"{label} report, filed {nice_iso(snap['reported_on'])}")
+    elif snap["reported_on"]:
+        bits.append(f"report filed {nice_iso(snap['reported_on'])}")
+    else:
+        bits.append("no report filed")
+    if "retrieved_on" in keys and snap["retrieved_on"]:
+        bits.append(f"retrieved {nice_iso(snap['retrieved_on'])}")
+    return "; ".join(bits)
+
+
+def report_cell(r) -> str:
+    """Table cell: the clerk's report name and filing date, linked to that statement."""
+    if not r["reported_on"]:
+        return "No report filed"
+    text = f"{nice_iso(r['reported_on'])}" + (f" · {r['report_label']}" if r["report_label"] else "")
+    if r["report_url"]:
+        return f"<a href='{esc(r['report_url'])}'>{esc(text)}</a>"
+    return esc(text)
 
 
 def money_stats(snap) -> str:
@@ -711,14 +747,16 @@ def main() -> None:
                 bits.append(candidate_card(r, year, "council") if year == 2026 else archive_candidate(r, year))
             if year == 2026:
                 money = q(
-                    """SELECT p.full_name, p.slug, f.contributions, f.expenditures, f.matching_received, f.reported_on
+                    """SELECT p.full_name, p.slug, f.contributions, f.expenditures, f.matching_received, f.reported_on,
+                              f.retrieved_on
                        FROM finance_snapshots f JOIN people p ON p.id=f.person_id
                        WHERE f.year=2026 ORDER BY f.contributions DESC, p.sort_name"""
                 ).fetchall()
                 if money:
                     bits.append("<h2 id='money'>Money so far</h2>")
                     bits.append(
-                        "<p class='note'>From city clerk filings, retrieved 2026-09-01 (city races don't file with the state's TRACER system). "
+                        f"<p class='note'>From city clerk filings, latest reports filed through {nice_iso(max(m['reported_on'] or '' for m in money))}; "
+                        f"retrieved {nice_iso(money[0]['retrieved_on'])}. City races don't file with the state's TRACER system. "
                         "A $0 is what the campaign reported. "
                         "<a href='finance.html'>Donors, spending, and source</a>.</p>"
                     )
@@ -1080,9 +1118,8 @@ def main() -> None:
                 ).fetchone()[0]
                 bits.append(money_stats(snap))
                 bits.append(
-                    f"<p class='note'>{snap['year']} · {esc(snap['committee_name'])}"
-                    + (f", as of {esc(snap['reported_on'])}" if snap["reported_on"] else "")
-                    + ".</p>"
+                    f"<p class='note'>{snap['year']} · {esc(snap['committee_name'])} · "
+                    f"{esc(report_line(snap))}.</p>"
                 )
                 if snap["notes"]:
                     bits.append(f"<p class='note'>{esc(plain(snap['notes']))}</p>")
@@ -1311,7 +1348,7 @@ def main() -> None:
                 f"<p>Raised {dollars(snap['contributions'])} · spent {dollars(snap['expenditures'])} · "
                 f"matching received {dollars(snap['matching_received'])} · "
                 f"{n_donors} contribution line{'' if n_donors == 1 else 's'} "
-                f"(as of {esc(snap['reported_on'])}, {esc(snap['committee_name'])}). "
+                f"({esc(snap['committee_name'])}; {esc(report_line(snap))}). "
                 f"Clerk matching-funds flag: {money_flag}. Not TRACER.</p>"
             )
             if snap["notes"]:
@@ -1385,6 +1422,7 @@ def main() -> None:
     fin_rows = q(
         """SELECT f.id, p.full_name, p.slug, f.committee_name, f.committee_kind, f.contributions,
                   f.expenditures, f.matching_received, f.cash_on_hand, f.reported_on, f.notes,
+                  f.report_label, f.report_url, f.retrieved_on,
                   f.reports_url, f.person_id, s.url AS source_url, s.title AS source_title
            FROM finance_snapshots f
            LEFT JOIN people p ON p.id=f.person_id
@@ -1392,9 +1430,16 @@ def main() -> None:
            WHERE f.year=2026
            ORDER BY f.contributions DESC, COALESCE(p.sort_name, f.committee_name)"""
     ).fetchall()
+    fin_retrieved = next((r["retrieved_on"] for r in fin_rows if r["retrieved_on"]), None)
+    fin_latest = max((r["reported_on"] or "" for r in fin_rows), default="")
     fin_html = [
         "<h1>Campaign money — 2026</h1>",
-        "<p class='lede'>From City of Boulder clerk filings, retrieved 2026-09-01. City races don't report to the state's TRACER system. A $0 means the campaign filed a zero. Cents come from each campaign's latest statement; the clerk's summary table rounds to dollars.</p>",
+        f"<p class='lede'>From City of Boulder clerk filings, retrieved {nice_iso(fin_retrieved)}. "
+        f"Figures come from each committee's latest report; the newest was filed {nice_iso(fin_latest)}. "
+        "City races don't report to the state's TRACER system. A $0 means the campaign filed a zero.</p>",
+        "<p class='note'>Next city filing dates: Oct. 6, Oct. 13, Oct. 20 and Oct. 29, 2026, then Dec. 3 "
+        "(<a href='https://bouldercolorado.gov/election-guidelines'>city election guidelines</a>). "
+        "Totals here change only when we pull the new reports.</p>",
         "<p class='note'>Past-year dollars: the live app only serves 2026. Historical filings sit in the city’s "
         "<a href='https://documents.bouldercolorado.gov/WebLink/Browse.aspx?id=59131'>Laserfiche archive</a> "
         "(needs cookies and JavaScript). We couldn't read that folder, so past years have no dollar figures here. The asterisks on the clerk's candidate list mark who signed up for matching funds; the Matching column here is money actually received.</p>",
@@ -1407,7 +1452,7 @@ def main() -> None:
         body = [
             "<tr><th>Candidate</th><th>Committee</th><th class='num'>Raised</th>"
             "<th class='num'>Spent</th><th class='num'>Matching</th>"
-            "<th class='num'>Donors</th><th>As of</th></tr>"
+            "<th class='num'>Donors</th><th>Latest report</th></tr>"
         ]
         for r in candidates:
             n_donors = q(
@@ -1422,7 +1467,7 @@ def main() -> None:
                 f"<td class='num'>{dollars(r['expenditures'])}</td>"
                 f"<td class='num'>{dollars(r['matching_received'])}</td>"
                 f"<td class='num'>{n_donors}</td>"
-                f"<td>{esc(r['reported_on'] or '—')}</td></tr>"
+                f"<td>{report_cell(r)}</td></tr>"
             )
         fin_html.append(f"<table>{''.join(body)}</table>")
         noted = [r for r in candidates if r["notes"]]
@@ -1465,16 +1510,16 @@ def main() -> None:
     if other:
         fin_html.append("<h2>Other 2026 committees</h2>")
         fin_html.append(
-            "<p class='note'>Ballot-measure and unofficial committees, plus any official committee whose candidate is not on the certified clerk list.</p>"
+            "<p class='note'>Ballot-measure, unofficial and independent-expenditure committees, plus any official committee whose candidate is not on the certified clerk list.</p>"
         )
-        body = ["<tr><th>Committee</th><th>Kind</th><th class='num'>Raised</th><th class='num'>Spent</th><th>As of</th></tr>"]
+        body = ["<tr><th>Committee</th><th>Kind</th><th class='num'>Raised</th><th class='num'>Spent</th><th>Latest report</th></tr>"]
         for r in other:
             kind = human_label(r["committee_kind"])
             body.append(
                 f"<tr><td>{esc(r['committee_name'])}</td><td>{esc(kind)}</td>"
                 f"<td class='num'>{dollars(r['contributions'])}</td>"
                 f"<td class='num'>{dollars(r['expenditures'])}</td>"
-                f"<td>{esc(r['reported_on'] or '—')}</td></tr>"
+                f"<td>{report_cell(r)}</td></tr>"
             )
         fin_html.append(f"<table>{''.join(body)}</table>")
     fin_html.append("<p><a href='https://webapps.bouldercolorado.gov/election/committeeFilings.php'>Open the clerk app</a> to read each statement.</p>")
