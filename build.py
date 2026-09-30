@@ -1658,10 +1658,26 @@ def main() -> None:
 
     from build_llm import write_all
     stats = write_all(con, OUT, forums, page)
+    add_page_urls(OUT)
     print(f"wrote {len(list(OUT.rglob('*.html')))} html files into {OUT}; llms-full.txt {stats['full_bytes']:,} bytes, "
           f"{stats['api_files']} JSON files")
     con.close()
 
+
+SITE_URL = "https://bouldervotes.org/"
+
+
+def add_page_urls(out: Path) -> None:
+    """Give every page its own og:url and canonical link (Facebook asks for og:url)."""
+    marker = '<meta property="og:type"'
+    for f in out.rglob("*.html"):
+        rel = f.relative_to(out).as_posix()
+        url = SITE_URL + ("" if rel == "index.html" else rel)
+        html = f.read_text(encoding="utf-8")
+        if marker not in html or 'property="og:url"' in html:
+            continue
+        tag = f'<meta property="og:url" content="{url}">\n<link rel="canonical" href="{url}">\n'
+        f.write_text(html.replace(marker, tag + marker, 1), encoding="utf-8")
 
 if __name__ == "__main__":
     main()
