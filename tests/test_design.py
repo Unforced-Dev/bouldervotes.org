@@ -89,3 +89,12 @@ class TestDesign(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestShareCard(unittest.TestCase):
+    def test_every_page_has_og_image(self):
+        for f in DOCS.rglob("*.html"):
+            s = f.read_text(encoding="utf-8")
+            self.assertIn('property="og:image" content="https://bouldervotes.org/img/og-card.png', s, str(f))
+            self.assertIn('name="twitter:card" content="summary_large_image"', s, str(f))
+        self.assertTrue((DOCS / "img" / "og-card.png").exists())
