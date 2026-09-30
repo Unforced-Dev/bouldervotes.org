@@ -1257,8 +1257,9 @@ def main() -> None:
         )
 
     # forums / measures / sources / about remain available, not in primary nav
+    from build_upcoming import upcoming_html
     ev_html = ["<h1>Forums</h1>", "<p>Every candidate forum we know of, with recordings. We list who attended only when a published source says so.</p>",
-               forums.forum_index_html(), "<h2>Calendar</h2>"]
+               upcoming_html(), forums.forum_index_html(), "<h2>Calendar</h2>"]
     all_events = q(
         """SELECT e.*, o.name AS host FROM events e
            LEFT JOIN organizations o ON o.id=e.host_org_id ORDER BY e.starts_on DESC"""

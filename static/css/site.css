@@ -565,3 +565,9 @@ footer.site .ai-foot { font-size: var(--fs-xs); overflow-wrap: anywhere; }
   .learn-body > .crumb:first-child { margin-top: var(--s5); }
 }
 @media print { .learn-nav { display: none; } .learn-layout { display: block; } }
+
+/* Upcoming forums */
+.upcoming .events { list-style: none; padding: 0; margin: var(--s-3, 24px) 0; display: grid; gap: var(--s-2, 16px); }
+.upcoming .event h3 { margin: 4px 0 8px; }
+.upcoming .event-when { font-family: var(--sans); font-weight: 600; color: var(--accent); margin: 0; }
+.upcoming .event p { margin: 6px 0; }

@@ -605,6 +605,7 @@ class Graph2026:
                  "<li><strong>Print it.</strong> Every candidate has a <a href='print/index.html'>printable sheet</a>. New to city government? Read <a href='civics.html'>Civics 101</a>.</li>"
                  "</ol>")
         b.append("<h2 id='more'>More in this guide</h2><ul>"
+                 "<li><a href='forums.html#upcoming-h'>Upcoming forums you can attend</a></li>"
                  "<li><a href='compare.html'>What candidates said at forums</a>, side by side</li>"
                  "<li><a href='orgs.html'>Groups that endorse</a> and how they pick candidates</li>"
                  "<li><a href='finance.html'>Campaign money</a> from city filings</li>"
