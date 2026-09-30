@@ -153,6 +153,10 @@ ARCHIVE_YEARS = tuple(y for y in YEARS if y != 2026)
 TAGLINE = "A nonpartisan guide to City of Boulder elections. Every fact links to its source."
 
 # Inline wordmark: three Flatirons slabs over a ballot line. Accent via currentColor.
+OG_IMAGE = "https://bouldervotes.org/img/og-card.png?v=1"  # bump v= to bust Facebook/iMessage caches
+OG_DESC = ("Nonpartisan guide to the Nov. 3, 2026 City of Boulder election: mayor, council and measures 2J–2M, "
+           "with a source for every fact.")
+
 LOGO_SVG = (
     '<svg viewBox="0 0 40 40" role="img" aria-label="Boulder Votes logo" focusable="false">'
     '<rect width="40" height="40" rx="9" fill="currentColor"/>'
@@ -198,6 +202,16 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
 <link rel="stylesheet" href="{prefix}css/site.css">
 <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full guide for AI assistants">
 <meta name="theme-color" content="#1d5c63">
+<meta property="og:site_name" content="Boulder Votes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{esc(title)} — Boulder Votes">
+<meta property="og:description" content="{OG_DESC}">
+<meta property="og:image" content="{OG_IMAGE}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Boulder Votes: everything on your Boulder city ballot, with sources. Election Day Tuesday, Nov. 3, 2026.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{OG_IMAGE}">
 {head_extra}</head>
 <body>
 <a class="skip" href="#content">Skip to main content</a>
