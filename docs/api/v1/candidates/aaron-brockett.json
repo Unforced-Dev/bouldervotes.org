@@ -1,0 +1,2343 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "candidate": {
+  "slug": "aaron-brockett",
+  "name": "Aaron Brockett",
+  "office": "mayor",
+  "office_label": "Mayor",
+  "ballot_position": 3,
+  "incumbent": true,
+  "matching_funds_participant": true,
+  "campaign_url": "https://brockett4mayor.org/",
+  "page_url": "https://bouldervotes.org/people/aaron-brockett.html",
+  "print_url": "https://bouldervotes.org/print/aaron-brockett.html",
+  "api_url": "https://bouldervotes.org/api/v1/candidates/aaron-brockett.json",
+  "bio": {
+   "summary": "Brockett is seeking another term as Boulder mayor, a role he has held since 2021. His campaign points to housing, homelessness, climate resilience and city finances.",
+   "occupation": "Mayor",
+   "public_office": "Boulder mayor since 2021; city councilmember since 2015; previously Boulder Planning Board",
+   "in_boulder": "moved to Boulder in 2003",
+   "note": null,
+   "source_urls": [
+    "https://boulderreportinglab.org/govpack_profiles/aaron-brockett-2/"
+   ]
+  },
+  "past_city_races": [
+   {
+    "year": 2019,
+    "office": "council",
+    "result": "elected"
+   },
+   {
+    "year": 2023,
+    "office": "mayor",
+    "result": "elected"
+   }
+  ],
+  "statements": [
+   {
+    "id": "S-aaron-brockett-9",
+    "topic": "climate",
+    "text": "Brockett also said a priority for his next term, if re-elected, would be continuing the city’s wildfire hardening policies.",
+    "speaker": "Daily Camera reporter (reporting Aaron Brockett)",
+    "candidate_own_words": false,
+    "verbatim": true,
+    "publisher": "Daily Camera",
+    "kind": "article",
+    "published_on": "2026-08-19",
+    "source_url": "https://dailycamera.com/2026/08/19/aaron-brockett-boulder-mayor-reelection",
+    "source_title": "Candidate profile: Aaron Brockett"
+   },
+   {
+    "id": "S-aaron-brockett-3",
+    "topic": "downtown",
+    "text": "I voted in favor of the DDA because I think having a new entity that combines CAGID and UHGID with TIF financing could catalyze new vibrancy, activity and tax revenues from downtown.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": null,
+    "source_url": "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
+    "source_title": "Where do Boulder’s 2026 Mayorial Candidates Stand?"
+   },
+   {
+    "id": "S-aaron-brockett-5",
+    "topic": "downtown",
+    "text": "I do think that Boulder needs a significant new strategy to strengthen Downtown and University Hill.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Aaron Brockett"
+   },
+   {
+    "id": "S-aaron-brockett-4",
+    "topic": "governance",
+    "text": "The top priority of city government should be the safety and health of it’s residents.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": null,
+    "source_url": "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
+    "source_title": "Where do Boulder’s 2026 Mayorial Candidates Stand?"
+   },
+   {
+    "id": "S-aaron-brockett-7",
+    "topic": "governance",
+    "text": "I have made community engagement a cornerstone of my time on city council and as mayor, and I will continue that approach if reelected.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Aaron Brockett"
+   },
+   {
+    "id": "S-aaron-brockett-10",
+    "topic": "homelessness",
+    "text": "Build homelessness solutions to get people off the streets and into housing",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Campaign website: Aaron Brockett",
+    "kind": "campaign_site",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/",
+    "source_title": "Brockett for Mayor — campaign site"
+   },
+   {
+    "id": "S-aaron-brockett-0",
+    "topic": "housing",
+    "text": "Brockett is generally aligned with the council’s progressive majority, particularly on housing. During his tenure, the council loosened restrictions on accessory dwelling units, made it easier to build duplexes and triplexes, allowed more housing near downtown and along transit corridors, eliminated minimum parking requirements and repealed occupancy limits. Brockett wants to continue expanding “missing middle” housing and creating more neighborhoods where residents can meet their daily needs without driving.",
+    "speaker": "Boulder Reporting Lab reporter",
+    "candidate_own_words": false,
+    "verbatim": true,
+    "publisher": "Boulder Reporting Lab",
+    "kind": "article",
+    "published_on": "2026-08-28",
+    "source_url": "https://boulderreportinglab.org/govpack_profiles/aaron-brockett-2/",
+    "source_title": "Profile source: Aaron Brockett"
+   },
+   {
+    "id": "S-aaron-brockett-1",
+    "topic": "housing",
+    "text": "Yes. I was one of the people who spearheaded this initiative along with Lauren Folkerts.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": null,
+    "source_url": "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
+    "source_title": "Where do Boulder’s 2026 Mayorial Candidates Stand?"
+   },
+   {
+    "id": "S-aaron-brockett-11",
+    "topic": "housing",
+    "text": "the cost of housing and then the parallel problem of homelessness, unsheltered homelessness, rise to the very top",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "KGNU",
+    "kind": "interview",
+    "published_on": "2026-07-29",
+    "source_url": "https://kgnu.org/mayor-brockett-councilmember-adams-on-the-biggest-challenges-facing-boulder-and-how-we-can-work-to-fix-them",
+    "source_title": "Mayor Brockett & Councilmember Adams on the biggest challenges facing Boulder"
+   },
+   {
+    "id": "S-aaron-brockett-8",
+    "topic": "housing",
+    "text": "Brockett said he believes the city still needs to pursue more housing, in part to make sure there are opportunities for people of “all income levels” to live in Boulder.",
+    "speaker": "Richard Valenty reporting Aaron Brockett’s interview",
+    "candidate_own_words": false,
+    "verbatim": true,
+    "publisher": "Richard Valenty",
+    "kind": "interview",
+    "published_on": "2026-09-14",
+    "source_url": "https://richardvalenty.com/2026/09/brockett-wants-to-finish-strong",
+    "source_title": "Candidate interview: Aaron Brockett"
+   },
+   {
+    "id": "S-aaron-brockett-6",
+    "topic": "public-safety",
+    "text": "Businesses deserve commercial districts that are safe and pleasant to visit.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Aaron Brockett"
+   },
+   {
+    "id": "S-aaron-brockett-2",
+    "topic": "transportation",
+    "text": "Yes. Absolutely! I’ve supported it from the beginning.",
+    "speaker": "Aaron Brockett",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": null,
+    "source_url": "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
+    "source_title": "Where do Boulder’s 2026 Mayorial Candidates Stand?"
+   }
+  ],
+  "statements_held_back": 0,
+  "forum_quotes": [
+   {
+    "id": "FC005",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+    "topic": "housing",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "my top three priorities will be increasing the availability and affordability of housing, increasing our wildfire preparation and resilience, and also streamlining our regulations and permitting to make it easier to work with the city of Boulder.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=600s",
+    "timestamp": "10:00",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC030",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "The mayor has a unique role in building consensus and setting council priorities. How would you use that leadership role to bring council, city staff, and the business community together around a clear economic strategy and hold the city accountable for measurable progress?",
+    "topic": "other",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "Start with what staff is recommending. It's not always the direction we should go. Work with the colleagues. Work with the community.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=1852s",
+    "timestamp": "30:52",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC035",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "What are your thoughts on the highest and best uses for Area 3 Planning Reserve? And what resources and tools can the City of Boulder use to help the land comprising Area 3 Planning Reserve achieve its highest and best use, particularly as it relates to bringing utilities and infrastructure to this site?",
+    "topic": "growth/development",
+    "issue": "land-use",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we could create middle-income ownership housing in ways that are unattainable within the City limits.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=2409s",
+    "timestamp": "40:09",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC077",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Opening introduction (two minutes)",
+    "topic": "housing",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we've created thousands of housing units, but more importantly, hundreds and hundreds of permanently affordable housing units.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=813s",
+    "timestamp": "13:33",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC090",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Title 9 of our city code is our land use code. Some council and community members are advocating for a complete rewrite of this title. Do you support or oppose this, and do you think now is the right time to undertake this effort?",
+    "topic": "growth/development",
+    "issue": "land-use",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "But we've gotten about as far as we can with the current Byzantine Title IX.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2613s",
+    "timestamp": "43:33",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC092",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Core Arterial Network / Iris Avenue transportation question (wording partly garbled in transcript)",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "Absolutely, I support them. I've supported since Matt Benjamin and Rachel Friend brought it forward",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3105s",
+    "timestamp": "51:45",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC097",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "A citizen group has developed a proposal for the city to hire a performance auditor, different from a financial auditor, and to fund a small department to support that auditor; this auditor would report to city council, with an audit committee in the 2027 budget. Do you support this or think it is necessary?",
+    "topic": "budget/bond 2K",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "the good news is that the city actually hired a performance auditor a few months ago,",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3868s",
+    "timestamp": "1:04:28",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: Speaker references council financial strategies committee; sequence-based."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC108",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Given the strong city manager / weak mayor structure of our city's government, how would you approach your role as mayor to set the council's overall objectives?",
+    "topic": "other",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I worked closely with all of our colleagues to shape a vision for where our community can go",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=5144s",
+    "timestamp": "1:25:44",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC115",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "What measures would you support to ensure future CCRS non-profit capital investments are transparent, guided by clear public priorities and evaluation criteria, and directed toward significant projects that create visible, lasting community value?",
+    "topic": "arts",
+    "issue": "arts",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I would like for us to, in addition, find targeted opportunity to make larger investments in specific organizations to have more of those transformational effects.",
+    "watch_url": "https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1526s",
+    "timestamp": "25:26",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=PlXLjT1gH5U",
+    "recording_title": "(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC126",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "If elected mayor, how would you use your leadership role to help ensure that adopted plans are translated into action and that major projects are delivered responsibly and within budget?",
+    "topic": "other",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "As we have a dashboard that tracks with each one of them how they're going, what percent are they complete and what steps are coming next. I'd like to see us do that with other major plans.",
+    "watch_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk&t=356s",
+    "timestamp": "5:56",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+    "recording_title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC141",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "Final one-minute statement",
+    "topic": "arts",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "In fact, in 2024 we granted $1.4 million and that's since gone up to $2 million as of 2026.",
+    "watch_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1476s",
+    "timestamp": "24:36",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: Fifth of drawn names; speaker describes joining council in 2015."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+    "recording_title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC259",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Mayoral opening statement (one minute)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I've dug deep into the policy work of the city with a particular focus on equity and sustainability.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=7797s",
+    "timestamp": "2:09:57",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC260",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Mayoral opening statement (one minute)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "if I'm reelected to a final two-year term, I pledge to continue that work",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=7836s",
+    "timestamp": "2:10:36",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC268",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What are the unique roles of the Boulder mayor that make the job different from being a city council member?",
+    "topic": "other",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "Also, convening is an important, incredibly important part of the role.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=8165s",
+    "timestamp": "2:16:05",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC274",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "(EFA) What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI?",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "the Keeping Families Housed program, where we provide money that EFA spends on rental assistance and financial counseling",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=8502s",
+    "timestamp": "2:21:42",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC275",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "(EFA) What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI?",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "When people actually pay cash in lieu for affordable housing in a new project, it allows us to reach those deeper level of affordability goals",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=8530s",
+    "timestamp": "2:22:10",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC291",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Ballot measure 2K: Boulder voters will consider authorizing up to $400 million in new debt through additional property taxes for recreation, public safety and other city facilities. Do you support this measure? Why or why not?",
+    "topic": "budget/bond 2K",
+    "issue": "bond",
+    "measure": "2K",
+    "stance": "yes",
+    "stance_about": "2K (the $400 million bond)",
+    "stance_note": null,
+    "quote": "So I do support the bond and here's why.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=9169s",
+    "timestamp": "2:32:49",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC292",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Ballot measure 2K: Boulder voters will consider authorizing up to $400 million in new debt through additional property taxes for recreation, public safety and other city facilities. Do you support this measure? Why or why not?",
+    "topic": "budget/bond 2K",
+    "issue": "bond",
+    "measure": "2K",
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "construction cost inflation is going up higher than the rate of interest that we would be paying on the bond.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=9187s",
+    "timestamp": "2:33:07",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC298",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What are your feelings about the bus-only lanes and the core arterial network (CAN)? Should Boulder continue prioritizing protected bike lanes?",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": "yes",
+    "stance_about": "the Core Arterial Network / bus-only lanes",
+    "stance_note": null,
+    "quote": "Yes, I absolutely support our bus lanes and our core arterial network.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=9500s",
+    "timestamp": "2:38:20",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC306",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What types of housing would you prioritize? How are you as mayor going to promote housing for middle-income families?",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So we should focus density along transit corridors and where there are services.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=9864s",
+    "timestamp": "2:44:24",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC307",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What types of housing would you prioritize? How are you as mayor going to promote housing for middle-income families?",
+    "topic": "growth/development",
+    "issue": "housing",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So I would look at the planning reserve north of town",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=9893s",
+    "timestamp": "2:44:53",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC312",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Ballot issue 2J, the residential vacancy excise tax (~$4,000 on residential property vacant more than half the year). Do you support this tax and will it generate enough income to pay for administering it?",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": "2J",
+    "stance": "yes",
+    "stance_about": "2J (the vacancy tax)",
+    "stance_note": null,
+    "quote": "Yes, I'm absolutely a supporter of this tax.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=10170s",
+    "timestamp": "2:49:30",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC313",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Ballot issue 2J, the residential vacancy excise tax (~$4,000 on residential property vacant more than half the year). Do you support this tax and will it generate enough income to pay for administering it?",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": "2J",
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "the $4,000 per house should be more than sufficient to cover the administrative costs",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=10182s",
+    "timestamp": "2:49:42",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC319",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "If elected, what is the single most important new initiative you would pursue during your first year as mayor? (30 seconds)",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think the time has come for us also to require existing homes to implement certain amounts of wildfire hardening.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=10450s",
+    "timestamp": "2:54:10",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC324",
+    "candidate_slug": "aaron-brockett",
+    "candidate": "Aaron Brockett",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Tell us about one city issue on which you changed your position after considering new evidence or another perspective. What changed your mind?",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So that's changed my mind on retroactivity requirements.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=10684s",
+    "timestamp": "2:58:04",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   }
+  ],
+  "endorsements": [
+   {
+    "id": "E47",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-area-labor-council",
+     "name": "Boulder Area Labor Council, AFL-CIO",
+     "page_url": "https://bouldervotes.org/orgs/boulder-area-labor-council.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": 2,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-19",
+    "source_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+    "source_title": "Boulder Area Labor Council announces endorsements for City of Boulder, RTD District O and local ballot measures (media release, Yellow Scene)"
+   },
+   {
+    "id": "E82",
+    "endorser": {
+     "type": "person",
+     "slug": "judy-amabile",
+     "name": "Judy Amabile",
+     "title_as_printed": "Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/judy-amabile.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Judy Amabile. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E224",
+    "endorser": {
+     "type": "person",
+     "slug": "emily-baer",
+     "name": "Emily Baer",
+     "title_as_printed": "Erie town councilmember",
+     "page_url": "https://bouldervotes.org/people/emily-baer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Emily Baer. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E157",
+    "endorser": {
+     "type": "person",
+     "slug": "kc-becker",
+     "name": "KC Becker",
+     "title_as_printed": "former Colorado House speaker",
+     "page_url": "https://bouldervotes.org/people/kc-becker.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists KC Becker. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E138",
+    "endorser": {
+     "type": "person",
+     "slug": "matt-benjamin",
+     "name": "Matt Benjamin",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/matt-benjamin.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Matt Benjamin. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E30",
+    "endorser": {
+     "type": "organization",
+     "slug": "better-boulder",
+     "name": "Better Boulder",
+     "page_url": "https://bouldervotes.org/orgs/better-boulder.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-14",
+    "source_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+    "source_title": "Better Boulder 2026 Endorsements"
+   },
+   {
+    "id": "E231",
+    "endorser": {
+     "type": "person",
+     "slug": "karen-bigelow",
+     "name": "Karen Bigelow",
+     "title_as_printed": "former Thornton city councilmember",
+     "page_url": "https://bouldervotes.org/people/karen-bigelow.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Karen Bigelow. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E7",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-progressives",
+     "name": "Boulder Progressives",
+     "page_url": "https://bouldervotes.org/orgs/boulder-progressives.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-08-19",
+    "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+    "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)"
+   },
+   {
+    "id": "E56",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-progressives-ucc",
+     "name": "Boulder Progressives UCC",
+     "page_url": "https://bouldervotes.org/orgs/boulder-progressives-ucc.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "filing",
+    "provenance_label": "City filing",
+    "label": "City filing: a committee registration with the city clerk names this.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+    "source_title": "City of Boulder Statement of Organization: Boulder Progressives UCC"
+   },
+   {
+    "id": "E225",
+    "endorser": {
+     "type": "person",
+     "slug": "michael-box",
+     "name": "Michael Box",
+     "title_as_printed": "Jamestown mayor",
+     "page_url": "https://bouldervotes.org/people/michael-box.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Michael Box. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E205",
+    "endorser": {
+     "type": "person",
+     "slug": "kyle-brown",
+     "name": "Kyle Brown",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/kyle-brown.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Kyle Brown. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E100",
+    "endorser": {
+     "type": "person",
+     "slug": "michael-dougherty",
+     "name": "Michael Dougherty",
+     "title_as_printed": "Boulder County district attorney",
+     "page_url": "https://bouldervotes.org/people/michael-dougherty.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Michael Dougherty. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E214",
+    "endorser": {
+     "type": "person",
+     "slug": "leslie-durgin",
+     "name": "Leslie Durgin",
+     "title_as_printed": "former Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/leslie-durgin.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Leslie Durgin. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E215",
+    "endorser": {
+     "type": "person",
+     "slug": "angelique-espinoza",
+     "name": "Angelique Espinoza",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/angelique-espinoza.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Angelique Espinoza. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E153",
+    "endorser": {
+     "type": "person",
+     "slug": "steve-fenberg",
+     "name": "Steve Fenberg",
+     "title_as_printed": "former Colorado Senate president",
+     "page_url": "https://bouldervotes.org/people/steve-fenberg.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Steve Fenberg. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E180",
+    "endorser": {
+     "type": "person",
+     "slug": "adrian-fine",
+     "name": "Adrian Fine",
+     "title_as_printed": "former Palo Alto mayor",
+     "page_url": "https://bouldervotes.org/people/adrian-fine.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Adrian Fine. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E232",
+    "endorser": {
+     "type": "person",
+     "slug": "clint-folsom",
+     "name": "Clint Folsom",
+     "title_as_printed": "former Superior mayor",
+     "page_url": "https://bouldervotes.org/people/clint-folsom.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Clint Folsom. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E211",
+    "endorser": {
+     "type": "person",
+     "slug": "mike-foote",
+     "name": "Mike Foote",
+     "title_as_printed": "former Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/mike-foote.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Mike Foote. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E148",
+    "endorser": {
+     "type": "person",
+     "slug": "rachel-friend",
+     "name": "Rachel Friend",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rachel-friend.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Rachel Friend. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E198",
+    "endorser": {
+     "type": "person",
+     "slug": "sam-fuqua",
+     "name": "Sam Fuqua",
+     "title_as_printed": "former BVSD Board of Education president; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/sam-fuqua.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Sam Fuqua. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E105",
+    "endorser": {
+     "type": "person",
+     "slug": "kathy-gebhardt",
+     "name": "Kathy Gebhardt",
+     "title_as_printed": "Colorado State Board of Education member",
+     "page_url": "https://bouldervotes.org/people/kathy-gebhardt.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Kathy Gebhardt. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E233",
+    "endorser": {
+     "type": "person",
+     "slug": "billy-giblin",
+     "name": "Billy Giblin",
+     "title_as_printed": "former Nederland mayor",
+     "page_url": "https://bouldervotes.org/people/billy-giblin.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Billy Giblin. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E132",
+    "endorser": {
+     "type": "person",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "title_as_printed": "former Boulder city councilmember; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/jill-grano.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Jill Grano. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E191",
+    "endorser": {
+     "type": "person",
+     "slug": "lynn-guissinger",
+     "name": "Lynn Guissinger",
+     "title_as_printed": "RTD board director",
+     "page_url": "https://bouldervotes.org/people/lynn-guissinger.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Lynn Guissinger. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E212",
+    "endorser": {
+     "type": "person",
+     "slug": "rollie-heath",
+     "name": "Rollie Heath",
+     "title_as_printed": "former Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/rollie-heath.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Rollie Heath. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E226",
+    "endorser": {
+     "type": "person",
+     "slug": "susie-hidalgo-fahring",
+     "name": "Susie Hidalgo-Fahring",
+     "title_as_printed": "Longmont mayor",
+     "page_url": "https://bouldervotes.org/people/susie-hidalgo-fahring.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Susie Hidalgo-Fahring. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E184",
+    "endorser": {
+     "type": "person",
+     "slug": "edie-hooton",
+     "name": "Edie Hooton",
+     "title_as_printed": "former Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/edie-hooton.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Edie Hooton. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E213",
+    "endorser": {
+     "type": "person",
+     "slug": "elise-jones",
+     "name": "Elise Jones",
+     "title_as_printed": "former Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/elise-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Elise Jones. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E216",
+    "endorser": {
+     "type": "person",
+     "slug": "zan-jones",
+     "name": "Zan Jones",
+     "title_as_printed": "former Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/zan-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Zan Jones. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E89",
+    "endorser": {
+     "type": "person",
+     "slug": "junie-joseph",
+     "name": "Junie Joseph",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/junie-joseph.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Junie Joseph. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E227",
+    "endorser": {
+     "type": "person",
+     "slug": "kris-larsen",
+     "name": "Kris Larsen",
+     "title_as_printed": "Nederland town trustee",
+     "page_url": "https://bouldervotes.org/people/kris-larsen.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Kris Larsen. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E228",
+    "endorser": {
+     "type": "person",
+     "slug": "chris-leh",
+     "name": "Chris Leh",
+     "title_as_printed": "Louisville mayor",
+     "page_url": "https://bouldervotes.org/people/chris-leh.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Chris Leh. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E206",
+    "endorser": {
+     "type": "person",
+     "slug": "janice-marchman",
+     "name": "Janice Marchman",
+     "title_as_printed": "Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/janice-marchman.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Janice Marchman. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E118",
+    "endorser": {
+     "type": "person",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/tina-marquis.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Tina Marquis. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E207",
+    "endorser": {
+     "type": "person",
+     "slug": "karen-mccormick",
+     "name": "Karen McCormick",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/karen-mccormick.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Karen McCormick. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E229",
+    "endorser": {
+     "type": "person",
+     "slug": "stephanie-miller",
+     "name": "Stephanie Miller",
+     "title_as_printed": "Superior town councilmember",
+     "page_url": "https://bouldervotes.org/people/stephanie-miller.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Stephanie Miller. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E217",
+    "endorser": {
+     "type": "person",
+     "slug": "mirabai-nagle",
+     "name": "Mirabai Nagle",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/mirabai-nagle.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Mirabai Nagle. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E77",
+    "endorser": {
+     "type": "person",
+     "slug": "joe-neguse",
+     "name": "Joe Neguse",
+     "title_as_printed": "U.S. Representative for Colorado’s 2nd District",
+     "page_url": "https://bouldervotes.org/people/joe-neguse.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Joe Neguse. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E230",
+    "endorser": {
+     "type": "person",
+     "slug": "chris-nicholson",
+     "name": "Chris Nicholson",
+     "title_as_printed": "RTD board member",
+     "page_url": "https://bouldervotes.org/people/chris-nicholson.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Chris Nicholson. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E218",
+    "endorser": {
+     "type": "person",
+     "slug": "tim-plass",
+     "name": "Tim Plass",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/tim-plass.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Tim Plass. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E208",
+    "endorser": {
+     "type": "person",
+     "slug": "kathy-plomer",
+     "name": "Kathy Plomer",
+     "title_as_printed": "Colorado State Board of Education member",
+     "page_url": "https://bouldervotes.org/people/kathy-plomer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Kathy Plomer. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E234",
+    "endorser": {
+     "type": "person",
+     "slug": "hollie-rogin",
+     "name": "Hollie Rogin",
+     "title_as_printed": "former Lyons mayor",
+     "page_url": "https://bouldervotes.org/people/hollie-rogin.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Hollie Rogin. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E209",
+    "endorser": {
+     "type": "person",
+     "slug": "manny-rutinel",
+     "name": "Manny Rutinel",
+     "title_as_printed": "Democratic congressional nominee",
+     "page_url": "https://bouldervotes.org/people/manny-rutinel.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Manny Rutinel. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E123",
+    "endorser": {
+     "type": "person",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/ryan-schuchard.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Ryan Schuchard. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E219",
+    "endorser": {
+     "type": "person",
+     "slug": "andy-schultheiss",
+     "name": "Andy Schultheiss",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/andy-schultheiss.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Andy Schultheiss. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E220",
+    "endorser": {
+     "type": "person",
+     "slug": "andrew-shoemaker",
+     "name": "Andrew Shoemaker",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/andrew-shoemaker.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Andrew Shoemaker. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E20",
+    "endorser": {
+     "type": "organization",
+     "slug": "sierra-club-indian-peaks",
+     "name": "Sierra Club Indian Peaks Group",
+     "page_url": "https://bouldervotes.org/orgs/sierra-club-indian-peaks.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-17",
+    "source_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+    "source_title": "Sierra Club Endorses Boulder Mayoral and City Council Candidates (press release, Yellow Scene)"
+   },
+   {
+    "id": "E94",
+    "endorser": {
+     "type": "person",
+     "slug": "lesley-smith",
+     "name": "Lesley Smith",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/lesley-smith.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Lesley Smith. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E146",
+    "endorser": {
+     "type": "person",
+     "slug": "nicole-speer",
+     "name": "Nicole Speer",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/nicole-speer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Nicole Speer. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E174",
+    "endorser": {
+     "type": "person",
+     "slug": "lisa-sweeney-miran",
+     "name": "Lisa Sweeney-Miran",
+     "title_as_printed": "former BVSD Board of Education vice president",
+     "page_url": "https://bouldervotes.org/people/lisa-sweeney-miran.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Lisa Sweeney-Miran. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E221",
+    "endorser": {
+     "type": "person",
+     "slug": "adam-swetlik",
+     "name": "Adam Swetlik",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/adam-swetlik.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Adam Swetlik. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E210",
+    "endorser": {
+     "type": "person",
+     "slug": "brianna-titone",
+     "name": "Brianna Titone",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/brianna-titone.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Brianna Titone. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E161",
+    "endorser": {
+     "type": "person",
+     "slug": "will-toor",
+     "name": "Will Toor",
+     "title_as_printed": "former Boulder mayor and Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/will-toor.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Will Toor. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E187",
+    "endorser": {
+     "type": "person",
+     "slug": "saul-tapia-vega",
+     "name": "Saul Tapia Vega",
+     "title_as_printed": "Lafayette mayor",
+     "page_url": "https://bouldervotes.org/people/saul-tapia-vega.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Saul Tapia Vega. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E222",
+    "endorser": {
+     "type": "person",
+     "slug": "mark-wallach",
+     "name": "Mark Wallach",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/mark-wallach.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Mark Wallach. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E127",
+    "endorser": {
+     "type": "person",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "title_as_printed": "Boulder mayor pro tem/councilmember",
+     "page_url": "https://bouldervotes.org/people/tara-winer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Tara Winer. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E223",
+    "endorser": {
+     "type": "person",
+     "slug": "bob-yates",
+     "name": "Bob Yates",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/bob-yates.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Bob Yates. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   }
+  ],
+  "finance": {
+   "committee": "Aaron Brockett for Mayor",
+   "contributions": 8975.0,
+   "expenditures": 2138.01,
+   "matching_funds_received": 8975.0,
+   "cash_on_hand": 15811.99,
+   "as_of": "2026-08-13",
+   "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=313",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "notes": null
+  },
+  "source_urls": [
+   "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
+   "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "https://boulderreportinglab.org/govpack_profiles/aaron-brockett-2/",
+   "https://brockett4mayor.org/",
+   "https://brockett4mayor.org/endorsements/",
+   "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf",
+   "https://dailycamera.com/2026/08/19/aaron-brockett-boulder-mayor-reelection",
+   "https://kgnu.org/mayor-brockett-councilmember-adams-on-the-biggest-challenges-facing-boulder-and-how-we-can-work-to-fix-them",
+   "https://richardvalenty.com/2026/09/brockett-wants-to-finish-strong",
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+   "https://www.youtube.com/watch?v=CQlalpB7N5w",
+   "https://www.youtube.com/watch?v=PlXLjT1gH5U",
+   "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures"
+  ]
+ }
+}

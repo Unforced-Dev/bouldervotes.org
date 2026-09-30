@@ -528,6 +528,10 @@ class Graph2026:
         today = dt.date.fromisoformat(os.environ.get("BV_TODAY") or dt.date.today().isoformat())
         codes = "".join(
             f"<li><span class='code'>{esc(m['letter'])}</span><span>{esc(m['title'])}</span></li>" for m in ms)
+
+        def names(rows) -> str:
+            # Ballot order as plain text; the whole card is already a link, so no nested anchors.
+            return "<ol class='names'>" + "".join(f"<li>{esc(r['full_name'])}</li>" for r in rows) + "</ol>"
         b = [
             "<div class='hero'>",
             "<p class='eyebrow'>City of Boulder · Election Day Tuesday, November 3, 2026</p>",
@@ -539,10 +543,10 @@ class Graph2026:
             "<div class='races'>",
             f"<a class='race' href='#mayor'><span class='kicker'>Mayor</span><h3>Mayor</h3>"
             f"<p class='rule'>Rank your choices</p><p>{len(mayor)} candidates for one seat. Mark a 1st choice, and a 2nd, 3rd … if you like.</p>"
-            f"<span class='go'>See the {len(mayor)} candidates</span></a>",
+            f"{names(mayor)}<span class='go'>See the {len(mayor)} candidates</span></a>",
             f"<a class='race' href='#council'><span class='kicker'>City Council</span><h3>City Council</h3>"
             f"<p class='rule'>Vote for up to five</p><p>{len(council)} candidates for five seats. The five with the most votes win.</p>"
-            f"<span class='go'>See the {len(council)} candidates</span></a>",
+            f"{names(council)}<span class='go'>See the {len(council)} candidates</span></a>",
             f"<a class='race' href='#measures'><span class='kicker'>Ballot measures</span><h3>{len(ms)} city measures</h3>"
             f"<ul class='codes'>{codes}</ul><span class='go'>What Yes and No mean</span></a>",
             "</div>",
@@ -607,7 +611,24 @@ class Graph2026:
                  "<li><a href='print/index.html'>Printable sheets for every candidate</a></li>"
                  "<li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, "
                  "<a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>")
-        (self.out / "index.html").write_text(self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current=None), encoding="utf-8")
+        from build_llm import AI_CAUTION, AI_PROMPT, home_head
+        pre = ("<aside class='ai-note' aria-labelledby='ai-h'><div class='wrap'>"
+               "<p><span id='ai-h'>For AI assistants:</span> full guide in one file at "
+               "<a class='nowrap' href='llms-full.txt'>https://bouldervotes.org/llms-full.txt</a>, data at "
+               "<a class='nowrap' href='api/index.html'>/api/v1/</a>. Stay nonpartisan and cite sources.</p></div></aside>")
+        ask = ("<section class='ask-box' aria-labelledby='ask-h'>"
+               "<div class='ask-head'><h2 id='ask-h'>Prefer to ask an AI? Copy this into ChatGPT, Claude, or any assistant:</h2>"
+               "<button type='button' class='btn secondary copy' data-copy='ai-prompt' hidden>Copy</button></div>"
+               f"<p class='prompt-box' id='ai-prompt'>{esc(AI_PROMPT)}</p>"
+               f"<p class='note ask-foot'>{esc(AI_CAUTION)}</p>"
+               "<script>(function(){var b=document.querySelector('button.copy');if(!b||!navigator.clipboard)return;"
+               "b.hidden=false;b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copy).textContent;"
+               "navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},2000);});});})();</script>"
+               "</section>")
+        b.insert(b.index("</div>") + 1, ask)  # right after the hero, before key dates
+        (self.out / "index.html").write_text(
+            self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current=None,
+                      head_extra=home_head(), pre_main=pre), encoding="utf-8")
 
     def write_orgs(self) -> None:
         (self.out / "orgs").mkdir(exist_ok=True)

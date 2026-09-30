@@ -53,7 +53,11 @@ class TestPlainLabels(unittest.TestCase):
     def test_no_snake_case_labels(self):
         bad = []
         for f in html_files():
-            for m in SNAKE_CASE_TEXT.finditer(f.read_text(encoding="utf-8")):
+            text = f.read_text(encoding="utf-8")
+            if f.relative_to(DOCS).parts[0] == "api":
+                # API docs name JSON fields on purpose, inside <code>.
+                text = re.sub(r"<code>.*?</code>", "", text)
+            for m in SNAKE_CASE_TEXT.finditer(text):
                 bad.append(f"{f.relative_to(DOCS)}: {m.group(0)}")
         self.assertEqual(bad, [])
 

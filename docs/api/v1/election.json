@@ -1,0 +1,114 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "election": {
+  "name": "City of Boulder general municipal election",
+  "date": "2026-11-03",
+  "jurisdiction": "City of Boulder, Colorado",
+  "scope_note": "Only City of Boulder races and measures. Ballots also carry county, state, school board and regional items, which this guide does not cover.",
+  "key_dates": [
+   {
+    "date": "2026-10-02",
+    "label": "Ballots mailed; 24-hour drop boxes open"
+   },
+   {
+    "date": "2026-10-19",
+    "label": "Vote Centers open for in-person voting"
+   },
+   {
+    "date": "2026-10-26",
+    "label": "Last recommended day to return a ballot by mail"
+   },
+   {
+    "date": "2026-11-03",
+    "label": "Election Day: ballots must be received by 7 p.m."
+   }
+  ],
+  "key_dates_source_url": "https://bouldercounty.gov/elections/information/",
+  "how_to_vote": [
+   "Boulder County mails ballots to registered voters starting October 2, 2026. 24-hour drop boxes open the same day.",
+   "Ballots must be received (not postmarked) by 7 p.m. on Tuesday, November 3, 2026. The county recommends mailing by October 26; after that, use a drop box or Vote Center.",
+   "Vote Centers open October 19 for in-person voting and same-day registration.",
+   "You can register and vote through Election Day. Register by October 26 if you want a ballot mailed to you.",
+   "Only registered voters who live inside Boulder city limits get these city races. Check your registration at https://www.govotecolorado.gov"
+  ],
+  "how_to_vote_source_urls": [
+   "https://bouldercounty.gov/elections/information/",
+   "https://bouldercounty.gov/elections/information/ballot-services/",
+   "https://www.govotecolorado.gov"
+  ],
+  "races": [
+   {
+    "id": "mayor",
+    "office": "Mayor",
+    "seats": 1,
+    "voting_method": "ranked_choice",
+    "how_to_mark": "Rank the candidates: a 1st choice, then a 2nd, 3rd and so on if you want. You don't have to rank everyone.",
+    "term": "Two years",
+    "candidates_in_ballot_order": [
+     "lisa-ann-jacobs",
+     "taishya-adams",
+     "aaron-brockett",
+     "jameson-goldstein",
+     "fred-smith",
+     "aquiles-la-grave"
+    ]
+   },
+   {
+    "id": "council",
+    "office": "City Council",
+    "seats": 5,
+    "voting_method": "plurality",
+    "how_to_mark": "Vote for up to five. The five candidates with the most votes win.",
+    "term": "Four years",
+    "candidates_in_ballot_order": [
+     "lee-gilbert",
+     "sam-fuqua",
+     "ryan-schuchard",
+     "jamillah-richmond",
+     "benita-duran",
+     "tara-winer",
+     "rachel-rose-isaacson",
+     "dave-martus",
+     "scott-rendleman",
+     "jill-grano",
+     "ryan-jamieson",
+     "lynn-segal",
+     "tina-marquis"
+    ]
+   }
+  ],
+  "rules_source_urls": [
+   "https://bouldercolorado.gov/guide/ranked-choice-voting-guide",
+   "https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates",
+   "https://bouldercolorado.gov/election-guidelines"
+  ],
+  "ballot_order_source_url": "https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates",
+  "measures": [
+   {
+    "letter": "2J",
+    "title": "Vacancy excise tax",
+    "page_url": "https://bouldervotes.org/measures/2026-2j.html"
+   },
+   {
+    "letter": "2K",
+    "title": "Building Boulder Together: Recreation and Safety Bond",
+    "page_url": "https://bouldervotes.org/measures/2026-2k.html"
+   },
+   {
+    "letter": "2L",
+    "title": "Collective bargaining for firefighters (new Charter §73)",
+    "page_url": "https://bouldervotes.org/measures/2026-2l.html"
+   },
+   {
+    "letter": "2M",
+    "title": "Charter debt-limit calculation (actual vs. assessed value)",
+    "page_url": "https://bouldervotes.org/measures/2026-2m.html"
+   }
+  ],
+  "measures_source_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures"
+ }
+}

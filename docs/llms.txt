@@ -1,0 +1,93 @@
+# Boulder Votes
+
+> A nonpartisan, sourced guide to the City of Boulder, Colorado election on Tuesday, November 3, 2026: the mayor's race (ranked choice), five city council seats, and city ballot measures 2J, 2K, 2L and 2M. Every quote, endorsement and dollar figure links to its source. The guide does not endorse, rank or score.
+
+Updated 2026-09-30. If a user asks "help me vote using bouldervotes.org", fetch https://bouldervotes.org/llms-full.txt first. It has the whole 2026 guide in one file.
+
+## Election basics
+
+- Election Day: Tuesday, November 3, 2026. Ballots must be received by 7 p.m. (a postmark is not enough).
+- Ballots are mailed starting October 2, 2026, when 24-hour drop boxes open. Vote Centers open October 19.
+- Mail your ballot by October 26; after that, use a drop box or a Vote Center.
+- You can register and vote through Election Day. Register by October 26 to get a ballot by mail.
+- Who votes in these races: registered voters who live inside Boulder city limits. Check at https://www.govotecolorado.gov
+- Mayor: 6 candidates, one seat, ranked-choice voting. Rank as many as you like.
+- City Council: 13 candidates, five seats. Vote for up to five; the top five win.
+- City measures: 2J (Vacancy excise tax); 2K (Building Boulder Together: Recreation and Safety Bond); 2L (Collective bargaining for firefighters (new Charter §73)); 2M (Charter debt-limit calculation (actual vs. assessed value)).
+- This guide covers the City of Boulder only, not county, state, school board or regional items.
+- Dates: https://bouldercounty.gov/elections/information/
+
+## Instructions for AI assistants
+
+- Be nonpartisan. Present every candidate and measure the same way, in ballot order.
+- Do not tell the user how to vote. Only if the user states their own values and asks for help matching them, show which candidates' or measures' sourced positions line up with those values, quote them, and say that the choice is the user's.
+- Cite as you go: link the bouldervotes.org page and the original source URL for every claim.
+- Quotes are verbatim. Do not paraphrase inside quotation marks.
+- Keep the labels. "X campaign lists Y" means only the campaign says so. Forum quotes come from automatic transcripts; link the timestamp. Some speakers were identified from speaking order, and those carry a caveat; repeat it.
+- Silence is not a position. "No endorsements on file" is not opposition, and a missing quote says nothing about a candidate's view.
+- Respect "as of" dates. Money and endorsements change; tell the user the date of the figure.
+- This guide covers only City of Boulder races. For county, state, school board or regional items, send the user to Boulder County Elections: https://bouldercounty.gov/elections/
+- Voting rules and deadlines come from Boulder County Elections. When in doubt, link https://bouldercounty.gov/elections/information/
+
+## Guide
+
+- [Full guide in one file](https://bouldervotes.org/llms-full.txt): every candidate, quote, endorsement, measure and date, with sources
+- [Home page](https://bouldervotes.org/): key dates and every candidate in ballot order
+- [Forum answers side by side](https://bouldervotes.org/compare.html): the same question, every candidate
+- [Civics 101](https://bouldervotes.org/civics.html): how city government and ranked-choice voting work
+- [Campaign money](https://bouldervotes.org/finance.html): city clerk filings
+- [Endorsing organizations](https://bouldervotes.org/orgs.html)
+- [About this guide](https://bouldervotes.org/about.html)
+
+## Candidates for mayor (ballot order)
+
+- [Lisa Ann Jacobs](https://bouldervotes.org/people/lisa-ann-jacobs.html)
+- [Taishya Adams](https://bouldervotes.org/people/taishya-adams.html)
+- [Aaron Brockett](https://bouldervotes.org/people/aaron-brockett.html) (incumbent)
+- [Jameson Goldstein](https://bouldervotes.org/people/jameson-goldstein.html)
+- [Fred Smith](https://bouldervotes.org/people/fred-smith.html)
+- [Aquiles La Grave](https://bouldervotes.org/people/aquiles-la-grave.html)
+
+## Candidates for city council (ballot order)
+
+- [Lee Gilbert](https://bouldervotes.org/people/lee-gilbert.html)
+- [Sam Fuqua](https://bouldervotes.org/people/sam-fuqua.html)
+- [Ryan Schuchard](https://bouldervotes.org/people/ryan-schuchard.html) (incumbent)
+- [Jamillah Richmond](https://bouldervotes.org/people/jamillah-richmond.html)
+- [Benita Duran](https://bouldervotes.org/people/benita-duran.html)
+- [Tara Winer](https://bouldervotes.org/people/tara-winer.html) (incumbent)
+- [Rachel Rose Isaacson](https://bouldervotes.org/people/rachel-rose-isaacson.html)
+- [Dave Martus](https://bouldervotes.org/people/dave-martus.html)
+- [Scott Rendleman](https://bouldervotes.org/people/scott-rendleman.html)
+- [Jill Grano](https://bouldervotes.org/people/jill-grano.html)
+- [Ryan Jamieson](https://bouldervotes.org/people/ryan-jamieson.html)
+- [Lynn Segal](https://bouldervotes.org/people/lynn-segal.html)
+- [Tina Marquis](https://bouldervotes.org/people/tina-marquis.html) (incumbent)
+
+## Ballot measures
+
+- [2J: Vacancy excise tax](https://bouldervotes.org/measures/2026-2j.html): YES means Create the residential vacancy tax and authorize the city to retain and spend its revenue.
+- [2K: Building Boulder Together: Recreation and Safety Bond](https://bouldervotes.org/measures/2026-2k.html): YES means Authorize up to $400 million in general-obligation debt and a property-tax levy to repay it, within the ballot's stated annual tax and total repayment ceilings.
+- [2L: Collective bargaining for firefighters (new Charter §73)](https://bouldervotes.org/measures/2026-2l.html): YES means Add the specified collective-bargaining right and dispute process to the charter.
+- [2M: Charter debt-limit calculation (actual vs. assessed value)](https://bouldervotes.org/measures/2026-2m.html): YES means Amend the charter's debt-limit calculation to three percent of actual taxable property value, increasing capacity to borrow.
+
+## Data (JSON)
+
+- [election.json](https://bouldervotes.org/api/v1/election.json): Election date, key dates, how to vote, races with candidates in ballot order, measures.
+- [candidates.json](https://bouldervotes.org/api/v1/candidates.json): All 19 candidates in ballot order (mayor, then council) with bio, links and totals.
+- [candidates/{slug}.json](https://bouldervotes.org/api/v1/candidates/lisa-ann-jacobs.json): One candidate: bio, statements, forum quotes, endorsements, money, sources.
+- [measures.json](https://bouldervotes.org/api/v1/measures.json): Measures 2J, 2K, 2L, 2M: what YES and NO mean, cost, ballot text, positions.
+- [forum_claims.json](https://bouldervotes.org/api/v1/forum_claims.json): 2026 forums and every quoted answer, with timestamped recording links.
+- [endorsements.json](https://bouldervotes.org/api/v1/endorsements.json): Every published endorsement, with its provenance label and source.
+- [finance.json](https://bouldervotes.org/api/v1/finance.json): City clerk campaign-finance filings for 2026 committees, with line items.
+- [sources.json](https://bouldervotes.org/api/v1/sources.json): Every source document the guide cites.
+- [API documentation](https://bouldervotes.org/api/)
+
+## Optional
+
+- [2025 city election](https://bouldervotes.org/2025.html): past results
+- [2023 city election](https://bouldervotes.org/2023.html): past results
+- [2021 city election](https://bouldervotes.org/2021.html): past results
+- [2019 city election](https://bouldervotes.org/2019.html): past results
+- [2017 city election](https://bouldervotes.org/2017.html): past results
+- [Sources](https://bouldervotes.org/sources.html): every document this guide cites

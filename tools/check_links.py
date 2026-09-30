@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
-"""Report broken local links (href/src) under docs/. Exit 1 if any.
+"""Report broken local links under docs/. Exit 1 if any.
+
+Checks href/src in every HTML page, and every bouldervotes.org URL in
+llms.txt, llms-full.txt and the api/v1 JSON files (they must exist in docs/).
 
     python3 tools/check_links.py
 """
 from __future__ import annotations
 
+import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
+SITE = "https://bouldervotes.org"
 
 
 class Links(HTMLParser):
@@ -33,6 +38,16 @@ def parse(path: Path) -> Links:
     return p
 
 
+def resolve(docs: Path, base: Path, path: str) -> Path:
+    if path.startswith("/"):  # site-root absolute, e.g. /llms-full.txt
+        target = (docs / unquote(path.lstrip("/"))).resolve()
+    else:
+        target = (base.parent / unquote(path)).resolve()
+    if target.is_dir():
+        target = target / "index.html"
+    return target
+
+
 def broken_links(docs: Path = DOCS) -> list[tuple[str, str]]:
     pages = {f: parse(f) for f in docs.rglob("*.html")}
     bad = []
@@ -41,9 +56,7 @@ def broken_links(docs: Path = DOCS) -> list[tuple[str, str]]:
             u = urlparse(href)
             if u.scheme or href.startswith("//") or href.startswith("mailto:"):
                 continue
-            target = f if not u.path else (f.parent / unquote(u.path)).resolve()
-            if target.is_dir():
-                target = target / "index.html"
+            target = f if not u.path else resolve(docs, f, u.path)
             if not target.exists():
                 bad.append((str(f.relative_to(docs)), href))
                 continue
@@ -51,6 +64,14 @@ def broken_links(docs: Path = DOCS) -> list[tuple[str, str]]:
                 tp = pages.get(target) or parse(target)
                 if u.fragment not in tp.ids:
                     bad.append((str(f.relative_to(docs)), href))
+    machine = [docs / "llms.txt", docs / "llms-full.txt", *sorted((docs / "api" / "v1").rglob("*.json"))]
+    for f in machine:
+        if not f.exists():
+            continue
+        for url in set(re.findall(re.escape(SITE) + r"(?:/[^\s)\"'<>]*)?", f.read_text(encoding="utf-8"))):
+            path = urlparse(url.rstrip(".,;")).path or "/"
+            if not resolve(docs, docs / "index.html", path).exists():
+                bad.append((str(f.relative_to(docs)), url))
     return bad
 
 
