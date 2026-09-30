@@ -1,0 +1,216 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "measures": [
+  {
+   "letter": "2J",
+   "slug": "2026-2j",
+   "title": "Vacancy excise tax",
+   "kind": "tax",
+   "page_url": "https://bouldervotes.org/measures/2026-2j.html",
+   "api_url": "https://bouldervotes.org/api/v1/measures.json",
+   "plain_summary": "This would tax homes occupied for 183 days or fewer in a year, starting at $4,000 per vacant home. The tax could rise with inflation to no more than $7,000; money would support general city services rather than a dedicated housing fund. The ballot's $6 million figure is an estimate for 2028, not a guaranteed collection amount.",
+   "yes_means": "Create the residential vacancy tax and authorize the city to retain and spend its revenue.",
+   "no_means": "Do not create this proposed residential vacancy tax.",
+   "fiscal": {
+    "text": "Ballot language estimates $6 million in 2028, the first full collection year. Initial rate is $4,000 per qualifying vacant home, indexed to inflation but capped at $7,000; actual collections depend on how many homes qualify and whether owners change how they use them. The $6 million figure is a ballot revenue estimate, not a guaranteed collection amount.",
+    "source_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures"
+   },
+   "how_it_got_on_ballot": {
+    "text": "Referred August 6, 2026, by a 7–1 council vote; Nicole Speer voted no.",
+    "source_url": "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/"
+   },
+   "official_text_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+   "ballot_language": "Shall the City of Boulder taxes be increased $6,000,000 annually (which amount represents estimated revenues in 2028, the first full fiscal year of collection), and by such amounts raised annually thereafter, by imposing a $4,000 tax on vacant homes that are occupied for 183 days or less per year, with such amount never falling below $4,000 but increasing annually in accordance with the Denver-Aurora-Lakewood consumer price index up to, but never exceeding $7,000, with the revenue from such tax to be used for the purpose of supporting City services, including: police and fire protection; parks and recreation; transportation and maintenance; and other general services important to the quality of life in the City; and shall the revenues from such taxes and any related earnings be collected, retained, and spent as a voter-approved revenue change without limitation and an exception to the revenue and spending limits of Article X, Section 20 of the Colorado Constitution?",
+   "unknowns": [
+    "No verified, named opposition organization for 2J or 2L was found as of September 24; an empty opponents list does not imply unanimous support."
+   ],
+   "reporter_summaries": [],
+   "positions": [
+    "E38",
+    "E235",
+    "E14",
+    "U1",
+    "E55"
+   ],
+   "forum_quotes": [
+    "FC231",
+    "FC232",
+    "FC233",
+    "FC234",
+    "FC235",
+    "FC236",
+    "FC237",
+    "FC238",
+    "FC239",
+    "FC240",
+    "FC241",
+    "FC242",
+    "FC243",
+    "FC310",
+    "FC311",
+    "FC312",
+    "FC313",
+    "FC314",
+    "FC315",
+    "FC316",
+    "FC317"
+   ],
+   "source_urls": [
+    "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+    "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/"
+   ]
+  },
+  {
+   "letter": "2K",
+   "slug": "2026-2k",
+   "title": "Building Boulder Together: Recreation and Safety Bond",
+   "kind": "bond",
+   "page_url": "https://bouldervotes.org/measures/2026-2k.html",
+   "api_url": "https://bouldervotes.org/api/v1/measures.json",
+   "plain_summary": "This would authorize up to $400 million in city borrowing, repaid with additional property taxes, for recreation and public-safety buildings and other capital projects. The ballot lists example projects, including both recreation centers, fire stations, a police/911 building, the Penfield Tate II building and the Municipal Service Center; exact allocations are not fixed in the ballot question. The maximum repayment with financing costs is $650 million. The city's project guide identifies intended projects and estimated costs, not a binding project-by-project appropriation.",
+   "yes_means": "Authorize up to $400 million in general-obligation debt and a property-tax levy to repay it, within the ballot's stated annual tax and total repayment ceilings.",
+   "no_means": "Do not authorize this bond and its associated property-tax increase; existing building needs would still have to be addressed through other choices or existing funds.",
+   "fiscal": {
+    "text": "Debt cap $400 million, maximum total repayment $650 million, and annual tax increase up to $32.5 million. The city estimates that, if it borrowed the full $400 million, a $1 million residential property would pay about $400 more each year for roughly 20 years; borrowing less or in stages changes the tax impact. The listed project estimates total more than $400 million, so not every estimate is guaranteed to be fully covered by this bond.",
+    "source_url": "https://bouldercolorado.gov/guide/recreation-and-safety-bond"
+   },
+   "how_it_got_on_ballot": {
+    "text": "Council unanimously referred the bond at its August 6 meeting, then scheduled final ballot wording with an explicit lap pool for August 20; the current city ballot guide carries that amended language. The precise final-reading roll call has not been independently confirmed here.",
+    "source_url": "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/"
+   },
+   "official_text_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+   "ballot_language": "Shall City of Boulder debt be increased up to $400,000,000, with a maximum repayment cost up to $650,000,000, and shall city taxes be increased up to $32,500,000 annually for the purpose of financing the construction, renovation, or replacement of community recreation, safety infrastructure, and other capital projects, such as:\n(I) the South Boulder Recreation Center, including a lap pool;\n(II) the North Boulder Recreation Center, including aquatics amenities and improvements needed to co-locate West Age Well Senior Center;\n(III) fire stations (to sustain emergency and wildfire response capabilities);\n(IV) a new Public Safety Building for police and 911 services;\n(V) Penfield Tate II Municipal Building; and\n(VI) the Municipal Service Center (to support infrastructure services, such as snow removal, utility maintenance, and city street operations);\nIn order to support recreation, safety, and critical infrastructure needs for community members of all ages; \nThrough the issuance and payment of general obligation debt, with such debt containing such terms, not inconsistent herewith, as the City Council may determine; and in connection therewith, \nShall ad valorem property taxes be levied without limitation as to the rate, but not more than the amounts listed above, to generate an amount sufficient in each year to pay the principal of, premium, if any, and interest on such debt or any refunding debt (or to create a reserve for such payment); and \nShall the proceeds of such debt and reserves and the revenues from such taxes and any investment income earned from such proceeds and revenues be collected and spent without limitation or condition as a voter-approved revenue change and an exception to the limits that would otherwise apply under article x, section 20 of the Colorado constitution or any other law?",
+   "unknowns": [
+    "Final August 20 roll-call vote for 2K not independently confirmed from minutes; only the August 6 unanimous referral and final text are confirmed here."
+   ],
+   "reporter_summaries": [
+    {
+     "reporter": "Boulder Reporting Lab",
+     "text": "All five incumbent candidates support the measure, citing more than $400 million in deferred maintenance; Sam Fuqua and Jamillah Richmond also support it.",
+     "reported_on": "2026-08-30",
+     "source_url": "https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/",
+     "note": "A reporter's summary of the field, not each candidate's own answer."
+    },
+    {
+     "reporter": "Boulder Reporting Lab",
+     "text": "Many challengers oppose the measure, arguing voters have not received enough information about how the money would be spent.",
+     "reported_on": "2026-08-30",
+     "source_url": "https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/",
+     "note": "A reporter's summary of the field, not each candidate's own answer."
+    }
+   ],
+   "positions": [
+    "M1",
+    "E26",
+    "E15",
+    "E54",
+    "U2"
+   ],
+   "forum_quotes": [
+    "FC047",
+    "FC048",
+    "FC049",
+    "FC190",
+    "FC191",
+    "FC192",
+    "FC193",
+    "FC194",
+    "FC195",
+    "FC196",
+    "FC197",
+    "FC198",
+    "FC199",
+    "FC200",
+    "FC201",
+    "FC202",
+    "FC283",
+    "FC284",
+    "FC285",
+    "FC286",
+    "FC287",
+    "FC288",
+    "FC289",
+    "FC290",
+    "FC291",
+    "FC292"
+   ],
+   "source_urls": [
+    "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+    "https://bouldercolorado.gov/guide/recreation-and-safety-bond",
+    "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/"
+   ]
+  },
+  {
+   "letter": "2L",
+   "slug": "2026-2l",
+   "title": "Collective bargaining for firefighters (new Charter §73)",
+   "kind": "charter",
+   "page_url": "https://bouldervotes.org/measures/2026-2l.html",
+   "api_url": "https://bouldervotes.org/api/v1/measures.json",
+   "plain_summary": "This would put full-time firefighters' collective-bargaining rights into the city charter. Bargaining already exists under a city contract and ordinance; the measure would make the right a charter provision and establish a process for unresolved disputes, potentially ending in a city vote. The city retains certain management rights defined in the proposed amendment.",
+   "yes_means": "Add the specified collective-bargaining right and dispute process to the charter.",
+   "no_means": "Do not add this charter protection; existing contract and ordinance arrangements are not themselves repealed by a no vote.",
+   "fiscal": {
+    "text": "The published ballot question has no specific tax, debt, or dollar amount. Future negotiated labor costs are not quantified in the ballot language; an unresolved impasse could lead to an election under the proposed process.",
+    "source_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures"
+   },
+   "how_it_got_on_ballot": {
+    "text": "Unanimously referred by City Council on August 6, 2026.",
+    "source_url": "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/"
+   },
+   "official_text_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+   "ballot_language": "Shall the city amend its charter by the addition of a new Sec. 73, “Collective Bargaining for Firefighters,” as described in Ordinance 8761 which provides a charter guaranteed right for full-time fire department employees to bargain collectively over matters related to safety, wages, benefits, and all other terms and conditions employment, except those certain terms that are reserved to rights of management as defined in the proposed charter amendment, with impasse to be resolved through non-binding factfinding followed, if necessary, by a vote of the qualified electors of the City?",
+   "unknowns": [
+    "No verified, named opposition organization for 2J or 2L was found as of September 24; an empty opponents list does not imply unanimous support."
+   ],
+   "reporter_summaries": [],
+   "positions": [
+    "E53",
+    "E16"
+   ],
+   "forum_quotes": [],
+   "source_urls": [
+    "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+    "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/"
+   ]
+  },
+  {
+   "letter": "2M",
+   "slug": "2026-2m",
+   "title": "Charter debt-limit calculation (actual vs. assessed value)",
+   "kind": "charter",
+   "page_url": "https://bouldervotes.org/measures/2026-2m.html",
+   "api_url": "https://bouldervotes.org/api/v1/measures.json",
+   "plain_summary": "This would calculate the city's charter debt limit using actual property value instead of assessed value while retaining the three-percent rate. Because actual value is larger, it would increase the city's legal borrowing capacity. It is a companion question to the $400 million bond, but passing 2M alone would not issue that bond or directly impose the bond's property tax.",
+   "yes_means": "Amend the charter's debt-limit calculation to three percent of actual taxable property value, increasing capacity to borrow.",
+   "no_means": "Keep the current debt-limit calculation based on assessed property value; the proposed bond may not be issuable within the existing limit.",
+   "fiscal": {
+    "text": "No direct tax increase or new bond is authorized by this question alone. The city's legal debt ceiling would increase by switching the base from assessed to actual value; the resulting dollar limit depends on taxable property value. A contemporaneous advocacy presentation estimated a change from about $152.7 million to $1.55 billion; treat these as estimates, not official ballot language.",
+    "source_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures"
+   },
+   "how_it_got_on_ballot": {
+    "text": "City Council approved referral August 6, 2026; the available city summary and local reporting do not specify a roll-call tally for this item.",
+    "source_url": "https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures"
+   },
+   "official_text_url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+   "ballot_language": "Shall Section 97 of the Boulder Home Rule Charter be amended pursuant to Ordinance 8762 to modify the City’s debt limitation to be not more than three percent of the actual value of the taxable property within the City?",
+   "unknowns": [
+    "No registered ballot-measure committee for 2M was visible in the city filings as of September 24."
+   ],
+   "reporter_summaries": [],
+   "positions": [
+    "E27",
+    "E17"
+   ],
+   "forum_quotes": [],
+   "source_urls": [
+    "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+    "https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures"
+   ]
+  }
+ ]
+}

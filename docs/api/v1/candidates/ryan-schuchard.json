@@ -1,0 +1,1287 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "candidate": {
+  "slug": "ryan-schuchard",
+  "name": "Ryan Schuchard",
+  "office": "council",
+  "office_label": "City Council",
+  "ballot_position": 3,
+  "incumbent": true,
+  "matching_funds_participant": false,
+  "campaign_url": "https://www.ryanwithboulder.com/",
+  "page_url": "https://bouldervotes.org/people/ryan-schuchard.html",
+  "print_url": "https://bouldervotes.org/print/ryan-schuchard.html",
+  "api_url": "https://bouldervotes.org/api/v1/candidates/ryan-schuchard.json",
+  "bio": {
+   "summary": "Schuchard is a sitting Boulder councilmember seeking another term. He focuses on living costs, wildfire and climate resilience, and the effectiveness of city government.",
+   "occupation": "Climate solutions consultant",
+   "public_office": "Boulder city councilmember, elected 2023",
+   "in_boulder": "moved to Boulder in 2019",
+   "note": null,
+   "source_urls": [
+    "https://boulderreportinglab.org/govpack_profiles/ryan-schuchard-2/"
+   ]
+  },
+  "past_city_races": [
+   {
+    "year": 2023,
+    "office": "council",
+    "result": "elected"
+   }
+  ],
+  "statements": [
+   {
+    "id": "S-ryan-schuchard-7",
+    "topic": "climate",
+    "text": "Ramp up systems to protect Boulder from the rising danger of large-scale wildfire, strengthen flood mitigation, and prepare our energy, agricultural, and transportation systems to withstand extreme weather.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Campaign website: Ryan Schuchard",
+    "kind": "campaign_site",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/",
+    "source_title": "Campaign priorities: Ryan Schuchard"
+   },
+   {
+    "id": "S-ryan-schuchard-3",
+    "topic": "downtown",
+    "text": "Need: Boulder's downtown challenges reflect a nationwide pattern of chronic vacancies and low investment, aging buildings and infrastructure draining city resources, and high costs of living, on top of lacking healthcare and childcare that squeeze residents and business owners alike.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Ryan Schuchard"
+   },
+   {
+    "id": "S-ryan-schuchard-2",
+    "topic": "governance",
+    "text": "Actual priorities, where real bandwidth goes right now: managing cash flow, preparing for Sundance, and staying responsive to the wide range of requests we hear from residents, individuals and organized advocates alike.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-ryan-schuchard-5",
+    "topic": "governance",
+    "text": "My engagement: I hold open office hours downtown every Thursday morning at the Main Library cafe, no appointment needed.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Ryan Schuchard"
+   },
+   {
+    "id": "S-ryan-schuchard-0",
+    "topic": "housing",
+    "text": "Yes. I championed making it a workplan item, then voted to pass the final ordinance.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-ryan-schuchard-4",
+    "topic": "public-safety",
+    "text": "Expectations: Businesses can reasonably expect the City to do three things.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Ryan Schuchard"
+   },
+   {
+    "id": "S-ryan-schuchard-1",
+    "topic": "transportation",
+    "text": "Yes. I helped architect CAN’s original design on the Transportation Advisory Board and I will lead and back it until it is fully built.",
+    "speaker": "Ryan Schuchard",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   }
+  ],
+  "statements_held_back": 1,
+  "forum_quotes": [
+   {
+    "id": "FC010",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "One, to lower the cost of living for everyone. Number two, to adapt our community to a world that it wasn't built for. Three, to make our local government more predictable and effective.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=889s",
+    "timestamp": "14:49",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC011",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+    "topic": "housing",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "We're getting infill housing combined with transportation strategies that allow people to structurally get around more efficiently.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=907s",
+    "timestamp": "15:07",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC036",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "What are your thoughts on the highest and best uses for Area 3 Planning Reserve? And what resources and tools can the City of Boulder use to help the land comprising Area 3 Planning Reserve achieve its highest and best use, particularly as it relates to bringing utilities and infrastructure to this site?",
+    "topic": "growth/development",
+    "issue": "land-use",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we should make sure we're looking within the city limits first and having a good financial analysis to make that investment here first if we can.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=2503s",
+    "timestamp": "41:43",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC054",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "Do you support continuing to prioritize alternatives to driving, or do you think the city should shift more investment back towards roads and automobile capacity?",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "these deadly crashes are not generally accidents. They're designed.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=4888s",
+    "timestamp": "1:21:28",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC076",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Opening introduction (two minutes)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I focus on helping to cut the cost of living, adapt our community to a world it wasn't built for, and make our government more predictable and effective.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=691s",
+    "timestamp": "11:31",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC089",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Title 9 of our city code is our land use code. Some council and community members are advocating for a complete rewrite of this title. Do you support or oppose this, and do you think now is the right time to undertake this effort?",
+    "topic": "growth/development",
+    "issue": "land-use",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "The first answer to this is yes, we do need to be careful. There are some people that have a principled view that this needs to be done cautiously,",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2452s",
+    "timestamp": "40:52",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: No name cue; speaker describes running in 2023 and current council action."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC102",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Wildfire question: mandatory home-hardening/defensible-space compliance and how to fund it (wording partly garbled in transcript)",
+    "topic": "climate",
+    "issue": "wildfire",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "We need to do it through regulation.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4578s",
+    "timestamp": "1:16:18",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC119",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "What would you do as a council member to make Boulder's budget, debt commitments, use of dedicated taxes, and major capital priorities more transparent and understandable to the public?",
+    "topic": "budget/bond 2K",
+    "issue": "budget",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we've got to strengthen our balance sheet. We need more predictable and flexible sources of funding.",
+    "watch_url": "https://www.youtube.com/watch?v=Syj4_V5cQOk&t=233s",
+    "timestamp": "3:53",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=Syj4_V5cQOk",
+    "recording_title": "(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC150",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Opening statement (one minute)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "First, to cut the cost of living so that everybody can afford to live here.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=643s",
+    "timestamp": "10:43",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC163",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "If elected, name your top three priorities, and do you believe the city is currently moving in the right direction on those priorities?",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I start with wildfire and getting really focused on a plan to give us a five to ten year adoption curve",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=1401s",
+    "timestamp": "23:21",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC164",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "If elected, name your top three priorities, and do you believe the city is currently moving in the right direction on those priorities?",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "being very careful to protect the climate budget and the climate programming that we have",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=1427s",
+    "timestamp": "23:47",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC177",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI? (submitted by co-sponsor EFAA)",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "One thing I'd like to see us do in 27 is for the council and BVST to partner on an evidence-based approach to understanding even more from families.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=2175s",
+    "timestamp": "36:15",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Transcript note: 'BVST' = BVSD."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC201",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Boulder voters are being asked to authorize $400 million in new debt through additional property taxes for recreation, public safety and other city facilities as part of ballot issue 2K. Do you support this measure? Why or why not?",
+    "topic": "budget/bond 2K",
+    "issue": "bond",
+    "measure": "2K",
+    "stance": null,
+    "stance_about": null,
+    "stance_note": "Gives reasons; no yes/no in this quote.",
+    "quote": "One, we're going to have service cuts if we don't proceed with the funding",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=3593s",
+    "timestamp": "59:53",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC202",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Boulder voters are being asked to authorize $400 million in new debt through additional property taxes for recreation, public safety and other city facilities as part of ballot issue 2K. Do you support this measure? Why or why not?",
+    "topic": "budget/bond 2K",
+    "issue": "bond",
+    "measure": "2K",
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "Second, this sets a cap. We are already talking about $100 million off of the $400 million.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=3604s",
+    "timestamp": "1:00:04",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC216",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What are your feelings about the bus-only lanes and the core arterial network (CAN)? Should Boulder continue prioritizing protected bike lanes?",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "the combination of your housing and transportation costs being less than 45% of your total income.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=4217s",
+    "timestamp": "1:10:17",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC228",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Do you agree or disagree that our city council is adequately representative of the social, political and economic interests of Boulder? Would you support a study session on proportional representation?",
+    "topic": "other",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "But I don't know about proportional representation.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=4908s",
+    "timestamp": "1:21:48",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC240",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Ballot issue 2J, the residential vacancy excise tax, would be a tax of approximately $4,000 on residential property vacant for more than half the year. Do you support this tax and will it generate enough income to pay for administering this complex program? (30 seconds)",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": "2J",
+    "stance": "yes",
+    "stance_about": "2J (the vacancy tax)",
+    "stance_note": null,
+    "quote": "I'm also a yes.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=5336s",
+    "timestamp": "1:28:56",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC251",
+    "candidate_slug": "ryan-schuchard",
+    "candidate": "Ryan Schuchard",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Tell us about one city issue on which you changed your position after considering new evidence or another perspective. What changed your mind?",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "We need a council level task force or a committee that is going to get our arms around how to practically minimize the occurrences",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=5803s",
+    "timestamp": "1:36:43",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Transcript note: On grid power outages / Xcel."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   }
+  ],
+  "endorsements": [
+   {
+    "id": "E85",
+    "endorser": {
+     "type": "person",
+     "slug": "judy-amabile",
+     "name": "Judy Amabile",
+     "title_as_printed": "Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/judy-amabile.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Judy Amabile. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E140",
+    "endorser": {
+     "type": "person",
+     "slug": "matt-benjamin",
+     "name": "Matt Benjamin",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/matt-benjamin.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Matt Benjamin. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E36",
+    "endorser": {
+     "type": "organization",
+     "slug": "better-boulder",
+     "name": "Better Boulder",
+     "page_url": "https://bouldervotes.org/orgs/better-boulder.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-14",
+    "source_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+    "source_title": "Better Boulder 2026 Endorsements"
+   },
+   {
+    "id": "E50",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-area-labor-council",
+     "name": "Boulder Area Labor Council, AFL-CIO",
+     "page_url": "https://bouldervotes.org/orgs/boulder-area-labor-council.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-19",
+    "source_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+    "source_title": "Boulder Area Labor Council announces endorsements for City of Boulder, RTD District O and local ballot measures (media release, Yellow Scene)"
+   },
+   {
+    "id": "E8",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-progressives",
+     "name": "Boulder Progressives",
+     "page_url": "https://bouldervotes.org/orgs/boulder-progressives.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-08-19",
+    "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+    "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)"
+   },
+   {
+    "id": "E57",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-progressives-ucc",
+     "name": "Boulder Progressives UCC",
+     "page_url": "https://bouldervotes.org/orgs/boulder-progressives-ucc.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "filing",
+    "provenance_label": "City filing",
+    "label": "City filing: a committee registration with the city clerk names this.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+    "source_title": "City of Boulder Statement of Organization: Boulder Progressives UCC"
+   },
+   {
+    "id": "E75",
+    "endorser": {
+     "type": "person",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "title_as_printed": "Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/aaron-brockett.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Aaron Brockett. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E195",
+    "endorser": {
+     "type": "person",
+     "slug": "lauren-folkerts",
+     "name": "Lauren Folkerts",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/lauren-folkerts.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Lauren Folkerts. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E151",
+    "endorser": {
+     "type": "person",
+     "slug": "rachel-friend",
+     "name": "Rachel Friend",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rachel-friend.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Rachel Friend. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E135",
+    "endorser": {
+     "type": "person",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "title_as_printed": "former Boulder city councilmember; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/jill-grano.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Jill Grano. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E193",
+    "endorser": {
+     "type": "person",
+     "slug": "lynn-guissinger",
+     "name": "Lynn Guissinger",
+     "title_as_printed": "RTD board director",
+     "page_url": "https://bouldervotes.org/people/lynn-guissinger.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Lynn Guissinger. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E91",
+    "endorser": {
+     "type": "person",
+     "slug": "junie-joseph",
+     "name": "Junie Joseph",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/junie-joseph.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Junie Joseph. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E144",
+    "endorser": {
+     "type": "person",
+     "slug": "rob-kaplan",
+     "name": "Rob Kaplan",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rob-kaplan.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Rob Kaplan. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E117",
+    "endorser": {
+     "type": "person",
+     "slug": "claire-levy",
+     "name": "Claire Levy",
+     "title_as_printed": "Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/claire-levy.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Claire Levy. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E121",
+    "endorser": {
+     "type": "person",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/tina-marquis.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Tina Marquis. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E80",
+    "endorser": {
+     "type": "person",
+     "slug": "joe-neguse",
+     "name": "Joe Neguse",
+     "title_as_printed": "U.S. Representative for Colorado’s 2nd District",
+     "page_url": "https://bouldervotes.org/people/joe-neguse.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Joe Neguse. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E5",
+    "endorser": {
+     "type": "organization",
+     "slug": "plan-boulder-county",
+     "name": "PLAN-Boulder County",
+     "page_url": "https://bouldervotes.org/orgs/plan-boulder-county.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-28",
+    "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)"
+   },
+   {
+    "id": "E69",
+    "endorser": {
+     "type": "organization",
+     "slug": "run-on-climate",
+     "name": "Run on Climate",
+     "page_url": "https://bouldervotes.org/orgs/run-on-climate.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Run on Climate. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E24",
+    "endorser": {
+     "type": "organization",
+     "slug": "sierra-club-indian-peaks",
+     "name": "Sierra Club Indian Peaks Group",
+     "page_url": "https://bouldervotes.org/orgs/sierra-club-indian-peaks.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-17",
+    "source_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+    "source_title": "Sierra Club Endorses Boulder Mayoral and City Council Candidates (press release, Yellow Scene)"
+   },
+   {
+    "id": "E98",
+    "endorser": {
+     "type": "person",
+     "slug": "lesley-smith",
+     "name": "Lesley Smith",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/lesley-smith.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Lesley Smith. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E147",
+    "endorser": {
+     "type": "person",
+     "slug": "nicole-speer",
+     "name": "Nicole Speer",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/nicole-speer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Nicole Speer. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E112",
+    "endorser": {
+     "type": "person",
+     "slug": "ashley-stolzmann",
+     "name": "Ashley Stolzmann",
+     "title_as_printed": "Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/ashley-stolzmann.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Ashley Stolzmann. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E177",
+    "endorser": {
+     "type": "person",
+     "slug": "lisa-sweeney-miran",
+     "name": "Lisa Sweeney-Miran",
+     "title_as_printed": "former BVSD Board of Education vice president",
+     "page_url": "https://bouldervotes.org/people/lisa-sweeney-miran.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Lisa Sweeney-Miran. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E163",
+    "endorser": {
+     "type": "person",
+     "slug": "will-toor",
+     "name": "Will Toor",
+     "title_as_printed": "former Boulder mayor and Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/will-toor.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Will Toor. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E70",
+    "endorser": {
+     "type": "organization",
+     "slug": "transform-rtd",
+     "name": "Transform RTD",
+     "page_url": "https://bouldervotes.org/orgs/transform-rtd.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Transform RTD. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E130",
+    "endorser": {
+     "type": "person",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "title_as_printed": "Boulder mayor pro tem/councilmember",
+     "page_url": "https://bouldervotes.org/people/tara-winer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Tara Winer. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   }
+  ],
+  "finance": {
+   "committee": "Friends of Ryan Schuchard",
+   "contributions": 8418.16,
+   "expenditures": 5148.97,
+   "matching_funds_received": 8376.0,
+   "cash_on_hand": 11645.19,
+   "as_of": "2026-08-26",
+   "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=308",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "notes": "Clerk contribution total includes $117.16 in loans."
+  },
+  "source_urls": [
+   "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+   "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "https://boulderreportinglab.org/govpack_profiles/ryan-schuchard-2/",
+   "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf",
+   "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "https://www.ryanwithboulder.com/",
+   "https://www.ryanwithboulder.com/endorsements",
+   "https://www.youtube.com/watch?v=CQlalpB7N5w",
+   "https://www.youtube.com/watch?v=Syj4_V5cQOk",
+   "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures"
+  ]
+ }
+}

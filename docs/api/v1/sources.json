@@ -1,0 +1,2439 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "sources": [
+  {
+   "id": 1,
+   "url": "https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates",
+   "title": "2026 City of Boulder Mayoral and City Council Candidates",
+   "kind": "official",
+   "year": 2026,
+   "published_on": "2026-08-26",
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 2,
+   "url": "https://bouldercolorado.gov/services/voting-and-election-information",
+   "title": "Voting and Election Information | City of Boulder",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 3,
+   "url": "https://bouldercolorado.gov/guide/ranked-choice-voting-guide",
+   "title": "Ranked Choice Voting Guide | City of Boulder",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 4,
+   "url": "https://bouldercolorado.gov/government/city-council",
+   "title": "City Council | City of Boulder",
+   "kind": "official",
+   "year": 2026,
+   "published_on": "2026-08-27",
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 13,
+   "url": "https://bouldercolorado.gov/elections/election-committee-filings",
+   "title": "Election Committee Filings | City of Boulder",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 14,
+   "url": "https://bouldercolorado.gov/election-guidelines",
+   "title": "Election Guidelines | City of Boulder",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 23,
+   "url": "https://boulderreportinglab.org/2026/06/07/boulder-city-council-candidates-preview-election-year-debates-over-housing-airport-and-wages/",
+   "title": "Boulder City Council candidates preview election-year battles over housing, airport and wages",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-06-07",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 24,
+   "url": "https://boulderreportinglab.org/2026/08/05/boulder-city-councilmember-taishya-adams-announces-run-for-mayor/",
+   "title": "Taishya Adams enters 2026 Boulder mayor’s race (BRL)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-05",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 25,
+   "url": "https://boulderreportinglab.org/2026/07/28/aaron-brockett-seeks-reelection-as-boulder-mayor-after-turbulent-council-term/",
+   "title": "Aaron Brockett seeks reelection as Boulder mayor (BRL)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-07-28",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 26,
+   "url": "https://www.dailycamera.com/2026/08/19/aaron-brockett-boulder-mayor-reelection/",
+   "title": "Mayor Aaron Brockett running for re-election (Daily Camera)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-19",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 27,
+   "url": "https://www.dailycamera.com/2026/08/13/rachel-isaacson-boulder-city-council/",
+   "title": "Rachel Rose Isaacson running for Boulder City Council (Daily Camera)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-13",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 28,
+   "url": "https://boulderreportinglab.org/2026/07/23/boulder-city-councilmember-mark-wallach-resigns-after-vote-to-keep-municipal-airport-open-indefinitely/",
+   "title": "Mark Wallach resigns after airport vote (BRL)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-07-23",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 29,
+   "url": "https://www.axios.com/local/boulder/2026/07/24/boulder-city-council-mark-wallach-resigns",
+   "title": "Wallach abruptly resigns from Boulder City Council (Axios)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-07-24",
+   "publisher": "Axios Boulder"
+  },
+  {
+   "id": 30,
+   "url": "https://business.boulderchamber.com/events-calendar/Details/city-council-candidate-forum-2026-1693343?sourceTypeId=Website",
+   "title": "City Council Candidate Forum 2026 — Boulder Chamber",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "Boulder Chamber"
+  },
+  {
+   "id": 31,
+   "url": "https://www.lwvbc.org/content.aspx?page_id=22&club_id=629866&module_id=753738",
+   "title": "2026 Election — League of Women Voters of Boulder County",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "League of Women Voters of Boulder County"
+  },
+  {
+   "id": 32,
+   "url": "https://www.taraforboulder.com/",
+   "title": "Tara for Boulder — campaign site",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 33,
+   "url": "https://www.adamsforboulder.com/",
+   "title": "Adams for Boulder — campaign site",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 34,
+   "url": "https://brockett4mayor.org/",
+   "title": "Brockett for Mayor — campaign site",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 35,
+   "url": "https://www.jillforcouncil.com/",
+   "title": "Jill Grano for Council — campaign site",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 36,
+   "url": "https://www.rachelrose4boulder.com/",
+   "title": "Rachel Rose Isaacson — campaign site",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 37,
+   "url": "https://boulderreportinglab.org/2026/01/04/boulder-city-council-voting-records-reveal-a-complicated-majority/",
+   "title": "Boulder City Council voting records reveal a complicated majority (BRL)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-01-04",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 88,
+   "url": "https://bouldercolorado.gov/2026-city-boulder-ballot-measures",
+   "title": "2026 City of Boulder Ballot Measures",
+   "kind": "official",
+   "year": 2026,
+   "published_on": "2026-08-21",
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 89,
+   "url": "https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/",
+   "title": "Council sends vacancy tax and $400 million bond to November ballot, rejects DDA (BRL)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-06",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 90,
+   "url": "https://www.dailycamera.com/2026/08/07/boulder-tax-measures-ballot/",
+   "title": "Boulder voters to decide on vacancy tax, $400 million infrastructure bond (Daily Camera)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-07",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 91,
+   "url": "https://www.dailycamera.com/2026/08/11/boulder-firefighters-union-ballot/",
+   "title": "Boulder firefighters could have their collective bargaining rights secured in November (Daily Camera)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-11",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 93,
+   "url": "https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/",
+   "title": "Meet the 19 candidates running for Boulder mayor and City Council in 2026 (BRL)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-30",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 94,
+   "url": "https://www.youtube.com/watch?v=rusBhvHOeCc",
+   "title": "City Council Candidate Forum 2026 | Boulder Chamber",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-08-26",
+   "publisher": "Boulder Chamber"
+  },
+  {
+   "id": 95,
+   "url": "https://www.dailycamera.com/2026/08/27/boulder-city-council-candidates-issues/",
+   "title": "Meet (most of) the people running for Boulder City Council and mayor (Daily Camera)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-27",
+   "publisher": null
+  },
+  {
+   "id": 96,
+   "url": "https://betterboulder.com/collaborative-candidate-forum-2026/",
+   "title": "Collaborative Candidate Forum 2026 — Better Boulder",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-19",
+   "publisher": "Better Boulder"
+  },
+  {
+   "id": 97,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
+   "kind": "official",
+   "year": 2026,
+   "published_on": "2026-09-01",
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 98,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
+   "title": "City of Boulder Election Committee Filings (live app)",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 100,
+   "url": "https://boulderreportinglab.org/govpack_profiles/taishya-adams-2/",
+   "title": "Profile source: Taishya Adams",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 101,
+   "url": "https://boulderreportinglab.org/govpack_profiles/fred-smith/",
+   "title": "Profile source: Fred Smith",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 102,
+   "url": "https://boulderreportinglab.org/govpack_profiles/aaron-brockett-2/",
+   "title": "Profile source: Aaron Brockett",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 103,
+   "url": "https://boulderreportinglab.org/govpack_profiles/jamo-goldstein/",
+   "title": "Profile source: Jameson Goldstein",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 104,
+   "url": "https://yellowscene.com/2026/09/05/17-candidates-take-the-stage-at-boulder-chambers-first-2026-election-forum/",
+   "title": "Profile source: Lisa Ann Jacobs",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 105,
+   "url": "https://boulderreportinglab.org/govpack_profiles/aquiles-la-grave/",
+   "title": "Profile source: Aquiles La Grave",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 106,
+   "url": "https://boulderreportinglab.org/govpack_profiles/rachel-rose-isaacson-2/",
+   "title": "Profile source: Rachel Rose Isaacson",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 107,
+   "url": "https://boulderreportinglab.org/govpack_profiles/tara-winer-2/",
+   "title": "Profile source: Tara Winer",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 108,
+   "url": "https://boulderreportinglab.org/govpack_profiles/ryan-schuchard-2/",
+   "title": "Profile source: Ryan Schuchard",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 109,
+   "url": "https://boulderreportinglab.org/govpack_profiles/jill-grano/",
+   "title": "Profile source: Jill Grano",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 110,
+   "url": "https://boulderreportinglab.org/govpack_profiles/benita-duran/",
+   "title": "Profile source: Benita Duran",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 111,
+   "url": "https://boulderreportinglab.org/govpack_profiles/ryan-jamieson/",
+   "title": "Profile source: Ryan Jamieson",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 112,
+   "url": "https://boulderreportinglab.org/govpack_profiles/lee-gilbert/",
+   "title": "Profile source: Lee Gilbert",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 113,
+   "url": "https://lee4boulder.com/",
+   "title": "Profile source: Lee Gilbert",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 114,
+   "url": "https://boulderreportinglab.org/govpack_profiles/tina-marquis-2/",
+   "title": "Profile source: Tina Marquis",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 115,
+   "url": "https://boulderreportinglab.org/govpack_profiles/jamillah-richmond/",
+   "title": "Profile source: Jamillah Richmond",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 116,
+   "url": "https://boulderreportinglab.org/govpack_profiles/sam-fuqua/",
+   "title": "Profile source: Sam Fuqua",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 117,
+   "url": "https://boulderreportinglab.org/govpack_profiles/lynn-segal/",
+   "title": "Profile source: Lynn Segal",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 118,
+   "url": "https://boulderreportinglab.org/govpack_profiles/david-martus/",
+   "title": "Profile source: Dave Martus",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 119,
+   "url": "https://boulderreportinglab.org/govpack_profiles/scott-rendleman/",
+   "title": "Profile source: Scott Rendleman",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 120,
+   "url": "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
+   "title": "Where do Boulder’s 2026 Mayorial Candidates Stand?",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 121,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-taishya.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Taishya Adams",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 122,
+   "url": "https://richardvalenty.com/2026/09/adams-were-in-polycrisis-mode/",
+   "title": "Candidate interview: Taishya Adams",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-18",
+   "publisher": null
+  },
+  {
+   "id": 123,
+   "url": "https://kgnu.org/mayor-brockett-councilmember-adams-on-the-biggest-challenges-facing-boulder-and-how-we-can-work-to-fix-them",
+   "title": "Mayor Brockett & Councilmember Adams on the biggest challenges facing Boulder",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-07-29",
+   "publisher": null
+  },
+  {
+   "id": 124,
+   "url": "https://gratefulfredinstead.com/",
+   "title": "Campaign priorities: Fred Smith",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 125,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Aaron Brockett",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 126,
+   "url": "https://richardvalenty.com/2026/09/brockett-wants-to-finish-strong",
+   "title": "Candidate interview: Aaron Brockett",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-14",
+   "publisher": null
+  },
+  {
+   "id": 127,
+   "url": "https://dailycamera.com/2026/08/19/aaron-brockett-boulder-mayor-reelection",
+   "title": "Candidate profile: Aaron Brockett",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-19",
+   "publisher": null
+  },
+  {
+   "id": 128,
+   "url": "https://richardvalenty.com/2026/09/jamo-goldstein-careful-with-that-credit-card-boulder/",
+   "title": "Candidate interview: Jameson Goldstein",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-16",
+   "publisher": null
+  },
+  {
+   "id": 129,
+   "url": "https://www.dailycamera.com/2026/09/18/jameson-jamo-goldstein-cu-boulder-mayor/",
+   "title": "Candidate profile: Jameson Goldstein",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-18",
+   "publisher": null
+  },
+  {
+   "id": 130,
+   "url": "https://www.jamoformayor.org/",
+   "title": "Campaign priorities: Jameson Goldstein",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 131,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aquiles.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Aquiles La Grave",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 132,
+   "url": "https://richardvalenty.com/2026/09/la-grave-re-envision-the-role-of-the-mayor",
+   "title": "Candidate interview: Aquiles La Grave",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-17",
+   "publisher": null
+  },
+  {
+   "id": 133,
+   "url": "https://dailycamera.com/2026/09/21/aquiles-la-grave-boulder-mayor-campaign",
+   "title": "Candidate profile: Aquiles La Grave",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 134,
+   "url": "https://boulder.vote/policy",
+   "title": "Campaign priorities: Aquiles La Grave",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 135,
+   "url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+   "title": "2026 City Council Candidate Questionnaire",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-13",
+   "publisher": null
+  },
+  {
+   "id": 136,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-rachel.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Rachel Rose Isaacson",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 137,
+   "url": "https://richardvalenty.com/2026/09/isaacson-can-working-class-boulderites-stay-here/",
+   "title": "Candidate interview: Rachel Rose Isaacson",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-23",
+   "publisher": null
+  },
+  {
+   "id": 138,
+   "url": "https://dailycamera.com/2026/08/13/rachel-isaacson-boulder-city-council",
+   "title": "Candidate profile: Rachel Rose Isaacson",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-13",
+   "publisher": null
+  },
+  {
+   "id": 139,
+   "url": "https://www.rachelrose4boulder.com/homelessness",
+   "title": "Campaign priorities: Rachel Rose Isaacson",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 140,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Tara Winer",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 141,
+   "url": "https://richardvalenty.com/2026/09/winer-problem-solver-seeks-four-more-years/",
+   "title": "Candidate interview: Tara Winer",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-14",
+   "publisher": null
+  },
+  {
+   "id": 142,
+   "url": "https://dailycamera.com/2026/09/10/tara-winer-boulder-city-council-election",
+   "title": "Candidate profile: Tara Winer",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-10",
+   "publisher": null
+  },
+  {
+   "id": 143,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Ryan Schuchard",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 144,
+   "url": "https://www.dailycamera.com/2026/09/08/ryan-schuchard-boulder-city-council-election",
+   "title": "Candidate profile: Ryan Schuchard",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-08",
+   "publisher": null
+  },
+  {
+   "id": 145,
+   "url": "https://www.ryanwithboulder.com/",
+   "title": "Campaign priorities: Ryan Schuchard",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 146,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jill.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Jill Grano",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 147,
+   "url": "https://richardvalenty.com/2026/09/grano-re-localize-boulders-economy/",
+   "title": "Candidate interview: Jill Grano",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 148,
+   "url": "https://www.dailycamera.com/2026/08/10/jill-grano-boulder-city-council/",
+   "title": "Candidate profile: Jill Grano",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-10",
+   "publisher": null
+  },
+  {
+   "id": 149,
+   "url": "https://www.jillforcouncil.com/community-questions",
+   "title": "Campaign priorities: Jill Grano",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 150,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-benita.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Benita Duran",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 151,
+   "url": "https://richardvalenty.com/2026/09/duran-shes-probably-been-on-a-relevant-board/",
+   "title": "Candidate interview: Benita Duran",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-22",
+   "publisher": null
+  },
+  {
+   "id": 152,
+   "url": "https://dailycamera.com/2026/09/21/benita-duran-boulder-city-council-candidate",
+   "title": "Candidate profile: Benita Duran",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 153,
+   "url": "https://www.benitaduran.com/a-word-from-benita",
+   "title": "Campaign priorities: Benita Duran",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 154,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-j.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Ryan Jamieson",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 155,
+   "url": "https://richardvalenty.com/2026/09/jamieson-help-the-people-do-cool-stuff/",
+   "title": "Candidate interview: Ryan Jamieson",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-15",
+   "publisher": null
+  },
+  {
+   "id": 156,
+   "url": "https://rjforboulder.com/",
+   "title": "Campaign priorities: Ryan Jamieson",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 157,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Tina Marquis",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 158,
+   "url": "https://richardvalenty.com/2026/09/marquis-can-boulder-housing-be-family-friendly/",
+   "title": "Candidate interview: Tina Marquis",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-18",
+   "publisher": null
+  },
+  {
+   "id": 159,
+   "url": "https://www.tinaforboulder.com/",
+   "title": "Campaign priorities: Tina Marquis",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 160,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jamillah.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Jamillah Richmond",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 161,
+   "url": "https://www.jamillahanewvoice.com/policy",
+   "title": "Campaign priorities: Jamillah Richmond",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 162,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Sam Fuqua",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 163,
+   "url": "https://richardvalenty.com/2026/09/fuqua-pay-his-familys-boulder-opportunities-forward/",
+   "title": "Candidate interview: Sam Fuqua",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-20",
+   "publisher": null
+  },
+  {
+   "id": 164,
+   "url": "https://www.dailycamera.com/2026/09/04/sam-fuqua-boulder-city-council",
+   "title": "Candidate profile: Sam Fuqua",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-04",
+   "publisher": null
+  },
+  {
+   "id": 165,
+   "url": "https://www.fuquaforcouncil.com/priorities",
+   "title": "Campaign priorities: Sam Fuqua",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 166,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-lynn.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Lynn Segal",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 167,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — David Martus",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 168,
+   "url": "https://dailycamera.com/2026/09/16/david-martus-boulder-city-council-candidate",
+   "title": "Candidate profile: David Martus",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-16",
+   "publisher": null
+  },
+  {
+   "id": 169,
+   "url": "https://daveforboulder.com/assets/docs/Boulder%20Chamber%20of%20Commerce%20Questionnaire.pdf",
+   "title": "2026 candidate questionnaire — David Martus",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 170,
+   "url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-scott.pdf",
+   "title": "2026 Mayoral and City Council Candidate Questions — Scott Rendleman",
+   "kind": "questionnaire",
+   "year": 2026,
+   "published_on": "2026-09-21",
+   "publisher": null
+  },
+  {
+   "id": 171,
+   "url": "https://richardvalenty.com/2026/09/rendleman-carry-my-brothers-legacy-forward/",
+   "title": "Candidate interview: Scott Rendleman",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-22",
+   "publisher": null
+  },
+  {
+   "id": 172,
+   "url": "https://planboulder.org/",
+   "title": "https://planboulder.org/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 173,
+   "url": "https://planboulder.org/plan-boulder-county-endorsements",
+   "title": "https://planboulder.org/plan-boulder-county-endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 174,
+   "url": "https://planboulder.org/the-board",
+   "title": "https://planboulder.org/the-board",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 175,
+   "url": "https://planboulder.org/boulder-election-2023",
+   "title": "https://planboulder.org/boulder-election-2023",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 176,
+   "url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
+   "title": "2026 RTD & Ballot Measure Endorsements - Better Boulder",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 177,
+   "url": "https://betterboulder.com/about-us/",
+   "title": "https://betterboulder.com/about-us/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 178,
+   "url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "title": "Better Boulder 2026 Endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 179,
+   "url": "https://betterboulder.com/board-of-directors/",
+   "title": "https://betterboulder.com/board-of-directors/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 180,
+   "url": "https://betterboulder.com/candidate-endorsements/",
+   "title": "https://betterboulder.com/candidate-endorsements/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 181,
+   "url": "https://betterboulder.com/candidate-endorsements-2021/",
+   "title": "https://betterboulder.com/candidate-endorsements-2021/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 182,
+   "url": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/",
+   "title": "https://betterboulder.com/2023-better-boulder-candidate-endorsements/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 183,
+   "url": "https://betterboulder.com/better-boulder-endorsements-2025/",
+   "title": "https://betterboulder.com/better-boulder-endorsements-2025/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 184,
+   "url": "https://openboulder.org/",
+   "title": "https://openboulder.org/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 185,
+   "url": "https://openboulder.org/join/",
+   "title": "https://openboulder.org/join/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 186,
+   "url": "https://openboulder.org/vote-news-opinions/",
+   "title": "Open Boulder Endorses Five Candidates for Boulder City Council",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 187,
+   "url": "https://openboulder.org/c4-board-members/",
+   "title": "https://openboulder.org/c4-board-members/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 188,
+   "url": "https://openboulder.org/historic-voting-information/",
+   "title": "https://openboulder.org/historic-voting-information/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 189,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 190,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 191,
+   "url": "https://www.boulderprogressives.org/",
+   "title": "https://www.boulderprogressives.org/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 192,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 193,
+   "url": "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
+   "title": "Boulder Progressives Announces 2026 Ballot Measure Positions, Endorses Jamillah Richmond for Boulder City Council (press release, Yellow Scene)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 194,
+   "url": "https://www.boulderprogressives.org/board",
+   "title": "https://www.boulderprogressives.org/board",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 195,
+   "url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
+   "title": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 196,
+   "url": "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements",
+   "title": "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 197,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "title": "City of Boulder Statement of Organization: Boulder Progressives UCC",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 198,
+   "url": "https://www.boulderprogressives.org/voter-guide",
+   "title": "https://www.boulderprogressives.org/voter-guide",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 199,
+   "url": "https://www.sierraclub.org/colorado/indian-peaks/politics-and-issues",
+   "title": "https://www.sierraclub.org/colorado/indian-peaks/politics-and-issues",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 200,
+   "url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+   "title": "Sierra Club Endorses Boulder Mayoral and City Council Candidates (press release, Yellow Scene)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 201,
+   "url": "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements",
+   "title": "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 202,
+   "url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
+   "title": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 203,
+   "url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements",
+   "title": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 204,
+   "url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "title": "Boulder Area Labor Council announces endorsements for City of Boulder, RTD District O and local ballot measures (media release, Yellow Scene)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 205,
+   "url": "https://www.boulderchamber.com/about-us/",
+   "title": "https://www.boulderchamber.com/about-us/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 206,
+   "url": "https://www.boulderchamber.com/membership-levels/",
+   "title": "https://www.boulderchamber.com/membership-levels/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 207,
+   "url": "https://www.boulderchamber.com/policy-programs/",
+   "title": "https://www.boulderchamber.com/policy-programs/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 208,
+   "url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
+   "title": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 209,
+   "url": "https://www.boulderchamber.com/board-of-directors/",
+   "title": "https://www.boulderchamber.com/board-of-directors/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 210,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 211,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "title": "City of Boulder Statement of Organization: Open Boulder 2026 UCC",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 212,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=326",
+   "title": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=326",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 213,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3876",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3876",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 214,
+   "url": "https://strongerboulder.com/",
+   "title": "Vote YES on 2L",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 215,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 216,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=303",
+   "title": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=303",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 217,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328",
+   "title": "Statement of Organization: No on 2K",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 218,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3870",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3870",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 219,
+   "url": "https://www.bouldervacancytax.org/",
+   "title": "Vote Yes on 2J",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 220,
+   "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3875",
+   "title": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3875",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 221,
+   "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=302",
+   "title": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=302",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 222,
+   "url": "https://www.boulderfirefighters.org/about/about-us",
+   "title": "https://www.boulderfirefighters.org/about/about-us",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 223,
+   "url": "https://www.boulderfirefighters.org/about/board-members",
+   "title": "https://www.boulderfirefighters.org/about/board-members",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 224,
+   "url": "https://www.jamillahanewvoice.com/endorsements",
+   "title": "Endorsements – Jamillah Richmond",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 225,
+   "url": "https://www.bouldervacancytax.org/endorsements",
+   "title": "Support for Boulder’s Vacancy Tax – Vacancy to Vitality",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 226,
+   "url": "https://runonclimate.org/",
+   "title": "https://runonclimate.org/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 227,
+   "url": "https://www.ryanwithboulder.com/endorsements",
+   "title": "Endorsements — Re-Elect Ryan Schuchard",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 228,
+   "url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "title": "Tara’s Endorsers — Tara Winer for Council",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 229,
+   "url": "https://workingfamilies.org/state/colorado/",
+   "title": "https://workingfamilies.org/state/colorado/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 230,
+   "url": "https://workingfamilies.org/2025/09/colorado-working-families-party-announces-municipal-school-board-and-ballot-measure-endorsements/",
+   "title": "https://workingfamilies.org/2025/09/colorado-working-families-party-announces-municipal-school-board-and-ballot-measure-endorsements/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 231,
+   "url": "https://workingfamilies.org/candidates/",
+   "title": "https://workingfamilies.org/candidates/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 232,
+   "url": "https://neweracoloradoaction.org/who-we-are/",
+   "title": "https://neweracoloradoaction.org/who-we-are/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 233,
+   "url": "https://neweracoloradoaction.org/donate/",
+   "title": "https://neweracoloradoaction.org/donate/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 234,
+   "url": "https://neweracoloradoaction.org/new-era-colorado-action-fund-endorses-state-primary-candidates",
+   "title": "https://neweracoloradoaction.org/new-era-colorado-action-fund-endorses-state-primary-candidates",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 235,
+   "url": "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/",
+   "title": "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 236,
+   "url": "https://neweracoloradoaction.org/press-releases",
+   "title": "https://neweracoloradoaction.org/press-releases",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 237,
+   "url": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/",
+   "title": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 238,
+   "url": "https://www.dailycamera.com/",
+   "title": "https://www.dailycamera.com/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 239,
+   "url": "https://boulderweekly.com/special-editions/vote-guide/",
+   "title": "https://boulderweekly.com/special-editions/vote-guide/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 240,
+   "url": "https://boulderweekly.com/",
+   "title": "https://boulderweekly.com/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 241,
+   "url": "https://www.bocodems.org/2026-candidates/",
+   "title": "https://www.bocodems.org/2026-candidates/",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 242,
+   "url": "https://bouldercolorado.gov/city-boulder-and-boulder-police-officers-association-2026-collective-bargaining-agreement",
+   "title": "https://bouldercolorado.gov/city-boulder-and-boulder-police-officers-association-2026-collective-bargaining-agreement",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 243,
+   "url": "https://www.fuquaforcouncil.com/endorsements",
+   "title": "Endorsements – Sam Fuqua for Boulder City Council",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 244,
+   "url": "https://www.jillforcouncil.com/endorsements",
+   "title": "Endorsements – Jill for City Council",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 245,
+   "url": "https://www.tinaforboulder.com/endorsements",
+   "title": "Endorsements – Tina Marquis for Boulder City Council",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 246,
+   "url": "https://brockett4mayor.org/endorsements/",
+   "title": "Endorsements – Aaron Brockett For Mayor",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 247,
+   "url": "https://www.benitaduran.com/new-page-2",
+   "title": "Endorsements and Supporters – Benita Duran",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 248,
+   "url": "https://rjforboulder.com/endorsements.html",
+   "title": "Endorsements – Ryan Jamieson",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 249,
+   "url": "https://erieco.gov/318/Town-Council",
+   "title": "https://erieco.gov/318/Town-Council",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 250,
+   "url": "https://www.nederlandco.org/1231/Board-of-Trustees",
+   "title": "https://www.nederlandco.org/1231/Board-of-Trustees",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 251,
+   "url": "https://www.superiorcolorado.gov/Government/Town-Council/Town-Council/Stephanie-Miller-Council-Member",
+   "title": "https://www.superiorcolorado.gov/Government/Town-Council/Town-Council/Stephanie-Miller-Council-Member",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 252,
+   "url": "https://www.broomfield.org/2694/Mayor-Guyleen-Castriotta",
+   "title": "https://www.broomfield.org/2694/Mayor-Guyleen-Castriotta",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 253,
+   "url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
+   "title": "Boulder mayoral candidate Aquiles La Grave faces lawsuit and campaign finance complaint (Boulder Reporting Lab)",
+   "kind": "campaign_site",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 254,
+   "url": "https://bouldercolorado.gov/guide/recreation-and-safety-bond",
+   "title": "https://bouldercolorado.gov/guide/recreation-and-safety-bond",
+   "kind": "official",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 255,
+   "url": "https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures",
+   "title": "https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 256,
+   "url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "title": "2026 Candidate Endorsements (PLAN-Boulder County)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-28",
+   "publisher": null
+  },
+  {
+   "id": 257,
+   "url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-19",
+   "publisher": null
+  },
+  {
+   "id": 258,
+   "url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
+   "title": "Our 2026 ballot measure positions (Boulder Progressives)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-16",
+   "publisher": null
+  },
+  {
+   "id": 259,
+   "url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
+   "title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-09",
+   "publisher": null
+  },
+  {
+   "id": 260,
+   "url": "https://www.instagram.com/p/DdFbfKijZtU/",
+   "title": "@boulderdsa on Instagram: DSA endorses Taishya Adams and Jamillah Richmond",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-09",
+   "publisher": null
+  },
+  {
+   "id": 261,
+   "url": "https://planboulder.org/2026-ballot-issue-endorsements",
+   "title": "2026 Ballot Issue Endorsements",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-27",
+   "publisher": null
+  },
+  {
+   "id": 262,
+   "url": "https://boulderreportinglab.org/2026/08/30/kc-becker-boulder-deserves-a-better-bond-proposal-not-a-400-million-blank-check",
+   "title": "KC Becker: Boulder deserves a better bond proposal, not a $400 million blank check (opinion, Boulder Reporting Lab)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-08-30",
+   "publisher": null
+  },
+  {
+   "id": 263,
+   "url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+   "title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-17",
+   "publisher": "Boulder Chamber"
+  },
+  {
+   "id": 264,
+   "url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+   "title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-07",
+   "publisher": "Better Boulder"
+  },
+  {
+   "id": 265,
+   "url": "https://www.youtube.com/watch?v=PlXLjT1gH5U",
+   "title": "(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-16",
+   "publisher": "Boulder County Arts Alliance"
+  },
+  {
+   "id": 266,
+   "url": "https://www.youtube.com/watch?v=Syj4_V5cQOk",
+   "title": "(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-17",
+   "publisher": "Boulder County Arts Alliance"
+  },
+  {
+   "id": 267,
+   "url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+   "title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-17",
+   "publisher": "Boulder County Arts Alliance"
+  },
+  {
+   "id": 268,
+   "url": "https://www.youtube.com/watch?v=Q1PXyt_DLqw",
+   "title": "(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-17",
+   "publisher": "Boulder County Arts Alliance"
+  },
+  {
+   "id": 269,
+   "url": "https://www.youtube.com/watch?v=szDYv-0rIgU",
+   "title": "(Pt 5/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-17",
+   "publisher": "Boulder County Arts Alliance"
+  },
+  {
+   "id": 270,
+   "url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+   "kind": "video",
+   "year": 2026,
+   "published_on": "2026-09-28",
+   "publisher": "League of Women Voters of Boulder County"
+  },
+  {
+   "id": 19,
+   "url": "https://www.dailycamera.com/2025/12/05/new-boulder-city-council-sworn-in-2/",
+   "title": "New Boulder City Council sworn in (Daily Camera)",
+   "kind": "article",
+   "year": 2025,
+   "published_on": "2025-12-05",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 20,
+   "url": "https://results.enr.clarityelections.com/CO/Boulder/124417/",
+   "title": "Boulder County 2025 Coordinated Election results (Clarity ENR)",
+   "kind": "results",
+   "year": 2025,
+   "published_on": "2025-11-26",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 21,
+   "url": "https://boulderreportinglab.org/2025/10/05/boulder-2025-voter-guide-what-to-know-before-election-day-nov-4/",
+   "title": "Boulder 2025 Election Guide (Boulder Reporting Lab)",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-05",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 22,
+   "url": "https://boulderreportinglab.org/2025/11/06/boulder-2025-election-results-voters-reelect-three-incumbents-to-council-and-pass-all-tax-measures/",
+   "title": "Boulder 2025 election results (BRL)",
+   "kind": "article",
+   "year": 2025,
+   "published_on": "2025-11-06",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 38,
+   "url": "https://cuindependent.org/2025/11/09/boulders-2025-election-results/",
+   "title": "Boulder's 2025 election results (CU Independent)",
+   "kind": "article",
+   "year": 2025,
+   "published_on": "2025-11-09",
+   "publisher": null
+  },
+  {
+   "id": 46,
+   "url": "https://boulderreportinglab.org/2025/10/05/2025-boulder-city-council-election-how-candidates-say-their-life-experiences-would-shape-their-work-on-council/",
+   "title": "2025 Boulder City Council election: How candidates say their life experiences would shape their work on council",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-05",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 47,
+   "url": "https://boulderreportinglab.org/2025/10/06/2025-boulder-city-council-election-where-candidates-stand-on-the-camping-ban/",
+   "title": "2025 Boulder City Council election: Where candidates stand on the camping ban",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-06",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 48,
+   "url": "https://boulderreportinglab.org/2025/10/07/2025-boulder-city-council-election-where-candidates-stand-on-making-the-city-more-wildfire-resilient/",
+   "title": "2025 Boulder City Council election: Where candidates stand on wildfire mitigation",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-07",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 49,
+   "url": "https://boulderreportinglab.org/2025/10/09/2025-boulder-city-council-election-where-candidates-stand-on-the-councils-role-in-foreign-affairs/",
+   "title": "2025 Boulder City Council election: Where candidates stand on the council’s role in foreign affairs",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-09",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 50,
+   "url": "https://boulderreportinglab.org/2025/10/09/2025-boulder-city-council-election-where-candidates-stand-on-the-housing-shortage/",
+   "title": "2025 Boulder City Council election: Where candidates stand on the housing shortage",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-09",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 51,
+   "url": "https://boulderreportinglab.org/2025/10/12/2025-boulder-city-council-election-where-candidates-stand-on-priorities-for-the-city-budget/",
+   "title": "2025 Boulder City Council election: Where candidates stand on city budget priorities",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": "2025-10-12",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 54,
+   "url": "https://www.dailycamera.com/2025/09/04/where-boulder-city-council-candidates-key-issues/",
+   "title": "Where Boulder City Council candidates stand on key issues (Daily Camera)",
+   "kind": "article",
+   "year": 2025,
+   "published_on": "2025-09-04",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 55,
+   "url": "https://www.dailycamera.com/2025/09/06/boulder-groups-host-city-council-candidate-forum-next-week/",
+   "title": "Boulder groups host City Council candidate forum next week (Daily Camera)",
+   "kind": "article",
+   "year": 2025,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 63,
+   "url": "https://lwvbc.clubexpress.com/content.aspx?page_id=4091&club_id=629866&item_id=2716057",
+   "title": "Boulder City Council Candidate Forum — League of Women Voters of Boulder County (event page)",
+   "kind": "official",
+   "year": 2025,
+   "published_on": "2025-09-27",
+   "publisher": "League of Women Voters of Boulder County"
+  },
+  {
+   "id": 64,
+   "url": "https://www.youtube.com/watch?v=JcJu9nd5mQk",
+   "title": "2025 League of Women Voters of Boulder County Council Candidate Forum (City of Boulder / Channel 8)",
+   "kind": "video",
+   "year": 2025,
+   "published_on": "2025-09-29",
+   "publisher": "League of Women Voters of Boulder County"
+  },
+  {
+   "id": 69,
+   "url": "https://www.youtube.com/watch?v=VHJFiM-Skh8",
+   "title": "(Part 1/3) 2025 Boulder City Council Candidates Forum on the Arts",
+   "kind": "article",
+   "year": 2025,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 70,
+   "url": "https://www.youtube.com/playlist?list=PL28uLDYXI7hJ8dJGKAObgFccqnPVni6Pp",
+   "title": "2025 Boulder City Council Candidates Forum on the Arts (playlist)",
+   "kind": "video",
+   "year": 2025,
+   "published_on": "2025-09-30",
+   "publisher": "Boulder Chamber"
+  },
+  {
+   "id": 71,
+   "url": "https://www.planboulder.org/2025-city-council-candidates-forum",
+   "title": "2025 City Council Candidates Forum — PLAN-Boulder County",
+   "kind": "article",
+   "year": 2025,
+   "published_on": "2025-09-12",
+   "publisher": "PLAN-Boulder County"
+  },
+  {
+   "id": 72,
+   "url": "https://www.planboulder.org/2025-mayor-and-city-council-candidate-endorsements",
+   "title": "2025 City Council Candidate Endorsements — PLAN-Boulder County",
+   "kind": "article",
+   "year": 2025,
+   "published_on": "2025-09-23",
+   "publisher": "PLAN-Boulder County"
+  },
+  {
+   "id": 73,
+   "url": "https://www.boulderchamber.com/assets/pdf/2025-BCC_BallotScorecard-ExtendedResponses-FNL",
+   "title": "2025 Boulder Chamber ballot scorecard — extended candidate responses",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Boulder Chamber"
+  },
+  {
+   "id": 74,
+   "url": "https://www.youtube.com/watch?v=XwVdRqEJkgE",
+   "title": "2025 City Council Candidate Scorecard (Boulder Chamber)",
+   "kind": "video",
+   "year": 2025,
+   "published_on": "2025-10-03",
+   "publisher": "Boulder Chamber"
+  },
+  {
+   "id": 75,
+   "url": "https://www.openboulder.org/Resources",
+   "title": "2025 Voting Resources — Open Boulder",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 76,
+   "url": "https://www.openboulder.org/s/Wallach.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Mark Wallach",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 77,
+   "url": "https://www.openboulder.org/s/Benjamin.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Matt Benjamin",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 78,
+   "url": "https://www.openboulder.org/s/Robins.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Jennifer Robins",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 79,
+   "url": "https://www.openboulder.org/s/Kaplan.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Rob Kaplan",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 80,
+   "url": "https://www.openboulder.org/s/Folkerts.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Lauren Folkerts",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 81,
+   "url": "https://www.openboulder.org/s/Speer.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Nicole Speer",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 82,
+   "url": "https://www.openboulder.org/s/Isaacson.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Rachel Rose Isaacson",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 83,
+   "url": "https://www.openboulder.org/s/Lord.pdf",
+   "title": "Open Boulder 2025 candidate questionnaire — Maxwell Lord",
+   "kind": "questionnaire",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "Open Boulder"
+  },
+  {
+   "id": 85,
+   "url": "https://bouldercolorado.gov/2025-city-council-candidate-videos",
+   "title": "2025 City Council Candidate Videos | City of Boulder",
+   "kind": "video",
+   "year": 2025,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 15,
+   "url": "https://bouldercounty.gov/elections/by-year/2023-election/",
+   "title": "2023 Election Results and Information - Boulder County",
+   "kind": "results",
+   "year": 2023,
+   "published_on": null,
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 16,
+   "url": "https://assets.bouldercounty.gov/wp-content/uploads/2023/12/2023C-Boulder-County-Official-Summary-of-Votes-Recount.pdf",
+   "title": "2023 Coordinated Election — Amended Summary of Votes (City of Boulder Council, recount)",
+   "kind": "results",
+   "year": 2023,
+   "published_on": "2023-12-06",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 17,
+   "url": "https://assets.bouldercounty.gov/wp-content/uploads/2023/11/2023C-Boulder-County-Official-Summary-of-Votes.pdf",
+   "title": "2023 Coordinated Election — Official Summary of Votes (RCV mayor)",
+   "kind": "results",
+   "year": 2023,
+   "published_on": "2023-11-29",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 18,
+   "url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/IndexCategory/39.html",
+   "title": "Boulder County 2023 Coordinated Election official results (ENR)",
+   "kind": "results",
+   "year": 2023,
+   "published_on": "2023-12-06",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 39,
+   "url": "https://www.denverpost.com/2023/11/09/boulder-mayoral-race-yates-brockett-ranked-choice-voting/",
+   "title": "Incumbent pulls ahead of challenger in Boulder mayor’s race (Denver Post)",
+   "kind": "article",
+   "year": 2023,
+   "published_on": "2023-11-09",
+   "publisher": null
+  },
+  {
+   "id": 40,
+   "url": "https://boulderreportinglab.org/2023/10/04/2023-boulder-city-council-election-where-the-candidates-stand-on-homelessness-solutions/",
+   "title": "2023 Boulder City Council election: Where the candidates stand on homelessness solutions",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-04",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 41,
+   "url": "https://boulderreportinglab.org/2023/10/11/2023-boulder-city-council-election-where-the-candidates-stand-on-homeless-encampments/",
+   "title": "2023 Boulder City Council election: Where the candidates stand on homeless encampments",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-11",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 42,
+   "url": "https://boulderreportinglab.org/2023/10/09/2023-boulder-city-council-election-where-the-candidates-stand-on-affordable-housing/",
+   "title": "2023 Boulder City Council election: Where the candidates stand on affordable housing",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-09",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 43,
+   "url": "https://boulderreportinglab.org/2023/10/04/2023-boulder-city-council-election-where-the-candidates-stand-on-climate-change-action/",
+   "title": "2023 Boulder City Council election: Where the candidates stand on climate change action",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-04",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 44,
+   "url": "https://boulderreportinglab.org/2023/10/06/2023-boulder-city-council-election-where-the-candidates-stand-on-making-streets-safer-for-cyclists-walkers-and-others/",
+   "title": "2023 Boulder City Council election: Where the candidates stand on making streets safer for cyclists, walkers and others",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-06",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 45,
+   "url": "https://boulderreportinglab.org/2023/10/11/2023-boulder-city-council-election-where-the-candidates-stand-on-their-one-year-visions/",
+   "title": "2023 Boulder City Council election: Where the candidates stand on their one-year visions",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-11",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 52,
+   "url": "http://boulderbeat.news/wp-content/uploads/2023/10/Quiz-_-Candidates-match.pdf",
+   "title": "Boulder Beat 2023 candidate questionnaire (emailed yes/no)",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-06",
+   "publisher": "Boulder Beat"
+  },
+  {
+   "id": 56,
+   "url": "https://www.dailycamera.com/2023/08/29/boulder-city-council-and-mayoral-candidates-face-off-at-candidate-forum/",
+   "title": "Boulder City Council and mayoral candidates face off at candidate forum (Daily Camera)",
+   "kind": "article",
+   "year": 2023,
+   "published_on": "2023-08-29",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 57,
+   "url": "https://boulderreportinglab.org/2023/06/23/boulder-election-forum-puts-candidates-progressive-politics-to-the-test/",
+   "title": "Boulder election forum puts candidates’ progressive politics to the test (BRL)",
+   "kind": "article",
+   "year": 2023,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 58,
+   "url": "https://www.planboulder.org/boulder-election-2023",
+   "title": "Boulder Election 2023 — PLAN-Boulder County",
+   "kind": "official",
+   "year": 2023,
+   "published_on": null,
+   "publisher": "PLAN-Boulder County"
+  },
+  {
+   "id": 59,
+   "url": "https://boulderreportinglab.org/2023/10/27/whos-running-for-boulder-mayor-city-council-in-the-2023-election/",
+   "title": "Who’s running for Boulder mayor, City Council in the 2023 election (BRL)",
+   "kind": "article",
+   "year": 2023,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 60,
+   "url": "https://boulderreportinglab.org/2023/10/06/climate-focused-boulder-mayoral-forum-puts-the-heat-on-xcel-energy/",
+   "title": "Climate-focused Boulder mayoral forum puts the heat on Xcel Energy (BRL)",
+   "kind": "article",
+   "year": 2023,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 61,
+   "url": "https://www.youtube.com/watch?v=Xb83hgpphXo",
+   "title": "2023 League of Women Voters Candidate Forum (City of Boulder / Channel 8)",
+   "kind": "video",
+   "year": 2023,
+   "published_on": "2023-10-15",
+   "publisher": "League of Women Voters of Boulder County"
+  },
+  {
+   "id": 62,
+   "url": "https://www.youtube.com/watch?v=n89j6Wk-qc8",
+   "title": "2023 League of Women Voters Mayoral Candidate Forum (City of Boulder / Channel 8)",
+   "kind": "video",
+   "year": 2023,
+   "published_on": "2023-10-22",
+   "publisher": "League of Women Voters of Boulder County"
+  },
+  {
+   "id": 84,
+   "url": "https://archives.boulderweekly.com/content-archives/voters-guide/2023-boulder-city-council-candidate-questionnaires/",
+   "title": "2023 Boulder City Council Candidate Questionnaires — Boulder Weekly",
+   "kind": "questionnaire",
+   "year": 2023,
+   "published_on": "2023-10-04",
+   "publisher": "Boulder Weekly"
+  },
+  {
+   "id": 92,
+   "url": "https://boulderreportinglab.org/2023/11/08/city-of-boulder-votes-to-pass-safe-zones-4-kids-ballot-measure/",
+   "title": "City of Boulder votes to pass Safe Zones 4 Kids ballot measure (BRL)",
+   "kind": "article",
+   "year": 2023,
+   "published_on": "2023-11-08",
+   "publisher": "Boulder Reporting Lab"
+  },
+  {
+   "id": 53,
+   "url": "https://coloradonewsline.com/2021/11/02/initial-election-results-boulder-voters-reject-raising-occupancy-limits/",
+   "title": "Boulder voters reject raising residential occupancy limits (Colorado Newsline)",
+   "kind": "article",
+   "year": 2021,
+   "published_on": "2021-11-02",
+   "publisher": null
+  },
+  {
+   "id": 65,
+   "url": "https://www.youtube.com/watch?v=HfwfRrALpTk",
+   "title": "2021 Boulder City Council Candidate Forum (Boulder Chamber)",
+   "kind": "article",
+   "year": 2021,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 66,
+   "url": "https://www.dailycamera.com/2021/10/26/area-bicycle-organizations-host-inaugural-cycling-themed-city-council-candidate-forum/",
+   "title": "Area bicycle organizations host inaugural cycling-themed City Council candidate forum (Daily Camera)",
+   "kind": "article",
+   "year": 2021,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 67,
+   "url": "https://boulderbeat.news/2021/06/24/slightly-less-raucous-caucus-offers-look-at-potential-council-candidates/",
+   "title": "Slightly less Raucous Caucus offers look at potential council candidates (Boulder Beat)",
+   "kind": "article",
+   "year": 2021,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 86,
+   "url": "https://assets.bouldercounty.gov/wp-content/uploads/2021/11/2021-Boulder-County-Coordinated-Election-Official-Summary-of-Votes.pdf",
+   "title": "2021 Coordinated Election — Official Summary of Votes",
+   "kind": "results",
+   "year": 2021,
+   "published_on": "2021-11-22",
+   "publisher": null
+  },
+  {
+   "id": 87,
+   "url": "https://bouldercolorado.gov/news/city-boulder-november-2021-election-results",
+   "title": "City of Boulder November 2021 Election Results",
+   "kind": "official",
+   "year": 2021,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  },
+  {
+   "id": 8,
+   "url": "https://electionresults.bouldercounty.gov/ElectionResults2019C/",
+   "title": "Boulder County 2019 Coordinated Election official results (ENR)",
+   "kind": "results",
+   "year": 2019,
+   "published_on": "2019-11-14",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 9,
+   "url": "https://bouldercounty.gov/elections/by-year/2019-election/",
+   "title": "2019 Election Results and Information - Boulder County",
+   "kind": "results",
+   "year": 2019,
+   "published_on": null,
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 10,
+   "url": "https://assets.bouldercounty.gov/wp-content/uploads/2019/11/2019C-Official-Summary-Of-Votes.pdf",
+   "title": "2019 Coordinated Election — Official Summary of Votes",
+   "kind": "results",
+   "year": 2019,
+   "published_on": null,
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 11,
+   "url": "https://boulderbeat.news/2019/11/05/2019-election-results-city-of-boulder/",
+   "title": "2019 Election Results (City of Boulder) — Boulder Beat",
+   "kind": "article",
+   "year": 2019,
+   "published_on": "2019-11-30",
+   "publisher": "Boulder Beat"
+  },
+  {
+   "id": 5,
+   "url": "https://electionresults.bouldercounty.gov/ElectionResults2017C/",
+   "title": "Boulder County 2017 Coordinated Election official results (ENR)",
+   "kind": "results",
+   "year": 2017,
+   "published_on": "2017-11-21",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 6,
+   "url": "https://bouldercounty.gov/elections/by-year/2017-election/",
+   "title": "2017 Election Results and Information - Boulder County",
+   "kind": "results",
+   "year": 2017,
+   "published_on": null,
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 7,
+   "url": "https://assets.bouldercounty.gov/wp-content/uploads/2017/11/Results_Cumulative_Final.pdf",
+   "title": "2017 Coordinated Election — Official Summary of Votes",
+   "kind": "results",
+   "year": 2017,
+   "published_on": "2017-11-20",
+   "publisher": "Boulder County Clerk and Recorder"
+  },
+  {
+   "id": 12,
+   "url": "https://www.dailycamera.com/ci_31437033/boulder-city-council-election-results/",
+   "title": "Jill Grano, Mirabai Nagle, Cindy Carlisle elected to Boulder City Council (Daily Camera)",
+   "kind": "article",
+   "year": 2017,
+   "published_on": "2017-11-07",
+   "publisher": "Daily Camera"
+  },
+  {
+   "id": 68,
+   "url": "https://www.youtube.com/watch?v=x18o4Ke4gvc",
+   "title": "Boulder City Council Candidate Forum Presented by The League of Women Voters (2017)",
+   "kind": "article",
+   "year": 2017,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 99,
+   "url": "https://documents.bouldercolorado.gov/WebLink/Browse.aspx?id=59131",
+   "title": "City of Boulder election records (Laserfiche)",
+   "kind": "official",
+   "year": null,
+   "published_on": null,
+   "publisher": "City of Boulder"
+  }
+ ]
+}

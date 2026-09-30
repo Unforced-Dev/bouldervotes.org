@@ -1,0 +1,1172 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "candidate": {
+  "slug": "tara-winer",
+  "name": "Tara Winer",
+  "office": "council",
+  "office_label": "City Council",
+  "ballot_position": 6,
+  "incumbent": true,
+  "matching_funds_participant": true,
+  "campaign_url": "https://www.taraforboulder.com/",
+  "page_url": "https://bouldervotes.org/people/tara-winer.html",
+  "print_url": "https://bouldervotes.org/print/tara-winer.html",
+  "api_url": "https://bouldervotes.org/api/v1/candidates/tara-winer.json",
+  "bio": {
+   "summary": "Winer is a sitting Boulder councilmember and mayor pro tem seeking reelection. She cites city services, streamlined processes and the local economy among her priorities.",
+   "occupation": "Senior brand manager",
+   "public_office": "Boulder city councilmember and mayor pro tem",
+   "in_boulder": null,
+   "note": null,
+   "source_urls": [
+    "https://boulderreportinglab.org/govpack_profiles/tara-winer-2/"
+   ]
+  },
+  "past_city_races": [
+   {
+    "year": 2021,
+    "office": "council",
+    "result": "elected"
+   },
+   {
+    "year": 2023,
+    "office": "council",
+    "result": "elected"
+   }
+  ],
+  "statements": [
+   {
+    "id": "S-tara-winer-2",
+    "topic": "downtown",
+    "text": "I think a Downtown Development Authority is a good idea, as I said at the city council meeting on August 6.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-tara-winer-4",
+    "topic": "downtown",
+    "text": "Yes, we do need a new tool to strengthen our commercial districts.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Tara Winer"
+   },
+   {
+    "id": "S-tara-winer-3",
+    "topic": "governance",
+    "text": "Right now, I think the city’s actual top three priorities are increasing revenue, solving deferred maintenance, and climate resiliency.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-tara-winer-6",
+    "topic": "governance",
+    "text": "If you know me at all, you know how accessible I am.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Tara Winer"
+   },
+   {
+    "id": "S-tara-winer-9",
+    "topic": "governance",
+    "text": "Balanced solutions for a stronger community.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Campaign website: Tara Winer",
+    "kind": "campaign_site",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/",
+    "source_title": "Tara for Boulder — campaign site"
+   },
+   {
+    "id": "S-tara-winer-0",
+    "topic": "housing",
+    "text": "Yes. I voted no at first but yes on third reading. Tara of today would have voted yes sooner. Duplexes and triplexes bring affordability.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-tara-winer-7",
+    "topic": "housing",
+    "text": "According to Winer, Boulder does need more housing that families and “the missing middle” will actually want to live in, as opposed to seeking housing outside of Boulder because available housing stock isn’t a good fit for them.",
+    "speaker": "Richard Valenty reporting Tara Winer’s interview",
+    "candidate_own_words": false,
+    "verbatim": true,
+    "publisher": "Richard Valenty",
+    "kind": "interview",
+    "published_on": "2026-09-14",
+    "source_url": "https://richardvalenty.com/2026/09/winer-problem-solver-seeks-four-more-years/",
+    "source_title": "Candidate interview: Tara Winer"
+   },
+   {
+    "id": "S-tara-winer-5",
+    "topic": "public-safety",
+    "text": "Businesses should be able to expect commercial districts that are inviting, safe, well-landscaped, and as clean as a city can reasonably keep them.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Tara Winer"
+   },
+   {
+    "id": "S-tara-winer-1",
+    "topic": "transportation",
+    "text": "Yes. Absolutely yes. I was on Council when CAN unanimously passed as a priority. It has been one of council’s best priorities ever.",
+    "speaker": "Tara Winer",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   }
+  ],
+  "statements_held_back": 1,
+  "forum_quotes": [
+   {
+    "id": "FC016",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+    "topic": "growth/development",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we need to reduce red tape so people and businesses can get stuff done.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=1151s",
+    "timestamp": "19:11",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC017",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+    "topic": "budget/bond 2K",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we need sales tax revenue to pay for all the stuff that we love so much.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=1178s",
+    "timestamp": "19:38",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC051",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, what is the single most important new initiative you would pursue in your first year to improve Boulder's business climate? Are there any past policies the Council has adopted you would consider reversing?",
+    "topic": "growth/development",
+    "issue": "economy",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "My number one is always going to be do something about Title IX, and that is our land use code",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=4415s",
+    "timestamp": "1:13:35",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Transcript note: 'Title IX' = Title 9 (Boulder land use code)."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC052",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, what is the single most important new initiative you would pursue in your first year to improve Boulder's business climate? Are there any past policies the Council has adopted you would consider reversing?",
+    "topic": "growth/development",
+    "issue": "economy",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "the amount of time it takes to get a permit is insane.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=4448s",
+    "timestamp": "1:14:08",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC055",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "Do you support continuing to prioritize alternatives to driving, or do you think the city should shift more investment back towards roads and automobile capacity?",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "In fact, I want to make this the e-bike capital of the world.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=4938s",
+    "timestamp": "1:22:18",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC072",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Opening introduction (two minutes)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I do care about taking care of core responsibilities like open space, bike paths, rec centers, parks, public spaces, potholes, snow and ice removals.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=436s",
+    "timestamp": "7:16",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC073",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Opening introduction (two minutes)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "starting a permanent farmers market where we can not only help farmers, but people can come and start new business ideas without having heavy overhead.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=504s",
+    "timestamp": "8:24",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC109",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "What is one action you would prioritize during your term to strengthen Boulder's creative ecosystem and keep Boulder competitive?",
+    "topic": "arts",
+    "issue": "arts",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "What I would do, and this is going to be, it might have a few heads turning, is bring back the DBA.",
+    "watch_url": "https://www.youtube.com/watch?v=PlXLjT1gH5U&t=702s",
+    "timestamp": "11:42",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: 'DBA' = DDA (downtown development authority). Second of drawn names; Ryan Jamieson later says 'the DDA, as Tara mentioned'."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=PlXLjT1gH5U",
+    "recording_title": "(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC133",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "Final one-minute statement",
+    "topic": "arts",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So I want us to remain relevant and dynamic and reduce red tape",
+    "watch_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk&t=875s",
+    "timestamp": "14:35",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+    "recording_title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC152",
+    "candidate_slug": "tara-winer",
+    "candidate": "Tara Winer",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Opening statement (one minute)",
+    "topic": "other",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I take accessibility and availability to the community seriously, which is why I give out my cell phone number",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=830s",
+    "timestamp": "13:50",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Transcript note: Winer was absent (out of state); moderator read her submitted statement per League policy."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   }
+  ],
+  "endorsements": [
+   {
+    "id": "E86",
+    "endorser": {
+     "type": "person",
+     "slug": "judy-amabile",
+     "name": "Judy Amabile",
+     "title_as_printed": "Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/judy-amabile.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Judy Amabile. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E160",
+    "endorser": {
+     "type": "person",
+     "slug": "kc-becker",
+     "name": "KC Becker",
+     "title_as_printed": "former Colorado House speaker",
+     "page_url": "https://bouldervotes.org/people/kc-becker.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists KC Becker. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E141",
+    "endorser": {
+     "type": "person",
+     "slug": "matt-benjamin",
+     "name": "Matt Benjamin",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/matt-benjamin.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Matt Benjamin. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E37",
+    "endorser": {
+     "type": "organization",
+     "slug": "better-boulder",
+     "name": "Better Boulder",
+     "page_url": "https://bouldervotes.org/orgs/better-boulder.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-14",
+    "source_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+    "source_title": "Better Boulder 2026 Endorsements"
+   },
+   {
+    "id": "E76",
+    "endorser": {
+     "type": "person",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "title_as_printed": "Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/aaron-brockett.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Aaron Brockett. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E166",
+    "endorser": {
+     "type": "person",
+     "slug": "jan-burton",
+     "name": "Jan Burton",
+     "title_as_printed": "former Boulder city councilmember; Open Boulder chair",
+     "page_url": "https://bouldervotes.org/people/jan-burton.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Jan Burton. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "U3",
+    "endorser": {
+     "type": "person",
+     "slug": "guyleen-castriotta",
+     "name": "Guyleen Castriotta",
+     "title_as_printed": "Broomfield mayor",
+     "page_url": "https://bouldervotes.org/people/guyleen-castriotta.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Guyleen Castriotta. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E103",
+    "endorser": {
+     "type": "person",
+     "slug": "michael-dougherty",
+     "name": "Michael Dougherty",
+     "title_as_printed": "Boulder County district attorney",
+     "page_url": "https://bouldervotes.org/people/michael-dougherty.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Michael Dougherty. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E200",
+    "endorser": {
+     "type": "person",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "title_as_printed": "Boulder Library District trustee; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/benita-duran.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Benita Duran. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E156",
+    "endorser": {
+     "type": "person",
+     "slug": "steve-fenberg",
+     "name": "Steve Fenberg",
+     "title_as_printed": "former Colorado Senate president",
+     "page_url": "https://bouldervotes.org/people/steve-fenberg.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Steve Fenberg. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E152",
+    "endorser": {
+     "type": "person",
+     "slug": "rachel-friend",
+     "name": "Rachel Friend",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rachel-friend.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Rachel Friend. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E109",
+    "endorser": {
+     "type": "person",
+     "slug": "kathy-gebhardt",
+     "name": "Kathy Gebhardt",
+     "title_as_printed": "Colorado State Board of Education member",
+     "page_url": "https://bouldervotes.org/people/kathy-gebhardt.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Kathy Gebhardt. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E136",
+    "endorser": {
+     "type": "person",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "title_as_printed": "former Boulder city councilmember; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/jill-grano.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Jill Grano. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E186",
+    "endorser": {
+     "type": "person",
+     "slug": "edie-hooton",
+     "name": "Edie Hooton",
+     "title_as_printed": "former Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/edie-hooton.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Edie Hooton. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E145",
+    "endorser": {
+     "type": "person",
+     "slug": "rob-kaplan",
+     "name": "Rob Kaplan",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rob-kaplan.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Rob Kaplan. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E122",
+    "endorser": {
+     "type": "person",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/tina-marquis.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Tina Marquis. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E81",
+    "endorser": {
+     "type": "person",
+     "slug": "joe-neguse",
+     "name": "Joe Neguse",
+     "title_as_printed": "U.S. Representative for Colorado’s 2nd District",
+     "page_url": "https://bouldervotes.org/people/joe-neguse.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Joe Neguse. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E43",
+    "endorser": {
+     "type": "organization",
+     "slug": "open-boulder",
+     "name": "Open Boulder",
+     "page_url": "https://bouldervotes.org/orgs/open-boulder.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-14",
+    "source_url": "https://openboulder.org/vote-news-opinions/",
+    "source_title": "Open Boulder Endorses Five Candidates for Boulder City Council"
+   },
+   {
+    "id": "E65",
+    "endorser": {
+     "type": "organization",
+     "slug": "open-boulder-2026-ucc",
+     "name": "Open Boulder 2026 UCC",
+     "page_url": "https://bouldervotes.org/orgs/open-boulder-2026-ucc.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "filing",
+    "provenance_label": "City filing",
+    "label": "City filing: a committee registration with the city clerk names this.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+    "source_title": "City of Boulder Statement of Organization: Open Boulder 2026 UCC"
+   },
+   {
+    "id": "E6",
+    "endorser": {
+     "type": "organization",
+     "slug": "plan-boulder-county",
+     "name": "PLAN-Boulder County",
+     "page_url": "https://bouldervotes.org/orgs/plan-boulder-county.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-28",
+    "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)"
+   },
+   {
+    "id": "E71",
+    "endorser": {
+     "type": "organization",
+     "slug": "reimagine-south-boulder-recreation",
+     "name": "Reimagine South Boulder Recreation Advocacy Group",
+     "page_url": "https://bouldervotes.org/orgs/reimagine-south-boulder-recreation.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Reimagine South Boulder Recreation Advocacy Group. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E126",
+    "endorser": {
+     "type": "person",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/ryan-schuchard.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Ryan Schuchard. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E25",
+    "endorser": {
+     "type": "organization",
+     "slug": "sierra-club-indian-peaks",
+     "name": "Sierra Club Indian Peaks Group",
+     "page_url": "https://bouldervotes.org/orgs/sierra-club-indian-peaks.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-17",
+    "source_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+    "source_title": "Sierra Club Endorses Boulder Mayoral and City Council Candidates (press release, Yellow Scene)"
+   },
+   {
+    "id": "E99",
+    "endorser": {
+     "type": "person",
+     "slug": "lesley-smith",
+     "name": "Lesley Smith",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/lesley-smith.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Lesley Smith. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E113",
+    "endorser": {
+     "type": "person",
+     "slug": "ashley-stolzmann",
+     "name": "Ashley Stolzmann",
+     "title_as_printed": "Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/ashley-stolzmann.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Ashley Stolzmann. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E179",
+    "endorser": {
+     "type": "person",
+     "slug": "lisa-sweeney-miran",
+     "name": "Lisa Sweeney-Miran",
+     "title_as_printed": "former BVSD Board of Education vice president",
+     "page_url": "https://bouldervotes.org/people/lisa-sweeney-miran.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Lisa Sweeney-Miran. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E190",
+    "endorser": {
+     "type": "person",
+     "slug": "saul-tapia-vega",
+     "name": "Saul Tapia Vega",
+     "title_as_printed": "Lafayette mayor",
+     "page_url": "https://bouldervotes.org/people/saul-tapia-vega.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Saul Tapia Vega. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   },
+   {
+    "id": "E170",
+    "endorser": {
+     "type": "person",
+     "slug": "sam-weaver",
+     "name": "Sam Weaver",
+     "title_as_printed": "former Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/sam-weaver.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tara Winer campaign lists Sam Weaver. Only the campaign says so.",
+    "claimed_by": "Tara Winer campaign",
+    "published_on": null,
+    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
+    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+   }
+  ],
+  "finance": {
+   "committee": "Tara Winer for Council",
+   "contributions": 12555.0,
+   "expenditures": 1228.03,
+   "matching_funds_received": 12366.0,
+   "cash_on_hand": 23692.97,
+   "as_of": "2026-08-18",
+   "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=306",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "notes": null
+  },
+  "source_urls": [
+   "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+   "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "https://boulderreportinglab.org/govpack_profiles/tara-winer-2/",
+   "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf",
+   "https://openboulder.org/vote-news-opinions/",
+   "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "https://richardvalenty.com/2026/09/winer-problem-solver-seeks-four-more-years/",
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "https://www.taraforboulder.com/",
+   "https://www.taraforboulder.com/endorsements/content/endorsers/",
+   "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+   "https://www.youtube.com/watch?v=CQlalpB7N5w",
+   "https://www.youtube.com/watch?v=PlXLjT1gH5U",
+   "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates"
+  ]
+ }
+}

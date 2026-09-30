@@ -1,0 +1,51 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "description": "Static JSON files for the Boulder Votes 2026 guide. No keys, no rate limits.",
+ "llms_full": "https://bouldervotes.org/llms-full.txt",
+ "docs": "https://bouldervotes.org/api/",
+ "endpoints": [
+  {
+   "path": "/api/v1/election.json",
+   "description": "Election date, key dates, how to vote, races with candidates in ballot order, measures.",
+   "url": "https://bouldervotes.org/api/v1/election.json"
+  },
+  {
+   "path": "/api/v1/candidates.json",
+   "description": "All 19 candidates in ballot order (mayor, then council) with bio, links and totals.",
+   "url": "https://bouldervotes.org/api/v1/candidates.json"
+  },
+  {
+   "path": "/api/v1/candidates/{slug}.json",
+   "description": "One candidate: bio, statements, forum quotes, endorsements, money, sources."
+  },
+  {
+   "path": "/api/v1/measures.json",
+   "description": "Measures 2J, 2K, 2L, 2M: what YES and NO mean, cost, ballot text, positions.",
+   "url": "https://bouldervotes.org/api/v1/measures.json"
+  },
+  {
+   "path": "/api/v1/forum_claims.json",
+   "description": "2026 forums and every quoted answer, with timestamped recording links.",
+   "url": "https://bouldervotes.org/api/v1/forum_claims.json"
+  },
+  {
+   "path": "/api/v1/endorsements.json",
+   "description": "Every published endorsement, with its provenance label and source.",
+   "url": "https://bouldervotes.org/api/v1/endorsements.json"
+  },
+  {
+   "path": "/api/v1/finance.json",
+   "description": "City clerk campaign-finance filings for 2026 committees, with line items.",
+   "url": "https://bouldervotes.org/api/v1/finance.json"
+  },
+  {
+   "path": "/api/v1/sources.json",
+   "description": "Every source document the guide cites.",
+   "url": "https://bouldervotes.org/api/v1/sources.json"
+  }
+ ]
+}

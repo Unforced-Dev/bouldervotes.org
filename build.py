@@ -163,7 +163,7 @@ LOGO_SVG = (
 
 
 def page(title: str, body: str, *, prefix: str = "", year: int | None = None, current: str | None = None,
-         head_extra: str = "") -> str:
+         head_extra: str = "", pre_main: str = "") -> str:
     """Site chrome. `current` is a PRIMARY_NAV key ("mayor", "council", "measures",
     "forums", "learn") or None (home)."""
     primary = []
@@ -196,6 +196,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
 <link rel="preload" href="{prefix}fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{prefix}fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{prefix}css/site.css">
+<link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full guide for AI assistants">
 <meta name="theme-color" content="#1d5c63">
 {head_extra}</head>
 <body>
@@ -207,7 +208,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
     <details class="years"><summary><span class="visually-hidden">Election year: </span>{shown_year}</summary><ul>{year_items}</ul></details>
   </div>
 </header>
-{yearbar}<main id="content">
+{yearbar}{pre_main}<main id="content">
 {body}
 </main>
 <footer class="site">
@@ -216,6 +217,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
       <h2>Boulder Votes</h2>
       <p>{esc(TAGLINE)}</p>
       <p>Covers the City of Boulder only. We don't endorse candidates or measures.</p>
+      <p class="ai-foot">For AI assistants: the whole 2026 guide is one file at <a href="{prefix}llms-full.txt">bouldervotes.org/llms-full.txt</a>. Data: <a href="{prefix}api/index.html">/api/v1/</a>.</p>
     </div>
     <div>
       <h2>2026 election</h2>
@@ -240,6 +242,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
         <li><a href="{prefix}questionnaires.html">Questionnaires</a></li>
         <li><a href="{prefix}measures.html">All measures</a></li>
         <li><a href="{prefix}sources.html">Sources</a></li>
+        <li><a href="{prefix}api/index.html">Data and API</a></li>
         <li><a href="{prefix}about.html">About this guide</a></li>
       </ul>
     </div>
@@ -1370,10 +1373,22 @@ def main() -> None:
         ("questionnaires.html", "Questionnaires", "Written candidate questionnaires we have located, with links."),
         ("print/index.html", "Printable sheets", "A short sheet for each 2026 candidate. Every answer prints in full."),
         ("sources.html", "Sources", "The full catalog of documents behind this guide."),
+        ("api/index.html", "Data and API", "The whole guide as plain text and JSON, for AI assistants and developers."),
         ("about.html", "About this guide", "Who runs this guide and how it works."),
     ):
         learn.append(f"<a class='choice' href='{href}'><strong>{label}</strong><span class='meta'>{blurb}</span></a>")
     learn.append("</div>")
+    from build_llm import AI_CAUTION, AI_SHORT, AI_PROMPT
+    learn.append(
+        "<section class='panel ask-ai' id='ask-ai'><h2>Ask an AI</h2>"
+        "<p>Using ChatGPT, Claude or another assistant? Tell it:</p>"
+        f"<p class='prompt-box'>{esc(AI_SHORT)}</p>"
+        "<p>Or paste this longer prompt:</p>"
+        f"<p class='prompt-box'>{esc(AI_PROMPT)}</p>"
+        "<p>The assistant can read the whole guide from one file, "
+        "<a href='llms-full.txt'>llms-full.txt</a>, or the <a href='api/index.html'>JSON data</a>. "
+        "That file asks it to stay nonpartisan and cite a source for every claim.</p>"
+        f"<p class='note'>{esc(AI_CAUTION)}</p></section>")
     learn.append("<h2>Earlier City of Boulder elections</h2><p class='chips'>"
                  + "".join(f"<a class='pill' href='{y}.html'>{y}</a>" for y in ARCHIVE_YEARS) + "</p>")
     (OUT / "learn.html").write_text(page("Learn", "\n".join(learn), current="learn"), encoding="utf-8")
@@ -1415,7 +1430,10 @@ def main() -> None:
             encoding="utf-8",
         )
 
-    print(f"wrote {len(list(OUT.rglob('*.html')))} html files into {OUT}")
+    from build_llm import write_all
+    stats = write_all(con, OUT, forums, page)
+    print(f"wrote {len(list(OUT.rglob('*.html')))} html files into {OUT}; llms-full.txt {stats['full_bytes']:,} bytes, "
+          f"{stats['api_files']} JSON files")
     con.close()
 
 

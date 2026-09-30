@@ -1,0 +1,1228 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-09-30",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "candidate": {
+  "slug": "tina-marquis",
+  "name": "Tina Marquis",
+  "office": "council",
+  "office_label": "City Council",
+  "ballot_position": 13,
+  "incumbent": true,
+  "matching_funds_participant": true,
+  "campaign_url": "https://www.tinaforboulder.com/",
+  "page_url": "https://bouldervotes.org/people/tina-marquis.html",
+  "print_url": "https://bouldervotes.org/print/tina-marquis.html",
+  "api_url": "https://bouldervotes.org/api/v1/candidates/tina-marquis.json",
+  "bio": {
+   "summary": "Marquis is a sitting councilmember seeking a second term. Her priorities include family housing, homelessness, wildfire resilience and accountable government.",
+   "occupation": "City councilmember",
+   "public_office": "Boulder city councilmember, elected 2023; previously BVSD school board",
+   "in_boulder": null,
+   "note": null,
+   "source_urls": [
+    "https://boulderreportinglab.org/govpack_profiles/tina-marquis-2/"
+   ]
+  },
+  "past_city_races": [
+   {
+    "year": 2023,
+    "office": "council",
+    "result": "elected"
+   }
+  ],
+  "statements": [
+   {
+    "id": "S-tina-marquis-7",
+    "topic": "budget",
+    "text": "The city is working toward outcome-based budgeting.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Campaign website: Tina Marquis",
+    "kind": "campaign_site",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/",
+    "source_title": "Campaign priorities: Tina Marquis"
+   },
+   {
+    "id": "S-tina-marquis-2",
+    "topic": "downtown",
+    "text": "I made extensive comments about the DDA at the council meeting when I voted against the DDA at this time.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-tina-marquis-3",
+    "topic": "downtown",
+    "text": "I made extensive comments about the DDA at the council meeting when I voted against the DDA.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Tina Marquis"
+   },
+   {
+    "id": "S-tina-marquis-6",
+    "topic": "downtown",
+    "text": "Marquis voted against sending the DDA proposal to DDA voters, and noted that she didn’t believe there was sufficient community “buy-in,” in part because of a “compressed timeline” and not enough input from other entities with approved dedicated tax revenues that might have lost funding through tax-increment financing arrangements.",
+    "speaker": "Richard Valenty reporting Tina Marquis’s interview",
+    "candidate_own_words": false,
+    "verbatim": true,
+    "publisher": "Richard Valenty",
+    "kind": "interview",
+    "published_on": "2026-09-18",
+    "source_url": "https://richardvalenty.com/2026/09/marquis-can-boulder-housing-be-family-friendly/",
+    "source_title": "Candidate interview: Tina Marquis"
+   },
+   {
+    "id": "S-tina-marquis-5",
+    "topic": "governance",
+    "text": "In general, I try to be accessible to all constituents through email, phone or in-person meetings, though recognize there are times when I cannot respond to all requests in a short window.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Tina Marquis"
+   },
+   {
+    "id": "S-tina-marquis-0",
+    "topic": "housing",
+    "text": "No. While I did vote no in 2025, I did support allowing duplexes and triplexes in more areas during the comp plan process.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   },
+   {
+    "id": "S-tina-marquis-4",
+    "topic": "public-safety",
+    "text": "When I first ran three years ago, public safety was perhaps the biggest issue during the campaign.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Downtown Boulder Partnership",
+    "kind": "questionnaire",
+    "published_on": "2026-09-21",
+    "source_url": "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf",
+    "source_title": "2026 Mayoral and City Council Candidate Questions — Tina Marquis"
+   },
+   {
+    "id": "S-tina-marquis-1",
+    "topic": "transportation",
+    "text": "Yes. No additional comment submitted.",
+    "speaker": "Tina Marquis",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Better Boulder",
+    "kind": "questionnaire",
+    "published_on": "2026-09-13",
+    "source_url": "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+    "source_title": "2026 City Council Candidate Questionnaire"
+   }
+  ],
+  "statements_held_back": 0,
+  "forum_quotes": [
+   {
+    "id": "FC028",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "If elected, name your top three priorities. And do you believe the city is moving in the right direction or wrong direction on those top priorities?",
+    "topic": "housing",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "Trying to find more middle income housing, making sure that our climate is resilient, working hard on safety, including safety from wildfire",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=1553s",
+    "timestamp": "25:53",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC046",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "What role do you see public and private partnerships playing in some of our greatest areas of need?",
+    "topic": "homelessness/safety",
+    "issue": "economy",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we identified a problem with our unsheltered homeless population and looked to see how we could support them and also maintain our public safety goals.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=3800s",
+    "timestamp": "1:03:20",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Transcript note: Moderator called 'Lynn, and then Tina' (garbled in the transcript; confirmed by a listener)."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC056",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-chamber-forum",
+    "forum_name": "Boulder Chamber City Council and Mayoral Candidate Forum",
+    "date": "2026-08-26",
+    "question": "Do you support continuing to prioritize alternatives to driving, or do you think the city should shift more investment back towards roads and automobile capacity?",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So I absolutely do want to invest in other ways of transportation.",
+    "watch_url": "https://www.youtube.com/watch?v=CQlalpB7N5w&t=5037s",
+    "timestamp": "1:23:57",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: Third respondent; moderator named Tina immediately after (unpaid-parking remark)."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
+    "recording_title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-chamber-forum.html"
+   },
+   {
+    "id": "FC083",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Opening introduction (two minutes)",
+    "topic": "budget/bond 2K",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think we're creating more transparency and usability in our budget, but we can build a lot more bridges",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1426s",
+    "timestamp": "23:46",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC093",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Open space budget priorities question (wording partly garbled in transcript)",
+    "topic": "other",
+    "issue": "budget",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we need to look at what the different demands are and go through a prioritization process.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3286s",
+    "timestamp": "54:46",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC105",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-votes-forum",
+    "forum_name": "Collaborative City Council and Mayoral Candidate Forum (PLAN-Boulder County / Open Boulder / Better Boulder)",
+    "date": "2026-09-02",
+    "question": "Wildfire question: mandatory home-hardening/defensible-space compliance and how to fund it (wording partly garbled in transcript)",
+    "topic": "climate",
+    "issue": "wildfire",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "We need extensive public outreach on this.",
+    "watch_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4913s",
+    "timestamp": "1:21:53",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+    "recording_title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-votes-forum.html"
+   },
+   {
+    "id": "FC124",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "Final council-candidate arts question on implementing adopted plans/priorities (question wording partly lost at the Pt 2/Pt 3 video split)",
+    "topic": "arts",
+    "issue": "arts",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "making sure that we have a clear way of identifying our priorities for investment, which types of public private partnerships would we prioritize",
+    "watch_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk&t=111s",
+    "timestamp": "1:51",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+    "recording_title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC139",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-arts-forum",
+    "forum_name": "2026 City Council Candidates Forum on Arts and Culture",
+    "date": "2026-09-15",
+    "question": "Final one-minute statement",
+    "topic": "arts",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "If I'm reelected, I hope to continue to focus on how we prioritize funding",
+    "watch_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1354s",
+    "timestamp": "22:34",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: Third of drawn names (Duran, Jacobs, Marquis, La Grave, Brockett)."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+    "recording_title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-arts-forum.html"
+   },
+   {
+    "id": "FC161",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Opening statement (one minute)",
+    "topic": "housing",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "The other piece that I am focused on is more sticky housing. This is the kind of housing where someone can stay, not just rent for one to two years",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=1285s",
+    "timestamp": "21:25",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC175",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "If elected, name your top three priorities, and do you believe the city is currently moving in the right direction on those priorities?",
+    "topic": "budget/bond 2K",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I want to create a capital infrastructure advisory panel with community members",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=1970s",
+    "timestamp": "32:50",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC187",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What specific policies, development strategies, funding approaches, or partnerships would you pursue to increase or preserve housing affordable to families at approximately 30 to 40 percent AMI? (submitted by co-sponsor EFAA)",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I support shifting to the below 30 percent housing type.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=2682s",
+    "timestamp": "44:42",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC198",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Boulder voters are being asked to authorize $400 million in new debt through additional property taxes for recreation, public safety and other city facilities as part of ballot issue 2K. Do you support this measure? Why or why not?",
+    "topic": "budget/bond 2K",
+    "issue": "bond",
+    "measure": "2K",
+    "stance": "yes",
+    "stance_about": "2K (the $400 million bond)",
+    "stance_note": null,
+    "quote": "Yeah, I support the bond and was one of the members of council to put it on the ballot.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=3382s",
+    "timestamp": "56:22",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC213",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "What are your feelings about the bus-only lanes and the core arterial network (CAN)? Should Boulder continue prioritizing protected bike lanes?",
+    "topic": "transportation",
+    "issue": "transportation",
+    "measure": null,
+    "stance": "yes",
+    "stance_about": "the Core Arterial Network / bus-only lanes",
+    "stance_note": null,
+    "quote": "So first of all, I do support the dedicated bus lanes.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=4044s",
+    "timestamp": "1:07:24",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC225",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Do you agree or disagree that our city council is adequately representative of the social, political and economic interests of Boulder? Would you support a study session on proportional representation?",
+    "topic": "other",
+    "issue": "governance",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": "'Open to' a study session; not labelled.",
+    "quote": "I am open to a study session on that specific methodology.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=4730s",
+    "timestamp": "1:18:50",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC237",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Ballot issue 2J, the residential vacancy excise tax, would be a tax of approximately $4,000 on residential property vacant for more than half the year. Do you support this tax and will it generate enough income to pay for administering this complex program? (30 seconds)",
+    "topic": "housing",
+    "issue": "housing",
+    "measure": "2J",
+    "stance": "yes",
+    "stance_about": "2J (the vacancy tax)",
+    "stance_note": null,
+    "quote": "Yeah, I support this tax and actually it was part of my campaign three years ago.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=5254s",
+    "timestamp": "1:27:34",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC248",
+    "candidate_slug": "tina-marquis",
+    "candidate": "Tina Marquis",
+    "forum": "2026-lwv-forum",
+    "forum_name": "League of Women Voters of Boulder County City Council and Mayoral Candidate Forums",
+    "date": "2026-09-26",
+    "question": "Tell us about one city issue on which you changed your position after considering new evidence or another perspective. What changed your mind?",
+    "topic": "growth/development",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think that a limited view of Area 3 and starting to accelerate that process is a good idea.",
+    "watch_url": "https://www.youtube.com/watch?v=pT9IeGL6deg&t=5689s",
+    "timestamp": "1:34:49",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
+    "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   }
+  ],
+  "endorsements": [
+   {
+    "id": "E84",
+    "endorser": {
+     "type": "person",
+     "slug": "judy-amabile",
+     "name": "Judy Amabile",
+     "title_as_printed": "Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/judy-amabile.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Judy Amabile. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E159",
+    "endorser": {
+     "type": "person",
+     "slug": "kc-becker",
+     "name": "KC Becker",
+     "title_as_printed": "former Colorado House speaker",
+     "page_url": "https://bouldervotes.org/people/kc-becker.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists KC Becker. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E34",
+    "endorser": {
+     "type": "organization",
+     "slug": "better-boulder",
+     "name": "Better Boulder",
+     "page_url": "https://bouldervotes.org/orgs/better-boulder.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-14",
+    "source_url": "https://betterboulder.com/better-boulder-2026-endorsements/",
+    "source_title": "Better Boulder 2026 Endorsements"
+   },
+   {
+    "id": "E9",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-progressives",
+     "name": "Boulder Progressives",
+     "page_url": "https://bouldervotes.org/orgs/boulder-progressives.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-08-19",
+    "source_url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+    "source_title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)"
+   },
+   {
+    "id": "E60",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-progressives-ucc",
+     "name": "Boulder Progressives UCC",
+     "page_url": "https://bouldervotes.org/orgs/boulder-progressives-ucc.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "filing",
+    "provenance_label": "City filing",
+    "label": "City filing: a committee registration with the city clerk names this.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+    "source_title": "City of Boulder Statement of Organization: Boulder Progressives UCC"
+   },
+   {
+    "id": "E74",
+    "endorser": {
+     "type": "person",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "title_as_printed": "Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/aaron-brockett.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Aaron Brockett. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E102",
+    "endorser": {
+     "type": "person",
+     "slug": "michael-dougherty",
+     "name": "Michael Dougherty",
+     "title_as_printed": "Boulder County district attorney",
+     "page_url": "https://bouldervotes.org/people/michael-dougherty.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Michael Dougherty. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E155",
+    "endorser": {
+     "type": "person",
+     "slug": "steve-fenberg",
+     "name": "Steve Fenberg",
+     "title_as_printed": "former Colorado Senate president",
+     "page_url": "https://bouldervotes.org/people/steve-fenberg.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Steve Fenberg. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E150",
+    "endorser": {
+     "type": "person",
+     "slug": "rachel-friend",
+     "name": "Rachel Friend",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rachel-friend.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Rachel Friend. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E199",
+    "endorser": {
+     "type": "person",
+     "slug": "sam-fuqua",
+     "name": "Sam Fuqua",
+     "title_as_printed": "former BVSD Board of Education president; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/sam-fuqua.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Sam Fuqua. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E108",
+    "endorser": {
+     "type": "person",
+     "slug": "kathy-gebhardt",
+     "name": "Kathy Gebhardt",
+     "title_as_printed": "Colorado State Board of Education member",
+     "page_url": "https://bouldervotes.org/people/kathy-gebhardt.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Kathy Gebhardt. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E134",
+    "endorser": {
+     "type": "person",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "title_as_printed": "former Boulder city councilmember; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/jill-grano.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Jill Grano. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E143",
+    "endorser": {
+     "type": "person",
+     "slug": "rob-kaplan",
+     "name": "Rob Kaplan",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rob-kaplan.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Rob Kaplan. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E116",
+    "endorser": {
+     "type": "person",
+     "slug": "claire-levy",
+     "name": "Claire Levy",
+     "title_as_printed": "Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/claire-levy.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Claire Levy. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E79",
+    "endorser": {
+     "type": "person",
+     "slug": "joe-neguse",
+     "name": "Joe Neguse",
+     "title_as_printed": "U.S. Representative for Colorado’s 2nd District",
+     "page_url": "https://bouldervotes.org/people/joe-neguse.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Joe Neguse. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E44",
+    "endorser": {
+     "type": "organization",
+     "slug": "open-boulder",
+     "name": "Open Boulder",
+     "page_url": "https://bouldervotes.org/orgs/open-boulder.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-14",
+    "source_url": "https://openboulder.org/vote-news-opinions/",
+    "source_title": "Open Boulder Endorses Five Candidates for Boulder City Council"
+   },
+   {
+    "id": "E66",
+    "endorser": {
+     "type": "organization",
+     "slug": "open-boulder-2026-ucc",
+     "name": "Open Boulder 2026 UCC",
+     "page_url": "https://bouldervotes.org/orgs/open-boulder-2026-ucc.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "filing",
+    "provenance_label": "City filing",
+    "label": "City filing: a committee registration with the city clerk names this.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+    "source_title": "City of Boulder Statement of Organization: Open Boulder 2026 UCC"
+   },
+   {
+    "id": "E4",
+    "endorser": {
+     "type": "organization",
+     "slug": "plan-boulder-county",
+     "name": "PLAN-Boulder County",
+     "page_url": "https://bouldervotes.org/orgs/plan-boulder-county.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-28",
+    "source_url": "https://planboulder.org/2026-city-council-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)"
+   },
+   {
+    "id": "E125",
+    "endorser": {
+     "type": "person",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/ryan-schuchard.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Ryan Schuchard. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E23",
+    "endorser": {
+     "type": "organization",
+     "slug": "sierra-club-indian-peaks",
+     "name": "Sierra Club Indian Peaks Group",
+     "page_url": "https://bouldervotes.org/orgs/sierra-club-indian-peaks.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-09-17",
+    "source_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
+    "source_title": "Sierra Club Endorses Boulder Mayoral and City Council Candidates (press release, Yellow Scene)"
+   },
+   {
+    "id": "E97",
+    "endorser": {
+     "type": "person",
+     "slug": "lesley-smith",
+     "name": "Lesley Smith",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/lesley-smith.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Lesley Smith. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E111",
+    "endorser": {
+     "type": "person",
+     "slug": "ashley-stolzmann",
+     "name": "Ashley Stolzmann",
+     "title_as_printed": "Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/ashley-stolzmann.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Ashley Stolzmann. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E189",
+    "endorser": {
+     "type": "person",
+     "slug": "saul-tapia-vega",
+     "name": "Saul Tapia Vega",
+     "title_as_printed": "Lafayette mayor",
+     "page_url": "https://bouldervotes.org/people/saul-tapia-vega.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Saul Tapia Vega. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E168",
+    "endorser": {
+     "type": "person",
+     "slug": "sam-weaver",
+     "name": "Sam Weaver",
+     "title_as_printed": "former Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/sam-weaver.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Sam Weaver. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   },
+   {
+    "id": "E129",
+    "endorser": {
+     "type": "person",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "title_as_printed": "Boulder mayor pro tem/councilmember",
+     "page_url": "https://bouldervotes.org/people/tara-winer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Tina Marquis campaign lists Tara Winer. Only the campaign says so.",
+    "claimed_by": "Tina Marquis campaign",
+    "published_on": null,
+    "source_url": "https://www.tinaforboulder.com/endorsements",
+    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+   }
+  ],
+  "finance": {
+   "committee": "Tina for Boulder City Council",
+   "contributions": 8949.13,
+   "expenditures": 439.82,
+   "matching_funds_received": 8949.12,
+   "cash_on_hand": 17458.43,
+   "as_of": "2026-08-18",
+   "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=316",
+   "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "notes": null
+  },
+  "source_urls": [
+   "https://betterboulder.com/2026-city-council-candidate-questionnaire",
+   "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
+   "https://boulderreportinglab.org/govpack_profiles/tina-marquis-2/",
+   "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf",
+   "https://openboulder.org/vote-news-opinions/",
+   "https://planboulder.org/2026-city-council-candidate-endorsements",
+   "https://richardvalenty.com/2026/09/marquis-can-boulder-housing-be-family-friendly/",
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
+   "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
+   "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "https://www.tinaforboulder.com/",
+   "https://www.tinaforboulder.com/endorsements",
+   "https://www.youtube.com/watch?v=1At-W2cR9Mk",
+   "https://www.youtube.com/watch?v=CQlalpB7N5w",
+   "https://www.youtube.com/watch?v=gdZzGJNB7g0",
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates"
+  ]
+ }
+}
