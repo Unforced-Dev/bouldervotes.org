@@ -1,10 +1,10 @@
 # Boulder elections: Civics 101
 
-*For the November 3, 2026 election. This is a guide to who makes decisions, not a recommendation on how to vote.* [Source: https://bouldercounty.gov/elections/information/]
+*Who decides what in Boulder, for the November 3, 2026 election.* [Source: https://bouldercounty.gov/elections/information/]
 
 ## Who runs the city?
 
-Boulder has a **council–manager** government: the elected council sets city policy, and the city manager, hired by council, runs city administration and carries out that policy. [Source: https://bouldercolorado.gov/boulder-city-council-frequently-asked-questions] The manager's office provides leadership and oversight to city departments; council is not the day-to-day supervisor of every employee. [Source: https://bouldercolorado.gov/government/departments/city-managers-office] Council has nine members—the mayor and eight councilmembers—and each has an equal vote. [Source: https://library.municode.com/co/boulder/codes/municipal_code?nodeId=THCHBOCO_ARTIITHLEBOPODU_S8VA] All are elected **at large**, by voters across the whole city, not by neighborhood wards. [Source: https://bouldercolorado.gov/boulder-city-council-frequently-asked-questions]
+Boulder has a **council–manager** government: the elected council sets city policy, and the city manager, hired by council, runs city administration and carries out that policy. [Source: https://bouldercolorado.gov/boulder-city-council-frequently-asked-questions] The manager's office provides leadership and oversight to city departments; council is not the day-to-day supervisor of every employee. [Source: https://bouldercolorado.gov/government/departments/city-managers-office] Council has nine members, the mayor and eight councilmembers, and each has an equal vote. [Source: https://library.municode.com/co/boulder/codes/municipal_code?nodeId=THCHBOCO_ARTIITHLEBOPODU_S8VA] All are elected **at large**, by voters across the whole city, not by neighborhood wards. [Source: https://bouldercolorado.gov/boulder-city-council-frequently-asked-questions]
 
 ## What can the city decide?
 

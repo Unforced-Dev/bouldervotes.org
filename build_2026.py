@@ -99,8 +99,7 @@ def timeline(today) -> str:
 
 HOME_INTRO = (
     "Boulder Votes is an independent, nonpartisan guide to the City of Boulder's "
-    "November 3, 2026 election: who is running for mayor and city council, what the four "
-    "city ballot measures would do, and where every fact comes from."
+    "November 3, 2026 election. It covers the mayor and council races and the four city measures."
 )
 
 
@@ -108,7 +107,7 @@ PROV_LEGEND = """
 <details class='fold'><summary>What the labels on each endorsement mean</summary>
 <dl class='legend'>
 <dt>Endorser's own statement</dt><dd>The organization or person announced it themselves (their site, their press release, or a news story reprinting that release).</dd>
-<dt>“X campaign lists Y”</dt><dd>The only source is the candidate's (or ballot campaign's) own website. We did not find the endorser saying it themselves. It may well be true; it is the campaign's claim.</dd>
+<dt>“X campaign lists Y”</dt><dd>Only the candidate's (or ballot campaign's) own website says so. We didn't find the endorser saying it. It may be true, but it is the campaign's claim.</dd>
 <dt>City filing</dt><dd>A committee's registration with the city clerk names the candidate or measure it supports.</dd>
 <dt>News listing</dt><dd>A news outlet lists the endorsement, but we did not find the endorser's own statement.</dd>
 </dl>
@@ -267,13 +266,13 @@ class Graph2026:
         if pv == "campaign_claim":
             claimer = (e["claimed_by"] or "Campaign").removesuffix(" campaign").replace(" (ballot campaign)", " ballot")
             label = f"{esc(claimer)} campaign lists {who}"
-            tail = "Campaign's claim; we did not find the endorser's own statement."
+            tail = "Only the campaign says so."
         elif pv == "filing":
             label = "City filing"
             tail = "Committee registration with the city clerk names this."
         elif pv == "news_report":
             label = f"News listing: {esc(e['claimed_by'])} lists {who}"
-            tail = "No statement from the endorser itself was located."
+            tail = "We didn't find the endorser's own statement."
         else:
             label = "Endorser's own statement"
             tail = ""
@@ -295,7 +294,7 @@ class Graph2026:
 
     def grouped_endorsers(self, edges, prefix: str) -> str:
         if not edges:
-            return "<p class='empty'>No endorsements on file. That is not opposition, and not a position on any issue.</p>"
+            return "<p class='empty'>No endorsements on file. That is not opposition.</p>"
         out = []
         for key, label in GROUPS:
             chunk = [e for e in edges if self.group_of(e) == key]
@@ -335,8 +334,8 @@ class Graph2026:
                                "other individuals": "other individual"}[lab]
                     counts.append(f"{n} {lab}")
             listed = sum(1 for e in people if e["provenance"] == "campaign_claim")
-            src = " — listed by the campaign" if listed == len(people) else (
-                f" — {listed} listed by the campaign" if listed else "")
+            src = ", all listed by the campaign" if listed == len(people) else (
+                f", {listed} listed by the campaign" if listed else "")
             bits.append("Individuals: " + ", ".join(counts) + src + ".")
         return " ".join(bits)
 
@@ -446,8 +445,8 @@ class Graph2026:
             reported = [s for s in pub if not s["speaker_is_candidate"]]
             held = self.statements(person_id, "held")
             bits.append("<h2 id='positions'>In their own words</h2>")
-            bits.append("<p class='note'>Short passages from questionnaires, interviews and the campaign site, each with its source. "
-                        "Grouped by topic. Nothing here is a score; a topic with no quote means we have no quote, not a position.</p>")
+            bits.append("<p class='note'>Short passages from questionnaires, interviews and the campaign website, by topic. "
+                        "If a topic is missing, we have no quote on it. That says nothing about their view.</p>")
             if own:
                 cur_topic = None
                 for s in own:
@@ -475,14 +474,13 @@ class Graph2026:
             if held:
                 bits.append(
                     f"<p class='held'>{len(held)} further passage{'s' if len(held) != 1 else ''} "
-                    f"({', '.join(sorted({h['publisher'] for h in held}))}) held back: our audit could not yet match the "
-                    f"quoted text to the article. Not shown until verified.</p>"
+                    f"({', '.join(sorted({h['publisher'] for h in held}))}) not shown yet. We could not find the quoted words in the "
+                    f"article, so we are holding them until we can check.</p>"
                 )
 
             edges = self.endorsements("e.candidacy_id=?", (cand["id"],))
             bits.append("<h2 id='endorsers'>Endorsements</h2>")
-            bits.append("<p class='note'>Grouped so you can see who is backing whom. Not ranked, not scored. "
-                        "Each line says where the endorsement comes from.</p>")
+            bits.append("<p class='note'>Each line says where the endorsement comes from.</p>")
             bits.append(PROV_LEGEND)
             bits.append(self.grouped_endorsers(edges, prefix))
         elif title:
@@ -508,7 +506,7 @@ class Graph2026:
         given = self.endorsements("e.endorser_person_id=?", (person_id,))
         if given:
             bits.append("<h2 id='gave'>Endorsements they have given (2026)</h2>")
-            bits.append("<p class='note'>A personal endorsement, not one by any office they hold.</p>")
+            bits.append("<p class='note'>These are personal endorsements, not ones made by any office they hold.</p>")
             bits.append("<ul class='edges'>" + "".join(self.edge_li(e, prefix, "target") for e in given) + "</ul>")
         return "\n".join(bits)
 
@@ -534,7 +532,7 @@ class Graph2026:
             "<div class='hero'>",
             "<p class='eyebrow'>City of Boulder · Election Day Tuesday, November 3, 2026</p>",
             "<h1>Everything on your Boulder city ballot, with sources</h1>",
-            "<p class='intro'>We do not endorse, score, or recommend. Every quote, endorsement and dollar figure links to where it came from.</p>",
+            "<p class='intro'>Who is running, what the measures would do, and who is backing whom. We don't endorse anyone. Every quote, endorsement and dollar figure links to its source.</p>",
             "</div>",
             timeline(today),
             "<h2 class='visually-hidden'>On your city ballot</h2>",
@@ -549,7 +547,7 @@ class Graph2026:
             f"<ul class='codes'>{codes}</ul><span class='go'>What Yes and No mean</span></a>",
             "</div>",
             f"<p class='about-line' id='what-this-is'>{esc(HOME_INTRO)}</p>",
-            "<p class='note'>County, state, school-board and regional items are also on your ballot; this site covers the City of Boulder only.</p>",
+            "<p class='note'>Your ballot also has county, state, school board and regional races. This guide covers only the City of Boulder.</p>",
         ]
 
         def cards(rows, office):
@@ -574,8 +572,8 @@ class Graph2026:
             return "\n".join(out)
 
         b.append(f"<div class='section-head'><h2 id='mayor'>Who's running for mayor</h2><span class='count'>{len(mayor)} candidates · 1 seat · ranked choice</span></div>")
-        b.append(f"<p>{len(mayor)} candidates for one seat. Ranked-choice: mark a 1st choice, and a 2nd, 3rd … if you like. "
-                 "Some groups endorsed a 1st and a 2nd choice; we show the rank they gave.</p>"
+        b.append(f"<p>{len(mayor)} candidates for one seat. You rank them: mark your 1st choice, then a 2nd, 3rd and so on if you want. "
+                 "Some groups endorsed a 1st and 2nd choice, and we show that.</p>"
                  f"<p class='note'>{self.ballot_order_note()}</p>")
         b.append(cards(mayor, "mayor"))
         b.append(f"<div class='section-head'><h2 id='council'>Who's running for city council</h2><span class='count'>{len(council)} candidates · 5 seats · vote for up to 5</span></div>")
@@ -583,8 +581,7 @@ class Graph2026:
                  f"<p class='note'>{self.ballot_order_note()} “Campaign-listed” means the only source is the candidate's own website.</p>")
         b.append(cards(council, "council"))
         b.append(f"<div class='section-head'><h2 id='measures'>What's on the ballot</h2><span class='count'>{len(ms)} city measures</span></div>")
-        b.append("<p>Four city measures. Each page starts with what a Yes vote and a No vote mean, then the money, "
-                 "the full ballot wording, and who supports or opposes it.</p>")
+        b.append("<p>Each measure page starts with what a Yes vote and a No vote mean. Below that are the cost, the full ballot wording, and who supports or opposes it.</p>")
         b.append("<div class='measure-list'>")
         for m in ms:
             b.append(
@@ -596,17 +593,17 @@ class Graph2026:
         b.append("</div>")
         b.append("<h2 id='how-to-use'>How to use this guide</h2>"
                  "<ol class='howto'>"
-                 "<li><strong>Start with a race.</strong> Open a candidate above. The top of each page says the office, a one-line bio, and links to their positions, forum answers, endorsements and money.</li>"
-                 "<li><strong>Read their own words.</strong> Quotes come with the source under them. Long answers fold; tap “Read the full answer”.</li>"
-                 "<li><strong>Check where an endorsement comes from.</strong> Each one is labelled: the endorser's own statement, a city filing, a news listing, or “X campaign lists Y” when only the campaign says so.</li>"
+                 "<li><strong>Pick a candidate.</strong> Each page starts with a short bio, then their positions, forum answers, endorsements and money.</li>"
+                 "<li><strong>Read their own words.</strong> The source is under every quote. Tap a long answer to open it.</li>"
+                 "<li><strong>Check where an endorsement comes from.</strong> Each one says whether the endorser announced it, it came from a city filing or a news story, or “X campaign lists Y” when only the campaign says so.</li>"
                  "<li><strong>Read a measure.</strong> Each measure page leads with what Yes and No mean.</li>"
                  "<li><strong>Print it.</strong> Every candidate has a <a href='print/index.html'>printable sheet</a>. New to city government? Read <a href='civics.html'>Civics 101</a>.</li>"
                  "</ol>")
         b.append("<h2 id='more'>More in this guide</h2><ul>"
-                 "<li><a href='compare.html'>What candidates said at forums</a> — the same question, every candidate, in their own words</li>"
-                 "<li><a href='orgs.html'>Organizations that endorse</a> — who they are, how they decide, who funds them</li>"
-                 "<li><a href='finance.html'>Campaign money</a> — city clerk filings</li>"
-                 "<li><a href='2026.html'>2026 ballot details</a> — questions asked this cycle, forums, money table</li>"
+                 "<li><a href='compare.html'>What candidates said at forums</a>, side by side</li>"
+                 "<li><a href='orgs.html'>Groups that endorse</a> and how they pick candidates</li>"
+                 "<li><a href='finance.html'>Campaign money</a> from city filings</li>"
+                 "<li><a href='2026.html'>2026 ballot details</a>: questions asked, forums and a money table</li>"
                  "<li><a href='print/index.html'>Printable sheets for every candidate</a></li>"
                  "<li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, "
                  "<a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>")
@@ -617,11 +614,10 @@ class Graph2026:
         rows = self.q("""SELECT o.*, op.* FROM org_profiles op JOIN organizations o ON o.id=op.org_id
                          ORDER BY o.name""").fetchall()
         idx = ["<h1>Organizations that endorse</h1>",
-               "<p class='lede'>Groups and committees that have taken public positions in the 2026 City of Boulder election, "
-               "or that voters often ask about. Each page says who they are, how they decide, what we know about their money, "
-               "and whom they endorsed — with sources.</p>",
-               "<p class='note'>A committee (UCC, ballot committee) is registered with the city clerk and must report donors. "
-               "It is shown separately from the group that sponsors it.</p>"]
+               "<p class='lede'>Groups and committees that took a side in the 2026 city election, plus a few voters often ask about. "
+               "Each page says who they are, how they pick candidates, where their money comes from, and whom they endorsed.</p>",
+               "<p class='note'>Committees register with the city clerk and must report their donors. "
+               "We list them apart from the groups that sponsor them.</p>"]
         for kind, label in (("organization", "Organizations"), ("committee", "Registered committees"), ("newspaper", "Newspapers")):
             chunk = [r for r in rows if r["endorser_kind"] == kind]
             if not chunk:
@@ -705,10 +701,10 @@ class Graph2026:
                     b.append("<h3>City measures</h3><ul class='edges'>" + "".join(self.edge_li(e, "../", "target") for e in city) + "</ul>")
                 if other:
                     b.append("<h3>Other ballot items</h3><ul class='edges'>" + "".join(self.edge_li(e, "../", "target") for e in other) + "</ul>")
-                b.append("<p class='note'>Only positions this group (or a campaign, as labelled) has published. "
-                         "No position on file for a race or measure is not a no.</p>")
+                b.append("<p class='note'>These are positions this group, or a campaign where labelled, has published. "
+                         "A race with nothing listed doesn't mean the group is against anyone.</p>")
             else:
-                b.append("<p class='empty'>No 2026 City of Boulder position on file. That is not a position.</p>")
+                b.append("<p class='empty'>No 2026 City of Boulder positions on file.</p>")
             past = self.q("""SELECT pe.*, s.url FROM org_past_endorsements pe JOIN sources s ON s.id=pe.source_id
                              WHERE pe.org_id=? ORDER BY pe.year DESC, pe.id""", (oid,)).fetchall()
             if past:
@@ -764,15 +760,15 @@ class Graph2026:
                     b.append("<ul class='edges'>" + "".join(
                         f"<li>{self.endorser_name(e, '../')}{self.prov_line(e)}</li>" for e in chunk) + "</ul>")
                 else:
-                    b.append("<p class='empty'>None independently identified. That does not mean there is no "
-                             + ("support" if pos == "endorse" else "opposition") + ".</p>")
+                    b.append("<p class='empty'>None found so far. There may still be "
+                             + ("supporters" if pos == "endorse" else "opponents") + ".</p>")
             mlines = [x for x in lines if x["measure_id"] == m["measure_id"]]
             if mlines:
                 b.append("<h3>What reporters said about the candidates</h3>")
             for ln in mlines:
                 b.append(f"<p class='card'>{esc(ln['reporter'])} reported ({esc(ln['reported_on'])}): {esc(ln['text'])} "
-                         f"<a href='{esc(ln['url'])}'>{esc(ln['title'])}</a><span class='note'> — a reporter's summary of the field, "
-                         f"not each candidate's own answer. We do not assign a yes or no to anyone from it.</span></p>")
+                         f"<a href='{esc(ln['url'])}'>{esc(ln['title'])}</a><span class='note'> This is the reporter's summary, "
+                         f"not each candidate's own answer, so we don't mark anyone yes or no from it.</span></p>")
             extra = getattr(self, "measure_extra", None)
             if extra:
                 b.append(extra(m["letter"], "../"))
@@ -784,7 +780,7 @@ class Graph2026:
 
     def write_civics(self, md: str) -> None:
         body = md_to_html(md)
-        body += "<p class='note'>Compiled September 2026. Each paragraph links its source. Not a recommendation on how to vote.</p>"
+        body += "<p class='note'>Written September 2026. Each paragraph links its source.</p>"
         (self.out / "civics.html").write_text(self.page("Civics 101", body, year=2026, current="learn"), encoding="utf-8")
 
     def reported_lines_for_question(self, qid: int, prefix: str) -> str:
@@ -796,7 +792,6 @@ class Graph2026:
         for ln in lines:
             out.append(f"<div class='card'><p>{esc(ln['reporter'])} ({esc(ln['reported_on'])}): {esc(ln['text'])}</p>"
                        f"<p class='note'><a href='{esc(ln['url'])}'>{esc(ln['title'])}</a></p></div>")
-        out.append("<p class='note'>This is one reporter's summary of the field, attributed to the outlet. "
-                   "It is not a per-candidate answer, so we do not list anyone as a yes or no from it. "
-                   "Read each candidate's own words on their page.</p>")
+        out.append("<p class='note'>This is one reporter's summary, not each candidate's own answer, "
+                   "so we don't mark anyone yes or no from it. Each candidate's own words are on their page.</p>")
         return "\n".join(out)
