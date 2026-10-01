@@ -57,6 +57,10 @@ def generate(discover=True):
         for item in m.get('committees', []) + m.get('supporters', []) + m.get('opponents', []):
             add(item.get('source_url'), kind_for(item.get('source_url')), measure_letter=m['id'])
     for o in orgs:
+        if o['kind'] != 'person':
+            add(o.get('website'), 'endorser', endorser_slug=o['slug'])
+            for url in o.get('sources', []):
+                add(url, kind_for(url), endorser_slug=o['slug'])
         if o['kind'] == 'committee':
             add(o.get('website'), 'committee', endorser_slug=o['slug'])
     for url in ['https://boulderreportinglab.org/', 'https://yellowscene.com/']:

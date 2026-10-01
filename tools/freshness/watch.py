@@ -49,7 +49,7 @@ def html_to_text(html):
     return '\n'.join(' '.join(line.split()) for line in ''.join(parser.parts).splitlines() if line.strip()) + '\n'
 
 
-def watch(sources, state, fetcher=None):
+def watch(sources, state, fetcher=None, audit_initial=False):
     fetcher = fetcher or Fetcher()
     snapshots = state / 'snapshots'
     snapshots.mkdir(parents=True, exist_ok=True)
@@ -64,6 +64,8 @@ def watch(sources, state, fetcher=None):
                 raise ValueError('Empty source text')
             path = snapshots / (source['id'] + '.txt')
             old = path.read_text(encoding='utf-8') if path.exists() else None
+            if old is None and audit_initial:
+                report['changes'].append({**source, 'added': text.splitlines(), 'removed': [], 'initial_audit': True})
             if old is not None and old != text:
                 diff = list(difflib.ndiff(old.splitlines(), text.splitlines()))
                 report['changes'].append({**source, 'added': [s[2:] for s in diff if s.startswith('+ ')],
@@ -82,5 +84,5 @@ def watch(sources, state, fetcher=None):
 
 
 if __name__ == '__main__':
-    report = watch(read(HERE / 'sources.json', []), state_dir())
+    report = watch(read(HERE / 'sources.json', []), state_dir(), audit_initial=True)
     print(f"Sources: {len(report['fetched']) + len(report['errors'])}; snapshots: {len(report['fetched'])}; fetch errors: {len(report['errors'])}; changes: {len(report['changes'])}")

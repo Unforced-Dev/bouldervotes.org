@@ -33,6 +33,7 @@
     "E38",
     "E235",
     "E14",
+    "E240",
     "U1",
     "E55"
    ],
@@ -170,7 +171,8 @@
    "reporter_summaries": [],
    "positions": [
     "E53",
-    "E16"
+    "E16",
+    "E241"
    ],
    "forum_quotes": [],
    "source_urls": [

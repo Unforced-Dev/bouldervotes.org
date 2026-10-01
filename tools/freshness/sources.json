@@ -30,6 +30,12 @@
     "endorser_slug": "better-boulder"
   },
   {
+    "id": "1f0c216edaa74d15",
+    "url": "https://betterboulder.com/about-us/",
+    "kind": "endorser",
+    "endorser_slug": "better-boulder"
+  },
+  {
     "id": "2d836be3a75b9b84",
     "url": "https://betterboulder.com/ballot-measure-endorsements/",
     "kind": "endorser",
@@ -44,6 +50,12 @@
   {
     "id": "a5ff474dd926dc45",
     "url": "https://betterboulder.com/better-boulder-endorsements-2025/",
+    "kind": "endorser",
+    "endorser_slug": "better-boulder"
+  },
+  {
+    "id": "6edfb41cbdb7265f",
+    "url": "https://betterboulder.com/board-of-directors/",
     "kind": "endorser",
     "endorser_slug": "better-boulder"
   },
@@ -90,6 +102,18 @@
     "measure_letter": "2K"
   },
   {
+    "id": "39756208d8d1a76b",
+    "url": "https://bouldercolorado.gov/city-boulder-and-boulder-police-officers-association-2026-collective-bargaining-agreement",
+    "kind": "city",
+    "endorser_slug": "boulder-police-officers-association"
+  },
+  {
+    "id": "45b8c07ae503b2f8",
+    "url": "https://boulderdsa.org/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-county-dsa"
+  },
+  {
     "id": "39e11f4ea5584c87",
     "url": "https://boulderprogressives.org/",
     "kind": "committee",
@@ -107,10 +131,28 @@
     "endorser_slug": "kc-becker"
   },
   {
+    "id": "5b6258d90b49fa2a",
+    "url": "https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/",
+    "kind": "news",
+    "endorser_slug": "boulder-county-dsa"
+  },
+  {
     "id": "2a1219c5a6e9cfd9",
     "url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
     "kind": "news",
     "endorser_slug": "jan-burton"
+  },
+  {
+    "id": "09a4458e3f097c3f",
+    "url": "https://boulderweekly.com/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-weekly"
+  },
+  {
+    "id": "bb5253980accae2b",
+    "url": "https://boulderweekly.com/special-editions/vote-guide/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-weekly"
   },
   {
     "id": "c46b35f8183da19f",
@@ -127,6 +169,12 @@
   {
     "id": "45d0cc36fb0904d0",
     "url": "https://coaflcio.org/boulder-area-labor-council-afl-cio",
+    "kind": "endorser",
+    "endorser_slug": "boulder-area-labor-council"
+  },
+  {
+    "id": "8404ea0c9d2af642",
+    "url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
     "kind": "endorser",
     "endorser_slug": "boulder-area-labor-council"
   },
@@ -189,8 +237,26 @@
     "endorser_slug": "new-era-colorado-action-fund"
   },
   {
+    "id": "1b700ba4f8ed863d",
+    "url": "https://neweracoloradoaction.org/new-era-announces-first-ever-local-candidate-endorsements-in-aurora-boulder-and-fort-collins/",
+    "kind": "endorser",
+    "endorser_slug": "new-era-colorado-action-fund"
+  },
+  {
     "id": "dd0b517e52edcf07",
     "url": "https://neweracoloradoaction.org/new-era-colorado-action-fund-endorses-state-primary-candidates/",
+    "kind": "endorser",
+    "endorser_slug": "new-era-colorado-action-fund"
+  },
+  {
+    "id": "1b6f71009f669f79",
+    "url": "https://neweracoloradoaction.org/press-releases",
+    "kind": "endorser",
+    "endorser_slug": "new-era-colorado-action-fund"
+  },
+  {
+    "id": "88b550b3b8c072cd",
+    "url": "https://neweracoloradoaction.org/who-we-are/",
     "kind": "endorser",
     "endorser_slug": "new-era-colorado-action-fund"
   },
@@ -199,6 +265,24 @@
     "url": "https://openboulder.org/",
     "kind": "committee",
     "endorser_slug": "open-boulder-2026-ucc"
+  },
+  {
+    "id": "2dab4198864a867e",
+    "url": "https://openboulder.org/c4-board-members/",
+    "kind": "endorser",
+    "endorser_slug": "open-boulder"
+  },
+  {
+    "id": "fbbe8ef339edc15b",
+    "url": "https://openboulder.org/historic-voting-information/",
+    "kind": "endorser",
+    "endorser_slug": "open-boulder"
+  },
+  {
+    "id": "0cfe475afc1c290b",
+    "url": "https://openboulder.org/join/",
+    "kind": "endorser",
+    "endorser_slug": "open-boulder"
   },
   {
     "id": "52b941acd747c1b6",
@@ -225,6 +309,24 @@
     "endorser_slug": "plan-boulder-county"
   },
   {
+    "id": "e68d8ba132185fbb",
+    "url": "https://planboulder.org/boulder-election-2023",
+    "kind": "endorser",
+    "endorser_slug": "plan-boulder-county"
+  },
+  {
+    "id": "911dd7f792ddb26a",
+    "url": "https://planboulder.org/plan-boulder-county-endorsements",
+    "kind": "endorser",
+    "endorser_slug": "plan-boulder-county"
+  },
+  {
+    "id": "28ce10bfb1137fc1",
+    "url": "https://planboulder.org/the-board",
+    "kind": "endorser",
+    "endorser_slug": "plan-boulder-county"
+  },
+  {
     "id": "669ae5d57f623ad3",
     "url": "https://rjforboulder.com/",
     "kind": "campaign",
@@ -235,6 +337,12 @@
     "url": "https://rjforboulder.com/endorsements.html",
     "kind": "campaign",
     "endorser_slug": "matt-benjamin"
+  },
+  {
+    "id": "02c3c1f8fe96fee9",
+    "url": "https://runonclimate.org/",
+    "kind": "endorser",
+    "endorser_slug": "run-on-climate"
   },
   {
     "id": "1c401b5eb1f04aa4",
@@ -271,6 +379,12 @@
     "endorser_slug": "boulder-progressives-ucc"
   },
   {
+    "id": "f79f751dc346c058",
+    "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=326",
+    "kind": "city",
+    "endorser_slug": "open-boulder-ieo"
+  },
+  {
     "id": "fea795af1c61cd01",
     "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
     "kind": "city",
@@ -281,6 +395,54 @@
     "url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328",
     "kind": "city",
     "endorser_slug": "no-on-2k-demand-fiscal-responsibility"
+  },
+  {
+    "id": "ee1a1399892ef4b8",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=CandESummary",
+    "kind": "city",
+    "endorser_slug": "boulder-progressives-ucc"
+  },
+  {
+    "id": "6432c14903228276",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832",
+    "kind": "city",
+    "endorser_slug": "boulder-firefighters-stronger-boulder"
+  },
+  {
+    "id": "20aee1d8f3afaf3f",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861",
+    "kind": "city",
+    "endorser_slug": "open-boulder"
+  },
+  {
+    "id": "7716036b3fb793d2",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3870",
+    "kind": "city",
+    "endorser_slug": "no-on-2k-demand-fiscal-responsibility"
+  },
+  {
+    "id": "397a898110594bd9",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873",
+    "kind": "city",
+    "endorser_slug": "open-boulder"
+  },
+  {
+    "id": "ca25b5241c2d3e15",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3875",
+    "kind": "city",
+    "endorser_slug": "vacancy-to-vitality"
+  },
+  {
+    "id": "8676b59a7b9d882c",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3876",
+    "kind": "city",
+    "endorser_slug": "open-boulder-ieo"
+  },
+  {
+    "id": "658f04c59e4ae0c1",
+    "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881",
+    "kind": "city",
+    "endorser_slug": "boulder-progressives-ucc"
   },
   {
     "id": "46512f5cfdd9a301",
@@ -305,6 +467,14 @@
     "url": "https://workingfamilies.org/2026/06/colorado-wfp-endorses-david-seligman-for-attorney-general/",
     "kind": "endorser",
     "endorser_slug": "colorado-working-families-party"
+  },
+  {
+    "url": "https://workingfamilies.org/candidates/",
+    "kind": "endorser",
+    "endorser_slug": "colorado-working-families-party",
+    "browser_required": true,
+    "coverage_note": "403 for plain fetch; Colorado View More loads additional candidates. Browser audit required.",
+    "id": "02a1235861e22e13"
   },
   {
     "id": "b98cddf283f8561a",
@@ -337,16 +507,100 @@
     "endorser_slug": "judy-amabile"
   },
   {
+    "id": "dc85115d945a0d97",
+    "url": "https://www.bocodems.org/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-county-democratic-party"
+  },
+  {
+    "id": "da218b8e25177b15",
+    "url": "https://www.bocodems.org/2026-candidates/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-county-democratic-party"
+  },
+  {
+    "id": "b420f84e84e96956",
+    "url": "https://www.boulderchamber.com/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-chamber"
+  },
+  {
     "id": "f4edb1c28cffad62",
     "url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
     "kind": "endorser",
     "endorser_slug": "boulder-chamber"
   },
   {
+    "id": "dc3032f73642497c",
+    "url": "https://www.boulderchamber.com/about-us/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-chamber"
+  },
+  {
+    "id": "8a8177b46b2b67e8",
+    "url": "https://www.boulderchamber.com/board-of-directors/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-chamber"
+  },
+  {
+    "id": "59080587dddb171e",
+    "url": "https://www.boulderchamber.com/membership-levels/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-chamber"
+  },
+  {
+    "id": "e7bfab133f942a8e",
+    "url": "https://www.boulderchamber.com/policy-programs/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-chamber"
+  },
+  {
+    "id": "3f765c418ca900d3",
+    "url": "https://www.boulderfirefighters.org/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-firefighters-local-900"
+  },
+  {
+    "id": "90b061fcf99e5171",
+    "url": "https://www.boulderfirefighters.org/about/about-us",
+    "kind": "endorser",
+    "endorser_slug": "boulder-firefighters-local-900"
+  },
+  {
+    "id": "9409182297cc362f",
+    "url": "https://www.boulderfirefighters.org/about/board-members",
+    "kind": "endorser",
+    "endorser_slug": "boulder-firefighters-local-900"
+  },
+  {
+    "id": "828a444ebed7356f",
+    "url": "https://www.boulderprogressives.org/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-progressives"
+  },
+  {
     "id": "7999287f8a611bd2",
     "url": "https://www.boulderprogressives.org/2026-ballot-measure-quick-guide",
     "kind": "endorser",
     "measure_letter": "2J"
+  },
+  {
+    "id": "90719e3a26ed07b9",
+    "url": "https://www.boulderprogressives.org/blog/boulder-progressives-announces-2025-city-council-candidate-endorsements",
+    "kind": "endorser",
+    "endorser_slug": "boulder-progressives"
+  },
+  {
+    "id": "4727a152061af97f",
+    "url": "https://www.boulderprogressives.org/board",
+    "kind": "endorser",
+    "endorser_slug": "boulder-progressives"
+  },
+  {
+    "id": "07ecc9599b660409",
+    "url": "https://www.boulderprogressives.org/voter-guide",
+    "kind": "endorser",
+    "endorser_slug": "boulder-progressives"
   },
   {
     "id": "ed790c2f6f8ac276",
@@ -359,6 +613,18 @@
     "url": "https://www.bouldervacancytax.org/endorsements",
     "kind": "endorser",
     "endorser_slug": "boulder-county-dsa"
+  },
+  {
+    "id": "c0968686010ebd23",
+    "url": "https://www.dailycamera.com/",
+    "kind": "endorser",
+    "endorser_slug": "daily-camera-editorial-board"
+  },
+  {
+    "id": "39160588aeebd5ff",
+    "url": "https://www.dailycamera.com/2025/10/05/city-council-incumbents-have-boulder-on-the-right-track-editorial/",
+    "kind": "endorser",
+    "endorser_slug": "daily-camera-editorial-board"
   },
   {
     "id": "61f6b8db04a7aa80",
@@ -437,6 +703,24 @@
     "endorser_slug": "run-on-climate"
   },
   {
+    "id": "323c841e784c0aec",
+    "url": "https://www.sierraclub.org/colorado/indian-peaks",
+    "kind": "endorser",
+    "endorser_slug": "sierra-club-indian-peaks"
+  },
+  {
+    "id": "760e15fc756d9685",
+    "url": "https://www.sierraclub.org/colorado/indian-peaks/local-endorsements",
+    "kind": "endorser",
+    "endorser_slug": "sierra-club-indian-peaks"
+  },
+  {
+    "id": "a787b663f1930b4e",
+    "url": "https://www.sierraclub.org/colorado/indian-peaks/politics-and-issues",
+    "kind": "endorser",
+    "endorser_slug": "sierra-club-indian-peaks"
+  },
+  {
     "id": "2720396250c3cae9",
     "url": "https://www.taraforboulder.com/",
     "kind": "campaign",
@@ -476,6 +760,18 @@
     "id": "6604d64e216e607e",
     "url": "https://yellowscene.com/",
     "kind": "news"
+  },
+  {
+    "id": "fe0ea58a1a5a8b1b",
+    "url": "https://yellowscene.com/2026/08/21/boulder-progressives-announces-strongest-slate-ever-for-2026-city-council-election",
+    "kind": "news",
+    "endorser_slug": "boulder-progressives"
+  },
+  {
+    "id": "6c97d078538776c9",
+    "url": "https://yellowscene.com/2026/09/12/boulder-chamber-releases-first-round-of-ballot-endorsements",
+    "kind": "news",
+    "endorser_slug": "boulder-chamber"
   },
   {
     "id": "cb9f25ec6ee03653",
