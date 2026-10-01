@@ -21,8 +21,19 @@ class TestUpcomingForums(unittest.TestCase):
     def test_past_events_drop_off(self):
         from build_upcoming import upcoming
         self.assertEqual(upcoming(dt.date(2026, 11, 4)), [])
-        self.assertEqual(len(upcoming(dt.date(2026, 10, 1))), 5)
-        self.assertEqual(len(upcoming(dt.date(2026, 9, 30))), 6)
+        known_future = {
+            "2026-10-06-eof-plan-mayoral-climate",
+            "2026-10-13-eof-plan-council-climate",
+            "2026-10-14-brl-kgnu-mayoral-debate",
+            "2026-10-14-lwv-ballot-issues-pearl",
+            "2026-10-15-lwv-ballot-issues-frasier",
+        }
+        after = {e["id"] for e in upcoming(dt.date(2026, 10, 1))}
+        before = {e["id"] for e in upcoming(dt.date(2026, 9, 30))}
+        self.assertTrue(known_future <= after)
+        self.assertTrue(known_future <= before)
+        self.assertIn("2026-09-30-bolo-barha-council-mayor", before)
+        self.assertNotIn("2026-09-30-bolo-barha-council-mayor", after)
 
     def test_rendered_on_forums_page_and_llms(self):
         s = (DOCS / "forums.html").read_text(encoding="utf-8")

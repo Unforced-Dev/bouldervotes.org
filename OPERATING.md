@@ -107,3 +107,31 @@ python3 seed.py && python3 build.py && python3 -m unittest && python3 tools/chec
 - Past-year campaign-finance dollar totals (Laserfiche archive is JS/cookie; 2026 live app is harvested, including itemized donors).
 - 2015 and earlier cycles.
 - Forum transcripts as quotes beyond the reviewed 2026 set (do not invent spoken words from a journalist’s grouping).
+
+## Keeping it current
+
+`tools/freshness/run.sh` is the cron entry point (install a copy as
+`~/.hermes/scripts/bv_freshness.sh`). It locks, fetches origin, resets its dedicated
+`/home/uni/src/bouldervotes-freshness-run` worktree to `origin/main`, refreshes
+finance, discovers sources, and watches normalized live page text. Hand-edit
+`tools/freshness/sources.json` or add entries to `extra_sources.json`; regenerating
+preserves manual edits. A first successful fetch establishes a baseline.
+Snapshots, diffs, worker data copies, proposals, logs and held-item history live in
+`$BV_STATE_DIR` (default `~/.hermes/state/bouldervotes`), outside git.
+
+Changed pages go to a Claude Sonnet worker with Read/Write tools. It proposes
+facts; `verify_apply.py` independently refetches the page, checks literal quotes,
+targets, endorser identity, source ownership and duplicates, then appends accepted
+records and their verification-ledger entries. Automatic entries use `AUTO`.
+Unclassified hosts, ambiguous forum details, disappearances, and failures are
+held for human review; existing endorsements are never edited or removed.
+Finance decreases or missing committees stop publication for human review.
+
+The runner rebuilds and runs all tests/link checks before committing, pushing a
+freshness branch, opening a PR on `Unforced-Dev/bouldervotes.org`, and merging
+with `gh pr merge --merge`. It requires authenticated `gh`, git push access and
+`/home/uni/.local/share/mise/shims/claude`. A failed run prints `FAILED` and its
+log path; successful runs print only new items, finance changes and new holds or
+fetch errors. Review `held.json` without deleting its deduplication history.
+For a read-only baseline, run `python3 tools/freshness/sources.py` followed by
+`python3 tools/freshness/watch.py`; this does not invoke the worker or publish.

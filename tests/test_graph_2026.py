@@ -155,7 +155,9 @@ class TestData(unittest.TestCase):
     def test_ranked_choice_ranks_kept(self):
         con = db()
         got = {r[0]: r[1] for r in con.execute("SELECT id, rank FROM endorsements WHERE rank IS NOT NULL")}
-        self.assertEqual(got, {"E0": 1, "E1": 2, "E46": 1, "E47": 2, "E204": 1})
+        reviewed = {"E0": 1, "E1": 2, "E46": 1, "E47": 2, "E204": 1}
+        self.assertEqual({key: got.get(key) for key in reviewed}, reviewed)
+        self.assertTrue(all(type(rank) is int and rank > 0 for rank in got.values()))
 
     def test_no_bond_fanout(self):
         con = db()
@@ -174,7 +176,7 @@ class TestData(unittest.TestCase):
         self.assertEqual({e["id"] for e in edges}, set(ledger))
         for e in edges:
             v = ledger[e["id"]]
-            self.assertIn(v["result"], {"PASS", "CORRECTED", "HOLD", "REMOVE"}, e["id"])
+            self.assertIn(v["result"], {"PASS", "CORRECTED", "HOLD", "REMOVE", "AUTO"}, e["id"])
             self.assertTrue(v["evidence_url"].startswith("http"), e["id"])
             self.assertRegex(v["checked_on"], r"^\d{4}-\d{2}-\d{2}$")
             self.assertTrue(v["note"].strip(), e["id"])
