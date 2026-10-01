@@ -152,7 +152,7 @@ class FreshnessTests(unittest.TestCase):
             data, _ = self.setup_apply(state)
             published, held = apply(state, data, FakeFetcher({self.url: '<p>Changed again</p>'}))
             self.assertEqual(published, [])
-            self.assertIn('Live page changed', held[0]['reason'])
+            self.assertIn('Quote absent', held[0]['reason'])
             self.assertEqual(read(data / 'endorsements.json'), [])
 
     def test_disappearance_flag_preserves_record(self):
@@ -168,6 +168,32 @@ class FreshnessTests(unittest.TestCase):
             self.assertEqual(len(held), 1)
             self.assertEqual(read(data / 'endorsements.json'), [edge])
             self.assertEqual(apply(state, data, FakeFetcher({self.url: '<p>Unrelated text</p>'})), ([], []))
+
+    def test_review_mode_never_publishes(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[1]) as tmp:
+            state = Path(tmp)
+            data, fetcher = self.setup_apply(state)
+            published, held = apply(state, data, fetcher, review_only=True)
+            self.assertEqual(published, [])
+            self.assertIn('Uni must review', held[0]['reason'])
+            self.assertEqual(read(data / 'endorsements.json'), [])
+
+    def test_unrelated_dynamic_text_does_not_invalidate_quote(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[1]) as tmp:
+            state = Path(tmp)
+            data, _ = self.setup_apply(state)
+            published, held = apply(state, data, FakeFetcher({self.url: '<p>New widget</p><p>' + self.quote + '</p>'}))
+            self.assertEqual(len(published), 1)
+            self.assertEqual(held, [])
+
+    def test_initial_absence_is_not_disappearance(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[1]) as tmp:
+            state = Path(tmp)
+            data, fetcher = self.setup_apply(state)
+            edge = {**self.p, 'endorser': 'Someone Never Present', 'id': 'E3', 'status': 'published'}
+            write(data / 'endorsements.json', [edge])
+            write(state / 'proposals.json', [])
+            self.assertEqual(apply(state, data, fetcher), ([], []))
 
     def test_digest_empty_and_new_items(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[1]) as tmp:

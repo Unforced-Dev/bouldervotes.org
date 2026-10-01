@@ -126,7 +126,7 @@ def validate_forum(p, text, forums, sources, orgs):
         raise ValueError('Candidate attendance requires human review')
 
 
-def apply(state, data=DATA, fetcher=None):
+def apply(state, data=DATA, fetcher=None, review_only=False):
     candidates, orgs, edges, forums, ledger = [read(data / (n + '.json')) for n in
         ['candidates', 'organizations', 'endorsements', 'forums_upcoming', 'endorsement_verification']]
     proposals = read(state / 'proposals.json', [])
@@ -164,10 +164,10 @@ def apply(state, data=DATA, fetcher=None):
             raise ValueError('Snapshot changed since watch')
         # Independently refetch so a worker cannot edit the evidence it is judged on.
         current = html_to_text(fetcher.fetch(url))
-        if current != text:
-            raise ValueError('Live page changed since watch; rerun watch')
-        live[url] = text
-        return text
+        # Dynamic widgets may change unrelated text between reads. Judge the
+        # proposal against the independently fetched CURRENT page instead.
+        live[url] = current
+        return current
 
     for p in proposals:
         try:
@@ -181,6 +181,9 @@ def apply(state, data=DATA, fetcher=None):
             text = snapshot(p['source_url'])
             if p.get('type') == 'endorsement':
                 key, prov = validate_endorsement(p, text, candidates, orgs, edges)
+                if review_only:
+                    hold(p, 'Evidence found on live page; Uni must review meaning and attribution before publishing')
+                    continue
                 published_on = today
                 if p.get('published_on'):
                     stated = date.fromisoformat(p['published_on'])
@@ -210,6 +213,9 @@ def apply(state, data=DATA, fetcher=None):
                 published.append(edge)
             elif p.get('type') == 'forum':
                 validate_forum(p, text, forums, sources, orgs)
+                if review_only:
+                    hold(p, 'Evidence found on live page; Uni must review event details before publishing')
+                    continue
                 allowed = set(read(data / 'forums_upcoming.json')[0]) | {'topic', 'measure_only', 'format'}
                 forum = {k: v for k, v in p.items() if k in allowed}
                 forum.update(source_quote=p['evidence_quote'], retrieved_on=today, confidence='confirmed',
@@ -227,7 +233,12 @@ def apply(state, data=DATA, fetcher=None):
             continue
         try:
             text = snapshot(edge['source_url'])
-            if not contains(text, edge['endorser']):
+            removed = '\n'.join(line for change in report.get('changes', [])
+                                if change['url'] == edge['source_url']
+                                for line in change.get('removed', []))
+            # Absence from a first snapshot is not disappearance (JS/image-only
+            # lists and aliases are common). Require the name in removed text.
+            if contains(removed, edge['endorser']) and not contains(text, edge['endorser']):
                 hold({'type': 'flag', 'source_url': edge['source_url'], 'edge_id': edge['id']},
                      f"Published endorsement no longer names {edge['endorser']}; review {edge['id']}")
         except Exception as exc:
@@ -247,4 +258,4 @@ def json_key(item):
 
 
 if __name__ == '__main__':
-    apply(state_dir())
+    apply(state_dir(), review_only=True)
