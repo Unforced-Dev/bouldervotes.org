@@ -1536,6 +1536,106 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E236",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-working-families-party",
+    "name": "Colorado Working Families Party",
+    "page_url": "https://bouldervotes.org/orgs/colorado-working-families-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://workingfamilies.org/candidates/",
+   "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
+   "id": "E237",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-working-families-party",
+    "name": "Colorado Working Families Party",
+    "page_url": "https://bouldervotes.org/orgs/colorado-working-families-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "jamillah-richmond",
+    "name": "Jamillah Richmond",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://workingfamilies.org/candidates/",
+   "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
+   "id": "E238",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-working-families-party",
+    "name": "Colorado Working Families Party",
+    "page_url": "https://bouldervotes.org/orgs/colorado-working-families-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "rachel-rose-isaacson",
+    "name": "Rachel Rose Isaacson",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://workingfamilies.org/candidates/",
+   "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
+   "id": "E239",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-working-families-party",
+    "name": "Colorado Working Families Party",
+    "page_url": "https://bouldervotes.org/orgs/colorado-working-families-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://workingfamilies.org/candidates/",
+   "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
    "id": "E100",
    "endorser": {
     "type": "person",
@@ -6117,6 +6217,52 @@
    "published_on": "2026-09-16",
    "source_url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
    "source_title": "Our 2026 ballot measure positions (Boulder Progressives)"
+  },
+  {
+   "id": "E240",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-working-families-party",
+    "name": "Colorado Working Families Party",
+    "page_url": "https://bouldervotes.org/orgs/colorado-working-families-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2J"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://workingfamilies.org/candidates/",
+   "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
+   "id": "E241",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-working-families-party",
+    "name": "Colorado Working Families Party",
+    "page_url": "https://bouldervotes.org/orgs/colorado-working-families-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://workingfamilies.org/candidates/",
+   "source_title": "Our 2026 Candidates (Working Families Party)"
   },
   {
    "id": "E54",
