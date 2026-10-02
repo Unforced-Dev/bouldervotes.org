@@ -1368,6 +1368,32 @@
     "source_title": "Endorsements – Jill for City Council"
    },
    {
+    "id": "E244",
+    "endorser": {
+     "type": "person",
+     "slug": "will-toor",
+     "name": "Will Toor",
+     "title_as_printed": "former Boulder mayor and Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/will-toor.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Will Toor. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
     "id": "E188",
     "endorser": {
      "type": "person",
