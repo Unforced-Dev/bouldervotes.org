@@ -160,6 +160,11 @@ REPO_URL = "https://github.com/Unforced-Dev/bouldervotes.org"
 # The feedback collector (Cloudflare Worker + D1, source in feedback-worker/).
 # The HTML form posts here; AI agents POST JSON to FEEDBACK_API.
 FEEDBACK_URL = "https://feedback.bouldervotes.org/"
+# Cloudflare Web Analytics (cookieless; JS-snippet mode because Pages traffic isn't proxied).
+# The token is public by design: it ships in every page's source.
+CF_ANALYTICS_TOKEN = "7a452d8fccb54d1aa4bc55d6bb758f6d"
+ANALYTICS_BEACON = ("<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" "
+                    f"data-cf-beacon='{{\"token\": \"{CF_ANALYTICS_TOKEN}\"}}'></script>")
 FEEDBACK_API = FEEDBACK_URL + "api/v1/feedback"
 # Footer placeholder, replaced with each page's own path after the build.
 PAGE_PATH_TOKEN = "__BV_PAGE_PATH__"
@@ -343,6 +348,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
     </div>
   </div>
 </footer>
+{ANALYTICS_BEACON}
 </body>
 </html>
 """
@@ -1721,6 +1727,8 @@ def main() -> None:
       <li>Pages for <a href="orgs.html">endorsing groups</a>, <a href="issues.html">issues</a>, and every city election since 2017 (the year menu at top right, or the footer).</li>
     </ul>
     <p>The site works without JavaScript and prints cleanly. Folded answers print in full.</p>
+    <h2>Visitor counts</h2>
+    <p>We count visits with Cloudflare Web Analytics, which uses no cookies and does not follow you to other sites. It tells us how many people visit and which pages they read. We don't collect names, accounts or anything you type.</p>
     <h2>Source code and data</h2>
     <p>The code that builds this site and the data behind it are public: <a href="{REPO_URL}">source code on GitHub</a>. The same facts are available as <a href="api/index.html">plain text and JSON</a>.</p>
     """.replace("{REPO_URL}", REPO_URL)
