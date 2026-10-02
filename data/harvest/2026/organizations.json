@@ -3504,5 +3504,31 @@
     "title_source_url": "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
     "weight_group": "other_individual",
     "related": []
+  },
+  {
+    "slug": "downtown-boulder-partnership",
+    "name": "Downtown Boulder Partnership",
+    "kind": "organization",
+    "website": "https://boulderdowntown.com/about/downtown-boulder-partnership",
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": {
+      "text": "The DBP Public Policy Committee reviewed and discussed measures with particular relevance to downtown businesses, property owners and Boulder’s economic vitality. Following those discussions and consideration by the DBP Board of Directors, the Board took the following two positions",
+      "source_url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026"
+    },
+    "past_endorsements": [],
+    "summary": "Downtown Boulder's business membership organization. Its 2026 election page says it does not endorse candidates for elected office; its board took positions on two ballot measures. It also published candidates' written answers to its questions.",
+    "sources": [
+      "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
+      "https://boulderdowntown.com/about/downtown-boulder-partnership"
+    ],
+    "weight_group": "organization",
+    "related": []
   }
 ]

@@ -5,5 +5,12 @@
     "endorser_slug": "colorado-working-families-party",
     "browser_required": true,
     "coverage_note": "403 for plain fetch; Colorado View More loads additional candidates. Browser audit required."
+  },
+  {
+    "url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
+    "kind": "endorser",
+    "endorser_slug": "downtown-boulder-partnership",
+    "browser_required": false,
+    "coverage_note": "DBP board ballot-measure positions and candidate questionnaire PDFs. Found by discovery search 2026-10-02."
   }
 ]

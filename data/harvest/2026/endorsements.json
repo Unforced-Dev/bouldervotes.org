@@ -6323,5 +6323,86 @@
       "evidence_url": "https://workingfamilies.org/candidates/",
       "note": "Uni checked the official WFP Our 2026 Candidates page, Colorado section, including View More. Listed row: City of Boulder Ballot Question 2L\nYes. No announcement date or ranked-choice order stated."
     }
+  },
+  {
+    "id": "E242",
+    "endorser_type": "organization",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "rank": null,
+    "claimed_by": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-02."
+    },
+    "endorser": "Downtown Boulder Partnership",
+    "endorser_slug": "downtown-boulder-partnership",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
+    "source_title": "Election 2026 (Downtown Boulder Partnership)",
+    "notes": "DBP's own election page: board voted to support the Front Range Passenger Rail District measure. Page is undated. DBP says it does not endorse candidates.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-02",
+      "evidence_url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
+      "note": "Uni checked DBP's own election page in a browser. Verbatim: Following review and discussion by the Downtown Boulder Partnership Public Policy Committee and Board of Directors, DBP has voted to support the Front Range Passenger Rail District ballot measure."
+    }
+  },
+  {
+    "id": "E243",
+    "endorser_type": "organization",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-02."
+    },
+    "endorser": "Downtown Boulder Partnership",
+    "endorser_slug": "downtown-boulder-partnership",
+    "position": "oppose",
+    "provenance": "endorser_statement",
+    "source_url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
+    "source_title": "Election 2026 (Downtown Boulder Partnership)",
+    "notes": "DBP's own election page: board voted to oppose the Recreation and Safety Bond (city measure 2K), citing the added financial burden on businesses and property owners and favoring smaller, more focused bonds. Page is undated. DBP says it does not endorse candidates.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-02",
+      "evidence_url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
+      "note": "Uni checked DBP's own election page in a browser. Verbatim: Following review and discussion by the Downtown Boulder Partnership Public Policy Committee and Board of Directors, DBP voted to oppose the Building Boulder Together: Recreation and Safety Bond."
+    }
+  },
+  {
+    "id": "E244",
+    "endorser_type": "person",
+    "candidate": "Jill Grano",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "endorser": "Will Toor",
+    "endorser_slug": "will-toor",
+    "position": "endorse",
+    "provenance": "campaign_claim",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council",
+    "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-02",
+      "evidence_url": "https://www.jillforcouncil.com/endorsements",
+      "note": "Jill Grano campaign page (browser-rendered) lists: 'Will Toor, former Boulder Mayor + CO Energy Office Director'. Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]
