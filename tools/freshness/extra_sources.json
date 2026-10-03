@@ -12,5 +12,19 @@
     "endorser_slug": "downtown-boulder-partnership",
     "browser_required": false,
     "coverage_note": "DBP board ballot-measure positions and candidate questionnaire PDFs. Found by discovery search 2026-10-02."
+  },
+  {
+    "url": "https://www.boulderprogressives.org/city-council-candidates-endorsements",
+    "kind": "endorser",
+    "endorser_slug": "boulder-progressives",
+    "browser_required": false,
+    "coverage_note": "BP's own 2026 mayor/council endorsement page (lists all 7, incl. Richmond). Found by discovery search 2026-10-03."
+  },
+  {
+    "url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
+    "kind": "news",
+    "endorser_slug": "boulder-county-dsa",
+    "browser_required": false,
+    "coverage_note": "Reprint of DSA's Sept. 29 press release (Adams, Richmond, 2J). Source for E235."
   }
 ]

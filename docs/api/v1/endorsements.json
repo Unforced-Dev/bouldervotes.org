@@ -6073,13 +6073,13 @@
    },
    "position": "support",
    "rank": null,
-   "provenance": "campaign_claim",
-   "provenance_label": "Campaign claim",
-   "label": "Vacancy to Vitality ballot campaign lists Boulder County Democratic Socialists of America. Only the campaign says so.",
-   "claimed_by": "Vacancy to Vitality (ballot campaign)",
-   "published_on": null,
-   "source_url": "https://www.bouldervacancytax.org/endorsements",
-   "source_title": "Support for Boulder’s Vacancy Tax – Vacancy to Vitality"
+   "provenance": "news_report",
+   "provenance_label": "News listing",
+   "label": "News listing: Yellow Scene Magazine (Sept. 30 reprint of the chapter's press release) lists Boulder County Democratic Socialists of America. We didn't find the endorser's own statement.",
+   "claimed_by": "Yellow Scene Magazine (Sept. 30 reprint of the chapter's press release)",
+   "published_on": "2026-09-30",
+   "source_url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
+   "source_title": "Boulder County DSA Announces 2026 Endorsements (Yellow Scene Magazine)"
   },
   {
    "id": "E53",
