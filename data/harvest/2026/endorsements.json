@@ -5938,22 +5938,19 @@
     "measure_label": null,
     "position": "endorse",
     "rank": null,
-    "provenance": "campaign_claim",
-    "claimed_by": "Vacancy to Vitality (ballot campaign)",
-    "source_url": "https://www.bouldervacancytax.org/endorsements",
-    "source_title": "Support for Boulder’s Vacancy Tax – Vacancy to Vitality",
-    "published_on": null,
+    "provenance": "news_report",
+    "claimed_by": "Yellow Scene Magazine (Sept. 30 reprint of the chapter's press release)",
+    "source_url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
+    "source_title": "Boulder County DSA Announces 2026 Endorsements (Yellow Scene Magazine)",
+    "published_on": "2026-09-30",
     "status": "published",
-    "audit": {
-      "result": "hold_as_campaign_claim",
-      "note": "Audit HOLD: the pro-2J committee's support page shows a Boulder County DSA logo; no chapter statement found."
-    },
-    "notes": "Candidate/ballot committee’s support page displays a Boulder County DSA logo under “Support for Boulder’s Vacancy Tax”; no chapter-authored 2026 statement independently located.",
+    "audit": null,
+    "notes": "Press release dated Sept. 29, 2026, published in full by Yellow Scene: 'Boulder County Democratic Socialists of America today announced endorsements of Taishya Adams for Boulder mayor, Jamillah Richmond for Boulder City Council and City of Boulder Ballot Issue 2J following voting at the chapter’s monthly general meeting.' The pro-2J committee's support page (bouldervacancytax.org/endorsements) also shows the chapter's logo. No copy on the chapter's own website or Instagram was found as of Oct. 3, 2026.",
     "verification": {
-      "result": "HOLD",
-      "checked_on": "2026-09-29",
-      "evidence_url": "https://www.bouldervacancytax.org/endorsements",
-      "note": "Ballot-campaign claim (DSA logo). The chapter's Sept. 28 post says members vote on its November voter guide at the Oct. 3 general meeting; no DSA statement on 2J yet."
+      "result": "PASS",
+      "checked_on": "2026-10-03",
+      "evidence_url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
+      "note": "Uni read the Yellow Scene page in a browser. It reprints Boulder County DSA's Sept. 29 press release (contact Elias Lindgren): 'Boulder County DSA chapter endorses Adams for Boulder mayor, Richmond for Boulder City Council and a yes on 2J.' Labelled news report because no chapter-hosted copy was found (boulderdsa.org and @boulderdsa checked Oct. 3)."
     }
   },
   {

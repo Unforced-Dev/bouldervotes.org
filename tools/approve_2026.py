@@ -55,7 +55,7 @@ AUDIT_HELD_EDGES = {
     71: "Audit HOLD: Winer campaign displays the group's logo (image alt text); no dated group announcement.",
     77: "Audit HOLD: Brockett campaign names Neguse; the cited page is the candidate's claim, not a Neguse statement. Personal support does not imply his congressional office endorsed.",
     139: "Audit HOLD: Jamieson campaign lists Benjamin on an 'ENDORSED BY' card; not a Benjamin-authored announcement.",
-    235: "Audit HOLD: the pro-2J committee's support page shows a Boulder County DSA logo; no chapter statement found.",
+    # 235 (DSA -> 2J) left Oct. 3: the chapter's Sept. 29 press release endorses 2J (news report; see harvest JSON).
 }
 
 # A news outlet lists the endorsement, but it is not a report of the endorser's

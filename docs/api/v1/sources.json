@@ -1412,7 +1412,7 @@
   {
    "id": 225,
    "url": "https://www.bouldervacancytax.org/endorsements",
-   "title": "Support for Boulder’s Vacancy Tax – Vacancy to Vitality",
+   "title": "https://www.bouldervacancytax.org/endorsements",
    "kind": "article",
    "year": 2026,
    "published_on": null,
@@ -1753,6 +1753,15 @@
   },
   {
    "id": 263,
+   "url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
+   "title": "Boulder County DSA Announces 2026 Endorsements (Yellow Scene Magazine)",
+   "kind": "article",
+   "year": 2026,
+   "published_on": "2026-09-30",
+   "publisher": null
+  },
+  {
+   "id": 264,
    "url": "https://planboulder.org/2026-ballot-issue-endorsements",
    "title": "2026 Ballot Issue Endorsements",
    "kind": "article",
@@ -1761,7 +1770,7 @@
    "publisher": null
   },
   {
-   "id": 264,
+   "id": 265,
    "url": "https://boulderreportinglab.org/2026/08/30/kc-becker-boulder-deserves-a-better-bond-proposal-not-a-400-million-blank-check",
    "title": "KC Becker: Boulder deserves a better bond proposal, not a $400 million blank check (opinion, Boulder Reporting Lab)",
    "kind": "article",
@@ -1770,7 +1779,7 @@
    "publisher": null
   },
   {
-   "id": 265,
+   "id": 266,
    "url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
    "title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
    "kind": "video",
@@ -1779,7 +1788,7 @@
    "publisher": "Boulder Chamber"
   },
   {
-   "id": 266,
+   "id": 267,
    "url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
    "title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
    "kind": "video",
@@ -1788,7 +1797,7 @@
    "publisher": "Better Boulder"
   },
   {
-   "id": 267,
+   "id": 268,
    "url": "https://www.youtube.com/watch?v=PlXLjT1gH5U",
    "title": "(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -1797,7 +1806,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 268,
+   "id": 269,
    "url": "https://www.youtube.com/watch?v=Syj4_V5cQOk",
    "title": "(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -1806,7 +1815,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 269,
+   "id": 270,
    "url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
    "title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -1815,7 +1824,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 270,
+   "id": 271,
    "url": "https://www.youtube.com/watch?v=Q1PXyt_DLqw",
    "title": "(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -1824,7 +1833,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 271,
+   "id": 272,
    "url": "https://www.youtube.com/watch?v=szDYv-0rIgU",
    "title": "(Pt 5/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -1833,7 +1842,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 272,
+   "id": 273,
    "url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
    "title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
    "kind": "video",
