@@ -57,6 +57,31 @@
    "source_title": "@boulderdsa on Instagram: DSA endorses Taishya Adams and Jamillah Richmond"
   },
   {
+   "id": "E245",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "aaron-brockett",
+    "name": "Aaron Brockett",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": 1,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+  },
+  {
    "id": "E0",
    "endorser": {
     "type": "organization",
@@ -105,6 +130,31 @@
    "published_on": "2026-09-19",
    "source_url": "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
    "source_title": "Boulder Area Labor Council announces endorsements for City of Boulder, RTD District O and local ballot measures (media release, Yellow Scene)"
+  },
+  {
+   "id": "E246",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": 2,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
   },
   {
    "id": "E1",
@@ -1634,6 +1684,156 @@
    "published_on": null,
    "source_url": "https://workingfamilies.org/candidates/",
    "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
+   "id": "E247",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "tina-marquis",
+    "name": "Tina Marquis",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E248",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E249",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "tara-winer",
+    "name": "Tara Winer",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E250",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E251",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "sam-fuqua",
+    "name": "Sam Fuqua",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E252",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-04",
+   "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
   },
   {
    "id": "E100",
