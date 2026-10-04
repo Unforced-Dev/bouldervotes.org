@@ -613,6 +613,7 @@
     ],
     "summary": "An AFL-CIO area labor council covering six Colorado counties, with roots it traces to the Louisville Labor Council around 1870. It issued ranked-choice mayoral recommendations, three council endorsements and positions on county ballot questions in September 2026.",
     "sources": [
+      "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2026-endorsements",
       "https://coaflcio.org/boulder-area-labor-council-afl-cio/about-us",
       "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
       "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2025-endorsements"
@@ -1357,7 +1358,8 @@
       "https://www.jillforcouncil.com/endorsements",
       "https://www.ryanwithboulder.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "Boulder mayor",
     "title_source_url": "https://www.fuquaforcouncil.com/endorsements",
@@ -3177,9 +3179,10 @@
     "funding": null,
     "endorsement_process": null,
     "past_endorsements": [],
-    "summary": "Susie Hidalgo-Fahring is listed as Longmont mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "summary": "Susie Hidalgo-Fahring is listed as Longmont mayor on 2026 Boulder campaign endorsement pages. These are personal endorsements, not ones made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "Longmont mayor",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3530,6 +3533,38 @@
       "https://boulderdowntown.com/about/downtown-boulder-partnership"
     ],
     "weight_group": "organization",
+    "related": []
+  },
+  {
+    "slug": "mardi-moore",
+    "name": "Mardi Moore",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Mardi Moore",
+        "role": "Rocky Mountain Equality",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-04"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Mardi Moore is identified with Rocky Mountain Equality on Benita Duran's 2026 campaign endorsement page. This is a personal endorsement, not one made by the organization.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Rocky Mountain Equality",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "other_individual",
     "related": []
   }
 ]

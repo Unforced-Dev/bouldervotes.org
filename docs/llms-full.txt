@@ -1241,9 +1241,12 @@ What reporters wrote (the reporter's words, not the candidate's):
 #### Endorsements
 
 - Judy Amabile, Colorado state senator. Benita Duran campaign lists Judy Amabile. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
+- Aaron Brockett, Boulder mayor. Benita Duran campaign lists Aaron Brockett. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
 - Daily Camera Editorial Board. Endorser's own statement. Source: https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/ (2026-10-04)
 - Michael Dougherty, Boulder County district attorney. Benita Duran campaign lists Michael Dougherty. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
 - Lynn Guissinger, RTD board director. Benita Duran campaign lists Lynn Guissinger. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
+- Susie Hidalgo-Fahring, Longmont mayor. Benita Duran campaign lists Susie Hidalgo-Fahring. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
+- Mardi Moore, Rocky Mountain Equality. Benita Duran campaign lists Mardi Moore. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
 - Open Boulder. Endorser's own statement. Source: https://openboulder.org/vote-news-opinions/ (2026-09-14)
 - Open Boulder 2026 UCC. City filing: a committee registration with the city clerk names this. Source: https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327
 - Ashley Stolzmann, Boulder County commissioner. Benita Duran campaign lists Ashley Stolzmann. Only the campaign says so. Source: https://www.benitaduran.com/new-page-2
@@ -2321,6 +2324,7 @@ Money: The published ballot question has no specific tax, debt, or dollar amount
 How it got on the ballot: Unanimously referred by City Council on August 6, 2026. Source: https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/
 
 Who supports or opposes it:
+- Supports: Boulder Area Labor Council, AFL-CIO. Endorser's own statement. Source: https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2026-endorsements
 - Supports: Boulder Firefighters for a Stronger Boulder. Endorser's own statement. Source: https://strongerboulder.com/
 - Supports: Boulder Progressives. Endorser's own statement. Source: https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/
 - Supports: Colorado Working Families Party. Endorser's own statement. Source: https://workingfamilies.org/candidates/
