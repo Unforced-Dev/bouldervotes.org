@@ -6401,5 +6401,229 @@
       "evidence_url": "https://www.jillforcouncil.com/endorsements",
       "note": "Jill Grano campaign page (browser-rendered) lists: 'Will Toor, former Boulder Mayor + CO Energy Office Director'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E245",
+    "endorser_type": "organization",
+    "candidate": "Aaron Brockett",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": 1,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "Mayor, ranked-choice first: 'Mayor Aaron Brockett should be your number one vote on your ranked-choice mayoral ballot.' Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E246",
+    "endorser_type": "organization",
+    "candidate": "Taishya Adams",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": 2,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "Mayor, ranked-choice second: 'Number two should be Taishya Adams.' ... 'On your ballot, Brockett should be one and Adams two.' Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E247",
+    "endorser_type": "organization",
+    "candidate": "Tina Marquis",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "City Council: one of six candidates the board recommends for five open seats ('We are recommending six candidates: the incumbents — Tina Marquis, Ryan Schuchard and Tara Winer — and Jill Grano, Sam Fuqua and Benita Duran.'). Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E248",
+    "endorser_type": "organization",
+    "candidate": "Ryan Schuchard",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "City Council: one of six candidates the board recommends for five open seats ('We are recommending six candidates: the incumbents — Tina Marquis, Ryan Schuchard and Tara Winer — and Jill Grano, Sam Fuqua and Benita Duran.'). Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E249",
+    "endorser_type": "organization",
+    "candidate": "Tara Winer",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "City Council: one of six candidates the board recommends for five open seats ('We are recommending six candidates: the incumbents — Tina Marquis, Ryan Schuchard and Tara Winer — and Jill Grano, Sam Fuqua and Benita Duran.'). Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E250",
+    "endorser_type": "organization",
+    "candidate": "Jill Grano",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "City Council: one of six candidates the board recommends for five open seats ('We are recommending six candidates: the incumbents — Tina Marquis, Ryan Schuchard and Tara Winer — and Jill Grano, Sam Fuqua and Benita Duran.'). Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E251",
+    "endorser_type": "organization",
+    "candidate": "Sam Fuqua",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "City Council: one of six candidates the board recommends for five open seats ('We are recommending six candidates: the incumbents — Tina Marquis, Ryan Schuchard and Tara Winer — and Jill Grano, Sam Fuqua and Benita Duran.'). Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
+  },
+  {
+    "id": "E252",
+    "endorser_type": "organization",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "rank": null,
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_slug": "daily-camera-editorial-board",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)",
+    "notes": "City Council: one of six candidates the board recommends for five open seats ('We are recommending six candidates: the incumbents — Tina Marquis, Ryan Schuchard and Tara Winer — and Jill Grano, Sam Fuqua and Benita Duran.'). Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 4, 2026. The board names Rachel Rose Isaacson, Ryan Jamieson, Dave Martus and Scott Rendleman for 'special acknowledgement' but does not endorse them.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
+    }
   }
 ]

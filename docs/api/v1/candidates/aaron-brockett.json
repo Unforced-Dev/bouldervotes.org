@@ -830,6 +830,31 @@
   ],
   "endorsements": [
    {
+    "id": "E245",
+    "endorser": {
+     "type": "organization",
+     "slug": "daily-camera-editorial-board",
+     "name": "Daily Camera Editorial Board",
+     "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": 1,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-04",
+    "source_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+    "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
+   },
+   {
     "id": "E47",
     "endorser": {
      "type": "organization",
@@ -2334,6 +2359,7 @@
    "https://richardvalenty.com/2026/09/brockett-wants-to-finish-strong",
    "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
    "https://www.youtube.com/watch?v=1At-W2cR9Mk",
    "https://www.youtube.com/watch?v=CQlalpB7N5w",
    "https://www.youtube.com/watch?v=PlXLjT1gH5U",
