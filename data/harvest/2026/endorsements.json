@@ -6625,5 +6625,108 @@
       "evidence_url": "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
       "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 4, 2026. Verbatim: the Daily Camera Editorial Board is endorsing the incumbent in this year’s mayoral race, Aaron Brockett, and the three incumbents for City Council: Tina Marquis, Ryan Schuchard and Tara Winer. For City Council, we are also endorsing Jill Grano, Sam Fuqua and Benita Duran."
     }
+  },
+  {
+    "id": "E253",
+    "endorser": "Boulder Area Labor Council, AFL-CIO",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-area-labor-council",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2026-endorsements",
+    "source_title": "Boulder Area Labor Council 2026 Endorsements (Boulder Area Labor Council, AFL-CIO)",
+    "published_on": "2026-10-02",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-04."
+    },
+    "notes": "BALC's own endorsements page lists 'Vote Yes on Boulder Firefighters Collective Bargaining Rights' under Boulder Local Measures; it does not print the ballot letter. The Sept. 18 media release reprinted by Yellow Scene did not include this measure.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2026-endorsements",
+      "note": "Uni read BALC's own 2026 endorsements page (coaflcio.org, dated Oct. 2, 2026) in a browser. Under 'Boulder Local Measures', verbatim: 'Vote Yes on Boulder Firefighters Collective Bargaining Rights'. The city ballot measure on firefighter collective bargaining rights is 2L."
+    }
+  },
+  {
+    "id": "E254",
+    "endorser": "Aaron Brockett",
+    "endorser_type": "person",
+    "endorser_slug": "aaron-brockett",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Mayor of Boulder'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered) quotes Aaron Brockett ('Mayor of Boulder') under 'IN THEIR WORDS': 'There is no more experienced candidate in this race. ... I know when she gets elected she will do a phenomenal job.' Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E255",
+    "endorser": "Susie Hidalgo-Fahring",
+    "endorser_type": "person",
+    "endorser_slug": "susie-hidalgo-fahring",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Mayor of Longmont'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered) quotes Susie Hidalgo-Fahring ('Mayor of Longmont') under 'IN THEIR WORDS': 'I would welcome the opportunity to collaborate with Benita and Boulder City Council.' Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E256",
+    "endorser": "Mardi Moore",
+    "endorser_type": "person",
+    "endorser_slug": "mardi-moore",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Rocky Mountain Equality'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-04",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered) quotes Mardi Moore ('Rocky Mountain Equality') under 'IN THEIR WORDS': 'She’s smarter than smart, and if you want something done, you need to ask Benita Duran.' Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]

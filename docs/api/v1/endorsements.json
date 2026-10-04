@@ -1300,6 +1300,32 @@
    "source_title": "Endorsements – Aaron Brockett For Mayor"
   },
   {
+   "id": "E254",
+   "endorser": {
+    "type": "person",
+    "slug": "aaron-brockett",
+    "name": "Aaron Brockett",
+    "title_as_printed": "Boulder mayor",
+    "page_url": "https://bouldervotes.org/people/aaron-brockett.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Aaron Brockett. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E72",
    "endorser": {
     "type": "person",
@@ -3006,6 +3032,32 @@
    "source_title": "Endorsements – Aaron Brockett For Mayor"
   },
   {
+   "id": "E255",
+   "endorser": {
+    "type": "person",
+    "slug": "susie-hidalgo-fahring",
+    "name": "Susie Hidalgo-Fahring",
+    "title_as_printed": "Longmont mayor",
+    "page_url": "https://bouldervotes.org/people/susie-hidalgo-fahring.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Susie Hidalgo-Fahring. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E184",
    "endorser": {
     "type": "person",
@@ -3862,6 +3914,32 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E256",
+   "endorser": {
+    "type": "person",
+    "slug": "mardi-moore",
+    "name": "Mardi Moore",
+    "title_as_printed": "Rocky Mountain Equality",
+    "page_url": "https://bouldervotes.org/people/mardi-moore.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Mardi Moore. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
    "id": "E196",
@@ -6115,6 +6193,29 @@
    "published_on": null,
    "source_url": "https://betterboulder.com/2026-rtd-ballot-measure-endorsements/",
    "source_title": "2026 RTD & Ballot Measure Endorsements - Better Boulder"
+  },
+  {
+   "id": "E253",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-area-labor-council",
+    "name": "Boulder Area Labor Council, AFL-CIO",
+    "page_url": "https://bouldervotes.org/orgs/boulder-area-labor-council.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-02",
+   "source_url": "https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2026-endorsements",
+   "source_title": "Boulder Area Labor Council 2026 Endorsements (Boulder Area Labor Council, AFL-CIO)"
   },
   {
    "id": "E51",

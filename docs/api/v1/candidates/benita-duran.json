@@ -560,6 +560,32 @@
     "source_title": "Endorsements and Supporters – Benita Duran"
    },
    {
+    "id": "E254",
+    "endorser": {
+     "type": "person",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "title_as_printed": "Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/aaron-brockett.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Benita Duran campaign lists Aaron Brockett. Only the campaign says so.",
+    "claimed_by": "Benita Duran campaign",
+    "published_on": null,
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran"
+   },
+   {
     "id": "E252",
     "endorser": {
      "type": "organization",
@@ -631,6 +657,58 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Benita Duran campaign lists Lynn Guissinger. Only the campaign says so.",
+    "claimed_by": "Benita Duran campaign",
+    "published_on": null,
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran"
+   },
+   {
+    "id": "E255",
+    "endorser": {
+     "type": "person",
+     "slug": "susie-hidalgo-fahring",
+     "name": "Susie Hidalgo-Fahring",
+     "title_as_printed": "Longmont mayor",
+     "page_url": "https://bouldervotes.org/people/susie-hidalgo-fahring.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Benita Duran campaign lists Susie Hidalgo-Fahring. Only the campaign says so.",
+    "claimed_by": "Benita Duran campaign",
+    "published_on": null,
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran"
+   },
+   {
+    "id": "E256",
+    "endorser": {
+     "type": "person",
+     "slug": "mardi-moore",
+     "name": "Mardi Moore",
+     "title_as_printed": "Rocky Mountain Equality",
+     "page_url": "https://bouldervotes.org/people/mardi-moore.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Benita Duran campaign lists Mardi Moore. Only the campaign says so.",
     "claimed_by": "Benita Duran campaign",
     "published_on": null,
     "source_url": "https://www.benitaduran.com/new-page-2",
