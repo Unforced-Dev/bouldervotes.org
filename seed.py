@@ -6,6 +6,7 @@ Re-run anytime: this rebuilds the database from scratch.
 """
 from __future__ import annotations
 
+import unicodedata
 import sqlite3
 from pathlib import Path
 
@@ -26,6 +27,8 @@ SCHEMA = ROOT / "schema.sql"
 
 
 def slug(name: str) -> str:
+    # ASCII-fold accents (Peña -> pena) so page URLs stay plain ASCII.
+    name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
     return (
         name.lower()
         .replace(".", "")
