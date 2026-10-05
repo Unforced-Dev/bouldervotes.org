@@ -494,6 +494,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E260",
+   "endorser": {
+    "type": "person",
+    "slug": "kc-becker",
+    "name": "KC Becker",
+    "title_as_printed": "former Colorado House speaker",
+    "page_url": "https://bouldervotes.org/people/kc-becker.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists KC Becker. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E138",
    "endorser": {
     "type": "person",
@@ -1586,6 +1612,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E262",
+   "endorser": {
+    "type": "person",
+    "slug": "geof-cahoon",
+    "name": "Geof Cahoon",
+    "title_as_printed": "Former President, Boulder Area Labor Council",
+    "page_url": "https://bouldervotes.org/people/geof-cahoon.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Geof Cahoon. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "U3",
    "endorser": {
     "type": "person",
@@ -2512,6 +2564,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E266",
+   "endorser": {
+    "type": "person",
+    "slug": "rachel-friend",
+    "name": "Rachel Friend",
+    "title_as_printed": "former Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/rachel-friend.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Rachel Friend. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E198",
    "endorser": {
     "type": "person",
@@ -2562,6 +2640,32 @@
    "published_on": null,
    "source_url": "https://www.tinaforboulder.com/endorsements",
    "source_title": "Endorsements – Tina Marquis for Boulder City Council"
+  },
+  {
+   "id": "E259",
+   "endorser": {
+    "type": "person",
+    "slug": "stan-garnett",
+    "name": "Stan Garnett",
+    "title_as_printed": "Former Boulder District Attorney",
+    "page_url": "https://bouldervotes.org/people/stan-garnett.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Stan Garnett. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
    "id": "E105",
@@ -3136,6 +3240,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E261",
+   "endorser": {
+    "type": "person",
+    "slug": "edie-hooton",
+    "name": "Edie Hooton",
+    "title_as_printed": "former Colorado state representative",
+    "page_url": "https://bouldervotes.org/people/edie-hooton.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Edie Hooton. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E213",
    "endorser": {
     "type": "person",
@@ -3160,6 +3290,58 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E264",
+   "endorser": {
+    "type": "person",
+    "slug": "elise-jones",
+    "name": "Elise Jones",
+    "title_as_printed": "former Boulder County commissioner",
+    "page_url": "https://bouldervotes.org/people/elise-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Elise Jones. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
+   "id": "E263",
+   "endorser": {
+    "type": "person",
+    "slug": "suzanne-jones",
+    "name": "Suzanne Jones",
+    "title_as_printed": "Former Mayor of Boulder",
+    "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Suzanne Jones. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
    "id": "E216",
@@ -4551,6 +4733,32 @@
    "source_title": "2026 Candidate Endorsements (PLAN-Boulder County)"
   },
   {
+   "id": "E257",
+   "endorser": {
+    "type": "person",
+    "slug": "federico-pena",
+    "name": "Federico Peña",
+    "title_as_printed": "Former U.S. Secretary of Transportation",
+    "page_url": "https://bouldervotes.org/people/federico-pena.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Federico Peña. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E218",
    "endorser": {
     "type": "person",
@@ -4705,6 +4913,32 @@
    "source_title": "Endorsements – Aaron Brockett For Mayor"
   },
   {
+   "id": "E258",
+   "endorser": {
+    "type": "person",
+    "slug": "ken-salazar",
+    "name": "Ken Salazar",
+    "title_as_printed": "Former U.S. Secretary of the Interior",
+    "page_url": "https://bouldervotes.org/people/ken-salazar.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Ken Salazar. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E123",
    "endorser": {
     "type": "person",
@@ -4833,6 +5067,32 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E265",
+   "endorser": {
+    "type": "person",
+    "slug": "andy-schultheiss",
+    "name": "Andy Schultheiss",
+    "title_as_printed": "former Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/andy-schultheiss.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Andy Schultheiss. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
    "id": "E220",

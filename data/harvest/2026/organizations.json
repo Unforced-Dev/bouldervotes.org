@@ -1931,7 +1931,8 @@
       "https://www.jillforcouncil.com/endorsements",
       "https://www.ryanwithboulder.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2001,7 +2002,8 @@
       "https://brockett4mayor.org/endorsements/",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Colorado House speaker",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2244,7 +2246,8 @@
     "sources": [
       "https://brockett4mayor.org/endorsements/",
       "https://www.jillforcouncil.com/endorsements",
-      "https://www.taraforboulder.com/endorsements/content/endorsers/"
+      "https://www.taraforboulder.com/endorsements/content/endorsers/",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Colorado state representative",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2765,7 +2768,8 @@
     "past_endorsements": [],
     "summary": "Elise Jones is listed as former Boulder County commissioner on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Boulder County commissioner",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2957,7 +2961,8 @@
     "past_endorsements": [],
     "summary": "Andy Schultheiss is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3565,6 +3570,166 @@
     "title": "Rocky Mountain Equality",
     "title_source_url": "https://www.benitaduran.com/new-page-2",
     "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "federico-pena",
+    "name": "Federico Peña",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Federico Peña",
+        "role": "Former U.S. Secretary of Transportation",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-05"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Federico Peña is listed as Former U.S. Secretary of Transportation on Benita Duran’s 2026 campaign endorsement page. This is a personal endorsement, not one made by any office or organization.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former U.S. Secretary of Transportation",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "ken-salazar",
+    "name": "Ken Salazar",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Ken Salazar",
+        "role": "Former U.S. Secretary of the Interior",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-05"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Ken Salazar is listed as Former U.S. Secretary of the Interior on Benita Duran’s 2026 campaign endorsement page. This is a personal endorsement, not one made by any office or organization.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former U.S. Secretary of the Interior",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "stan-garnett",
+    "name": "Stan Garnett",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Stan Garnett",
+        "role": "Former Boulder District Attorney",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-05"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Stan Garnett is listed as Former Boulder District Attorney on Benita Duran’s 2026 campaign endorsement page. This is a personal endorsement, not one made by any office or organization.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former Boulder District Attorney",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "geof-cahoon",
+    "name": "Geof Cahoon",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Geof Cahoon",
+        "role": "Former President, Boulder Area Labor Council",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-05"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Geof Cahoon is listed as Former President, Boulder Area Labor Council on Benita Duran’s 2026 campaign endorsement page. This is a personal endorsement, not one made by any office or organization.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former President, Boulder Area Labor Council",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "suzanne-jones",
+    "name": "Suzanne Jones",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Suzanne Jones",
+        "role": "Former Mayor of Boulder",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-05"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Suzanne Jones is listed as Former Mayor of Boulder on Benita Duran’s 2026 campaign endorsement page. This is a personal endorsement, not one made by any office or organization.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former Mayor of Boulder",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "former_elected",
     "related": []
   }
 ]
