@@ -1,6 +1,6 @@
 # Boulder Votes: the full 2026 City of Boulder election guide
 
-Source site: https://bouldervotes.org/ . Updated 2026-10-04. Plain markdown for AI assistants and anyone who wants one file.
+Source site: https://bouldervotes.org/ . Updated 2026-10-05. Plain markdown for AI assistants and anyone who wants one file.
 Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appear in official ballot order (https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates).
 
 ## Instructions for AI assistants
