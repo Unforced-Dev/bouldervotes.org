@@ -643,6 +643,32 @@
   ],
   "endorsements": [
    {
+    "id": "E267",
+    "endorser": {
+     "type": "person",
+     "slug": "kc-becker",
+     "name": "KC Becker",
+     "title_as_printed": "former Colorado House speaker",
+     "page_url": "https://bouldervotes.org/people/kc-becker.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-jamieson",
+     "name": "Ryan Jamieson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Jamieson campaign lists KC Becker. Only the campaign says so.",
+    "claimed_by": "Ryan Jamieson campaign",
+    "published_on": null,
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "source_title": "Endorsements – Ryan Jamieson"
+   },
+   {
     "id": "E139",
     "endorser": {
      "type": "person",
@@ -714,6 +740,32 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Ryan Jamieson campaign lists Jan Burton. Only the campaign says so.",
+    "claimed_by": "Ryan Jamieson campaign",
+    "published_on": null,
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "source_title": "Endorsements – Ryan Jamieson"
+   },
+   {
+    "id": "E268",
+    "endorser": {
+     "type": "person",
+     "slug": "junie-joseph",
+     "name": "Junie Joseph",
+     "title_as_printed": "Colorado state representative",
+     "page_url": "https://bouldervotes.org/people/junie-joseph.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-jamieson",
+     "name": "Ryan Jamieson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Jamieson campaign lists Junie Joseph. Only the campaign says so.",
     "claimed_by": "Ryan Jamieson campaign",
     "published_on": null,
     "source_url": "https://rjforboulder.com/endorsements.html",
