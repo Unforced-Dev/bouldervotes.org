@@ -6978,5 +6978,80 @@
       "evidence_url": "https://www.benitaduran.com/new-page-2",
       "note": "Duran campaign endorsement page (browser-rendered, Oct. 5, 2026) lists Rachel Friend ('Former Boulder City Council') under 'COMMUNITY LEADERS'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E267",
+    "endorser": "KC Becker",
+    "endorser_type": "person",
+    "endorser_slug": "kc-becker",
+    "candidate": "Ryan Jamieson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Ryan Jamieson campaign",
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "source_title": "Endorsements – Ryan Jamieson",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Speaker of the CO House'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-06",
+      "evidence_url": "https://rjforboulder.com/endorsements.html",
+      "note": "Jamieson campaign endorsement page (browser-rendered, Oct. 6, 2026) lists KC Becker ('Former Speaker of the CO House') on an 'ENDORSED BY' gold card ('Gold cards are current and former elected officials'). Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E268",
+    "endorser": "Junie Joseph",
+    "endorser_type": "person",
+    "endorser_slug": "junie-joseph",
+    "candidate": "Ryan Jamieson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Ryan Jamieson campaign",
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "source_title": "Endorsements – Ryan Jamieson",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('State Representative'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-06",
+      "evidence_url": "https://rjforboulder.com/endorsements.html",
+      "note": "Jamieson campaign endorsement page (browser-rendered, Oct. 6, 2026) lists Junie Joseph ('State Representative') on an 'ENDORSED BY' gold card ('Gold cards are current and former elected officials'). Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E269",
+    "endorser": "Mark Wallach",
+    "endorser_type": "person",
+    "endorser_slug": "mark-wallach",
+    "candidate": "Jill Grano",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Jill Grano campaign",
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('former Boulder City Council'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-06",
+      "evidence_url": "https://www.jillforcouncil.com/endorsements",
+      "note": "Jill Grano campaign endorsement page (browser-rendered, Oct. 6, 2026) lists 'Mark Wallach, former Boulder City Council' under 'Elected Officials + Public Servants'. Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]
