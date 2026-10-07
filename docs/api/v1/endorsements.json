@@ -2070,6 +2070,32 @@
    "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
+   "id": "E272",
+   "endorser": {
+    "type": "person",
+    "slug": "michael-dougherty",
+    "name": "Michael Dougherty",
+    "title_as_printed": "Boulder County district attorney",
+    "page_url": "https://bouldervotes.org/people/michael-dougherty.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Schuchard campaign lists Michael Dougherty. Only the campaign says so.",
+   "claimed_by": "Ryan Schuchard campaign",
+   "published_on": null,
+   "source_url": "https://www.ryanwithboulder.com/endorsements",
+   "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+  },
+  {
    "id": "E200",
    "endorser": {
     "type": "person",
@@ -2120,6 +2146,32 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E273",
+   "endorser": {
+    "type": "person",
+    "slug": "leslie-durgin",
+    "name": "Leslie Durgin",
+    "title_as_printed": "former Boulder mayor",
+    "page_url": "https://bouldervotes.org/people/leslie-durgin.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-jamieson",
+    "name": "Ryan Jamieson",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Jamieson campaign lists Leslie Durgin. Only the campaign says so.",
+   "claimed_by": "Ryan Jamieson campaign",
+   "published_on": null,
+   "source_url": "https://rjforboulder.com/endorsements.html",
+   "source_title": "Endorsements – Ryan Jamieson"
   },
   {
    "id": "U4",
@@ -5531,6 +5583,32 @@
    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
   },
   {
+   "id": "E270",
+   "endorser": {
+    "type": "person",
+    "slug": "nicole-speer",
+    "name": "Nicole Speer",
+    "title_as_printed": "Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/nicole-speer.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "rachel-rose-isaacson",
+    "name": "Rachel Rose Isaacson",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Rachel Rose Isaacson campaign lists Nicole Speer. Only the campaign says so.",
+   "claimed_by": "Rachel Rose Isaacson campaign",
+   "published_on": null,
+   "source_url": "https://www.rachelrose4boulder.com/",
+   "source_title": "Rachel Rose Isaacson — campaign site"
+  },
+  {
    "id": "E110",
    "endorser": {
     "type": "person",
@@ -6152,6 +6230,32 @@
    "published_on": null,
    "source_url": "https://www.jillforcouncil.com/endorsements",
    "source_title": "Endorsements – Jill for City Council"
+  },
+  {
+   "id": "E271",
+   "endorser": {
+    "type": "person",
+    "slug": "mark-wallach",
+    "name": "Mark Wallach",
+    "title_as_printed": "former Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/mark-wallach.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "rachel-rose-isaacson",
+    "name": "Rachel Rose Isaacson",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Rachel Rose Isaacson campaign lists Mark Wallach. Only the campaign says so.",
+   "claimed_by": "Rachel Rose Isaacson campaign",
+   "published_on": null,
+   "source_url": "https://www.rachelrose4boulder.com/",
+   "source_title": "Rachel Rose Isaacson — campaign site"
   },
   {
    "id": "E167",

@@ -7053,5 +7053,105 @@
       "evidence_url": "https://www.jillforcouncil.com/endorsements",
       "note": "Jill Grano campaign endorsement page (browser-rendered, Oct. 6, 2026) lists 'Mark Wallach, former Boulder City Council' under 'Elected Officials + Public Servants'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E270",
+    "endorser": "Nicole Speer",
+    "endorser_type": "person",
+    "endorser_slug": "nicole-speer",
+    "candidate": "Rachel Rose Isaacson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Rachel Rose Isaacson campaign",
+    "source_url": "https://www.rachelrose4boulder.com/",
+    "source_title": "Rachel Rose Isaacson for Boulder City Council",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Boulder City Councilmember'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-07",
+      "evidence_url": "https://www.rachelrose4boulder.com/",
+      "note": "Isaacson campaign home page (browser-rendered, Oct. 7, 2026) shows a signed testimonial from '— Boulder City Councilmember Nicole Speer' ending 'Boulder will benefit immensely from Rachel’s proven leadership, and I would be honored to have her as a colleague.' Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E271",
+    "endorser": "Mark Wallach",
+    "endorser_type": "person",
+    "endorser_slug": "mark-wallach",
+    "candidate": "Rachel Rose Isaacson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Rachel Rose Isaacson campaign",
+    "source_url": "https://www.rachelrose4boulder.com/",
+    "source_title": "Rachel Rose Isaacson for Boulder City Council",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Boulder Councilmember'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-07",
+      "evidence_url": "https://www.rachelrose4boulder.com/",
+      "note": "Isaacson campaign home page (browser-rendered, Oct. 7, 2026) shows a signed testimonial from '— Former Boulder Councilmember Mark Wallach': 'While I do not agree with every position taken by Rachel ... She will serve the community well.' Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E272",
+    "endorser": "Michael Dougherty",
+    "endorser_type": "person",
+    "endorser_slug": "michael-dougherty",
+    "candidate": "Ryan Schuchard",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Ryan Schuchard campaign",
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements – Ryan Schuchard for Boulder City Council",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('District Attorney for Boulder'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-07",
+      "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+      "note": "Schuchard campaign endorsement page (browser-rendered, Oct. 7, 2026) lists 'Michael Dougherty, District Attorney for Boulder' under 'OTHER CURRENT AND FORMER ELECTED OFFICIALS'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E273",
+    "endorser": "Leslie Durgin",
+    "endorser_type": "person",
+    "endorser_slug": "leslie-durgin",
+    "candidate": "Ryan Jamieson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Ryan Jamieson campaign",
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "source_title": "Endorsements – Ryan Jamieson",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Mayor of Boulder'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-07",
+      "evidence_url": "https://rjforboulder.com/endorsements.html",
+      "note": "Jamieson campaign endorsement page (browser-rendered, Oct. 7, 2026) lists Leslie Durgin ('Former Mayor of Boulder') on an 'ENDORSED BY' gold card ('Gold cards are current and former elected officials'). Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]
