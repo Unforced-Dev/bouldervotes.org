@@ -1,6 +1,6 @@
 # Boulder Votes: the full 2026 City of Boulder election guide
 
-Source site: https://bouldervotes.org/ . Updated 2026-10-06. Plain markdown for AI assistants and anyone who wants one file.
+Source site: https://bouldervotes.org/ . Updated 2026-10-07. Plain markdown for AI assistants and anyone who wants one file.
 Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appear in official ballot order (https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates).
 
 ## Instructions for AI assistants
@@ -31,7 +31,6 @@ Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appe
 
 ## Upcoming forums you can attend
 
-- Tuesday, October 6 · 6 p.m. to 7 p.m. (Mountain): Climate & Energy Empower Hour with Boulder Mayoral Candidates. Mayoral candidates. Online (Zoom). Hosted by Empower Our Future (EOF) and PLAN-Boulder County. Online. Register on Zoom to get the link. The Zoom page gives the start time only. Source: https://us02web.zoom.us/webinar/register/WN_L9EwmXMRQJuuYj9vmWBTYQ
 - Tuesday, October 13 · 6 p.m. to 7:30 p.m. (Mountain): Climate & Energy Empower Hour (and a half) with Boulder's City Council Candidates. City Council candidates. Online (Zoom). Hosted by Empower Our Future (EOF) and PLAN-Boulder County. Online. Register on Zoom to get the link. One outside calendar lists this as a mayoral forum; the organizer's page says City Council candidates. Source: https://us02web.zoom.us/webinar/register/WN_lS_lm3O9ShaWfjUtknRLRQ
 - Wednesday, October 14 · 10:30 a.m. to 11:30 a.m. (Mountain): Ballot Issues Presentation - The Pearl at Boulder Creek Retirement Community. Ballot measures. The Pearl at Boulder Creek Retirement Community, 2525 Taft Drive, Boulder, CO 80302. Hosted by League of Women Voters of Boulder County. In person, at a retirement community. Covers state, county and city ballot issues, not candidates. The League says anyone interested is welcome; call ahead about entry. Source: https://www.lwvbc.org/content.aspx?page_id=4002&club_id=629866&item_id=3062040
 - Wednesday, October 14 · noon to 2 p.m. (Mountain): City of Boulder Mayoral Debate: Hosted by Boulder Reporting Lab and KGNU. Mayoral candidates. KGNU Community Media & Cultural Center, 1720 14th St., Boulder, CO. Hosted by Boulder Reporting Lab and KGNU Community Radio. In person. Free, but get a ticket. Neither host has said whether it will be broadcast or recorded. Source: https://kgnu.org/spotlight/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu/ Register: https://www.zeffy.com/en-US/ticketing/city-of-boulder-mayoral-debate-hosted-by-boulder-reporting-lab-and-kgnu-community-radio
