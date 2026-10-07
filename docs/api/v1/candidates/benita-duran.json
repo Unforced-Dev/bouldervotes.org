@@ -1079,17 +1079,17 @@
   ],
   "finance": {
    "committee": "Benita for Boulder",
-   "contributions": 7257.05,
-   "expenditures": 4552.63,
-   "matching_funds_received": 6800.0,
-   "cash_on_hand": 9434.42,
-   "as_of": "2026-09-21",
-   "report": "42nd day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2848",
-   "retrieved_on": "2026-10-01",
+   "contributions": 8120.0,
+   "expenditures": 5190.66,
+   "matching_funds_received": 7950.0,
+   "cash_on_hand": 10709.34,
+   "as_of": "2026-10-06",
+   "report": "28th day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3887",
+   "retrieved_on": "2026-10-07",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=310",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": "Clerk contribution total includes $387.05 in loans."
+   "notes": "Clerk contribution total includes $348.29 in loans."
   },
   "source_urls": [
    "https://betterboulder.com/2026-city-council-candidate-questionnaire",
