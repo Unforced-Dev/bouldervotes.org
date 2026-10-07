@@ -814,6 +814,32 @@
     "source_title": "Boulder’s City Council and mayoral incumbents have earned another term (Editorial, Boulder Daily Camera)"
    },
    {
+    "id": "E272",
+    "endorser": {
+     "type": "person",
+     "slug": "michael-dougherty",
+     "name": "Michael Dougherty",
+     "title_as_printed": "Boulder County district attorney",
+     "page_url": "https://bouldervotes.org/people/michael-dougherty.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Michael Dougherty. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
     "id": "E195",
     "endorser": {
      "type": "person",

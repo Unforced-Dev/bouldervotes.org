@@ -746,6 +746,32 @@
     "source_title": "Endorsements – Ryan Jamieson"
    },
    {
+    "id": "E273",
+    "endorser": {
+     "type": "person",
+     "slug": "leslie-durgin",
+     "name": "Leslie Durgin",
+     "title_as_printed": "former Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/leslie-durgin.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-jamieson",
+     "name": "Ryan Jamieson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Jamieson campaign lists Leslie Durgin. Only the campaign says so.",
+    "claimed_by": "Ryan Jamieson campaign",
+    "published_on": null,
+    "source_url": "https://rjforboulder.com/endorsements.html",
+    "source_title": "Endorsements – Ryan Jamieson"
+   },
+   {
     "id": "E268",
     "endorser": {
      "type": "person",

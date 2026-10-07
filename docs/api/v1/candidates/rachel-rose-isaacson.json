@@ -801,6 +801,58 @@
     "published_on": "2026-09-17",
     "source_url": "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
     "source_title": "Sierra Club Endorses Boulder Mayoral and City Council Candidates (press release, Yellow Scene)"
+   },
+   {
+    "id": "E270",
+    "endorser": {
+     "type": "person",
+     "slug": "nicole-speer",
+     "name": "Nicole Speer",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/nicole-speer.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "rachel-rose-isaacson",
+     "name": "Rachel Rose Isaacson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Rachel Rose Isaacson campaign lists Nicole Speer. Only the campaign says so.",
+    "claimed_by": "Rachel Rose Isaacson campaign",
+    "published_on": null,
+    "source_url": "https://www.rachelrose4boulder.com/",
+    "source_title": "Rachel Rose Isaacson — campaign site"
+   },
+   {
+    "id": "E271",
+    "endorser": {
+     "type": "person",
+     "slug": "mark-wallach",
+     "name": "Mark Wallach",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/mark-wallach.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "rachel-rose-isaacson",
+     "name": "Rachel Rose Isaacson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Rachel Rose Isaacson campaign lists Mark Wallach. Only the campaign says so.",
+    "claimed_by": "Rachel Rose Isaacson campaign",
+    "published_on": null,
+    "source_url": "https://www.rachelrose4boulder.com/",
+    "source_title": "Rachel Rose Isaacson — campaign site"
    }
   ],
   "finance": {
