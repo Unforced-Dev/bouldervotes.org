@@ -533,17 +533,17 @@
   "endorsements": [],
   "finance": {
    "committee": "Grateful Fred Instead",
-   "contributions": 0.0,
-   "expenditures": 0.0,
+   "contributions": 1075.0,
+   "expenditures": 1072.5,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 0.0,
-   "as_of": "2026-09-22",
-   "report": "42nd day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3877",
-   "retrieved_on": "2026-10-07",
+   "cash_on_hand": 2.5,
+   "as_of": "2026-10-06",
+   "report": "28th day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3903",
+   "retrieved_on": "2026-10-08",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=311",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": null
+   "notes": "Clerk contribution total includes $1,000.00 in loans."
   },
   "source_urls": [
    "https://boulderreportinglab.org/govpack_profiles/fred-smith/",

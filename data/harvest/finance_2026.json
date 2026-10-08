@@ -1,5 +1,5 @@
 {
-  "retrieved_on": "2026-10-07",
+  "retrieved_on": "2026-10-08",
   "summary_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
   "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
   "list_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
@@ -13,12 +13,12 @@
       "clerk_candidate": "Jameson Goldstein",
       "person": "Jameson Goldstein",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=324",
-      "contributions_total": 400.0,
-      "expenditures_total": 95.87,
+      "contributions_total": 600.0,
+      "expenditures_total": 152.1,
       "matching_received": 0.0,
       "in_kind": 0.0,
-      "cash_on_hand": 304.13,
-      "reported_on": "2026-09-21",
+      "cash_on_hand": 447.9,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2855,
@@ -48,6 +48,21 @@
             "cash_on_hand": 304.13
           },
           "n_contributions": 4,
+          "n_expenditures": 3
+        },
+        {
+          "statement_id": 3904,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3904",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 600.0,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 152.1,
+            "cash_on_hand": 447.9
+          },
+          "n_contributions": 2,
           "n_expenditures": 3
         }
       ],
@@ -99,6 +114,30 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28054,
           "amends_id": null
+        },
+        {
+          "last_name": "Helzberg",
+          "first_name": "Benton",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-01",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28687,
+          "amends_id": null
+        },
+        {
+          "last_name": "Goldstein",
+          "first_name": "Robert",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-05",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28688,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -128,6 +167,33 @@
           "amount": 33.84,
           "clerk_item_id": 8946,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Squarespace, Inc.",
+          "purpose": "Processing fee for Benton Helzberg’s contribution",
+          "occurred_on": "2026-10-01",
+          "amount": 3.5,
+          "clerk_item_id": 9129,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Squarespace, Inc.",
+          "purpose": "Campaign website hosting and Google Workspace subscription, October 4–November 4. Invoice #253532236",
+          "occurred_on": "2026-10-04",
+          "amount": 49.23,
+          "clerk_item_id": 9131,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Squarespace, Inc.",
+          "purpose": "Processing fee for Robert Goldstein’s contribution",
+          "occurred_on": "2026-10-05",
+          "amount": 3.5,
+          "clerk_item_id": 9130,
+          "amends_id": null
         }
       ]
     },
@@ -140,11 +206,11 @@
       "person": "Aaron Brockett",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=313",
       "contributions_total": 12366.0,
-      "expenditures_total": 4870.67,
+      "expenditures_total": 8027.75,
       "matching_received": 12366.0,
       "in_kind": 0.0,
-      "cash_on_hand": 19861.33,
-      "reported_on": "2026-09-22",
+      "cash_on_hand": 16704.25,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2839,
@@ -190,6 +256,21 @@
           },
           "n_contributions": 0,
           "n_expenditures": 6
+        },
+        {
+          "statement_id": 3900,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3900",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 12366.0,
+            "matching_received": 12366.0,
+            "in_kind": 0.0,
+            "expenditures": 8027.75,
+            "cash_on_hand": 16704.25
+          },
+          "n_contributions": 0,
+          "n_expenditures": 3
         }
       ],
       "contributions": [
@@ -2162,6 +2243,33 @@
           "amount": 73.42,
           "clerk_item_id": 9015,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Sticker Mule, Inc",
+          "purpose": "Event Supplies",
+          "occurred_on": "2026-09-28",
+          "amount": 128.08,
+          "clerk_item_id": 9097,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Prairie Mountain Media",
+          "purpose": "Voter Guide Advertising",
+          "occurred_on": "2026-09-29",
+          "amount": 1978.0,
+          "clerk_item_id": 9098,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yellow Scene Magazine",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-30",
+          "amount": 1051.0,
+          "clerk_item_id": 9099,
+          "amends_id": null
         }
       ]
     },
@@ -2191,12 +2299,12 @@
       "clerk_candidate": "Aquiles La Grave",
       "person": "Aquiles La Grave",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=323",
-      "contributions_total": 20729.3,
-      "expenditures_total": 5174.04,
+      "contributions_total": 30164.25,
+      "expenditures_total": 12480.07,
       "matching_received": 0.0,
       "in_kind": 0.0,
-      "cash_on_hand": 15555.26,
-      "reported_on": "2026-09-25",
+      "cash_on_hand": 17684.18,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2857,
@@ -2227,6 +2335,21 @@
           },
           "n_contributions": 135,
           "n_expenditures": 27
+        },
+        {
+          "statement_id": 3901,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3901",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 30164.25,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 12480.07,
+            "cash_on_hand": 17684.18
+          },
+          "n_contributions": 82,
+          "n_expenditures": 18
         }
       ],
       "contributions": [
@@ -4653,6 +4776,990 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28432,
           "amends_id": null
+        },
+        {
+          "last_name": "Czajkowski",
+          "first_name": "Zack",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28574,
+          "amends_id": null
+        },
+        {
+          "last_name": "Smith",
+          "first_name": "Mary",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28575,
+          "amends_id": null
+        },
+        {
+          "last_name": "McGuire",
+          "first_name": "Conor",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28576,
+          "amends_id": null
+        },
+        {
+          "last_name": "Manz",
+          "first_name": "Andrew",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28577,
+          "amends_id": null
+        },
+        {
+          "last_name": "Jones",
+          "first_name": "Craig A",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28578,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stevens",
+          "first_name": "Leith",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28579,
+          "amends_id": null
+        },
+        {
+          "last_name": "Reddy",
+          "first_name": "Vikas",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28580,
+          "amends_id": null
+        },
+        {
+          "last_name": "Kaufman",
+          "first_name": "Laurie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28581,
+          "amends_id": null
+        },
+        {
+          "last_name": "Goldman",
+          "first_name": "Jennifer",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28582,
+          "amends_id": null
+        },
+        {
+          "last_name": "Goodwin",
+          "first_name": "Chase",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28583,
+          "amends_id": null
+        },
+        {
+          "last_name": "Brown",
+          "first_name": "Patrick",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28584,
+          "amends_id": null
+        },
+        {
+          "last_name": "Ryan",
+          "first_name": "Tomas",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28585,
+          "amends_id": null
+        },
+        {
+          "last_name": "Hast",
+          "first_name": "Thomas",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28586,
+          "amends_id": null
+        },
+        {
+          "last_name": "Kaplan",
+          "first_name": "Lisa",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28587,
+          "amends_id": null
+        },
+        {
+          "last_name": "Youngren",
+          "first_name": "Eric",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 25.0,
+          "match_amount": 0.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28588,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sowell",
+          "first_name": "Preston",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28589,
+          "amends_id": null
+        },
+        {
+          "last_name": "Gutierrez",
+          "first_name": "Sergio",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28591,
+          "amends_id": null
+        },
+        {
+          "last_name": "Gutierrez",
+          "first_name": "Mercedes",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28592,
+          "amends_id": null
+        },
+        {
+          "last_name": "Chittenden",
+          "first_name": "Tom",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28593,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stanton",
+          "first_name": "Katie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28594,
+          "amends_id": null
+        },
+        {
+          "last_name": "Nicolait",
+          "first_name": "Leya",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28595,
+          "amends_id": null
+        },
+        {
+          "last_name": "Beer",
+          "first_name": "Henry",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28596,
+          "amends_id": null
+        },
+        {
+          "last_name": "Roza",
+          "first_name": "Eric",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28597,
+          "amends_id": null
+        },
+        {
+          "last_name": "Martin",
+          "first_name": "James E",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28598,
+          "amends_id": null
+        },
+        {
+          "last_name": "Harrison",
+          "first_name": "Brooke",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28599,
+          "amends_id": null
+        },
+        {
+          "last_name": "Foskett",
+          "first_name": "Trey",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28600,
+          "amends_id": null
+        },
+        {
+          "last_name": "Davis-Capka",
+          "first_name": "Melissa",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28601,
+          "amends_id": null
+        },
+        {
+          "last_name": "Banashek",
+          "first_name": "Jon",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28602,
+          "amends_id": null
+        },
+        {
+          "last_name": "Richardson",
+          "first_name": "Michael",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28604,
+          "amends_id": null
+        },
+        {
+          "last_name": "Keller",
+          "first_name": "John",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28606,
+          "amends_id": null
+        },
+        {
+          "last_name": "Hayes",
+          "first_name": "Mark",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28608,
+          "amends_id": null
+        },
+        {
+          "last_name": "Able",
+          "first_name": "Godard",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28609,
+          "amends_id": null
+        },
+        {
+          "last_name": "Scarano",
+          "first_name": "John",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28611,
+          "amends_id": null
+        },
+        {
+          "last_name": "Engle",
+          "first_name": "Adam",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28612,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sawyer",
+          "first_name": "Dan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28613,
+          "amends_id": null
+        },
+        {
+          "last_name": "Limited",
+          "first_name": "False Midnight",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28614,
+          "amends_id": null
+        },
+        {
+          "last_name": "Waters",
+          "first_name": "Peter",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28615,
+          "amends_id": null
+        },
+        {
+          "last_name": "Incandela",
+          "first_name": "Lea",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 30.0,
+          "match_amount": 0.0,
+          "ytd_amount": 30.0,
+          "clerk_item_id": 28616,
+          "amends_id": null
+        },
+        {
+          "last_name": "Johnson",
+          "first_name": "David",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28617,
+          "amends_id": null
+        },
+        {
+          "last_name": "Streeter",
+          "first_name": "Lynn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28618,
+          "amends_id": null
+        },
+        {
+          "last_name": "Weber",
+          "first_name": "David",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28619,
+          "amends_id": null
+        },
+        {
+          "last_name": "Rhodes",
+          "first_name": "Sonya",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28620,
+          "amends_id": null
+        },
+        {
+          "last_name": "Mayl",
+          "first_name": "Tracy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28621,
+          "amends_id": null
+        },
+        {
+          "last_name": "Morris",
+          "first_name": "Jenny",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28622,
+          "amends_id": null
+        },
+        {
+          "last_name": "Caruso",
+          "first_name": "Daniel",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28623,
+          "amends_id": null
+        },
+        {
+          "last_name": "Caruso",
+          "first_name": "Cindy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28624,
+          "amends_id": null
+        },
+        {
+          "last_name": "Usher",
+          "first_name": "Carolyn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28625,
+          "amends_id": null
+        },
+        {
+          "last_name": "Jones",
+          "first_name": "Diane",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28626,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stewart",
+          "first_name": "Jan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 25.0,
+          "match_amount": 0.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28627,
+          "amends_id": null
+        },
+        {
+          "last_name": "Broenniman",
+          "first_name": "Philip",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28628,
+          "amends_id": null
+        },
+        {
+          "last_name": "Jacobs",
+          "first_name": "Chris",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28629,
+          "amends_id": null
+        },
+        {
+          "last_name": "Mohtadi",
+          "first_name": "Ardy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28630,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sparn",
+          "first_name": "Stephen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28631,
+          "amends_id": null
+        },
+        {
+          "last_name": "Jacques",
+          "first_name": "Elizabeth",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28632,
+          "amends_id": null
+        },
+        {
+          "last_name": "Burch",
+          "first_name": "Brad",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28633,
+          "amends_id": null
+        },
+        {
+          "last_name": "Monahan",
+          "first_name": "Rebecca",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28634,
+          "amends_id": null
+        },
+        {
+          "last_name": "Dickson",
+          "first_name": "Alan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28635,
+          "amends_id": null
+        },
+        {
+          "last_name": "Lee",
+          "first_name": "Eric",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28636,
+          "amends_id": null
+        },
+        {
+          "last_name": "Smith",
+          "first_name": "Susan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28637,
+          "amends_id": null
+        },
+        {
+          "last_name": "Groth",
+          "first_name": "Joshua",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28638,
+          "amends_id": null
+        },
+        {
+          "last_name": "Maye",
+          "first_name": "Noel",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28639,
+          "amends_id": null
+        },
+        {
+          "last_name": "Vidas",
+          "first_name": "Jill",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 25.0,
+          "match_amount": 0.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28640,
+          "amends_id": null
+        },
+        {
+          "last_name": "Walker",
+          "first_name": "Jack",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28641,
+          "amends_id": null
+        },
+        {
+          "last_name": "Budinger",
+          "first_name": "Sarah",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 20.0,
+          "match_amount": 0.0,
+          "ytd_amount": 20.0,
+          "clerk_item_id": 28642,
+          "amends_id": null
+        },
+        {
+          "last_name": "Thompson",
+          "first_name": "Dominic",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28643,
+          "amends_id": null
+        },
+        {
+          "last_name": "Broenniman",
+          "first_name": "Alexandra",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28644,
+          "amends_id": null
+        },
+        {
+          "last_name": "Humphrey",
+          "first_name": "Tucker",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28645,
+          "amends_id": null
+        },
+        {
+          "last_name": "McBride",
+          "first_name": "Kylie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28646,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shulman",
+          "first_name": "Jason",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28647,
+          "amends_id": null
+        },
+        {
+          "last_name": "Vitrano",
+          "first_name": "Robert",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28648,
+          "amends_id": null
+        },
+        {
+          "last_name": "Esson",
+          "first_name": "Timolyn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28649,
+          "amends_id": null
+        },
+        {
+          "last_name": "McCabe",
+          "first_name": "Eric",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28650,
+          "amends_id": null
+        },
+        {
+          "last_name": "Wyman",
+          "first_name": "Nicholas",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28651,
+          "amends_id": null
+        },
+        {
+          "last_name": "Erben",
+          "first_name": "Laura",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28652,
+          "amends_id": null
+        },
+        {
+          "last_name": "Rosenberg",
+          "first_name": "Lauren",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28653,
+          "amends_id": null
+        },
+        {
+          "last_name": "Caruso",
+          "first_name": "Cynthia",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28654,
+          "amends_id": null
+        },
+        {
+          "last_name": "Gronholm",
+          "first_name": "Karli",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28655,
+          "amends_id": null
+        },
+        {
+          "last_name": "Honness",
+          "first_name": "Andrew",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28656,
+          "amends_id": null
+        },
+        {
+          "last_name": "Walker",
+          "first_name": "Sophie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28657,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stickney",
+          "first_name": "Kenneth J",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 10.0,
+          "match_amount": 0.0,
+          "ytd_amount": 10.0,
+          "clerk_item_id": 28658,
+          "amends_id": null
+        },
+        {
+          "last_name": "Esson",
+          "first_name": "Drew",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28665,
+          "amends_id": null
+        },
+        {
+          "last_name": "La Grave",
+          "first_name": "Aquiles",
+          "contrib_type": "Loan",
+          "from_candidate": true,
+          "occurred_on": "2026-10-06",
+          "amount": 2249.95,
+          "match_amount": 0.0,
+          "ytd_amount": 4609.25,
+          "clerk_item_id": 28686,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -4946,6 +6053,33 @@
         },
         {
           "first_name": "",
+          "last_name": "Amazon",
+          "purpose": "Advertising & Media",
+          "occurred_on": "2026-09-17",
+          "amount": 26.51,
+          "clerk_item_id": 9103,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Boulder Daily Camera",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-17",
+          "amount": 848.7,
+          "clerk_item_id": 9106,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Boulder Daily Camera",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-17",
+          "amount": 935.0,
+          "clerk_item_id": 9107,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
           "last_name": "T/aco",
           "purpose": "Campaign Events",
           "occurred_on": "2026-09-21",
@@ -4969,6 +6103,141 @@
           "occurred_on": "2026-09-21",
           "amount": 250.0,
           "clerk_item_id": 9048,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yardsignplus.com",
+          "purpose": "Signage",
+          "occurred_on": "2026-09-21",
+          "amount": 962.59,
+          "clerk_item_id": 9104,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yardsignplus.com",
+          "purpose": "Signage",
+          "occurred_on": "2026-09-22",
+          "amount": 40.8,
+          "clerk_item_id": 9105,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Amazon (Pens)",
+          "purpose": "Office supplies",
+          "occurred_on": "2026-09-22",
+          "amount": 14.15,
+          "clerk_item_id": 9108,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "RB2B.com",
+          "purpose": "Software & Technology",
+          "occurred_on": "2026-09-22",
+          "amount": 149.0,
+          "clerk_item_id": 9109,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Donorbox",
+          "purpose": "Software & Technology",
+          "occurred_on": "2026-09-22",
+          "amount": 15.56,
+          "clerk_item_id": 9112,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "RB2B.com",
+          "purpose": "Software & Technology",
+          "occurred_on": "2026-09-24",
+          "amount": 149.0,
+          "clerk_item_id": 9110,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Local Report",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-24",
+          "amount": 1500.0,
+          "clerk_item_id": 9119,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Costco",
+          "purpose": "Campaign Events",
+          "occurred_on": "2026-09-28",
+          "amount": 160.42,
+          "clerk_item_id": 9115,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Boulder Daily Camera",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-29",
+          "amount": 21.99,
+          "clerk_item_id": 9116,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Google",
+          "purpose": "Software & Technology",
+          "occurred_on": "2026-10-01",
+          "amount": 104.69,
+          "clerk_item_id": 9117,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Rose Hill Wine & Spirits",
+          "purpose": "Campaign Events",
+          "occurred_on": "2026-10-02",
+          "amount": 34.41,
+          "clerk_item_id": 9118,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Donorbox",
+          "purpose": "Software & Technology",
+          "occurred_on": "2026-10-03",
+          "amount": 25.0,
+          "clerk_item_id": 9113,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Donorbox",
+          "purpose": "Credit card fees",
+          "occurred_on": "2026-10-03",
+          "amount": 1542.27,
+          "clerk_item_id": 9114,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yardsignplus.com",
+          "purpose": "Signage",
+          "occurred_on": "2026-10-05",
+          "amount": 639.44,
+          "clerk_item_id": 9111,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Boulder Chamber of Commerce",
+          "purpose": "Other",
+          "occurred_on": "2026-10-06",
+          "amount": 136.5,
+          "clerk_item_id": 9120,
           "amends_id": null
         }
       ]
@@ -6685,12 +7954,12 @@
       "clerk_candidate": "David Martus",
       "person": "David Martus",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=325",
-      "contributions_total": 2430.0,
-      "expenditures_total": 1554.04,
-      "matching_received": 2330.0,
+      "contributions_total": 3965.0,
+      "expenditures_total": 3794.23,
+      "matching_received": 3865.0,
       "in_kind": 0.0,
-      "cash_on_hand": 3205.96,
-      "reported_on": "2026-09-22",
+      "cash_on_hand": 4035.77,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2854,
@@ -6721,6 +7990,21 @@
           },
           "n_contributions": 39,
           "n_expenditures": 8
+        },
+        {
+          "statement_id": 3879,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3879",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 3965.0,
+            "matching_received": 3865.0,
+            "in_kind": 0.0,
+            "expenditures": 3794.23,
+            "cash_on_hand": 4035.77
+          },
+          "n_contributions": 21,
+          "n_expenditures": 6
         }
       ],
       "contributions": [
@@ -7191,6 +8475,258 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28140,
           "amends_id": null
+        },
+        {
+          "last_name": "Smith",
+          "first_name": "Steven",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-22",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28496,
+          "amends_id": null
+        },
+        {
+          "last_name": "Bacus",
+          "first_name": "John",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28495,
+          "amends_id": null
+        },
+        {
+          "last_name": "Gray",
+          "first_name": "John",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28493,
+          "amends_id": null
+        },
+        {
+          "last_name": "Bailey",
+          "first_name": "George Paul",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28494,
+          "amends_id": null
+        },
+        {
+          "last_name": "Birkle",
+          "first_name": "Thomas",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28491,
+          "amends_id": null
+        },
+        {
+          "last_name": "martin",
+          "first_name": "james",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 10.0,
+          "match_amount": 10.0,
+          "ytd_amount": 10.0,
+          "clerk_item_id": 28492,
+          "amends_id": null
+        },
+        {
+          "last_name": "Jimmerson",
+          "first_name": "Jackie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28489,
+          "amends_id": null
+        },
+        {
+          "last_name": "Pomerance",
+          "first_name": "Stephen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28490,
+          "amends_id": null
+        },
+        {
+          "last_name": "Nibarger",
+          "first_name": "John",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28519,
+          "amends_id": null
+        },
+        {
+          "last_name": "young",
+          "first_name": "chris",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-01",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28498,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sink",
+          "first_name": "Leslie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-01",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28516,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sink",
+          "first_name": "Chris",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-01",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28517,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shanks",
+          "first_name": "Wayne",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-01",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28518,
+          "amends_id": null
+        },
+        {
+          "last_name": "Coleman",
+          "first_name": "Kim",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28497,
+          "amends_id": null
+        },
+        {
+          "last_name": "Usher",
+          "first_name": "carolyn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28511,
+          "amends_id": null
+        },
+        {
+          "last_name": "Faulk",
+          "first_name": "Dana",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28512,
+          "amends_id": null
+        },
+        {
+          "last_name": "Corbacioglu",
+          "first_name": "Bulend",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28513,
+          "amends_id": null
+        },
+        {
+          "last_name": "Tewnion",
+          "first_name": "Laura",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28514,
+          "amends_id": null
+        },
+        {
+          "last_name": "Query",
+          "first_name": "Dave",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28515,
+          "amends_id": null
+        },
+        {
+          "last_name": "Handmaker",
+          "first_name": "David",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28562,
+          "amends_id": null
+        },
+        {
+          "last_name": "Harrison",
+          "first_name": "Brooke",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28564,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -7273,6 +8809,60 @@
           "occurred_on": "2026-09-21",
           "amount": 10.91,
           "clerk_item_id": 8947,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Amazon",
+          "purpose": "partial refund on order",
+          "occurred_on": "2026-09-28",
+          "amount": -27.29,
+          "clerk_item_id": 9071,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Amazon",
+          "purpose": "video & audio",
+          "occurred_on": "2026-09-28",
+          "amount": 37.55,
+          "clerk_item_id": 9072,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "staples",
+          "purpose": "print job",
+          "occurred_on": "2026-10-01",
+          "amount": 120.1,
+          "clerk_item_id": 9073,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Amazon",
+          "purpose": "marketing materials",
+          "occurred_on": "2026-10-04",
+          "amount": 31.95,
+          "clerk_item_id": 9070,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Stripe",
+          "purpose": "Credit card transaction fees",
+          "occurred_on": "2026-10-06",
+          "amount": 95.09,
+          "clerk_item_id": 9016,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Vistaprint",
+          "purpose": "Campaign print and mailing",
+          "occurred_on": "2026-10-06",
+          "amount": 1982.79,
+          "clerk_item_id": 9100,
           "amends_id": null
         }
       ]
@@ -7435,12 +9025,12 @@
       "clerk_candidate": "Ryan Schuchard",
       "person": "Ryan Schuchard",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=308",
-      "contributions_total": 11721.0,
-      "expenditures_total": 5738.37,
-      "matching_received": 11721.0,
+      "contributions_total": 11971.0,
+      "expenditures_total": 9072.3,
+      "matching_received": 11971.0,
       "in_kind": 0.0,
-      "cash_on_hand": 17703.63,
-      "reported_on": "2026-09-22",
+      "cash_on_hand": 14869.7,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2835,
@@ -7486,6 +9076,21 @@
           },
           "n_contributions": 56,
           "n_expenditures": 13
+        },
+        {
+          "statement_id": 3888,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3888",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 11971.0,
+            "matching_received": 11971.0,
+            "in_kind": 0.0,
+            "expenditures": 9072.3,
+            "cash_on_hand": 14869.7
+          },
+          "n_contributions": 3,
+          "n_expenditures": 5
         }
       ],
       "contributions": [
@@ -9576,6 +11181,42 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28297,
           "amends_id": null
+        },
+        {
+          "last_name": "Miller",
+          "first_name": "Riley",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28483,
+          "amends_id": null
+        },
+        {
+          "last_name": "Warren",
+          "first_name": "Cindy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-03",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28484,
+          "amends_id": null
+        },
+        {
+          "last_name": "Figel",
+          "first_name": "Arthur",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28689,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -9902,6 +11543,51 @@
           "amount": 20.74,
           "clerk_item_id": 8956,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Colorado Community Research",
+          "purpose": "Consulting",
+          "occurred_on": "2026-09-22",
+          "amount": 375.0,
+          "clerk_item_id": 9061,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Rebel Idealist Inc (DonorBox)",
+          "purpose": "Platform Processing Fee",
+          "occurred_on": "2026-09-25",
+          "amount": 19.92,
+          "clerk_item_id": 9062,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Stripe",
+          "purpose": "Payment Processing Fee",
+          "occurred_on": "2026-09-25",
+          "amount": 20.63,
+          "clerk_item_id": 9063,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Prairie Mountain Media",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-30",
+          "amount": 800.0,
+          "clerk_item_id": 9064,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "D&K Printing",
+          "purpose": "Advertising",
+          "occurred_on": "2026-10-05",
+          "amount": 2118.38,
+          "clerk_item_id": 9090,
+          "amends_id": null
         }
       ]
     },
@@ -9913,12 +11599,12 @@
       "clerk_candidate": "Michael Smith",
       "person": "Fred Smith",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=311",
-      "contributions_total": 0.0,
-      "expenditures_total": 0.0,
+      "contributions_total": 1075.0,
+      "expenditures_total": 1072.5,
       "matching_received": 0.0,
       "in_kind": 0.0,
-      "cash_on_hand": 0.0,
-      "reported_on": "2026-09-22",
+      "cash_on_hand": 2.5,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2841,
@@ -9949,10 +11635,93 @@
           },
           "n_contributions": 0,
           "n_expenditures": 0
+        },
+        {
+          "statement_id": 3903,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3903",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 1075.0,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 1072.5,
+            "cash_on_hand": 2.5
+          },
+          "n_contributions": 4,
+          "n_expenditures": 2
         }
       ],
-      "contributions": [],
-      "expenditures": []
+      "contributions": [
+        {
+          "last_name": "Smith",
+          "first_name": "Fred",
+          "contrib_type": "Loan",
+          "from_candidate": true,
+          "occurred_on": "2026-09-23",
+          "amount": 1000.0,
+          "match_amount": 0.0,
+          "ytd_amount": 1000.0,
+          "clerk_item_id": 28603,
+          "amends_id": null
+        },
+        {
+          "last_name": "Grandits",
+          "first_name": "George",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 25.0,
+          "match_amount": 0.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28605,
+          "amends_id": null
+        },
+        {
+          "last_name": "Harrison",
+          "first_name": "Joe",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 25.0,
+          "match_amount": 0.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28607,
+          "amends_id": null
+        },
+        {
+          "last_name": "Colpo",
+          "first_name": "Jim",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 25.0,
+          "match_amount": 0.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28610,
+          "amends_id": null
+        }
+      ],
+      "expenditures": [
+        {
+          "first_name": "",
+          "last_name": "Swan Ink",
+          "purpose": "Campaign T-shirts",
+          "occurred_on": "2026-09-23",
+          "amount": 772.5,
+          "clerk_item_id": 9101,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Matea Chavez-Grandits",
+          "purpose": "Campaign Artwork and Logo Design",
+          "occurred_on": "2026-09-30",
+          "amount": 300.0,
+          "clerk_item_id": 9102,
+          "amends_id": null
+        }
+      ]
     },
     {
       "committee_id": 312,
@@ -9962,12 +11731,12 @@
       "clerk_candidate": "Ryan Jamieson",
       "person": "Ryan Jamieson",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=312",
-      "contributions_total": 9675.0,
-      "expenditures_total": 2574.37,
-      "matching_received": 9625.0,
+      "contributions_total": 11125.0,
+      "expenditures_total": 3341.44,
+      "matching_received": 11050.0,
       "in_kind": 0.0,
-      "cash_on_hand": 16725.63,
-      "reported_on": "2026-09-22",
+      "cash_on_hand": 18833.56,
+      "reported_on": "2026-10-07",
       "statements": [
         {
           "statement_id": 2840,
@@ -10013,6 +11782,21 @@
           },
           "n_contributions": 4,
           "n_expenditures": 4
+        },
+        {
+          "statement_id": 3905,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3905",
+          "submitted_on": "2026-10-07",
+          "balance": {
+            "contributions": 11125.0,
+            "matching_received": 11050.0,
+            "in_kind": 0.0,
+            "expenditures": 3341.44,
+            "cash_on_hand": 18833.56
+          },
+          "n_contributions": 18,
+          "n_expenditures": 7
         }
       ],
       "contributions": [
@@ -11299,6 +13083,222 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28139,
           "amends_id": null
+        },
+        {
+          "last_name": "Drake",
+          "first_name": "Robert",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 75.0,
+          "match_amount": 50.0,
+          "ytd_amount": 125.0,
+          "clerk_item_id": 28690,
+          "amends_id": null
+        },
+        {
+          "last_name": "Rigler",
+          "first_name": "Bill",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-26",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28691,
+          "amends_id": null
+        },
+        {
+          "last_name": "Remsing",
+          "first_name": "Rodney",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28692,
+          "amends_id": null
+        },
+        {
+          "last_name": "Broenniman",
+          "first_name": "Philip",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28693,
+          "amends_id": null
+        },
+        {
+          "last_name": "Hornak",
+          "first_name": "Rob",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28694,
+          "amends_id": null
+        },
+        {
+          "last_name": "Spay",
+          "first_name": "Stephen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28695,
+          "amends_id": null
+        },
+        {
+          "last_name": "Broenniman",
+          "first_name": "Alexandra",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-30",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28696,
+          "amends_id": null
+        },
+        {
+          "last_name": "Teaford",
+          "first_name": "Jon",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28697,
+          "amends_id": null
+        },
+        {
+          "last_name": "Tebo",
+          "first_name": "Tatiana",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28698,
+          "amends_id": null
+        },
+        {
+          "last_name": "Tebo",
+          "first_name": "Stephen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28699,
+          "amends_id": null
+        },
+        {
+          "last_name": "Usher",
+          "first_name": "Carolyn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28700,
+          "amends_id": null
+        },
+        {
+          "last_name": "Chittenden",
+          "first_name": "Tom",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-05",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28701,
+          "amends_id": null
+        },
+        {
+          "last_name": "Harrison",
+          "first_name": "Brooke",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-05",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28702,
+          "amends_id": null
+        },
+        {
+          "last_name": "Ogden",
+          "first_name": "Julia",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28703,
+          "amends_id": null
+        },
+        {
+          "last_name": "Usher",
+          "first_name": "Carolyn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28704,
+          "amends_id": null
+        },
+        {
+          "last_name": "Caruso",
+          "first_name": "Cindy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28705,
+          "amends_id": null
+        },
+        {
+          "last_name": "Partridge",
+          "first_name": "Marcelle",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28706,
+          "amends_id": null
+        },
+        {
+          "last_name": "Abel",
+          "first_name": "Stacy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28707,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -11391,6 +13391,69 @@
           "amount": 500.0,
           "clerk_item_id": 8961,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Google",
+          "purpose": "Online Ads",
+          "occurred_on": "2026-09-22",
+          "amount": 50.0,
+          "clerk_item_id": 9133,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Boulder Chamber",
+          "purpose": "Event registration",
+          "occurred_on": "2026-09-25",
+          "amount": 136.5,
+          "clerk_item_id": 9134,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Google",
+          "purpose": "Online Ads",
+          "occurred_on": "2026-09-25",
+          "amount": 100.0,
+          "clerk_item_id": 9135,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Minuteman Press Boulder",
+          "purpose": "Postcard printing",
+          "occurred_on": "2026-09-25",
+          "amount": 369.7,
+          "clerk_item_id": 9136,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Vectra Bank",
+          "purpose": "Banking fee",
+          "occurred_on": "2026-09-30",
+          "amount": 3.0,
+          "clerk_item_id": 9137,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Google",
+          "purpose": "Online Ads",
+          "occurred_on": "2026-10-02",
+          "amount": 63.65,
+          "clerk_item_id": 9138,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "FedEx Office",
+          "purpose": "Printing",
+          "occurred_on": "2026-10-05",
+          "amount": 44.22,
+          "clerk_item_id": 9139,
+          "amends_id": null
         }
       ]
     },
@@ -11402,12 +13465,12 @@
       "clerk_candidate": "Jamillah Richmond",
       "person": "Jamillah Richmond",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=317",
-      "contributions_total": 6806.37,
-      "expenditures_total": 1252.85,
-      "matching_received": 6366.37,
+      "contributions_total": 7366.37,
+      "expenditures_total": 3642.43,
+      "matching_received": 6851.37,
       "in_kind": 100.0,
-      "cash_on_hand": 11819.89,
-      "reported_on": "2026-09-25",
+      "cash_on_hand": 10475.31,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2847,
@@ -11438,9 +13501,36 @@
           },
           "n_contributions": 86,
           "n_expenditures": 8
+        },
+        {
+          "statement_id": 3897,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3897",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 7366.37,
+            "matching_received": 6851.37,
+            "in_kind": 100.0,
+            "expenditures": 3642.43,
+            "cash_on_hand": 10475.31
+          },
+          "n_contributions": 10,
+          "n_expenditures": 2
         }
       ],
       "contributions": [
+        {
+          "last_name": "Barrett",
+          "first_name": "Leslie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2025-09-23",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28538,
+          "amends_id": null
+        },
         {
           "last_name": "Sanchez",
           "first_name": "Isabel",
@@ -12750,6 +14840,42 @@
           "amends_id": null
         },
         {
+          "last_name": "Cramer",
+          "first_name": "Kelly",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-22",
+          "amount": 10.0,
+          "match_amount": 10.0,
+          "ytd_amount": 10.0,
+          "clerk_item_id": 28536,
+          "amends_id": null
+        },
+        {
+          "last_name": "Barlow",
+          "first_name": "AB",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-22",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28537,
+          "amends_id": null
+        },
+        {
+          "last_name": "Thornbury",
+          "first_name": "Meg",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28539,
+          "amends_id": null
+        },
+        {
           "last_name": "Hammell",
           "first_name": "Regan",
           "contrib_type": "Monetary",
@@ -12807,6 +14933,78 @@
           "match_amount": 50.0,
           "ytd_amount": 50.0,
           "clerk_item_id": 28465,
+          "amends_id": null
+        },
+        {
+          "last_name": "Silva",
+          "first_name": "Pedro",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28540,
+          "amends_id": null
+        },
+        {
+          "last_name": "Bhasin",
+          "first_name": "Namarta",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28541,
+          "amends_id": null
+        },
+        {
+          "last_name": "Ness",
+          "first_name": "Margi",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-26",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28542,
+          "amends_id": null
+        },
+        {
+          "last_name": "Figel",
+          "first_name": "Arthur",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28543,
+          "amends_id": null
+        },
+        {
+          "last_name": "Broin",
+          "first_name": "Alexandra",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28544,
+          "amends_id": null
+        },
+        {
+          "last_name": "Haynes",
+          "first_name": "Sarah dawn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 75.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28545,
           "amends_id": null
         }
       ],
@@ -12899,6 +15097,24 @@
           "occurred_on": "2026-09-21",
           "amount": 297.32,
           "clerk_item_id": 8957,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Donorbox",
+          "purpose": "Processing Fees",
+          "occurred_on": "2026-10-05",
+          "amount": 36.43,
+          "clerk_item_id": 9089,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "D K Printing Inc",
+          "purpose": "Marketing",
+          "occurred_on": "2026-10-06",
+          "amount": 2353.15,
+          "clerk_item_id": 9132,
           "amends_id": null
         }
       ]
@@ -23596,12 +25812,12 @@
       "clerk_candidate": "Taishya Adams",
       "person": "Taishya Adams",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=307",
-      "contributions_total": 6781.62,
-      "expenditures_total": 245.72,
-      "matching_received": 6781.42,
+      "contributions_total": 8291.62,
+      "expenditures_total": 5202.78,
+      "matching_received": 8291.42,
       "in_kind": 0.0,
-      "cash_on_hand": 13317.32,
-      "reported_on": "2026-09-25",
+      "cash_on_hand": 11380.26,
+      "reported_on": "2026-10-06",
       "statements": [
         {
           "statement_id": 2837,
@@ -23632,6 +25848,21 @@
           },
           "n_contributions": 122,
           "n_expenditures": 7
+        },
+        {
+          "statement_id": 3902,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3902",
+          "submitted_on": "2026-10-06",
+          "balance": {
+            "contributions": 8291.62,
+            "matching_received": 8291.42,
+            "in_kind": 0.0,
+            "expenditures": 5202.78,
+            "cash_on_hand": 11380.26
+          },
+          "n_contributions": 27,
+          "n_expenditures": 8
         }
       ],
       "contributions": [
@@ -25098,6 +27329,330 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28135,
           "amends_id": null
+        },
+        {
+          "last_name": "Stelzer",
+          "first_name": "Linda",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28590,
+          "amends_id": null
+        },
+        {
+          "last_name": "Fuller",
+          "first_name": "Brenda",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 75.0,
+          "match_amount": 75.0,
+          "ytd_amount": 75.0,
+          "clerk_item_id": 28659,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shapiro",
+          "first_name": "Bennett",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 15.0,
+          "match_amount": 15.0,
+          "ytd_amount": 15.0,
+          "clerk_item_id": 28660,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stelzer",
+          "first_name": "Walter",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28661,
+          "amends_id": null
+        },
+        {
+          "last_name": "Zimmerlin",
+          "first_name": "Aaron",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28662,
+          "amends_id": null
+        },
+        {
+          "last_name": "Currie",
+          "first_name": "Andrew",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 75.0,
+          "match_amount": 75.0,
+          "ytd_amount": 75.0,
+          "clerk_item_id": 28663,
+          "amends_id": null
+        },
+        {
+          "last_name": "Moschetti",
+          "first_name": "Wendy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28664,
+          "amends_id": null
+        },
+        {
+          "last_name": "Langford",
+          "first_name": "Julie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28666,
+          "amends_id": null
+        },
+        {
+          "last_name": "Carney",
+          "first_name": "Peter",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28667,
+          "amends_id": null
+        },
+        {
+          "last_name": "Acott",
+          "first_name": "Dan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-26",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28668,
+          "amends_id": null
+        },
+        {
+          "last_name": "Manley",
+          "first_name": "Kerry",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-26",
+          "amount": 5.0,
+          "match_amount": 5.0,
+          "ytd_amount": 5.0,
+          "clerk_item_id": 28669,
+          "amends_id": null
+        },
+        {
+          "last_name": "Blair",
+          "first_name": "Meera",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-26",
+          "amount": 5.0,
+          "match_amount": 5.0,
+          "ytd_amount": 5.0,
+          "clerk_item_id": 28670,
+          "amends_id": null
+        },
+        {
+          "last_name": "Barrett",
+          "first_name": "Leslie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28671,
+          "amends_id": null
+        },
+        {
+          "last_name": "Salazar",
+          "first_name": "Emiliano",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28672,
+          "amends_id": null
+        },
+        {
+          "last_name": "Loberg",
+          "first_name": "Lindsey",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28673,
+          "amends_id": null
+        },
+        {
+          "last_name": "Fuller",
+          "first_name": "Melody",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 75.0,
+          "match_amount": 75.0,
+          "ytd_amount": 75.0,
+          "clerk_item_id": 28674,
+          "amends_id": null
+        },
+        {
+          "last_name": "Alamilla",
+          "first_name": "Michael",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28675,
+          "amends_id": null
+        },
+        {
+          "last_name": "Marshall",
+          "first_name": "Kristen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28676,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sabus",
+          "first_name": "Ann",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28677,
+          "amends_id": null
+        },
+        {
+          "last_name": "Dreksler",
+          "first_name": "Sam",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28678,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shalabi",
+          "first_name": "Firyal",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28679,
+          "amends_id": null
+        },
+        {
+          "last_name": "Brown",
+          "first_name": "David",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28680,
+          "amends_id": null
+        },
+        {
+          "last_name": "Haynes",
+          "first_name": "Sarah Dawn",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28681,
+          "amends_id": null
+        },
+        {
+          "last_name": "Maruska",
+          "first_name": "Noah",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-03",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28682,
+          "amends_id": null
+        },
+        {
+          "last_name": "Horesh",
+          "first_name": "Theo",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-03",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28683,
+          "amends_id": null
+        },
+        {
+          "last_name": "Kurzel",
+          "first_name": "Brian",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28684,
+          "amends_id": null
+        },
+        {
+          "last_name": "Beaty",
+          "first_name": "Jade Dalena",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 10.0,
+          "match_amount": 10.0,
+          "ytd_amount": 10.0,
+          "clerk_item_id": 28685,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -25180,6 +27735,78 @@
           "occurred_on": "2026-09-17",
           "amount": 35.99,
           "clerk_item_id": 9003,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Copy Center Boulder",
+          "purpose": "Printing",
+          "occurred_on": "2026-09-21",
+          "amount": 132.97,
+          "clerk_item_id": 9121,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Kate Johnson",
+          "purpose": "Campaign Management",
+          "occurred_on": "2026-09-21",
+          "amount": 1500.0,
+          "clerk_item_id": 9123,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "The Colorado Democratic Party",
+          "purpose": "VAN",
+          "occurred_on": "2026-09-23",
+          "amount": 463.75,
+          "clerk_item_id": 9122,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "MEDIANEWS GROUP, INC.",
+          "purpose": "Daily Camera Advertising",
+          "occurred_on": "2026-09-28",
+          "amount": 935.0,
+          "clerk_item_id": 9126,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Jayden Simelda-Longe",
+          "purpose": "Communications Management",
+          "occurred_on": "2026-09-29",
+          "amount": 400.0,
+          "clerk_item_id": 9124,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Boulder Reporting Lab",
+          "purpose": "Advertising",
+          "occurred_on": "2026-09-29",
+          "amount": 400.0,
+          "clerk_item_id": 9125,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "McGuckin Hardware",
+          "purpose": "Yard Sign Paint",
+          "occurred_on": "2026-10-03",
+          "amount": 74.34,
+          "clerk_item_id": 9128,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yellow Scene Magazine",
+          "purpose": "Yellow Scene Advertising",
+          "occurred_on": "2026-10-05",
+          "amount": 1051.0,
+          "clerk_item_id": 9127,
           "amends_id": null
         }
       ]
@@ -25801,6 +28428,24 @@
           "amends_id": null
         }
       ],
+      "expenditures": []
+    },
+    {
+      "committee_id": 329,
+      "committee_number": "2026-IEO-028",
+      "committee_name": "Boulder Progressives 501c4",
+      "kind": "independent_expenditure",
+      "clerk_candidate": null,
+      "person": null,
+      "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=329",
+      "contributions_total": 0.0,
+      "expenditures_total": 0.0,
+      "matching_received": 0.0,
+      "in_kind": null,
+      "cash_on_hand": null,
+      "reported_on": null,
+      "statements": [],
+      "contributions": [],
       "expenditures": []
     },
     {
