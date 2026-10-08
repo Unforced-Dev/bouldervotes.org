@@ -947,17 +947,17 @@
   ],
   "finance": {
    "committee": "Aquiles La Grave for Mayor",
-   "contributions": 20729.3,
-   "expenditures": 5174.04,
+   "contributions": 30164.25,
+   "expenditures": 12480.07,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 15555.26,
-   "as_of": "2026-09-25",
-   "report": "42nd day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3880",
-   "retrieved_on": "2026-10-07",
+   "cash_on_hand": 17684.18,
+   "as_of": "2026-10-06",
+   "report": "28th day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3901",
+   "retrieved_on": "2026-10-08",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=323",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": "Clerk contribution total includes $2,259.30 in loans."
+   "notes": "Clerk contribution total includes $4,509.25 in loans."
   },
   "source_urls": [
    "https://betterboulder.com/where-do-boulder-2026-mayorial-candidates-ctand/",
