@@ -597,6 +597,31 @@
     "source_title": "Tara’s Endorsers — Tara Winer for Council"
    },
    {
+    "id": "E277",
+    "endorser": {
+     "type": "organization",
+     "slug": "colorado-jewish-action-alliance",
+     "name": "Colorado Jewish Action Alliance",
+     "page_url": "https://bouldervotes.org/orgs/colorado-jewish-action-alliance.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tara-winer",
+     "name": "Tara Winer",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://www.cojaa.org/boulder-endorsements",
+    "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)"
+   },
+   {
     "id": "E249",
     "endorser": {
      "type": "organization",
@@ -1187,6 +1212,7 @@
    "https://richardvalenty.com/2026/09/winer-problem-solver-seeks-four-more-years/",
    "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
+   "https://www.cojaa.org/boulder-endorsements",
    "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
    "https://www.taraforboulder.com/",
    "https://www.taraforboulder.com/endorsements/content/endorsers/",

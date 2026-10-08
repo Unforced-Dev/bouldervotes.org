@@ -7153,5 +7153,142 @@
       "evidence_url": "https://rjforboulder.com/endorsements.html",
       "note": "Jamieson campaign endorsement page (browser-rendered, Oct. 7, 2026) lists Leslie Durgin ('Former Mayor of Boulder') on an 'ENDORSED BY' gold card ('Gold cards are current and former elected officials'). Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E274",
+    "endorser": "Colorado Jewish Action Alliance",
+    "endorser_type": "organization",
+    "endorser_slug": "colorado-jewish-action-alliance",
+    "candidate": "Aaron Brockett",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cojaa.org/boulder-endorsements",
+    "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-08."
+    },
+    "notes": "Endorser's own page; it shows no date. COJAA's 'Community Allies' recognition list is not recorded as endorsements.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-08",
+      "evidence_url": "https://www.cojaa.org/boulder-endorsements",
+      "note": "Uni read COJAA's own '2026 Boulder City & County Endorsements' page in a browser (Oct. 8, 2026). Under 'City of Boulder' it lists 'Aaron Brockett' / 'Mayor'. Its separate '2026 Community Allies' list (candidates who 'engaged thoughtfully in COJAA’s candidate process') is not an endorsement and is not recorded. IJN (Oct. 2026) reports the council endorsements were made Oct. 5."
+    }
+  },
+  {
+    "id": "E275",
+    "endorser": "Colorado Jewish Action Alliance",
+    "endorser_type": "organization",
+    "endorser_slug": "colorado-jewish-action-alliance",
+    "candidate": "Tina Marquis",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cojaa.org/boulder-endorsements",
+    "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-08."
+    },
+    "notes": "Endorser's own page; it shows no date. COJAA's 'Community Allies' recognition list is not recorded as endorsements.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-08",
+      "evidence_url": "https://www.cojaa.org/boulder-endorsements",
+      "note": "Uni read COJAA's own '2026 Boulder City & County Endorsements' page in a browser (Oct. 8, 2026). Under 'City of Boulder' it lists 'Tina Marquis' / 'City Council'. Its separate '2026 Community Allies' list (candidates who 'engaged thoughtfully in COJAA’s candidate process') is not an endorsement and is not recorded. IJN (Oct. 2026) reports the council endorsements were made Oct. 5."
+    }
+  },
+  {
+    "id": "E276",
+    "endorser": "Colorado Jewish Action Alliance",
+    "endorser_type": "organization",
+    "endorser_slug": "colorado-jewish-action-alliance",
+    "candidate": "Ryan Schuchard",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cojaa.org/boulder-endorsements",
+    "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-08."
+    },
+    "notes": "Endorser's own page; it shows no date. COJAA's 'Community Allies' recognition list is not recorded as endorsements.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-08",
+      "evidence_url": "https://www.cojaa.org/boulder-endorsements",
+      "note": "Uni read COJAA's own '2026 Boulder City & County Endorsements' page in a browser (Oct. 8, 2026). Under 'City of Boulder' it lists 'Ryan Schuchard' / 'City Council'. Its separate '2026 Community Allies' list (candidates who 'engaged thoughtfully in COJAA’s candidate process') is not an endorsement and is not recorded. IJN (Oct. 2026) reports the council endorsements were made Oct. 5."
+    }
+  },
+  {
+    "id": "E277",
+    "endorser": "Colorado Jewish Action Alliance",
+    "endorser_type": "organization",
+    "endorser_slug": "colorado-jewish-action-alliance",
+    "candidate": "Tara Winer",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cojaa.org/boulder-endorsements",
+    "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-08."
+    },
+    "notes": "Endorser's own page; it shows no date. COJAA's 'Community Allies' recognition list is not recorded as endorsements.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-08",
+      "evidence_url": "https://www.cojaa.org/boulder-endorsements",
+      "note": "Uni read COJAA's own '2026 Boulder City & County Endorsements' page in a browser (Oct. 8, 2026). Under 'City of Boulder' it lists 'Tara Winer' / 'City Council'. Its separate '2026 Community Allies' list (candidates who 'engaged thoughtfully in COJAA’s candidate process') is not an endorsement and is not recorded. IJN (Oct. 2026) reports the council endorsements were made Oct. 5."
+    }
+  },
+  {
+    "id": "E278",
+    "endorser": "Matt Benjamin",
+    "endorser_type": "person",
+    "endorser_slug": "matt-benjamin",
+    "candidate": "Rachel Rose Isaacson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Rachel Rose Isaacson campaign",
+    "source_url": "https://www.rachelrose4boulder.com/",
+    "source_title": "Rachel Rose Isaacson for Boulder City Council",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-08",
+      "evidence_url": "https://www.rachelrose4boulder.com/",
+      "note": "Isaacson campaign home page (browser-rendered, Oct. 8, 2026) shows a signed testimonial: '“I’m proud to endorse Rachel Rose Isaacson for Boulder City Council. ...” —Matt Benjamin, Boulder City Council Member'. Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]

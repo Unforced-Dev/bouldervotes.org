@@ -1827,7 +1827,8 @@
       "https://brockett4mayor.org/endorsements/",
       "https://rjforboulder.com/endorsements.html",
       "https://www.ryanwithboulder.com/endorsements",
-      "https://www.taraforboulder.com/endorsements/content/endorsers/"
+      "https://www.taraforboulder.com/endorsements/content/endorsers/",
+      "https://www.rachelrose4boulder.com/"
     ],
     "title": "Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3730,6 +3731,32 @@
     "title": "Former Mayor of Boulder",
     "title_source_url": "https://www.benitaduran.com/new-page-2",
     "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "colorado-jewish-action-alliance",
+    "name": "Colorado Jewish Action Alliance",
+    "kind": "organization",
+    "website": "https://www.cojaa.org/",
+    "legal_form": "501(c)(4)",
+    "mission_quote": {
+      "text": "Colorado Jewish Action Alliance is a political advocacy organization building Jewish civic and electoral power to ensure the safety and security of our community.",
+      "source_url": "https://www.cojaa.org/"
+    },
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": {
+      "text": "For its 2026 primary slate, COJAA said its endorsements followed candidate interviews, questionnaire reviews and deliberation by its board and leadership team.",
+      "source_url": "https://boulderjewishnews.org/2026/announcing-cojaas-2026-primary-endorsements/"
+    },
+    "past_endorsements": [],
+    "summary": "Colorado Jewish Action Alliance (formerly Stop Antisemitism Colorado) describes itself as a 501(c)(4) political advocacy organization. Its Boulder page endorses four city candidates and separately lists other candidates as 'Community Allies', which it does not call endorsements.",
+    "sources": [
+      "https://www.cojaa.org/boulder-endorsements",
+      "https://www.cojaa.org/"
+    ],
+    "weight_group": "organization",
     "related": []
   }
 ]

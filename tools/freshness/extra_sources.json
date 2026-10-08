@@ -26,5 +26,12 @@
     "endorser_slug": "boulder-county-dsa",
     "browser_required": false,
     "coverage_note": "Reprint of DSA's Sept. 29 press release (Adams, Richmond, 2J). Source for E235."
+  },
+  {
+    "url": "https://www.cojaa.org/boulder-endorsements",
+    "kind": "endorser",
+    "endorser_slug": "colorado-jewish-action-alliance",
+    "browser_required": true,
+    "coverage_note": "Wix page; city endorsements plus a separate 'Community Allies' list that is not endorsements. Found by discovery 2026-10-08."
   }
 ]

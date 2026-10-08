@@ -652,6 +652,32 @@
     "source_title": "Rachel Rose Isaacson — campaign site"
    },
    {
+    "id": "E278",
+    "endorser": {
+     "type": "person",
+     "slug": "matt-benjamin",
+     "name": "Matt Benjamin",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/matt-benjamin.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "rachel-rose-isaacson",
+     "name": "Rachel Rose Isaacson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Rachel Rose Isaacson campaign lists Matt Benjamin. Only the campaign says so.",
+    "claimed_by": "Rachel Rose Isaacson campaign",
+    "published_on": null,
+    "source_url": "https://www.rachelrose4boulder.com/",
+    "source_title": "Rachel Rose Isaacson — campaign site"
+   },
+   {
     "id": "E49",
     "endorser": {
      "type": "organization",
