@@ -650,6 +650,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E278",
+   "endorser": {
+    "type": "person",
+    "slug": "matt-benjamin",
+    "name": "Matt Benjamin",
+    "title_as_printed": "Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/matt-benjamin.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "rachel-rose-isaacson",
+    "name": "Rachel Rose Isaacson",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Rachel Rose Isaacson campaign lists Matt Benjamin. Only the campaign says so.",
+   "claimed_by": "Rachel Rose Isaacson campaign",
+   "published_on": null,
+   "source_url": "https://www.rachelrose4boulder.com/",
+   "source_title": "Rachel Rose Isaacson — campaign site"
+  },
+  {
    "id": "E30",
    "endorser": {
     "type": "organization",
@@ -1688,6 +1714,106 @@
    "published_on": null,
    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+  },
+  {
+   "id": "E274",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-jewish-action-alliance",
+    "name": "Colorado Jewish Action Alliance",
+    "page_url": "https://bouldervotes.org/orgs/colorado-jewish-action-alliance.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "aaron-brockett",
+    "name": "Aaron Brockett",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.cojaa.org/boulder-endorsements",
+   "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)"
+  },
+  {
+   "id": "E275",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-jewish-action-alliance",
+    "name": "Colorado Jewish Action Alliance",
+    "page_url": "https://bouldervotes.org/orgs/colorado-jewish-action-alliance.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "tina-marquis",
+    "name": "Tina Marquis",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.cojaa.org/boulder-endorsements",
+   "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)"
+  },
+  {
+   "id": "E276",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-jewish-action-alliance",
+    "name": "Colorado Jewish Action Alliance",
+    "page_url": "https://bouldervotes.org/orgs/colorado-jewish-action-alliance.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.cojaa.org/boulder-endorsements",
+   "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)"
+  },
+  {
+   "id": "E277",
+   "endorser": {
+    "type": "organization",
+    "slug": "colorado-jewish-action-alliance",
+    "name": "Colorado Jewish Action Alliance",
+    "page_url": "https://bouldervotes.org/orgs/colorado-jewish-action-alliance.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "tara-winer",
+    "name": "Tara Winer",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.cojaa.org/boulder-endorsements",
+   "source_title": "2026 Boulder City & County Endorsements (Colorado Jewish Action Alliance)"
   },
   {
    "id": "E236",
