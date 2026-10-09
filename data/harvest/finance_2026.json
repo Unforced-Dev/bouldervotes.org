@@ -1,5 +1,5 @@
 {
-  "retrieved_on": "2026-10-08",
+  "retrieved_on": "2026-10-09",
   "summary_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
   "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
   "list_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
@@ -21997,7 +21997,7 @@
       "matching_received": 0.0,
       "in_kind": 0.0,
       "cash_on_hand": 0.0,
-      "reported_on": "2026-09-15",
+      "reported_on": "2026-10-08",
       "statements": [
         {
           "statement_id": 2850,
@@ -22019,6 +22019,21 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3862",
           "submitted_on": "2026-09-15",
+          "balance": {
+            "contributions": 0.0,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 0.0,
+            "cash_on_hand": 0.0
+          },
+          "n_contributions": 0,
+          "n_expenditures": 0
+        },
+        {
+          "statement_id": 3908,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3908",
+          "submitted_on": "2026-10-08",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -28439,14 +28454,34 @@
       "person": null,
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=329",
       "contributions_total": 0.0,
-      "expenditures_total": 0.0,
+      "expenditures_total": 2085.0,
       "matching_received": 0.0,
       "in_kind": null,
       "cash_on_hand": null,
-      "reported_on": null,
-      "statements": [],
+      "reported_on": "2026-10-07",
+      "statements": [
+        {
+          "statement_id": 3907,
+          "label": "Independent Expenditure",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3907",
+          "submitted_on": "2026-10-07",
+          "balance": {},
+          "n_contributions": 0,
+          "n_expenditures": 1
+        }
+      ],
       "contributions": [],
-      "expenditures": []
+      "expenditures": [
+        {
+          "first_name": "",
+          "last_name": "D&K Printing",
+          "purpose": "Printing",
+          "occurred_on": "2026-10-05",
+          "amount": 2085.0,
+          "clerk_item_id": 9142,
+          "amends_id": null
+        }
+      ]
     },
     {
       "committee_id": 326,
