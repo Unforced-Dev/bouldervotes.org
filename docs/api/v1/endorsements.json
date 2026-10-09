@@ -6644,6 +6644,30 @@
    "source_title": "Endorsements – Aaron Brockett For Mayor"
   },
   {
+   "id": "E280",
+   "endorser": {
+    "type": "person",
+    "slug": "judy-amabile",
+    "name": "Judy Amabile",
+    "title_as_printed": "Colorado state senator",
+    "page_url": "https://bouldervotes.org/people/judy-amabile.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Judy Amabile. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/",
+   "source_title": "Vote YES on 2L"
+  },
+  {
    "id": "M1",
    "endorser": {
     "type": "person",
@@ -7205,6 +7229,54 @@
    "published_on": null,
    "source_url": "https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026",
    "source_title": "Election 2026 (Downtown Boulder Partnership)"
+  },
+  {
+   "id": "E281",
+   "endorser": {
+    "type": "person",
+    "slug": "junie-joseph",
+    "name": "Junie Joseph",
+    "title_as_printed": "Colorado state representative",
+    "page_url": "https://bouldervotes.org/people/junie-joseph.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Junie Joseph. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/",
+   "source_title": "Vote YES on 2L"
+  },
+  {
+   "id": "E279",
+   "endorser": {
+    "type": "person",
+    "slug": "joe-neguse",
+    "name": "Joe Neguse",
+    "title_as_printed": "U.S. Representative for Colorado’s 2nd District",
+    "page_url": "https://bouldervotes.org/people/joe-neguse.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Joe Neguse. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/",
+   "source_title": "Vote YES on 2L"
   },
   {
    "id": "E54",
