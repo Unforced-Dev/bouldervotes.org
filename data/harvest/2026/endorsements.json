@@ -7290,5 +7290,80 @@
       "evidence_url": "https://www.rachelrose4boulder.com/",
       "note": "Isaacson campaign home page (browser-rendered, Oct. 8, 2026) shows a signed testimonial: '“I’m proud to endorse Rachel Rose Isaacson for Boulder City Council. ...” —Matt Benjamin, Boulder City Council Member'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E279",
+    "endorser": "Joe Neguse",
+    "endorser_type": "person",
+    "endorser_slug": "joe-neguse",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+    "source_url": "https://strongerboulder.com/",
+    "source_title": "Vote YES on 2L",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Listed by the Yes on 2L committee with the title shown on its page; personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-09",
+      "evidence_url": "https://strongerboulder.com/",
+      "note": "Boulder Firefighters for a Stronger Boulder 2L site (browser-rendered, Oct. 9, 2026), under 'Proudly Endorsed By:': 'Congressman Joe Neguse / Congressional District 2 / Senator Judy Amabile / Colorado Senate District 18 / Representative Junie Joseph / Colorado House District 10'. Ballot committee's claim; no endorser-authored statement on 2L found."
+    }
+  },
+  {
+    "id": "E280",
+    "endorser": "Judy Amabile",
+    "endorser_type": "person",
+    "endorser_slug": "judy-amabile",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+    "source_url": "https://strongerboulder.com/",
+    "source_title": "Vote YES on 2L",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Listed by the Yes on 2L committee with the title shown on its page; personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-09",
+      "evidence_url": "https://strongerboulder.com/",
+      "note": "Boulder Firefighters for a Stronger Boulder 2L site (browser-rendered, Oct. 9, 2026), under 'Proudly Endorsed By:': 'Congressman Joe Neguse / Congressional District 2 / Senator Judy Amabile / Colorado Senate District 18 / Representative Junie Joseph / Colorado House District 10'. Ballot committee's claim; no endorser-authored statement on 2L found."
+    }
+  },
+  {
+    "id": "E281",
+    "endorser": "Junie Joseph",
+    "endorser_type": "person",
+    "endorser_slug": "junie-joseph",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+    "source_url": "https://strongerboulder.com/",
+    "source_title": "Vote YES on 2L",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Listed by the Yes on 2L committee with the title shown on its page; personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-09",
+      "evidence_url": "https://strongerboulder.com/",
+      "note": "Boulder Firefighters for a Stronger Boulder 2L site (browser-rendered, Oct. 9, 2026), under 'Proudly Endorsed By:': 'Congressman Joe Neguse / Congressional District 2 / Senator Judy Amabile / Colorado Senate District 18 / Representative Junie Joseph / Colorado House District 10'. Ballot committee's claim; no endorser-authored statement on 2L found."
+    }
   }
 ]
