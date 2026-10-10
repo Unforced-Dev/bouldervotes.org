@@ -1971,7 +1971,8 @@
       "https://brockett4mayor.org/endorsements/",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://www.ryanwithboulder.com/endorsements"
     ],
     "title": "former Colorado Senate president",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2773,7 +2774,9 @@
     "summary": "Elise Jones is listed as former Boulder County commissioner on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
       "https://brockett4mayor.org/endorsements/",
-      "https://www.benitaduran.com/new-page-2"
+      "https://www.benitaduran.com/new-page-2",
+      "https://www.jillforcouncil.com/endorsements",
+      "https://www.ryanwithboulder.com/endorsements"
     ],
     "title": "former Boulder County commissioner",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3062,7 +3065,8 @@
     "past_endorsements": [],
     "summary": "Mark Wallach is listed as former Boulder city councilmember on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.ryanwithboulder.com/endorsements"
     ],
     "title": "former Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3319,7 +3323,8 @@
     "past_endorsements": [],
     "summary": "Chris Nicholson is listed as RTD board member on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.jillforcouncil.com/endorsements"
     ],
     "title": "RTD board member",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3447,7 +3452,8 @@
     "past_endorsements": [],
     "summary": "Hollie Rogin is listed as former Lyons mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.jillforcouncil.com/endorsements"
     ],
     "title": "former Lyons mayor",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3729,7 +3735,9 @@
     "past_endorsements": [],
     "summary": "Suzanne Jones is listed as Former Mayor of Boulder on Benita Duran’s 2026 campaign endorsement page. This is a personal endorsement, not one made by any office or organization.",
     "sources": [
-      "https://www.benitaduran.com/new-page-2"
+      "https://www.benitaduran.com/new-page-2",
+      "https://www.jillforcouncil.com/endorsements",
+      "https://www.ryanwithboulder.com/endorsements"
     ],
     "title": "Former Mayor of Boulder",
     "title_source_url": "https://www.benitaduran.com/new-page-2",
@@ -3760,6 +3768,160 @@
       "https://www.cojaa.org/"
     ],
     "weight_group": "organization",
+    "related": []
+  },
+  {
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "kind": "newspaper",
+    "website": "https://yellowscene.com/",
+    "legal_form": "Independent magazine editorial board (business legal form not verified)",
+    "mission_quote": {
+      "text": "Our endorsements are not instructions on how to vote. They are our informed assessment after doing the work.",
+      "source_url": "https://yellowscene.com/2026/10/09/publishers-note-election-2026-the-election-guide-might-be-the-end-of-me-133-candidates-later/"
+    },
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": {
+      "text": "The publisher's note says writers interview candidates live, the editorial team recommends whom to endorse, and the Editorial Board reviews those recommendations and seeks consensus.",
+      "source_url": "https://yellowscene.com/2026/10/09/publishers-note-election-2026-the-election-guide-might-be-the-end-of-me-133-candidates-later/"
+    },
+    "past_endorsements": [],
+    "summary": "Yellow Scene is an independent magazine covering Boulder County and the north metro area. Its Oct. 9, 2026 Election Guide endorses two mayoral candidates (it says ranked-choice voting is why), five City Council candidates, and YES on 2J, 2K, 2L and 2M. The guide's other designations ('Qualified', 'Too Extreme') are not recorded as endorsements or opposition.",
+    "sources": [
+      "https://yellowscene.com/2026/10/09/2026-election-guide/",
+      "https://yellowscene.com/2026/10/09/publishers-note-election-2026-the-election-guide-might-be-the-end-of-me-133-candidates-later/"
+    ],
+    "weight_group": "organization",
+    "related": []
+  },
+  {
+    "slug": "cindy-carlisle",
+    "name": "Cindy Carlisle",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Cindy Carlisle",
+        "role": "Former Boulder City Council Member and Univ of Colorado Regent",
+        "source_url": "https://www.jillforcouncil.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-10"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Cindy Carlisle is identified as Former Boulder City Council Member and Univ of Colorado Regent on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.jillforcouncil.com/endorsements"
+    ],
+    "title": "Former Boulder City Council Member and Univ of Colorado Regent",
+    "title_source_url": "https://www.jillforcouncil.com/endorsements",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "francoise-poinsatte",
+    "name": "Francoise Poinsatte",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Francoise Poinsatte",
+        "role": "former Boulder City Council",
+        "source_url": "https://www.jillforcouncil.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-10"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Francoise Poinsatte is identified as former Boulder City Council on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.jillforcouncil.com/endorsements"
+    ],
+    "title": "former Boulder City Council",
+    "title_source_url": "https://www.jillforcouncil.com/endorsements",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "jim-martin",
+    "name": "Jim Martin",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Jim Martin",
+        "role": "former University of Colorado Regent",
+        "source_url": "https://www.jillforcouncil.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-10"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Jim Martin is identified as former University of Colorado Regent on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.jillforcouncil.com/endorsements"
+    ],
+    "title": "former University of Colorado Regent",
+    "title_source_url": "https://www.jillforcouncil.com/endorsements",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "michael-bennet",
+    "name": "Michael Bennet",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Michael Bennet",
+        "role": "US Senator for Boulder",
+        "source_url": "https://www.ryanwithboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-10"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Michael Bennet is identified as US Senator for Boulder on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.ryanwithboulder.com/endorsements"
+    ],
+    "title": "US Senator for Boulder",
+    "title_source_url": "https://www.ryanwithboulder.com/endorsements",
+    "weight_group": "current_elected",
     "related": []
   }
 ]

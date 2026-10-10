@@ -638,6 +638,32 @@
     "source_title": "Endorsements — Re-Elect Ryan Schuchard"
    },
    {
+    "id": "E300",
+    "endorser": {
+     "type": "person",
+     "slug": "michael-bennet",
+     "name": "Michael Bennet",
+     "title_as_printed": "US Senator for Boulder",
+     "page_url": "https://bouldervotes.org/people/michael-bennet.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Michael Bennet. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
     "id": "E36",
     "endorser": {
      "type": "organization",
@@ -865,6 +891,32 @@
     "source_title": "Endorsements — Re-Elect Ryan Schuchard"
    },
    {
+    "id": "E301",
+    "endorser": {
+     "type": "person",
+     "slug": "steve-fenberg",
+     "name": "Steve Fenberg",
+     "title_as_printed": "former Colorado Senate president",
+     "page_url": "https://bouldervotes.org/people/steve-fenberg.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Steve Fenberg. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
     "id": "E195",
     "endorser": {
      "type": "person",
@@ -963,6 +1015,58 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Ryan Schuchard campaign lists Lynn Guissinger. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E302",
+    "endorser": {
+     "type": "person",
+     "slug": "elise-jones",
+     "name": "Elise Jones",
+     "title_as_printed": "former Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/elise-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Elise Jones. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E303",
+    "endorser": {
+     "type": "person",
+     "slug": "suzanne-jones",
+     "name": "Suzanne Jones",
+     "title_as_printed": "Former Mayor of Boulder",
+     "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Suzanne Jones. Only the campaign says so.",
     "claimed_by": "Ryan Schuchard campaign",
     "published_on": null,
     "source_url": "https://www.ryanwithboulder.com/endorsements",
@@ -1329,6 +1433,32 @@
     "source_title": "Endorsements — Re-Elect Ryan Schuchard"
    },
    {
+    "id": "E304",
+    "endorser": {
+     "type": "person",
+     "slug": "mark-wallach",
+     "name": "Mark Wallach",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/mark-wallach.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Mark Wallach. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
     "id": "E130",
     "endorser": {
      "type": "person",
@@ -1353,6 +1483,31 @@
     "published_on": null,
     "source_url": "https://www.ryanwithboulder.com/endorsements",
     "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
+    "id": "E284",
+    "endorser": {
+     "type": "organization",
+     "slug": "yellow-scene-editorial-board",
+     "name": "Yellow Scene Editorial Board",
+     "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-09",
+    "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+    "source_title": "2026 Election Guide (Yellow Scene Magazine)"
    }
   ],
   "finance": {
@@ -1364,7 +1519,7 @@
    "as_of": "2026-10-06",
    "report": "28th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3888",
-   "retrieved_on": "2026-10-09",
+   "retrieved_on": "2026-10-10",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=308",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $334.60 in loans."
@@ -1388,7 +1543,8 @@
    "https://www.youtube.com/watch?v=gdZzGJNB7g0",
    "https://www.youtube.com/watch?v=pT9IeGL6deg",
    "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
-   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures"
+   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "https://yellowscene.com/2026/10/09/2026-election-guide/"
   ]
  }
 }

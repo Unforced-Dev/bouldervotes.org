@@ -1,5 +1,5 @@
 {
-  "retrieved_on": "2026-10-09",
+  "retrieved_on": "2026-10-10",
   "summary_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
   "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
   "list_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
@@ -17147,11 +17147,11 @@
       "person": "Lee Gilbert",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=315",
       "contributions_total": 0.0,
-      "expenditures_total": 0.0,
+      "expenditures_total": 80.0,
       "matching_received": 0.0,
       "in_kind": 0.0,
-      "cash_on_hand": 0.0,
-      "reported_on": "2026-09-24",
+      "cash_on_hand": -80.0,
+      "reported_on": "2026-10-09",
       "statements": [
         {
           "statement_id": 2846,
@@ -17182,10 +17182,35 @@
           },
           "n_contributions": 0,
           "n_expenditures": 0
+        },
+        {
+          "statement_id": 3910,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3910",
+          "submitted_on": "2026-10-09",
+          "balance": {
+            "contributions": 0.0,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 80.0,
+            "cash_on_hand": -80.0
+          },
+          "n_contributions": 0,
+          "n_expenditures": 1
         }
       ],
       "contributions": [],
-      "expenditures": []
+      "expenditures": [
+        {
+          "first_name": "",
+          "last_name": "Thor Ronemus",
+          "purpose": "Website design and support",
+          "occurred_on": "2026-10-04",
+          "amount": 80.0,
+          "clerk_item_id": 9150,
+          "amends_id": null
+        }
+      ]
     },
     {
       "committee_id": 305,
