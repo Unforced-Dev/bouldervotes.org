@@ -2590,5 +2590,21 @@
   "kind": "forum",
   "status": "published",
   "hold_reason": null
+ },
+ {
+  "id": "S-jill-grano-11",
+  "candidate": "Jill Grano",
+  "topic": "bond",
+  "text": "To be clear, I do not support the bond",
+  "verbatim": true,
+  "speaker": "Jill Grano",
+  "speaker_is_candidate": true,
+  "publisher": "Campaign website: Jill Grano",
+  "source_url": "https://www.jillforcouncil.com/",
+  "source_title": "Campaign priorities: Jill Grano",
+  "published_on": null,
+  "kind": "campaign_site",
+  "status": "published",
+  "hold_reason": null
  }
 ]

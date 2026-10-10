@@ -35,6 +35,19 @@
   ],
   "statements": [
    {
+    "id": "S-jill-grano-11",
+    "topic": "bond",
+    "text": "To be clear, I do not support the bond",
+    "speaker": "Jill Grano",
+    "candidate_own_words": true,
+    "verbatim": true,
+    "publisher": "Campaign website: Jill Grano",
+    "kind": "campaign_site",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/",
+    "source_title": "Jill Grano for Council — campaign site"
+   },
+   {
     "id": "S-jill-grano-2",
     "topic": "downtown",
     "text": "Downtown revitalization will absolutely be one of my top priorities if elected & you can hold me to that.",
@@ -825,6 +838,32 @@
     "source_title": "Endorsements – Jill for City Council"
    },
    {
+    "id": "E295",
+    "endorser": {
+     "type": "person",
+     "slug": "cindy-carlisle",
+     "name": "Cindy Carlisle",
+     "title_as_printed": "Former Boulder City Council Member and Univ of Colorado Regent",
+     "page_url": "https://bouldervotes.org/people/cindy-carlisle.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Cindy Carlisle. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
     "id": "E250",
     "endorser": {
      "type": "organization",
@@ -1058,6 +1097,58 @@
     "source_title": "Endorsements – Jill for City Council"
    },
    {
+    "id": "E293",
+    "endorser": {
+     "type": "person",
+     "slug": "elise-jones",
+     "name": "Elise Jones",
+     "title_as_printed": "former Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/elise-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Elise Jones. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
+    "id": "E294",
+    "endorser": {
+     "type": "person",
+     "slug": "suzanne-jones",
+     "name": "Suzanne Jones",
+     "title_as_printed": "Former Mayor of Boulder",
+     "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Suzanne Jones. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
     "id": "E90",
     "endorser": {
      "type": "person",
@@ -1130,6 +1221,32 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Jill Grano campaign lists Tina Marquis. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
+    "id": "E297",
+    "endorser": {
+     "type": "person",
+     "slug": "jim-martin",
+     "name": "Jim Martin",
+     "title_as_printed": "former University of Colorado Regent",
+     "page_url": "https://bouldervotes.org/people/jim-martin.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Jim Martin. Only the campaign says so.",
     "claimed_by": "Jill Grano campaign",
     "published_on": null,
     "source_url": "https://www.jillforcouncil.com/endorsements",
@@ -1214,6 +1331,32 @@
     "source_title": "Endorsements – Jill for City Council"
    },
    {
+    "id": "E298",
+    "endorser": {
+     "type": "person",
+     "slug": "chris-nicholson",
+     "name": "Chris Nicholson",
+     "title_as_printed": "RTD board member",
+     "page_url": "https://bouldervotes.org/people/chris-nicholson.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Chris Nicholson. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
     "id": "E41",
     "endorser": {
      "type": "organization",
@@ -1262,6 +1405,58 @@
     "published_on": null,
     "source_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
     "source_title": "City of Boulder Statement of Organization: Open Boulder 2026 UCC"
+   },
+   {
+    "id": "E296",
+    "endorser": {
+     "type": "person",
+     "slug": "francoise-poinsatte",
+     "name": "Francoise Poinsatte",
+     "title_as_printed": "former Boulder City Council",
+     "page_url": "https://bouldervotes.org/people/francoise-poinsatte.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Francoise Poinsatte. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
+   },
+   {
+    "id": "E299",
+    "endorser": {
+     "type": "person",
+     "slug": "hollie-rogin",
+     "name": "Hollie Rogin",
+     "title_as_printed": "former Lyons mayor",
+     "page_url": "https://bouldervotes.org/people/hollie-rogin.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Jill Grano campaign lists Hollie Rogin. Only the campaign says so.",
+    "claimed_by": "Jill Grano campaign",
+    "published_on": null,
+    "source_url": "https://www.jillforcouncil.com/endorsements",
+    "source_title": "Endorsements – Jill for City Council"
    },
    {
     "id": "E124",
@@ -1521,6 +1716,31 @@
     "published_on": null,
     "source_url": "https://www.jillforcouncil.com/endorsements",
     "source_title": "Endorsements – Jill for City Council"
+   },
+   {
+    "id": "E285",
+    "endorser": {
+     "type": "organization",
+     "slug": "yellow-scene-editorial-board",
+     "name": "Yellow Scene Editorial Board",
+     "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-09",
+    "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+    "source_title": "2026 Election Guide (Yellow Scene Magazine)"
    }
   ],
   "finance": {
@@ -1532,7 +1752,7 @@
    "as_of": "2026-09-22",
    "report": "42nd day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3874",
-   "retrieved_on": "2026-10-09",
+   "retrieved_on": "2026-10-10",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=309",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "As filed, matching funds received ($11,182.62) are higher than total contributions ($11,176.54); shown as the clerk report states them."
@@ -1549,6 +1769,7 @@
    "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327",
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
+   "https://www.jillforcouncil.com/",
    "https://www.jillforcouncil.com/community-questions",
    "https://www.jillforcouncil.com/endorsements",
    "https://www.youtube.com/watch?v=CQlalpB7N5w",
@@ -1556,7 +1777,8 @@
    "https://www.youtube.com/watch?v=pT9IeGL6deg",
    "https://yellowscene.com/2026/09/05/17-candidates-take-the-stage-at-boulder-chambers-first-2026-election-forum/",
    "https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates",
-   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures"
+   "https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures",
+   "https://yellowscene.com/2026/10/09/2026-election-guide/"
   ]
  }
 }

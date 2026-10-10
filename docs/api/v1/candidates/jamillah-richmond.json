@@ -757,6 +757,31 @@
     "published_on": null,
     "source_url": "https://www.jamillahanewvoice.com/endorsements",
     "source_title": "Endorsements – Jamillah Richmond"
+   },
+   {
+    "id": "E288",
+    "endorser": {
+     "type": "organization",
+     "slug": "yellow-scene-editorial-board",
+     "name": "Yellow Scene Editorial Board",
+     "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "jamillah-richmond",
+     "name": "Jamillah Richmond",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-09",
+    "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+    "source_title": "2026 Election Guide (Yellow Scene Magazine)"
    }
   ],
   "finance": {
@@ -768,7 +793,7 @@
    "as_of": "2026-10-06",
    "report": "28th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3897",
-   "retrieved_on": "2026-10-09",
+   "retrieved_on": "2026-10-10",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=317",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null
@@ -789,7 +814,8 @@
    "https://www.youtube.com/watch?v=gdZzGJNB7g0",
    "https://www.youtube.com/watch?v=pT9IeGL6deg",
    "https://yellowscene.com/2026/09/05/17-candidates-take-the-stage-at-boulder-chambers-first-2026-election-forum/",
-   "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/"
+   "https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/",
+   "https://yellowscene.com/2026/10/09/2026-election-guide/"
   ]
  }
 }

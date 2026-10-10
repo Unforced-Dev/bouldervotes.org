@@ -676,6 +676,32 @@
    "source_title": "Rachel Rose Isaacson — campaign site"
   },
   {
+   "id": "E300",
+   "endorser": {
+    "type": "person",
+    "slug": "michael-bennet",
+    "name": "Michael Bennet",
+    "title_as_printed": "US Senator for Boulder",
+    "page_url": "https://bouldervotes.org/people/michael-bennet.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Schuchard campaign lists Michael Bennet. Only the campaign says so.",
+   "claimed_by": "Ryan Schuchard campaign",
+   "published_on": null,
+   "source_url": "https://www.ryanwithboulder.com/endorsements",
+   "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+  },
+  {
    "id": "E30",
    "endorser": {
     "type": "organization",
@@ -1690,6 +1716,32 @@
    "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
+   "id": "E295",
+   "endorser": {
+    "type": "person",
+    "slug": "cindy-carlisle",
+    "name": "Cindy Carlisle",
+    "title_as_printed": "Former Boulder City Council Member and Univ of Colorado Regent",
+    "page_url": "https://bouldervotes.org/people/cindy-carlisle.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Cindy Carlisle. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
+  },
+  {
    "id": "U3",
    "endorser": {
     "type": "person",
@@ -2454,6 +2506,32 @@
    "published_on": null,
    "source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
+  },
+  {
+   "id": "E301",
+   "endorser": {
+    "type": "person",
+    "slug": "steve-fenberg",
+    "name": "Steve Fenberg",
+    "title_as_printed": "former Colorado Senate president",
+    "page_url": "https://bouldervotes.org/people/steve-fenberg.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Schuchard campaign lists Steve Fenberg. Only the campaign says so.",
+   "claimed_by": "Ryan Schuchard campaign",
+   "published_on": null,
+   "source_url": "https://www.ryanwithboulder.com/endorsements",
+   "source_title": "Endorsements — Re-Elect Ryan Schuchard"
   },
   {
    "id": "E180",
@@ -3522,6 +3600,58 @@
    "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
+   "id": "E293",
+   "endorser": {
+    "type": "person",
+    "slug": "elise-jones",
+    "name": "Elise Jones",
+    "title_as_printed": "former Boulder County commissioner",
+    "page_url": "https://bouldervotes.org/people/elise-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Elise Jones. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
+  },
+  {
+   "id": "E302",
+   "endorser": {
+    "type": "person",
+    "slug": "elise-jones",
+    "name": "Elise Jones",
+    "title_as_printed": "former Boulder County commissioner",
+    "page_url": "https://bouldervotes.org/people/elise-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Schuchard campaign lists Elise Jones. Only the campaign says so.",
+   "claimed_by": "Ryan Schuchard campaign",
+   "published_on": null,
+   "source_url": "https://www.ryanwithboulder.com/endorsements",
+   "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+  },
+  {
    "id": "E263",
    "endorser": {
     "type": "person",
@@ -3546,6 +3676,58 @@
    "published_on": null,
    "source_url": "https://www.benitaduran.com/new-page-2",
    "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
+   "id": "E294",
+   "endorser": {
+    "type": "person",
+    "slug": "suzanne-jones",
+    "name": "Suzanne Jones",
+    "title_as_printed": "Former Mayor of Boulder",
+    "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Suzanne Jones. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
+  },
+  {
+   "id": "E303",
+   "endorser": {
+    "type": "person",
+    "slug": "suzanne-jones",
+    "name": "Suzanne Jones",
+    "title_as_printed": "Former Mayor of Boulder",
+    "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Schuchard campaign lists Suzanne Jones. Only the campaign says so.",
+   "claimed_by": "Ryan Schuchard campaign",
+   "published_on": null,
+   "source_url": "https://www.ryanwithboulder.com/endorsements",
+   "source_title": "Endorsements — Re-Elect Ryan Schuchard"
   },
   {
    "id": "E216",
@@ -4198,6 +4380,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E297",
+   "endorser": {
+    "type": "person",
+    "slug": "jim-martin",
+    "name": "Jim Martin",
+    "title_as_printed": "former University of Colorado Regent",
+    "page_url": "https://bouldervotes.org/people/jim-martin.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Jim Martin. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
+  },
+  {
    "id": "E201",
    "endorser": {
     "type": "person",
@@ -4586,6 +4794,32 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E298",
+   "endorser": {
+    "type": "person",
+    "slug": "chris-nicholson",
+    "name": "Chris Nicholson",
+    "title_as_printed": "RTD board member",
+    "page_url": "https://bouldervotes.org/people/chris-nicholson.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Chris Nicholson. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
   },
   {
    "id": "E41",
@@ -5041,6 +5275,32 @@
    "source_title": "Endorsements – Aaron Brockett For Mayor"
   },
   {
+   "id": "E296",
+   "endorser": {
+    "type": "person",
+    "slug": "francoise-poinsatte",
+    "name": "Francoise Poinsatte",
+    "title_as_printed": "former Boulder City Council",
+    "page_url": "https://bouldervotes.org/people/francoise-poinsatte.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Francoise Poinsatte. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
+  },
+  {
    "id": "E71",
    "endorser": {
     "type": "organization",
@@ -5090,6 +5350,32 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E299",
+   "endorser": {
+    "type": "person",
+    "slug": "hollie-rogin",
+    "name": "Hollie Rogin",
+    "title_as_printed": "former Lyons mayor",
+    "page_url": "https://bouldervotes.org/people/hollie-rogin.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Jill Grano campaign lists Hollie Rogin. Only the campaign says so.",
+   "claimed_by": "Jill Grano campaign",
+   "published_on": null,
+   "source_url": "https://www.jillforcouncil.com/endorsements",
+   "source_title": "Endorsements – Jill for City Council"
   },
   {
    "id": "E69",
@@ -6384,6 +6670,32 @@
    "source_title": "Rachel Rose Isaacson — campaign site"
   },
   {
+   "id": "E304",
+   "endorser": {
+    "type": "person",
+    "slug": "mark-wallach",
+    "name": "Mark Wallach",
+    "title_as_printed": "former Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/mark-wallach.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Ryan Schuchard campaign lists Mark Wallach. Only the campaign says so.",
+   "claimed_by": "Ryan Schuchard campaign",
+   "published_on": null,
+   "source_url": "https://www.ryanwithboulder.com/endorsements",
+   "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+  },
+  {
    "id": "E167",
    "endorser": {
     "type": "person",
@@ -6642,6 +6954,181 @@
    "published_on": null,
    "source_url": "https://brockett4mayor.org/endorsements/",
    "source_title": "Endorsements – Aaron Brockett For Mayor"
+  },
+  {
+   "id": "E282",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E283",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "aaron-brockett",
+    "name": "Aaron Brockett",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E284",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E285",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E286",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E287",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "tina-marquis",
+    "name": "Tina Marquis",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E288",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "jamillah-richmond",
+    "name": "Jamillah Richmond",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
   },
   {
    "id": "E280",
@@ -7393,6 +7880,98 @@
    "published_on": null,
    "source_url": "https://www.bouldervacancytax.org/",
    "source_title": "Vote Yes on 2J"
+  },
+  {
+   "id": "E289",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2J"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E290",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2K"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E291",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
+  },
+  {
+   "id": "E292",
+   "endorser": {
+    "type": "organization",
+    "slug": "yellow-scene-editorial-board",
+    "name": "Yellow Scene Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2M"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-09",
+   "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+   "source_title": "2026 Election Guide (Yellow Scene Magazine)"
   }
  ]
 }

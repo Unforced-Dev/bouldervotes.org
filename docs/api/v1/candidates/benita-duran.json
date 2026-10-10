@@ -1075,6 +1075,31 @@
     "published_on": null,
     "source_url": "https://www.benitaduran.com/new-page-2",
     "source_title": "Endorsements and Supporters – Benita Duran"
+   },
+   {
+    "id": "E286",
+    "endorser": {
+     "type": "organization",
+     "slug": "yellow-scene-editorial-board",
+     "name": "Yellow Scene Editorial Board",
+     "page_url": "https://bouldervotes.org/orgs/yellow-scene-editorial-board.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-09",
+    "source_url": "https://yellowscene.com/2026/10/09/2026-election-guide/",
+    "source_title": "2026 Election Guide (Yellow Scene Magazine)"
    }
   ],
   "finance": {
@@ -1086,7 +1111,7 @@
    "as_of": "2026-10-06",
    "report": "28th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3887",
-   "retrieved_on": "2026-10-09",
+   "retrieved_on": "2026-10-10",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=310",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $348.29 in loans."
@@ -1107,7 +1132,8 @@
    "https://www.youtube.com/watch?v=CQlalpB7N5w",
    "https://www.youtube.com/watch?v=PlXLjT1gH5U",
    "https://www.youtube.com/watch?v=gdZzGJNB7g0",
-   "https://www.youtube.com/watch?v=pT9IeGL6deg"
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://yellowscene.com/2026/10/09/2026-election-guide/"
   ]
  }
 }
