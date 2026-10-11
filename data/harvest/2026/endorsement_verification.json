@@ -1646,10 +1646,10 @@
   },
   {
     "id": "E235",
-    "result": "PASS",
-    "checked_on": "2026-10-03",
-    "evidence_url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
-    "note": "Uni read the Yellow Scene page in a browser. It reprints Boulder County DSA's Sept. 29 press release (contact Elias Lindgren): 'Boulder County DSA chapter endorses Adams for Boulder mayor, Richmond for Boulder City Council and a yes on 2J.' Labelled news report because no chapter-hosted copy was found (boulderdsa.org and @boulderdsa checked Oct. 3)."
+    "result": "CORRECTED",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Upgraded from news_report to endorser_statement: the chapter's own voter guide, linked from its domain (boulderdsa.org/voterguide redirects to the chapter's PDF), lists 'Ballot Issue 2J Residential Vacancy Excise Tax YES - Endorsed'. Read Oct. 11, 2026."
   },
   {
     "id": "M1",
@@ -2287,5 +2287,54 @@
     "checked_on": "2026-10-11",
     "evidence_url": "https://workingfamilies.org/candidates/",
     "note": "Uni rendered workingfamilies.org/candidates/ in a browser with every 'View More' expanded (Oct. 11, 2026). Under 'Ballot measures' the page lists 'Front Range Passenger Rail District Ballot Issue 7A' with 'Yes'."
+  },
+  {
+    "id": "E319",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Issue 2K - Recreation and Safety Bond - Recommend: NO'. The chapter objects to the $170 million Public Safety Center and supports separating it from the other upgrades."
+  },
+  {
+    "id": "E320",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Question 2L- Charter Change for Right to Bargaining Union Firefighters - Recommend: YES'."
+  },
+  {
+    "id": "E321",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Question 2M - Debt Limit City Charter Language - Recommend: No'."
+  },
+  {
+    "id": "E322",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'County Issue 1A Boulder County Early Childhood and Education Issue YES'."
+  },
+  {
+    "id": "E323",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Question 200 ... Boulder County increase from 3 to 5 County Commissioners ... YES'."
+  },
+  {
+    "id": "E324",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Question 201, Option 2 - Recommend: YES - Select Option 2'."
+  },
+  {
+    "id": "E325",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://boulderdsa.org/voterguide",
+    "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Issue 7A Front Range Passenger Rail District yes'."
   }
 ]
