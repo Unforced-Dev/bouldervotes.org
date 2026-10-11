@@ -7973,5 +7973,326 @@
       "evidence_url": "https://www.ryanwithboulder.com/endorsements",
       "note": "Ryan Schuchard campaign endorsement page (browser-rendered, Oct. 10, 2026) lists 'Mark Wallach, former Boulder City Councilmember' under 'BOULDER CITY COUNCIL COLLEAGUES'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E305",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading ''No' on City of Boulder Ballot Issue 2K'; 'Vote “no” on City of Boulder Ballot Issue 2K.' The board says the need is real but the measure is 'undercooked' and asks the city to return next year with a Community Bond Oversight Committee. Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E306",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": "2M",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading ''No' on City of Boulder Ballot Question 2M'; 'If you voted “no” on 2K, vote “no” on 2M.' 2M is not named in the editorial's closing summary. Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E307",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": "2J",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading 'No on City of Boulder Ballot Issue 2J'; 'Vote “no” on 2J.' The board says a vacancy tax 'might become necessary' later. Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E308",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading ''Yes' on City of Boulder Ballot Question 2L'; 'Vote “yes” on Ballot Question 2L.' Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E309",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading ''Yes' on Boulder County Issue 1A'; 'Vote “yes” on Boulder County Issue 1A.' Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E310",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading ''Yes' on Boulder County Ballot Question 200'; 'Vote “yes” on Boulder County Ballot Question 200.' Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E311",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Question 201: Commissioner Election Method (five districts)",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-11",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Heading 'Five Districts for Boulder County Ballot Question 201'; 'if you support increasing the number of commissioners, choose the five-district approach.' Editorial signed '— Gary Garrison for the Editorial Board', published Oct. 11, 2026.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 11, 2026. Closing summary verbatim: 'On City of Boulder issues, vote “no” on 2K and 2J. Vote “yes” on 2L. On Boulder County issues, vote “yes” on 1A and 200. And vote for five districts on 201.' Signed '— Gary Garrison for the Editorial Board'."
+    }
+  },
+  {
+    "id": "E312",
+    "endorser": "Sam Weaver",
+    "endorser_type": "person",
+    "endorser_slug": "sam-weaver",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Mayor of Boulder'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Sam Weaver' ('Former Mayor of Boulder') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E313",
+    "endorser": "Leslie Durgin",
+    "endorser_type": "person",
+    "endorser_slug": "leslie-durgin",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Mayor of Boulder'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Leslie Durgin' ('Former Mayor of Boulder') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E314",
+    "endorser": "Gail Schoettler",
+    "endorser_type": "person",
+    "endorser_slug": "gail-schoettler",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Lieutenant Governor of Colorado'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Gail Schoettler' ('Former Lieutenant Governor of Colorado') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E315",
+    "endorser": "Ruth Wright",
+    "endorser_type": "person",
+    "endorser_slug": "ruth-wright",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Colorado House Minority Leader'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Ruth Wright' ('Former Colorado House Minority Leader') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E316",
+    "endorser": "Happy Haynes",
+    "endorser_type": "person",
+    "endorser_slug": "happy-haynes",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Former Denver City Council'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Happy Haynes' ('Former Denver City Council') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]
