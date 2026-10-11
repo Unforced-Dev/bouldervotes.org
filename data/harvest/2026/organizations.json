@@ -2111,7 +2111,8 @@
       "https://rjforboulder.com/endorsements.html",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Boulder mayor",
     "title_source_url": "https://www.jillforcouncil.com/endorsements",
@@ -2808,7 +2809,8 @@
     "past_endorsements": [],
     "summary": "Leslie Durgin is listed as former Boulder mayor on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://brockett4mayor.org/endorsements/"
+      "https://brockett4mayor.org/endorsements/",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Boulder mayor",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3922,6 +3924,102 @@
     "title": "US Senator for Boulder",
     "title_source_url": "https://www.ryanwithboulder.com/endorsements",
     "weight_group": "current_elected",
+    "related": []
+  },
+  {
+    "slug": "gail-schoettler",
+    "name": "Gail Schoettler",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Gail Schoettler",
+        "role": "Former Lieutenant Governor of Colorado",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-11"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Gail Schoettler is identified as Former Lieutenant Governor of Colorado on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former Lieutenant Governor of Colorado",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "ruth-wright",
+    "name": "Ruth Wright",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Ruth Wright",
+        "role": "Former Colorado House Minority Leader",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-11"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Ruth Wright is identified as Former Colorado House Minority Leader on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former Colorado House Minority Leader",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "happy-haynes",
+    "name": "Happy Haynes",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Happy Haynes",
+        "role": "Former Denver City Council",
+        "source_url": "https://www.benitaduran.com/new-page-2",
+        "current": true,
+        "as_of": "2026-10-11"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Happy Haynes is identified as Former Denver City Council on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": "Former Denver City Council",
+    "title_source_url": "https://www.benitaduran.com/new-page-2",
+    "weight_group": "former_elected",
     "related": []
   }
 ]

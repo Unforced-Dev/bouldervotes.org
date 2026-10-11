@@ -2352,6 +2352,32 @@
    "source_title": "Endorsements – Ryan Jamieson"
   },
   {
+   "id": "E313",
+   "endorser": {
+    "type": "person",
+    "slug": "leslie-durgin",
+    "name": "Leslie Durgin",
+    "title_as_printed": "former Boulder mayor",
+    "page_url": "https://bouldervotes.org/people/leslie-durgin.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Leslie Durgin. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "U4",
    "endorser": {
     "type": "person",
@@ -3360,6 +3386,32 @@
    "provenance": "campaign_claim",
    "provenance_label": "Campaign claim",
    "label": "Benita Duran campaign lists Lynn Guissinger. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
+   "id": "E316",
+   "endorser": {
+    "type": "person",
+    "slug": "happy-haynes",
+    "name": "Happy Haynes",
+    "title_as_printed": "Former Denver City Council",
+    "page_url": "https://bouldervotes.org/people/happy-haynes.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Happy Haynes. Only the campaign says so.",
    "claimed_by": "Benita Duran campaign",
    "published_on": null,
    "source_url": "https://www.benitaduran.com/new-page-2",
@@ -5455,6 +5507,32 @@
    "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
+   "id": "E314",
+   "endorser": {
+    "type": "person",
+    "slug": "gail-schoettler",
+    "name": "Gail Schoettler",
+    "title_as_printed": "Former Lieutenant Governor of Colorado",
+    "page_url": "https://bouldervotes.org/people/gail-schoettler.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Gail Schoettler. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E123",
    "endorser": {
     "type": "person",
@@ -6800,6 +6878,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E312",
+   "endorser": {
+    "type": "person",
+    "slug": "sam-weaver",
+    "name": "Sam Weaver",
+    "title_as_printed": "former Boulder mayor",
+    "page_url": "https://bouldervotes.org/people/sam-weaver.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Sam Weaver. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E127",
    "endorser": {
     "type": "person",
@@ -6924,6 +7028,32 @@
    "provenance": "campaign_claim",
    "provenance_label": "Campaign claim",
    "label": "Benita Duran campaign lists Tara Winer. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
+   "id": "E315",
+   "endorser": {
+    "type": "person",
+    "slug": "ruth-wright",
+    "name": "Ruth Wright",
+    "title_as_printed": "Former Colorado House Minority Leader",
+    "page_url": "https://bouldervotes.org/people/ruth-wright.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Ruth Wright. Only the campaign says so.",
    "claimed_by": "Benita Duran campaign",
    "published_on": null,
    "source_url": "https://www.benitaduran.com/new-page-2",
@@ -7669,6 +7799,170 @@
    "published_on": null,
    "source_url": "https://workingfamilies.org/candidates/",
    "source_title": "Our 2026 Candidates (Working Families Party)"
+  },
+  {
+   "id": "E305",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2K"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E306",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2M"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E307",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2J"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E308",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E309",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E310",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
+  },
+  {
+   "id": "E311",
+   "endorser": {
+    "type": "organization",
+    "slug": "daily-camera-editorial-board",
+    "name": "Daily Camera Editorial Board",
+    "page_url": "https://bouldervotes.org/orgs/daily-camera-editorial-board.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Question 201: Commissioner Election Method (five districts)",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-11",
+   "source_url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
+   "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
   },
   {
    "id": "E242",
