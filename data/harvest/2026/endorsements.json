@@ -8294,5 +8294,61 @@
       "evidence_url": "https://www.benitaduran.com/new-page-2",
       "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Happy Haynes' ('Former Denver City Council') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E317",
+    "endorser": "Colorado Working Families Party",
+    "endorser_type": "organization",
+    "endorser_slug": "colorado-working-families-party",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://workingfamilies.org/candidates/",
+    "source_title": "Our 2026 Candidates (Working Families Party)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Colorado WFP's candidates page, under 'Ballot measures': 'Boulder County Ballot Issue 1A' / 'Yes'.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://workingfamilies.org/candidates/",
+      "note": "Uni rendered workingfamilies.org/candidates/ in a browser with every 'View More' expanded (Oct. 11, 2026). Under 'Ballot measures' the page lists 'Boulder County Ballot Issue 1A' with 'Yes'."
+    }
+  },
+  {
+    "id": "E318",
+    "endorser": "Colorado Working Families Party",
+    "endorser_type": "organization",
+    "endorser_slug": "colorado-working-families-party",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://workingfamilies.org/candidates/",
+    "source_title": "Our 2026 Candidates (Working Families Party)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-11."
+    },
+    "notes": "Colorado WFP's candidates page, under 'Ballot measures': 'Front Range Passenger Rail District Ballot Issue 7A' / 'Yes'.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://workingfamilies.org/candidates/",
+      "note": "Uni rendered workingfamilies.org/candidates/ in a browser with every 'View More' expanded (Oct. 11, 2026). Under 'Ballot measures' the page lists 'Front Range Passenger Rail District Ballot Issue 7A' with 'Yes'."
+    }
   }
 ]
