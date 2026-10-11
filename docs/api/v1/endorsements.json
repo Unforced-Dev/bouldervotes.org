@@ -7583,13 +7583,178 @@
    },
    "position": "support",
    "rank": null,
-   "provenance": "news_report",
-   "provenance_label": "News listing",
-   "label": "News listing: Yellow Scene Magazine (Sept. 30 reprint of the chapter's press release) lists Boulder County Democratic Socialists of America. We didn't find the endorser's own statement.",
-   "claimed_by": "Yellow Scene Magazine (Sept. 30 reprint of the chapter's press release)",
-   "published_on": "2026-09-30",
-   "source_url": "https://yellowscene.com/2026/09/30/boulder-county-dsa-announces-2026-endorsements/",
-   "source_title": "Boulder County DSA Announces 2026 Endorsements (Yellow Scene Magazine)"
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E319",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2K"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E320",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E321",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2M"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E322",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E323",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E324",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Question 201: Commissioner Election Method (Option 2: 3 district + 2 at-large)",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
+  },
+  {
+   "id": "E325",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-dsa",
+    "name": "Boulder County Democratic Socialists of America",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-dsa.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-08",
+   "source_url": "https://boulderdsa.org/voterguide",
+   "source_title": "2026 General Election Voter Guide (Boulder County DSA)"
   },
   {
    "id": "E53",

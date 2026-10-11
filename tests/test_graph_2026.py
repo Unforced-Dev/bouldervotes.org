@@ -19,7 +19,7 @@ DB = ROOT / "data" / "bouldervotes.db"
 DOCS = ROOT / "docs"
 H = ROOT / "data" / "harvest" / "2026"
 
-AUDIT_HELD = {"E69", "E71", "E77", "E139"}  # E235 released Oct. 3: DSA press release (news report)
+AUDIT_HELD = {"E69", "E71", "E77", "E139"}  # E235 released Oct. 3; upgraded Oct. 11 to the chapter's own voter guide
 HELD_STATEMENTS = {
     ("Jameson Goldstein", "privacy"), ("Aquiles La Grave", "budget"), ("Rachel Rose Isaacson", "housing"),
     ("Tara Winer", "budget"), ("Ryan Schuchard", "climate"), ("Jill Grano", "housing"), ("Dave Martus", "budget"),
