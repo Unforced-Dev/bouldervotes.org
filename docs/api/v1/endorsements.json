@@ -7569,6 +7569,77 @@
    "source_title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)"
   },
   {
+   "id": "E326",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-democratic-party",
+    "name": "Boulder County Democratic Party",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-democratic-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+   "source_title": "2026 Voter Guide (Boulder County Democratic Party, printed guide)"
+  },
+  {
+   "id": "E327",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-democratic-party",
+    "name": "Boulder County Democratic Party",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-democratic-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+   "source_title": "2026 Voter Guide (Boulder County Democratic Party, printed guide)"
+  },
+  {
+   "id": "E328",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-county-democratic-party",
+    "name": "Boulder County Democratic Party",
+    "page_url": "https://bouldervotes.org/orgs/boulder-county-democratic-party.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+   "source_title": "2026 Voter Guide (Boulder County Democratic Party, printed guide)"
+  },
+  {
    "id": "E235",
    "endorser": {
     "type": "organization",

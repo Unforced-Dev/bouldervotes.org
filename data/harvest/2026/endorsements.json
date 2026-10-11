@@ -8546,5 +8546,89 @@
       "evidence_url": "https://boulderdsa.org/voterguide",
       "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Issue 7A Front Range Passenger Rail District yes'."
     }
+  },
+  {
+    "id": "E326",
+    "endorser": "Boulder County Democratic Party",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-county-democratic-party",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+    "source_title": "2026 Voter Guide (Boulder County Democratic Party, printed guide)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the PDF and the party's Ballot Measures Guide, 2026-10-11."
+    },
+    "notes": "Under '★ the BCDP made the following recommendations ★': 'YES CITY OF BOULDER QUESTION 2L: Collective Bargaining for Firefighters'. The party's Ballot Measures Guide (https://bocodems.sharepoint.com/:w:/s/BallotItems/IQDvvg_C_yiKTZgjdnaCktj9AY4_Z6OmqtEWM2KvTYebzcM?e=db1N7Q) on 2L: 'The Central Committee voted to have BCDP ENDORSE this measure.' BCDP's Ballot Measures Guide says the party took no formal position on 2J, 2K, 2M, or county 200/201 (not recorded). The printed guide's list of nonpartisan City Council candidates marks incumbents only and is not an endorsement.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+      "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES CITY OF BOULDER QUESTION 2L: Collective Bargaining for Firefighters'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 2L: 'The Central Committee voted to have BCDP ENDORSE this measure.'"
+    }
+  },
+  {
+    "id": "E327",
+    "endorser": "Boulder County Democratic Party",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-county-democratic-party",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+    "source_title": "2026 Voter Guide (Boulder County Democratic Party, printed guide)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the PDF and the party's Ballot Measures Guide, 2026-10-11."
+    },
+    "notes": "Under '★ the BCDP made the following recommendations ★': 'YES BOULDER COUNTY ISSUE 1A: Child Care Tax'. The party's Ballot Measures Guide (https://bocodems.sharepoint.com/:w:/s/BallotItems/IQDvvg_C_yiKTZgjdnaCktj9AY4_Z6OmqtEWM2KvTYebzcM?e=db1N7Q) on 1A: 'The Central Committee voted to have BCDP ENDORSE Issue 1A.' BCDP's Ballot Measures Guide says the party took no formal position on 2J, 2K, 2M, or county 200/201 (not recorded). The printed guide's list of nonpartisan City Council candidates marks incumbents only and is not an endorsement.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+      "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES BOULDER COUNTY ISSUE 1A: Child Care Tax'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 1A: 'The Central Committee voted to have BCDP ENDORSE Issue 1A.'"
+    }
+  },
+  {
+    "id": "E328",
+    "endorser": "Boulder County Democratic Party",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-county-democratic-party",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+    "source_title": "2026 Voter Guide (Boulder County Democratic Party, printed guide)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the PDF and the party's Ballot Measures Guide, 2026-10-11."
+    },
+    "notes": "Under '★ the BCDP made the following recommendations ★': 'YES BALLOT ISSUE 7A: Front Range Rail Expansion Tax'. The party's Ballot Measures Guide (https://bocodems.sharepoint.com/:w:/s/BallotItems/IQDvvg_C_yiKTZgjdnaCktj9AY4_Z6OmqtEWM2KvTYebzcM?e=db1N7Q) on 7A: 'The Boulder County Democratic Party and Colorado Democratic Party have formally ENDORSED this measure.' BCDP's Ballot Measures Guide says the party took no formal position on 2J, 2K, 2M, or county 200/201 (not recorded). The printed guide's list of nonpartisan City Council candidates marks incumbents only and is not an endorsement.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-11",
+      "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+      "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES BALLOT ISSUE 7A: Front Range Rail Expansion Tax'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 7A: 'The Boulder County Democratic Party and Colorado Democratic Party have formally ENDORSED this measure.'"
+    }
   }
 ]

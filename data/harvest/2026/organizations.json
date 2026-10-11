@@ -1300,9 +1300,11 @@
     "funding": null,
     "endorsement_process": null,
     "past_endorsements": [],
-    "summary": "The county party publishes information about partisan county and state candidates. No 2026 City of Boulder nonpartisan mayor/council endorsement was verified on its candidate page by Sept. 24.",
+    "summary": "The county party publishes information about partisan county and state candidates. Its 2026 voter guide lists the nonpartisan City of Boulder candidates without endorsing any of them. Its Central Committee endorsed City of Boulder 2L, county 1A and Front Range Rail 7A, and took no formal position on 2J, 2K, 2M, 200 or 201.",
     "sources": [
-      "https://www.bocodems.org/2026-candidates/"
+      "https://www.bocodems.org/2026-candidates/",
+      "https://www.bocodems.org/2026-voter-guide/",
+      "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf"
     ],
     "weight_group": "organization",
     "related": []
