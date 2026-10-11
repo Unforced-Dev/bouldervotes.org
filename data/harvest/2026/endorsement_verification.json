@@ -2336,5 +2336,26 @@
     "checked_on": "2026-10-11",
     "evidence_url": "https://boulderdsa.org/voterguide",
     "note": "Uni read Boulder County DSA's 2026 General Election Voter Guide (21-page PDF reached from boulderdsa.org/voterguide), Oct. 11, 2026: 'Ballot Issue 7A Front Range Passenger Rail District yes'."
+  },
+  {
+    "id": "E326",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+    "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES CITY OF BOULDER QUESTION 2L: Collective Bargaining for Firefighters'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 2L: 'The Central Committee voted to have BCDP ENDORSE this measure.'"
+  },
+  {
+    "id": "E327",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+    "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES BOULDER COUNTY ISSUE 1A: Child Care Tax'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 1A: 'The Central Committee voted to have BCDP ENDORSE Issue 1A.'"
+  },
+  {
+    "id": "E328",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
+    "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES BALLOT ISSUE 7A: Front Range Rail Expansion Tax'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 7A: 'The Boulder County Democratic Party and Colorado Democratic Party have formally ENDORSED this measure.'"
   }
 ]
