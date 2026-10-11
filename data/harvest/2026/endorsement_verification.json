@@ -2273,5 +2273,19 @@
     "checked_on": "2026-10-11",
     "evidence_url": "https://www.benitaduran.com/new-page-2",
     "note": "Duran campaign endorsement page (browser-rendered, Oct. 11, 2026) lists 'Happy Haynes' ('Former Denver City Council') under 'COMMUNITY LEADERS' on a page headed 'Endorsements and supporters'. Campaign's claim; no endorser-authored statement found."
+  },
+  {
+    "id": "E317",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://workingfamilies.org/candidates/",
+    "note": "Uni rendered workingfamilies.org/candidates/ in a browser with every 'View More' expanded (Oct. 11, 2026). Under 'Ballot measures' the page lists 'Boulder County Ballot Issue 1A' with 'Yes'."
+  },
+  {
+    "id": "E318",
+    "result": "PASS",
+    "checked_on": "2026-10-11",
+    "evidence_url": "https://workingfamilies.org/candidates/",
+    "note": "Uni rendered workingfamilies.org/candidates/ in a browser with every 'View More' expanded (Oct. 11, 2026). Under 'Ballot measures' the page lists 'Front Range Passenger Rail District Ballot Issue 7A' with 'Yes'."
   }
 ]
