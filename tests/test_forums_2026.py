@@ -47,10 +47,10 @@ class TestForumData(unittest.TestCase):
         cls.rows = forum_answers()
 
     def test_counts(self):
-        self.assertEqual(len(self.claims), 330)
+        self.assertEqual(len(self.claims), 357)
         held = [c for c in self.claims if c["status"] == "held"]
         self.assertEqual(len(held), len(FORUM_HOLDS))
-        self.assertEqual(len(self.rows), 330 - len(held))
+        self.assertEqual(len(self.rows), 357 - len(held))
 
     def test_verbatim_in_committed_transcript(self):
         cache = {}

@@ -41,8 +41,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "harvest" / "2026"
-AUDIT_DATE = "2026-09-29"
-EXPECTED_CLAIMS = 330
+AUDIT_DATE = "2026-10-12"
+EXPECTED_CLAIMS = 357
 
 DISPLAY_NAME = {"David Martus": "Dave Martus"}
 
@@ -133,6 +133,30 @@ FORUMS_2026 = [
                           {"label": "Mayoral forum", "start": 7504}]},
         ],
     },
+    {
+        "slug": "2026-eof-climate-forum",
+        "name": "Empower Hour: Climate and Energy Forum with Boulder Mayoral Candidates",
+        "short": "Empower Our Future climate forum",
+        "date": "2026-10-06",
+        "hosts": ["Empower Our Future", "PLAN-Boulder County"],
+        "venue": "Online (Zoom webinar)",
+        "date_source": "Empower Our Future YouTube title 'Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder "
+                       "Mayoral Candidates.' (uploaded 2026-10-07); Colorado Coalition for a Livable Climate event listing "
+                       "(Oct 6, 6:00-7:00 pm, virtual, hosted by Empower Our Future and PLAN-Boulder).",
+        "notes": "Mayoral candidates only. Moderator: Chris Hoffman; host: Mary (as transcribed). All six mayoral candidates "
+                 "took part. Three questions: climate hushing, Xcel Energy, and the Valmont coal ash cleanup. Fred Smith had "
+                 "audio trouble on the Xcel question and answered after Aquiles La Grave. The automatic transcript writes "
+                 "'Xcel' as 'Excel'; quotes keep the transcript text.",
+        "recordings": [
+            {"youtube_id": "U3iEinbzOk0",
+             "title": "Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder Mayoral Candidates.",
+             "uploader": "Empower Our Future", "uploaded": "2026-10-07", "part": None,
+             "segments": [{"label": "Opening introductions", "start": 160},
+                          {"label": "Climate hushing", "start": 608},
+                          {"label": "Xcel Energy", "start": 1398},
+                          {"label": "Valmont coal ash", "start": 2254}]},
+        ],
+    },
 ]
 
 # Candidates who did not attend but whose submitted statement was read aloud.
@@ -202,6 +226,11 @@ FORUM_QUESTIONS = {
     "What types of housing would you prioritize? How are you as mayor": ("housing", None, None),
     "Ballot issue 2J, the residential vacancy excise tax (~$4,000": ("housing", "2J (the vacancy tax)", "2J"),
     "If elected, what is the single most important new initiative you would pursue during your first year as mayor": (None, None, None),
+    # Empower Our Future climate forum (mayoral)
+    "Mayoral opening introduction, climate and energy forum": (None, None, None),
+    "Climate hushing: political leaders now seem reluctant": ("climate", None, None),
+    "Xcel says it will deliver 100% clean electricity by 2050": ("climate", None, None),
+    "Xcel is preparing a decade-long remediation": ("climate", None, None),
 }
 
 # ---------------------------------------------------------------- stances
