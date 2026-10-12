@@ -59,6 +59,9 @@ def compare(before: dict, after: dict) -> list[str]:
         if b is None:
             flags.append(f"NEW committee: {c['committee_name']}")
             continue
+        if c.get("listing_omits"):
+            flags.append(f"HELD at published record: {who} (clerk listing omits statement(s) "
+                         f"{c['listing_omits']})")
         for k in KEYS:
             if (c.get(k) or 0) < (b.get(k) or 0) - 0.005:
                 flags.append(f"DOWN {k}: {who} {money(b.get(k))} -> {money(c.get(k))}")
