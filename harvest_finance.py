@@ -434,12 +434,37 @@ def harvest() -> dict:
     summary_html = fetch(summary_url)
     summary_rows = parse_summary(summary_html)
 
+    # Published records, keyed by committee. The clerk's per-committee listing has
+    # dropped a statement we already published (Jill for Council, statement 3874,
+    # Oct. 2026) while report.php still serves it under a new submission date,
+    # possibly reopened for amendment. When a listing omits a published statement,
+    # carry the published committee record forward unchanged and say so, rather
+    # than publishing totals that silently fall.
+    prior: dict[int, dict] = {}
+    if OUT.exists():
+        try:
+            for pc in json.loads(OUT.read_text(encoding="utf-8")).get("committees", []):
+                prior[pc["committee_id"]] = pc
+        except (json.JSONDecodeError, KeyError):
+            prior = {}
+
     harvested = []
     for c in committees:
         reports = parse_reports_page(
             fetch(BASE + f"committeeFilings.php?action=04&committeeID={c['committee_id']}"),
             c["committee_id"],
         )
+        old = prior.get(c["committee_id"])
+        listed = {st["statement_id"] for st in reports["statements"]}
+        omitted = [st["statement_id"] for st in (old or {}).get("statements") or []
+                   if st["statement_id"] not in listed]
+        if old and omitted:
+            kept = dict(old)
+            kept["listing_omits"] = omitted
+            print(f"HELD {old.get('person') or old['committee_name']}: clerk listing omits "
+                  f"published statement(s) {omitted}; kept the published record")
+            harvested.append(kept)
+            continue
         statements = []
         latest_balance = {}
         latest_submitted = None
