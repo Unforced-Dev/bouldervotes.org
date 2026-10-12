@@ -2158,6 +2158,7 @@ Who supports or opposes it:
 - Supports: Boulder Progressives. Endorser's own statement. Source: https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/
 - Supports: Colorado Working Families Party. Endorser's own statement. Source: https://workingfamilies.org/candidates/
 - Opposes: Daily Camera Editorial Board. Endorser's own statement. Source: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
+- Opposes: Kim Monson. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/
 - Opposes: PLAN-Boulder County. Endorser's own statement. Source: https://planboulder.org/2026-ballot-issue-endorsements
 - Supports: Vacancy to Vitality. Endorser's own statement. Source: https://www.bouldervacancytax.org/
 - Supports: Yellow Scene Editorial Board. Endorser's own statement. Source: https://yellowscene.com/2026/10/09/2026-election-guide/
@@ -2257,6 +2258,7 @@ Who supports or opposes it:
 - Supports: Boulder Progressives. Endorser's own statement. Source: https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/
 - Opposes: Daily Camera Editorial Board. Endorser's own statement. Source: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
 - Opposes: Downtown Boulder Partnership. Endorser's own statement. Source: https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026
+- Opposes: Kim Monson. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/
 - Opposes: No on 2K: Demand Fiscal Responsibility. City filing: a committee registration with the city clerk names this. Source: https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328
 - Opposes: PLAN-Boulder County. Endorser's own statement. Source: https://planboulder.org/2026-ballot-issue-endorsements
 - Supports: Yellow Scene Editorial Board. Endorser's own statement. Source: https://yellowscene.com/2026/10/09/2026-election-guide/
@@ -2386,6 +2388,7 @@ Who supports or opposes it:
 - Supports: Colorado Working Families Party. Endorser's own statement. Source: https://workingfamilies.org/candidates/
 - Supports: Daily Camera Editorial Board. Endorser's own statement. Source: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
 - Supports: Junie Joseph. Boulder Firefighters for a Stronger Boulder ballot campaign lists Junie Joseph. Only the campaign says so. Source: https://strongerboulder.com/
+- Opposes: Kim Monson. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2l/
 - Supports: Joe Neguse. Boulder Firefighters for a Stronger Boulder ballot campaign lists Joe Neguse. Only the campaign says so. Source: https://strongerboulder.com/
 - Supports: Yellow Scene Editorial Board. Endorser's own statement. Source: https://yellowscene.com/2026/10/09/2026-election-guide/
 
@@ -2417,6 +2420,7 @@ Who supports or opposes it:
 - Opposes: Boulder County Democratic Socialists of America. Endorser's own statement. Source: https://boulderdsa.org/voterguide
 - Supports: Boulder Progressives. Endorser's own statement. Source: https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/
 - Opposes: Daily Camera Editorial Board. Endorser's own statement. Source: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
+- Opposes: Kim Monson. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/
 - Supports: Yellow Scene Editorial Board. Endorser's own statement. Source: https://yellowscene.com/2026/10/09/2026-election-guide/
 
 What we don't know yet:
@@ -2458,6 +2462,10 @@ Full ballot wording:
 - Daily Camera Editorial Board supports Boulder County Question 200: Expand Board of Commissioners to Five. Endorser's own statement. Source: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
 - Daily Camera Editorial Board supports Boulder County Question 201: Commissioner Election Method (five districts). Endorser's own statement. Source: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
 - Downtown Boulder Partnership supports Ballot Issue 7A: Front Range Passenger Rail District. Endorser's own statement. Source: https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026
+- Kim Monson opposes Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-county-1a/
+- Kim Monson supports Boulder County Question 200: Expand Board of Commissioners to Five. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-county-200/
+- Kim Monson supports Boulder County Question 201: Commissioner Election Method (five districts). Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-county-201/
+- Kim Monson opposes Ballot Issue 7A: Front Range Passenger Rail District. Endorser's own statement. Source: https://kimmonson.com/colorado-voter-guide/2026/front-range-passenger-rail-7a/
 - PLAN-Boulder County supports Boulder County Question 200: Expand Board of Commissioners to Five. Endorser's own statement. Source: https://planboulder.org/2026-ballot-issue-endorsements
 
 ## More

@@ -8630,5 +8630,229 @@
       "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
       "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES BALLOT ISSUE 7A: Front Range Rail Expansion Tax'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 7A: 'The Boulder County Democratic Party and Colorado Democratic Party have formally ENDORSED this measure.'"
     }
+  },
+  {
+    "id": "E329",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": "2J",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote No on City of Boulder ballot issue 2J'; 'I recommend a no vote on City of Boulder ballot issue 2J.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot issue 2J.'"
+    }
+  },
+  {
+    "id": "E330",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote No on City of Boulder ballot issue 2K'; 'I recommend a no vote on City of Boulder ballot issue 2K.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot issue 2K.'"
+    }
+  },
+  {
+    "id": "E331",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2l/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote No on City of Boulder ballot question 2L'; 'I recommend a no vote on City of Boulder ballot question 2L.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2l/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot question 2L.'"
+    }
+  },
+  {
+    "id": "E332",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": "2M",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote No on City of Boulder ballot question 2M'; 'I recommend a no vote on City of Boulder ballot question 2M.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot question 2M.'"
+    }
+  },
+  {
+    "id": "E333",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-1a/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote No on Boulder County ballot issue 1A'; 'I recommend a no vote on Boulder County ballot issue 1A.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-1a/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on Boulder County ballot issue 1A.'"
+    }
+  },
+  {
+    "id": "E334",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-200/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote Yes on Boulder County Ballot Question 200'; 'I recommend a yes vote on Boulder County Ballot Question 200.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-200/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a yes vote on Boulder County Ballot Question 200.'"
+    }
+  },
+  {
+    "id": "E335",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Question 201: Commissioner Election Method (five districts)",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-201/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote for five district commissioners on Boulder County Ballot Question 201'; 'I recommend a vote for five district commissioners on Boulder County Ballot Question 201.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-201/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a vote for five district commissioners on Boulder County Ballot Question 201.'"
+    }
+  },
+  {
+    "id": "E336",
+    "endorser": "Kim Monson",
+    "endorser_type": "person",
+    "endorser_slug": "kim-monson",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://kimmonson.com/colorado-voter-guide/2026/front-range-passenger-rail-7a/",
+    "source_title": "Colorado Voter's Guide 2026 (Kim Monson)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-12."
+    },
+    "notes": "Under 'KIM'S RECOMMENDATION': 'Vote No on Front Range Passenger Rail District Ballot Issue 7A'; 'I recommend a no vote on Front Range Passenger Rail District Ballot Issue 7A.' Signed 'Kim Monson, Host, The Kim Monson Show · President, Colorado Union of Taxpayers'. A personal recommendation in her own guide; the page gives no publication date.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-12",
+      "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/front-range-passenger-rail-7a/",
+      "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on Front Range Passenger Rail District Ballot Issue 7A.'"
+    }
   }
 ]

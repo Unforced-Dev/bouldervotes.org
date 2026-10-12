@@ -2357,5 +2357,61 @@
     "checked_on": "2026-10-11",
     "evidence_url": "https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf",
     "note": "Uni rendered the printed BCDP voter guide linked from bocodems.org/2026-voter-guide (Oct. 11, 2026): 'YES BALLOT ISSUE 7A: Front Range Rail Expansion Tax'. Cross-checked against the 2026 BCDP Ballot Measures Guide linked from the same page: 7A: 'The Boulder County Democratic Party and Colorado Democratic Party have formally ENDORSED this measure.'"
+  },
+  {
+    "id": "E329",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot issue 2J.'"
+  },
+  {
+    "id": "E330",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot issue 2K.'"
+  },
+  {
+    "id": "E331",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2l/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot question 2L.'"
+  },
+  {
+    "id": "E332",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on City of Boulder ballot question 2M.'"
+  },
+  {
+    "id": "E333",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-1a/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on Boulder County ballot issue 1A.'"
+  },
+  {
+    "id": "E334",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-200/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a yes vote on Boulder County Ballot Question 200.'"
+  },
+  {
+    "id": "E335",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-201/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a vote for five district commissioners on Boulder County Ballot Question 201.'"
+  },
+  {
+    "id": "E336",
+    "result": "PASS",
+    "checked_on": "2026-10-12",
+    "evidence_url": "https://kimmonson.com/colorado-voter-guide/2026/front-range-passenger-rail-7a/",
+    "note": "Uni read the page in a browser, Oct. 12, 2026: 'I recommend a no vote on Front Range Passenger Rail District Ballot Issue 7A.'"
   }
 ]
