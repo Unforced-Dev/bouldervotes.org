@@ -4023,5 +4023,45 @@
     "title_source_url": "https://www.benitaduran.com/new-page-2",
     "weight_group": "former_elected",
     "related": []
+  },
+  {
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "kind": "person",
+    "website": "https://kimmonson.com/colorado-voter-guide/2026/",
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Kim Monson",
+        "role": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+        "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+        "current": true,
+        "as_of": "2026-10-12"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Kim Monson, host of The Kim Monson Show and president of the Colorado Union of Taxpayers, publishes a statewide Colorado Voter's Guide 2026 with a recommendation on every measure. These are her personal recommendations as signed in the guide.",
+    "sources": [
+      "https://kimmonson.com/colorado-voter-guide/2026/county-boulder/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-2l/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-1a/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-200/",
+      "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-201/",
+      "https://kimmonson.com/colorado-voter-guide/2026/front-range-passenger-rail-7a/"
+    ],
+    "title": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "title_source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+    "weight_group": "other_individual",
+    "related": []
   }
 ]

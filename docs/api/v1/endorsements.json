@@ -8320,6 +8320,202 @@
    "source_title": "Vote YES on 2L"
   },
   {
+   "id": "E329",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2J"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E330",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2K"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E331",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2l/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E332",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2M"
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E333",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-1a/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E334",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-200/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E335",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Boulder County Question 201: Commissioner Election Method (five districts)",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-county-201/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
+   "id": "E336",
+   "endorser": {
+    "type": "person",
+    "slug": "kim-monson",
+    "name": "Kim Monson",
+    "title_as_printed": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
+    "page_url": "https://bouldervotes.org/people/kim-monson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "other_ballot_item",
+    "label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "note": "Not a City of Boulder measure."
+   },
+   "position": "oppose",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://kimmonson.com/colorado-voter-guide/2026/front-range-passenger-rail-7a/",
+   "source_title": "Colorado Voter's Guide 2026 (Kim Monson)"
+  },
+  {
    "id": "E279",
    "endorser": {
     "type": "person",
