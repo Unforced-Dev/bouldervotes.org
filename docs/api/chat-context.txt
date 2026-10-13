@@ -164,7 +164,7 @@ Each line is one comparison: [intent compare TOPIC RACE] shows every candidate i
 - compare budget mayor: Budget and the $400M bond (2K). F4Q44 "Ballot measure 2K: Boulder voters will consider authorizing up to $400..." (6 of 6 answered)
 - compare budget council: Budget and the $400M bond (2K). F4Q36 "Boulder voters are being asked to authorize $400 million in new debt t..." (12 of 13 answered)
 - compare transportation mayor: Bus lanes and bikes. F4Q37 "What are your feelings about the bus-only lanes and the core arterial ..." (6 of 6 answered); B2 "Are you committed to the build out of the Core Arterial Network?" (4 of 6 answered)
-- compare transportation council: Bus lanes and bikes. F4Q37 "What are your feelings about the bus-only lanes and the core arterial ..." (12 of 13 answered); B2 "Are you committed to the build out of the Core Arterial Network?" (6 of 13 answered)
+- compare transportation council: Bus lanes and bikes. F4Q37 "What are your feelings about the bus-only lanes and the core arterial ..." (12 of 13 answered); B2 "Are you committed to the build out of the Core Arterial Network?" (8 of 13 answered)
 - compare climate mayor: Climate and Xcel. F5Q50 "Xcel says it will deliver 100% clean electricity by 2050, not Boulder'..." (6 of 6 answered)
 - compare downtown mayor: Downtown. B4 "The City is exploring the creation of a Downtown Development Authority..." (4 of 6 answered)
 - compare downtown council: Downtown. B4 "The City is exploring the creation of a Downtown Development Authority..." (11 of 13 answered)
@@ -173,7 +173,7 @@ Each line is one comparison: [intent compare TOPIC RACE] shows every candidate i
 - compare mayor-role mayor: The mayor's role. F4Q42 "What are the unique roles of the Boulder mayor that make the job diffe..." (6 of 6 answered)
 - compare representation council: Is council representative?. F4Q38 "Do you agree or disagree that our city council is adequately represent..." (12 of 13 answered)
 
-Ballot measures: [intent measure 2J], 2K, 2L, 2M (chips m:2J ... m:2M). The page shows what a yes and a no do, the money with its city source, and every group on each side with dates.
+Ballot measures: [intent measure 2J], 2K, 2L, 2M (chips m:2J ... m:2M). The page shows what a yes and a no do, the money with its city source, and the groups on file for each side, with dates.
 
 ## On the ballot at a glance
 
@@ -1229,7 +1229,7 @@ Duran is a government consultant running for Boulder council. She emphasizes aff
 - Money, as of 2026-10-06 (28th day before election): raised $8,120; spent $5,191; matching funds $7,950; cash on hand $10,709. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3887 Note: Clerk contribution total includes $348.29 in loans.
 
 #### Benita Duran: lines by topic
-housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1, F1Q1 | transportation: B3, F4Q37 | budget/taxes/2K: F4Q34, F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q11 | homelessness/safety: questionnaire | growth: F4Q34 | arts: F3Q26, F3Q32
+housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1, F1Q1 | transportation: B2, F4Q37 | budget/taxes/2K: F4Q34, F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q11 | homelessness/safety: questionnaire | growth: F4Q34 | arts: F3Q26, F3Q32
 
 #### In their own words
 - Benita Duran. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
@@ -1246,7 +1246,7 @@ housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1, F1Q1 |
   > Yes. It helps.
 - Benita Duran. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
   > My position is that the city is on a better and more productive track in addressing safety and security issues of the downtown.
-- Benita Duran. Topic: transportation. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
+- Benita Duran. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
 What reporters wrote (the reporter's words, not the candidate's):
 - Richard Valenty reporting Benita Duran’s interview, about Benita Duran. Topic: downtown/economy. Richard Valenty, 2026-09-22. Source: https://richardvalenty.com/2026/09/duran-shes-probably-been-on-a-relevant-board/
@@ -1935,7 +1935,7 @@ Marquis is a sitting councilmember seeking a second term. Her priorities include
 - Money, as of 2026-10-05 (28th day before election): raised $11,545; spent $8,491; matching funds $11,545; cash on hand $14,598. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3892
 
 #### Tina Marquis: lines by topic
-housing: B3, F1Q1, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F1Q1, F2Q23 | transportation: B3, F1Q9, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: campaign_site, F2Q17, F2Q20, F4Q34, F4Q36 YES on 2K | downtown/economy: B4, questionnaire, F1Q6 | homelessness/safety: questionnaire, F1Q6 | growth: F4Q40 | arts: F3Q30, F3Q32
+housing: B3, F1Q1, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F1Q1, F2Q23 | transportation: B2, F1Q9, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: campaign_site, F2Q17, F2Q20, F4Q34, F4Q36 YES on 2K | downtown/economy: B4, questionnaire, F1Q6 | homelessness/safety: questionnaire, F1Q6 | growth: F4Q40 | arts: F3Q30, F3Q32
 
 #### In their own words
 - Tina Marquis. Topic: budget/taxes/2K. Campaign website: Tina Marquis, campaign_site. Source: https://www.tinaforboulder.com/
@@ -1950,7 +1950,7 @@ housing: B3, F1Q1, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfi
   > No. While I did vote no in 2025, I did support allowing duplexes and triplexes in more areas during the comp plan process.
 - Tina Marquis. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
   > When I first ran three years ago, public safety was perhaps the biggest issue during the campaign.
-- Tina Marquis. Topic: transportation. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
+- Tina Marquis. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
 What reporters wrote (the reporter's words, not the candidate's):
 - Richard Valenty reporting Tina Marquis’s interview, about Tina Marquis. Topic: downtown/economy. Richard Valenty, 2026-09-18. Source: https://richardvalenty.com/2026/09/marquis-can-boulder-housing-be-family-friendly/

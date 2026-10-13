@@ -4,7 +4,7 @@
    The gateway sends a structured reply. The AI only sorts the question; every sentence is a fixed
    template filled from the site's data. The reply holds that short answer, optional side-by-side
    cards (one shared question, every candidate in ballot order, recorded excerpts), one candidate's
-   recorded excerpts, a measure card (the money and every group on each side) and follow-up chips.
+   recorded excerpts, a measure card (the money and the groups on file for each side) and follow-up chips.
    No yes/no badges or tallies. This file only renders that reply, safely. */
 (function () {
   "use strict";
@@ -47,11 +47,6 @@
     return /youtu/.test(url || "") ? "watch" : "source";
   }
 
-  function truncate(s, n) {
-    s = String(s || "");
-    return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…" : s;
-  }
-
   function hostOf(url) {
     return (/^https:\/\/([^\/?#:]+)/i.exec(String(url || "")) || [])[1] || "";
   }
@@ -66,15 +61,18 @@
     }).join("");
   }
 
-  // One recorded excerpt with its caveat beside it. A short excerpt (a fragment or under 12 words) says so, by one
-  // rule for every candidate, and its link reads "Watch the full answer." (or "Read" for written sources).
+  // One recorded excerpt with its caveat beside it. A short excerpt (a fragment, under 12 words, or flagged as
+  // starting or ending mid-sentence) says so, by one rule for every candidate, and its link reads
+  // "Watch the full answer." (or "Read" for written sources).
   function lineHtml(l, r) {
     if (l.text === null || l.text === undefined) {
       return '<p class="none">This line couldn\u2019t be checked just now. ' + linkHtml(r.page, "See " + r.name + "\u2019s page") + ".</p>";
     }
     var cav = escapeHtml(l.caveat || "Check the source.");
-    if (l.short && l.more) {
-      var parts = /^(Short excerpt\.)\s*(.*)$/.exec(l.more) || [null, "", l.more];
+    var more = l.more || ((l.short || l.mid_sentence || l.ends_mid) ?
+      "Short excerpt. " + (/youtu\.?be/.test(l.link || "") ? "Watch the full answer." : "Read the full answer.") : "");
+    if (more) {
+      var parts = /^(Short excerpt\.)\s*(.*)$/.exec(more) || [null, "", more];
       cav += " " + escapeHtml(parts[1]) + (l.link ? " " + linkHtml(l.link, parts[2]) : " " + escapeHtml(parts[2]));
     } else if (l.link) {
       cav += " " + linkHtml(l.link, linkLabel(l.link));
@@ -90,7 +88,7 @@
     h += '<p class="cmp-h"><strong>' + escapeHtml(c.label) + "</strong> · " + race + ": every candidate, ballot order, recorded excerpts. Swipe the row.</p>";
     c.questions.forEach(function (q) {
       // The question header names the forum and date once; each card line keeps its own caveat and link.
-      h += '<div class="cmp-q"><p class="cmp-ask">Asked of every candidate (' + escapeHtml(q.label) + "): <q>" + escapeHtml(truncate(q.question, 220)) + "</q></p>";
+      h += '<div class="cmp-q"><p class="cmp-ask">The question put to candidates (' + escapeHtml(q.label) + "): <q>" + escapeHtml(q.question) + "</q></p>";
       h += '<div class="cards" role="list">';
       q.rows.forEach(function (r) {
         h += '<article class="card' + (r.answered ? "" : " empty") + '" role="listitem"><p class="who"><span>' + linkHtml(r.page, r.name) +
@@ -108,14 +106,14 @@
     return h;
   }
 
-  // One candidate's recorded excerpts on the questions every candidate in the race was asked.
+  // One candidate's recorded excerpts on the questions put to the candidates in the race.
   function candidateHtml(v) {
     if (!v || !v.items) return "";
     var race = v.race === "council" ? "City council" : "Mayor";
     var h = '<section class="cmp cand" aria-label="' + escapeHtml(v.name) + ', recorded excerpts">';
-    h += '<p class="cmp-h"><strong>' + linkHtml(v.page, v.name) + "</strong> · " + race + ": recorded excerpts on the questions every candidate was asked.</p>";
+    h += '<p class="cmp-h"><strong>' + linkHtml(v.page, v.name) + "</strong> · " + race + ": recorded excerpts on the questions put to the candidates.</p>";
     v.items.forEach(function (it) {
-      h += '<div class="cmp-q"><p class="cmp-ask">' + escapeHtml(it.noun.charAt(0).toUpperCase() + it.noun.slice(1)) + " (" + escapeHtml(it.label) + "): <q>" + escapeHtml(truncate(it.question, 220)) + "</q></p>";
+      h += '<div class="cmp-q"><p class="cmp-ask">' + escapeHtml(it.noun.charAt(0).toUpperCase() + it.noun.slice(1)) + " (" + escapeHtml(it.label) + "): <q>" + escapeHtml(it.question) + "</q></p>";
       h += '<article class="card solo">';
       if (!it.lines.length) h += '<p class="none">' + escapeHtml(v.no_answer || "No answer to this question on file.") + "</p>";
       it.lines.forEach(function (l) { h += lineHtml(l, v); });
@@ -133,7 +131,7 @@
   }
 
   // A ballot measure, from the site's data. The short answer above it says what a yes and a no would do, in the
-  // same words with and without "not"; the card holds the money, every group on each side and the official wording.
+  // same words with and without "not"; the card holds the money, the groups on file for each side and the official wording.
   function measureHtml(m) {
     if (!m) return "";
     var h = '<section class="msr" aria-label="Measure ' + escapeHtml(m.letter) + '">';
