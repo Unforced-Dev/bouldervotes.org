@@ -50,7 +50,7 @@ Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates are 
 
 ## Forum quote conventions
 
-Every forum quote below comes from an automatic transcript: check the recording (the watch link goes to the moment). Quotes tagged [speaker from speaking order] were attributed by speaking order, not by name on screen: medium confidence. Each quote is labelled with a forum code (F1...), a question code (Q1...) and the time in the recording. Quotes are in each candidate's section; measure sections link them.
+Every forum quote below comes from an automatic transcript: check the recording (the watch link goes to the moment). Quotes tagged [speaker from speaking order] were attributed by speaking order, not by name on screen: medium confidence. Each quote is labelled with a forum code (F1...) and that forum's date, a question code (Q1...) and the time in the recording. When you cite a quote, name the forum and date from the forum legend for that exact code; never borrow another forum's date. Quotes are in each candidate's section; measure sections link them.
 
 Forums:
 - F1: Boulder Chamber City Council and Mayoral Candidate Forum, 2026-08-26, by Boulder Chamber. Page: https://bouldervotes.org/forums/2026-chamber-forum.html. Recordings: https://www.youtube.com/watch?v=CQlalpB7N5w
@@ -139,61 +139,61 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Her priorities consisted of fiscal sustainability, more effective litigators for the town, and transparency.
 
 #### At the 2026 forums
-- F1 Q1 at 7:42
+- F1 (2026-08-26) Q1 at 7:42
   > Fiscal sustainability and core services, economic vitality, transportation and street safety.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=462s
-- F1 Q1 at 8:23
+- F1 (2026-08-26) Q1 at 8:23
   > they're getting too low fines where people are not doing jail time for serious crimes.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=503s
-- F1 Q3 at 37:02
+- F1 (2026-08-26) Q3 at 37:02
   > the older housing has to be torn down, built new, and the broken housing needs to be fixed before new better housing would be built.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=2222s
-- F1 Q15 at 1:49:13
+- F1 (2026-08-26) Q15 at 1:49:13
   > I will not not charge for parking. Parking is a significant source of revenue for the city.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=6553s
-- F3 Q26 at 16:48 [speaker from speaking order]
+- F3 (2026-09-15) Q26 at 16:48 [speaker from speaking order]
   > So I would clearly look for monies that are available for doing art therapy.
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1008s Transcript note: First of drawn names ('Lisa and ... Ryan Jameson'); speaker identifies as a medical doctor.
-- F3 Q31 at 9:48
+- F3 (2026-09-15) Q31 at 9:48
   > That means firing city of Boulder workers who are slow, ineffective, and not doing their jobs.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=588s
-- F4 Q41 at 2:08:31
+- F4 (2026-09-26) Q41 at 2:08:31
   > I am the people's choice of Boulder
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7711s
-- F4 Q42 at 2:20:05
+- F4 (2026-09-26) Q42 at 2:20:05
   > Instead, our Mayor and City Councillors are going into executive sessions without giving notice.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8405s
-- F4 Q43 at 2:25:57
+- F4 (2026-09-26) Q43 at 2:25:57
   > I intend to put the money into fixing the older affordable housing and not putting the money into new affordable housing.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8757s
-- F4 Q44 at 2:30:52
+- F4 (2026-09-26) Q44 at 2:30:52
   > It would be financial suicide to take that amount of debt.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9052s
-- F4 Q37 at 2:36:34
+- F4 (2026-09-26) Q37 at 2:36:34
   > So I am for bus lanes being driven by cars.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9394s
-- F4 Q45 at 2:42:22
+- F4 (2026-09-26) Q45 at 2:42:22
   > I'm not for middle-class housing.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9742s
-- F4 Q46 at 2:47:30 Said NO on 2J (the vacancy tax).
+- F4 (2026-09-26) Q46 at 2:47:30 Said NO on 2J (the vacancy tax).
   > so absolutely not.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10050s
-- F4 Q47 at 2:56:16
+- F4 (2026-09-26) Q47 at 2:56:16
   > That means basically focusing on reducing taxes because Boulder has way too high taxes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10576s
-- F4 Q40 at 3:01:04
+- F4 (2026-09-26) Q40 at 3:01:04
   > I changed my view to believe that the election is publicly corrupt.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10864s
-- F5 Q48 at 8:40
+- F5 (2026-10-06) Q48 at 8:40
   > I spoke with the county attorney today, and my understanding is Boulder never should have sued.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=520s Transcript note: Refers to the Boulder County/City climate lawsuit against Exxon and Suncor.
-- F5 Q49 at 21:42
+- F5 (2026-10-06) Q49 at 21:42
   > Boulder needs to legislate that new construction is only allowed to have heat pumps, no gas or oil infrastructure.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1302s
-- F5 Q50 at 27:45
+- F5 (2026-10-06) Q50 at 27:45
   > I do not expect that Excel will do better. Cities can own their own sources of power, which residents love,
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1665s
-- F5 Q51 at 43:11
+- F5 (2026-10-06) Q51 at 43:11
   > Given Excel's history of unfair deceptive business acts, then I would not trust their monitoring results.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2591s
 
@@ -236,94 +236,94 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Taishya Adams has served nearly three years on Boulder City Council and is running for mayor on a platform focused on climate resilience, affordability and giving the council a stronger role in city governance. Her council term ends this year, and because she cannot run simultaneously for mayor and reelection to her council seat, she will leave her current seat regardless of the mayoral election’s outcome.
 
 #### At the 2026 forums
-- F1 Q1 at 9:22
+- F1 (2026-08-26) Q1 at 9:22
   > I would also put climate justice and climate resilience at the top of my list. We have had the warmest and the driest of the seasons that we've ever had before.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=562s
-- F1 Q1 at 9:37
+- F1 (2026-08-26) Q1 at 9:37
   > And lastly, public safety for all. ICE is here. We have increased discrimination issues across our community and it's time to make sure that the council is leading on public oversight.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=577s
-- F1 Q2 at 28:10
+- F1 (2026-08-26) Q2 at 28:10
   > we need to better engage our borders and our commissions in the work that we're doing, as well as in addition to our businesses and recognizing that all of our businesses are not the same.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1690s Transcript note: 'borders' = boards (Whisper).
-- F1 Q13 at 1:41:13 [speaker from speaking order]
+- F1 (2026-08-26) Q13 at 1:41:13 [speaker from speaking order]
   > We have 16,000 acres of agricultural land in our city. Why aren't we creating stronger partnerships so that we can reduce those food costs
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=6073s Transcript note: Third of the called respondents (garbled 'Venetatia').
-- F1 Q15 at 1:50:47
+- F1 (2026-08-26) Q15 at 1:50:47
   > I think that the council needs to take a stronger role in setting direction and holding ourselves accountable to the goals and the activities and the budgets that we set.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=6647s
-- F2 Q17 at 10:02
+- F2 (2026-09-02) Q17 at 10:02
   > Clean air, clean water, food that is close, that is clean, that is of high quality.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=602s
-- F2 Q17 at 10:47
+- F2 (2026-09-02) Q17 at 10:47
   > Having plans with measures and metrics and budget impacts to them
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=647s
-- F2 Q22 at 1:05:19
+- F2 (2026-09-02) Q22 at 1:05:19
   > I would also recommend a director of research and evaluation,
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3919s
-- F2 Q24 at 1:23:34
+- F2 (2026-09-02) Q24 at 1:23:34
   > I would recommend that we move to a quarterly and have specific milestones and reporting
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=5014s
-- F3 Q27 at 24:21
+- F3 (2026-09-15) Q27 at 24:21
   > we need to have some hard conversations about how are we going to deal with the urgent and important, but also recognizing the long-term necessity to invest in the arts.
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1461s
-- F3 Q31 at 8:27
+- F3 (2026-09-15) Q31 at 8:27
   > We are going to have more extreme heat. We are going to have more wildfires. And arts plays a critical role in not only communication and education, but climate grief.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=507s
-- F3 Q32 at 2:00 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 2:00 [speaker from speaking order]
   > We need to invest in our values, and our budget doesn't currently reflect that.
   Watch: https://www.youtube.com/watch?v=Q1PXyt_DLqw&t=120s Transcript note: Last drawn name; speaker says 'as mayor'.
-- F4 Q41 at 2:08:51
+- F4 (2026-09-26) Q41 at 2:08:51
   > I bring an insider-outsider perspective as someone who's been able to serve on city council
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7731s
-- F4 Q41 at 2:09:35
+- F4 (2026-09-26) Q41 at 2:09:35
   > The most important is making sure that our city's staff and our city's council get in right relationship with each other.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7775s
-- F4 Q42 at 2:14:27
+- F4 (2026-09-26) Q42 at 2:14:27
   > being able to be at the table every week to determine what our city's agenda is going to be
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8067s
-- F4 Q43 at 2:26:58
+- F4 (2026-09-26) Q43 at 2:26:58
   > The first is the need to expand permanently affordable housing and make sure that it's inclusive of child care on site.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8818s
-- F4 Q43 at 2:27:16
+- F4 (2026-09-26) Q43 at 2:27:16
   > restore our elevate Boulder program which was our universal basic income program.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8836s
-- F4 Q44 at 2:31:48
+- F4 (2026-09-26) Q44 at 2:31:48
   > Initially, I was a yes to this $400 million bond
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9108s
-- F4 Q44 at 2:32:12
+- F4 (2026-09-26) Q44 at 2:32:12
   > I realized that there's really a lack of community support and the need to do more trust building and collective buy-in.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9132s
-- F4 Q37 at 2:37:21 Said YES on the Core Arterial Network / bus-only lanes.
+- F4 (2026-09-26) Q37 at 2:37:21 Said YES on the Core Arterial Network / bus-only lanes.
   > And so I'm a yes to continuing to do the incredible work on the core arterial network and the protected bike lanes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9441s
-- F4 Q45 at 2:43:02
+- F4 (2026-09-26) Q45 at 2:43:02
   > I am a strong advocate for diversifying the housing portfolio and types within the existing footprint of Area 1.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9782s
-- F4 Q45 at 2:43:24
+- F4 (2026-09-26) Q45 at 2:43:24
   > And I'm against moving into Area 3, which is north of Boulder.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9804s
-- F4 Q46 at 2:48:29 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q46 at 2:48:29 Said YES on 2J (the vacancy tax).
   > I am a supporter of a residential vacancy tax.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10109s
-- F4 Q47 at 2:53:21
+- F4 (2026-09-26) Q47 at 2:53:21
   > I'd say the newest initiative would be updating our 2017 agricultural plan.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10401s
-- F4 Q40 at 3:02:48
+- F4 (2026-09-26) Q40 at 3:02:48
   > I do believe that there is a need for stronger council driven direction and participation.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10968s
-- F4 Q40 at 3:03:08
+- F4 (2026-09-26) Q40 at 3:03:08
   > But also in land back and I think when we think about area three, we should consider land back.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10988s
-- F5 Q48 at 3:12
+- F5 (2026-10-06) Q48 at 3:12
   > I'm running because I believe we are in a poly crisis and we need to have leadership that is able to both mitigate the challenges, whether that be wildfire or energy shutoffs or water
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=192s
-- F5 Q49 at 13:34
+- F5 (2026-10-06) Q49 at 13:34
   > how do we accelerate on the implementation and to Achilles comments do so in a way that holds people accountable, make sure that our budget and resource allocation are sufficient.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=814s
-- F5 Q50 at 29:27
+- F5 (2026-10-06) Q50 at 29:27
   > I think there needs to be a much stronger partnership and advocacy with our state representatives and the Public Utility Commission.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1767s
-- F5 Q51 at 47:17
+- F5 (2026-10-06) Q51 at 47:17
   > And I would really love to see that model used for the coal ash.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2837s Transcript note: 'That model' is the Rocky Flats Stewardship Council, which she described just before.
 
@@ -374,97 +374,97 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Brockett said he believes the city still needs to pursue more housing, in part to make sure there are opportunities for people of “all income levels” to live in Boulder.
 
 #### At the 2026 forums
-- F1 Q1 at 10:00
+- F1 (2026-08-26) Q1 at 10:00
   > my top three priorities will be increasing the availability and affordability of housing, increasing our wildfire preparation and resilience, and also streamlining our regulations and permitting to make it easier to work with the city of Boulder.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=600s
-- F1 Q2 at 30:52
+- F1 (2026-08-26) Q2 at 30:52
   > Start with what staff is recommending. It's not always the direction we should go. Work with the colleagues. Work with the community.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1852s
-- F1 Q4 at 40:09
+- F1 (2026-08-26) Q4 at 40:09
   > we could create middle-income ownership housing in ways that are unattainable within the City limits.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=2409s
-- F2 Q17 at 13:33
+- F2 (2026-09-02) Q17 at 13:33
   > we've created thousands of housing units, but more importantly, hundreds and hundreds of permanently affordable housing units.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=813s
-- F2 Q18 at 43:33
+- F2 (2026-09-02) Q18 at 43:33
   > But we've gotten about as far as we can with the current Byzantine Title IX.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2613s
-- F2 Q19 at 51:45
+- F2 (2026-09-02) Q19 at 51:45
   > Absolutely, I support them. I've supported since Matt Benjamin and Rachel Friend brought it forward
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3105s
-- F2 Q22 at 1:04:28 [speaker from speaking order]
+- F2 (2026-09-02) Q22 at 1:04:28 [speaker from speaking order]
   > the good news is that the city actually hired a performance auditor a few months ago,
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3868s Transcript note: Speaker references council financial strategies committee; sequence-based.
-- F2 Q24 at 1:25:44
+- F2 (2026-09-02) Q24 at 1:25:44
   > I worked closely with all of our colleagues to shape a vision for where our community can go
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=5144s
-- F3 Q27 at 25:26
+- F3 (2026-09-15) Q27 at 25:26
   > I would like for us to, in addition, find targeted opportunity to make larger investments in specific organizations to have more of those transformational effects.
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1526s
-- F3 Q31 at 5:56
+- F3 (2026-09-15) Q31 at 5:56
   > As we have a dashboard that tracks with each one of them how they're going, what percent are they complete and what steps are coming next. I'd like to see us do that with other major plans.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=356s
-- F3 Q32 at 24:36 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 24:36 [speaker from speaking order]
   > In fact, in 2024 we granted $1.4 million and that's since gone up to $2 million as of 2026.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1476s Transcript note: Fifth of drawn names; speaker describes joining council in 2015.
-- F4 Q41 at 2:09:57
+- F4 (2026-09-26) Q41 at 2:09:57
   > I've dug deep into the policy work of the city with a particular focus on equity and sustainability.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7797s
-- F4 Q41 at 2:10:36
+- F4 (2026-09-26) Q41 at 2:10:36
   > if I'm reelected to a final two-year term, I pledge to continue that work
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7836s
-- F4 Q42 at 2:16:05
+- F4 (2026-09-26) Q42 at 2:16:05
   > Also, convening is an important, incredibly important part of the role.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8165s
-- F4 Q43 at 2:21:42
+- F4 (2026-09-26) Q43 at 2:21:42
   > the Keeping Families Housed program, where we provide money that EFA spends on rental assistance and financial counseling
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8502s
-- F4 Q43 at 2:22:10
+- F4 (2026-09-26) Q43 at 2:22:10
   > When people actually pay cash in lieu for affordable housing in a new project, it allows us to reach those deeper level of affordability goals
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8530s
-- F4 Q44 at 2:32:49 Said YES on 2K (the $400 million bond).
+- F4 (2026-09-26) Q44 at 2:32:49 Said YES on 2K (the $400 million bond).
   > So I do support the bond and here's why.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9169s
-- F4 Q44 at 2:33:07
+- F4 (2026-09-26) Q44 at 2:33:07
   > construction cost inflation is going up higher than the rate of interest that we would be paying on the bond.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9187s
-- F4 Q37 at 2:38:20 Said YES on the Core Arterial Network / bus-only lanes.
+- F4 (2026-09-26) Q37 at 2:38:20 Said YES on the Core Arterial Network / bus-only lanes.
   > Yes, I absolutely support our bus lanes and our core arterial network.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9500s
-- F4 Q45 at 2:44:24
+- F4 (2026-09-26) Q45 at 2:44:24
   > So we should focus density along transit corridors and where there are services.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9864s
-- F4 Q45 at 2:44:53
+- F4 (2026-09-26) Q45 at 2:44:53
   > So I would look at the planning reserve north of town
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9893s
-- F4 Q46 at 2:49:30 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q46 at 2:49:30 Said YES on 2J (the vacancy tax).
   > Yes, I'm absolutely a supporter of this tax.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10170s
-- F4 Q46 at 2:49:42
+- F4 (2026-09-26) Q46 at 2:49:42
   > the $4,000 per house should be more than sufficient to cover the administrative costs
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10182s
-- F4 Q47 at 2:54:10
+- F4 (2026-09-26) Q47 at 2:54:10
   > I think the time has come for us also to require existing homes to implement certain amounts of wildfire hardening.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10450s
-- F4 Q40 at 2:58:04
+- F4 (2026-09-26) Q40 at 2:58:04
   > So that's changed my mind on retroactivity requirements.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10684s
-- F5 Q48 at 5:38
+- F5 (2026-10-06) Q48 at 5:38
   > We have constantly updated our energy codes, which are some of the most efficient in the nation, including an all electric requirement that I helped get across the finish line last year
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=338s
-- F5 Q49 at 20:30
+- F5 (2026-10-06) Q49 at 20:30
   > We need to continue to increase our investments in wildfire preparedness, but not at the expense of our incredibly important climate work.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1230s
-- F5 Q50 at 24:55
+- F5 (2026-10-06) Q50 at 24:55
   > the interactions with Excel over the last few years have been extremely disappointing.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1495s
-- F5 Q50 at 26:19
+- F5 (2026-10-06) Q50 at 26:19
   > I would be absolutely interested in sitting down and talking to other cities
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1579s
-- F5 Q51 at 41:45
+- F5 (2026-10-06) Q51 at 41:45
   > But I will say that our best opportunity here does lie with the state legislature.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2505s
-- F5 Q51 at 42:38
+- F5 (2026-10-06) Q51 at 42:38
   > As of last year, all new construction has to be electric only with no fossil fuel usage
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2558s Transcript note: Said in his remaining time on this question, responding to Lisa Ann Jacobs's earlier call for an all-electric requirement.
 
@@ -555,67 +555,67 @@ What reporters wrote (the reporter's words, not the candidate's):
   > “Right now, there’s a very large subsection of the Boulder population that finds it very difficult to even make ends meet and pay rent,” he said.
 
 #### At the 2026 forums
-- F3 Q25 at 13:24
+- F3 (2026-09-15) Q25 at 13:24
   > You see a lot of these real estate companies, what they're doing is essentially leaving these areas vacant because it's more cost effective for them to keep prices high than to lower them
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=804s
-- F3 Q31 at 11:59
+- F3 (2026-09-15) Q31 at 11:59
   > It's a $350 million project that's going to house about 300 employees, so over a million dollars per employee.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=719s Transcript note: Referring to Alpine-Balsam.
-- F3 Q31 at 12:22
+- F3 (2026-09-15) Q31 at 12:22
   > I think the best way that we can do this is by bringing in an independent auditor.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=742s
-- F3 Q32 at 16:34 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 16:34 [speaker from speaking order]
   > I would say that artists are a lot more important than businessmen because they create the culture that businessmen operate within.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=994s Transcript note: Third of drawn names (Winer, Jamieson, Goldstein, Martus, Segal).
-- F4 Q41 at 2:11:08
+- F4 (2026-09-26) Q41 at 2:11:08
   > I think it's very important that we bring back a people-first approach.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7868s
-- F4 Q41 at 2:11:19
+- F4 (2026-09-26) Q41 at 2:11:19
   > we return to making our decisions by taking the inputs of the citizens of Boulder first, instead of implementing top-down measures.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7879s
-- F4 Q41 at 2:11:35
+- F4 (2026-09-26) Q41 at 2:11:35
   > Right now, we process 6 billion gallons of water a year, and 2 billion of those gallons are used for lawns.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7895s
-- F4 Q42 at 2:17:13
+- F4 (2026-09-26) Q42 at 2:17:13
   > Because right now the people of Boulder don't feel like they're heard.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8233s
-- F4 Q43 at 2:22:39
+- F4 (2026-09-26) Q43 at 2:22:39
   > reduce legal red tape in order to set up accessory dwelling units, or ADUs.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8559s
-- F4 Q44 at 2:28:01 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q44 at 2:28:01 Said NO on 2K (the $400 million bond).
   > I 100 percent do not support this measure.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8881s
-- F4 Q44 at 2:28:29
+- F4 (2026-09-26) Q44 at 2:28:29
   > If we want to do a bond we need to bring it from the bottom up instead of having City Council propose the bond.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8909s
-- F4 Q37 at 2:39:38
+- F4 (2026-09-26) Q37 at 2:39:38
   > That means completing the core arterial network.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9578s
-- F4 Q37 at 2:39:50
+- F4 (2026-09-26) Q37 at 2:39:50
   > I think it is important we place limitations on e-moto bicycles
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9590s
-- F4 Q45 at 2:45:30
+- F4 (2026-09-26) Q45 at 2:45:30
   > is to implement this vacancy tax.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9930s
-- F4 Q46 at 2:50:37 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q46 at 2:50:37 Said YES on 2J (the vacancy tax).
   > I'm 100% in support of this vacancy tax.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10237s
-- F4 Q47 at 2:54:27
+- F4 (2026-09-26) Q47 at 2:54:27
   > would be to begin the removal of flock cameras in Boulder.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10467s
-- F4 Q40 at 2:58:59
+- F4 (2026-09-26) Q40 at 2:58:59
   > So I think we need to reduce pathways for transient homeless people to come into Boulder
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10739s
-- F5 Q48 at 7:21
+- F5 (2026-10-06) Q48 at 7:21
   > I think it's important that we incentivize homeowners to install natural foliage as opposed to lawns in order to conserve about 2 billion gallons of water per year.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=441s
-- F5 Q49 at 15:26
+- F5 (2026-10-06) Q49 at 15:26
   > I think it's important that we bring awareness to this issue, but we don't bring awareness to it in a way where people are fearful of what's to come.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=926s
-- F5 Q50 at 36:59
+- F5 (2026-10-06) Q50 at 36:59
   > I think it's very important that we take this issue to the state level.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2219s
-- F5 Q51 at 39:03
+- F5 (2026-10-06) Q51 at 39:03
   > So overall, listen to the community and listen to the scientists on this one.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2343s
 
@@ -645,67 +645,67 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Smith proposes a 10% city income tax on household income above $184,500, which he estimates would generate $185 million annually. Because TABOR prohibits Colorado municipalities from imposing income taxes, Smith proposes pursuing a statewide ballot measure to authorize such taxes. He proposes using the revenue for public facilities, childcare, affordable housing and mental health care.
 
 #### At the 2026 forums
-- F1 Q1 at 10:45
+- F1 (2026-08-26) Q1 at 10:45
   > there's a thing called TABR and we need to go over TABR on this because we could do a petition drive in one week that would pay for itself.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=645s Transcript note: 'TABR' = TABOR (Whisper spelling).
-- F1 Q2 at 31:16
+- F1 (2026-08-26) Q2 at 31:16
   > I think the city of Boulder is too strict on codes.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1876s
-- F1 Q7 at 1:10:26
+- F1 (2026-08-26) Q7 at 1:10:26
   > with the progressive income tax, in tax and actually tax, we could triple our general fund costs. I have no problem with the tax
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4226s
-- F1 Q10 at 1:26:10
+- F1 (2026-08-26) Q10 at 1:26:10
   > if you're going to live in Boulder, they got to be better paying jobs because people can't live in Boulder on $15 an hour jobs.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5170s
-- F3 Q30 at 1:11 [speaker from speaking order]
+- F3 (2026-09-15) Q30 at 1:11 [speaker from speaking order]
   > I'm saying we need to work on the revenue stream, it's not the expense stream
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=71s Transcript note: Pt 3 begins mid-answer; Fred Smith was first of the three named (Smith, Marquis, Richmond).
-- F3 Q31 at 10:37 [speaker from speaking order]
+- F3 (2026-09-15) Q31 at 10:37 [speaker from speaking order]
   > I'm a super majority guy. I think in big decisions you should have a two-thirds majority for them to pass.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=637s Transcript note: Fifth in moderator's announced order (after Jacobs); not re-named.
-- F3 Q32 at 0:28 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 0:28 [speaker from speaking order]
   > if we build it tomorrow, it'd be the cheapest time to build it.
   Watch: https://www.youtube.com/watch?v=Q1PXyt_DLqw&t=28s Transcript note: Sixth of drawn names; Pt 4 opens with this speaker.
-- F4 Q41 at 2:12:13
+- F4 (2026-09-26) Q41 at 2:12:13
   > And I think this is by City Income Tax to help supplement sales tax.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=7933s Transcript note: Whisper renders the name as 'Instead or Smith'.
-- F4 Q42 at 2:18:30
+- F4 (2026-09-26) Q42 at 2:18:30
   > Why wouldn't you want 19 and 20 year olds in the bars?
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8310s
-- F4 Q43 at 2:23:51
+- F4 (2026-09-26) Q43 at 2:23:51
   > This is extra money which could be pumped into affordable housing, which I'm all for.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8631s
-- F4 Q44 at 2:29:21
+- F4 (2026-09-26) Q44 at 2:29:21
   > I think we could get a lot of fixes for half and then two or four years come back and ask for the second half
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8961s
-- F4 Q37 at 2:34:50
+- F4 (2026-09-26) Q37 at 2:34:50
   > And it's really mixed bag on bicycles.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9290s
-- F4 Q45 at 2:46:11
+- F4 (2026-09-26) Q45 at 2:46:11
   > I think we could do all this if we had more money.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9971s
-- F4 Q46 at 2:51:19
+- F4 (2026-09-26) Q46 at 2:51:19
   > Well, I think it's a great idea.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10279s
-- F4 Q46 at 2:51:39
+- F4 (2026-09-26) Q46 at 2:51:39
   > I don't know, truly, if $4,000 would make a difference
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10299s
-- F4 Q47 at 2:55:08
+- F4 (2026-09-26) Q47 at 2:55:08
   > do four hours of community service a month
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10508s
-- F4 Q40 at 2:59:45
+- F4 (2026-09-26) Q40 at 2:59:45
   > I really wrestle around with the amount of spending on rich schools to poor schools.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10785s
-- F5 Q48 at 5:05
+- F5 (2026-10-06) Q48 at 5:05
   > We're the only Western state that doesn't get the full amount of severance tax,
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=305s
-- F5 Q49 at 11:42
+- F5 (2026-10-06) Q49 at 11:42
   > we need to make gasoline pay its way and fossil fuel companies to pay their own way.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=702s
-- F5 Q50 at 35:11
+- F5 (2026-10-06) Q50 at 35:11
   > But I think you need to find benchmarks with Excel and say by 2033, you need to do this and this, or you get fined millions of dollars
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2111s
-- F5 Q51 at 46:27
+- F5 (2026-10-06) Q51 at 46:27
   > My point is it's going to be real short answer is to study hard, get many opinions and don't rush into it and do it the right way.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2787s
 
@@ -743,103 +743,103 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Aquiles La Grave is a first-time candidate running for mayor on a platform of accountable government, public safety and what he calls an “unblocked” local economy. He has never held elected office and would become the first mayor to serve without having previously served on the Boulder City Council.
 
 #### At the 2026 forums
-- F1 Q1 at 12:15
+- F1 (2026-08-26) Q1 at 12:15
   > We need an independent city auditor that reports directly to council and is looking at the performance of our programs
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=735s
-- F1 Q1 at 12:51
+- F1 (2026-08-26) Q1 at 12:51
   > Fire is an existential threat to Boulder. We must address it. We must address it immediately.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=771s
-- F1 Q2 at 32:39
+- F1 (2026-08-26) Q2 at 32:39
   > What we have is not a failure of values. Everybody here has incredible values. It's a failure of delivery.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1959s
-- F1 Q5 at 45:43
+- F1 (2026-08-26) Q5 at 45:43
   > Have we laid the groundwork to be successful at Area 3? I don't believe we have. Where's the money going to come from?
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=2743s
-- F1 Q7 at 1:11:21
+- F1 (2026-08-26) Q7 at 1:11:21
   > It's $650 million. It's not $400 million. There's another $250 million in interest that we have to pay a quarter billion.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4281s
-- F1 Q7 at 1:11:36
+- F1 (2026-08-26) Q7 at 1:11:36
   > No plan. No budget. No trust. It's nuts.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4296s
-- F1 Q8 at 1:13:06
+- F1 (2026-08-26) Q8 at 1:13:06
   > We need to start looking at two-hour parking to start bringing folks into our downtown businesses.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4386s
-- F2 Q17 at 29:11
+- F2 (2026-09-02) Q17 at 29:11
   > we need to be asking for a governing vision and be measuring the vision time after time.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1751s Transcript note: Name garbled in transcript.
-- F2 Q21 at 1:00:16
+- F2 (2026-09-02) Q21 at 1:00:16
   > I'm a huge fan of trying to come up with some type of capital infrastructure oversight committee.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3616s
-- F2 Q23 at 1:19:00
+- F2 (2026-09-02) Q23 at 1:19:00
   > I'm in support of it. I'm a co-author of the plan.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4740s Transcript note: Co-author of the Fire Adapted Boulder plan.
-- F2 Q24 at 1:25:00
+- F2 (2026-09-02) Q24 at 1:25:00
   > we must demand a governing vision and we must measure against that governing vision again and again.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=5100s
-- F3 Q31 at 7:24 [speaker from speaking order]
+- F3 (2026-09-15) Q31 at 7:24 [speaker from speaking order]
   > we need to rethink in changing the measurement rubric for the city manager and we need a city auditor.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=444s Transcript note: Moderator's announced order put La Grave second; intro garbled.
-- F3 Q32 at 23:21
+- F3 (2026-09-15) Q32 at 23:21
   > I really do believe that the art holds the key for our economic recovery
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1401s
-- F4 Q41 at 2:13:43
+- F4 (2026-09-26) Q41 at 2:13:43
   > When we arrived here as immigrants, Boulder took a family facing housing and food insecurity and launched them on a journey of opportunity.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8023s
-- F4 Q41 at 2:13:54
+- F4 (2026-09-26) Q41 at 2:13:54
   > I'm running for Mayor to make Boulder work as well as our values to serve.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8034s
-- F4 Q42 at 2:18:38
+- F4 (2026-09-26) Q42 at 2:18:38
   > I believe the Mayor has a sacred apolitical duty to ensure that all members of Council succeed.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8318s
-- F4 Q42 at 2:19:33
+- F4 (2026-09-26) Q42 at 2:19:33
   > Failure in Boulder should never be an orphan, and it should be the Mayor who stands in that space.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8373s
-- F4 Q43 at 2:25:18
+- F4 (2026-09-26) Q43 at 2:25:18
   > They've been trying for five years to come into the city and be annexed to no avail because we insist on charging inclusionary fees as part of that.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8718s
-- F4 Q43 at 2:25:29
+- F4 (2026-09-26) Q43 at 2:25:29
   > We need to be more flexible with our programs to get the outcomes we deserve.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8729s
-- F4 Q44 at 2:30:09
+- F4 (2026-09-26) Q44 at 2:30:09
   > In one measure, we are being asked to more than double it.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9009s
-- F4 Q44 at 2:30:39 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q44 at 2:30:39 Said NO on 2K (the $400 million bond).
   > are fully against it? So no.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9039s
-- F4 Q37 at 2:35:44
+- F4 (2026-09-26) Q37 at 2:35:44
   > So I'm an absolute supporter of safer alternative transiting options than can.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9344s
-- F4 Q37 at 2:36:01
+- F4 (2026-09-26) Q37 at 2:36:01
   > We can't continue to make our visitors who are coming in by car feel punished
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9361s
-- F4 Q45 at 2:41:06
+- F4 (2026-09-26) Q45 at 2:41:06
   > I absolutely believe we need more missing middle-income housing that's attracting young families to Boulder.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9666s
-- F4 Q45 at 2:41:35
+- F4 (2026-09-26) Q45 at 2:41:35
   > We also need to consider whether developments that are providing that type of housing should be paying an inclusionary housing fee.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9695s
-- F4 Q46 at 2:52:10
+- F4 (2026-09-26) Q46 at 2:52:10
   > I have been supportive of it. The question is fairness depends on why a home is empty
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10330s
-- F4 Q47 at 2:55:43
+- F4 (2026-09-26) Q47 at 2:55:43
   > That means ensuring that nothing is moving forward to council without answering five questions.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10543s
-- F4 Q40 at 3:00:31
+- F4 (2026-09-26) Q40 at 3:00:31
   > we need to move towards a two year budget like other cities around us have.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10831s
-- F5 Q48 at 9:53
+- F5 (2026-10-06) Q48 at 9:53
   > Boulder that doesn't need less ambition. I think we need more capacity.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=593s
-- F5 Q49 at 18:12
+- F5 (2026-10-06) Q49 at 18:12
   > If we want cleaner buildings, we have to make permits easier.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1092s
-- F5 Q50 at 31:46
+- F5 (2026-10-06) Q50 at 31:46
   > six years of disappointing meetings should absolutely change your strategy.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1906s
-- F5 Q50 at 31:52
+- F5 (2026-10-06) Q50 at 31:52
   > So I believe one of those options is us absolutely going to market for energy.
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=1912s
-- F5 Q51 at 39:51
+- F5 (2026-10-06) Q51 at 39:51
   > So I would absolutely use the franchise agreement to the extent possible to push for written agreements and binding legal agreements with Excel to fund that monitoring
   Watch: https://www.youtube.com/watch?v=U3iEinbzOk0&t=2391s
 
@@ -874,40 +874,40 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Lee Gilbert, a longtime resident of Boulder who moved to the town in the 1960s, was very clear that the one issue he prioritized was to improve the transportation development along Baseline for cyclists.
 
 #### At the 2026 forums
-- F1 Q1 at 15:49
+- F1 (2026-08-26) Q1 at 15:49
   > I have one single priority and that is to oppose transportation projects that make things worse.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=949s
-- F1 Q1 at 16:06
+- F1 (2026-08-26) Q1 at 16:06
   > the changes they made on baseline are absolutely terrible. They ignored accident data and they made it more dangerous for bicycles than it was before.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=966s
-- F1 Q5 at 59:56
+- F1 (2026-08-26) Q5 at 59:56
   > I would not have funded RGB so many years ago if I knew that they weren't going to actually get service to Boulder.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3596s Transcript note: 'RGB' = RTD (Whisper).
-- F1 Q10 at 1:26:46
+- F1 (2026-08-26) Q10 at 1:26:46
   > I work on strategies to reduce the cost, both in terms of permitting and also in terms of local tax districts and things.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5206s
-- F4 Q33 at 8:29
+- F4 (2026-09-26) Q33 at 8:29
   > A vote for me is a vote of no confidence in Boulder's road projects.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=509s
-- F4 Q34 at 34:03
+- F4 (2026-09-26) Q34 at 34:03
   > These projects are expensive. They're not efficient. They're not needed. And the city never allows a public vote on these issues.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2043s
-- F4 Q35 at 45:45
+- F4 (2026-09-26) Q35 at 45:45
   > I'm not knowledgeable on this issue
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2745s
-- F4 Q36 at 57:27 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q36 at 57:27 Said NO on 2K (the $400 million bond).
   > I'm also a no on the issue.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3447s
-- F4 Q37 at 1:08:43
+- F4 (2026-09-26) Q37 at 1:08:43
   > I call it the Folsom fiasco
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4123s
-- F4 Q38 at 1:19:48
+- F4 (2026-09-26) Q38 at 1:19:48
   > Well, clearly the council is not representative of the people.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4788s
-- F4 Q39 at 1:28:03
+- F4 (2026-09-26) Q39 at 1:28:03
   > I lean towards the yes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5283s
-- F4 Q40 at 1:35:17
+- F4 (2026-09-26) Q40 at 1:35:17
   > the RTD tax, where we were promised rail service, I was supported that. I definitely would not support it now.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5717s
 
@@ -942,55 +942,55 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Fuqua also wants the partner developers and agencies to build market-rate, middle-income housing on city-owned land.
 
 #### At the 2026 forums
-- F1 Q1 at 13:28
+- F1 (2026-08-26) Q1 at 13:28
   > Housing is my top priority. My family benefited from that in the 1990s and I'm going to work hard to make sure families today and tomorrow have those same opportunities.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=808s
-- F1 Q12 at 1:34:14
+- F1 (2026-08-26) Q12 at 1:34:14
   > I would prioritize making it easier for businesses to renovate and open through code review.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5654s
-- F1 Q16 at 1:54:57
+- F1 (2026-08-26) Q16 at 1:54:57
   > I would like to work with Tina on this persistent problem of the missing middle income housing.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=6897s
-- F2 Q17 at 21:10
+- F2 (2026-09-02) Q17 at 21:10
   > We recognize that density and access to transit are sustainability values.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1270s
-- F2 Q17 at 21:39
+- F2 (2026-09-02) Q17 at 21:39
   > We have to fund our infrastructure. We have to fund emerging needs like wildfire risk mitigation, energy efficiency
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1299s
-- F2 Q23 at 1:11:07
+- F2 (2026-09-02) Q23 at 1:11:07
   > Yeah, I support mandatory compliance.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4267s
-- F3 Q29 at 7:44
+- F3 (2026-09-15) Q29 at 7:44
   > I do support reviewing our permitting and land use regulations to make it simpler for artists and arts organizations to be in this town.
   Watch: https://www.youtube.com/watch?v=Syj4_V5cQOk&t=464s
-- F3 Q29 at 7:54
+- F3 (2026-09-15) Q29 at 7:54
   > The other thing I would focus on is creating more permanently affordable housing for everybody, including artists
   Watch: https://www.youtube.com/watch?v=Syj4_V5cQOk&t=474s
-- F3 Q32 at 30:56 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 30:56 [speaker from speaking order]
   > another thing I will prioritize in addition to these common themes is access to the arts for everybody.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1856s Transcript note: Fifth of last seven drawn names; speaker cites managing a children's arts nonprofit.
-- F4 Q33 at 9:24
+- F4 (2026-09-26) Q33 at 9:24
   > We all know too many families can't afford to live in our town, and that's why affordable housing is my top priority.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=564s
-- F4 Q34 at 22:27
+- F4 (2026-09-26) Q34 at 22:27
   > I think the city is generally moving in the right direction on all three, but there is still work to be done
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1347s
-- F4 Q35 at 46:51
+- F4 (2026-09-26) Q35 at 46:51
   > I support bringing San Lazaro into the city and helping the residents purchase that park
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2811s
-- F4 Q36 at 58:13
+- F4 (2026-09-26) Q36 at 58:13
   > Yeah, I'm a reluctant yes, but a yes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3493s
-- F4 Q37 at 1:09:48 Said YES on the Core Arterial Network / bus-only lanes.
+- F4 (2026-09-26) Q37 at 1:09:48 Said YES on the Core Arterial Network / bus-only lanes.
   > So I am a supporter of the CAN and the protected bike lanes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4188s
-- F4 Q38 at 1:20:46 Said YES on a study session on proportional representation.
+- F4 (2026-09-26) Q38 at 1:20:46 Said YES on a study session on proportional representation.
   > I would support a study session on this issue
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4846s
-- F4 Q39 at 1:28:19 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:28:19 Said YES on 2J (the vacancy tax).
   > I'm a yes. I would consider raising it
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5299s
-- F4 Q40 at 1:36:11
+- F4 (2026-09-26) Q40 at 1:36:11
   > I know we have no money to actually do this for the foreseeable future, but I'm now in favor of that change.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5771s Transcript note: Refers to Iris Avenue CAN redesign.
 
@@ -1038,58 +1038,58 @@ Schuchard is a sitting Boulder councilmember seeking another term. He focuses on
   > Yes. I helped architect CAN’s original design on the Transportation Advisory Board and I will lead and back it until it is fully built.
 
 #### At the 2026 forums
-- F1 Q1 at 14:49
+- F1 (2026-08-26) Q1 at 14:49
   > One, to lower the cost of living for everyone. Number two, to adapt our community to a world that it wasn't built for. Three, to make our local government more predictable and effective.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=889s
-- F1 Q1 at 15:07
+- F1 (2026-08-26) Q1 at 15:07
   > We're getting infill housing combined with transportation strategies that allow people to structurally get around more efficiently.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=907s
-- F1 Q4 at 41:43
+- F1 (2026-08-26) Q4 at 41:43
   > we should make sure we're looking within the city limits first and having a good financial analysis to make that investment here first if we can.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=2503s
-- F1 Q9 at 1:21:28
+- F1 (2026-08-26) Q9 at 1:21:28
   > these deadly crashes are not generally accidents. They're designed.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4888s
-- F2 Q17 at 11:31
+- F2 (2026-09-02) Q17 at 11:31
   > I focus on helping to cut the cost of living, adapt our community to a world it wasn't built for, and make our government more predictable and effective.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=691s
-- F2 Q18 at 40:52 [speaker from speaking order]
+- F2 (2026-09-02) Q18 at 40:52 [speaker from speaking order]
   > The first answer to this is yes, we do need to be careful. There are some people that have a principled view that this needs to be done cautiously,
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2452s Transcript note: No name cue; speaker describes running in 2023 and current council action.
-- F2 Q23 at 1:16:18 [speaker from speaking order]
+- F2 (2026-09-02) Q23 at 1:16:18 [speaker from speaking order]
   > We need to do it through regulation.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4578s
-- F3 Q28 at 3:53
+- F3 (2026-09-15) Q28 at 3:53
   > we've got to strengthen our balance sheet. We need more predictable and flexible sources of funding.
   Watch: https://www.youtube.com/watch?v=Syj4_V5cQOk&t=233s
-- F4 Q33 at 10:43
+- F4 (2026-09-26) Q33 at 10:43
   > First, to cut the cost of living so that everybody can afford to live here.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=643s
-- F4 Q34 at 23:21
+- F4 (2026-09-26) Q34 at 23:21
   > I start with wildfire and getting really focused on a plan to give us a five to ten year adoption curve
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1401s
-- F4 Q34 at 23:47
+- F4 (2026-09-26) Q34 at 23:47
   > being very careful to protect the climate budget and the climate programming that we have
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1427s
-- F4 Q35 at 36:15
+- F4 (2026-09-26) Q35 at 36:15
   > One thing I'd like to see us do in 27 is for the council and BVST to partner on an evidence-based approach to understanding even more from families.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2175s Transcript note: 'BVST' = BVSD.
-- F4 Q36 at 59:53
+- F4 (2026-09-26) Q36 at 59:53
   > One, we're going to have service cuts if we don't proceed with the funding
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3593s
-- F4 Q36 at 1:00:04
+- F4 (2026-09-26) Q36 at 1:00:04
   > Second, this sets a cap. We are already talking about $100 million off of the $400 million.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3604s
-- F4 Q37 at 1:10:17
+- F4 (2026-09-26) Q37 at 1:10:17
   > the combination of your housing and transportation costs being less than 45% of your total income.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4217s
-- F4 Q38 at 1:21:48
+- F4 (2026-09-26) Q38 at 1:21:48
   > But I don't know about proportional representation.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4908s
-- F4 Q39 at 1:28:56 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:28:56 Said YES on 2J (the vacancy tax).
   > I'm also a yes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5336s
-- F4 Q40 at 1:36:43
+- F4 (2026-09-26) Q40 at 1:36:43
   > We need a council level task force or a committee that is going to get our arms around how to practically minimize the occurrences
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5803s Transcript note: On grid power outages / Xcel.
 
@@ -1161,46 +1161,46 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Jamillah Richmond is a first-time candidate for Boulder City Council running on a platform of climate justice, community-driven government, affordable housing and supporting workers and small businesses.
 
 #### At the 2026 forums
-- F1 Q1 at 16:42
+- F1 (2026-08-26) Q1 at 16:42
   > I am a single parent that lives in affordable housing. And so my first priority would be housing. Housing that is accessible to the lowest wages of us and our middle income earners.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1002s
-- F1 Q10 at 1:27:39
+- F1 (2026-08-26) Q10 at 1:27:39
   > I'd like to look at opportunities and ways for us to address the start of costs of creating businesses in the community.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5259s
-- F2 Q17 at 15:59
+- F2 (2026-09-02) Q17 at 15:59
   > I care about my neighbors, my neighbors who are changing very, very frequently because they can't afford to stay here.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=959s
-- F2 Q23 at 1:13:52 [speaker from speaking order]
+- F2 (2026-09-02) Q23 at 1:13:52 [speaker from speaking order]
   > I would also add having a requirement for the rental property permit, also having to have a detailed home assessment.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4432s Transcript note: Sequence + renter perspective; no spoken name.
-- F3 Q30 at 3:03
+- F3 (2026-09-15) Q30 at 3:03
   > Most of the artists that I know don't live in Boulder and I think that that's important.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=183s
-- F3 Q32 at 27:38
+- F3 (2026-09-15) Q32 at 27:38
   > It is important that as we look forward, that we think about creating funding and supporting funding for the arts
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1658s
-- F4 Q33 at 11:51
+- F4 (2026-09-26) Q33 at 11:51
   > We have a lot of people that are working here but not living here because they can't afford to and I think that that is an issue.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=711s
-- F4 Q34 at 24:24
+- F4 (2026-09-26) Q34 at 24:24
   > We can have as many units as we want to build, but if people can't afford to move into them, then that doesn't create availability or accessibility.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1464s
-- F4 Q35 at 37:18
+- F4 (2026-09-26) Q35 at 37:18
   > creating more collaborative partnerships between BVSC affordable housing initiatives
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2238s
-- F4 Q36 at 48:46 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q36 at 48:46 Said NO on 2K (the $400 million bond).
   > Okay. Thank you. I do not support this bond measure.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2926s Transcript note: Richmond was called twice; this is her second, complete answer.
-- F4 Q37 at 1:11:23 Said YES on the Core Arterial Network / bus-only lanes.
+- F4 (2026-09-26) Q37 at 1:11:23 Said YES on the Core Arterial Network / bus-only lanes.
   > I'm a yes on the can.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4283s
-- F4 Q38 at 1:23:00
+- F4 (2026-09-26) Q38 at 1:23:00
   > So we do need to have more representation, more diversity
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4980s
-- F4 Q39 at 1:29:29 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:29:29 Said YES on 2J (the vacancy tax).
   > I say yes to this.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5369s
-- F4 Q40 at 1:37:11
+- F4 (2026-09-26) Q40 at 1:37:11
   > Initially, I was a yes on the $400 million bond, but after listening and studying more and reflecting, I changed my mind.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5831s
 
@@ -1251,46 +1251,46 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Duran also wants to improve affordability in Boulder.
 
 #### At the 2026 forums
-- F1 Q1 at 18:19
+- F1 (2026-08-26) Q1 at 18:19
   > Wildfire mitigation needs to happen. It needs to be more aggressive here in Boulder.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1099s
-- F1 Q11 at 1:31:57
+- F1 (2026-08-26) Q11 at 1:31:57
   > I believe that there is a real need to aggressively partner with chambers.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5517s
-- F2 Q17 at 18:01
+- F2 (2026-09-02) Q17 at 18:01
   > I'm a candidate for the working families, the working people of our community, to see that we're more inclusive, that we provide that economic power so that people can make it.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1081s
-- F3 Q26 at 18:19
+- F3 (2026-09-15) Q26 at 18:19
   > I think that kind of financing, bond financing, private sector partnering is what we need to look at to help accelerate some of the projects
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1099s
-- F3 Q32 at 20:04
+- F3 (2026-09-15) Q32 at 20:04
   > We need an implementation plan that relates to arts and cultural investment
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1204s
-- F4 Q34 at 25:24
+- F4 (2026-09-26) Q34 at 25:24
   > One relates to the Land Use Code and Title IX, updating that, getting a process in place
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1524s
-- F4 Q34 at 25:58
+- F4 (2026-09-26) Q34 at 25:58
   > I'd like to see more consistent profit and loss statements that are shared with the public
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1558s
-- F4 Q35 at 38:09
+- F4 (2026-09-26) Q35 at 38:09
   > affordability also means having good paying jobs here in this community again
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2289s
-- F4 Q36 at 49:38 Said NO on 2K (the $400 million bond). (Adds that she does not oppose the investment in recreation, public safety and facilities.)
+- F4 (2026-09-26) Q36 at 49:38 Said NO on 2K (the $400 million bond). (Adds that she does not oppose the investment in recreation, public safety and facilities.)
   > But this one I do oppose, but I don't oppose the investment that we want to be making in our recreation, our public safety, our municipal facilities.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2978s
-- F4 Q37 at 1:00:43
+- F4 (2026-09-26) Q37 at 1:00:43
   > I believe in the principles and the guidance and the policies related to CAN.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3643s
-- F4 Q37 at 1:01:15
+- F4 (2026-09-26) Q37 at 1:01:15
   > I just felt like people's voices were not being heard
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3675s
-- F4 Q38 at 1:23:55
+- F4 (2026-09-26) Q38 at 1:23:55
   > I think our public engagement needs a refresh and a fix.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5035s
-- F4 Q39 at 1:29:53 Said NO on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:29:53 Said NO on 2J (the vacancy tax).
   > I am opposed to it and would be voting no.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5393s
-- F4 Q40 at 1:38:10
+- F4 (2026-09-26) Q40 at 1:38:10
   > I think the city should have put a pause on the plans for that project
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5890s Transcript note: Alpine-Balsam.
 
@@ -1355,34 +1355,34 @@ What reporters wrote (the reporter's words, not the candidate's):
   > According to Winer, Boulder does need more housing that families and “the missing middle” will actually want to live in, as opposed to seeking housing outside of Boulder because available housing stock isn’t a good fit for them.
 
 #### At the 2026 forums
-- F1 Q1 at 19:11
+- F1 (2026-08-26) Q1 at 19:11
   > we need to reduce red tape so people and businesses can get stuff done.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1151s
-- F1 Q1 at 19:38
+- F1 (2026-08-26) Q1 at 19:38
   > we need sales tax revenue to pay for all the stuff that we love so much.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1178s
-- F1 Q8 at 1:13:35
+- F1 (2026-08-26) Q8 at 1:13:35
   > My number one is always going to be do something about Title IX, and that is our land use code
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4415s Transcript note: 'Title IX' = Title 9 (Boulder land use code).
-- F1 Q8 at 1:14:08
+- F1 (2026-08-26) Q8 at 1:14:08
   > the amount of time it takes to get a permit is insane.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4448s
-- F1 Q9 at 1:22:18
+- F1 (2026-08-26) Q9 at 1:22:18
   > In fact, I want to make this the e-bike capital of the world.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4938s
-- F2 Q17 at 7:16
+- F2 (2026-09-02) Q17 at 7:16
   > I do care about taking care of core responsibilities like open space, bike paths, rec centers, parks, public spaces, potholes, snow and ice removals.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=436s
-- F2 Q17 at 8:24
+- F2 (2026-09-02) Q17 at 8:24
   > starting a permanent farmers market where we can not only help farmers, but people can come and start new business ideas without having heavy overhead.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=504s
-- F3 Q25 at 11:42 [speaker from speaking order]
+- F3 (2026-09-15) Q25 at 11:42 [speaker from speaking order]
   > What I would do, and this is going to be, it might have a few heads turning, is bring back the DBA.
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=702s Transcript note: 'DBA' = DDA (downtown development authority). Second of drawn names; Ryan Jamieson later says 'the DDA, as Tara mentioned'.
-- F3 Q32 at 14:35
+- F3 (2026-09-15) Q32 at 14:35
   > So I want us to remain relevant and dynamic and reduce red tape
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=875s
-- F4 Q33 at 13:50
+- F4 (2026-09-26) Q33 at 13:50
   > I take accessibility and availability to the community seriously, which is why I give out my cell phone number
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=830s Transcript note: Winer was absent (out of state); moderator read her submitted statement per League policy.
 
@@ -1447,61 +1447,61 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Isaacson said she would have voted against sending a DDA proposal to DDA voters had she been on Council this year when they voted.
 
 #### At the 2026 forums
-- F1 Q1 at 20:06
+- F1 (2026-08-26) Q1 at 20:06
   > We need to modernize our land use code to create little income housing ownership through inflow redevelopment streamline permitting
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1206s Transcript note: Likely 'middle income housing ownership through infill redevelopment' (Whisper).
-- F1 Q1 at 20:17
+- F1 (2026-08-26) Q1 at 20:17
   > I support a independent performance audit to evaluate outcomes, strengthen long term planning and rebuild public trust.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1217s
-- F1 Q5 at 53:58
+- F1 (2026-08-26) Q5 at 53:58
   > it would be important to utilize our limited resources where the high risk areas are because that's going to keep us all safe.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3238s
-- F1 Q6 at 1:01:22
+- F1 (2026-08-26) Q6 at 1:01:22
   > I'd be really curious about ways that we can work together with childcare providers, and especially with this new tax that we're considering
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3682s
-- F1 Q12 at 1:35:09
+- F1 (2026-08-26) Q12 at 1:35:09
   > it's taking about six months to get a permit, and in that time, you're spending high commercial rent.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5709s
-- F2 Q18 at 36:56
+- F2 (2026-09-02) Q18 at 36:56
   > I like the term modernization. I think a complete rewrite would be a little destabilizing,
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2216s
-- F2 Q21 at 57:39 [speaker from speaking order]
+- F2 (2026-09-02) Q21 at 57:39 [speaker from speaking order]
   > Before implementation, we need a performance auditor. We need to have updated assessments. We need to have cost alternatives and ROI analysis.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3459s Transcript note: No name cue; her later auditor answer refers back to 'my last answer'.
-- F2 Q22 at 1:02:34
+- F2 (2026-09-02) Q22 at 1:02:34
   > it's not only going to help us evaluate whether our programs are efficiently achieving goals
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3754s
-- F3 Q28 at 1:37 [speaker from speaking order]
+- F3 (2026-09-15) Q28 at 1:37 [speaker from speaking order]
   > We need to have clear public dashboards that clearly illustrate exactly where money's going, why.
   Watch: https://www.youtube.com/watch?v=Syj4_V5cQOk&t=97s Transcript note: First of drawn names ('... Rose Isaacson, Lynn Segal, and Ryan Schuchard').
-- F3 Q32 at 28:21
+- F3 (2026-09-15) Q32 at 28:21
   > the average income from being an artist in Boulder is under $19,000.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1701s
-- F4 Q33 at 15:11
+- F4 (2026-09-26) Q33 at 15:11
   > we are facing rising cost of living, job loss, structural deficit, and increased wildfire risk.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=911s
-- F4 Q34 at 26:23
+- F4 (2026-09-26) Q34 at 26:23
   > So the top priority for me is going to be wildfire and climate resilience.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1583s
-- F4 Q35 at 39:31
+- F4 (2026-09-26) Q35 at 39:31
   > I also want to say that we need to continue to support our partners with EFA.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2371s
-- F4 Q36 at 50:25
+- F4 (2026-09-26) Q36 at 50:25
   > I do support this measure, but I also do share concerns.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3025s
-- F4 Q37 at 1:02:07
+- F4 (2026-09-26) Q37 at 1:02:07
   > I live 10 minutes down Broadway to get to my job, and I can't get to work on time with our current public transit system.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3727s
-- F4 Q38 at 1:12:52
+- F4 (2026-09-26) Q38 at 1:12:52
   > I do not think that there's proportionate representation on council currently.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4372s
-- F4 Q38 at 1:13:29 Said YES on a study session on proportional representation.
+- F4 (2026-09-26) Q38 at 1:13:29 Said YES on a study session on proportional representation.
   > I do support us having a study session
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4409s
-- F4 Q39 at 1:30:34 [speaker from speaking order]
+- F4 (2026-09-26) Q39 at 1:30:34 [speaker from speaking order]
   > I'm really happy that we finally get to make a decision about this. I think homes are for people
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5434s Transcript note: Supports implicitly; no explicit yes/no in the transcript.
-- F4 Q40 at 1:38:57
+- F4 (2026-09-26) Q40 at 1:38:57
   > the more equitable strategy is allocating resources to the most high risk areas
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5937s
 
@@ -1547,37 +1547,37 @@ What reporters wrote (the reporter's words, not the candidate's):
   > David Martus is a first-time candidate for Boulder City Council, running on a platform of fiscal stewardship, increasing trust in government and reducing regulation and bureaucracy.
 
 #### At the 2026 forums
-- F2 Q17 at 19:40
+- F2 (2026-09-02) Q17 at 19:40
   > I think that fiscal stewardship is a key trait to bring as part of the city council team.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1180s Transcript note: Name transcribed 'Dave Martis'.
-- F3 Q29 at 6:59
+- F3 (2026-09-15) Q29 at 6:59
   > The second would be to introduce a dashboard where if you're a creative, you're an artist, you can go there
   Watch: https://www.youtube.com/watch?v=Syj4_V5cQOk&t=419s Transcript note: Self-identified as 'Dave Morris' (Whisper).
-- F3 Q32 at 17:35
+- F3 (2026-09-15) Q32 at 17:35
   > fiscal transparency and good stewardship of capital. And why is that important to the arts? Because through that, I think we can make the pie bigger.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1055s
-- F4 Q33 at 16:01
+- F4 (2026-09-26) Q33 at 16:01
   > the superpower I would bring to council is financial acumen.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=961s
-- F4 Q34 at 27:48
+- F4 (2026-09-26) Q34 at 27:48
   > I think the bond issue that's coming up is going to be a no, and it's not a no because people don't agree with supporting these facilities.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1668s
-- F4 Q35 at 40:18
+- F4 (2026-09-26) Q35 at 40:18
   > What are the opportunities there to repurpose them into the type of housing that's needed in the community because the infrastructure is there.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2418s Transcript note: Refers to city properties vacated when offices move to the Western City Campus (Alpine-Balsam).
-- F4 Q36 at 51:28 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q36 at 51:28 Said NO on 2K (the $400 million bond).
   > As I mentioned earlier, I'm a no vote on this.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3088s
-- F4 Q37 at 1:03:07
+- F4 (2026-09-26) Q37 at 1:03:07
   > So we need to measure it. It can't be permanent if it's not going right.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3787s
-- F4 Q38 at 1:14:02
+- F4 (2026-09-26) Q38 at 1:14:02
   > So overall, I think we're representing the community very well.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4442s
-- F4 Q39 at 1:24:55 Said NO on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:24:55 Said NO on 2J (the vacancy tax).
   > No, and it's for the exact second half of the question, the complexity of administrating it.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5095s
-- F4 Q40 at 1:40:26
+- F4 (2026-09-26) Q40 at 1:40:26
   > I think the DDA can help deliver that.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=6026s
 
@@ -1616,52 +1616,52 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Scott Rendleman is a first-time candidate for Boulder City Council running on a platform of climate resilience, particularly wildfire preparedness, stronger trust in government and more affordable housing.
 
 #### At the 2026 forums
-- F1 Q1 at 21:29
+- F1 (2026-08-26) Q1 at 21:29
   > We are headed in the right direction with the community wildfire protection plan.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1289s
-- F1 Q1 at 21:49
+- F1 (2026-08-26) Q1 at 21:49
   > my third priority is to increase affordable housing through increasing the supply.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1309s
-- F1 Q5 at 57:57
+- F1 (2026-08-26) Q5 at 57:57
   > I've come around on that issue because as I have seen buildings along 28 that are higher, we're able to increase the supply of housing.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3477s
-- F1 Q8 at 1:14:56
+- F1 (2026-08-26) Q8 at 1:14:56
   > my initiative for businesses would be to revisit how we structure some form of downtown development before it.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4496s Transcript note: Refers to the Downtown Development Authority (DDA); 'before it' likely 'authority'.
-- F1 Q13 at 1:38:58
+- F1 (2026-08-26) Q13 at 1:38:58
   > I would have an initiative where we look at where can we get savings and make it more affordable for businesses to open.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5938s
-- F3 Q27 at 26:02
+- F3 (2026-09-15) Q27 at 26:02
   > I believe that we need an imitated performance monitor that measures our outcomes on our programs
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1562s Transcript note: Likely 'independent performance monitor' (Whisper).
-- F3 Q32 at 26:39
+- F3 (2026-09-15) Q32 at 26:39
   > Art funding should be transparent so that we can tell our community members when we spend on art funding that it was worthwhile and enriched the community.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1599s
-- F4 Q33 at 17:33
+- F4 (2026-09-26) Q33 at 17:33
   > I will advocate for the people who feel that their voices have not been heard.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1053s
-- F4 Q34 at 28:53
+- F4 (2026-09-26) Q34 at 28:53
   > My priority would be to have a pilot of a performance auditor to see where our programs are working well and where they need improvement.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1733s
-- F4 Q35 at 40:42
+- F4 (2026-09-26) Q35 at 40:42
   > We need to look at those municipal properties that will be going offline and repurpose them for affordable housing.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2442s
-- F4 Q36 at 52:29 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q36 at 52:29 Said NO on 2K (the $400 million bond).
   > I don't support the bond measure. And in fact, if I had been on city council, I would not have voted to submit the bond measure to the Boulder voters.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3149s
-- F4 Q37 at 1:03:41
+- F4 (2026-09-26) Q37 at 1:03:41
   > The way that it's being implemented or planned to be implemented on IRIS is not what North Boulder wants.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3821s
-- F4 Q37 at 1:04:10
+- F4 (2026-09-26) Q37 at 1:04:10
   > I am proposing that we have a trial of the North Boulder lanes where we use cones
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3850s
-- F4 Q38 at 1:14:58
+- F4 (2026-09-26) Q38 at 1:14:58
   > In terms of a study session, I'd be interested in hearing more about whether that would make sense
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4498s
-- F4 Q39 at 1:25:20 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:25:20 Said YES on 2J (the vacancy tax).
   > I do support that measure. We need to disincentivize people from having homes that they don't occupy.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5120s
-- F4 Q40 at 1:31:54
+- F4 (2026-09-26) Q40 at 1:31:54
   > I believe in certain areas it's appropriate to increase our height so that we can have more housing.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5514s
 
@@ -1704,58 +1704,58 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Armed with statistics and a firm stance on vacant commercial and residential buildings, Grano aims to boost economic vitality through the development of affordable housing, “and keeping it occupied.”
 
 #### At the 2026 forums
-- F1 Q1 at 22:27
+- F1 (2026-08-26) Q1 at 22:27
   > in Boulder, a full time minimum wage job pays about 40% of AMI. And only 0.7% of our housing stock is available to that income category.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1347s
-- F1 Q1 at 23:05
+- F1 (2026-08-26) Q1 at 23:05
   > So, no, I can't say we're on the right track, but I believe we can get there and I'm running to be part of that change.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1385s
-- F1 Q4 at 42:33
+- F1 (2026-08-26) Q4 at 42:33
   > I'm not interested in opening up the planning reserve if we're going to get a bunch of luxury townhomes.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=2553s
-- F1 Q14 at 1:43:39
+- F1 (2026-08-26) Q14 at 1:43:39
   > But the most opportunity is in our low density zones. For incremental owner driven housing, this could look like lot splitting
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=6219s
-- F1 Q16 at 2:01:25
+- F1 (2026-08-26) Q16 at 2:01:25
   > we would work really well together in trying to streamline that process and reform Title IX and make it a more predictable process.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=7285s
-- F2 Q17 at 26:09
+- F2 (2026-09-02) Q17 at 26:09
   > We have an influx of big institutional capital like we've never seen before.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1569s
-- F2 Q18 at 36:12
+- F2 (2026-09-02) Q18 at 36:12
   > Our code inadvertently favors the big guy and not the little guy. So yeah, I do support a rewrite and I do support it now.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2172s
-- F4 Q33 at 18:20
+- F4 (2026-09-26) Q33 at 18:20
   > we've built 4,000 units in the last decade, and our non-resident population hasn't grown by one single person.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1100s Transcript note: 'non-resident' likely 'resident' (Whisper); at the Chamber forum she said 'our population has not grown by one single person'.
-- F4 Q33 at 18:30
+- F4 (2026-09-26) Q33 at 18:30
   > pair supply with demand and look at investor-driven acquisitions on the Hill in particular.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1110s
-- F4 Q34 at 29:39
+- F4 (2026-09-26) Q34 at 29:39
   > we've gone from a generative city to an extractive one.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1779s
-- F4 Q34 at 30:17
+- F4 (2026-09-26) Q34 at 30:17
   > I think the DDA was a prime example of really poor outreach and stakeholder engagement.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1817s
-- F4 Q35 at 42:10
+- F4 (2026-09-26) Q35 at 42:10
   > I want to preserve our inclusionary housing requirements.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2530s
-- F4 Q36 at 54:21
+- F4 (2026-09-26) Q36 at 54:21
   > I think we need to go back to the community, get clear on our priorities, and then bring back a smaller, more targeted bond.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3261s
-- F4 Q37 at 1:04:46
+- F4 (2026-09-26) Q37 at 1:04:46
   > I do support the core arterial network. I want to be careful, though, not to spend dollars outside of grant funding.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3886s
-- F4 Q38 at 1:15:34
+- F4 (2026-09-26) Q38 at 1:15:34
   > We don't have proportional representation. I think the question is, what do we do about that? I'm not sure that a study session solves that
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4534s
-- F4 Q39 at 1:25:54
+- F4 (2026-09-26) Q39 at 1:25:54
   > 35% are verifiably second homes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5154s
-- F4 Q39 at 1:25:54 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:25:54 Said YES on 2J (the vacancy tax).
   > Yeah, I absolutely support it.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5154s
-- F4 Q40 at 1:32:33
+- F4 (2026-09-26) Q40 at 1:32:33
   > really changed how I think about how we need to address housing on the hill and protect that neighborhood a little bit more.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5553s
 
@@ -1835,61 +1835,61 @@ What reporters wrote (the reporter's words, not the candidate's):
   > According to Jamieson, he believes the city does need more housing “of diverse types.” He added that there’s a “big leap” between the typically very expensive single-family home in Boulder and the more affordable smaller condos in town.
 
 #### At the 2026 forums
-- F1 Q1 at 23:32
+- F1 (2026-08-26) Q1 at 23:32
   > We have a Kafkaesque sort of process to be able to get approvals for building housing, for opening businesses
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1412s
-- F1 Q1 at 24:01
+- F1 (2026-08-26) Q1 at 24:01
   > we can't do anything about climate change if our city is on fire.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1441s
-- F1 Q3 at 35:52
+- F1 (2026-08-26) Q3 at 35:52
   > we need to be able to strip out a lot of those regulations and make it faster and easier to build more rental properties.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=2152s
-- F1 Q5 at 59:22 [speaker from speaking order]
+- F1 (2026-08-26) Q5 at 59:22 [speaker from speaking order]
   > my opinion has turned, and I don't think that we should take on such a large chunk of debt. I think we should prove first that we can actually execute against smaller projects before we take on bigger ones.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3562s Transcript note: Moderator said only 'Ryan'; Schuchard had already answered in this round, and speaker's bond stance matches Jamieson's.
-- F1 Q14 at 1:44:31
+- F1 (2026-08-26) Q14 at 1:44:31
   > there are opportunities for us to look at conversion of commercial spaces for being unused into residential spaces.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=6271s
-- F2 Q17 at 33:39
+- F2 (2026-09-02) Q17 at 33:39
   > So I want to be able to bring forth a city auditor
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2019s
-- F2 Q19 at 46:20
+- F2 (2026-09-02) Q19 at 46:20
   > it reduces the kinetic energy in the system which calms things down and makes it safer for people trying to turn left,
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=2780s
-- F2 Q22 at 1:09:09
+- F2 (2026-09-02) Q22 at 1:09:09
   > what you'd want to be able to create is an audit committee
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4149s
-- F2 Q23 at 1:19:20
+- F2 (2026-09-02) Q23 at 1:19:20
   > We have a climate tax, and that climate tax currently allocates about $1.5 million for wildfire remediation
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4760s
-- F3 Q26 at 19:29 [speaker from speaking order]
+- F3 (2026-09-15) Q26 at 19:29 [speaker from speaking order]
   > Colorado Springs threw a half million dollars from their DDA towards artist spaces. There's no reason that we shouldn't be able to do that.
   Watch: https://www.youtube.com/watch?v=PlXLjT1gH5U&t=1169s Transcript note: Third of drawn names (Lisa, Benita, Ryan Jameson).
-- F3 Q32 at 15:30
+- F3 (2026-09-15) Q32 at 15:30
   > We say that we value the arts, but we make it hard to open up a gallery.
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=930s
-- F4 Q33 at 19:30
+- F4 (2026-09-26) Q33 at 19:30
   > I'm also pushing to create a independent city auditor, and I'm going to focus significantly on wildfire remediation.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1170s
-- F4 Q34 at 31:24
+- F4 (2026-09-26) Q34 at 31:24
   > We are just one windy day away from our own marshal fire event.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1884s
-- F4 Q35 at 43:05
+- F4 (2026-09-26) Q35 at 43:05
   > if we want to be able to build affordable housing we have to just build it and not spend a ton of time in committee reviewing and double checking
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2585s
-- F4 Q36 at 55:07 Said NO on 2K (the $400 million bond). (Adds he would support smaller, more targeted projects financed by debt.)
+- F4 (2026-09-26) Q36 at 55:07 Said NO on 2K (the $400 million bond). (Adds he would support smaller, more targeted projects financed by debt.)
   > I am against this particular bond measure, but I would be definitely for smaller, more targeted projects that were facilitated through debt.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3307s
-- F4 Q37 at 1:05:58
+- F4 (2026-09-26) Q37 at 1:05:58
   > So in general, I do support the can. I would want it to be executed with somebody else's cash
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3958s
-- F4 Q38 at 1:17:08
+- F4 (2026-09-26) Q38 at 1:17:08
   > I also don't think that we need to strive for proportionality across the board
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4628s
-- F4 Q39 at 1:26:24 Said NO on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:26:24 Said NO on 2J (the vacancy tax).
   > Yeah, I'm against this because I don't think that the juice is worth the squeeze.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5184s
-- F4 Q40 at 1:33:28
+- F4 (2026-09-26) Q40 at 1:33:28
   > a commercial vacancy tax is a penalty, basically kicking somebody who's already down.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5608s
 
@@ -1929,58 +1929,58 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Lynn Segal, a longtime resident and activist, advocated for municipalization and mitigating CU’s impact on overall development.
 
 #### At the 2026 forums
-- F1 Q1 at 24:55
+- F1 (2026-08-26) Q1 at 24:55
   > They're going up to seven stories and it's absolutely unsustainable for us to have this much development.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1495s
-- F1 Q1 at 25:20
+- F1 (2026-08-26) Q1 at 25:20
   > It doesn't matter how much housing you put here. Everyone's going to come and it's going to be higher.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1520s
-- F1 Q5 at 56:58
+- F1 (2026-08-26) Q5 at 56:58
   > I don't want Iran to have nuclear capability. And I don't want Israel to have nuclear capability because we can't afford war anymore.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3418s
-- F1 Q6 at 1:02:14
+- F1 (2026-08-26) Q6 at 1:02:14
   > Public-private partnerships have always kind of disturbed me because it seems to usually be that the private part is making off like a thief.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3734s Transcript note: Moderator's cue ('Lynn, and then Tina') is garbled in the transcript; speaker confirmed by a listener to the recording, 2026-09-29.
-- F1 Q13 at 1:39:36 [speaker from speaking order]
+- F1 (2026-08-26) Q13 at 1:39:36 [speaker from speaking order]
   > I think the DBA wouldn't be necessary if we stopped the war in Iran
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5976s Transcript note: Moderator called 'Scott, Lynn, Taishya' (garbled) then 'Wendy'; second respondent.
-- F3 Q28 at 2:41 [speaker from speaking order]
+- F3 (2026-09-15) Q28 at 2:41 [speaker from speaking order]
   > The planning board is going to approve a density increase at Naropa University in about a half an hour.
   Watch: https://www.youtube.com/watch?v=Syj4_V5cQOk&t=161s Transcript note: Second of drawn names.
-- F3 Q32 at 18:49 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 18:49 [speaker from speaking order]
   > Every development that goes on here just increases the wealth disparity
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1129s Transcript note: Fifth of drawn names.
-- F4 Q33 at 19:58
+- F4 (2026-09-26) Q33 at 19:58
   > And I'm against CU South. I'm for municipalization.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1198s
-- F4 Q33 at 20:38
+- F4 (2026-09-26) Q33 at 20:38
   > $40 million for Alpine Balsam, now $366 million. Not OK.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1238s
-- F4 Q34 at 31:57
+- F4 (2026-09-26) Q34 at 31:57
   > The four bungalows next to the library are going to be demolished for senior affordable housing. This is not okay.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1917s
-- F4 Q35 at 43:44
+- F4 (2026-09-26) Q35 at 43:44
   > There need to be impact fees more inclusionary housing it's 25 percent it should be at least 50 percent.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2624s
-- F4 Q35 at 44:08
+- F4 (2026-09-26) Q35 at 44:08
   > I do not support the downtown development authority
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2648s
-- F4 Q36 at 55:19 Said NO on 2K (the $400 million bond).
+- F4 (2026-09-26) Q36 at 55:19 Said NO on 2K (the $400 million bond).
   > Opposed for all the reasons brought forward.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3319s
-- F4 Q37 at 1:06:22
+- F4 (2026-09-26) Q37 at 1:06:22
   > I'm opposed to the can the way it's going because we're developing this place so fast.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3982s
-- F4 Q37 at 1:06:41
+- F4 (2026-09-26) Q37 at 1:06:41
   > Growth is the problem. Area three, not developable, should not be used.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4001s
-- F4 Q38 at 1:17:37
+- F4 (2026-09-26) Q38 at 1:17:37
   > I don't think people are being represented.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4657s
-- F4 Q39 at 1:26:56
+- F4 (2026-09-26) Q39 at 1:26:56
   > We should have a vacancy tax, but it should be much, much higher.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5216s
-- F4 Q40 at 1:33:50
+- F4 (2026-09-26) Q40 at 1:33:50
   > The wealth disparity in Boulder has eviscerated the middle class, and that's why we are closing our schools.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5630s
 
@@ -2017,52 +2017,52 @@ What reporters wrote (the reporter's words, not the candidate's):
   > Marquis voted against sending the DDA proposal to DDA voters, and noted that she didn’t believe there was sufficient community “buy-in,” in part because of a “compressed timeline” and not enough input from other entities with approved dedicated tax revenues that might have lost funding through tax-increment financing arrangements.
 
 #### At the 2026 forums
-- F1 Q1 at 25:53
+- F1 (2026-08-26) Q1 at 25:53
   > Trying to find more middle income housing, making sure that our climate is resilient, working hard on safety, including safety from wildfire
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=1553s
-- F1 Q6 at 1:03:20
+- F1 (2026-08-26) Q6 at 1:03:20
   > we identified a problem with our unsheltered homeless population and looked to see how we could support them and also maintain our public safety goals.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=3800s Transcript note: Moderator called 'Lynn, and then Tina' (garbled in the transcript; confirmed by a listener).
-- F1 Q9 at 1:23:57 [speaker from speaking order]
+- F1 (2026-08-26) Q9 at 1:23:57 [speaker from speaking order]
   > So I absolutely do want to invest in other ways of transportation.
   Watch: https://www.youtube.com/watch?v=CQlalpB7N5w&t=5037s Transcript note: Third respondent; moderator named Tina immediately after (unpaid-parking remark).
-- F2 Q17 at 23:46
+- F2 (2026-09-02) Q17 at 23:46
   > I think we're creating more transparency and usability in our budget, but we can build a lot more bridges
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=1426s
-- F2 Q20 at 54:46
+- F2 (2026-09-02) Q20 at 54:46
   > we need to look at what the different demands are and go through a prioritization process.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=3286s
-- F2 Q23 at 1:21:53 [speaker from speaking order]
+- F2 (2026-09-02) Q23 at 1:21:53 [speaker from speaking order]
   > We need extensive public outreach on this.
   Watch: https://www.youtube.com/watch?v=gdZzGJNB7g0&t=4913s
-- F3 Q30 at 1:51
+- F3 (2026-09-15) Q30 at 1:51
   > making sure that we have a clear way of identifying our priorities for investment, which types of public private partnerships would we prioritize
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=111s
-- F3 Q32 at 22:34 [speaker from speaking order]
+- F3 (2026-09-15) Q32 at 22:34 [speaker from speaking order]
   > If I'm reelected, I hope to continue to focus on how we prioritize funding
   Watch: https://www.youtube.com/watch?v=1At-W2cR9Mk&t=1354s Transcript note: Third of drawn names (Duran, Jacobs, Marquis, La Grave, Brockett).
-- F4 Q33 at 21:25
+- F4 (2026-09-26) Q33 at 21:25
   > The other piece that I am focused on is more sticky housing. This is the kind of housing where someone can stay, not just rent for one to two years
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1285s
-- F4 Q34 at 32:50
+- F4 (2026-09-26) Q34 at 32:50
   > I want to create a capital infrastructure advisory panel with community members
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=1970s
-- F4 Q35 at 44:42
+- F4 (2026-09-26) Q35 at 44:42
   > I support shifting to the below 30 percent housing type.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2682s
-- F4 Q36 at 56:22 Said YES on 2K (the $400 million bond).
+- F4 (2026-09-26) Q36 at 56:22 Said YES on 2K (the $400 million bond).
   > Yeah, I support the bond and was one of the members of council to put it on the ballot.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3382s
-- F4 Q37 at 1:07:24 Said YES on the Core Arterial Network / bus-only lanes.
+- F4 (2026-09-26) Q37 at 1:07:24 Said YES on the Core Arterial Network / bus-only lanes.
   > So first of all, I do support the dedicated bus lanes.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4044s
-- F4 Q38 at 1:18:50
+- F4 (2026-09-26) Q38 at 1:18:50
   > I am open to a study session on that specific methodology.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=4730s
-- F4 Q39 at 1:27:34 Said YES on 2J (the vacancy tax).
+- F4 (2026-09-26) Q39 at 1:27:34 Said YES on 2J (the vacancy tax).
   > Yeah, I support this tax and actually it was part of my campaign three years ago.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5254s
-- F4 Q40 at 1:34:49
+- F4 (2026-09-26) Q40 at 1:34:49
   > I think that a limited view of Area 3 and starting to accelerate that process is a good idea.
   Watch: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5689s
 
@@ -2118,27 +2118,27 @@ Who supports or opposes it:
 - Supports: Vacancy to Vitality [endorser's own statement] Source: https://www.bouldervacancytax.org/
 - Supports: Yellow Scene Editorial Board [endorser's own statement] Source: https://yellowscene.com/2026/10/09/2026-election-guide/, 2026-10-09
 What candidates said about 2J at forums (words are in each candidate's section):
-- Dave Martus, F4 Q39. Said NO. Watch at 1:24:55: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5095s
-- Scott Rendleman, F4 Q39. Said YES. Watch at 1:25:20: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5120s
-- Jill Grano, F4 Q39. No yes/no label. Watch at 1:25:54: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5154s
-- Jill Grano, F4 Q39. Said YES. Watch at 1:25:54: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5154s
-- Ryan Jamieson, F4 Q39. Said NO. Watch at 1:26:24: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5184s
-- Lynn Segal, F4 Q39. No yes/no label. Watch at 1:26:56: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5216s
-- Tina Marquis, F4 Q39. Said YES. Watch at 1:27:34: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5254s
-- Lee Gilbert, F4 Q39. No yes/no label. Watch at 1:28:03: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5283s
-- Sam Fuqua, F4 Q39. Said YES. Watch at 1:28:19: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5299s
-- Ryan Schuchard, F4 Q39. Said YES. Watch at 1:28:56: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5336s
-- Jamillah Richmond, F4 Q39. Said YES. Watch at 1:29:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5369s
-- Benita Duran, F4 Q39. Said NO. Watch at 1:29:53: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5393s
-- Rachel Rose Isaacson, F4 Q39. No yes/no label. [speaker from speaking order] Watch at 1:30:34: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5434s
-- Lisa Ann Jacobs, F4 Q46. Said NO. Watch at 2:47:30: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10050s
-- Taishya Adams, F4 Q46. Said YES. Watch at 2:48:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10109s
-- Aaron Brockett, F4 Q46. Said YES. Watch at 2:49:30: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10170s
-- Aaron Brockett, F4 Q46. No yes/no label. Watch at 2:49:42: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10182s
-- Jameson Goldstein, F4 Q46. Said YES. Watch at 2:50:37: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10237s
-- Fred Smith, F4 Q46. No yes/no label. Watch at 2:51:19: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10279s
-- Fred Smith, F4 Q46. No yes/no label. Watch at 2:51:39: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10299s
-- Aquiles La Grave, F4 Q46. No yes/no label. Watch at 2:52:10: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10330s
+- Dave Martus, F4 (2026-09-26) Q39. Said NO. Watch at 1:24:55: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5095s
+- Scott Rendleman, F4 (2026-09-26) Q39. Said YES. Watch at 1:25:20: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5120s
+- Jill Grano, F4 (2026-09-26) Q39. No yes/no label. Watch at 1:25:54: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5154s
+- Jill Grano, F4 (2026-09-26) Q39. Said YES. Watch at 1:25:54: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5154s
+- Ryan Jamieson, F4 (2026-09-26) Q39. Said NO. Watch at 1:26:24: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5184s
+- Lynn Segal, F4 (2026-09-26) Q39. No yes/no label. Watch at 1:26:56: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5216s
+- Tina Marquis, F4 (2026-09-26) Q39. Said YES. Watch at 1:27:34: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5254s
+- Lee Gilbert, F4 (2026-09-26) Q39. No yes/no label. Watch at 1:28:03: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5283s
+- Sam Fuqua, F4 (2026-09-26) Q39. Said YES. Watch at 1:28:19: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5299s
+- Ryan Schuchard, F4 (2026-09-26) Q39. Said YES. Watch at 1:28:56: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5336s
+- Jamillah Richmond, F4 (2026-09-26) Q39. Said YES. Watch at 1:29:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5369s
+- Benita Duran, F4 (2026-09-26) Q39. Said NO. Watch at 1:29:53: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5393s
+- Rachel Rose Isaacson, F4 (2026-09-26) Q39. No yes/no label. [speaker from speaking order] Watch at 1:30:34: https://www.youtube.com/watch?v=pT9IeGL6deg&t=5434s
+- Lisa Ann Jacobs, F4 (2026-09-26) Q46. Said NO. Watch at 2:47:30: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10050s
+- Taishya Adams, F4 (2026-09-26) Q46. Said YES. Watch at 2:48:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10109s
+- Aaron Brockett, F4 (2026-09-26) Q46. Said YES. Watch at 2:49:30: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10170s
+- Aaron Brockett, F4 (2026-09-26) Q46. No yes/no label. Watch at 2:49:42: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10182s
+- Jameson Goldstein, F4 (2026-09-26) Q46. Said YES. Watch at 2:50:37: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10237s
+- Fred Smith, F4 (2026-09-26) Q46. No yes/no label. Watch at 2:51:19: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10279s
+- Fred Smith, F4 (2026-09-26) Q46. No yes/no label. Watch at 2:51:39: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10299s
+- Aquiles La Grave, F4 (2026-09-26) Q46. No yes/no label. Watch at 2:52:10: https://www.youtube.com/watch?v=pT9IeGL6deg&t=10330s
 What we don't know yet: No verified, named opposition organization for 2J or 2L was found as of September 24; an empty opponents list does not imply unanimous support.
 
 ### 2K: Building Boulder Together: Recreation and Safety Bond
@@ -2164,32 +2164,32 @@ Who supports or opposes it:
 - Reporter summary (Boulder Reporting Lab, 2026-08-30): All five incumbent candidates support the measure, citing more than $400 million in deferred maintenance; Sam Fuqua and Jamillah Richmond also support it. A reporter's summary of the field, not each candidate's own answer. Source: https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/
 - Reporter summary (Boulder Reporting Lab, 2026-08-30): Many challengers oppose the measure, arguing voters have not received enough information about how the money would be spent. A reporter's summary of the field, not each candidate's own answer. Source: https://boulderreportinglab.org/2026/08/30/meet-the-19-candidates-running-for-boulder-mayor-and-city-council-in-2026/
 What candidates said about 2K at forums (words are in each candidate's section):
-- Fred Smith, F1 Q7. No yes/no label. Watch at 1:10:26: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4226s
-- Aquiles La Grave, F1 Q7. No yes/no label. Watch at 1:11:21: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4281s
-- Aquiles La Grave, F1 Q7. No yes/no label. Watch at 1:11:36: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4296s
-- Jamillah Richmond, F4 Q36. Said NO. Watch at 48:46: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2926s
-- Benita Duran, F4 Q36. Said NO. Watch at 49:38: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2978s
-- Rachel Rose Isaacson, F4 Q36. No yes/no label. Watch at 50:25: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3025s
-- Dave Martus, F4 Q36. Said NO. Watch at 51:28: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3088s
-- Scott Rendleman, F4 Q36. Said NO. Watch at 52:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3149s
-- Jill Grano, F4 Q36. No yes/no label. Watch at 54:21: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3261s
-- Ryan Jamieson, F4 Q36. Said NO. Watch at 55:07: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3307s
-- Lynn Segal, F4 Q36. Said NO. Watch at 55:19: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3319s
-- Tina Marquis, F4 Q36. Said YES. Watch at 56:22: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3382s
-- Lee Gilbert, F4 Q36. Said NO. Watch at 57:27: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3447s
-- Sam Fuqua, F4 Q36. No yes/no label. Watch at 58:13: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3493s
-- Ryan Schuchard, F4 Q36. No yes/no label. Watch at 59:53: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3593s
-- Ryan Schuchard, F4 Q36. No yes/no label. Watch at 1:00:04: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3604s
-- Jameson Goldstein, F4 Q44. Said NO. Watch at 2:28:01: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8881s
-- Jameson Goldstein, F4 Q44. No yes/no label. Watch at 2:28:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8909s
-- Fred Smith, F4 Q44. No yes/no label. Watch at 2:29:21: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8961s
-- Aquiles La Grave, F4 Q44. No yes/no label. Watch at 2:30:09: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9009s
-- Aquiles La Grave, F4 Q44. Said NO. Watch at 2:30:39: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9039s
-- Lisa Ann Jacobs, F4 Q44. No yes/no label. Watch at 2:30:52: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9052s
-- Taishya Adams, F4 Q44. No yes/no label. Watch at 2:31:48: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9108s
-- Taishya Adams, F4 Q44. No yes/no label. Watch at 2:32:12: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9132s
-- Aaron Brockett, F4 Q44. Said YES. Watch at 2:32:49: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9169s
-- Aaron Brockett, F4 Q44. No yes/no label. Watch at 2:33:07: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9187s
+- Fred Smith, F1 (2026-08-26) Q7. No yes/no label. Watch at 1:10:26: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4226s
+- Aquiles La Grave, F1 (2026-08-26) Q7. No yes/no label. Watch at 1:11:21: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4281s
+- Aquiles La Grave, F1 (2026-08-26) Q7. No yes/no label. Watch at 1:11:36: https://www.youtube.com/watch?v=CQlalpB7N5w&t=4296s
+- Jamillah Richmond, F4 (2026-09-26) Q36. Said NO. Watch at 48:46: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2926s
+- Benita Duran, F4 (2026-09-26) Q36. Said NO. Watch at 49:38: https://www.youtube.com/watch?v=pT9IeGL6deg&t=2978s
+- Rachel Rose Isaacson, F4 (2026-09-26) Q36. No yes/no label. Watch at 50:25: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3025s
+- Dave Martus, F4 (2026-09-26) Q36. Said NO. Watch at 51:28: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3088s
+- Scott Rendleman, F4 (2026-09-26) Q36. Said NO. Watch at 52:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3149s
+- Jill Grano, F4 (2026-09-26) Q36. No yes/no label. Watch at 54:21: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3261s
+- Ryan Jamieson, F4 (2026-09-26) Q36. Said NO. Watch at 55:07: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3307s
+- Lynn Segal, F4 (2026-09-26) Q36. Said NO. Watch at 55:19: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3319s
+- Tina Marquis, F4 (2026-09-26) Q36. Said YES. Watch at 56:22: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3382s
+- Lee Gilbert, F4 (2026-09-26) Q36. Said NO. Watch at 57:27: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3447s
+- Sam Fuqua, F4 (2026-09-26) Q36. No yes/no label. Watch at 58:13: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3493s
+- Ryan Schuchard, F4 (2026-09-26) Q36. No yes/no label. Watch at 59:53: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3593s
+- Ryan Schuchard, F4 (2026-09-26) Q36. No yes/no label. Watch at 1:00:04: https://www.youtube.com/watch?v=pT9IeGL6deg&t=3604s
+- Jameson Goldstein, F4 (2026-09-26) Q44. Said NO. Watch at 2:28:01: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8881s
+- Jameson Goldstein, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:28:29: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8909s
+- Fred Smith, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:29:21: https://www.youtube.com/watch?v=pT9IeGL6deg&t=8961s
+- Aquiles La Grave, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:30:09: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9009s
+- Aquiles La Grave, F4 (2026-09-26) Q44. Said NO. Watch at 2:30:39: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9039s
+- Lisa Ann Jacobs, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:30:52: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9052s
+- Taishya Adams, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:31:48: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9108s
+- Taishya Adams, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:32:12: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9132s
+- Aaron Brockett, F4 (2026-09-26) Q44. Said YES. Watch at 2:32:49: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9169s
+- Aaron Brockett, F4 (2026-09-26) Q44. No yes/no label. Watch at 2:33:07: https://www.youtube.com/watch?v=pT9IeGL6deg&t=9187s
 What we don't know yet: Final August 20 roll-call vote for 2K not independently confirmed from minutes; only the August 6 unanimous referral and final text are confirmed here.
 
 ### 2L: Collective bargaining for firefighters (new Charter §73)
