@@ -1,5 +1,5 @@
 {
-  "retrieved_on": "2026-10-12",
+  "retrieved_on": "2026-10-13",
   "summary_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
   "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
   "list_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
@@ -25,6 +25,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2855",
           "submitted_on": "2026-08-26",
+          "submitted_at": "2026-08-26 15:12:00.527",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -40,6 +41,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3869",
           "submitted_on": "2026-09-21",
+          "submitted_at": "2026-09-21 12:01:15.113",
           "balance": {
             "contributions": 400.0,
             "matching_received": 0.0,
@@ -55,6 +57,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3904",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 22:33:31.953",
           "balance": {
             "contributions": 600.0,
             "matching_received": 0.0,
@@ -217,6 +220,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2839",
           "submitted_on": "2026-08-13",
+          "submitted_at": "2026-08-13 16:19:53.710",
           "balance": {
             "contributions": 8975.0,
             "matching_received": 8975.0,
@@ -232,6 +236,7 @@
           "label": "Additional Matching Funds",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2843",
           "submitted_on": "2026-09-09",
+          "submitted_at": "2026-09-09 13:42:10.517",
           "balance": {
             "contributions": 12366.0,
             "matching_received": 12366.0,
@@ -247,6 +252,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3878",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 21:52:38.790",
           "balance": {
             "contributions": 12366.0,
             "matching_received": 12366.0,
@@ -262,6 +268,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3900",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 16:19:32.773",
           "balance": {
             "contributions": 12366.0,
             "matching_received": 12366.0,
@@ -2311,6 +2318,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2857",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 19:14:36.177",
           "balance": {
             "contributions": 6144.72,
             "matching_received": 0.0,
@@ -2326,6 +2334,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3880",
           "submitted_on": "2026-09-25",
+          "submitted_at": "2026-09-25 17:04:30.020",
           "balance": {
             "contributions": 20729.3,
             "matching_received": 0.0,
@@ -2341,6 +2350,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3901",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 21:49:52.847",
           "balance": {
             "contributions": 30164.25,
             "matching_received": 0.0,
@@ -6262,6 +6272,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2838",
           "submitted_on": "2026-08-10",
+          "submitted_at": "2026-08-10 15:56:53.207",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -6277,6 +6288,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2848",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 09:01:20.687",
           "balance": {
             "contributions": 7682.06,
             "matching_received": 6800.0,
@@ -6292,6 +6304,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3887",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 09:05:18.257",
           "balance": {
             "contributions": 8120.0,
             "matching_received": 7950.0,
@@ -7966,6 +7979,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2854",
           "submitted_on": "2026-08-27",
+          "submitted_at": "2026-08-27 09:23:07.317",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -7981,6 +7995,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2859",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 12:30:59.290",
           "balance": {
             "contributions": 2430.0,
             "matching_received": 2330.0,
@@ -7996,6 +8011,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3879",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 16:35:48.823",
           "balance": {
             "contributions": 3965.0,
             "matching_received": 3865.0,
@@ -8887,6 +8903,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2858",
           "submitted_on": "2026-08-28",
+          "submitted_at": "2026-08-28 16:52:58.210",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -8902,6 +8919,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3883",
           "submitted_on": "2026-09-27",
+          "submitted_at": "2026-09-27 16:43:30.880",
           "balance": {
             "contributions": 239.86,
             "matching_received": 0.0,
@@ -8917,6 +8935,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3889",
           "submitted_on": "2026-10-04",
+          "submitted_at": "2026-10-04 16:24:31.020",
           "balance": {
             "contributions": 239.86,
             "matching_received": 0.0,
@@ -9037,6 +9056,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2835",
           "submitted_on": "2026-08-09",
+          "submitted_at": "2026-08-09 17:49:59.250",
           "balance": {
             "contributions": 6293.16,
             "matching_received": 6176.0,
@@ -9052,6 +9072,7 @@
           "label": "Additional Matching Funds",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2853",
           "submitted_on": "2026-08-26",
+          "submitted_at": "2026-08-26 21:10:58.310",
           "balance": {
             "contributions": 8418.16,
             "matching_received": 8301.0,
@@ -9067,6 +9088,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3866",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 22:45:03.097",
           "balance": {
             "contributions": 11721.0,
             "matching_received": 11721.0,
@@ -9082,6 +9104,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3888",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 22:32:05.510",
           "balance": {
             "contributions": 11971.0,
             "matching_received": 11971.0,
@@ -11611,6 +11634,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2841",
           "submitted_on": "2026-08-14",
+          "submitted_at": "2026-08-14 13:45:23.307",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -11626,6 +11650,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3877",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 19:42:20.527",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -11641,6 +11666,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3903",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 19:48:14.423",
           "balance": {
             "contributions": 1075.0,
             "matching_received": 0.0,
@@ -11731,18 +11757,19 @@
       "clerk_candidate": "Ryan Jamieson",
       "person": "Ryan Jamieson",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=312",
-      "contributions_total": 11125.0,
-      "expenditures_total": 3341.44,
-      "matching_received": 11050.0,
+      "contributions_total": 11800.0,
+      "expenditures_total": 4193.33,
+      "matching_received": 11725.0,
       "in_kind": 0.0,
-      "cash_on_hand": 18833.56,
-      "reported_on": "2026-10-07",
+      "cash_on_hand": 19331.67,
+      "reported_on": "2026-10-12",
       "statements": [
         {
           "statement_id": 2840,
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2840",
           "submitted_on": "2026-08-14",
+          "submitted_at": "2026-08-14 10:30:55.480",
           "balance": {
             "contributions": 50.0,
             "matching_received": 0.0,
@@ -11758,6 +11785,7 @@
           "label": "Additional Matching Funds",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3859",
           "submitted_on": "2026-09-17",
+          "submitted_at": "2026-09-17 09:57:44.490",
           "balance": {
             "contributions": 9325.0,
             "matching_received": 9275.0,
@@ -11773,6 +11801,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3871",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 12:08:46.903",
           "balance": {
             "contributions": 9675.0,
             "matching_received": 9625.0,
@@ -11788,6 +11817,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3905",
           "submitted_on": "2026-10-07",
+          "submitted_at": "2026-10-07 06:41:52.840",
           "balance": {
             "contributions": 11125.0,
             "matching_received": 11050.0,
@@ -11797,6 +11827,22 @@
           },
           "n_contributions": 18,
           "n_expenditures": 7
+        },
+        {
+          "statement_id": 3914,
+          "label": "21st day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3914",
+          "submitted_on": "2026-10-12",
+          "submitted_at": "2026-10-12 13:21:25.037",
+          "balance": {
+            "contributions": 11800.0,
+            "matching_received": 11725.0,
+            "in_kind": 0.0,
+            "expenditures": 4193.33,
+            "cash_on_hand": 19331.67
+          },
+          "n_contributions": 8,
+          "n_expenditures": 3
         }
       ],
       "contributions": [
@@ -13299,6 +13345,102 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28707,
           "amends_id": null
+        },
+        {
+          "last_name": "Burrell",
+          "first_name": "Buzz",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-07",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 25.0,
+          "clerk_item_id": 28734,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stein",
+          "first_name": "Elizabeth",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-07",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28735,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stamborski",
+          "first_name": "Peter",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-08",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28736,
+          "amends_id": null
+        },
+        {
+          "last_name": "Stein",
+          "first_name": "Charles",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-08",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28737,
+          "amends_id": null
+        },
+        {
+          "last_name": "Rassiwalla",
+          "first_name": "Maria",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-09",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28738,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shanks",
+          "first_name": "Pat",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-10",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28739,
+          "amends_id": null
+        },
+        {
+          "last_name": "Fisher",
+          "first_name": "Tobey",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-11",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28740,
+          "amends_id": null
+        },
+        {
+          "last_name": "Ainslie",
+          "first_name": "Erika",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-11",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28741,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -13454,6 +13596,33 @@
           "amount": 44.22,
           "clerk_item_id": 9139,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Campaign Verify",
+          "purpose": "Text messaging registration",
+          "occurred_on": "2026-10-06",
+          "amount": 95.0,
+          "clerk_item_id": 9153,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "FedEx Office",
+          "purpose": "Printing",
+          "occurred_on": "2026-10-06",
+          "amount": 556.89,
+          "clerk_item_id": 9154,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Google",
+          "purpose": "Online Ads",
+          "occurred_on": "2026-10-08",
+          "amount": 200.0,
+          "clerk_item_id": 9155,
+          "amends_id": null
         }
       ]
     },
@@ -13477,6 +13646,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2847",
           "submitted_on": "2026-08-20",
+          "submitted_at": "2026-08-20 23:34:23.670",
           "balance": {
             "contributions": 1935.0,
             "matching_received": 1915.0,
@@ -13492,6 +13662,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3865",
           "submitted_on": "2026-09-25",
+          "submitted_at": "2026-09-25 13:05:13.663",
           "balance": {
             "contributions": 6806.37,
             "matching_received": 6366.37,
@@ -13507,6 +13678,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3897",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 23:11:25.397",
           "balance": {
             "contributions": 7366.37,
             "matching_received": 6851.37,
@@ -15127,18 +15299,20 @@
       "clerk_candidate": "Jill Grano",
       "person": "Jill Grano",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=309",
-      "contributions_total": 11176.54,
-      "expenditures_total": 3520.64,
-      "matching_received": 11182.62,
+      "contributions_total": 12335.02,
+      "expenditures_total": 8729.5,
+      "matching_received": 12341.1,
       "in_kind": 0.0,
-      "cash_on_hand": 18838.52,
-      "reported_on": "2026-09-22",
+      "cash_on_hand": 15946.62,
+      "reported_on": "2026-10-09",
+      "filing_note": "As filed, the committee submitted its 42nd day before election report on Oct. 9, 2026, after its 28th day before election report; totals follow the later submission, as the clerk summary does.",
       "statements": [
         {
           "statement_id": 2836,
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2836",
           "submitted_on": "2026-08-11",
+          "submitted_at": "2026-08-11 16:47:09.547",
           "balance": {
             "contributions": 7651.59,
             "matching_received": 7651.59,
@@ -15154,6 +15328,7 @@
           "label": "Additional Matching Funds",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2851",
           "submitted_on": "2026-08-25",
+          "submitted_at": "2026-08-25 13:11:47.503",
           "balance": {
             "contributions": 8894.82,
             "matching_received": 8894.82,
@@ -15165,16 +15340,33 @@
           "n_expenditures": 3
         },
         {
+          "statement_id": 3909,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3909",
+          "submitted_on": "2026-10-09",
+          "submitted_at": "2026-10-09 16:11:25.910",
+          "balance": {
+            "contributions": 10053.3,
+            "matching_received": 10053.3,
+            "in_kind": 0.0,
+            "expenditures": 6052.39,
+            "cash_on_hand": 14054.21
+          },
+          "n_contributions": 15,
+          "n_expenditures": 7
+        },
+        {
           "statement_id": 3874,
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3874",
-          "submitted_on": "2026-09-22",
+          "submitted_on": "2026-10-09",
+          "submitted_at": "2026-10-09 16:11:58.850",
           "balance": {
-            "contributions": 11176.54,
-            "matching_received": 11182.62,
+            "contributions": 12335.02,
+            "matching_received": 12341.1,
             "in_kind": 0.0,
-            "expenditures": 3520.64,
-            "cash_on_hand": 18838.52
+            "expenditures": 8729.5,
+            "cash_on_hand": 15946.62
           },
           "n_contributions": 33,
           "n_expenditures": 7
@@ -17016,6 +17208,186 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28271,
           "amends_id": null
+        },
+        {
+          "last_name": "Drake",
+          "first_name": "Bob",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 53.04,
+          "match_amount": 53.04,
+          "ytd_amount": 53.04,
+          "clerk_item_id": 28713,
+          "amends_id": null
+        },
+        {
+          "last_name": "Beers",
+          "first_name": "Bryan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28715,
+          "amends_id": null
+        },
+        {
+          "last_name": "Arnst",
+          "first_name": "Adrienne",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 26.68,
+          "match_amount": 26.68,
+          "ytd_amount": 26.68,
+          "clerk_item_id": 28716,
+          "amends_id": null
+        },
+        {
+          "last_name": "DeAngelo",
+          "first_name": "Cecily",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 53.04,
+          "match_amount": 53.04,
+          "ytd_amount": 53.04,
+          "clerk_item_id": 28717,
+          "amends_id": null
+        },
+        {
+          "last_name": "Morzel",
+          "first_name": "Lisa",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28726,
+          "amends_id": null
+        },
+        {
+          "last_name": "Jacobson",
+          "first_name": "Eric",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28718,
+          "amends_id": null
+        },
+        {
+          "last_name": "Sparn",
+          "first_name": "Stephen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28719,
+          "amends_id": null
+        },
+        {
+          "last_name": "Mayfield",
+          "first_name": "Lyra",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-30",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28720,
+          "amends_id": null
+        },
+        {
+          "last_name": "Feldman",
+          "first_name": "Eli",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28721,
+          "amends_id": null
+        },
+        {
+          "last_name": "Aizenman",
+          "first_name": "Daniel",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-02",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28722,
+          "amends_id": null
+        },
+        {
+          "last_name": "Myers",
+          "first_name": "Ben",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 53.04,
+          "match_amount": 53.04,
+          "ytd_amount": 53.04,
+          "clerk_item_id": 28723,
+          "amends_id": null
+        },
+        {
+          "last_name": "Query",
+          "first_name": "Dave",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28724,
+          "amends_id": null
+        },
+        {
+          "last_name": "Derichsweiler",
+          "first_name": "Dana",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 26.68,
+          "match_amount": 26.68,
+          "ytd_amount": 26.68,
+          "clerk_item_id": 28725,
+          "amends_id": null
+        },
+        {
+          "last_name": "Morehouse",
+          "first_name": "Bob",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-09",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28727,
+          "amends_id": null
+        },
+        {
+          "last_name": "Oreck",
+          "first_name": "Charlotte",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-09",
+          "amount": 96.0,
+          "match_amount": 96.0,
+          "ytd_amount": 96.0,
+          "clerk_item_id": 28728,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -17078,7 +17450,7 @@
           "last_name": "Allegra",
           "purpose": "Yard Signs",
           "occurred_on": "2026-08-19",
-          "amount": 1023.16,
+          "amount": 937.0,
           "clerk_item_id": 8992,
           "amends_id": null
         },
@@ -17098,6 +17470,15 @@
           "occurred_on": "2026-08-29",
           "amount": 293.85,
           "clerk_item_id": 8995,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Hazels",
+          "purpose": "Beverages for kickoff",
+          "occurred_on": "2026-08-29",
+          "amount": 194.23,
+          "clerk_item_id": 9149,
           "amends_id": null
         },
         {
@@ -17135,10 +17516,61 @@
           "amount": 143.51,
           "clerk_item_id": 8991,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yellow Scene Magazine",
+          "purpose": "Advertising in Election Guide",
+          "occurred_on": "2026-09-30",
+          "amount": 969.0,
+          "clerk_item_id": 9146,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "D K Printing Inc.",
+          "purpose": "Literature Printing",
+          "occurred_on": "2026-10-02",
+          "amount": 163.79,
+          "clerk_item_id": 9143,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Social Media Ads",
+          "occurred_on": "2026-10-02",
+          "amount": 534.46,
+          "clerk_item_id": 9144,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Allegra Marketing and Print Mail",
+          "purpose": "Campaign Signs",
+          "occurred_on": "2026-10-03",
+          "amount": 937.0,
+          "clerk_item_id": 9148,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Campaign Verify, Inc.",
+          "purpose": "Verification Site for Texting Platform",
+          "occurred_on": "2026-10-05",
+          "amount": 400.0,
+          "clerk_item_id": 9145,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "D K Printing Inc.",
+          "purpose": "Campaign Literature",
+          "occurred_on": "2026-10-08",
+          "amount": 2096.54,
+          "clerk_item_id": 9147,
+          "amends_id": null
         }
-      ],
-      "listing_omits": [
-        3874
       ]
     },
     {
@@ -17161,6 +17593,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2846",
           "submitted_on": "2026-08-24",
+          "submitted_at": "2026-08-24 23:02:41.350",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -17176,6 +17609,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3882",
           "submitted_on": "2026-09-24",
+          "submitted_at": "2026-09-24 12:46:39.100",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -17191,6 +17625,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3910",
           "submitted_on": "2026-10-09",
+          "submitted_at": "2026-10-09 09:54:03.430",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -17235,6 +17670,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2833",
           "submitted_on": "2026-08-10",
+          "submitted_at": "2026-08-10 14:55:11.237",
           "balance": {
             "contributions": 5397.17,
             "matching_received": 5201.0,
@@ -17250,6 +17686,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3867",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 22:23:28.733",
           "balance": {
             "contributions": 7430.65,
             "matching_received": 7141.0,
@@ -17265,6 +17702,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3895",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 13:45:16.963",
           "balance": {
             "contributions": 7654.35,
             "matching_received": 7346.0,
@@ -19542,6 +19980,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2856",
           "submitted_on": "2026-08-28",
+          "submitted_at": "2026-08-28 15:45:44.490",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -19557,6 +19996,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3860",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 14:32:03.230",
           "balance": {
             "contributions": 3150.0,
             "matching_received": 0.0,
@@ -19572,6 +20012,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3885",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 09:37:23.970",
           "balance": {
             "contributions": 3600.0,
             "matching_received": 0.0,
@@ -19929,6 +20370,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2845",
           "submitted_on": "2026-08-26",
+          "submitted_at": "2026-08-26 16:17:13.847",
           "balance": {
             "contributions": 1560.86,
             "matching_received": 1160.86,
@@ -19944,6 +20386,7 @@
           "label": "Additional Matching Funds",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2852",
           "submitted_on": "2026-08-26",
+          "submitted_at": "2026-08-26 16:53:52.320",
           "balance": {
             "contributions": 7761.0,
             "matching_received": 7361.0,
@@ -19959,6 +20402,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3868",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 09:38:41.747",
           "balance": {
             "contributions": 9781.0,
             "matching_received": 9381.0,
@@ -19974,6 +20418,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3890",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 08:11:48.633",
           "balance": {
             "contributions": 10096.0,
             "matching_received": 9696.0,
@@ -22032,6 +22477,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2850",
           "submitted_on": "2026-08-26",
+          "submitted_at": "2026-08-26 10:24:36.200",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -22047,6 +22493,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3862",
           "submitted_on": "2026-09-15",
+          "submitted_at": "2026-09-15 15:40:06.287",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -22062,6 +22509,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3908",
           "submitted_on": "2026-10-08",
+          "submitted_at": "2026-10-08 19:53:14.173",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -22096,6 +22544,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2834",
           "submitted_on": "2026-08-09",
+          "submitted_at": "2026-08-09 15:19:44.027",
           "balance": {
             "contributions": 9705.0,
             "matching_received": 9705.0,
@@ -22111,6 +22560,7 @@
           "label": "Additional Matching Funds",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2842",
           "submitted_on": "2026-08-18",
+          "submitted_at": "2026-08-18 09:19:52.267",
           "balance": {
             "contributions": 12555.0,
             "matching_received": 12366.0,
@@ -22126,6 +22576,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3884",
           "submitted_on": "2026-09-28",
+          "submitted_at": "2026-09-28 15:17:31.723",
           "balance": {
             "contributions": 12555.0,
             "matching_received": 12366.0,
@@ -22141,6 +22592,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3898",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 10:23:26.420",
           "balance": {
             "contributions": 12555.0,
             "matching_received": 12366.0,
@@ -24037,6 +24489,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2844",
           "submitted_on": "2026-08-18",
+          "submitted_at": "2026-08-18 17:27:27.973",
           "balance": {
             "contributions": 8949.13,
             "matching_received": 8949.12,
@@ -24052,6 +24505,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3872",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 16:49:57.073",
           "balance": {
             "contributions": 10865.64,
             "matching_received": 10865.63,
@@ -24067,6 +24521,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3892",
           "submitted_on": "2026-10-05",
+          "submitted_at": "2026-10-05 20:33:14.983",
           "balance": {
             "contributions": 11544.56,
             "matching_received": 11544.55,
@@ -25867,6 +26322,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2837",
           "submitted_on": "2026-08-10",
+          "submitted_at": "2026-08-10 20:09:05.610",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
@@ -25882,6 +26338,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3864",
           "submitted_on": "2026-09-25",
+          "submitted_at": "2026-09-25 18:12:06.470",
           "balance": {
             "contributions": 6781.62,
             "matching_received": 6781.42,
@@ -25897,6 +26354,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3902",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 21:58:44.920",
           "balance": {
             "contributions": 8291.62,
             "matching_received": 8291.42,
@@ -27874,6 +28332,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2849",
           "submitted_on": "2026-08-24",
+          "submitted_at": "2026-08-24 13:25:58.523",
           "balance": {
             "contributions": 1285.0,
             "in_kind": 0.0,
@@ -27888,6 +28347,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3881",
           "submitted_on": "2026-09-24",
+          "submitted_at": "2026-09-24 08:25:04.790",
           "balance": {
             "contributions": 2935.0,
             "in_kind": 0.0,
@@ -28421,6 +28881,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3873",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 15:26:37.390",
           "balance": {
             "contributions": 200.0,
             "in_kind": 0.0,
@@ -28435,6 +28896,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3893",
           "submitted_on": "2026-10-05",
+          "submitted_at": "2026-10-05 20:12:50.410",
           "balance": {
             "contributions": 200.0,
             "in_kind": 0.0,
@@ -28493,6 +28955,7 @@
           "label": "Independent Expenditure",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3907",
           "submitted_on": "2026-10-07",
+          "submitted_at": "2026-10-07 21:47:04.180",
           "balance": {},
           "n_contributions": 0,
           "n_expenditures": 1
@@ -28531,6 +28994,7 @@
           "label": "Independent Expenditure",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3861",
           "submitted_on": "2026-09-14",
+          "submitted_at": "2026-09-14 14:56:17.387",
           "balance": {},
           "n_contributions": 0,
           "n_expenditures": 1
@@ -28540,6 +29004,7 @@
           "label": "Independent Expenditure",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3876",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 18:51:09.240",
           "balance": {},
           "n_contributions": 0,
           "n_expenditures": 0
@@ -28549,6 +29014,7 @@
           "label": "Independent Expenditure",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3886",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 07:14:18.927",
           "balance": {},
           "n_contributions": 0,
           "n_expenditures": 3
@@ -28614,6 +29080,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2831",
           "submitted_on": "2026-04-30",
+          "submitted_at": "2026-04-30 13:20:06.093",
           "balance": {
             "contributions": 242.0,
             "in_kind": 242.0,
@@ -28628,6 +29095,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2832",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 21:21:28.163",
           "balance": {
             "contributions": 29600.81,
             "in_kind": 926.0,
@@ -28642,6 +29110,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3896",
           "submitted_on": "2026-10-05",
+          "submitted_at": "2026-10-05 21:06:26.527",
           "balance": {
             "contributions": 29600.81,
             "in_kind": 926.0,
@@ -28818,6 +29287,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3863",
           "submitted_on": "2026-09-21",
+          "submitted_at": "2026-09-21 08:21:29.930",
           "balance": {
             "contributions": 0.0,
             "in_kind": 0.0,
@@ -28832,6 +29302,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3870",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 19:54:28.960",
           "balance": {
             "contributions": 3436.18,
             "in_kind": 0.0,
@@ -28846,6 +29317,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3891",
           "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 11:53:15.053",
           "balance": {
             "contributions": 7809.18,
             "in_kind": 0.0,
@@ -29160,6 +29632,7 @@
           "label": "3 days after committee certification",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2830",
           "submitted_on": "2026-03-27",
+          "submitted_at": "2026-03-27 18:58:33.073",
           "balance": {
             "contributions": 132.11,
             "in_kind": 0.0,
@@ -29174,6 +29647,7 @@
           "label": "42nd day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3875",
           "submitted_on": "2026-09-22",
+          "submitted_at": "2026-09-22 20:39:18.547",
           "balance": {
             "contributions": 319.06,
             "in_kind": 0.0,
@@ -29188,6 +29662,7 @@
           "label": "28th day before election",
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3894",
           "submitted_on": "2026-10-05",
+          "submitted_at": "2026-10-05 20:40:19.900",
           "balance": {
             "contributions": 356.45,
             "in_kind": 0.0,

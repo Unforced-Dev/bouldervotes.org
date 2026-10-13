@@ -1396,6 +1396,8 @@ def ingest_finance_2026(cur, *, pid: dict, add_source, org_city: int) -> None:
             notes = "Official committee on the clerk app; not on the certified 2026 candidate list."
         elif loan_total:
             notes = f"Clerk contribution total includes ${loan_total:,.2f} in loans."
+        if row.get("filing_note"):
+            notes = f"{notes} {row['filing_note']}" if notes else row["filing_note"]
         mr, ct = row.get("matching_received") or 0, row.get("contributions_total") or 0
         if mr > ct + 0.005:
             extra = (f"As filed, matching funds received (${mr:,.2f}) are higher than total contributions "
