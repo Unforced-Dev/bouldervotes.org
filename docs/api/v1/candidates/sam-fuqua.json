@@ -770,6 +770,58 @@
     "source_title": "Endorsements – Sam Fuqua for Boulder City Council"
    },
    {
+    "id": "E344",
+    "endorser": {
+     "type": "person",
+     "slug": "elise-jones",
+     "name": "Elise Jones",
+     "title_as_printed": "former Boulder County commissioner",
+     "page_url": "https://bouldervotes.org/people/elise-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "sam-fuqua",
+     "name": "Sam Fuqua",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Sam Fuqua campaign lists Elise Jones. Only the campaign says so.",
+    "claimed_by": "Sam Fuqua campaign",
+    "published_on": null,
+    "source_url": "https://www.fuquaforcouncil.com/endorsements",
+    "source_title": "Endorsements – Sam Fuqua for Boulder City Council"
+   },
+   {
+    "id": "E345",
+    "endorser": {
+     "type": "person",
+     "slug": "suzanne-jones",
+     "name": "Suzanne Jones",
+     "title_as_printed": "Former Mayor of Boulder",
+     "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "sam-fuqua",
+     "name": "Sam Fuqua",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Sam Fuqua campaign lists Suzanne Jones. Only the campaign says so.",
+    "claimed_by": "Sam Fuqua campaign",
+    "published_on": null,
+    "source_url": "https://www.fuquaforcouncil.com/endorsements",
+    "source_title": "Endorsements – Sam Fuqua for Boulder City Council"
+   },
+   {
     "id": "E115",
     "endorser": {
      "type": "person",

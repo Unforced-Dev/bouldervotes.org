@@ -1361,7 +1361,8 @@
       "https://www.ryanwithboulder.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
       "https://www.tinaforboulder.com/endorsements",
-      "https://www.benitaduran.com/new-page-2"
+      "https://www.benitaduran.com/new-page-2",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder mayor",
     "title_source_url": "https://www.fuquaforcouncil.com/endorsements",
@@ -1547,7 +1548,8 @@
       "https://www.benitaduran.com/new-page-2",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder County district attorney",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -1689,7 +1691,8 @@
       "https://www.fuquaforcouncil.com/endorsements",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.ryanwithboulder.com/endorsements",
-      "https://www.taraforboulder.com/endorsements/content/endorsers/"
+      "https://www.taraforboulder.com/endorsements/content/endorsers/",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -1724,7 +1727,8 @@
       "https://brockett4mayor.org/endorsements/",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -1760,7 +1764,8 @@
       "https://www.benitaduran.com/new-page-2",
       "https://www.jillforcouncil.com/endorsements",
       "https://www.ryanwithboulder.com/endorsements",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder mayor pro tem/councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -1901,7 +1906,8 @@
     "summary": "Nicole Speer is identified as Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
       "https://brockett4mayor.org/endorsements/",
-      "https://www.ryanwithboulder.com/endorsements"
+      "https://www.ryanwithboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder city councilmember",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2779,7 +2785,8 @@
       "https://brockett4mayor.org/endorsements/",
       "https://www.benitaduran.com/new-page-2",
       "https://www.jillforcouncil.com/endorsements",
-      "https://www.ryanwithboulder.com/endorsements"
+      "https://www.ryanwithboulder.com/endorsements",
+      "https://www.fuquaforcouncil.com/endorsements"
     ],
     "title": "former Boulder County commissioner",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -3741,7 +3748,8 @@
     "sources": [
       "https://www.benitaduran.com/new-page-2",
       "https://www.jillforcouncil.com/endorsements",
-      "https://www.ryanwithboulder.com/endorsements"
+      "https://www.ryanwithboulder.com/endorsements",
+      "https://www.fuquaforcouncil.com/endorsements"
     ],
     "title": "Former Mayor of Boulder",
     "title_source_url": "https://www.benitaduran.com/new-page-2",
@@ -4062,6 +4070,38 @@
     "title": "Host, The Kim Monson Show; President, Colorado Union of Taxpayers",
     "title_source_url": "https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/",
     "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Taishya Adams",
+        "role": "Boulder City Council",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-13"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Taishya Adams is identified as a Boulder City Council member on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Boulder City Council",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "current_elected",
     "related": []
   }
 ]
