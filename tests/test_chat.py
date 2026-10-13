@@ -422,6 +422,14 @@ class TestCompareFile(unittest.TestCase):
               for r in next(q for q in self.q("transportation", "council") if q["code"] == "B2")["rows"]}
         self.assertEqual(b2["Tina Marquis"], ["Yes. No additional comment submitted."])
         self.assertEqual(b2["Benita Duran"], ["Yes. No additional comment submitted."])
+        # Fix round 5: the four CAN answers the research harvest deduplicated away are back.
+        for name in ("Sam Fuqua", "Jill Grano", "Rachel Rose Isaacson", "Jamillah Richmond"):
+            self.assertEqual(b2[name], ["Yes. No additional comment submitted."], name)
+        self.assertEqual([n for n, t in b2.items() if not t], ["Lynn Segal"])  # not on the questionnaire page
+        b4 = {r["name"]: [l["text"] for l in r["lines"]]
+              for r in next(q for q in self.q("downtown", "council") if q["code"] == "B4")["rows"]}
+        self.assertTrue(b4["Ryan Schuchard"][0].startswith("No. I don’t think it’s right to hand the decision"))
+        self.assertEqual([n for n, t in b4.items() if not t], ["Lynn Segal"])
 
     def test_build_stops_on_two_answers_to_one_questionnaire_question(self):
         from build_chat_context import check_one_answer_per_question
@@ -440,7 +448,9 @@ class TestCompareFile(unittest.TestCase):
             check_one_answer_per_question({"quotes": [rec]}, cmp)
 
     def test_every_line_is_exact_and_from_the_same_question(self):
-        recs = {(q["speaker"], q["text"], q["link"]): q for q in self.idx["quotes"]}
+        # Keyed by question code too: one candidate can give the same words to two questions
+        # ("Yes. No additional comment submitted." to both B2 and B3), and each is its own record.
+        recs = {(q["speaker"], q["text"], q["link"], q["code"]): q for q in self.idx["quotes"]}
         for t in self.cmp["topics"]:
             for race, qs in t["races"].items():
                 for q in qs:
@@ -448,9 +458,8 @@ class TestCompareFile(unittest.TestCase):
                     for r in q["rows"]:
                         self.assertEqual(r["answered"], bool(r["lines"]))
                         for l in r["lines"]:
-                            rec = recs.get((r["name"], l["text"], l["link"]))
-                            self.assertIsNotNone(rec, (t["key"], race, r["name"], l["text"][:60]))
-                            self.assertEqual(rec["code"], q["code"], (t["key"], race, r["name"]))
+                            rec = recs.get((r["name"], l["text"], l["link"], q["code"]))
+                            self.assertIsNotNone(rec, (t["key"], race, q["code"], r["name"], l["text"][:60]))
                             self.assertEqual(rec["caveat"], l["caveat"])
 
     def test_shared_question_is_the_most_answered(self):

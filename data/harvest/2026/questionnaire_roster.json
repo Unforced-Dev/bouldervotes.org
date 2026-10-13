@@ -1,0 +1,89 @@
+{
+ "_about": "Candidates who answered each Better Boulder question the harvest uses, from the published pages (research copy, re-checked 2026-10-13). tests/test_graph_2026.py requires one published statement per candidate per question.",
+ "questions": [
+  {
+   "question": "In early 2025, the Boulder City Council passed an ordinance called Family-Friendly Vibrant Neighborhoods to make it easier to build duplexes and triplexes in single-family home neighborhoods. Would you have voted yes or no on that ordinance? [If you were on city council when this vote occurred, did you vote to make it easier to build duplexes and triplexes?]",
+   "answered": [
+    "Benita Duran",
+    "Sam Fuqua",
+    "Lee Gilbert",
+    "Jill Grano",
+    "Rachel Rose Isaacson",
+    "Ryan Jamieson",
+    "Tina Marquis",
+    "Dave Martus",
+    "Scott Rendleman",
+    "Jamillah Richmond",
+    "Ryan Schuchard",
+    "Tara Winer",
+    "Taishya Adams",
+    "Aaron Brockett",
+    "Aquiles La Grave",
+    "Jameson Goldstein"
+   ]
+  },
+  {
+   "question": "Are you committed to the build out of the Core Arterial Network?",
+   "answered": [
+    "Benita Duran",
+    "Sam Fuqua",
+    "Lee Gilbert",
+    "Jill Grano",
+    "Rachel Rose Isaacson",
+    "Ryan Jamieson",
+    "Tina Marquis",
+    "Dave Martus",
+    "Scott Rendleman",
+    "Jamillah Richmond",
+    "Ryan Schuchard",
+    "Tara Winer",
+    "Taishya Adams",
+    "Aaron Brockett",
+    "Aquiles La Grave",
+    "Jameson Goldstein"
+   ]
+  },
+  {
+   "question": "The City is exploring the creation of a Downtown Development Authority (DDA) to increase investment in our downtown area. Is this the right path for revitalizing downtown Boulder? What do you view as the pros and cons? Are there alternative approaches to improving the economic vitality of downtown Boulder that you are interested in exploring?",
+   "answered": [
+    "Benita Duran",
+    "Sam Fuqua",
+    "Lee Gilbert",
+    "Jill Grano",
+    "Rachel Rose Isaacson",
+    "Ryan Jamieson",
+    "Tina Marquis",
+    "Dave Martus",
+    "Scott Rendleman",
+    "Jamillah Richmond",
+    "Ryan Schuchard",
+    "Tara Winer",
+    "Taishya Adams",
+    "Aaron Brockett",
+    "Aquiles La Grave",
+    "Jameson Goldstein"
+   ]
+  },
+  {
+   "question": "Acknowledging that the job of governing requires skillful navigation of competing priorities, what do you think are the city government’s current top three priorities? What do you think their top three priorities should be?",
+   "answered": [
+    "Benita Duran",
+    "Sam Fuqua",
+    "Lee Gilbert",
+    "Jill Grano",
+    "Rachel Rose Isaacson",
+    "Ryan Jamieson",
+    "Tina Marquis",
+    "Dave Martus",
+    "Scott Rendleman",
+    "Jamillah Richmond",
+    "Ryan Schuchard",
+    "Tara Winer",
+    "Taishya Adams",
+    "Aaron Brockett",
+    "Aquiles La Grave",
+    "Jameson Goldstein"
+   ]
+  }
+ ]
+}

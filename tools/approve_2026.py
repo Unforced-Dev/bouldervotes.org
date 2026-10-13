@@ -2,6 +2,11 @@
 """Convert 2026 research JSON into reviewed, committed harvest files.
 
     python3 tools/approve_2026.py [RESEARCH_DIR]
+    python3 tools/approve_2026.py [RESEARCH_DIR] --questionnaire-only
+
+--questionnaire-only applies just RESTORED_QUESTIONNAIRE_ANSWERS to the committed
+statements.json (the research copy predates later hand-verified harvest additions,
+so a full run would drop them).
 
 RESEARCH_DIR defaults to $BV_RESEARCH or ../bv-research. Writes
 data/harvest/2026/{candidates,statements,endorsements,organizations,measures}.json
@@ -217,6 +222,116 @@ MEASURE_LETTER = {
     "City of Boulder Ballot Question 2M": "2M",
 }
 
+# ---------------------------------------------------------------------------
+# Oct. 13, 2026: Better Boulder questionnaire answers the research harvest dropped.
+# build_candidates.py keeps one record per (text, source) for each candidate, so a
+# candidate who gave the same answer ("Yes. No additional comment submitted.") to the
+# duplex question and the Core Arterial Network question kept only the first. Its
+# first-sentence rule also drops a long answer whose first sentence is a bare "No." or
+# "1.", or that has no sentence break in its first 310 characters. Each answer below was
+# checked against the published page on 2026-10-13. The text is the page's own: the whole
+# answer, or its opening up to a sentence end (Fuqua's opening has no period on the page).
+# The chat build labels any line under 12 words or without closing punctuation a short excerpt.
+# ---------------------------------------------------------------------------
+BB_COUNCIL_URL = "https://betterboulder.com/2026-city-council-candidate-questionnaire"
+BB_COUNCIL_TITLE = "2026 City Council Candidate Questionnaire"
+BB_COUNCIL_DATE = "2026-09-13"
+BB_Q_CAN = "Are you committed to the build out of the Core Arterial Network?"
+BB_Q_DDA = ("The City is exploring the creation of a Downtown Development Authority (DDA) to increase investment "
+            "in our downtown area. Is this the right path for revitalizing downtown Boulder? What do you view as the "
+            "pros and cons? Are there alternative approaches to improving the economic vitality of downtown Boulder "
+            "that you are interested in exploring?")
+BB_Q_PRIORITIES = ("Acknowledging that the job of governing requires skillful navigation of competing priorities, what "
+                   "do you think are the city government’s current top three priorities? What do you think their top "
+                   "three priorities should be?")
+# (id suffix, research name, topic, question, text)
+RESTORED_QUESTIONNAIRE_ANSWERS = [
+    ("bb-can", "Sam Fuqua", "transportation", BB_Q_CAN, "Yes. No additional comment submitted."),
+    ("bb-can", "Jill Grano", "transportation", BB_Q_CAN, "Yes. No additional comment submitted."),
+    ("bb-can", "Rachel Rose Isaacson", "transportation", BB_Q_CAN, "Yes. No additional comment submitted."),
+    ("bb-can", "Jamillah Richmond", "transportation", BB_Q_CAN, "Yes. No additional comment submitted."),
+    ("bb-dda", "Ryan Schuchard", "downtown", BB_Q_DDA,
+     "No. I don’t think it’s right to hand the decision to reallocate more than $60 million in voter-dedicated "
+     "funding to a group representing less than 3 percent of the city’s population, especially with so many open "
+     "questions about where the money would go, and real concerns from Boulder County and the library, the other "
+     "local governments affected by the tax."),
+    ("bb-priorities", "Sam Fuqua", "governance", BB_Q_PRIORITIES,
+     "I think the immediate top priorities now look like Sundance, the budget and wildfire resilience"),
+    ("bb-priorities", "Tina Marquis", "governance", BB_Q_PRIORITIES,
+     "1. Providing basic services that only the local city government can provide, like providing clean water, "
+     "maintaining roads, and public safety and emergency response."),
+]
+# Questionnaire page names that differ from the research candidate names.
+BB_NAMES = {"Jamo Goldstein": "Jameson Goldstein", "Rachel Isaacson": "Rachel Rose Isaacson",
+            "Ry Jamieson": "Ryan Jamieson", "David Martus": "Dave Martus"}
+
+
+def restored_statements() -> list[dict]:
+    out = []
+    for suffix, name, topic, _q, text in RESTORED_QUESTIONNAIRE_ANSWERS:
+        shown = DISPLAY_NAME.get(name, name)
+        out.append({
+            "id": f"S-{shown.lower().replace(' ', '-')}-{suffix}",
+            "candidate": shown, "topic": topic, "text": text, "verbatim": True,
+            "speaker": shown, "speaker_is_candidate": True, "publisher": "Better Boulder",
+            "source_url": BB_COUNCIL_URL, "source_title": BB_COUNCIL_TITLE, "published_on": BB_COUNCIL_DATE,
+            "kind": "questionnaire", "status": "published", "hold_reason": None,
+        })
+    return out
+
+
+def _squash(s: str) -> str:
+    return " ".join(s.split())
+
+
+def questionnaire_roster(src: Path, prompts: dict) -> dict:
+    """Who answered each harvested Better Boulder question, from the research copy of the published pages.
+    Only questions the harvest uses (the ones in statement_prompts.json) are listed."""
+    used = set(prompts.values())
+    roster: dict[str, list[str]] = {}
+    for fn in ("bb_q.json", "bb_mayor_q.json"):
+        for r in json.loads((src / fn).read_text()):
+            # The mayoral page prints the duplex question without its closing bracket.
+            q = next((u for u in used if u == r["q"] or u.startswith(r["q"])), None)
+            if q and r["a"].strip():
+                name = BB_NAMES.get(r["name"], r["name"])
+                roster.setdefault(q, []).append(DISPLAY_NAME.get(name, name))
+    return {"_about": "Candidates who answered each Better Boulder question the harvest uses, from the published "
+                      "pages (research copy, re-checked 2026-10-13). tests/test_graph_2026.py requires one "
+                      "published statement per candidate per question.",
+            "questions": [{"question": q, "answered": names} for q, names in roster.items()]}
+
+
+def apply_questionnaire_restorations(src: Path, stmts: list[dict]) -> list[dict]:
+    """Add the restored answers (idempotent), map them to their question in statement_prompts.json,
+    write the roster, and stop if any respondent still has no single record for a question."""
+    pfile = OUT / "statement_prompts.json"
+    pdoc = json.loads(pfile.read_text())
+    research = {}
+    for fn in ("bb_q.json",):
+        for r in json.loads((src / fn).read_text()):
+            name = BB_NAMES.get(r["name"], r["name"])
+            research[(DISPLAY_NAME.get(name, name), r["q"])] = _squash(r["a"])
+    have = {s["id"] for s in stmts}
+    for s, (_suffix, _name, _topic, q, text) in zip(restored_statements(), RESTORED_QUESTIONNAIRE_ANSWERS):
+        page = research[(s["candidate"], q)]
+        assert page.startswith(text), (s["id"], "not the opening of the published answer")
+        assert not any(x["candidate"] == s["candidate"] and pdoc["prompts"].get(x["id"]) == q
+                       for x in stmts if x["id"] != s["id"]), (s["id"], "already has a record for this question")
+        if s["id"] not in have:
+            stmts.append(s)
+        pdoc["prompts"][s["id"]] = q
+    roster = questionnaire_roster(src, pdoc["prompts"])
+    for row in roster["questions"]:
+        for name in row["answered"]:
+            recs = [x for x in stmts if x["candidate"] == name and x["status"] == "published"
+                    and pdoc["prompts"].get(x["id"]) == row["question"]]
+            assert len(recs) == 1, (name, row["question"][:60], len(recs))
+    pfile.write_text(json.dumps(pdoc, indent=1, ensure_ascii=False) + "\n")
+    (OUT / "questionnaire_roster.json").write_text(json.dumps(roster, indent=1, ensure_ascii=False) + "\n")
+    return stmts
+
+
 # Sponsoring / funding relationships between organizations (sourced to the
 # committee filing or disclosure that establishes them).
 ORG_RELATIONS = [
@@ -260,7 +375,17 @@ def domain(url: str) -> str:
 
 
 def main() -> None:
-    src = Path(sys.argv[1] if len(sys.argv) > 1 else os.environ.get("BV_RESEARCH", ROOT.parent / "bv-research"))
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    src = Path(args[0] if args else os.environ.get("BV_RESEARCH", ROOT.parent / "bv-research"))
+    if "--questionnaire-only" in sys.argv:
+        # The committed harvest has hand-verified additions newer than the research copy
+        # (e.g. the Oct. 10 Yellow Scene pass), so a full run would drop them. This mode
+        # applies only the questionnaire restorations to the committed statements.json.
+        path = OUT / "statements.json"
+        stmts = apply_questionnaire_restorations(src, json.loads(path.read_text()))
+        path.write_text(json.dumps(stmts, indent=1, ensure_ascii=False) + "\n")
+        print(f"statements={len(stmts)} restored={len(RESTORED_QUESTIONNAIRE_ANSWERS)}")
+        return
     cands = json.loads((src / "candidates_2026.json").read_text())
     edges = json.loads((src / "endorsements_2026.json").read_text())
     orgs = json.loads((src / "organizations.json").read_text())
@@ -305,6 +430,7 @@ def main() -> None:
                 "status": "held" if held else "published",
                 "hold_reason": held,
             })
+    out_stmts = apply_questionnaire_restorations(src, out_stmts)
     held_found = {(s["candidate"], s["id"]) for s in out_stmts if s["status"] == "held"}
     assert len(held_found) == len(HELD_STATEMENTS), held_found
     for (name, i), _ in HELD_STATEMENTS.items():

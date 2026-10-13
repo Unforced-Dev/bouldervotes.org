@@ -91,6 +91,26 @@ class TestData(unittest.TestCase):
         ):
             self.assertEqual(con.execute(sql).fetchone()[0], 0, sql)
 
+    def test_one_record_per_questionnaire_answer(self):
+        """Every candidate who answered a harvested Better Boulder question (per the published page's roster)
+        has exactly one published statement mapped to it, and seed kept it. The research harvest once
+        deduplicated identical answers by one candidate, dropping four Core Arterial Network answers."""
+        roster = json.loads((H / "questionnaire_roster.json").read_text())["questions"]
+        prompts = json.loads((H / "statement_prompts.json").read_text())["prompts"]
+        stmts = [s for s in json.loads((H / "statements.json").read_text()) if s["status"] == "published"]
+        seeded = {r[0] for r in db().execute("SELECT id FROM statements")}
+        self.assertEqual({len(q["answered"]) for q in roster}, {16})  # 12 council + 4 mayoral, all four questions
+        for q in roster:
+            for name in q["answered"]:
+                recs = [s["id"] for s in stmts if s["candidate"] == name and prompts.get(s["id"]) == q["question"]]
+                self.assertEqual(len(recs), 1, (name, q["question"][:50], recs))
+                self.assertIn(recs[0], seeded)
+        can = next(q for q in roster if q["question"].startswith("Are you committed to the build out"))
+        for name in ("Sam Fuqua", "Jill Grano", "Rachel Rose Isaacson", "Jamillah Richmond"):
+            self.assertIn(name, can["answered"])
+            rec = next(s for s in stmts if s["candidate"] == name and prompts.get(s["id"]) == can["question"])
+            self.assertEqual(rec["text"], "Yes. No additional comment submitted.")
+
     def test_source_urls_unique(self):
         con = db()
         dup = con.execute("SELECT url, COUNT(*) FROM sources GROUP BY url HAVING COUNT(*)>1").fetchall()
