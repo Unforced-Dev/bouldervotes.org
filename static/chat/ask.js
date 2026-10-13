@@ -128,7 +128,7 @@
               return;
             }
             h += "<blockquote><p>\u201c" + escapeHtml(l.text) + "\u201d</p></blockquote>" +
-              '<p class="cav-line">' + caveatHtml({ caveat: l.caveat + lineFlags(l), link: l.link }) + "</p>";
+              '<p class="cav-line">' + caveatHtml({ caveat: (l.caveat || "Check the source.") + lineFlags(l), link: l.link }) + "</p>";
           });
         }
         h += "</article>";

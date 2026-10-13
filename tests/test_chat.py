@@ -103,7 +103,8 @@ class TestChatContext(unittest.TestCase):
         self.assertIn("Never name a candidate", self.system)
         self.assertIn("[measure LETTER]", self.system)
         self.assertNotIn("[sources]", self.system)
-        self.assertIn("No quotes, links, money figures", self.system)
+        self.assertIn("No quotation marks of any kind, links, money figures", self.system)
+        self.assertIn("Never tell the voter how to vote on anything.", self.system)
         self.assertIn("recorded excerpts", self.ctx)
         self.assertNotIn("full answer", self.ctx)
         self.assertNotIn("(copy BOTH lists", self.ctx)
@@ -240,6 +241,16 @@ class TestAskJsRendering(unittest.TestCase):
         self.assertIn("Something went wrong with that answer", out)
         src = ASK_JS.read_text(encoding="utf-8")
         self.assertIn("data.reply && data.reply.say", src)  # a response without a reply is treated as an error
+
+    def test_a_card_line_without_a_caveat_never_prints_undefined(self):
+        v = self.view("housing")
+        for q in v["questions"]:
+            for r in q["rows"]:
+                for l in r["lines"]:
+                    l.pop("caveat", None)
+        out = self.render(self.reply(compare=v))
+        self.assertNotIn("undefined", out)
+        self.assertIn("Check the source.", out)
 
     def test_every_card_quote_has_its_caveat_beside_it(self):
         out = self.render(self.reply(compare=self.view("housing")))
