@@ -1,0 +1,37 @@
+/* Ask about this election. Loaded only on ask.html. Uses the tokens in site.css. */
+.ask-warn {
+  font-family: var(--sans); font-size: var(--fs-lg); font-weight: 700; color: var(--ink);
+  background: #fff4cc; border: 2px solid var(--ink); border-radius: var(--radius); padding: var(--s3) var(--s4);
+  margin: var(--s4) 0; max-width: 48rem;
+}
+.chat-box { max-width: 48rem; }
+.chat-box[hidden] { display: none; }
+.chat-chips { display: flex; flex-wrap: wrap; gap: var(--s2); margin: 0 0 var(--s4); }
+.chat-chips[hidden] { display: none; }
+.chat-chips button {
+  font-family: var(--sans); font-size: var(--fs-sm); min-height: 48px; padding: var(--s2) var(--s4); text-align: left;
+  background: var(--surface); color: var(--accent); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); cursor: pointer;
+}
+.chat-chips button:hover { border-color: var(--accent); background: var(--accent-tint); }
+.chat-log { margin: 0 0 var(--s4); }
+.chat-log .msg { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: var(--s3) var(--s4); margin: 0 0 var(--s3); }
+.chat-log .msg.user { background: var(--accent-tint); border-color: var(--accent-tint); }
+.chat-log .msg.notice { background: #fff4cc; border-color: var(--ink); }
+.chat-log .who { font-family: var(--sans); font-size: var(--fs-xs); font-weight: 700; color: var(--ink-2); margin: 0 0 var(--s1); text-transform: uppercase; letter-spacing: .04em; }
+.chat-log .body { font-size: var(--fs-md); line-height: var(--lh-body); overflow-wrap: anywhere; }
+.chat-log .body p { margin: 0 0 var(--s3); }
+.chat-log .body p:last-child { margin-bottom: 0; }
+.chat-log .body ul, .chat-log .body ol { margin: 0 0 var(--s3); padding-left: 1.4em; }
+.chat-log .body blockquote { margin: 0 0 var(--s3); padding-left: var(--s4); border-left: 4px solid var(--line-strong); }
+.chat-form label { display: block; font-family: var(--sans); font-weight: 700; font-size: var(--fs-md); margin: 0 0 var(--s2); }
+.chat-form textarea {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: var(--fs-md); line-height: 1.5; min-height: 5.5rem; padding: var(--s3);
+  color: var(--ink); background: var(--surface); border: 2px solid var(--line-strong); border-radius: var(--radius-sm); resize: vertical;
+}
+.chat-form .row { display: flex; flex-wrap: wrap; gap: var(--s3); align-items: center; margin-top: var(--s3); }
+.chat-form button.btn { font-size: var(--fs-md); min-width: 8rem; justify-content: center; cursor: pointer; }
+.chat-form button.btn:disabled { opacity: .55; cursor: not-allowed; }
+.chat-status { min-height: 1.6em; margin: var(--s3) 0 0; font-family: var(--sans); font-size: var(--fs-sm); color: var(--ink); }
+.chat-restart { margin-top: var(--s3); }
+.chat-restart[hidden] { display: none; }
+@media (max-width: 600px) { .chat-chips button { width: 100%; } }
