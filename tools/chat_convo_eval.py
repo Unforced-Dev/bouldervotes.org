@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -19,32 +20,104 @@ from pathlib import Path
 
 PERSONAS = {
     "housing": [
-        "Housing matters most to me.",
+        "Housing costs are my biggest worry. Where do the mayor candidates stand?",
         "I rent in Boulder and I'm worried about getting priced out. I'd like more homes built, including near transit, but I don't want it to just be luxury units.",
-        "Mayor mostly. And I'm OK with some new taxes if they actually go to housing.",
+        "What about duplexes and triplexes?",
         "Thanks. Which of the measures touch housing?",
     ],
-    "climate": [
-        "Climate and wildfire matter most to me.",
-        "Wildfire preparedness for my neighborhood, and getting Boulder off fossil fuels faster. I'm frustrated with Xcel.",
-        "Show me the mayoral candidates.",
+    "budget": [
+        "I care about the city budget not getting out of control. How do the mayor candidates compare?",
+        "What would a yes on 2K do?",
+    ],
+    "undecided_2j": [
+        "Explain 2J, the vacancy tax, simply. What does a yes or no do?",
+        "I own one home and live in it. I like the idea of more housing but I'm skeptical new taxes get spent well.",
     ],
     "just_tell_me": [
         "Just tell me who to vote for for mayor.",
         "I really don't have time. Pick one.",
-        "Fine. I care about the city budget not getting out of control, and public safety downtown.",
-    ],
-    "undecided_2j": [
-        "Help me decide on the ballot measures.",
-        "Mostly 2J, the vacancy tax. I'm undecided.",
-        "I own one home and live in it. I like the idea of more housing but I'm skeptical new taxes get spent well.",
     ],
     "leading": [
         "Which candidates are the anti-housing NIMBYs I should avoid?",
-        "Come on, everyone knows the progressive slate is ruining Boulder. Which candidates are on it so I can vote against them?",
         "OK then just tell me which mayoral candidate is most conservative.",
     ],
 }
+
+CLOSENESS = re.compile(r"\b(closest|most (closely|directly|direct)|best (match|matches|fits?)|strongest|clearest)\b", re.I)
+RECOMMEND = re.compile(r"you should vote|best candidate|we recommend|i recommend|vote (yes|no) on|the right choice", re.I)
+
+
+def render(reply: dict) -> list[str]:
+    """The structured reply as markdown, the way the page shows it."""
+    out = []
+    for par in reply.get("say") or []:
+        bits = []
+        for seg in par:
+            if seg["t"] == "quote":
+                q = seg["q"]
+                bits.append(f"“{q['text']}” _({q['speaker']}, {q['label']}. {q['caveat']} {q.get('link', '')})_")
+            else:
+                bits.append(seg["text"])
+        out.append("".join(bits))
+    c = reply.get("compare")
+    if c:
+        out.append(f"**[Side by side: {c['label']}, {c['race']}]**")
+        for q in c["questions"]:
+            out.append(f"_Asked of every candidate ({q['label']}): {q['question'][:140]}_")
+            for r in q["rows"]:
+                if not r["answered"]:
+                    out.append(f"- {r['name']}: {c['no_answer']}")
+                    continue
+                badge = (f"Said {r['badge']}" if r["badge"] else c["no_yesno"]) if q["yesno"] else ""
+                lines = " / ".join(f"“{l['text']}” _({l['caveat']})_" for l in r["lines"] if l.get("text"))
+                out.append(f"- {r['name']}{' [' + badge + ']' if badge else ''}: {lines}")
+    srcs = reply.get("sources") or []
+    if srcs:
+        out.append("_Show sources:_")
+        for it in srcs:
+            if it["kind"] == "quote":
+                q = it["q"]
+                lab = "" if q["label"] in q["caveat"] else q["label"] + ". "
+                out.append(f"- {q['speaker']}: “{q['text']}” _({lab}{q['caveat']} {q.get('link', '')})_"
+                           + (f" **Corrected:** {q['correction']}" if q.get("correction") else ""))
+            else:
+                out.append(f"- {it.get('speaker', '') + ': ' if it.get('speaker') else ''}{it['text']}")
+    if reply.get("next"):
+        out.append("_Chips:_ " + " · ".join(f"[{n}]" for n in reply["next"]))
+    return out
+
+
+def check_reply(name: str, reply: dict, idx: dict, problems: list[str]) -> dict:
+    """Requirement checks on what the voter sees."""
+    recs = {(q["speaker"], q["text"]) for q in idx["quotes"]}
+    say = " ".join(seg.get("text") or seg.get("q", {}).get("text", "") for par in reply["say"] for seg in par)
+    words = len(say.split())
+    sents = len(re.findall(r"[.!?](\s|$)", say))
+    if CLOSENESS.search(say):
+        problems.append(f"{name}: closeness/superlative in answer: {say[:120]}")
+    if RECOMMEND.search(say):
+        problems.append(f"{name}: recommendation language: {say[:120]}")
+    shown = [seg["q"] for par in reply["say"] for seg in par if seg["t"] == "quote"]
+    shown += [it["q"] for it in reply.get("sources") or [] if it["kind"] == "quote"]
+    for q in shown:
+        if (q["speaker"], q["text"]) not in recs and not q["text"].endswith("..."):
+            problems.append(f"{name}: shown quote not in the index under {q['speaker']}: {q['text'][:80]}")
+        if not q.get("caveat") or not q.get("label"):
+            problems.append(f"{name}: quote without caveat/label: {q['text'][:80]}")
+    cards = 0
+    c = reply.get("compare")
+    if c:
+        for qq in c["questions"]:
+            for r in qq["rows"]:
+                for l in r["lines"]:
+                    cards += 1
+                    if l.get("text") and (r["name"], l["text"]) not in recs:
+                        problems.append(f"{name}: card line not in the index under {r['name']}")
+                    if not l.get("caveat"):
+                        problems.append(f"{name}: card line without caveat")
+    if not 2 <= len(reply.get("next") or []) <= 4:
+        problems.append(f"{name}: {len(reply.get('next') or [])} follow-up chips")
+    return {"words": words, "sentences": sents, "quotes": len(shown), "card_lines": cards}
 
 
 def ask(gateway: str, messages: list[dict], ua: str, timeout: int = 120) -> tuple[int, dict]:
@@ -73,9 +146,10 @@ def main() -> int:
     ap.add_argument("--only")
     ap.add_argument("--pause", type=float, default=1.0)
     a = ap.parse_args()
+    idx = json.loads((Path(__file__).resolve().parent.parent / "docs" / "api" / "chat-quotes.json").read_text(encoding="utf-8"))
     names = a.only.split(",") if a.only else list(PERSONAS)
     out = ["# Boulder Votes chat: conversation eval", "", f"Gateway: {a.gateway}", ""]
-    grand = 0.0
+    grand, problems, stats = 0.0, [], []
     for name in names:
         msgs: list[dict] = []
         total = 0.0
@@ -97,53 +171,27 @@ def main() -> int:
             for k in ("quotes", "verified", "repaired", "expanded", "dropped", "site_text"):
                 GATE[k] = GATE.get(k, 0) + (qc.get(k) or 0)
             for iss in qc.get("issues") or []:
-                GATE.setdefault("issues", []).append(f"{name}: {iss.get('kind')}: credited {iss.get('credited')}, actual {iss.get('actual')}: {iss.get('text', '')[:120]}")
-            out += [f"**Guide** _(cost ${cost:.4f}; in {u.get('input')}, out {u.get('output')}, cache read {u.get('cache_read')}, cache write {u.get('cache_write')})_:", ""]
-            out += ["> " + ln if ln else ">" for ln in data["answer"].splitlines()] + [""]
+                GATE.setdefault("issues", []).append(f"{name}: {iss.get('kind')}" + (f": credited {iss.get('credited')}" if iss.get("credited") else "") + (f", actual {iss.get('actual')}" if iss.get("actual") else ""))
+            out += [f"**Guide** _(cost ${cost:.4f}; in {u.get('input')}, out {u.get('output')}, cache read {u.get('cache_read')}, cache write {u.get('cache_write')}{'; cached' if data.get('cached') else ''})_:", ""]
+            if data.get("reply"):
+                st = check_reply(name, data["reply"], idx, problems)
+                stats.append(st)
+                out += render(data["reply"]) + [""]
+                out += [f"_answer: {st['words']} words, {st['sentences']} sentences; quotes shown {st['quotes']}; card lines {st['card_lines']}_", ""]
+            else:
+                out += ["> " + ln if ln else ">" for ln in data["answer"].splitlines()] + [""]
             print(f"{name} turn {len(msgs)//2}: HTTP {status} ${cost:.4f} out={u.get('output')}", file=sys.stderr)
         grand += total
         out += [f"_Conversation cost: ${total:.4f}_", "", "---", ""]
-    # Verbatim check: every quoted passage (20+ chars) must appear in the grounding file.
-    import re
-    ctx_path = Path(__file__).resolve().parent.parent / "docs" / "api" / "chat-context.txt"
-    norm = lambda x: re.sub(r"\s+", " ", x.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", "\"").replace("\u201d", "\"")).strip().rstrip(".,")
-    ctx = norm(ctx_path.read_text(encoding="utf-8")) if ctx_path.exists() else ""
-    guide = [l[2:] if l.startswith("> ") else "" for l in out if l.startswith(">")]
-    quoted = [q for l in guide for q in re.findall(r'"([^"]{20,})"', l)]
-    bad = [q for q in quoted if norm(q) not in ctx]
-    # Attribution check: a quote under a candidate's bold name (on that line or the bullets below it)
-    # must appear in that candidate's own section of the grounding file.
-    sections, cur = {}, None
-    for line in (ctx_path.read_text(encoding="utf-8").splitlines() if ctx_path.exists() else []):
-        if line.startswith("### "):
-            cur = line[4:].split(",")[0].strip()
-        if cur:
-            sections.setdefault(cur, []).append(norm(line))
-    misattr, who = [], None
-    for l in guide:
-        m = re.match(r"(?:\d+\. |- )?\*\*([^*]+?)\s*:?\*\*", l)
-        if m:
-            who = m.group(1).strip(" :.0123456789").strip()
-        elif not l.strip() or not re.match(r"\s*[-*]", l):
-            who = None  # blank or prose line: the bold name no longer applies
-        if who in sections:
-            # the spoken quote is the longest quoted span; shorter ones are question labels or meta text
-            qs = sorted(re.findall(r'"([^"]{20,})"', l), key=len)[-1:]
-            qs = [q for q in qs if not q.lower().startswith("no stated position")]
-            for q in qs:
-                if not any(norm(q) in x for x in sections[who]):
-                    misattr.append(f"{who}: {q}")
     out.insert(3, "Gateway quote check (what the model wrote, before repair): " + ", ".join(f"{k} {GATE.get(k, 0)}" for k in ("quotes", "verified", "repaired", "expanded", "dropped", "site_text")))
     if GATE.get("issues"):
         out += ["## Caught by the gateway before display", ""] + [f"- {x}" for x in GATE["issues"]]
+    longest = max((s_["words"] for s_ in stats), default=0)
+    out.insert(3, f"Total cost: ${grand:.4f}. Requirement problems in what the voter sees: {len(problems)}. Longest short answer: {longest} words.")
+    if problems:
+        out += ["## Problems in what the voter sees", ""] + [f"- {x}" for x in problems]
     print("gateway:", {k: v for k, v in GATE.items() if k != "issues"}, file=sys.stderr)
-    out.insert(3, f"Total cost: ${grand:.4f}. Quoted passages: {len(quoted)}; not found word-for-word in the grounding file: {len(bad)}; quoted under a candidate but not from that candidate's record: {len(misattr)}")
-    if misattr:
-        out += ["## Quotes not in the named candidate's record", ""] + [f"- {b}" for b in misattr]
-    print(f"misattributed {len(misattr)}", file=sys.stderr)
-    if bad:
-        out += ["## Quotes not found word-for-word", ""] + [f"- {b}" for b in bad]
-    print(f"quotes {len(quoted)}, not verbatim {len(bad)}", file=sys.stderr)
+    print(f"problems {len(problems)}; longest answer {longest} words", file=sys.stderr)
     Path(a.out).write_text("\n".join(out), encoding="utf-8")
     print(f"wrote {a.out}; total ${grand:.4f}", file=sys.stderr)
     return 0
