@@ -164,10 +164,10 @@ Each line is one comparison: [intent compare TOPIC RACE] shows every candidate i
 - compare budget mayor: Budget and the $400M bond (2K). F4Q44 "Ballot measure 2K: Boulder voters will consider authorizing up to $400..." (6 of 6 answered)
 - compare budget council: Budget and the $400M bond (2K). F4Q36 "Boulder voters are being asked to authorize $400 million in new debt t..." (12 of 13 answered)
 - compare transportation mayor: Bus lanes and bikes. F4Q37 "What are your feelings about the bus-only lanes and the core arterial ..." (6 of 6 answered); B2 "Are you committed to the build out of the Core Arterial Network?" (4 of 6 answered)
-- compare transportation council: Bus lanes and bikes. F4Q37 "What are your feelings about the bus-only lanes and the core arterial ..." (12 of 13 answered); B2 "Are you committed to the build out of the Core Arterial Network?" (8 of 13 answered)
+- compare transportation council: Bus lanes and bikes. F4Q37 "What are your feelings about the bus-only lanes and the core arterial ..." (12 of 13 answered); B2 "Are you committed to the build out of the Core Arterial Network?" (12 of 13 answered)
 - compare climate mayor: Climate and Xcel. F5Q50 "Xcel says it will deliver 100% clean electricity by 2050, not Boulder'..." (6 of 6 answered)
 - compare downtown mayor: Downtown. B4 "The City is exploring the creation of a Downtown Development Authority..." (4 of 6 answered)
-- compare downtown council: Downtown. B4 "The City is exploring the creation of a Downtown Development Authority..." (11 of 13 answered)
+- compare downtown council: Downtown. B4 "The City is exploring the creation of a Downtown Development Authority..." (12 of 13 answered)
 - compare priorities mayor: Top priorities. F4Q47 "If elected, what is the single most important new initiative you would..." (6 of 6 answered)
 - compare priorities council: Top priorities. F4Q34 "If elected, name your top three priorities, and do you believe the cit..." (12 of 13 answered)
 - compare mayor-role mayor: The mayor's role. F4Q42 "What are the unique roles of the Boulder mayor that make the job diffe..." (6 of 6 answered)
@@ -956,7 +956,7 @@ Fuqua previously served on the Boulder Valley school board and is now seeking a 
 - Money, as of 2026-10-06 (28th day before election): raised $10,096; spent $5,576; matching funds $9,696; cash on hand $14,216. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3890 Note: Clerk contribution total includes $400.00 in loans.
 
 #### Sam Fuqua: lines by topic
-housing: B3, F1Q1, F1Q12, F1Q16, F2Q17, F3Q29, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F2Q17, F2Q23 | transportation: F4Q37 YES on the Core Arterial Network / bus-only lanes, F4Q40 | budget/taxes/2K: campaign_site, F2Q17, F4Q36 | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q12 | arts: F3Q29, F3Q32
+housing: B3, F1Q1, F1Q12, F1Q16, F2Q17, F3Q29, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: B1, F2Q17, F2Q23 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes, F4Q40 | budget/taxes/2K: campaign_site, F2Q17, F4Q36 | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q12 | arts: F3Q29, F3Q32
 
 #### In their own words
 - Sam Fuqua. Topic: budget/taxes/2K. Campaign website: Sam Fuqua, campaign_site. Source: https://www.fuquaforcouncil.com/priorities
@@ -967,10 +967,14 @@ housing: B3, F1Q1, F1Q12, F1Q16, F2Q17, F3Q29, F4Q33, F4Q35, F4Q39 YES on 2J | c
   > I am open to reconsidering the DDA because there is some evidence of its effectiveness in strengthening downtowns elsewhere.
 - Sam Fuqua. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
   > I am committed not only to making myself available to meet with business owners on a regular basis, but also to proactively seeking them out to listen to their input, ask questions (that probably lead to more questions), explain my positions and also sometimes change my mind based on new information.
+- Sam Fuqua. Topic: wildfire. Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
+  > I think the immediate top priorities now look like Sundance, the budget and wildfire resilience
 - Sam Fuqua. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
 - Sam Fuqua. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
   > Businesses should expect the City to enforce ordinances and preserve public safety in all commercial and residential districts but we should target our resources where we have the biggest challenges, including Downtown and on The Hill .
+- Sam Fuqua. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
+  > Yes. No additional comment submitted.
 What reporters wrote (the reporter's words, not the candidate's):
 - Richard Valenty reporting Sam Fuqua’s interview, about Sam Fuqua. Topic: downtown/economy. Richard Valenty, 2026-09-20. Source: https://richardvalenty.com/2026/09/fuqua-pay-his-familys-boulder-opportunities-forward/
   > Fuqua said he would have voted against sending the DDA proposal to DDA voters had he been on Council for the mid-2026 vote.
@@ -1048,13 +1052,15 @@ Schuchard is a sitting Boulder councilmember seeking another term. He focuses on
 - Money, as of 2026-10-06 (28th day before election): raised $11,971; spent $9,072; matching funds $11,971; cash on hand $14,870. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3888 Note: Clerk contribution total includes $334.60 in loans.
 
 #### Ryan Schuchard: lines by topic
-housing: B3, F1Q1, F1Q4, F2Q18, F4Q35, F4Q39 YES on 2J | climate/energy: F4Q34, F4Q40 | wildfire: campaign_site, F2Q23, F4Q34 | transportation: B2, F1Q9, F4Q37 | budget/taxes/2K: F3Q28, F4Q36 | downtown/economy: questionnaire | homelessness/safety: questionnaire | growth: F1Q4, F2Q18 | arts: none
+housing: B3, F1Q1, F1Q4, F2Q18, F4Q35, F4Q39 YES on 2J | climate/energy: F4Q34, F4Q40 | wildfire: campaign_site, F2Q23, F4Q34 | transportation: B2, F1Q9, F4Q37 | budget/taxes/2K: F3Q28, F4Q36 | downtown/economy: questionnaire, B4 | homelessness/safety: questionnaire | growth: F1Q4, F2Q18 | arts: none
 
 #### In their own words
 - Ryan Schuchard. Topic: wildfire. Campaign website: Ryan Schuchard, campaign_site. Source: https://www.ryanwithboulder.com/
   > Ramp up systems to protect Boulder from the rising danger of large-scale wildfire, strengthen flood mitigation, and prepare our energy, agricultural, and transportation systems to withstand extreme weather.
 - Ryan Schuchard. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
   > Need: Boulder's downtown challenges reflect a nationwide pattern of chronic vacancies and low investment, aging buildings and infrastructure draining city resources, and high costs of living, on top of lacking healthcare and childcare that squeeze residents and business owners alike.
+- Ryan Schuchard. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
+  > No. I don’t think it’s right to hand the decision to reallocate more than $60 million in voter-dedicated funding to a group representing less than 3 percent of the city’s population, especially with so many open questions about where the money would go, and real concerns from Boulder County and the library, the other local governments affected by the tax.
 - Ryan Schuchard. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > Actual priorities, where real bandwidth goes right now: managing cash flow, preparing for Sundance, and staying responsive to the wide range of requests we hear from residents, individuals and organized advocates alike.
 - Ryan Schuchard. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
@@ -1144,7 +1150,7 @@ Richmond is a first-time council candidate and a diversity and education consult
 - Money, as of 2026-10-06 (28th day before election): raised $7,366; spent $3,642; matching funds $6,851; cash on hand $10,475. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3897
 
 #### Jamillah Richmond: lines by topic
-housing: B3, F1Q1, F2Q17, F4Q33, F4Q34, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F2Q23 | transportation: F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q10 | homelessness/safety: questionnaire | growth: none | arts: F3Q30, F3Q32
+housing: B3, F1Q1, F2Q17, F4Q33, F4Q34, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F2Q23 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q10 | homelessness/safety: questionnaire | growth: none | arts: F3Q30, F3Q32
 
 #### In their own words
 - Jamillah Richmond. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
@@ -1161,6 +1167,8 @@ housing: B3, F1Q1, F2Q17, F4Q33, F4Q34, F4Q35, F4Q39 YES on 2J | climate/energy:
   > Yes. No additional comment submitted.
 - Jamillah Richmond. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
   > I think all community members should expect to feel safe from harm and that they can rely on city governance to help support that.
+- Jamillah Richmond. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
+  > Yes. No additional comment submitted.
 What reporters wrote (the reporter's words, not the candidate's):
 - Peter Constas (reporting the candidate), about Jamillah Richmond. Topic: downtown/economy. Yellow Scene, 2026-09-05. Source: [S6]
   > Her priorities also included affordable childcare and living wages.
@@ -1393,7 +1401,7 @@ Isaacson is again seeking a Boulder council seat after a previous campaign. Her 
 - Money, as of 2026-10-06 (28th day before election): raised $7,654; spent $7,188; matching funds $7,346; cash on hand $7,802. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3895 Note: Clerk contribution total includes $308.35 in loans.
 
 #### Rachel Rose Isaacson: lines by topic
-housing: B3, F1Q1, F1Q12, F2Q18, F4Q35, F4Q39 | climate/energy: F1Q5, F4Q40 | wildfire: F4Q33, F4Q34 | transportation: F4Q37 | budget/taxes/2K: F1Q1, F2Q21, F2Q22, F3Q28, F4Q36 | downtown/economy: B4, questionnaire, F1Q6 | homelessness/safety: campaign_site, questionnaire, F4Q35 | growth: F1Q12, F2Q18 | arts: F3Q32
+housing: B3, F1Q1, F1Q12, F2Q18, F4Q35, F4Q39 | climate/energy: F1Q5, F4Q40 | wildfire: F4Q33, F4Q34 | transportation: B2, F4Q37 | budget/taxes/2K: F1Q1, F2Q21, F2Q22, F3Q28, F4Q36 | downtown/economy: B4, questionnaire, F1Q6 | homelessness/safety: campaign_site, questionnaire, F4Q35 | growth: F1Q12, F2Q18 | arts: F3Q32
 
 #### In their own words
 - Rachel Rose Isaacson. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
@@ -1410,6 +1418,8 @@ housing: B3, F1Q1, F1Q12, F2Q18, F4Q35, F4Q39 | climate/energy: F1Q5, F4Q40 | wi
   > Yes. No additional comment submitted.
 - Rachel Rose Isaacson. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
   > Businesses should expect timely responses to threats, violence, theft, and illegal drug activity, accessible sidewalks and entrances, maintained public spaces, and clear communication about how to obtain help.
+- Rachel Rose Isaacson. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
+  > Yes. No additional comment submitted.
 What reporters wrote (the reporter's words, not the candidate's):
 - Richard Valenty reporting Rachel Rose Isaacson’s interview, about Rachel Rose Isaacson. Topic: downtown/economy. Richard Valenty, 2026-09-23. Source: https://richardvalenty.com/2026/09/isaacson-can-working-class-boulderites-stay-here/
   > Isaacson said she would have voted against sending a DDA proposal to DDA voters had she been on Council this year when they voted.
@@ -1649,7 +1659,7 @@ Grano previously served on Boulder City Council and is running again. Her campai
 - Money, as of 2026-10-09 (42nd day before election): raised $12,335; spent $8,730; matching funds $12,341; cash on hand $15,947. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3874 Note: As filed, the committee submitted its 42nd day before election report on Oct. 9, 2026, after its 28th day before election report; totals follow the later submission, as the clerk summary does. As filed, matching funds received ($12,341.10) are higher than total contributions ($12,335.02); shown as the clerk report states them.
 
 #### Jill Grano: lines by topic
-housing: B3, F1Q1, F1Q4, F1Q14, F2Q17, F2Q18, F4Q33, F4Q34, F4Q35, F4Q39, F4Q39 YES on 2J, F4Q40 | climate/energy: none | wildfire: none | transportation: F4Q37 | budget/taxes/2K: campaign_site, F4Q36 | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q4, F1Q16, F2Q18 | arts: none
+housing: B3, F1Q1, F1Q4, F1Q14, F2Q17, F2Q18, F4Q33, F4Q34, F4Q35, F4Q39, F4Q39 YES on 2J, F4Q40 | climate/energy: none | wildfire: none | transportation: B2, F4Q37 | budget/taxes/2K: campaign_site, F4Q36 | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q4, F1Q16, F2Q18 | arts: none
 
 #### In their own words
 - Jill Grano. Topic: budget/taxes/2K. Campaign website: Jill Grano, campaign_site. Source: https://www.jillforcouncil.com/
@@ -1668,6 +1678,8 @@ housing: B3, F1Q1, F1Q4, F1Q14, F2Q17, F2Q18, F4Q33, F4Q34, F4Q35, F4Q39, F4Q39 
   > Yes. No additional comment submitted.
 - Jill Grano. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
   > Businesses need to feel confident that customers (and employees) can enjoy downtown and the Hill safely, and that the city will respond (reliably) to open drug use and other dangerous or illegal behavior.
+- Jill Grano. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
+  > Yes. No additional comment submitted.
 What reporters wrote (the reporter's words, not the candidate's):
 - Richard Valenty reporting Jill Grano’s interview, about Jill Grano. Topic: downtown/economy. Richard Valenty, 2026-09-21. Source: https://richardvalenty.com/2026/09/grano-re-localize-boulders-economy/
   > Grano said she didn’t see the proposed DDA as the “right mechanism” for moving forward with Downtown and University Hill business district improvements.
@@ -1946,6 +1958,8 @@ housing: B3, F1Q1, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfi
   > I made extensive comments about the DDA at the council meeting when I voted against the DDA.
 - Tina Marquis. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
   > In general, I try to be accessible to all constituents through email, phone or in-person meetings, though recognize there are times when I cannot respond to all requests in a short window.
+- Tina Marquis. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
+  > 1. Providing basic services that only the local city government can provide, like providing clean water, maintaining roads, and public safety and emergency response.
 - Tina Marquis. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > No. While I did vote no in 2025, I did support allowing duplexes and triplexes in more areas during the comp plan process.
 - Tina Marquis. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
