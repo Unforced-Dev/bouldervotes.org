@@ -268,6 +268,8 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
         body = (f"<div class='learn-layout'>{learn_nav(learn, prefix, learn_trail)}"
                 f"<div class='learn-body'>\n{body}\n</div></div>")
     home = f"{prefix}index.html"
+    from build_chat_context import chat_enabled
+    ask_foot = f'\n        <li><a href="{prefix}ask.html">Ask about this election</a></li>' if chat_enabled() else ""
     past_links = "".join(f'<li><a href="{prefix}{y}.html">{y} city election</a></li>' for y in ARCHIVE_YEARS)
     return f"""<!doctype html>
 <html lang="en">
@@ -321,7 +323,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
         <li><a href="{prefix}index.html#measures">Ballot measures</a></li>
         <li><a href="{prefix}compare.html">Forum answers, side by side</a></li>
         <li><a href="{prefix}print/index.html">Printable sheets</a></li>
-        <li><a href="{prefix}2026.html">2026 ballot details</a></li>
+        <li><a href="{prefix}2026.html">2026 ballot details</a></li>{ask_foot}
       </ul>
     </div>
     <div>
@@ -495,6 +497,15 @@ def copy_static() -> None:
             if dst.exists():
                 shutil.rmtree(dst)
             shutil.copytree(src, dst)
+    from build_chat_context import chat_enabled
+    if chat_enabled():  # chat assets exist only in builds that turn the chat on
+        (OUT / "js").mkdir(exist_ok=True)
+        shutil.copy2(STATIC / "chat" / "ask.js", OUT / "js" / "ask.js")
+        shutil.copy2(STATIC / "chat" / "ask.css", OUT / "css" / "ask.css")
+    else:  # a default build must not leave a preview's chat files behind
+        (OUT / "ask.html").unlink(missing_ok=True)
+        if (OUT / "js").exists():
+            shutil.rmtree(OUT / "js")
 
 
 def main() -> None:
@@ -1699,6 +1710,7 @@ def main() -> None:
                  "<p>Results, candidates and answers from every City of Boulder election since 2017.</p><p class='chips'>"
                  + "".join(f"<a class='pill' href='{y}.html'>{y}</a>" for y in ARCHIVE_YEARS) + "</p></section>")
     from build_llm import AI_CAUTION, AI_SHORT, AI_PROMPT
+    from build_chat_context import chat_enabled
     learn.append(
         "<section class='panel ask-ai' id='ask-ai'><h2>Ask an AI</h2>"
         "<p>Using ChatGPT, Claude or another assistant? Tell it:</p>"
@@ -1708,8 +1720,15 @@ def main() -> None:
         "<p>The assistant can read the whole guide from one file, "
         "<a href='llms-full.txt'>llms-full.txt</a>, or the <a href='api/index.html'>JSON data</a>. "
         "That file asks it to stay nonpartisan and cite a source for every claim.</p>"
-        f"<p class='note'>{esc(AI_CAUTION)}</p></section>")
+        f"<p class='note'>{esc(AI_CAUTION)}</p>"
+        + ("<p><a class='btn secondary' href='ask.html'>Ask about this election, right here</a></p>" if chat_enabled() else "")
+        + "</section>")
     (OUT / "learn.html").write_text(page("Learn", "\n".join(learn), current="learn"), encoding="utf-8")
+
+    from build_chat_context import ask_body, ask_head, chat_enabled
+    if chat_enabled():
+        (OUT / "ask.html").write_text(
+            page("Ask about this election", ask_body(esc), current="learn", head_extra=ask_head()), encoding="utf-8")
 
     about = """
     <h1>About Boulder Votes</h1>

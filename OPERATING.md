@@ -135,3 +135,9 @@ log path; successful runs print only new items, finance changes and new holds or
 fetch errors. Review `held.json` without deleting its deduplication history.
 For a read-only baseline, run `python3 tools/freshness/sources.py` followed by
 `python3 tools/freshness/watch.py`; this does not invoke the worker or publish.
+
+## Ask-about-this-election chat (preview only until approved)
+
+`build_chat_context.py` writes `docs/api/chat-context.txt` (the grounding the gateway sends as a cached system block; about 59K tokens, tests cap it at 300 KB) and `docs/api/chat-system.txt` (the short app prompt) on every build. Both are plain site content and always published.
+
+The chat page itself is off by default. `BV_CHAT_ENABLED=1 python3 build.py` also writes `docs/ask.html`, `docs/js/ask.js`, `docs/css/ask.css` (sources in `static/chat/`) and adds the home, Learn and footer links. `BV_CHAT_GATEWAY` overrides the gateway URL (default `https://haiku-gateway.unforced.workers.dev`). Run the suite in both modes; `tests/test_chat.py` checks `docs/` against the flag of that run. `tools/chat_eval.py <gateway>` runs `tools/chat_eval.json` against a live gateway and writes a markdown report; it makes billable calls and is never run by the tests.
