@@ -63,6 +63,9 @@ def ask(gateway: str, messages: list[dict], ua: str, timeout: int = 120) -> tupl
         return 0, {"ok": False, "error": "client_error", "message": str(e)}
 
 
+GATE: dict = {}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("gateway")
@@ -90,6 +93,11 @@ def main() -> int:
             cost = u.get("cost_usd") or 0.0
             total += cost
             msgs.append({"role": "assistant", "content": data["answer"]})
+            qc = data.get("quote_check") or {}
+            for k in ("quotes", "verified", "repaired", "expanded", "dropped", "site_text"):
+                GATE[k] = GATE.get(k, 0) + (qc.get(k) or 0)
+            for iss in qc.get("issues") or []:
+                GATE.setdefault("issues", []).append(f"{name}: {iss.get('kind')}: credited {iss.get('credited')}, actual {iss.get('actual')}: {iss.get('text', '')[:120]}")
             out += [f"**Guide** _(cost ${cost:.4f}; in {u.get('input')}, out {u.get('output')}, cache read {u.get('cache_read')}, cache write {u.get('cache_write')})_:", ""]
             out += ["> " + ln if ln else ">" for ln in data["answer"].splitlines()] + [""]
             print(f"{name} turn {len(msgs)//2}: HTTP {status} ${cost:.4f} out={u.get('output')}", file=sys.stderr)
@@ -125,6 +133,10 @@ def main() -> int:
             for q in qs:
                 if not any(norm(q) in x for x in sections[who]):
                     misattr.append(f"{who}: {q}")
+    out.insert(3, "Gateway quote check (what the model wrote, before repair): " + ", ".join(f"{k} {GATE.get(k, 0)}" for k in ("quotes", "verified", "repaired", "expanded", "dropped", "site_text")))
+    if GATE.get("issues"):
+        out += ["## Caught by the gateway before display", ""] + [f"- {x}" for x in GATE["issues"]]
+    print("gateway:", {k: v for k, v in GATE.items() if k != "issues"}, file=sys.stderr)
     out.insert(3, f"Total cost: ${grand:.4f}. Quoted passages: {len(quoted)}; not found word-for-word in the grounding file: {len(bad)}; quoted under a candidate but not from that candidate's record: {len(misattr)}")
     if misattr:
         out += ["## Quotes not in the named candidate's record", ""] + [f"- {b}" for b in misattr]

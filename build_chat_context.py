@@ -49,10 +49,13 @@ CHAT_RULES = """\
 - Keep answers short and plain, for older readers. Offer to compare candidates in ballot order on a topic.
 - Fairness method when comparing candidates (every time):
   - Same treatment: for each candidate in the race, the single most direct on-topic quote, the same number for everyone (one, or two only if everyone gets two). No extra quotes for anyone.
+  - On a measure (2J, 2K...), each candidate's quote is their line marked "Said YES/NO on <measure>" if one exists; otherwise their line on that measure's forum question, saying "no yes/no on file".
   - Before writing "no stated position on file", check that candidate's forum lines (including "Said YES/NO on ...") and the measure's "What candidates said" list. A recorded yes or no is always a stated position: show it.
   - Every quote line names its speaker. Credit a quote only to the name on its own line; never move a quote between candidates.
   - Copy each quote exactly as it appears in this file, including the source's own typos, and never cut it short mid-sentence. If you shorten, end with "..." and say it continues.
   - Say in a few words which question each quote answered (for example "on the 2K bond", "on the duplex ordinance (B3)"). Never present a quote as answering a different question.
+  - Topic match: every quote line carries "Topic: ...". Use a line for the voter's topic only if its Topic includes that topic. If a candidate has no such line, write "No direct statement on <topic> on file." and you may add their nearest line, labelled "Nearby, on <its topic>:". Never present a nearby line as on-topic.
+  - Write the answer once, cleanly: no self-corrections ("... no, the other forum") in the text.
   - Never show your search ("so instead", "that is not budget either"). If a candidate has no on-topic material, write one line: "No stated position on this on file." Use the date printed on each quote, never another forum's date.
   - A fragment with no position in it ("say the quiet part aloud") is not a position: say "no clear position on this on file" instead.
   - No adjectives about a candidate's record ("thin", "weak", "strong", "clearest contrast"). Say what is on file and what is not.
@@ -95,6 +98,44 @@ def _bb_prompts() -> dict:
     return {"prompts": prompts, "code": code}
 
 
+TOPICS = [("housing", ("housing",), ("housing", "land-use")),
+          ("climate and wildfire", ("climate",), ("climate", "wildfire")),
+          ("transportation", ("transportation",), ("transportation",)),
+          ("budget, taxes and the 2K bond", ("budget/bond 2K",), ("bond", "budget")),
+          ("downtown and the economy", (), ("economy", "downtown")),
+          ("homelessness and public safety", ("homelessness/safety",), ("public-safety", "homelessness")),
+          ("growth and development", ("growth/development",), ("land-use", "growth")),
+          ("arts", ("arts",), ("arts",))]
+
+
+def topic_labels(topic: str | None, issue: str | None = None) -> list[str]:
+    """Voter-topic labels for one quote (forum: topic + issue; statement: topic only)."""
+    out = [lab for lab, qt, st in TOPICS if (topic in qt) or ((issue or topic or "") in st)]
+    extra = issue if issue and issue != "other" else (topic if topic and topic != "other" else "")
+    return out or [f"other ({extra})" if extra else "general"]
+
+
+def quote_index(d: dict, asof: str) -> dict:
+    """Every quote in chat-context.txt, keyed to the candidate whose section holds it.
+    The gateway checks each quoted span in a chat answer against this before it is shown."""
+    import re
+    people, quotes = [], []
+    last_names: dict[str, list[str]] = {}
+    for c in d["candidates"]:
+        parts = c["name"].split()
+        last = " ".join(parts[1:]) if len(parts) == 2 else (" ".join(parts[-2:]) if parts[-2][:1].islower() or parts[-2] in ("La", "De", "Van") else parts[-1])
+        last_names.setdefault(last, []).append(c["name"])
+    for c in d["candidates"]:
+        aliases = [k for k, v in last_names.items() if v == [c["name"]] and c["name"].endswith(k)]
+        people.append({"name": c["name"], "aliases": aliases, "page": c["page_url"]})
+        for s in c["statements"]:
+            quotes.append({"speaker": c["name"], "text": clean(s["text"]), "kind": "own" if s["candidate_own_words"] else "reporter",
+                           "topics": topic_labels(s["topic"])})
+        for x in c["forum_quotes"]:
+            quotes.append({"speaker": c["name"], "text": clean(x["quote"]), "kind": "own", "topics": topic_labels(x["topic"], x.get("issue"))})
+    return {"version": asof, "fallback_page": u("people.html"), "people": people, "quotes": quotes}
+
+
 def chat_context(d: dict, asof: str) -> str:
     e = d["election"]
     edges_by_id = {x["id"]: x for x in d["endorsements"]}
@@ -129,14 +170,6 @@ def chat_context(d: dict, asof: str) -> str:
     for x in sorted(d["quotes"], key=lambda x: (x["date"], x["forum"], x["id"])):
         qcode.setdefault(clean(x["question"]), f"Q{len(qcode) + 1}")
     # Topic coverage index: for each voter topic, every candidate in ballot order and how many sourced items are on file.
-    TOPICS = [("housing", ("housing",), ("housing", "land-use")),
-              ("climate and wildfire", ("climate",), ("climate", "wildfire")),
-              ("transportation", ("transportation",), ("transportation",)),
-              ("budget, taxes and the 2K bond", ("budget/bond 2K",), ("bond", "budget")),
-              ("downtown and the economy", (), ("economy", "downtown")),
-              ("homelessness and public safety", ("homelessness/safety",), ("public-safety", "homelessness")),
-              ("growth and development", ("growth/development",), ("land-use", "growth")),
-              ("arts", ("arts",), ("arts",))]
     L += ["## Topic coverage (who has something on file, by topic)", "",
           "Counts of sourced items in this file per candidate (forum quotes + first-person statements). 0 means no stated position on file: say so, never guess. Candidates in ballot order.", ""]
     for label, qtopics, stopics in TOPICS:
@@ -215,13 +248,13 @@ def chat_context(d: dict, asof: str) -> str:
                 L.append("No first-person statements on file.")
             for s in own:
                 qc = _bp["code"].get(_bp["prompts"].get(s["id"], ""), "")
-                L.append(f"- {c['name']}, on {s['topic']}. {s['publisher']}, {s['kind']}" + (f", answering {qc}" if qc else "")
+                L.append(f"- {c['name']}. Topic: {' / '.join(topic_labels(s['topic']))}. {s['publisher']}, {s['kind']}" + (f", answering {qc}" if qc else "")
                          + (f", {s['published_on']}" if s["published_on"] else "") + f". Source: {s['source_url']}")
                 L.append("  " + md_quote(s["text"]))
             if rep:
                 L.append("What reporters wrote (the reporter's words, not the candidate's):")
                 for s in rep:
-                    L.append(f"- {s['speaker']} on {s['topic']}. {s['publisher']}"
+                    L.append(f"- {s['speaker']}, about {c['name']}. Topic: {' / '.join(topic_labels(s['topic']))}. {s['publisher']}"
                              + (f", {s['published_on']}" if s["published_on"] else "") + f". Source: {s['source_url']}")
                     L.append("  " + md_quote(s["text"]))
             L.append("")
@@ -238,7 +271,7 @@ def chat_context(d: dict, asof: str) -> str:
                 tag = " [speaker from speaking order]" if x["attribution_confidence"] == "medium" else ""
                 note = f" Transcript note: {x['caveats'][-1][len('Transcript note: '):]}" \
                     if x["caveats"][-1].startswith("Transcript note: ") else ""
-                L.append(f"- {c['name']}, {fcode[x['forum']]} ({fdate[x['forum']]}) {qcode[clean(x['question'])]} at {x['timestamp']}{st}{tag}")
+                L.append(f"- {c['name']}, {fcode[x['forum']]} ({fdate[x['forum']]}) {qcode[clean(x['question'])]} at {x['timestamp']}. Topic: {' / '.join(topic_labels(x['topic'], x.get('issue')))}.{st}{tag}")
                 L.append("  " + md_quote(x["quote"]))
                 L.append(f"  Watch: {x['watch_url']}{note}")
             L.append("")
@@ -306,6 +339,8 @@ def write_chat_files(out, d: dict, asof: str) -> dict:
     ctx = chat_context(d, asof)
     (api / "chat-context.txt").write_text(ctx, encoding="utf-8")
     (api / "chat-system.txt").write_text(CHAT_SYSTEM, encoding="utf-8")
+    import json
+    (api / "chat-quotes.json").write_text(json.dumps(quote_index(d, asof), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     s = stats(ctx)
     print(f"chat-context.txt {s['bytes']:,} bytes, about {s['tokens']:,} tokens (chars/{CHARS_PER_TOKEN})")
     if s["bytes"] > SOFT_LIMIT_BYTES:
