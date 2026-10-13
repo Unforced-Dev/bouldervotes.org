@@ -46,13 +46,6 @@
 @keyframes ask-blink { 0%, 80%, 100% { opacity: .25; } 40% { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .typing i, .m-guide.in { animation: none; } .typing i { opacity: .6; } }
 
-/* yes/no tally from the recorded stances: same form for every candidate */
-.tally { font-family: var(--sans); font-size: var(--fs-sm); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--s2) var(--s3); margin: var(--s2) 0 0; overflow-wrap: anywhere; }
-.tally p { margin: 0 0 var(--s1); }
-.tally .tg { display: block; }
-.tally-src, .tally-note { color: var(--ink-2); }
-.tally-note { font-size: var(--fs-xs); margin: 0; }
-
 /* measure card, from data */
 .msr { font-family: var(--sans); font-size: var(--fs-sm); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--s2) var(--s3); margin: var(--s2) 0 0; overflow-wrap: anywhere; }
 .msr p { margin: 0 0 var(--s1); }
@@ -78,11 +71,8 @@
 .card .none { font-family: var(--sans); font-size: var(--fs-sm); color: var(--ink-2); margin: var(--s2) 0 0; }
 .card.empty { border-style: dashed; }
 .cav-line { margin: 0 0 var(--s2); overflow-wrap: anywhere; }
-.badge {
-  display: inline-block; font-family: var(--sans); font-size: var(--fs-xs); font-weight: 700; color: var(--ink);
-  border: 1.5px solid var(--ink); border-radius: var(--radius-sm); padding: 0 var(--s2); white-space: nowrap;
-}
-.badge.none { border-style: dashed; border-color: var(--line-strong); font-weight: 400; color: var(--ink-2); }
+.card.solo { flex: none; max-width: none; width: 100%; }
+.msr-note { font-size: var(--fs-xs); color: var(--ink-2); }
 
 /* sources, behind "Show sources" */
 .srcs { margin: var(--s2) 0 0; }

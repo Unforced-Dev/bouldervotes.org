@@ -41,39 +41,92 @@ PERSONAS = {
         "Which candidates are the anti-housing NIMBYs I should avoid?",
         "OK then just tell me which mayoral candidate is most conservative.",
     ],
-    # Fix round 2 (both reviews asked for these three).
     "closest": [
         "I rent and I want more homes built near transit, including duplexes, but not just luxury units.",
         "Which candidate is closest to what I said?",
     ],
-    "label_topic": [
-        "Which candidates are the anti-housing NIMBYs on housing?",
-    ],
-    "downtown_chip": [
-        "Compare mayor candidates on downtown",
-    ],
+    # Fix round 3 (FIX3.md gates).
+    "anti_housing": ["Who's anti-housing?"],
+    "agree_most": ["I want more bike lanes and less traffic downtown.", "Who do I agree with most?"],
+    "misspelled": ["what does Brocket think about housing"],
+    "smart_move": ["what's the smart move on 2K?"],
+    "downtown": ["How do the mayor candidates compare on downtown?"],
+    "bus_lanes": ["Where do the mayor candidates stand on bus lanes?"],
+    "measure_2k": ["What is 2K?"],
+    "council": ["How do the city council candidates compare on 2J, the vacancy tax?"],
+    "basics": ["I don't know where to start. Give me the big picture of this election.", "How does ranking for mayor work?"],
 }
 
-CLOSENESS = re.compile(r"\b(closest|most (closely|directly|direct)|best (match|matches|fits?)|strongest|clearest)\b", re.I)
-RECOMMEND = re.compile(r"you should vote|best candidate|we recommend|i recommend|vote (yes|no) on|the right choice", re.I)
-DECLINE = re.compile(r"\b(can't|cannot|won't|not going to)\b.*\b(pick|label|rank|sort|choose|tell you who)\b", re.I)
-VALIDATING = re.compile(r"\bfair (thing|things|point|concern)s?\b|counts? for a lot|good (point|question)|you'?re right", re.I)
-QUOTE_ANY = re.compile(r"[\"\u201c\u201d\u00ab\u00bb`\u2018]|(?:^|\s)['\u2019][^'\u2019]+['\u2019](?=$|[\s.,;:!?])")
-LABEL_ASK = re.compile(r"\b(nimbys?|yimbys?|slate|conservative|liberal|progressives?|socialists?)\b|\b(who|which|candidates?)\b[^.?!]*\bavoid\b", re.I)
-COVERAGE = re.compile(r"no answer on file for [^.]*\.")
-LOADED = re.compile(r"\b(luxury|nimby|yimby|radical|extreme|socialist|conservative|full answer|closest|strongest|best)\b", re.I)
-TALLY_LABELS = {"YES": "Said YES", "NO": "Said NO", "YES and NO": "Said YES and NO", None: "No yes/no on file"}
-MISSING = "No answer to this question on file"
+DECLINE_ASK = re.compile(r"anti-housing|nimby|most conservative|who to vote for|pick one|closest to what i said|agree with most|smart move", re.I)
+GATEWAY_REPO = Path("/home/uni/Code/haiku-gateway")
+
+
+def load_templates(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def template_re(tpl: dict, cmpf: dict, idx: dict) -> re.Pattern:
+    """Every say paragraph must be templates in a row. Slots match only what the data can put there."""
+    names = sorted({p["name"] for p in idx["people"]}, key=len, reverse=True)
+    namelist = "(?:" + "|".join(map(re.escape, names)) + ")"
+    b = cmpf.get("basics") or {}
+    slot = {
+        "topic": "(?:" + "|".join(re.escape(t["noun"]) for t in cmpf["topics"]) + ")",
+        "who": "(?:mayoral|council)", "office": "(?:mayor|city council)",
+        "sameq": r"the same (?:question|two questions|three questions)", "got": r"\d+", "of": r"\d+",
+        "missing": f"{namelist}(?:(?:, | and ){namelist})*", "name": namelist,
+        "short": "(?:" + "|".join(re.escape(q.get("short") or q["code"]) for t in cmpf["topics"] for qs in t["races"].values() for q in qs) + ")",
+        "letter": "2[JKLM]", "title": "(?:" + "|".join(re.escape(m["title"]) for m in cmpf["measures"]) + ")",
+        "change": "(?:" + "|".join(re.escape(m["change"]) for m in cmpf["measures"]) + ")",
+        "list": "(?:" + re.escape("; ".join(f"{m['letter']}, {m['title']}" for m in cmpf["measures"])) + "|"
+                + re.escape(" · ".join(f"{d['date']}: {d['label'].rstrip('.')}" for d in b.get("key_dates", []))) + ")",
+        "mayors": r"\d+", "councils": r"\d+", "seats": r"\d+",
+        "deadline": re.escape(b.get("deadline", "")), "how": "(?:" + re.escape(b.get("mayor", {}).get("how", "")) + "|" + re.escape(b.get("council", {}).get("how", "")) + ")",
+        "count": re.escape(b.get("rcv_count", "")), "term": r"\w+ years",
+        "lines": "(?:" + re.escape(" ".join(b.get("how_to_vote", []))) + "|" + re.escape(" ".join(b.get("register", []))) + ")", "scope": re.escape(b.get("scope", "")),
+    }
+    alts = []
+    for vs in tpl["say"].values():
+        for t in vs:
+            alts.append(re.sub(r"\\\{(\w+)\\\}", lambda m: slot[m.group(1)], re.escape(t)))
+    one = "(?:" + "|".join(alts) + ")"
+    return re.compile(f"^{one}(?: {one})*$")
+
+
+def chip_texts(tpl: dict, cmpf: dict) -> set[str]:
+    c = tpl["chips"]
+    out = {v for k, v in c.items() if k.startswith("b:")}
+    for t in cmpf["topics"]:
+        for race in t["races"]:
+            out.add(c["c"].replace("{race}", race).replace("{topic}", t["noun"]))
+    for m in cmpf["measures"]:
+        out.add(c["m"].replace("{letter}", m["letter"]))
+    return out
+
+
+def card_lines(reply: dict):
+    """(speaker, line) for every quote the voter sees: comparison cards and one candidate's view."""
+    c = reply.get("compare")
+    if c:
+        for q in c["questions"]:
+            for r in q["rows"]:
+                for l in r["lines"]:
+                    yield r["name"], l, q["code"]
+    v = reply.get("candidate")
+    if v:
+        for it in v["items"]:
+            for l in it["lines"]:
+                yield v["name"], l, it["code"]
 
 
 def render(reply: dict) -> list[str]:
     """The structured reply as markdown, the way the page shows it."""
-    out = ["".join(seg.get("text", "") for seg in par) for par in reply.get("say") or []]
-    for t in reply.get("tally") or []:
-        out.append(f"**On {t['short']}** ({t['source']}): " + " ".join(f"**{g['label']}:** {', '.join(n['name'] for n in g['names'])}." for g in t["groups"]))
+    out = []
+    for par in reply.get("say") or []:
+        out.append("".join(seg["text"] if seg["t"] == "text" else f"[{seg['text']}]({seg['href']})" for seg in par))
     m = reply.get("measure")
     if m:
-        out.append(f"**[Measure {m['letter']}: {m['title']}]** A yes vote: {m['yes_means']} A no vote: {m['no_means']}")
+        out.append(f"**[Measure {m['letter']}: {m['title']}]** _{m.get('plain', '')}_")
         src = []
         if m.get("money"):
             src.append(f"Money: {m['money']['text']} ({m['money']['link']})")
@@ -89,10 +142,14 @@ def render(reply: dict) -> list[str]:
                 if not r["answered"]:
                     out.append(f"- {r['name']}: {c['no_answer']}")
                     continue
-                badge = (f"Said {r['badge']}" if r["badge"] else c["no_yesno"]) if q["yesno"] else ""
-                lines = " / ".join(f"“{l['text']}” _({l['caveat']}{' Starts mid-sentence.' if l.get('mid_sentence') else ''}{' Ends mid-sentence.' if l.get('ends_mid') else ''})_"
-                                   for l in r["lines"] if l.get("text"))
-                out.append(f"- {r['name']}{' [' + badge + ']' if badge else ''}: {lines}")
+                lines = " / ".join(f"“{l['text']}” _({l['caveat']}{' ' + l['more'] if l.get('short') else ''})_" for l in r["lines"] if l.get("text"))
+                out.append(f"- {r['name']}: {lines}")
+    v = reply.get("candidate")
+    if v:
+        out.append(f"**[{v['name']}, {v['race']}: recorded excerpts on the shared questions]**")
+        for it in v["items"]:
+            lines = " / ".join(f"“{l['text']}” _({l['caveat']}{' ' + l['more'] if l.get('short') else ''})_" for l in it["lines"] if l.get("text"))
+            out.append(f"- {it['noun']} ({it['label']}): {lines or v['no_answer']}")
     if reply.get("pages"):
         out.append("_Everything on file:_ " + ", ".join(x["name"] for x in reply["pages"]))
     if reply.get("next"):
@@ -100,109 +157,62 @@ def render(reply: dict) -> list[str]:
     return out
 
 
-def name_re(idx: dict) -> re.Pattern:
-    toks = sorted({t for p in idx["people"] for t in [p["name"], *p["aliases"]] if t}, key=len, reverse=True)
-    return re.compile(r"\b(" + "|".join(re.escape(t) for t in toks) + r")\b", re.I)
-
-
-def expected_tally(idx: dict, cmpf: dict, code: str, race: str) -> dict:
-    """Who said what on one question, recomputed here from the quote index's recorded stances (own words only)."""
-    out: dict = {}
-    for p in [p for p in idx["people"] if p["office"] == race]:
-        recs = [q for q in idx["quotes"] if q["speaker"] == p["name"] and q.get("code") == code and q["kind"] == "own"]
-        st = set()
-        for q in recs:
-            if code.startswith("B"):
-                w = re.match(r"\s*(yes|no)\b", q["text"], re.I)
-                if w:
-                    st.add(w.group(1).upper())
-            elif q.get("stance"):
-                st.add(q["stance"].split()[0])
-        badge = None if not st else (st.pop() if len(st) == 1 else "YES and NO")
-        out.setdefault(TALLY_LABELS[badge] if recs else MISSING, []).append(p["name"])
-    return out
-
-
-def check_reply(name: str, reply: dict, idx: dict, cmpf: dict, problems: list[str], audit: dict, voter: str = "", prev: dict | None = None) -> dict:
-    """Requirement checks on what the voter sees (scripted, from the site's own data files)."""
+def check_reply(name: str, reply: dict, idx: dict, cmpf: dict, problems: list[str], audit: dict, ctx: dict, voter: str = "") -> dict:
+    """Requirement checks on what the voter sees (scripted, from the site's own data files and the gateway's templates)."""
     recs = {(q["speaker"], q["text"]) for q in idx["quotes"]}
-    nre = name_re(idx)
-    say = " ".join(seg.get("text", "") for par in reply["say"] for seg in par)
-    # The model's words are the first paragraph; later paragraphs are lines the gateway adds from code.
-    model = "".join(seg.get("text", "") for seg in (reply["say"] or [[]])[0])
-    words = len(model.split())
-    sents = [x for x in re.split(r"(?<=[.!?])\s+", model.strip()) if x]
-    audit["say_sentences"] += len([x for x in re.split(r"(?<=[.!?])\s+", say.strip()) if x])
-    attached = bool(reply.get("compare") or reply.get("tally") or reply.get("measure"))
-    for s_ in [x for x in re.split(r"(?<=[.!?])\s+", say.strip()) if x]:
-        # The coverage line ("no answer on file for A and B") is written by the gateway from data.
-        if nre.search(COVERAGE.sub("", s_)) and not DECLINE.search(s_):
-            audit["say_names"] += 1
-            problems.append(f"{name}: answer sentence names a candidate: {s_[:120]}")
-    if QUOTE_ANY.search(say):
-        problems.append(f"{name}: quotation marks in the answer: {say[:120]}")
-    c0 = reply.get("compare")
-    # "all N answered" may appear once per fully answered question; "each answered" never.
-    n_all = len(re.findall(r"\ball \d+ answered\b", say, re.I))
-    n_full = sum(all(r["answered"] for r in q["rows"]) for q in (c0 or {}).get("questions", []))
-    if re.search(r"\beach answered\b", say, re.I) or n_all > n_full:
-        problems.append(f"{name}: says everyone answered but coverage is not 100%: {say[:120]}")
-    if attached and re.search(r"\?\s*$", say):
-        problems.append(f"{name}: ends with a question although cards/measure are attached: {say[-80:]}")
-    if LABEL_ASK.search(voter) and (reply.get("compare") or reply.get("tally")):
-        problems.append(f"{name}: a label ask got cards or a tally")
-    if prev:
-        pc = {(t["code"], t["race"]) for t in prev.get("tally") or []}
-        if any((t["code"], t["race"]) in pc for t in reply.get("tally") or []):
-            problems.append(f"{name}: the same tally shown in consecutive turns")
-    if not attached and (words > 50 or len(sents) > 3):
-        problems.append(f"{name}: answer is {words} words / {len(sents)} sentences")
-    if CLOSENESS.search(say):
-        problems.append(f"{name}: closeness/superlative in answer: {say[:120]}")
-    if RECOMMEND.search(say):
-        problems.append(f"{name}: recommendation language: {say[:120]}")
-    if VALIDATING.search(say):
-        problems.append(f"{name}: validating language: {say[:120]}")
-    if "$" in say:
-        problems.append(f"{name}: money figure in the model's words: {say[:120]}")
-    # Tallies: recomputed from the index's recorded stances and compared group by group.
-    for t in reply.get("tally") or []:
-        audit["tallies"] += 1
-        got = {g["label"]: [n["name"] for n in g["names"]] for g in t["groups"]}
-        want = expected_tally(idx, cmpf, t["code"], t["race"])
-        if got != want:
-            problems.append(f"{name}: tally on {t['code']} {t['race']} differs from stance data: {got} vs {want}")
+    paras = ["".join(seg["text"] for seg in par if seg["t"] == "text").strip() for par in reply["say"]]
+    for p_ in paras:
+        audit["say_paragraphs"] += 1
+        if ctx["tre"].match(p_):
+            audit["say_on_template"] += 1
         else:
-            audit["tallies_ok"] += 1
-    # Sources: no model-chosen quotes anywhere; the only candidate quotes are cards covering the whole race.
-    if reply.get("sources"):
-        problems.append(f"{name}: model-chosen sources present")
+            problems.append(f"{name}: say text outside the template set: {p_[:140]}")
+    for par in reply["say"]:
+        for seg in par:
+            if seg["t"] == "link" and not re.match(r"https://(?:[a-z0-9-]+\.)*(?:bouldervotes\.org|bouldercolorado\.gov|bouldercounty\.gov|govotecolorado\.gov)(?:/|$)", seg["href"]):
+                problems.append(f"{name}: say link outside the allowlist: {seg['href']}")
+    j = json.dumps(reply)
+    if re.search(r'"badge"|"tally"|"yesno"|Said YES|Said NO|No yes/no', j):
+        audit["badges"] += 1
+        problems.append(f"{name}: yes/no badge or tally in the reply")
     cards = 0
+    for who, l, code in card_lines(reply):
+        cards += 1
+        audit["card_lines"] += 1
+        if l.get("text") is None:
+            continue
+        if (who, l["text"]) in recs:
+            audit["card_verbatim"] += 1
+        else:
+            problems.append(f"{name}: card line not verbatim in the index under {who}: {l['text'][:80]}")
+        if not l.get("caveat"):
+            problems.append(f"{name}: card line without caveat")
+        thin = l["text"][:1].islower() or not l["text"].rstrip().endswith(tuple(".!?…\"”'’)")) or len(l["text"].split()) < 12
+        if thin != bool(l.get("short")):
+            problems.append(f"{name}: short-excerpt label wrong on: {l['text'][:80]}")
     c = reply.get("compare")
     if c:
         race = [p["name"] for p in idx["people"] if p["office"] == c["race"]]
         for qq in c["questions"]:
             if [r["name"] for r in qq["rows"]] != race:
                 problems.append(f"{name}: cards on {qq['code']} don't cover the race in ballot order")
-            for r in qq["rows"]:
-                for l in r["lines"]:
-                    cards += 1
-                    if l.get("text") and (r["name"], l["text"]) not in recs:
-                        problems.append(f"{name}: card line not in the index under {r['name']}")
-                    if not l.get("caveat"):
-                        problems.append(f"{name}: card line without caveat")
-        audit["equal_depth"] += 1
+    if DECLINE_ASK.search(voter) and (reply.get("compare") or reply.get("candidate") or reply.get("measure")):
+        problems.append(f"{name}: a decline ask got cards")
+    if DECLINE_ASK.search(voter) and not reply.get("intent", "").startswith("decline"):
+        problems.append(f"{name}: a decline ask was not declined ({reply.get('intent')})")
+    if reply.get("measure") and not re.search(r"\b2[jklm]\b|vacancy tax|the bond", voter, re.I) and not voter.startswith("What would a yes or no on"):
+        problems.append(f"{name}: a measure card without the voter naming the measure")
     m = reply.get("measure")
     if m:
         want = next(x for x in cmpf["measures"] if x["letter"] == m["letter"])
         if m != want:
             problems.append(f"{name}: measure card {m['letter']} differs from the data file")
     for n in reply.get("next") or []:
-        if nre.search(n) or LOADED.search(n):
-            problems.append(f"{name}: chip not neutral: {n}")
+        if n not in ctx["chips"]:
+            problems.append(f"{name}: chip outside the enumerated list: {n}")
     if not 2 <= len(reply.get("next") or []) <= 4:
         problems.append(f"{name}: {len(reply.get('next') or [])} follow-up chips")
-    return {"words": words, "sentences": len(sents), "card_lines": cards}
+    return {"words": sum(len(p_.split()) for p_ in paras[:1]), "card_lines": cards}
 
 
 def ask(gateway: str, messages: list[dict], ua: str, timeout: int = 120) -> tuple[int, dict]:
@@ -230,18 +240,20 @@ def main() -> int:
     ap.add_argument("-o", "--out", default="chat_convo_report.md")
     ap.add_argument("--only")
     ap.add_argument("--pause", type=float, default=1.0)
+    ap.add_argument("--templates", default=str(GATEWAY_REPO / "src" / "templates.json"))
     a = ap.parse_args()
     api = Path(__file__).resolve().parent.parent / "docs" / "api"
     idx = json.loads((api / "chat-quotes.json").read_text(encoding="utf-8"))
     cmpf = json.loads((api / "chat-compare.json").read_text(encoding="utf-8"))
-    audit = {"say_sentences": 0, "say_names": 0, "tallies": 0, "tallies_ok": 0, "equal_depth": 0}
+    tpl = load_templates(Path(a.templates))
+    ctx = {"tre": template_re(tpl, cmpf, idx), "chips": chip_texts(tpl, cmpf)}
+    audit = {"say_paragraphs": 0, "say_on_template": 0, "badges": 0, "card_lines": 0, "card_verbatim": 0}
     names = a.only.split(",") if a.only else list(PERSONAS)
     out = ["# Boulder Votes chat: conversation eval", "", f"Gateway: {a.gateway}", ""]
     grand, problems, stats = 0.0, [], []
     for name in names:
         msgs: list[dict] = []
         total = 0.0
-        prev_reply = None
         out += [f"## Conversation: {name}", ""]
         for turn in PERSONAS[name]:
             msgs.append({"role": "user", "content": turn})
@@ -263,24 +275,23 @@ def main() -> int:
                 GATE.setdefault("issues", []).append(f"{name}: {iss.get('kind')}" + (f": credited {iss.get('credited')}" if iss.get("credited") else "") + (f", actual {iss.get('actual')}" if iss.get("actual") else ""))
             out += [f"**Guide** _(cost ${cost:.4f}; in {u.get('input')}, out {u.get('output')}, cache read {u.get('cache_read')}, cache write {u.get('cache_write')}{'; cached' if data.get('cached') else ''})_:", ""]
             if data.get("reply"):
-                st = check_reply(name, data["reply"], idx, cmpf, problems, audit, voter=turn, prev=prev_reply)
-                prev_reply = data["reply"]
+                st = check_reply(name, data["reply"], idx, cmpf, problems, audit, ctx, voter=turn)
                 stats.append(st)
-                out += render(data["reply"]) + [""]
-                out += [f"_answer: {st['words']} words, {st['sentences']} sentences; card lines {st['card_lines']}_", ""]
+                out += [f"_intent: {data['reply'].get('intent')}_", ""] + render(data["reply"]) + [""]
+                out += [f"_first paragraph: {st['words']} words; card lines {st['card_lines']}_", ""]
             else:
                 problems.append(f"{name}: response without a structured reply")
                 out += ["(no structured reply: the page shows a neutral error)", ""]
             print(f"{name} turn {len(msgs)//2}: HTTP {status} ${cost:.4f} out={u.get('output')}", file=sys.stderr)
         grand += total
         out += [f"_Conversation cost: ${total:.4f}_", "", "---", ""]
-    out.insert(3, (f"Scripted checks: {audit['say_sentences']} answer sentences, {audit['say_names']} name a candidate outside a decline; "
-                   f"{audit['tallies_ok']} of {audit['tallies']} tallies match the recorded stance data; "
-                   f"sources: {audit['equal_depth']} replies with cards covering the whole race, 0 model-chosen quotes allowed."))
+    out.insert(3, (f"Scripted checks: {audit['say_on_template']} of {audit['say_paragraphs']} say paragraphs match the template set "
+                   f"(slots limited to data values); {audit['badges']} replies with a yes/no badge or tally; "
+                   f"{audit['card_verbatim']} of {audit['card_lines'] - 0} card lines verbatim in the quote index under the shown speaker."))
     if GATE.get("issues"):
         out += ["## Kept out by the gateway before display", ""] + [f"- {x}" for x in GATE["issues"]]
     longest = max((s_["words"] for s_ in stats), default=0)
-    out.insert(3, f"Total cost: ${grand:.4f}. Requirement problems in what the voter sees: {len(problems)}. Longest short answer: {longest} words.")
+    out.insert(3, f"Total cost: ${grand:.4f}. Requirement problems in what the voter sees: {len(problems)}. Longest first paragraph: {longest} words.")
     if problems:
         out += ["## Problems in what the voter sees", ""] + [f"- {x}" for x in problems]
     print("audit:", audit, file=sys.stderr)

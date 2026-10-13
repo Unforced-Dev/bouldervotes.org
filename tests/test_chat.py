@@ -95,16 +95,18 @@ class TestChatContext(unittest.TestCase):
         self.assertIn("In plain words (bouldervotes.org's summary, not the ballot text)", self.ctx)
         self.assertRegex(self.ctx, r"- F5: [^\n]* Mayoral candidates only\.")
         self.assertIn("## Side-by-side comparisons", self.ctx)
-        self.assertIn("[compare budget mayor]", self.ctx)
-        self.assertRegex(self.system, r"\[compare TOPIC RACE\]")
-        self.assertRegex(self.system, r"Never say who is closest")
+        self.assertIn("- compare budget mayor:", self.ctx)
+        self.assertIn("[intent compare TOPIC RACE]", self.system)
 
-    def test_fix_round1_prompt_never_names_candidates(self):
-        self.assertIn("Never name a candidate", self.system)
-        self.assertIn("[measure LETTER]", self.system)
+    def test_fix_round3_model_only_classifies(self):
+        # The model writes nothing the voter reads: two bracketed lines, an intent and chip ids.
+        self.assertIn("You never write anything the voter reads", self.system)
+        for k in ("[intent measure LETTER]", "[intent basics TOPIC]", "[intent candidate NAME]", "[intent decline pick]",
+                  "[intent decline label]", "[intent decline closest]", "[intent decline opinion]", "[intent unknown]", "[chips ID ID ID]"):
+            self.assertIn(k, self.system)
         self.assertNotIn("[sources]", self.system)
-        self.assertIn("No quotation marks of any kind, links, money figures", self.system)
-        self.assertIn("Never tell the voter how to vote on anything.", self.system)
+        self.assertNotIn("[next]", self.system)
+        self.assertNotIn("tally", self.ctx.split("## Side-by-side comparisons")[1].split("##")[0])
         self.assertIn("recorded excerpts", self.ctx)
         self.assertNotIn("full answer", self.ctx)
         self.assertNotIn("(copy BOTH lists", self.ctx)
@@ -197,7 +199,7 @@ class TestAskJsRendering(unittest.TestCase):
         return r.stdout
 
     def reply(self, **kw) -> dict:
-        base = {"say": [[{"t": "text", "text": "Short answer."}]], "tally": [], "compare": None, "measure": None, "pages": [], "next": ["One", "Two"]}
+        base = {"intent": "unknown", "say": [[{"t": "text", "text": "Short answer."}]], "compare": None, "candidate": None, "measure": None, "pages": [], "next": ["One", "Two"]}
         base.update(kw)
         return {"ok": True, "answer": "x", "reply": base}
 
@@ -205,7 +207,7 @@ class TestAskJsRendering(unittest.TestCase):
         cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
         topic = next(t for t in cmp["topics"] if t["key"] == key)
         return {"key": key, "label": topic["label"], "race": race, "questions": topic["races"][race],
-                "no_answer": cmp["no_answer"], "no_yesno": cmp["no_yesno"], "page": cmp["compare_page"]}
+                "no_answer": cmp["no_answer"], "page": cmp["compare_page"]}
 
     def measure(self, letter):
         cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
@@ -215,25 +217,30 @@ class TestAskJsRendering(unittest.TestCase):
         evil = '<script>alert(1)</script><img src=x onerror=alert(1)>'
         m = dict(self.measure("2K"), title=evil, yes_means=evil, money={"text": evil, "link": "https://bouldercolorado.gov/x"},
                  groups={"supports": [{"name": evil, "date": evil, "link": "https://x.org/", "note": evil}], "opposes": []})
-        tally = [{"code": "F4Q44", "short": evil, "source": evil, "race": "mayor", "groups": [{"label": evil, "names": [{"name": evil, "page": "https://bouldervotes.org/p.html"}]}]}]
+        cand = {"name": evil, "page": "https://bouldervotes.org/p.html", "race": "mayor", "no_answer": evil,
+                "items": [{"key": "housing", "noun": evil, "code": "F4Q45", "label": evil, "question": evil,
+                           "lines": [{"text": evil, "caveat": evil, "link": "https://youtu.be/x", "short": True, "more": "Short excerpt. " + evil}]}]}
         out = self.render(self.reply(say=[[{"t": "text", "text": evil}, {"t": "link", "text": evil, "href": "https://bouldervotes.org/"}]],
-                                     tally=tally, measure=m, pages=[{"name": evil, "page": "https://bouldervotes.org/p.html"}],
+                                     measure=m, candidate=cand, pages=[{"name": evil, "page": "https://bouldervotes.org/p.html"}],
                                      next=[evil, '"><script>x</script>']))
         self.assertNotIn("<script", out)
         self.assertNotIn("<img", out)
         self.assertIn("&lt;script&gt;", out)
 
-    def test_links_https_only_ai_text_links_only_on_allowlisted_sites(self):
+    def test_links_https_only_say_links_only_on_allowlisted_sites(self):
         m = dict(self.measure("2K"), official="javascript:alert(1)", page="https://bouldervotes.org/measures/2026-2k.html")
-        out = self.render(self.reply(measure=m, say=[[{"t": "text", "text": "See https://bouldervotes.org/measures/2026-2j.html, https://bouldercolorado.gov/a?b=1&c=2 and https://evil.example.org/x"}],
-                                                     [{"t": "link", "text": "bad", "href": "http://evil.example/"}]]))
+        out = self.render(self.reply(measure=m, say=[[{"t": "text", "text": "See https://bouldervotes.org/measures/2026-2j.html"}],
+                                                     [{"t": "link", "text": "ok", "href": "https://bouldercolorado.gov/a?b=1&c=2"},
+                                                      {"t": "link", "text": "yt", "href": "https://www.youtube.com/watch?v=evil"},
+                                                      {"t": "link", "text": "bad", "href": "http://evil.example/"},
+                                                      {"t": "link", "text": "evil", "href": "https://evil.example.org/x"}]]))
         self.assertNotIn("javascript:", out)
         self.assertNotIn('href="http://', out)
         self.assertIn('href="measures/2026-2k.html"', out)
-        self.assertIn('href="measures/2026-2j.html"', out)
+        self.assertNotIn('href="measures/2026-2j.html"', out)  # text is never turned into a link
         self.assertIn('href="https://bouldercolorado.gov/a?b=1&amp;c=2" rel="noopener noreferrer"', out)
         self.assertNotIn('href="https://evil.example.org', out)
-        self.assertIn("https://evil.example.org/x", out)  # shown as plain text, not a link
+        self.assertNotIn('href="https://www.youtube.com/watch?v=evil"', out)  # not every youtube link: only card data
 
     def test_no_reply_object_is_a_neutral_error_never_raw_text(self):
         out = self.render({"ok": True, "answer": "Brockett said yes and Adams opposed it."})
@@ -258,34 +265,44 @@ class TestAskJsRendering(unittest.TestCase):
         for chunk in out.split("<blockquote>")[1:]:
             self.assertRegex(chunk.split("<blockquote>")[0], r"class=\"cav-line\"><span class=\"cav\">(Automatic transcript|From the)")
         self.assertIn("recorded excerpts", out)
-        self.assertNotIn("full answer", out.lower().replace("not full answers", ""))
+        # "full answer" only as the way to it from a short excerpt, never as a claim about what the card is.
+        self.assertNotIn("full answer", re.sub(r"(watch|read) the full answer|not full answers", "", out.lower()))
 
-    def test_compare_cards_gaps_yes_no_and_mid_sentence_flags(self):
+    def test_compare_cards_gaps_no_badges_and_short_excerpts(self):
         out = self.render(self.reply(compare=self.view("housing")))
         names = re.findall(r'<p class="who"><span><a href="[^"]+">([^<]+)</a>', out)
         mayors = json.loads((H / "ballot_order.json").read_text(encoding="utf-8"))["races"]["mayor"]
         self.assertEqual(names, mayors + mayors)  # two questions, ballot order each time
         self.assertIn("No answer to this question on file.", out)  # Jacobs, Smith: no B3 answer
-        self.assertIn('<span class="badge">Said YES</span>', out)
+        self.assertNotIn("badge", out)
+        self.assertNotRegex(out, r"Said (YES|NO)|No yes/no")
         self.assertIn("Yes. Boulder needs more housing choices", out)
-        self.assertIn("Starts mid-sentence.", out)
-        out2 = self.render(self.reply(compare=self.view("budget")))
-        self.assertIn('<span class="badge none">No yes/no on file</span>', out2)
-        self.assertIn("Ends mid-sentence.", out2)  # Adams: "...this $400 million bond"
+        # Goldstein's "is to implement this vacancy tax." is a short excerpt, with the way to the full answer.
+        self.assertRegex(out, r"is to implement this vacancy tax\.\u201d</p></blockquote><p class=\"cav-line\"><span class=\"cav\">Automatic transcript\. Check the recording\. "
+                              r"Short excerpt\. <a href=\"https://[^\"]+\" rel=\"noopener noreferrer\">Watch the full answer\.</a>")
+        out2 = self.render(self.reply(compare=self.view("downtown")))
+        self.assertIn("Short excerpt. <a", out2)
+        self.assertIn("Read the full answer.</a>", out2)  # questionnaire lines are read, not watched
 
-    def test_tally_renders_every_group_from_data(self):
-        tally = [{"code": "F4Q44", "short": "2K, the $400M bond", "source": "League of Women Voters forum, September 26, 2026", "race": "mayor",
-                  "groups": [{"label": "Said YES", "names": [{"name": "Aaron Brockett", "page": "https://bouldervotes.org/people/aaron-brockett.html"}]},
-                             {"label": "No yes/no on file", "names": [{"name": "Taishya Adams", "page": "https://bouldervotes.org/people/taishya-adams.html"}]}]}]
-        out = self.render(self.reply(tally=tally))
-        self.assertIn("<strong>On 2K, the $400M bond</strong>", out)
-        self.assertIn('<b>Said YES:</b> <a href="people/aaron-brockett.html">Aaron Brockett</a>.', out)
-        self.assertIn('<b>No yes/no on file:</b> <a href="people/taishya-adams.html">Taishya Adams</a>.', out)
+    def test_candidate_view_renders_their_excerpts_with_caveats(self):
+        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
+        items = []
+        for t in cmp["topics"]:
+            for q in t["races"].get("mayor", []):
+                row = next(r for r in q["rows"] if r["name"] == "Fred Smith")
+                items.append({"key": t["key"], "noun": t["noun"], "code": q["code"], "label": q["label"], "question": q["question"], "lines": row["lines"]})
+        out = self.render(self.reply(candidate={"name": "Fred Smith", "page": "https://bouldervotes.org/people/fred-smith.html", "race": "mayor",
+                                                "items": items, "no_answer": cmp["no_answer"]}))
+        self.assertIn("recorded excerpts on the questions every candidate was asked", out)
+        self.assertIn("No answer to this question on file.", out)
+        for chunk in out.split("<blockquote>")[1:]:
+            self.assertIn('class="cav-line"><span class="cav">', chunk)
+        self.assertIn('href="people/fred-smith.html"', out)
 
     def test_measure_card_from_data_with_sources_folded(self):
         m = self.measure("2K")
         out = self.render(self.reply(measure=m))
-        self.assertIn("A yes vote:", out)
+        self.assertIn("In plain words: bouldervotes.org's summary".replace("'", "&#39;"), out)
         self.assertIn('<details class="srcs"><summary>Show sources</summary>', out)
         self.assertIn("maximum total repayment $650 million", out)
         for g in m["groups"]["supports"] + m["groups"]["opposes"]:
@@ -318,7 +335,7 @@ class TestCompareFile(unittest.TestCase):
         self.assertRegex(qs[0]["code"], r"^F4Q\d+$")
         self.assertEqual([r["name"] for r in qs[0]["rows"]], self.ballot["mayor"])
         self.assertTrue(all(r["answered"] for r in qs[0]["rows"]))
-        self.assertTrue(qs[0]["yesno"])
+        self.assertNotIn("yesno", qs[0])
 
     def test_missing_answer_is_a_gap_never_a_substitute(self):
         qs = self.q("budget", "council")[0]
@@ -327,14 +344,14 @@ class TestCompareFile(unittest.TestCase):
         for r in missing:
             self.assertEqual(r["lines"], [])
         self.assertEqual(self.cmp["no_answer"], "No answer to this question on file.")
-        self.assertEqual(self.cmp["no_yesno"], "No yes/no on file")
+        self.assertNotIn("no_yesno", self.cmp)
 
     def test_goldstein_b3_in_mayoral_housing(self):
         b3 = next(q for q in self.q("housing", "mayor") if q["code"] == "B3")
         g = next(r for r in b3["rows"] if r["name"] == "Jameson Goldstein")
         self.assertIn("Yes. Boulder needs more housing choices, especially duplexes and triplexes that can help families and middle-income resident stay here.",
                       [l["text"] for l in g["lines"]])
-        self.assertEqual(g["badge"], "YES")
+        self.assertNotIn("badge", g)
         self.assertEqual(g["lines"][0]["caveat"], "From the Better Boulder questionnaire.")
 
     def test_every_line_is_exact_and_from_the_same_question(self):
@@ -371,25 +388,47 @@ class TestCompareFile(unittest.TestCase):
         for x in self.idx["quotes"]:
             self.assertFalse((x.get("question") or "").startswith("(EFA)"), x["text"][:60])
 
-    def test_badges_are_recorded_own_word_stances(self):
-        # Fix round 1: positions come only from data. Reporter records never carry a stance; a forum
-        # badge is the stance on that candidate's own line for that question.
+    def test_no_badges_or_yesno_until_stances_are_hand_reviewed(self):
+        # Fix round 3: yes/no badges and tallies were uneven for plain-language answers, so none are shipped.
+        self.assertNotRegex(json.dumps(self.cmp), r'"badge"|"yesno"|"no_yesno"')
         for x in self.idx["quotes"]:
             if x["kind"] == "reporter":
                 self.assertNotIn("stance", x, x["text"][:60])
+
+    def test_short_excerpts_by_one_rule(self):
+        n = 0
         for t in self.cmp["topics"]:
-            for race, qs in t["races"].items():
+            for qs in t["races"].values():
                 for q in qs:
-                    if q["code"].startswith("B"):
-                        continue
                     for r in q["rows"]:
-                        st = {x["stance"].split()[0] for x in self.idx["quotes"]
-                              if x["speaker"] == r["name"] and x["code"] == q["code"] and x["kind"] == "own" and x.get("stance")}
-                        want = None if not st else (st.pop() if len(st) == 1 else "YES and NO")
-                        self.assertEqual(r["badge"], want, (t["key"], race, r["name"]))
-        b = {r["name"]: r["badge"] for r in self.q("budget", "mayor")[0]["rows"]}
-        self.assertEqual(b, {"Lisa Ann Jacobs": None, "Taishya Adams": None, "Aaron Brockett": "YES",
-                             "Jameson Goldstein": "NO", "Fred Smith": None, "Aquiles La Grave": "NO"})
+                        for l in r["lines"]:
+                            thin = l["mid_sentence"] or l["ends_mid"] or len(l["text"].split()) < 12
+                            self.assertEqual(bool(l.get("short")), thin, l["text"][:60])
+                            if thin:
+                                n += 1
+                                video = "youtu" in (l["link"] or "")
+                                self.assertEqual(l["more"], "Short excerpt. " + ("Watch" if video else "Read") + " the full answer.")
+        self.assertGreater(n, 10)
+
+    def test_measure_yes_no_symmetric(self):
+        # Fix round 3: the same words with and without "not"; no consequence clause on one side only.
+        for m in self.cmp["measures"]:
+            self.assertEqual(m["yes_means"], f"A yes vote would {m['change']}.")
+            self.assertEqual(m["no_means"], f"A no vote would not {m['change']}.")
+            self.assertNotRegex(m["change"], r";|, increasing|existing building needs|may not be issuable")
+            self.assertIn("summary of the city's ballot information", m["plain"])
+
+    def test_basics_from_data(self):
+        b = self.cmp["basics"]
+        self.assertIn("7 p.m.", b["deadline"])
+        self.assertTrue(b["rcv_count"].startswith("If nobody has more than half"))
+        self.assertEqual(b["rcv_source"], "https://bouldercolorado.gov/guide/ranked-choice-voting-guide")
+        self.assertEqual(b["mayor"]["count"], len(self.ballot["mayor"]))
+        self.assertEqual(b["council"]["count"], len(self.ballot["council"]))
+        self.assertEqual([d["date"] for d in b["key_dates"]], ["October 2", "October 19", "October 26", "November 3"])
+        self.assertFalse(any("http" in x for x in b["how_to_vote"] + b["register"]))
+        for t in self.cmp["topics"]:
+            self.assertTrue(t["noun"], t["key"])
 
     def test_lines_flag_mid_sentence_at_both_ends(self):
         for t in self.cmp["topics"]:
