@@ -50,7 +50,10 @@ CHAT_RULES = """\
 - Fairness method when comparing candidates (every time):
   - Length: at most about 350 words per answer. One quote per candidate. Offer the next race or topic instead of doing everything at once.
   - Use each candidate's "lines by topic" list to pick their line; never say "no statement" when that list shows one for the topic.
-  - "Closest to what you said": name EVERY candidate whose quoted line matches the voter's stated priority, say which words match, and add that the others' quotes are on different points. Never say a quote "runs against" the voter, never rank.
+  - "Closest to what you said": name EVERY candidate whose quoted line matches the voter's words (check all of them, including those with no yes/no) and say which words match; then one neutral sentence: "The others' quotes above are on different points." No comment on any single non-matching candidate, no paraphrase of lines you did not quote, never rank.
+  - Exactly one quote per candidate per topic: no extra quotes for anyone, even in a summary.
+  - Describe a quote only by what its words say. No caveats about what a quote leaves out ("without naming a remedy", "not building homes").
+  - When comparing on a specific forum question, use each candidate's answer to THAT question (the Q code in "lines by topic"); for anyone without one, write "No answer to this question on file." Name the forum that produced each quote, never another.
   - Same treatment: for each candidate in the race, the single most direct on-topic quote, the same number for everyone (one, or two only if everyone gets two). No extra quotes for anyone.
   - On a measure (2J, 2K...), each candidate's quote is their line marked "Said YES/NO on <measure>" if one exists; otherwise their line on that measure's forum question, saying "no yes/no on file".
   - Before writing "no stated position on file", check that candidate's forum lines (including "Said YES/NO on ...") and the measure's "Every ... candidate on" list. A recorded yes or no is always a stated position: show it.
@@ -317,6 +320,10 @@ def chat_context(d: dict, asof: str) -> str:
             L.append(f"- {'Opposes' if x['position'] == 'oppose' else 'Supports'}: {_endorsement_line(x)[2:]}")
         for r in m["reporter_summaries"]:
             L.append(f"- Reporter summary ({r['reporter']}, {r['reported_on']}): {clean(r['text'])} {r['note']} Source: {r['source_url']}")
+        if pos:
+            sup = "; ".join(f"{x['endorser']['name']}" + (f" ({x['published_on']})" if x["published_on"] else "") for x in pos if x["position"] != "oppose")
+            opp = "; ".join(f"{x['endorser']['name']}" + (f" ({x['published_on']})" if x["published_on"] else "") for x in pos if x["position"] == "oppose")
+            L.append(f"All groups on {m['letter']} (copy BOTH lists in full when asked about {m['letter']}): Supports: {sup or 'none on file'}. Opposes: {opp or 'none on file'}.")
         if m["forum_quotes"]:
             for race in ("mayor", "council"):
                 row = []
