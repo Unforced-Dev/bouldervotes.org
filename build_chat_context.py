@@ -286,7 +286,9 @@ def measure_change(yes_means: str) -> str:
 def measure_facts(d: dict) -> list[dict]:
     """Per measure, what the page shows from data when the chat brings it up: what a yes and a no do,
     the money line with its city source, and the groups on file for each side, each with its date and link.
-    The chat model never writes these."""
+    The chat model never writes these. Group lists hold organizations only, for every measure: a person on a
+    campaign's list (a candidate, an official, a host) is a claim the chat can't check and that covers some
+    candidates and not others, so individuals stay on the measure's page, not on the card."""
     edges = {x["id"]: x for x in d["endorsements"]}
     prov = {"campaign_claim": "listed by a campaign", "filing": "city filing", "news_report": "news listing"}
     out = []
@@ -294,6 +296,8 @@ def measure_facts(d: dict) -> list[dict]:
         groups = {"supports": [], "opposes": []}
         for i in m["positions"]:
             x = edges[i]
+            if x["endorser"]["type"] != "organization":
+                continue
             g = {"name": x["endorser"]["name"], "date": x["published_on"] or "", "link": x["source_url"]}
             if x["provenance"] in prov:
                 g["note"] = prov[x["provenance"]]
@@ -607,10 +611,12 @@ def chat_context(d: dict, asof: str) -> str:
             L.append(f"- {'Opposes' if x['position'] == 'oppose' else 'Supports'}: {_endorsement_line(x)[2:]}")
         for r in m["reporter_summaries"]:
             L.append(f"- Reporter summary ({r['reporter']}, {r['reported_on']}): {clean(r['text'])} {r['note']} Source: {r['source_url']}")
-        if pos:
+        orgs = [x for x in pos if x["endorser"]["type"] == "organization"]
+        if orgs:
+            pos = orgs
             sup = "; ".join(f"{x['endorser']['name']}" + (f" ({x['published_on']})" if x["published_on"] else "") for x in pos if x["position"] != "oppose")
             opp = "; ".join(f"{x['endorser']['name']}" + (f" ({x['published_on']})" if x["published_on"] else "") for x in pos if x["position"] == "oppose")
-            L.append(f"All groups on {m['letter']}: Supports: {sup or 'none on file'}. Opposes: {opp or 'none on file'}.")
+            L.append(f"All organizations on {m['letter']}: Supports: {sup or 'none on file'}. Opposes: {opp or 'none on file'}.")
         if m["forum_quotes"]:
             for race in ("mayor", "council"):
                 row = []

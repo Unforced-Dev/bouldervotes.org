@@ -550,6 +550,25 @@ class TestCompareFile(unittest.TestCase):
             for g in m["groups"]["supports"] + m["groups"]["opposes"]:
                 self.assertTrue(g["name"] and g["link"].startswith("https://"), g)
 
+    def test_measure_groups_are_organizations_only(self):
+        """Fix round 6 (Sonnet D1): the 2L card listed five candidates from the pro-2L campaign page. One rule for all
+        four measures: group lists name organizations, never a candidate or any other individual."""
+        people = {p["name"] for p in json.loads((DOCS / "api" / "chat-quotes.json").read_text())["people"]}
+        self.assertGreaterEqual(len(people), 19)
+        edges = json.loads((DOCS / "api" / "v1" / "endorsements.json").read_text())["endorsements"]
+        persons = {e["endorser"]["name"] for e in edges if e["endorser"]["type"] == "person"}
+        orgs = {e["endorser"]["name"] for e in edges if e["endorser"]["type"] == "organization"}
+        for m in self.cmp["measures"]:
+            names = [g["name"] for g in m["groups"]["supports"] + m["groups"]["opposes"]]
+            self.assertFalse(set(names) & people, m["letter"])
+            self.assertFalse(set(names) & persons, m["letter"])
+            self.assertTrue(set(names) <= orgs, m["letter"])
+            self.assertFalse(any(g.get("note") == "listed by a campaign" for g in m["groups"]["supports"] + m["groups"]["opposes"]))
+        l2 = next(m for m in self.cmp["measures"] if m["letter"] == "2L")
+        for who in ("Taishya Adams", "Aaron Brockett", "Tina Marquis", "Ryan Schuchard", "Tara Winer", "Kim Monson"):
+            self.assertNotIn(who, json.dumps(l2["groups"]))
+        self.assertIn("Boulder Firefighters for a Stronger Boulder", [g["name"] for g in l2["groups"]["supports"]])
+
 
 if __name__ == "__main__":
     unittest.main()
