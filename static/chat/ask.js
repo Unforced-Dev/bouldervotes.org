@@ -1,15 +1,19 @@
 /* Talk through your vote. Vanilla JS, no cookies, nothing stored.
    The conversation lives only in this page; reloading clears it.
 
-   The gateway checks every quote against this site's quote index before it answers, and sends a
-   structured reply: a short answer, optional side-by-side cards (one shared question, every
-   candidate in ballot order), sources and follow-ups. The label, link and caveat next to each quote
-   come from the site's data, never from the AI. This file only renders that reply, safely. */
+   The gateway sends a structured, checked reply: a short answer that never names a candidate, a
+   yes/no tally built from the site's recorded stances, optional side-by-side cards (one shared
+   question, every candidate in ballot order, recorded excerpts), a measure card (what a yes and a
+   no do, the money and every group on each side) and follow-ups. Everything about a candidate or a
+   measure comes from the site's data, never from the AI. This file only renders that reply, safely. */
 (function () {
   "use strict";
 
   var MAX_TURNS = 12;
   var MAX_CHARS = 800;
+  // Links in the AI's own words are clickable only on these sites; data links (cards, sources) are https only.
+  var TEXT_LINK_HOSTS = /^(?:[a-z0-9-]+\.)*(?:bouldervotes\.org|youtube\.com|youtu\.be|bouldercolorado\.gov|bouldercounty\.gov)$/i;
+  var ERROR_TEXT = "Something went wrong with that answer. Please try again, or use the Compare, Issues and Forums pages.";
 
   function escapeHtml(s) {
     return String(s)
@@ -43,12 +47,13 @@
     return /youtu/.test(url || "") ? "watch" : "source";
   }
 
-  // Plain text with bare https links made clickable (everything else escaped).
+  // The AI's plain text: escaped, with https links made clickable only on the allowlisted sites.
   function textHtml(s) {
     var out = "", at = 0, re = /https:\/\/[^\s<>"]+[^\s<>".,;:!?)\]']/g, m;
     s = String(s);
     while ((m = re.exec(s))) {
-      out += escapeHtml(s.slice(at, m.index)) + linkHtml(m[0], m[0].replace(/^https:\/\/(?:www\.)?/, ""));
+      var host = (/^https:\/\/([^\/?#:]+)/.exec(m[0]) || [])[1] || "";
+      out += escapeHtml(s.slice(at, m.index)) + (TEXT_LINK_HOSTS.test(host) ? linkHtml(m[0], m[0].replace(/^https:\/\/(?:www\.)?/, "")) : escapeHtml(m[0]));
       at = m.index + m[0].length;
     }
     return out + escapeHtml(s.slice(at));
@@ -60,11 +65,10 @@
   }
 
   // The caveat line that sits next to every quote: where it is from, the caveat, the link. All from data.
-  function caveatHtml(q, withQuestion) {
+  function caveatHtml(q) {
     var bits = [];
     // "Better Boulder questionnaire" + "From the Better Boulder questionnaire." would say it twice.
     if (q.label && String(q.caveat || "").indexOf(q.label) < 0) bits.push(escapeHtml(q.label));
-    if (withQuestion && q.question) bits.push("on: " + escapeHtml(truncate(q.question, 110)));
     var s = bits.join(" · ") + (bits.length ? ". " : "") + escapeHtml(q.caveat || "Check the source.");
     if (q.link) s += " " + linkHtml(q.link, linkLabel(q.link));
     return '<span class="cav">' + s + "</span>";
@@ -73,13 +77,21 @@
   function sayHtml(say) {
     return (say || []).map(function (par) {
       return "<p>" + par.map(function (seg) {
-        if (seg.t === "quote") {
-          return "<q>" + escapeHtml(seg.q.text) + "</q> " + caveatHtml({ label: seg.q.speaker + (seg.q.label ? ", " + seg.q.label : ""), caveat: seg.q.caveat, link: seg.q.link }, false);
-        }
         if (seg.t === "link") return linkHtml(seg.href, seg.text);
         return textHtml(seg.text);
       }).join("") + "</p>";
     }).join("");
+  }
+
+  // Who said yes / no / gave no yes or no, built by the gateway from the recorded stances. Same form for everyone.
+  function tallyHtml(tally) {
+    if (!tally || !tally.length) return "";
+    return '<div class="tally">' + tally.map(function (t) {
+      return "<p><strong>On " + escapeHtml(t.short) + "</strong> <span class=\"tally-src\">(" + escapeHtml(t.source) + ")</span>" +
+        t.groups.map(function (g) {
+          return ' <span class="tg"><b>' + escapeHtml(g.label) + ":</b> " + g.names.map(function (n) { return linkHtml(n.page, n.name); }).join(", ") + ".</span>";
+        }).join("") + "</p>";
+    }).join("") + '<p class="tally-note">From each candidate\u2019s recorded yes or no. A missing answer says nothing about a view.</p></div>';
   }
 
   function badgeHtml(row, q, cmp) {
@@ -88,15 +100,18 @@
     return '<span class="badge none">' + escapeHtml(cmp.no_yesno || "No yes/no on file") + "</span>";
   }
 
+  function lineFlags(l) {
+    var f = [];
+    if (l.mid_sentence) f.push("Starts mid-sentence.");
+    if (l.ends_mid) f.push("Ends mid-sentence.");
+    return f.length ? " " + f.join(" ") : "";
+  }
+
   function compareHtml(c) {
     if (!c || !c.questions || !c.questions.length) return "";
     var race = c.race === "council" ? "City council" : "Mayor";
     var h = '<section class="cmp" aria-label="' + escapeHtml(c.label) + ', side by side">';
-    h += '<p class="cmp-h"><strong>' + escapeHtml(c.label) + "</strong> · " + race + ": every candidate, ballot order. Swipe the row.</p>";
-    if (c.measure) {
-      h += '<p class="cmp-m"><strong>A yes vote:</strong> ' + escapeHtml(c.measure.yes_means) + " <strong>A no vote:</strong> " +
-        escapeHtml(c.measure.no_means) + " " + linkHtml(c.measure.page, c.measure.letter + " page") + "</p>";
-    }
+    h += '<p class="cmp-h"><strong>' + escapeHtml(c.label) + "</strong> · " + race + ": every candidate, ballot order, recorded excerpts. Swipe the row.</p>";
     c.questions.forEach(function (q) {
       // The question header names the forum and date once; each card line keeps its own caveat and link.
       h += '<div class="cmp-q"><p class="cmp-ask">Asked of every candidate (' + escapeHtml(q.label) + "): <q>" + escapeHtml(truncate(q.question, 220)) + "</q></p>";
@@ -109,37 +124,48 @@
         } else {
           r.lines.forEach(function (l) {
             if (l.text === null || l.text === undefined) {
-              h += '<p class="none">This line couldn’t be checked just now. ' + linkHtml(r.page, "See " + r.name + "’s page") + ".</p>";
+              h += '<p class="none">This line couldn\u2019t be checked just now. ' + linkHtml(r.page, "See " + r.name + "\u2019s page") + ".</p>";
               return;
             }
-            h += "<blockquote><p>“" + escapeHtml(l.text) + "”</p></blockquote>" +
-              '<p class="cav-line">' + caveatHtml({ caveat: l.caveat + (l.mid_sentence ? " Starts mid-sentence." : ""), link: l.link }, false) + "</p>";
+            h += "<blockquote><p>\u201c" + escapeHtml(l.text) + "\u201d</p></blockquote>" +
+              '<p class="cav-line">' + caveatHtml({ caveat: l.caveat + lineFlags(l), link: l.link }) + "</p>";
           });
         }
         h += "</article>";
       });
       h += "</div></div>";
     });
-    h += '<p class="cmp-foot">A missing answer says nothing about a candidate’s view. ' + linkHtml(c.page, "Compare page") + "</p></section>";
+    h += '<p class="cmp-foot">These are recorded excerpts, not full answers. A missing answer says nothing about a candidate\u2019s view. ' + linkHtml(c.page, "Compare page") + "</p></section>";
     return h;
   }
 
-  function sourcesHtml(items) {
-    if (!items || !items.length) return "";
-    var n = items.filter(function (i) { return i.kind === "quote"; }).length;
-    var lis = items.map(function (it) {
-      if (it.kind === "quote") {
-        var q = it.q;
-        return '<li><p class="src-who">' + linkHtml(q.page, q.speaker) + (q.stance ? ' <span class="badge">Said ' + escapeHtml(q.stance) + "</span>" : "") + "</p>" +
-          "<blockquote><p>“" + escapeHtml(q.text) + "”</p></blockquote>" +
-          '<p class="cav-line">' + caveatHtml(q, true) + "</p>" +
-          (q.correction ? '<p class="fix">Corrected: ' + escapeHtml(q.correction) + "</p>" : "") + "</li>";
-      }
-      if (it.kind === "groups") return '<li><p><strong>Groups:</strong> ' + textHtml(it.text) + "</p></li>";
-      if (it.kind === "note") return '<li class="src-note"><p>' + (it.href ? linkHtml(it.href, it.text) : textHtml(it.text)) + "</p></li>";
-      return "<li><p>" + (it.speaker ? "<strong>" + escapeHtml(it.speaker) + ":</strong> " : "") + textHtml(it.text) + "</p></li>";
-    }).join("");
-    return '<details class="srcs"><summary>Show sources' + (n ? " (" + n + ")" : "") + "</summary><ul>" + lis + "</ul></details>";
+  function groupList(gs) {
+    if (!gs || !gs.length) return "none on file";
+    return gs.map(function (g) {
+      return linkHtml(g.link, g.name) + (g.date ? " (" + escapeHtml(g.date) + ")" : "") + (g.note ? " [" + escapeHtml(g.note) + "]" : "");
+    }).join("; ");
+  }
+
+  // A ballot measure, from the site's data: what a yes and a no do; money, groups and wording behind "Show sources".
+  function measureHtml(m) {
+    if (!m) return "";
+    var h = '<section class="msr" aria-label="Measure ' + escapeHtml(m.letter) + '">';
+    h += '<p class="msr-h"><strong>' + escapeHtml(m.letter) + ": " + escapeHtml(m.title) + "</strong></p>";
+    h += "<p><strong>A yes vote:</strong> " + escapeHtml(m.yes_means) + "</p><p><strong>A no vote:</strong> " + escapeHtml(m.no_means) + "</p>";
+    var li = [];
+    if (m.money) li.push("<li><p><strong>Money:</strong> " + escapeHtml(m.money.text) + " " + linkHtml(m.money.link, "city source") + "</p></li>");
+    if (m.groups) {
+      li.push("<li><p><strong>Supports:</strong> " + groupList(m.groups.supports) + "</p></li>");
+      li.push("<li><p><strong>Opposes:</strong> " + groupList(m.groups.opposes) + "</p></li>");
+    }
+    li.push("<li><p>" + linkHtml(m.official, "Official ballot wording") + " · " + linkHtml(m.page, m.letter + " page") + "</p></li>");
+    h += '<details class="srcs"><summary>Show sources</summary><ul>' + li.join("") + "</ul></details></section>";
+    return h;
+  }
+
+  function pagesHtml(pages) {
+    if (!pages || !pages.length) return "";
+    return '<p class="pages">Everything on file: ' + pages.map(function (x) { return linkHtml(x.page, x.name); }).join(", ") + ".</p>";
   }
 
   function nextHtml(next) {
@@ -149,14 +175,12 @@
     }).join("") + "</div>";
   }
 
-  // One guide message from the gateway's checked reply. Falls back to plain text if there is no reply object.
+  // One guide message from the gateway's checked reply. No reply object: a neutral error, never raw text.
   function renderReply(data) {
     var r = data && data.reply;
-    if (!r) {
-      var t = String((data && data.answer) || "").split(/\n\s*\n/);
-      return '<div class="say">' + t.map(function (p) { return "<p>" + textHtml(p) + "</p>"; }).join("") + "</div>";
-    }
-    return '<div class="say">' + sayHtml(r.say) + "</div>" + compareHtml(r.compare) + sourcesHtml(r.sources) + nextHtml(r.next);
+    if (!r || !r.say) return '<div class="say"><p>' + escapeHtml(ERROR_TEXT) + "</p></div>";
+    return '<div class="say">' + sayHtml(r.say) + "</div>" + tallyHtml(r.tally) + measureHtml(r.measure) + compareHtml(r.compare) +
+      pagesHtml(r.pages) + nextHtml(r.next);
   }
 
   function retryText(sec) {
@@ -262,7 +286,7 @@
       }).then(function (r) {
         clearTimeout(timer);
         var data = r.data;
-        if (r.res.ok && data && data.ok && typeof data.answer === "string") {
+        if (r.res.ok && data && data.ok && typeof data.answer === "string" && data.reply && data.reply.say) {
           messages.push({ role: "assistant", content: data.answer });
           pending.innerHTML = renderReply(data);
           pending.classList.add("in");
@@ -274,7 +298,7 @@
           finishedState();
           return;
         }
-        var msg = data && data.message ? String(data.message) : "Something went wrong. Please try again in a little while.";
+        var msg = data && data.message && !data.ok ? String(data.message) : ERROR_TEXT;
         if (data && data.error === "rate_limited") msg += " " + retryText(data.retry_after_s);
         if (data && data.error === "resting") msg += " The guide pages work all day: Compare, Issues and Forums are in the menu.";
         fail(msg.trim(), true);

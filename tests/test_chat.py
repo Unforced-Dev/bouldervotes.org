@@ -99,6 +99,16 @@ class TestChatContext(unittest.TestCase):
         self.assertRegex(self.system, r"\[compare TOPIC RACE\]")
         self.assertRegex(self.system, r"Never say who is closest")
 
+    def test_fix_round1_prompt_never_names_candidates(self):
+        self.assertIn("Never name a candidate", self.system)
+        self.assertIn("[measure LETTER]", self.system)
+        self.assertNotIn("[sources]", self.system)
+        self.assertIn("No quotes, links, money figures", self.system)
+        self.assertIn("recorded excerpts", self.ctx)
+        self.assertNotIn("full answer", self.ctx)
+        self.assertNotIn("(copy BOTH lists", self.ctx)
+        self.assertNotIn("(copy this whole list", self.ctx)
+
     def test_no_held_or_unpublished_text(self):
         self.assertNotIn("held back", self.ctx)
 
@@ -175,8 +185,9 @@ QUOTE = {"speaker": "Aquiles La Grave", "page": "https://bouldervotes.org/people
          "link": "https://www.youtube.com/watch?v=abc&t=1s", "caveat": "Automatic transcript. Check the recording."}
 
 
-@unittest.skipUnless(shutil.which("node"), "node not installed")
 class TestAskJsRendering(unittest.TestCase):
+    """static/chat/ask.js renders only the gateway's structured reply: escaped, data links, caveats beside quotes."""
+
     def render(self, data: dict) -> str:
         code = ("const a=require(process.argv[1]);"
                 "process.stdout.write(a.renderReply(JSON.parse(require('fs').readFileSync(0,'utf8'))));")
@@ -185,52 +196,61 @@ class TestAskJsRendering(unittest.TestCase):
         return r.stdout
 
     def reply(self, **kw) -> dict:
-        base = {"say": [[{"t": "text", "text": "Short answer."}]], "compare": None, "sources": [], "next": ["One", "Two"]}
+        base = {"say": [[{"t": "text", "text": "Short answer."}]], "tally": [], "compare": None, "measure": None, "pages": [], "next": ["One", "Two"]}
         base.update(kw)
         return {"ok": True, "answer": "x", "reply": base}
 
+    def view(self, key, race="mayor"):
+        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
+        topic = next(t for t in cmp["topics"] if t["key"] == key)
+        return {"key": key, "label": topic["label"], "race": race, "questions": topic["races"][race],
+                "no_answer": cmp["no_answer"], "no_yesno": cmp["no_yesno"], "page": cmp["compare_page"]}
+
+    def measure(self, letter):
+        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
+        return next(m for m in cmp["measures"] if m["letter"] == letter)
+
     def test_html_is_escaped_everywhere(self):
         evil = '<script>alert(1)</script><img src=x onerror=alert(1)>'
-        q = dict(QUOTE, text=evil, caveat=evil, label=evil, speaker=evil)
-        out = self.render(self.reply(say=[[{"t": "text", "text": evil}, {"t": "quote", "q": q}]],
-                                     sources=[{"kind": "quote", "q": q}, {"kind": "text", "speaker": evil, "text": evil}],
+        m = dict(self.measure("2K"), title=evil, yes_means=evil, money={"text": evil, "link": "https://bouldercolorado.gov/x"},
+                 groups={"supports": [{"name": evil, "date": evil, "link": "https://x.org/", "note": evil}], "opposes": []})
+        tally = [{"code": "F4Q44", "short": evil, "source": evil, "race": "mayor", "groups": [{"label": evil, "names": [{"name": evil, "page": "https://bouldervotes.org/p.html"}]}]}]
+        out = self.render(self.reply(say=[[{"t": "text", "text": evil}, {"t": "link", "text": evil, "href": "https://bouldervotes.org/"}]],
+                                     tally=tally, measure=m, pages=[{"name": evil, "page": "https://bouldervotes.org/p.html"}],
                                      next=[evil, '"><script>x</script>']))
         self.assertNotIn("<script", out)
         self.assertNotIn("<img", out)
         self.assertIn("&lt;script&gt;", out)
 
-    def test_only_https_links_and_site_links_relative(self):
-        q = dict(QUOTE, link="javascript:alert(1)", page="https://bouldervotes.org/people/x.html")
-        out = self.render(self.reply(sources=[{"kind": "quote", "q": q}, {"kind": "note", "text": "see", "href": "http://evil.example/"}],
-                                     say=[[{"t": "text", "text": "See https://bouldervotes.org/measures/2026-2j.html and https://example.org/a?b=1&c=2"}]]))
+    def test_links_https_only_ai_text_links_only_on_allowlisted_sites(self):
+        m = dict(self.measure("2K"), official="javascript:alert(1)", page="https://bouldervotes.org/measures/2026-2k.html")
+        out = self.render(self.reply(measure=m, say=[[{"t": "text", "text": "See https://bouldervotes.org/measures/2026-2j.html, https://bouldercolorado.gov/a?b=1&c=2 and https://evil.example.org/x"}],
+                                                     [{"t": "link", "text": "bad", "href": "http://evil.example/"}]]))
         self.assertNotIn("javascript:", out)
         self.assertNotIn('href="http://', out)
-        self.assertIn('href="people/x.html"', out)
+        self.assertIn('href="measures/2026-2k.html"', out)
         self.assertIn('href="measures/2026-2j.html"', out)
-        self.assertIn('href="https://example.org/a?b=1&amp;c=2" rel="noopener noreferrer"', out)
+        self.assertIn('href="https://bouldercolorado.gov/a?b=1&amp;c=2" rel="noopener noreferrer"', out)
+        self.assertNotIn('href="https://evil.example.org', out)
+        self.assertIn("https://evil.example.org/x", out)  # shown as plain text, not a link
 
-    def test_every_quote_has_its_caveat_beside_it(self):
-        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
-        topic = next(t for t in cmp["topics"] if t["key"] == "housing")
-        view = {"key": "housing", "label": topic["label"], "race": "mayor", "questions": topic["races"]["mayor"],
-                "no_answer": cmp["no_answer"], "no_yesno": cmp["no_yesno"], "page": cmp["compare_page"]}
-        out = self.render(self.reply(compare=view, sources=[{"kind": "quote", "q": QUOTE}],
-                                     say=[[{"t": "text", "text": "La Grave said "}, {"t": "quote", "q": QUOTE}]]))
-        quotes = out.count("<blockquote>") + out.count("<q>We need")
-        self.assertGreater(quotes, 6)
-        # each blockquote is followed by its own caveat line, before the next quote
+    def test_no_reply_object_is_a_neutral_error_never_raw_text(self):
+        out = self.render({"ok": True, "answer": "Brockett said yes and Adams opposed it."})
+        self.assertNotIn("Brockett", out)
+        self.assertIn("Something went wrong with that answer", out)
+        src = ASK_JS.read_text(encoding="utf-8")
+        self.assertIn("data.reply && data.reply.say", src)  # a response without a reply is treated as an error
+
+    def test_every_card_quote_has_its_caveat_beside_it(self):
+        out = self.render(self.reply(compare=self.view("housing")))
+        self.assertGreater(out.count("<blockquote>"), 6)
         for chunk in out.split("<blockquote>")[1:]:
-            self.assertRegex(chunk.split("<blockquote>")[0], r"class=\"cav-line\"><span class=\"cav\">(?:[^<]+\. )?(Automatic transcript|From the)")
-        self.assertIn("<q>We need &lt;b&gt;more&lt;/b&gt; homes.</q> <span class=\"cav\">", out)
-        self.assertIn("Show sources (1)", out)
-        self.assertIn('<details class="srcs">', out)  # sources stay folded
+            self.assertRegex(chunk.split("<blockquote>")[0], r"class=\"cav-line\"><span class=\"cav\">(Automatic transcript|From the)")
+        self.assertIn("recorded excerpts", out)
+        self.assertNotIn("full answer", out.lower().replace("not full answers", ""))
 
-    def test_compare_cards_gaps_and_yes_no(self):
-        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
-        topic = next(t for t in cmp["topics"] if t["key"] == "housing")
-        view = {"key": "housing", "label": topic["label"], "race": "mayor", "questions": topic["races"]["mayor"],
-                "no_answer": cmp["no_answer"], "no_yesno": cmp["no_yesno"], "page": cmp["compare_page"]}
-        out = self.render(self.reply(compare=view))
+    def test_compare_cards_gaps_yes_no_and_mid_sentence_flags(self):
+        out = self.render(self.reply(compare=self.view("housing")))
         names = re.findall(r'<p class="who"><span><a href="[^"]+">([^<]+)</a>', out)
         mayors = json.loads((H / "ballot_order.json").read_text(encoding="utf-8"))["races"]["mayor"]
         self.assertEqual(names, mayors + mayors)  # two questions, ballot order each time
@@ -238,24 +258,31 @@ class TestAskJsRendering(unittest.TestCase):
         self.assertIn('<span class="badge">Said YES</span>', out)
         self.assertIn("Yes. Boulder needs more housing choices", out)
         self.assertIn("Starts mid-sentence.", out)
+        out2 = self.render(self.reply(compare=self.view("budget")))
+        self.assertIn('<span class="badge none">No yes/no on file</span>', out2)
+        self.assertIn("Ends mid-sentence.", out2)  # Adams: "...this $400 million bond"
 
-    def test_no_yes_no_on_file_badge(self):
-        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
-        topic = next(t for t in cmp["topics"] if t["key"] == "budget")
-        view = {"key": "budget", "label": topic["label"], "race": "mayor", "questions": topic["races"]["mayor"], "measure": topic["measure"],
-                "no_answer": cmp["no_answer"], "no_yesno": cmp["no_yesno"], "page": cmp["compare_page"]}
-        out = self.render(self.reply(compare=view))
-        self.assertIn('<span class="badge none">No yes/no on file</span>', out)
+    def test_tally_renders_every_group_from_data(self):
+        tally = [{"code": "F4Q44", "short": "2K, the $400M bond", "source": "League of Women Voters forum, September 26, 2026", "race": "mayor",
+                  "groups": [{"label": "Said YES", "names": [{"name": "Aaron Brockett", "page": "https://bouldervotes.org/people/aaron-brockett.html"}]},
+                             {"label": "No yes/no on file", "names": [{"name": "Taishya Adams", "page": "https://bouldervotes.org/people/taishya-adams.html"}]}]}]
+        out = self.render(self.reply(tally=tally))
+        self.assertIn("<strong>On 2K, the $400M bond</strong>", out)
+        self.assertIn('<b>Said YES:</b> <a href="people/aaron-brockett.html">Aaron Brockett</a>.', out)
+        self.assertIn('<b>No yes/no on file:</b> <a href="people/taishya-adams.html">Taishya Adams</a>.', out)
+
+    def test_measure_card_from_data_with_sources_folded(self):
+        m = self.measure("2K")
+        out = self.render(self.reply(measure=m))
         self.assertIn("A yes vote:", out)
+        self.assertIn('<details class="srcs"><summary>Show sources</summary>', out)
+        self.assertIn("maximum total repayment $650 million", out)
+        for g in m["groups"]["supports"] + m["groups"]["opposes"]:
+            self.assertIn(g["name"].replace("&", "&amp;"), out)
 
     def test_next_chips_are_buttons(self):
         out = self.render(self.reply(next=["What about 2K?", "Council on housing"]))
         self.assertEqual(out.count('<button type="button" class="chip" data-q='), 2)
-
-    def test_plain_answer_fallback(self):
-        out = self.render({"ok": True, "answer": "Line one.\n\n<b>two</b>"})
-        self.assertIn("<p>Line one.</p>", out)
-        self.assertNotIn("<b>two", out)
 
 
 class TestCompareFile(unittest.TestCase):
@@ -323,6 +350,57 @@ class TestCompareFile(unittest.TestCase):
 
     def test_council_not_offered_mayor_only_forum(self):
         self.assertNotIn("council", next(t for t in self.cmp["topics"] if t["key"] == "climate")["races"])
+
+    def test_every_question_has_a_short_name_and_no_efa_prefix(self):
+        for t in self.cmp["topics"]:
+            for race, qs in t["races"].items():
+                for q in qs:
+                    self.assertTrue(q["short"], (t["key"], race))
+                    self.assertFalse(q["question"].startswith("(EFA)"), (t["key"], race))
+        for x in self.idx["quotes"]:
+            self.assertFalse((x.get("question") or "").startswith("(EFA)"), x["text"][:60])
+
+    def test_badges_are_recorded_own_word_stances(self):
+        # Fix round 1: positions come only from data. Reporter records never carry a stance; a forum
+        # badge is the stance on that candidate's own line for that question.
+        for x in self.idx["quotes"]:
+            if x["kind"] == "reporter":
+                self.assertNotIn("stance", x, x["text"][:60])
+        for t in self.cmp["topics"]:
+            for race, qs in t["races"].items():
+                for q in qs:
+                    if q["code"].startswith("B"):
+                        continue
+                    for r in q["rows"]:
+                        st = {x["stance"].split()[0] for x in self.idx["quotes"]
+                              if x["speaker"] == r["name"] and x["code"] == q["code"] and x["kind"] == "own" and x.get("stance")}
+                        want = None if not st else (st.pop() if len(st) == 1 else "YES and NO")
+                        self.assertEqual(r["badge"], want, (t["key"], race, r["name"]))
+        b = {r["name"]: r["badge"] for r in self.q("budget", "mayor")[0]["rows"]}
+        self.assertEqual(b, {"Lisa Ann Jacobs": None, "Taishya Adams": None, "Aaron Brockett": "YES",
+                             "Jameson Goldstein": "NO", "Fred Smith": None, "Aquiles La Grave": "NO"})
+
+    def test_lines_flag_mid_sentence_at_both_ends(self):
+        for t in self.cmp["topics"]:
+            for qs in t["races"].values():
+                for q in qs:
+                    for r in q["rows"]:
+                        for l in r["lines"]:
+                            self.assertEqual(l["ends_mid"], not l["text"].rstrip().endswith(tuple(".!?…\"”'’)")), l["text"][-30:])
+        adams = next(r for r in self.q("budget", "mayor")[0]["rows"] if r["name"] == "Taishya Adams")
+        self.assertTrue(any(l["ends_mid"] for l in adams["lines"]))
+
+    def test_measure_facts_and_groups_from_data(self):
+        ms = {m["letter"]: m for m in self.cmp["measures"]}
+        self.assertEqual(sorted(ms), ["2J", "2K", "2L", "2M"])
+        k = ms["2K"]
+        # Checked against the city's ballot text ("maximum repayment cost up to $650,000,000") and bond guide.
+        self.assertIn("maximum total repayment $650 million", k["money"]["text"])
+        self.assertEqual(k["money"]["link"], "https://bouldercolorado.gov/guide/recreation-and-safety-bond")
+        self.assertTrue(k["groups"]["supports"] and k["groups"]["opposes"])
+        for m in ms.values():
+            for g in m["groups"]["supports"] + m["groups"]["opposes"]:
+                self.assertTrue(g["name"] and g["link"].startswith("https://"), g)
 
 
 if __name__ == "__main__":
