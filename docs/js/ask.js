@@ -1,18 +1,18 @@
 /* Talk through your vote. Vanilla JS, no cookies, nothing stored.
    The conversation lives only in this page; reloading clears it.
 
-   The gateway sends a structured, checked reply: a short answer that never names a candidate, a
-   yes/no tally built from the site's recorded stances, optional side-by-side cards (one shared
-   question, every candidate in ballot order, recorded excerpts), a measure card (what a yes and a
-   no do, the money and every group on each side) and follow-ups. Everything about a candidate or a
-   measure comes from the site's data, never from the AI. This file only renders that reply, safely. */
+   The gateway sends a structured reply. The AI only sorts the question; every sentence is a fixed
+   template filled from the site's data. The reply holds that short answer, optional side-by-side
+   cards (one shared question, every candidate in ballot order, recorded excerpts), one candidate's
+   recorded excerpts, a measure card (the money and every group on each side) and follow-up chips.
+   No yes/no badges or tallies. This file only renders that reply, safely. */
 (function () {
   "use strict";
 
   var MAX_TURNS = 12;
   var MAX_CHARS = 800;
-  // Links in the AI's own words are clickable only on these sites; data links (cards, sources) are https only.
-  var TEXT_LINK_HOSTS = /^(?:[a-z0-9-]+\.)*(?:bouldervotes\.org|youtube\.com|youtu\.be|bouldercolorado\.gov|bouldercounty\.gov)$/i;
+  // Links in the short answer are clickable only on these sites; data links (cards, sources) are https only.
+  var SAY_LINK_HOSTS = /^(?:[a-z0-9-]+\.)*(?:bouldervotes\.org|bouldercolorado\.gov|bouldercounty\.gov|govotecolorado\.gov)$/i;
   var ERROR_TEXT = "Something went wrong with that answer. Please try again, or use the Compare, Issues and Forums pages.";
 
   function escapeHtml(s) {
@@ -47,64 +47,40 @@
     return /youtu/.test(url || "") ? "watch" : "source";
   }
 
-  // The AI's plain text: escaped, with https links made clickable only on the allowlisted sites.
-  function textHtml(s) {
-    var out = "", at = 0, re = /https:\/\/[^\s<>"]+[^\s<>".,;:!?)\]']/g, m;
-    s = String(s);
-    while ((m = re.exec(s))) {
-      var host = (/^https:\/\/([^\/?#:]+)/.exec(m[0]) || [])[1] || "";
-      out += escapeHtml(s.slice(at, m.index)) + (TEXT_LINK_HOSTS.test(host) ? linkHtml(m[0], m[0].replace(/^https:\/\/(?:www\.)?/, "")) : escapeHtml(m[0]));
-      at = m.index + m[0].length;
-    }
-    return out + escapeHtml(s.slice(at));
-  }
-
   function truncate(s, n) {
     s = String(s || "");
     return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…" : s;
   }
 
-  // The caveat line that sits next to every quote: where it is from, the caveat, the link. All from data.
-  function caveatHtml(q) {
-    var bits = [];
-    // "Better Boulder questionnaire" + "From the Better Boulder questionnaire." would say it twice.
-    if (q.label && String(q.caveat || "").indexOf(q.label) < 0) bits.push(escapeHtml(q.label));
-    var s = bits.join(" · ") + (bits.length ? ". " : "") + escapeHtml(q.caveat || "Check the source.");
-    if (q.link) s += " " + linkHtml(q.link, linkLabel(q.link));
-    return '<span class="cav">' + s + "</span>";
+  function hostOf(url) {
+    return (/^https:\/\/([^\/?#:]+)/i.exec(String(url || "")) || [])[1] || "";
   }
 
+  // The short answer: plain text (never turned into links) plus link segments on the allowlisted sites.
   function sayHtml(say) {
     return (say || []).map(function (par) {
       return "<p>" + par.map(function (seg) {
-        if (seg.t === "link") return linkHtml(seg.href, seg.text);
-        return textHtml(seg.text);
+        if (seg.t === "link") return SAY_LINK_HOSTS.test(hostOf(seg.href)) ? linkHtml(seg.href, seg.text) : escapeHtml(seg.text);
+        return escapeHtml(seg.text);
       }).join("") + "</p>";
     }).join("");
   }
 
-  // Who said yes / no / gave no yes or no, built by the gateway from the recorded stances. Same form for everyone.
-  function tallyHtml(tally) {
-    if (!tally || !tally.length) return "";
-    return '<div class="tally">' + tally.map(function (t) {
-      return "<p><strong>On " + escapeHtml(t.short) + "</strong> <span class=\"tally-src\">(" + escapeHtml(t.source) + ")</span>" +
-        t.groups.map(function (g) {
-          return ' <span class="tg"><b>' + escapeHtml(g.label) + ":</b> " + g.names.map(function (n) { return linkHtml(n.page, n.name); }).join(", ") + ".</span>";
-        }).join("") + "</p>";
-    }).join("") + '<p class="tally-note">From each candidate\u2019s recorded yes or no. A missing answer says nothing about a view.</p></div>';
-  }
-
-  function badgeHtml(row, q, cmp) {
-    if (!q.yesno || !row.answered) return "";
-    if (row.badge) return '<span class="badge">Said ' + escapeHtml(row.badge) + "</span>";
-    return '<span class="badge none">' + escapeHtml(cmp.no_yesno || "No yes/no on file") + "</span>";
-  }
-
-  function lineFlags(l) {
-    var f = [];
-    if (l.mid_sentence) f.push("Starts mid-sentence.");
-    if (l.ends_mid) f.push("Ends mid-sentence.");
-    return f.length ? " " + f.join(" ") : "";
+  // One recorded excerpt with its caveat beside it. A short excerpt (a fragment or under 12 words) says so, by one
+  // rule for every candidate, and its link reads "Watch the full answer." (or "Read" for written sources).
+  function lineHtml(l, r) {
+    if (l.text === null || l.text === undefined) {
+      return '<p class="none">This line couldn\u2019t be checked just now. ' + linkHtml(r.page, "See " + r.name + "\u2019s page") + ".</p>";
+    }
+    var cav = escapeHtml(l.caveat || "Check the source.");
+    if (l.short && l.more) {
+      var parts = /^(Short excerpt\.)\s*(.*)$/.exec(l.more) || [null, "", l.more];
+      cav += " " + escapeHtml(parts[1]) + (l.link ? " " + linkHtml(l.link, parts[2]) : " " + escapeHtml(parts[2]));
+    } else if (l.link) {
+      cav += " " + linkHtml(l.link, linkLabel(l.link));
+    }
+    return "<blockquote><p>\u201c" + escapeHtml(l.text) + "\u201d</p></blockquote>" +
+      '<p class="cav-line"><span class="cav">' + cav + "</span></p>";
   }
 
   function compareHtml(c) {
@@ -118,24 +94,34 @@
       h += '<div class="cards" role="list">';
       q.rows.forEach(function (r) {
         h += '<article class="card' + (r.answered ? "" : " empty") + '" role="listitem"><p class="who"><span>' + linkHtml(r.page, r.name) +
-          '</span> <span class="pos">#' + escapeHtml(r.ballot_position) + "</span></p>" + badgeHtml(r, q, c);
+          '</span> <span class="pos">#' + escapeHtml(r.ballot_position) + "</span></p>";
         if (!r.answered) {
           h += '<p class="none">' + escapeHtml(c.no_answer || "No answer to this question on file.") + "</p>";
         } else {
-          r.lines.forEach(function (l) {
-            if (l.text === null || l.text === undefined) {
-              h += '<p class="none">This line couldn\u2019t be checked just now. ' + linkHtml(r.page, "See " + r.name + "\u2019s page") + ".</p>";
-              return;
-            }
-            h += "<blockquote><p>\u201c" + escapeHtml(l.text) + "\u201d</p></blockquote>" +
-              '<p class="cav-line">' + caveatHtml({ caveat: (l.caveat || "Check the source.") + lineFlags(l), link: l.link }) + "</p>";
-          });
+          r.lines.forEach(function (l) { h += lineHtml(l, r); });
         }
         h += "</article>";
       });
       h += "</div></div>";
     });
     h += '<p class="cmp-foot">These are recorded excerpts, not full answers. A missing answer says nothing about a candidate\u2019s view. ' + linkHtml(c.page, "Compare page") + "</p></section>";
+    return h;
+  }
+
+  // One candidate's recorded excerpts on the questions every candidate in the race was asked.
+  function candidateHtml(v) {
+    if (!v || !v.items) return "";
+    var race = v.race === "council" ? "City council" : "Mayor";
+    var h = '<section class="cmp cand" aria-label="' + escapeHtml(v.name) + ', recorded excerpts">';
+    h += '<p class="cmp-h"><strong>' + linkHtml(v.page, v.name) + "</strong> · " + race + ": recorded excerpts on the questions every candidate was asked.</p>";
+    v.items.forEach(function (it) {
+      h += '<div class="cmp-q"><p class="cmp-ask">' + escapeHtml(it.noun.charAt(0).toUpperCase() + it.noun.slice(1)) + " (" + escapeHtml(it.label) + "): <q>" + escapeHtml(truncate(it.question, 220)) + "</q></p>";
+      h += '<article class="card solo">';
+      if (!it.lines.length) h += '<p class="none">' + escapeHtml(v.no_answer || "No answer to this question on file.") + "</p>";
+      it.lines.forEach(function (l) { h += lineHtml(l, v); });
+      h += "</article></div>";
+    });
+    h += '<p class="cmp-foot">These are recorded excerpts, not full answers. A missing answer says nothing about a candidate\u2019s view. ' + linkHtml(v.page, "Everything on file for " + v.name) + "</p></section>";
     return h;
   }
 
@@ -146,12 +132,13 @@
     }).join("; ");
   }
 
-  // A ballot measure, from the site's data: what a yes and a no do; money, groups and wording behind "Show sources".
+  // A ballot measure, from the site's data. The short answer above it says what a yes and a no would do, in the
+  // same words with and without "not"; the card holds the money, every group on each side and the official wording.
   function measureHtml(m) {
     if (!m) return "";
     var h = '<section class="msr" aria-label="Measure ' + escapeHtml(m.letter) + '">';
     h += '<p class="msr-h"><strong>' + escapeHtml(m.letter) + ": " + escapeHtml(m.title) + "</strong></p>";
-    h += "<p><strong>A yes vote:</strong> " + escapeHtml(m.yes_means) + "</p><p><strong>A no vote:</strong> " + escapeHtml(m.no_means) + "</p>";
+    if (m.plain) h += '<p class="msr-note">' + escapeHtml(m.plain) + "</p>";
     var li = [];
     if (m.money) li.push("<li><p><strong>Money:</strong> " + escapeHtml(m.money.text) + " " + linkHtml(m.money.link, "city source") + "</p></li>");
     if (m.groups) {
@@ -179,8 +166,8 @@
   function renderReply(data) {
     var r = data && data.reply;
     if (!r || !r.say) return '<div class="say"><p>' + escapeHtml(ERROR_TEXT) + "</p></div>";
-    return '<div class="say">' + sayHtml(r.say) + "</div>" + tallyHtml(r.tally) + measureHtml(r.measure) + compareHtml(r.compare) +
-      pagesHtml(r.pages) + nextHtml(r.next);
+    return '<div class="say">' + sayHtml(r.say) + "</div>" + measureHtml(r.measure) + compareHtml(r.compare) +
+      candidateHtml(r.candidate) + pagesHtml(r.pages) + nextHtml(r.next);
   }
 
   function retryText(sec) {
