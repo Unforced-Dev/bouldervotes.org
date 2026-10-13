@@ -549,6 +549,106 @@
     "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
     "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
     "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC334",
+    "candidate_slug": "jameson-goldstein",
+    "candidate": "Jameson Goldstein",
+    "forum": "2026-eof-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder Mayoral Candidates",
+    "date": "2026-10-06",
+    "question": "Mayoral opening introduction, climate and energy forum (one minute)",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think it's important that we incentivize homeowners to install natural foliage as opposed to lawns in order to conserve about 2 billion gallons of water per year.",
+    "watch_url": "https://www.youtube.com/watch?v=U3iEinbzOk0&t=441s",
+    "timestamp": "7:21",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=U3iEinbzOk0",
+    "recording_title": "Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder Mayoral Candidates. (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-climate-forum.html"
+   },
+   {
+    "id": "FC339",
+    "candidate_slug": "jameson-goldstein",
+    "candidate": "Jameson Goldstein",
+    "forum": "2026-eof-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder Mayoral Candidates",
+    "date": "2026-10-06",
+    "question": "Climate hushing: political leaders now seem reluctant to connect negative everyday experiences to climate change and its driver, carbon pollution. How do you plan to be vocal and lead on climate?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think it's important that we bring awareness to this issue, but we don't bring awareness to it in a way where people are fearful of what's to come.",
+    "watch_url": "https://www.youtube.com/watch?v=U3iEinbzOk0&t=926s",
+    "timestamp": "15:26",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=U3iEinbzOk0",
+    "recording_title": "Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder Mayoral Candidates. (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-climate-forum.html"
+   },
+   {
+    "id": "FC350",
+    "candidate_slug": "jameson-goldstein",
+    "candidate": "Jameson Goldstein",
+    "forum": "2026-eof-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder Mayoral Candidates",
+    "date": "2026-10-06",
+    "question": "Xcel says it will deliver 100% clean electricity by 2050, not Boulder's 2030 goal, and has presented no concrete plan under the 2020 franchise agreement. What remedies would you propose for Xcel's failures to deliver, at the city level, at the PUC, or at the state level? And would you be open to inviting cities that have gone to market for their electricity to come to Boulder to educate us about life after Xcel?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think it's very important that we take this issue to the state level.",
+    "watch_url": "https://www.youtube.com/watch?v=U3iEinbzOk0&t=2219s",
+    "timestamp": "36:59",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=U3iEinbzOk0",
+    "recording_title": "Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder Mayoral Candidates. (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-climate-forum.html"
+   },
+   {
+    "id": "FC351",
+    "candidate_slug": "jameson-goldstein",
+    "candidate": "Jameson Goldstein",
+    "forum": "2026-eof-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder Mayoral Candidates",
+    "date": "2026-10-06",
+    "question": "Xcel is preparing a decade-long remediation of nearly 2 million tons of coal ash at the Valmont power station. Should Boulder use its franchise and partnership agreements with Xcel to require strong, independent air quality monitoring throughout the cleanup? And if so, how specifically would you do this?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So overall, listen to the community and listen to the scientists on this one.",
+    "watch_url": "https://www.youtube.com/watch?v=U3iEinbzOk0&t=2343s",
+    "timestamp": "39:03",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=U3iEinbzOk0",
+    "recording_title": "Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder Mayoral Candidates. (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-climate-forum.html"
    }
   ],
   "endorsements": [],
@@ -574,6 +674,7 @@
    "https://www.jamoformayor.org/",
    "https://www.youtube.com/watch?v=1At-W2cR9Mk",
    "https://www.youtube.com/watch?v=PlXLjT1gH5U",
+   "https://www.youtube.com/watch?v=U3iEinbzOk0",
    "https://www.youtube.com/watch?v=pT9IeGL6deg"
   ]
  }

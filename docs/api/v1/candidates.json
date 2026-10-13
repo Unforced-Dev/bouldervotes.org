@@ -18,7 +18,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/lisa-ann-jacobs.json",
    "summary": "Jacobs is a 2026 Boulder mayoral candidate. Yellow Scene reported that she emphasized fiscal sustainability, litigation and transparency at an August candidate forum.",
    "endorsement_count": 0,
-   "forum_quote_count": 15,
+   "forum_quote_count": 19,
    "raised": 239.86,
    "source_urls": [
     "https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates",
@@ -38,7 +38,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/taishya-adams.json",
    "summary": "Adams is a sitting Boulder councilmember seeking the mayor’s office. She emphasizes climate resilience, affordability and a stronger policy role for council.",
    "endorsement_count": 6,
-   "forum_quote_count": 26,
+   "forum_quote_count": 30,
    "raised": 8291.62,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/taishya-adams-2/"
@@ -57,7 +57,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/aaron-brockett.json",
    "summary": "Brockett is seeking another term as Boulder mayor, a role he has held since 2021. His campaign points to housing, homelessness, climate resilience and city finances.",
    "endorsement_count": 60,
-   "forum_quote_count": 25,
+   "forum_quote_count": 31,
    "raised": 12366.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/aaron-brockett-2/"
@@ -76,7 +76,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/jameson-goldstein.json",
    "summary": "Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU Boulder student. His proposals include changes to housing taxation and ending the city’s Flock Safety camera contract.",
    "endorsement_count": 0,
-   "forum_quote_count": 17,
+   "forum_quote_count": 21,
    "raised": 600.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/jamo-goldstein/"
@@ -95,7 +95,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/fred-smith.json",
    "summary": "Smith has run for Boulder council four times and is now a mayoral candidate. Known as “The Grateful Fred,” he proposes a local income tax on high earners, which would require a change in state law.",
    "endorsement_count": 0,
-   "forum_quote_count": 17,
+   "forum_quote_count": 21,
    "raised": 1075.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/fred-smith/"
@@ -114,7 +114,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/aquiles-la-grave.json",
    "summary": "La Grave is an entrepreneur seeking the mayor’s office for the first time. He stresses government accountability, public safety and local economic activity.",
    "endorsement_count": 3,
-   "forum_quote_count": 28,
+   "forum_quote_count": 33,
    "raised": 30164.25,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/aquiles-la-grave/"
