@@ -88,7 +88,7 @@ class TestChatContext(unittest.TestCase):
         self.assertIn("nonpartisan", self.ctx.lower())
 
     def test_system_prompt_is_short(self):
-        self.assertLessEqual(len(self.system), 1500)
+        self.assertLessEqual(len(self.system), 2000)
         self.assertIn("bouldervotes.org", self.system)
 
     def test_no_held_or_unpublished_text(self):

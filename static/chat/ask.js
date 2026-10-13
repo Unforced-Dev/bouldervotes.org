@@ -3,8 +3,8 @@
 (function () {
   "use strict";
 
-  var MAX_TURNS = 6;
-  var MAX_CHARS = 500;
+  var MAX_TURNS = 12;
+  var MAX_CHARS = 800;
 
   function escapeHtml(s) {
     return String(s)
@@ -116,7 +116,7 @@
       d.className = "msg " + role;
       var who = document.createElement("p");
       who.className = "who";
-      who.textContent = role === "user" ? "You asked" : role === "assistant" ? "Answer" : "Notice";
+      who.textContent = role === "user" ? "You" : role === "assistant" ? "Guide" : "Notice";
       d.appendChild(who);
       var body = document.createElement("div");
       body.className = "body";
@@ -135,7 +135,7 @@
       busy = on;
       send.disabled = on;
       root.setAttribute("aria-busy", on ? "true" : "false");
-      status.textContent = on ? "Looking this up in the guide…" : "";
+      status.textContent = on ? "Thinking it through with the guide…" : "";
     }
 
     function finishedState() {
@@ -144,12 +144,12 @@
       send.disabled = done || busy;
       restart.hidden = turnsUsed() === 0;
       chips.hidden = turnsUsed() > 0;
-      if (done) status.textContent = "That is the limit for one conversation (" + MAX_TURNS + " questions). Choose “Start over” to ask more.";
+      if (done) status.textContent = "That is the limit for one conversation (" + MAX_TURNS + " messages). Choose “Start over” to begin a new one.";
     }
 
     function reset() {
       messages = [];
-      log.textContent = "";
+      Array.prototype.slice.call(log.children, 1).forEach(function (n) { log.removeChild(n); });
       input.value = "";
       input.disabled = false;
       count.textContent = "";
@@ -161,7 +161,7 @@
     function ask(question) {
       question = question.replace(/\s+/g, " ").trim();
       if (!question || busy || turnsUsed() >= MAX_TURNS) return;
-      if (question.length > MAX_CHARS) { status.textContent = "Please keep your question under " + MAX_CHARS + " characters."; return; }
+      if (question.length > MAX_CHARS) { status.textContent = "Please keep your message under " + MAX_CHARS + " characters."; return; }
       messages.push({ role: "user", content: question });
       var bubble = addMessage("user", question, false);
       input.value = "";

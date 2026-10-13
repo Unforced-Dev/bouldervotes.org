@@ -269,7 +269,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
                 f"<div class='learn-body'>\n{body}\n</div></div>")
     home = f"{prefix}index.html"
     from build_chat_context import chat_enabled
-    ask_foot = f'\n        <li><a href="{prefix}ask.html">Ask about this election</a></li>' if chat_enabled() else ""
+    ask_foot = f'\n        <li><a href="{prefix}ask.html">Talk through your vote</a></li>' if chat_enabled() else ""
     past_links = "".join(f'<li><a href="{prefix}{y}.html">{y} city election</a></li>' for y in ARCHIVE_YEARS)
     return f"""<!doctype html>
 <html lang="en">
@@ -1721,14 +1721,14 @@ def main() -> None:
         "<a href='llms-full.txt'>llms-full.txt</a>, or the <a href='api/index.html'>JSON data</a>. "
         "That file asks it to stay nonpartisan and cite a source for every claim.</p>"
         f"<p class='note'>{esc(AI_CAUTION)}</p>"
-        + ("<p><a class='btn secondary' href='ask.html'>Ask about this election, right here</a></p>" if chat_enabled() else "")
+        + ("<p><a class='btn secondary' href='ask.html'>Talk through your vote with an AI guide</a></p>" if chat_enabled() else "")
         + "</section>")
     (OUT / "learn.html").write_text(page("Learn", "\n".join(learn), current="learn"), encoding="utf-8")
 
     from build_chat_context import ask_body, ask_head, chat_enabled
     if chat_enabled():
         (OUT / "ask.html").write_text(
-            page("Ask about this election", ask_body(esc), current="learn", head_extra=ask_head()), encoding="utf-8")
+            page("Talk through your vote", ask_body(esc), current="learn", head_extra=ask_head()), encoding="utf-8")
 
     about = """
     <h1>About Boulder Votes</h1>
