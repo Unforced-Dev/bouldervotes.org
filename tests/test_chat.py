@@ -17,7 +17,7 @@ API = DOCS / "api"
 H = ROOT / "data" / "harvest" / "2026"
 ASK_JS = ROOT / "static" / "chat" / "ask.js"
 
-HARD_LIMIT = 300_000
+HARD_LIMIT = 215_000  # stays under the 100K-token price tier (measured ~2.3 bytes/token)
 RECOMMEND = re.compile(r"you should vote|best candidate|we recommend|vote (yes|no) on|the right choice|"
                        r"vote for (him|her|them)|i recommend", re.I)
 
@@ -73,7 +73,7 @@ class TestChatContext(unittest.TestCase):
 
     def test_quotes_carry_watch_links_and_caveat(self):
         self.assertIn("automatic transcript", self.ctx)
-        self.assertGreater(self.ctx.count("  Watch: https://www.youtube.com/watch?v="), 100)
+        self.assertGreater(self.ctx.count("  Watch: https://youtu.be/"), 100)
         self.assertIn("[speaker from speaking order]", self.ctx)
 
     def test_no_recommendation_language(self):
@@ -209,3 +209,45 @@ class TestAskJsEscaping(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestQuoteIndex(unittest.TestCase):
+    """docs/api/chat-quotes.json: the gateway verifies every quote in an answer against it."""
+
+    @classmethod
+    def setUpClass(cls):
+        import json
+        p = ROOT / "docs" / "api" / "chat-quotes.json"
+        if not p.exists():
+            raise unittest.SkipTest("build first")
+        cls.idx = json.loads(p.read_text(encoding="utf-8"))
+        cls.ctx = (ROOT / "docs" / "api" / "chat-context.txt").read_text(encoding="utf-8")
+
+    def test_every_candidate_and_unique_aliases(self):
+        names = [p["name"] for p in self.idx["people"]]
+        self.assertEqual(len(names), len(set(names)))
+        aliases = [a for p in self.idx["people"] for a in p["aliases"]]
+        self.assertEqual(len(aliases), len(set(aliases)), "an alias must name one person")
+        self.assertIn("La Grave", next(p for p in self.idx["people"] if p["name"] == "Aquiles La Grave")["aliases"])
+
+    def test_quotes_match_context_and_speaker_section(self):
+        # Each indexed quote sits under its speaker's own heading in chat-context.txt.
+        sections, cur = {}, None
+        for line in self.ctx.splitlines():
+            if line.startswith("### "):
+                cur = line[4:].split(",")[0].strip()
+            if cur and line.startswith("  > "):
+                sections.setdefault(cur, set()).add(line[4:].strip())
+        for q in self.idx["quotes"]:
+            self.assertIn(q["text"].strip(), sections.get(q["speaker"], set()), q)
+
+    def test_goldstein_la_grave_case(self):
+        lg = [q for q in self.idx["quotes"] if "missing middle-income housing that" in q["text"]]
+        self.assertTrue(lg)
+        self.assertEqual({q["speaker"] for q in lg}, {"Aquiles La Grave"})
+
+    def test_every_quote_line_names_speaker_and_topic(self):
+        lines = self.ctx.splitlines()
+        for i, line in enumerate(lines):
+            if line.startswith("  > ") and i and lines[i - 1].startswith("- ") and "reporting" not in lines[i - 1] and "reporter" not in lines[i - 1]:
+                self.assertIn("Topic: ", lines[i - 1], lines[i - 1][:120])

@@ -16,8 +16,8 @@ import os
 
 from build_llm import AI_RULES, SITE, clean, md_quote, u
 
-SOFT_LIMIT_BYTES = 220_000   # target (about 60K tokens)
-HARD_LIMIT_BYTES = 300_000   # tests fail above this (about 80K tokens)
+SOFT_LIMIT_BYTES = 205_000   # target: measured ~2.3 bytes/token, so about 89K tokens
+HARD_LIMIT_BYTES = 215_000   # tests fail above this: ~93K tokens; over 100K tokens Haiku bills every token at 5x
 CHARS_PER_TOKEN = 3.7
 
 CHAT_SYSTEM = """\
@@ -25,7 +25,7 @@ You are the Boulder Votes guide: a conversation partner that helps a voter work 
 
 How to talk:
 - Ask what matters to them, one short question at a time, no more than three before showing something useful. Use their words back.
-- Then show how the sourced record lines up with what they told you: every candidate in that race, in ballot order, the same question for each, one short verbatim quote with its link, and "no stated position on file" where the guide has nothing (see Topic coverage). For council, one line per candidate.
+- Then show how the sourced record lines up with what they told you: every candidate in that race, in ballot order, the same question for each, one short verbatim quote with its link, and "no stated position on file" where the guide has nothing (check their "lines by topic"). For council, one line per candidate.
 - Follow the "Fairness method" in the chat rules every time: same number of quotes per candidate, most direct on-topic quote, the question it answered, exact words, check the yes/no records before saying "no stated position".
 - You may say whose stated positions are closest to what the voter said, and why, tied to their words and the record. Name tradeoffs and where a record is thin or mixed.
 - For a measure, say what YES and NO mean and the main sourced case on each side.
@@ -39,7 +39,7 @@ CHAT_RULES = """\
 - Answer only from this content. If it does not cover the question, say so and point to Boulder County Elections (https://bouldercounty.gov/elections/) or the City of Boulder clerk (https://bouldercolorado.gov/elections).
 - Cite the bouldervotes.org page URL for every claim, and the original source or watch link for every quote.
 - Never recommend a vote or rank candidates on your own. For "Who should I vote for?": say the choice is the voter's, ask what matters to them, then show how every candidate's record lines up with that, in ballot order. Any "closest to what you said" must name the voter's stated priority and the quote behind it.
-- Cover every candidate in the race on the same question. A count in Topic coverage is how much is on file, not how strong or good a position is.
+- Cover every candidate in the race on the same question. How much is on file says nothing about how strong or good a position is.
 - Do not label candidates with political tags (socialist, conservative and so on) unless a quoted source does, and then attribute it to that source.
 - Keep quotes verbatim, in quotation marks, with speaker, forum name and date. Do not merge or paraphrase two quotes into one.
 - Forum quotes are from automatic transcripts: say so ("check the recording"). Quotes tagged [speaker from speaking order] carry a medium-confidence attribution: repeat that.
@@ -48,9 +48,12 @@ CHAT_RULES = """\
 - Races and measures not listed here (school board, county, state) are out of scope: say so and link the county.
 - Keep answers short and plain, for older readers. Offer to compare candidates in ballot order on a topic.
 - Fairness method when comparing candidates (every time):
+  - Length: at most about 350 words per answer. One quote per candidate. Offer the next race or topic instead of doing everything at once.
+  - Use each candidate's "lines by topic" list to pick their line; never say "no statement" when that list shows one for the topic.
+  - "Closest to what you said": name EVERY candidate whose quoted line matches the voter's stated priority, say which words match, and add that the others' quotes are on different points. Never say a quote "runs against" the voter, never rank.
   - Same treatment: for each candidate in the race, the single most direct on-topic quote, the same number for everyone (one, or two only if everyone gets two). No extra quotes for anyone.
   - On a measure (2J, 2K...), each candidate's quote is their line marked "Said YES/NO on <measure>" if one exists; otherwise their line on that measure's forum question, saying "no yes/no on file".
-  - Before writing "no stated position on file", check that candidate's forum lines (including "Said YES/NO on ...") and the measure's "What candidates said" list. A recorded yes or no is always a stated position: show it.
+  - Before writing "no stated position on file", check that candidate's forum lines (including "Said YES/NO on ...") and the measure's "Every ... candidate on" list. A recorded yes or no is always a stated position: show it.
   - Every quote line names its speaker. Credit a quote only to the name on its own line; never move a quote between candidates.
   - Copy each quote exactly as it appears in this file, including the source's own typos, and never cut it short mid-sentence. If you shorten, end with "..." and say it continues.
   - Say in a few words which question each quote answered (for example "on the 2K bond", "on the duplex ordinance (B3)"). Never present a quote as answering a different question.
@@ -98,13 +101,14 @@ def _bb_prompts() -> dict:
     return {"prompts": prompts, "code": code}
 
 
+# Short labels keep the context small (it must stay under Haiku's 100K-token price tier).
 TOPICS = [("housing", ("housing",), ("housing", "land-use")),
-          ("climate and wildfire", ("climate",), ("climate", "wildfire")),
+          ("climate/wildfire", ("climate",), ("climate", "wildfire")),
           ("transportation", ("transportation",), ("transportation",)),
-          ("budget, taxes and the 2K bond", ("budget/bond 2K",), ("bond", "budget")),
-          ("downtown and the economy", (), ("economy", "downtown")),
-          ("homelessness and public safety", ("homelessness/safety",), ("public-safety", "homelessness")),
-          ("growth and development", ("growth/development",), ("land-use", "growth")),
+          ("budget/taxes/2K", ("budget/bond 2K",), ("bond", "budget")),
+          ("downtown/economy", (), ("economy", "downtown")),
+          ("homelessness/safety", ("homelessness/safety",), ("public-safety", "homelessness")),
+          ("growth", ("growth/development",), ("land-use", "growth")),
           ("arts", ("arts",), ("arts",))]
 
 
@@ -170,17 +174,6 @@ def chat_context(d: dict, asof: str) -> str:
     for x in sorted(d["quotes"], key=lambda x: (x["date"], x["forum"], x["id"])):
         qcode.setdefault(clean(x["question"]), f"Q{len(qcode) + 1}")
     # Topic coverage index: for each voter topic, every candidate in ballot order and how many sourced items are on file.
-    L += ["## Topic coverage (who has something on file, by topic)", "",
-          "Counts of sourced items in this file per candidate (forum quotes + first-person statements). 0 means no stated position on file: say so, never guess. Candidates in ballot order.", ""]
-    for label, qtopics, stopics in TOPICS:
-        for office in ("mayor", "council"):
-            row = []
-            for c in [c for c in d["candidates"] if c["office"] == office]:
-                nq = sum(1 for x in d["quotes"] if x["candidate_slug"] == c["slug"] and (x["topic"] in qtopics or (x.get("issue") or "") in stopics))
-                ns = sum(1 for st in c["statements"] if st["topic"] in stopics)
-                row.append(f"{c['name']} {nq + ns}")
-            L.append(f"- {label}, {office}: " + "; ".join(row))
-    L.append("")
     _bpl = _bb_prompts()
     if _bpl["code"]:
         L += ["## Questionnaire questions (Better Boulder)", "",
@@ -242,6 +235,21 @@ def chat_context(d: dict, asof: str) -> str:
 
             own = [s for s in c["statements"] if s["candidate_own_words"]]
             rep = [s for s in c["statements"] if not s["candidate_own_words"]]
+            # Index: this candidate's lines per voter topic (so nothing on-topic is missed in a comparison).
+            by_topic: dict[str, list[str]] = {}
+            for s_ in c["statements"]:
+                if s_["candidate_own_words"]:
+                    qc_ = _bb_prompts()["code"].get(_bb_prompts()["prompts"].get(s_["id"], ""), "")
+                    ref = qc_ or s_["kind"]
+                    for t in topic_labels(s_["topic"]):
+                        by_topic.setdefault(t, []).append(ref)
+            for x_ in c["forum_quotes"]:
+                ref = f"{fcode[x_['forum']]}{qcode[clean(x_['question'])]}" + (f" {x_['stance'].upper()} on {x_['stance_about'].split(' (')[0]}" if x_["stance"] else "")
+                for t in topic_labels(x_["topic"], x_.get("issue")):
+                    by_topic.setdefault(t, []).append(ref)
+            L.append(f"#### {c['name']}: lines by topic")
+            L.append(" | ".join(f"{t}: " + (", ".join(dict.fromkeys(by_topic[t])) if by_topic.get(t) else "none") for t, _a, _b in TOPICS))
+            L.append("")
             L.append("#### In their own words")
             _bp = _bb_prompts()
             if not own:
@@ -310,8 +318,14 @@ def chat_context(d: dict, asof: str) -> str:
         for r in m["reporter_summaries"]:
             L.append(f"- Reporter summary ({r['reporter']}, {r['reported_on']}): {clean(r['text'])} {r['note']} Source: {r['source_url']}")
         if m["forum_quotes"]:
-            L.append(f"What candidates said about {m['letter']} at forums (words are in each candidate's section):")
-            for i in m["forum_quotes"]:
+            for race in ("mayor", "council"):
+                row = []
+                for c in [c for c in d["candidates"] if c["office"] == race]:
+                    xs = [quotes_by_id[i] for i in m["forum_quotes"] if quotes_by_id[i]["candidate_slug"] == c["slug"]]
+                    st = next((x["stance"].upper() for x in xs if x["stance"]), None)
+                    row.append(f"{c['name']} {st}" if st else (f"{c['name']} answered, no yes/no" if xs else f"{c['name']} no answer on file"))
+                L.append(f"Every {'mayoral' if race == 'mayor' else 'council'} candidate on {m['letter']} (copy this whole list when asked about {m['letter']}): " + "; ".join(row) + ".")
+            for i in []:
                 x = quotes_by_id[i]
                 st = f" Said {x['stance'].upper()}." if x["stance"] else " No yes/no label."
                 tag = " [speaker from speaking order]" if x["attribution_confidence"] == "medium" else ""
@@ -325,7 +339,25 @@ def chat_context(d: dict, asof: str) -> str:
           f"- Everyone: {u('people.html')}",
           f"- Campaign money: {u('finance.html')}",
           f"- Past city elections: {u('learn.html')}", ""]
-    return "\n".join(L)
+    import re
+    text = "\n".join(L)
+    # Source links used 3+ times become [S1]... codes with a legend (saves ~12 KB of repeats).
+    import collections
+    urls = collections.Counter(re.findall(r"Source: (https?://[^\s,)]+?)(?=[\s,)]|\.?$)", text, flags=re.M))
+    legend = {}
+    for url_, n_ in urls.most_common():
+        if n_ >= 3 and len(url_) > 30:
+            legend[url_] = f"[S{len(legend) + 1}]"
+    if legend:
+        for url_, code_ in sorted(legend.items(), key=lambda kv: -len(kv[0])):
+            text = re.sub(r"Source: " + re.escape(url_) + r"(?=[\s,)]|\.?$)", "Source: " + code_, text, flags=re.M)
+        leg = "## Source codes\n\nA [S1]-style source code stands for the link below. When you cite one, write the full link, never the code.\n" + \
+              "\n".join(f"- {c}: {u_}" for u_, c in legend.items()) + "\n\n"
+        text = text.replace("## Election basics", leg + "## Election basics", 1)
+    # youtu.be form is 16 characters shorter per link (about 400 links): same video, same moment.
+    text = re.sub(r"https://www\.youtube\.com/watch\?v=([\w-]{11})&t=(\d+)s", r"https://youtu.be/\1?t=\2", text)
+    text = re.sub(r"https://www\.youtube\.com/watch\?v=([\w-]{11})\b", r"https://youtu.be/\1", text)
+    return text
 
 
 def stats(text: str) -> dict:

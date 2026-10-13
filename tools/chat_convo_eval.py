@@ -83,7 +83,7 @@ def main() -> int:
         for turn in PERSONAS[name]:
             msgs.append({"role": "user", "content": turn})
             time.sleep(a.pause)
-            status, data = ask(a.gateway, msgs, ua=f"convo-eval-{name}")
+            status, data = ask(a.gateway, msgs, ua=f"convo-eval-{name}-{int(time.time())}")
             out += [f"**Voter:** {turn}", ""]
             if not data.get("ok"):
                 out += [f"**Error** HTTP {status}: {data.get('error')}: {data.get('message')}", ""]
