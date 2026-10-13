@@ -103,7 +103,29 @@ def main() -> int:
     guide = [l[2:] for l in out if l.startswith("> ")]
     quoted = [q for l in guide for q in re.findall(r'"([^"]{20,})"', l)]
     bad = [q for q in quoted if norm(q) not in ctx]
-    out.insert(3, f"Total cost: ${grand:.4f}. Quoted passages: {len(quoted)}; not found word-for-word in the grounding file: {len(bad)}")
+    # Attribution check: a quote under a candidate's bold name (on that line or the bullets below it)
+    # must appear in that candidate's own section of the grounding file.
+    sections, cur = {}, None
+    for line in (ctx_path.read_text(encoding="utf-8").splitlines() if ctx_path.exists() else []):
+        if line.startswith("### "):
+            cur = line[4:].split(",")[0].strip()
+        if cur:
+            sections.setdefault(cur, []).append(norm(line))
+    misattr, who = [], None
+    for l in guide:
+        m = re.match(r"(?:\d+\. |- )?\*\*([^*]+?)\s*:?\*\*", l)
+        if m:
+            who = m.group(1).strip(" :.0123456789").strip()
+        elif not l.strip():
+            who = None
+        if who in sections:
+            for q in re.findall(r'"([^"]{20,})"', l):
+                if not any(norm(q) in x for x in sections[who]):
+                    misattr.append(f"{who}: {q}")
+    out.insert(3, f"Total cost: ${grand:.4f}. Quoted passages: {len(quoted)}; not found word-for-word in the grounding file: {len(bad)}; quoted under a candidate but not from that candidate's record: {len(misattr)}")
+    if misattr:
+        out += ["## Quotes not in the named candidate's record", ""] + [f"- {b}" for b in misattr]
+    print(f"misattributed {len(misattr)}", file=sys.stderr)
     if bad:
         out += ["## Quotes not found word-for-word", ""] + [f"- {b}" for b in bad]
     print(f"quotes {len(quoted)}, not verbatim {len(bad)}", file=sys.stderr)
