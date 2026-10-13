@@ -100,7 +100,7 @@ def main() -> int:
     ctx_path = Path(__file__).resolve().parent.parent / "docs" / "api" / "chat-context.txt"
     norm = lambda x: re.sub(r"\s+", " ", x.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", "\"").replace("\u201d", "\"")).strip().rstrip(".,")
     ctx = norm(ctx_path.read_text(encoding="utf-8")) if ctx_path.exists() else ""
-    guide = [l[2:] for l in out if l.startswith("> ")]
+    guide = [l[2:] if l.startswith("> ") else "" for l in out if l.startswith(">")]
     quoted = [q for l in guide for q in re.findall(r'"([^"]{20,})"', l)]
     bad = [q for q in quoted if norm(q) not in ctx]
     # Attribution check: a quote under a candidate's bold name (on that line or the bullets below it)
@@ -116,10 +116,13 @@ def main() -> int:
         m = re.match(r"(?:\d+\. |- )?\*\*([^*]+?)\s*:?\*\*", l)
         if m:
             who = m.group(1).strip(" :.0123456789").strip()
-        elif not l.strip():
-            who = None
+        elif not l.strip() or not re.match(r"\s*[-*]", l):
+            who = None  # blank or prose line: the bold name no longer applies
         if who in sections:
-            for q in re.findall(r'"([^"]{20,})"', l):
+            # the spoken quote is the longest quoted span; shorter ones are question labels or meta text
+            qs = sorted(re.findall(r'"([^"]{20,})"', l), key=len)[-1:]
+            qs = [q for q in qs if not q.lower().startswith("no stated position")]
+            for q in qs:
                 if not any(norm(q) in x for x in sections[who]):
                     misattr.append(f"{who}: {q}")
     out.insert(3, f"Total cost: ${grand:.4f}. Quoted passages: {len(quoted)}; not found word-for-word in the grounding file: {len(bad)}; quoted under a candidate but not from that candidate's record: {len(misattr)}")

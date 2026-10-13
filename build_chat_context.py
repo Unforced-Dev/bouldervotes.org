@@ -50,6 +50,7 @@ CHAT_RULES = """\
 - Fairness method when comparing candidates (every time):
   - Same treatment: for each candidate in the race, the single most direct on-topic quote, the same number for everyone (one, or two only if everyone gets two). No extra quotes for anyone.
   - Before writing "no stated position on file", check that candidate's forum lines (including "Said YES/NO on ...") and the measure's "What candidates said" list. A recorded yes or no is always a stated position: show it.
+  - Every quote line names its speaker. Credit a quote only to the name on its own line; never move a quote between candidates.
   - Copy each quote exactly as it appears in this file, including the source's own typos, and never cut it short mid-sentence. If you shorten, end with "..." and say it continues.
   - Say in a few words which question each quote answered (for example "on the 2K bond", "on the duplex ordinance (B3)"). Never present a quote as answering a different question.
   - Never show your search ("so instead", "that is not budget either"). If a candidate has no on-topic material, write one line: "No stated position on this on file." Use the date printed on each quote, never another forum's date.
@@ -214,7 +215,7 @@ def chat_context(d: dict, asof: str) -> str:
                 L.append("No first-person statements on file.")
             for s in own:
                 qc = _bp["code"].get(_bp["prompts"].get(s["id"], ""), "")
-                L.append(f"- {s['topic']}. {s['publisher']}, {s['kind']}" + (f", answering {qc}" if qc else "")
+                L.append(f"- {c['name']}, on {s['topic']}. {s['publisher']}, {s['kind']}" + (f", answering {qc}" if qc else "")
                          + (f", {s['published_on']}" if s["published_on"] else "") + f". Source: {s['source_url']}")
                 L.append("  " + md_quote(s["text"]))
             if rep:
@@ -237,7 +238,7 @@ def chat_context(d: dict, asof: str) -> str:
                 tag = " [speaker from speaking order]" if x["attribution_confidence"] == "medium" else ""
                 note = f" Transcript note: {x['caveats'][-1][len('Transcript note: '):]}" \
                     if x["caveats"][-1].startswith("Transcript note: ") else ""
-                L.append(f"- {fcode[x['forum']]} ({fdate[x['forum']]}) {qcode[clean(x['question'])]} at {x['timestamp']}{st}{tag}")
+                L.append(f"- {c['name']}, {fcode[x['forum']]} ({fdate[x['forum']]}) {qcode[clean(x['question'])]} at {x['timestamp']}{st}{tag}")
                 L.append("  " + md_quote(x["quote"]))
                 L.append(f"  Watch: {x['watch_url']}{note}")
             L.append("")
