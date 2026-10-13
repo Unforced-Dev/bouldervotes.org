@@ -36,6 +36,19 @@ class TestFinance(unittest.TestCase):
         api = json.loads((DOCS / "api/v1/finance.json").read_text())
         self.assertEqual(api["retrieved_on"], retrieved)
 
+    def test_totals_follow_latest_submission(self):
+        """A resubmitted earlier report can be the newest filing; totals follow it."""
+        import json
+        from pathlib import Path
+        data = json.loads((Path(__file__).resolve().parent.parent / "data/harvest/finance_2026.json").read_text())
+        for c in data["committees"]:
+            sts = [s for s in c.get("statements") or [] if s.get("balance") and s.get("submitted_at")]
+            if not sts or c.get("listing_omits"):
+                continue
+            latest = max(sts, key=lambda s: s["submitted_at"])
+            self.assertEqual(c["contributions_total"], latest["balance"]["contributions"], c["committee_name"])
+            self.assertEqual(c["statements"][-1]["statement_id"], latest["statement_id"], c["committee_name"])
+
 
 if __name__ == "__main__":
     unittest.main()

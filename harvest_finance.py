@@ -284,9 +284,11 @@ def parse_statement(html: str, meta: dict) -> dict:
     if m:
         cid = clean(m.group(1))
     submitted = None
+    submitted_at = None
     m = re.search(r"Date Submitted:\s*([^<]+)<br", html, re.I)
     if m:
-        submitted = iso_date(clean(m.group(1)))
+        submitted_at = clean(m.group(1))
+        submitted = iso_date(submitted_at)
 
     balance = {}
     for row in table_after_heading(html, "<h3>Balance</h3>"):
@@ -352,6 +354,7 @@ def parse_statement(html: str, meta: dict) -> dict:
         "committee_name": name,
         "committee_number": cid,
         "submitted_on": submitted,
+        "submitted_at": submitted_at,
         "balance": balance,
         "contributions": contributions,
         "expenditures": expenditures,
@@ -424,6 +427,16 @@ def parse_summary(html: str) -> list[dict]:
     return out
 
 
+def _nice(iso: str | None) -> str:
+    if not iso:
+        return "an unstated date"
+    d = datetime.date.fromisoformat(iso)
+    month = d.strftime("%B")
+    month = {"January": "Jan.", "February": "Feb.", "August": "Aug.", "September": "Sept.",
+             "October": "Oct.", "November": "Nov.", "December": "Dec."}.get(month, month)
+    return f"{month} {d.day}, {d.year}"
+
+
 def harvest() -> dict:
     list_html = fetch(BASE + "committeeFilings.php")
     committees = parse_committee_list(list_html)
@@ -470,13 +483,30 @@ def harvest() -> dict:
         latest_submitted = None
         contribs: dict[int, dict] = {}
         exps: dict[int, dict] = {}
-        for st in reports["statements"]:
-            parsed = parse_statement(fetch(st["url"]), st)
+        # The clerk listing is in schedule order, but a committee can resubmit an
+        # earlier report after a later one (Jill for Council refiled its 42nd-day
+        # report seconds after its 28th-day report on Oct. 9, 2026, carrying the
+        # 28th-day total forward). Running totals follow submission time, so
+        # order statements by the clerk's full submission timestamp.
+        parsed_all = [parse_statement(fetch(st["url"]), st) for st in reports["statements"]]
+        parsed_all = [p for _, p in sorted(
+            enumerate(parsed_all),
+            key=lambda ip: (ip[1].get("submitted_at") or "", ip[0]),
+        )]
+        filing_note = None
+        if parsed_all and reports["statements"] and parsed_all[-1]["statement_id"] != reports["statements"][-1]["statement_id"]:
+            filing_note = (
+                f"As filed, the committee submitted its {parsed_all[-1]['label']} report on "
+                f"{_nice(parsed_all[-1].get('submitted_on'))}, after its {reports['statements'][-1]['label']} report; "
+                f"totals follow the later submission, as the clerk summary does."
+            )
+        for parsed in parsed_all:
             statements.append({
                 "statement_id": parsed["statement_id"],
                 "label": parsed["label"],
                 "url": parsed["url"],
                 "submitted_on": parsed["submitted_on"],
+                "submitted_at": parsed.get("submitted_at"),
                 "balance": parsed["balance"],
                 "n_contributions": len(parsed["contributions"]),
                 "n_expenditures": len(parsed["expenditures"]),
@@ -543,6 +573,7 @@ def harvest() -> dict:
             "in_kind": latest_balance.get("in_kind"),
             "cash_on_hand": latest_balance.get("cash_on_hand"),
             "reported_on": (totals or {}).get("reported_on") or latest_submitted,
+            **({"filing_note": filing_note} if filing_note else {}),
             "statements": statements,
             "contributions": sorted(contribs.values(), key=lambda r: (r.get("occurred_on") or "", r.get("clerk_item_id") or 0)),
             "expenditures": sorted(exps.values(), key=lambda r: (r.get("occurred_on") or "", r.get("clerk_item_id") or 0)),
