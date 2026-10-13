@@ -3704,6 +3704,32 @@
    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
   },
   {
+   "id": "E344",
+   "endorser": {
+    "type": "person",
+    "slug": "elise-jones",
+    "name": "Elise Jones",
+    "title_as_printed": "former Boulder County commissioner",
+    "page_url": "https://bouldervotes.org/people/elise-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "sam-fuqua",
+    "name": "Sam Fuqua",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Sam Fuqua campaign lists Elise Jones. Only the campaign says so.",
+   "claimed_by": "Sam Fuqua campaign",
+   "published_on": null,
+   "source_url": "https://www.fuquaforcouncil.com/endorsements",
+   "source_title": "Endorsements – Sam Fuqua for Boulder City Council"
+  },
+  {
    "id": "E263",
    "endorser": {
     "type": "person",
@@ -3780,6 +3806,32 @@
    "published_on": null,
    "source_url": "https://www.ryanwithboulder.com/endorsements",
    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+  },
+  {
+   "id": "E345",
+   "endorser": {
+    "type": "person",
+    "slug": "suzanne-jones",
+    "name": "Suzanne Jones",
+    "title_as_printed": "Former Mayor of Boulder",
+    "page_url": "https://bouldervotes.org/people/suzanne-jones.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "sam-fuqua",
+    "name": "Sam Fuqua",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Sam Fuqua campaign lists Suzanne Jones. Only the campaign says so.",
+   "claimed_by": "Sam Fuqua campaign",
+   "published_on": null,
+   "source_url": "https://www.fuquaforcouncil.com/endorsements",
+   "source_title": "Endorsements – Sam Fuqua for Boulder City Council"
   },
   {
    "id": "E216",
@@ -7261,6 +7313,30 @@
    "source_title": "2026 Election Guide (Yellow Scene Magazine)"
   },
   {
+   "id": "E339",
+   "endorser": {
+    "type": "person",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "title_as_printed": "Boulder City Council",
+    "page_url": "https://bouldervotes.org/people/taishya-adams.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Taishya Adams. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
    "id": "E280",
    "endorser": {
     "type": "person",
@@ -7991,6 +8067,30 @@
    "source_title": "Our 2026 ballot measure positions (Boulder Progressives)"
   },
   {
+   "id": "E338",
+   "endorser": {
+    "type": "person",
+    "slug": "aaron-brockett",
+    "name": "Aaron Brockett",
+    "title_as_printed": "Boulder mayor",
+    "page_url": "https://bouldervotes.org/people/aaron-brockett.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Aaron Brockett. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
    "id": "E240",
    "endorser": {
     "type": "organization",
@@ -8249,6 +8349,30 @@
    "source_title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)"
   },
   {
+   "id": "E337",
+   "endorser": {
+    "type": "person",
+    "slug": "michael-dougherty",
+    "name": "Michael Dougherty",
+    "title_as_printed": "Boulder County district attorney",
+    "page_url": "https://bouldervotes.org/people/michael-dougherty.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Michael Dougherty. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
    "id": "E242",
    "endorser": {
     "type": "organization",
@@ -8318,6 +8442,30 @@
    "published_on": null,
    "source_url": "https://strongerboulder.com/",
    "source_title": "Vote YES on 2L"
+  },
+  {
+   "id": "E340",
+   "endorser": {
+    "type": "person",
+    "slug": "tina-marquis",
+    "name": "Tina Marquis",
+    "title_as_printed": "Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/tina-marquis.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Tina Marquis. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
   },
   {
    "id": "E329",
@@ -8633,6 +8781,54 @@
    "source_title": "2026 Ballot Issue Endorsements"
   },
   {
+   "id": "E341",
+   "endorser": {
+    "type": "person",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "title_as_printed": "Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/ryan-schuchard.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Ryan Schuchard. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E342",
+   "endorser": {
+    "type": "person",
+    "slug": "nicole-speer",
+    "name": "Nicole Speer",
+    "title_as_printed": "Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/nicole-speer.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Nicole Speer. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
    "id": "E55",
    "endorser": {
     "type": "organization",
@@ -8654,6 +8850,30 @@
    "published_on": null,
    "source_url": "https://www.bouldervacancytax.org/",
    "source_title": "Vote Yes on 2J"
+  },
+  {
+   "id": "E343",
+   "endorser": {
+    "type": "person",
+    "slug": "tara-winer",
+    "name": "Tara Winer",
+    "title_as_printed": "Boulder mayor pro tem/councilmember",
+    "page_url": "https://bouldervotes.org/people/tara-winer.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Tara Winer. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
   },
   {
    "id": "E289",
