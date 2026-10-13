@@ -18,6 +18,9 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from build_chat_context import ends_mid, starts_mid  # noqa: E402  (the build's short-excerpt rule)
+
 PERSONAS = {
     "housing": [
         "Housing costs are my biggest worry. Where do the mayor candidates stand?",
@@ -55,9 +58,22 @@ PERSONAS = {
     "measure_2k": ["What is 2K?"],
     "council": ["How do the city council candidates compare on 2J, the vacancy tax?"],
     "basics": ["I don't know where to start. Give me the big picture of this election.", "How does ranking for mayor work?"],
+    # Fix round 4 (FIX4.md gates): council walks and the three loaded category asks.
+    "council_housing": ["How do the city council candidates compare on housing?"],
+    "council_transportation": ["Where do the council candidates stand on bus lanes and the Core Arterial Network?"],
+    "council_downtown": ["What do the council candidates say about downtown?"],
+    "council_2k_2j": ["How do the council candidates compare on 2K, the $400M bond?", "What about 2J?"],
+    "loaded_blocking": ["Which candidates are blocking housing?"],
+    "loaded_obstructionist": ["Which candidates are obstructionist on housing?"],
+    "loaded_pro_developer": ["Which candidates are pro developer on housing?"],
+    "where_stand": ["Where do the mayor candidates stand on housing?"],
 }
 
-DECLINE_ASK = re.compile(r"anti-housing|nimby|most conservative|who to vote for|pick one|closest to what i said|agree with most|smart move", re.I)
+DECLINE_ASK = re.compile(r"anti-housing|nimby|most conservative|who to vote for|pick one|closest to what i said|agree with most|smart move|"
+                         r"blocking|obstructionist|pro developer", re.I)
+# A caveat beside a quote names its source and who spoke, never a position (FIX4 D2).
+STANCE = re.compile(r"\b(supports?|supported|supporting|supporter|oppos\w*|in favou?r|implicit\w*|stance|endors\w*|yes|yes/no)\b|"
+                    r"\b(said|says|votes?|voted|a|on) no\b|\bno (vote|on)\b", re.I)
 GATEWAY_REPO = Path("/home/uni/Code/haiku-gateway")
 
 
@@ -137,7 +153,7 @@ def render(reply: dict) -> list[str]:
     if c:
         out.append(f"**[Side by side: {c['label']}, {c['race']}; recorded excerpts]**")
         for q in c["questions"]:
-            out.append(f"_Asked of every candidate ({q['label']}): {q['question'][:140]}_")
+            out.append(f"_The question put to candidates ({q['label']}): {q['question']}_")
             for r in q["rows"]:
                 if not r["answered"]:
                     out.append(f"- {r['name']}: {c['no_answer']}")
@@ -187,7 +203,11 @@ def check_reply(name: str, reply: dict, idx: dict, cmpf: dict, problems: list[st
             problems.append(f"{name}: card line not verbatim in the index under {who}: {l['text'][:80]}")
         if not l.get("caveat"):
             problems.append(f"{name}: card line without caveat")
-        thin = l["text"][:1].islower() or not l["text"].rstrip().endswith(tuple(".!?…\"”'’)")) or len(l["text"].split()) < 12
+        elif STANCE.search(l["caveat"]):
+            problems.append(f"{name}: caveat states a position: {l['caveat'][:100]}")
+        if (l.get("mid_sentence") or l.get("ends_mid")) and not l.get("short"):
+            problems.append(f"{name}: line flagged mid-sentence without the short-excerpt label: {l['text'][:80]}")
+        thin = starts_mid(l["text"]) or ends_mid(l["text"]) or len(l["text"].split()) < 12
         if thin != bool(l.get("short")):
             problems.append(f"{name}: short-excerpt label wrong on: {l['text'][:80]}")
     c = reply.get("compare")
@@ -196,6 +216,10 @@ def check_reply(name: str, reply: dict, idx: dict, cmpf: dict, problems: list[st
         for qq in c["questions"]:
             if [r["name"] for r in qq["rows"]] != race:
                 problems.append(f"{name}: cards on {qq['code']} don't cover the race in ballot order")
+            for r in qq["rows"]:
+                texts = [l["text"] for l in r["lines"] if l.get("text")]
+                if len(set(texts)) < len(texts) or (qq["code"].startswith("B") and len(texts) > 1):
+                    problems.append(f"{name}: {r['name']} has {len(texts)} lines on questionnaire question {qq['code']}")
     if DECLINE_ASK.search(voter) and (reply.get("compare") or reply.get("candidate") or reply.get("measure")):
         problems.append(f"{name}: a decline ask got cards")
     if DECLINE_ASK.search(voter) and not reply.get("intent", "").startswith("decline"):

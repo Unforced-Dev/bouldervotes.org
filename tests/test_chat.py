@@ -284,6 +284,53 @@ class TestAskJsRendering(unittest.TestCase):
         self.assertIn("Short excerpt. <a", out2)
         self.assertIn("Read the full answer.</a>", out2)  # questionnaire lines are read, not watched
 
+    def test_mid_sentence_flags_render_as_short_excerpts(self):
+        """Fix round 4 (D4): a line flagged mid_sentence or ends_mid always shows the short-excerpt label, even
+        if the reply lost its short/more fields; connectives and dangling ends count as mid-sentence."""
+        from build_chat_context import ends_mid, short_excerpt, starts_mid
+        la_grave = "So I'm an absolute supporter of safer alternative transiting options than can."
+        self.assertTrue(starts_mid(la_grave))
+        self.assertTrue(short_excerpt(la_grave, "https://youtu.be/x")["short"])
+        for t in ("That means completing the core arterial network.", "Because we need homes.", "And I'm against it.", "But not yet."):
+            self.assertTrue(starts_mid(t), t)
+        self.assertFalse(starts_mid("Sofia and I think so."))
+        self.assertTrue(ends_mid("families that want to stay in the."))
+        self.assertTrue(ends_mid("more homes than"))
+        self.assertFalse(ends_mid("I think so."))
+        line = {"text": la_grave, "caveat": "Automatic transcript. Check the recording.", "link": "https://youtu.be/x",
+                "label": "LWV", "mid_sentence": True, "ends_mid": False}
+        v = {"key": "transportation", "label": "Bus lanes", "race": "mayor", "no_answer": "No answer to this question on file.", "page": "compare.html",
+             "questions": [{"code": "F4Q37", "label": "LWV", "question": "Q?", "rows": [
+                 {"name": "Aquiles La Grave", "page": "https://bouldervotes.org/p.html", "ballot_position": 6, "answered": True, "lines": [line]},
+                 {"name": "B", "page": "https://bouldervotes.org/b.html", "ballot_position": 7, "answered": True,
+                  "lines": [dict(line, text="x y z.", mid_sentence=False, ends_mid=True, link="https://betterboulder.com/q")]}]}]}
+        out = self.render(self.reply(compare=v))
+        self.assertIn("Short excerpt. <a href=\"https://youtu.be/x\" rel=\"noopener noreferrer\">Watch the full answer.</a>", out)
+        self.assertIn("Short excerpt. <a href=\"https://betterboulder.com/q\" rel=\"noopener noreferrer\">Read the full answer.</a>", out)
+        # And in the data: every flagged line carries the label.
+        for t in json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))["topics"]:
+            for qs in t["races"].values():
+                for q in qs:
+                    for r in q["rows"]:
+                        for l in r["lines"]:
+                            if l["mid_sentence"] or l["ends_mid"]:
+                                self.assertTrue(l.get("short"), l["text"][:60])
+
+    def test_question_header_is_neutral_and_whole(self):
+        """Fix round 4 (D5): not "Asked of every candidate" (nothing shows every candidate was there); the
+        question is shown whole, not cut at 220 characters."""
+        v = self.view("housing")
+        out = self.render(self.reply(compare=v))
+        self.assertNotIn("Asked of every candidate", out)
+        self.assertNotIn("every candidate was asked", out)
+        self.assertIn("The question put to candidates (", out)
+        b3 = next(q for q in v["questions"] if q["code"] == "B3")["question"]
+        self.assertGreater(len(b3), 220)
+        self.assertIn("did you vote to make it easier to build duplexes and triplexes?]", out)
+        src = ASK_JS.read_text(encoding="utf-8")
+        self.assertNotIn("truncate(", src)
+        self.assertNotRegex(src, r"every group on each side|Asked of every")
+
     def test_candidate_view_renders_their_excerpts_with_caveats(self):
         cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
         items = []
@@ -293,7 +340,7 @@ class TestAskJsRendering(unittest.TestCase):
                 items.append({"key": t["key"], "noun": t["noun"], "code": q["code"], "label": q["label"], "question": q["question"], "lines": row["lines"]})
         out = self.render(self.reply(candidate={"name": "Fred Smith", "page": "https://bouldervotes.org/people/fred-smith.html", "race": "mayor",
                                                 "items": items, "no_answer": cmp["no_answer"]}))
-        self.assertIn("recorded excerpts on the questions every candidate was asked", out)
+        self.assertIn("recorded excerpts on the questions put to the candidates", out)
         self.assertIn("No answer to this question on file.", out)
         for chunk in out.split("<blockquote>")[1:]:
             self.assertIn('class="cav-line"><span class="cav">', chunk)
@@ -353,6 +400,44 @@ class TestCompareFile(unittest.TestCase):
                       [l["text"] for l in g["lines"]])
         self.assertNotIn("badge", g)
         self.assertEqual(g["lines"][0]["caveat"], "From the Better Boulder questionnaire.")
+
+    def test_one_answer_per_questionnaire_question(self):
+        """Fix round 4 (D1): Duran's and Marquis's Core Arterial Network answers were filed under the
+        duplex question (B3). Each questionnaire row now has at most one line, and the build stops if not."""
+        from build_chat_context import check_one_answer_per_question
+        check_one_answer_per_question(self.idx, self.cmp)
+        for t in self.cmp["topics"]:
+            for race, qs in t["races"].items():
+                for q in qs:
+                    for r in q["rows"]:
+                        texts = [l["text"] for l in r["lines"]]
+                        self.assertEqual(len(texts), len(set(texts)), (t["key"], race, q["code"], r["name"]))
+                        if q["code"].startswith("B"):
+                            self.assertLessEqual(len(texts), 1, (t["key"], race, q["code"], r["name"]))
+        b3 = {r["name"]: [l["text"] for l in r["lines"]]
+              for r in next(q for q in self.q("housing", "council") if q["code"] == "B3")["rows"]}
+        self.assertEqual(b3["Tina Marquis"], ["No. While I did vote no in 2025, I did support allowing duplexes and triplexes in more areas during the comp plan process."])
+        self.assertEqual(b3["Benita Duran"], ["Yes. It helps."])
+        b2 = {r["name"]: [l["text"] for l in r["lines"]]
+              for r in next(q for q in self.q("transportation", "council") if q["code"] == "B2")["rows"]}
+        self.assertEqual(b2["Tina Marquis"], ["Yes. No additional comment submitted."])
+        self.assertEqual(b2["Benita Duran"], ["Yes. No additional comment submitted."])
+
+    def test_build_stops_on_two_answers_to_one_questionnaire_question(self):
+        from build_chat_context import check_one_answer_per_question
+        rec = {"speaker": "A B", "kind": "own", "code": "B3", "text": "Yes."}
+        with self.assertRaises(SystemExit):
+            check_one_answer_per_question({"quotes": [rec, {**rec, "text": "No."}]}, {"topics": []})
+        row = {"name": "A B", "lines": [{"text": "Yes."}, {"text": "No."}]}
+        cmp = {"topics": [{"key": "housing", "races": {"council": [{"code": "B3", "rows": [row]}]}}]}
+        with self.assertRaises(SystemExit):
+            check_one_answer_per_question({"quotes": [rec]}, cmp)
+        # Two excerpts of one forum answer are fine; the same excerpt twice is not.
+        cmp["topics"][0]["races"]["council"][0]["code"] = "F4Q35"
+        check_one_answer_per_question({"quotes": [rec]}, cmp)
+        row["lines"][1]["text"] = "Yes."
+        with self.assertRaises(SystemExit):
+            check_one_answer_per_question({"quotes": [rec]}, cmp)
 
     def test_every_line_is_exact_and_from_the_same_question(self):
         recs = {(q["speaker"], q["text"], q["link"]): q for q in self.idx["quotes"]}
@@ -436,7 +521,11 @@ class TestCompareFile(unittest.TestCase):
                 for q in qs:
                     for r in q["rows"]:
                         for l in r["lines"]:
-                            self.assertEqual(l["ends_mid"], not l["text"].rstrip().endswith(tuple(".!?…\"”'’)")), l["text"][-30:])
+                            t_ = l["text"].rstrip()
+                            self.assertEqual(l["ends_mid"], not t_.endswith(tuple(".!?…\"”'’)")) or
+                                             bool(re.search(r"\b(?:the|a|an|and|or|but|of|than|because)\W*$", t_, re.I)), t_[-30:])
+                            self.assertEqual(l["mid_sentence"], t_[:1].islower() or
+                                             bool(re.match(r"(?:that means|because|so|and|but|or)\b", t_, re.I)), t_[:30])
         adams = next(r for r in self.q("budget", "mayor")[0]["rows"] if r["name"] == "Taishya Adams")
         self.assertTrue(any(l["ends_mid"] for l in adams["lines"]))
 
@@ -502,6 +591,29 @@ class TestQuoteIndex(unittest.TestCase):
         self.assertTrue(all(q["caveat"] == "From the Better Boulder questionnaire." for q in b3))
         for p in self.idx["people"]:
             self.assertIn(p["office"], ("mayor", "council"))
+
+    def test_no_shown_caveat_states_a_position(self):
+        """Fix round 4 (D2): Isaacson's 2J line showed "Transcript note: Supports implicitly; no explicit
+        yes/no". A caveat beside a quote says where it came from and who spoke, never a position."""
+        stance = re.compile(r"\b(supports?|supported|supporting|supporter|oppos\w*|in favou?r|implicit\w*|stance|"
+                            r"endors\w*|yes|yes/no|agrees?|disagrees?)\b|\b(said|says|votes?|voted|a|on) no\b|"
+                            r"\bno (vote|on)\b", re.I)
+        caveats = [(q["speaker"], q["caveat"]) for q in self.idx["quotes"]]
+        cmp = json.loads((API / "chat-compare.json").read_text(encoding="utf-8"))
+        caveats += [(r["name"], l["caveat"]) for t in cmp["topics"] for qs in t["races"].values()
+                    for q in qs for r in q["rows"] for l in r["lines"]]
+        self.assertGreater(len(caveats), 600)
+        for who, c in caveats:
+            self.assertNotRegex(c, stance, who)
+            note = c.split("Transcript note: ", 1)[1] if "Transcript note: " in c else ""
+            if note:  # speaker-attribution notes only: no glosses or context on one candidate's line
+                self.assertRegex(note, r"(?i)drawn|moderator|respondent|speaker|name|called|order|sequence|"
+                                       r"identif|transcribed|garbled|absent|^Pt \d", who)
+        for q in self.idx["quotes"]:
+            self.assertNotIn("stance", q, q["text"][:60])
+        isaacson = [q for q in self.idx["quotes"] if q["text"].startswith("I'm really happy that we finally get to make a decision")]
+        self.assertEqual([q["caveat"] for q in isaacson],
+                         ["Automatic transcript. Check the recording. Speaker identified from speaking order."])
 
     def test_goldstein_la_grave_case(self):
         lg = [q for q in self.idx["quotes"] if "missing middle-income housing that" in q["text"]]

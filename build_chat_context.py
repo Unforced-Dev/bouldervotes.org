@@ -138,21 +138,31 @@ def shown_q(q: str) -> str:
 
 FORUM_CAVEAT = "Automatic transcript. Check the recording."
 ORDER_CAVEAT = "Speaker identified from speaking order."
+# A transcript note reaches the voter only if it says how the speaker was identified. Glosses and
+# context ("Refers to Alpine-Balsam") stay on the forum pages, and a note that reads a position into
+# the words ("Supports implicitly") never shows: the chat states no candidate's position.
+_ATTRIBUTION_NOTE = re.compile(r"drawn names|moderator|respondent|\bspeaker\b|\bname\b|named|called|\border\b|"
+                               r"sequence|identif|transcribed|garbled|^Pt \d|absent|was first|no name cue", re.I)
+STANCE_WORDS = re.compile(r"\b(support\w*|oppos\w*|against|in favou?r|implicit\w*|stance|endorse\w*|yes|yes/no)\b|"
+                          r"\b(said|says|votes?|voted|a|on) no\b|\bno (vote|on)\b", re.I)
+
+
+def chat_note(note: str) -> str:
+    """The transcript note the chat may show beside a quote: speaker attribution only, never a stance."""
+    return note if _ATTRIBUTION_NOTE.search(note) and not STANCE_WORDS.search(note) else ""
 
 
 def forum_record(x: dict, cd: dict, fm: dict) -> dict:
     """Label, link and caveat for one forum quote, from data (the chat never writes these)."""
     f = fm.get(x["forum"], {})
     cav = FORUM_CAVEAT + (" " + ORDER_CAVEAT if x["attribution_confidence"] == "medium" else "")
-    note = next((c[len("Transcript note: "):] for c in x["caveats"] if c.startswith("Transcript note: ")), "")
+    note = chat_note(next((c[len("Transcript note: "):] for c in x["caveats"] if c.startswith("Transcript note: ")), ""))
     if note:
         cav += " Transcript note: " + note
     rec = {"code": cd["f"][x["forum"]] + cd["q"][clean(x["question"])],
            "source": f.get("short") or x["forum_name"], "date": x["date"],
            "label": f"{f.get('short') or x['forum_name']}, {_nice_date(x['date'])}",
            "question": shown_q(clean(x["question"])), "link": x["watch_url"], "caveat": cav}
-    if x["stance"]:
-        rec["stance"] = f"{x['stance'].upper()} on {x['stance_about'].split(' (')[0]}"
     return rec
 
 
@@ -243,9 +253,22 @@ COMPARE = [
 _END = ".!?…\"”'’)"
 
 
+# A line that opens on a connective picks up mid-thought ("So I'm an absolute supporter of ..."), and one that
+# closes on a word no sentence ends with ("... than.") was cut mid-sentence. The gateway's shortNote uses the same rule.
+_CONNECTIVE = re.compile(r"^(?:that means|because|so|and|but|or)\b", re.I)
+_DANGLING = re.compile(r"\b(?:the|a|an|and|or|but|of|than|because)\W*$", re.I)
+
+
+def starts_mid(text: str) -> bool:
+    """A card line that starts mid-sentence: lower case, or on a connective."""
+    t = text.lstrip()
+    return t[:1].islower() or bool(_CONNECTIVE.match(t))
+
+
 def ends_mid(text: str) -> bool:
-    """A card line that stops without closing punctuation: the page flags it "Ends mid-sentence."."""
-    return not text.rstrip().endswith(tuple(_END))
+    """A card line that stops without closing punctuation, or on a word no sentence ends with."""
+    t = text.rstrip()
+    return not t.endswith(tuple(_END)) or bool(_DANGLING.search(t))
 
 
 PLAIN_NOTE = "In plain words: bouldervotes.org's summary of the city's ballot information, not the ballot text."
@@ -262,7 +285,7 @@ def measure_change(yes_means: str) -> str:
 
 def measure_facts(d: dict) -> list[dict]:
     """Per measure, what the page shows from data when the chat brings it up: what a yes and a no do,
-    the money line with its city source, and every group on each side with its date and link.
+    the money line with its city source, and the groups on file for each side, each with its date and link.
     The chat model never writes these."""
     edges = {x["id"]: x for x in d["endorsements"]}
     prov = {"campaign_claim": "listed by a campaign", "filing": "city filing", "news_report": "news listing"}
@@ -288,9 +311,9 @@ SHORT_WORDS = 12
 
 
 def short_excerpt(text: str, link: str | None) -> dict:
-    """One rule for every candidate: a fragment (starts or ends mid-sentence) or a line under 12 words is
+    """One rule for every candidate: a fragment (starts or ends mid-sentence, see starts_mid/ends_mid) or a line under 12 words is
     labelled a short excerpt, with the way to the full answer, so it never reads as their whole answer."""
-    if not (text[:1].islower() or ends_mid(text) or len(text.split()) < SHORT_WORDS):
+    if not (starts_mid(text) or ends_mid(text) or len(text.split()) < SHORT_WORDS):
         return {}
     video = bool(link) and ("youtube.com" in link or "youtu.be" in link)
     return {"short": True, "more": "Short excerpt. " + ("Watch the full answer." if video else "Read the full answer.")}
@@ -365,7 +388,7 @@ def compare_index(d: dict, asof: str) -> dict:
                     lines = []
                     for text, r in recs:
                         lines.append({"text": text, "link": r["link"], "caveat": r["caveat"], "label": r["label"],
-                                      "mid_sentence": text[:1].islower(), "ends_mid": ends_mid(text),
+                                      "mid_sentence": starts_mid(text), "ends_mid": ends_mid(text),
                                       **short_excerpt(text, r["link"])})
                         meta = meta or r
                     # No yes/no badge or tally: until every stance is hand-reviewed, the cards show words only.
@@ -399,7 +422,7 @@ def compare_md(cmp: dict) -> list[str]:
             parts = [f"{q['code']} \"{q['question'][:70]}{'...' if len(q['question']) > 70 else ''}\" ({q['answered']} of {q['of']} answered)" for q in qs]
             L.append(f"- compare {t['key']} {race}: {t['label']}. " + "; ".join(parts))
     L += ["", "Ballot measures: [intent measure 2J], 2K, 2L, 2M (chips m:2J ... m:2M). The page shows what a yes and a no do, "
-          "the money with its city source, and every group on each side with dates.", ""]
+          "the money with its city source, and the groups on file for each side, with dates.", ""]
     return L
 
 
@@ -636,6 +659,26 @@ def stats(text: str) -> dict:
     return {"bytes": n, "tokens": round(len(text) / CHARS_PER_TOKEN)}
 
 
+def check_one_answer_per_question(qi: dict, cmp: dict) -> None:
+    """A questionnaire question has one answer per candidate. Two own records under the same B code
+    means a statement was filed under the wrong question (Duran's and Marquis's Core Arterial Network
+    answers once sat under the duplex question), so the build stops instead of showing both."""
+    seen: dict[tuple[str, str], str] = {}
+    for x in qi["quotes"]:
+        if x["kind"] == "own" and x["code"].startswith("B"):
+            key = (x["speaker"], x["code"])
+            if key in seen:
+                raise SystemExit(f"chat-quotes: {x['speaker']} has two {x['code']} answers: {seen[key]!r} and {x['text']!r}")
+            seen[key] = x["text"]
+    for t in cmp["topics"]:
+        for race, qs in t["races"].items():
+            for q in qs:
+                for r in q["rows"]:
+                    texts = [ln["text"] for ln in r["lines"]]
+                    if len(set(texts)) < len(texts) or (q["code"].startswith("B") and len(texts) > 1):
+                        raise SystemExit(f"chat-compare: {t['key']} {race} {q['code']}: {r['name']} has {len(texts)} lines")
+
+
 def write_chat_files(out, d: dict, asof: str) -> dict:
     api = out / "api"
     api.mkdir(parents=True, exist_ok=True)
@@ -643,8 +686,10 @@ def write_chat_files(out, d: dict, asof: str) -> dict:
     (api / "chat-context.txt").write_text(ctx, encoding="utf-8")
     (api / "chat-system.txt").write_text(CHAT_SYSTEM, encoding="utf-8")
     import json
-    (api / "chat-quotes.json").write_text(json.dumps(quote_index(d, asof), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    (api / "chat-compare.json").write_text(json.dumps(compare_index(d, asof), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    qi, cmp = quote_index(d, asof), compare_index(d, asof)
+    check_one_answer_per_question(qi, cmp)
+    (api / "chat-quotes.json").write_text(json.dumps(qi, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (api / "chat-compare.json").write_text(json.dumps(cmp, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     s = stats(ctx)
     print(f"chat-context.txt {s['bytes']:,} bytes, about {s['tokens']:,} tokens (chars/{CHARS_PER_TOKEN})")
     if s["bytes"] > SOFT_LIMIT_BYTES:
