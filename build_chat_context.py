@@ -50,7 +50,9 @@ CHAT_RULES = """\
 - Fairness method when comparing candidates (every time):
   - Length: at most about 350 words per answer. One quote per candidate. Offer the next race or topic instead of doing everything at once.
   - Use each candidate's "lines by topic" list to pick their line; never say "no statement" when that list shows one for the topic.
-  - "Closest to what you said": name EVERY candidate whose quoted line matches the voter's words (check all of them, including those with no yes/no) and say which words match; then one neutral sentence: "The others' quotes above are on different points." No comment on any single non-matching candidate, no paraphrase of lines you did not quote, never rank.
+  - "Closest to what you said": go through the quotes you just showed, one by one. Name every candidate whose shown quote uses the voter's own key words or the same idea, and quote the matching words. Then exactly: "The others' quotes above are on different points." Never single out a non-matching candidate, never paraphrase, never rank, never name just one candidate as closest.
+  - Cover each priority the voter named (e.g. wildfire AND Xcel), one block each, or say "No direct statement on <topic> on file" per candidate.
+  - If a candidate has two lines on the same question, show both together as their one entry. Repeat "[speaker from speaking order]" as "speaker identified by speaking order". State nothing that is not in this file (no facts about how council votes, no "most material").
   - Exactly one quote per candidate per topic: no extra quotes for anyone, even in a summary.
   - Describe a quote only by what its words say. No caveats about what a quote leaves out ("without naming a remedy", "not building homes").
   - When comparing on a specific forum question, use each candidate's answer to THAT question (the Q code in "lines by topic"); for anyone without one, write "No answer to this question on file." Name the forum that produced each quote, never another.
@@ -106,7 +108,8 @@ def _bb_prompts() -> dict:
 
 # Short labels keep the context small (it must stay under Haiku's 100K-token price tier).
 TOPICS = [("housing", ("housing",), ("housing", "land-use")),
-          ("climate/wildfire", ("climate",), ("climate", "wildfire")),
+          ("climate/energy", ("climate",), ("climate",)),
+          ("wildfire", (), ("wildfire",)),
           ("transportation", ("transportation",), ("transportation",)),
           ("budget/taxes/2K", ("budget/bond 2K",), ("bond", "budget")),
           ("downtown/economy", (), ("economy", "downtown")),
@@ -115,9 +118,13 @@ TOPICS = [("housing", ("housing",), ("housing", "land-use")),
           ("arts", ("arts",), ("arts",))]
 
 
-def topic_labels(topic: str | None, issue: str | None = None) -> list[str]:
-    """Voter-topic labels for one quote (forum: topic + issue; statement: topic only)."""
+def topic_labels(topic: str | None, issue: str | None = None, text: str = "") -> list[str]:
+    """Voter-topic labels for one quote (forum: topic + issue; statement: topic only).
+    `text` (question + quote) adds "wildfire" when fire is actually mentioned."""
+    import re
     out = [lab for lab, qt, st in TOPICS if (topic in qt) or ((issue or topic or "") in st)]
+    if issue == "wildfire" or re.search(r"\bwildfires?\b|defensible space|hardening|\bfire (?:is|risk|danger|season|mitigation|resilien)", text, re.I):
+        out = [x for x in out if not (x == "climate/energy" and issue != "climate")] + ["wildfire"]
     extra = issue if issue and issue != "other" else (topic if topic and topic != "other" else "")
     return out or [f"other ({extra})" if extra else "general"]
 
@@ -139,7 +146,7 @@ def quote_index(d: dict, asof: str) -> dict:
             quotes.append({"speaker": c["name"], "text": clean(s["text"]), "kind": "own" if s["candidate_own_words"] else "reporter",
                            "topics": topic_labels(s["topic"])})
         for x in c["forum_quotes"]:
-            quotes.append({"speaker": c["name"], "text": clean(x["quote"]), "kind": "own", "topics": topic_labels(x["topic"], x.get("issue"))})
+            quotes.append({"speaker": c["name"], "text": clean(x["quote"]), "kind": "own", "topics": topic_labels(x["topic"], x.get("issue"), x["question"] + " " + x["quote"])})
     return {"version": asof, "fallback_page": u("people.html"), "people": people, "quotes": quotes}
 
 
@@ -244,11 +251,11 @@ def chat_context(d: dict, asof: str) -> str:
                 if s_["candidate_own_words"]:
                     qc_ = _bb_prompts()["code"].get(_bb_prompts()["prompts"].get(s_["id"], ""), "")
                     ref = qc_ or s_["kind"]
-                    for t in topic_labels(s_["topic"]):
+                    for t in topic_labels(s_["topic"], None, s_["text"]):
                         by_topic.setdefault(t, []).append(ref)
             for x_ in c["forum_quotes"]:
                 ref = f"{fcode[x_['forum']]}{qcode[clean(x_['question'])]}" + (f" {x_['stance'].upper()} on {x_['stance_about'].split(' (')[0]}" if x_["stance"] else "")
-                for t in topic_labels(x_["topic"], x_.get("issue")):
+                for t in topic_labels(x_["topic"], x_.get("issue"), x_["question"] + " " + x_["quote"]):
                     by_topic.setdefault(t, []).append(ref)
             L.append(f"#### {c['name']}: lines by topic")
             L.append(" | ".join(f"{t}: " + (", ".join(dict.fromkeys(by_topic[t])) if by_topic.get(t) else "none") for t, _a, _b in TOPICS))
@@ -259,7 +266,7 @@ def chat_context(d: dict, asof: str) -> str:
                 L.append("No first-person statements on file.")
             for s in own:
                 qc = _bp["code"].get(_bp["prompts"].get(s["id"], ""), "")
-                L.append(f"- {c['name']}. Topic: {' / '.join(topic_labels(s['topic']))}. {s['publisher']}, {s['kind']}" + (f", answering {qc}" if qc else "")
+                L.append(f"- {c['name']}. Topic: {' / '.join(topic_labels(s['topic'], None, s['text']))}. {s['publisher']}, {s['kind']}" + (f", answering {qc}" if qc else "")
                          + (f", {s['published_on']}" if s["published_on"] else "") + f". Source: {s['source_url']}")
                 L.append("  " + md_quote(s["text"]))
             if rep:
@@ -282,7 +289,7 @@ def chat_context(d: dict, asof: str) -> str:
                 tag = " [speaker from speaking order]" if x["attribution_confidence"] == "medium" else ""
                 note = f" Transcript note: {x['caveats'][-1][len('Transcript note: '):]}" \
                     if x["caveats"][-1].startswith("Transcript note: ") else ""
-                L.append(f"- {c['name']}, {fcode[x['forum']]} ({fdate[x['forum']]}) {qcode[clean(x['question'])]} at {x['timestamp']}. Topic: {' / '.join(topic_labels(x['topic'], x.get('issue')))}.{st}{tag}")
+                L.append(f"- {c['name']}, {fcode[x['forum']]} ({fdate[x['forum']]}) {qcode[clean(x['question'])]} at {x['timestamp']}. Topic: {' / '.join(topic_labels(x['topic'], x.get('issue'), x['question'] + ' ' + x['quote']))}.{st}{tag}")
                 L.append("  " + md_quote(x["quote"]))
                 L.append(f"  Watch: {x['watch_url']}{note}")
             L.append("")
