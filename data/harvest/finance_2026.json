@@ -1,5 +1,5 @@
 {
-  "retrieved_on": "2026-10-13",
+  "retrieved_on": "2026-10-14",
   "summary_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
   "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
   "list_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
@@ -19958,6 +19958,9 @@
           "clerk_item_id": 9096,
           "amends_id": null
         }
+      ],
+      "listing_omits": [
+        3895
       ]
     },
     {
@@ -19968,12 +19971,12 @@
       "clerk_candidate": "David Rendleman",
       "person": "Scott Rendleman",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=322",
-      "contributions_total": 3600.0,
-      "expenditures_total": 690.49,
+      "contributions_total": 3750.0,
+      "expenditures_total": 1406.95,
       "matching_received": 0.0,
       "in_kind": 0.0,
-      "cash_on_hand": 2909.51,
-      "reported_on": "2026-10-06",
+      "cash_on_hand": 2343.05,
+      "reported_on": "2026-10-13",
       "statements": [
         {
           "statement_id": 2856,
@@ -20021,6 +20024,22 @@
             "cash_on_hand": 2909.51
           },
           "n_contributions": 5,
+          "n_expenditures": 2
+        },
+        {
+          "statement_id": 3919,
+          "label": "21st day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3919",
+          "submitted_on": "2026-10-13",
+          "submitted_at": "2026-10-13 08:55:13.060",
+          "balance": {
+            "contributions": 3750.0,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 1406.95,
+            "cash_on_hand": 2343.05
+          },
+          "n_contributions": 2,
           "n_expenditures": 2
         }
       ],
@@ -20264,6 +20283,30 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28551,
           "amends_id": null
+        },
+        {
+          "last_name": "Caruso",
+          "first_name": "Cindy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28791,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shanks",
+          "first_name": "Pat",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-10",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28792,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -20347,6 +20390,24 @@
           "amount": 7.42,
           "clerk_item_id": 9092,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Yard Sign Plus",
+          "purpose": "Campaign Yard Signs",
+          "occurred_on": "2026-10-08",
+          "amount": 552.17,
+          "clerk_item_id": 9177,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Uprinting",
+          "purpose": "Door flyers",
+          "occurred_on": "2026-10-09",
+          "amount": 164.29,
+          "clerk_item_id": 9178,
+          "amends_id": null
         }
       ]
     },
@@ -20358,12 +20419,12 @@
       "clerk_candidate": "Samuel Fuqua",
       "person": "Sam Fuqua",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=319",
-      "contributions_total": 10096.0,
-      "expenditures_total": 5576.23,
-      "matching_received": 9696.0,
+      "contributions_total": 10421.0,
+      "expenditures_total": 9265.06,
+      "matching_received": 10021.0,
       "in_kind": 0.0,
-      "cash_on_hand": 14215.77,
-      "reported_on": "2026-10-06",
+      "cash_on_hand": 11176.94,
+      "reported_on": "2026-10-13",
       "statements": [
         {
           "statement_id": 2845,
@@ -20428,6 +20489,22 @@
           },
           "n_contributions": 5,
           "n_expenditures": 4
+        },
+        {
+          "statement_id": 3911,
+          "label": "21st day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3911",
+          "submitted_on": "2026-10-13",
+          "submitted_at": "2026-10-13 08:07:58.640",
+          "balance": {
+            "contributions": 10421.0,
+            "matching_received": 10021.0,
+            "in_kind": 0.0,
+            "expenditures": 9265.06,
+            "cash_on_hand": 11176.94
+          },
+          "n_contributions": 5,
+          "n_expenditures": 9
         }
       ],
       "contributions": [
@@ -22326,6 +22403,66 @@
           "ytd_amount": 100.0,
           "clerk_item_id": 28546,
           "amends_id": null
+        },
+        {
+          "last_name": "McKinnon",
+          "first_name": "Tom",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28729,
+          "amends_id": null
+        },
+        {
+          "last_name": "Adamson",
+          "first_name": "David",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-06",
+          "amount": 25.0,
+          "match_amount": 25.0,
+          "ytd_amount": 75.0,
+          "clerk_item_id": 28730,
+          "amends_id": null
+        },
+        {
+          "last_name": "Roth",
+          "first_name": "Richard",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-07",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28731,
+          "amends_id": null
+        },
+        {
+          "last_name": "Dohrman",
+          "first_name": "Helen",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-08",
+          "amount": 50.0,
+          "match_amount": 50.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28732,
+          "amends_id": null
+        },
+        {
+          "last_name": "Barsamian",
+          "first_name": "David",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-09",
+          "amount": 100.0,
+          "match_amount": 100.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28733,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -22454,6 +22591,87 @@
           "amount": 19.94,
           "clerk_item_id": 9066,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-07",
+          "amount": 20.0,
+          "clerk_item_id": 9152,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-08",
+          "amount": 160.0,
+          "clerk_item_id": 9170,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Center Copy Printing",
+          "purpose": "Print literature",
+          "occurred_on": "2026-10-09",
+          "amount": 2931.45,
+          "clerk_item_id": 9151,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-09",
+          "amount": 88.0,
+          "clerk_item_id": 9171,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "DonorBox (Rebel Idealist Inc.) / Stripe (processing fees)",
+          "purpose": "Incremental DonorBox/Stripe processing fees",
+          "occurred_on": "2026-10-09",
+          "amount": 14.38,
+          "clerk_item_id": 9176,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-10",
+          "amount": 142.0,
+          "clerk_item_id": 9172,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-11",
+          "amount": 147.0,
+          "clerk_item_id": 9173,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-12",
+          "amount": 93.0,
+          "clerk_item_id": 9174,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta Platforms, Inc.",
+          "purpose": "Online advertising",
+          "occurred_on": "2026-10-13",
+          "amount": 93.0,
+          "clerk_item_id": 9175,
+          "amends_id": null
         }
       ]
     },
@@ -22533,11 +22751,11 @@
       "person": "Tara Winer",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=306",
       "contributions_total": 12555.0,
-      "expenditures_total": 5209.41,
+      "expenditures_total": 12738.05,
       "matching_received": 12366.0,
       "in_kind": 0.0,
-      "cash_on_hand": 19711.59,
-      "reported_on": "2026-10-06",
+      "cash_on_hand": 12182.95,
+      "reported_on": "2026-10-12",
       "statements": [
         {
           "statement_id": 2834,
@@ -22602,6 +22820,22 @@
           },
           "n_contributions": 0,
           "n_expenditures": 2
+        },
+        {
+          "statement_id": 3915,
+          "label": "21st day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3915",
+          "submitted_on": "2026-10-12",
+          "submitted_at": "2026-10-12 13:35:47.643",
+          "balance": {
+            "contributions": 12555.0,
+            "matching_received": 12366.0,
+            "in_kind": 0.0,
+            "expenditures": 12738.05,
+            "cash_on_hand": 12182.95
+          },
+          "n_contributions": 0,
+          "n_expenditures": 1
         }
       ],
       "contributions": [
@@ -24466,6 +24700,15 @@
           "amount": 62.32,
           "clerk_item_id": 9094,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Center Copy Boulder, Inc.",
+          "purpose": "Direct Mail",
+          "occurred_on": "2026-10-12",
+          "amount": 7528.64,
+          "clerk_item_id": 9156,
+          "amends_id": null
         }
       ]
     },
@@ -24478,11 +24721,11 @@
       "person": "Tina Marquis",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=316",
       "contributions_total": 11544.56,
-      "expenditures_total": 8490.61,
+      "expenditures_total": 8589.25,
       "matching_received": 11544.55,
       "in_kind": 0.0,
-      "cash_on_hand": 14598.5,
-      "reported_on": "2026-10-05",
+      "cash_on_hand": 14499.86,
+      "reported_on": "2026-10-13",
       "statements": [
         {
           "statement_id": 2844,
@@ -24531,6 +24774,22 @@
           },
           "n_contributions": 8,
           "n_expenditures": 6
+        },
+        {
+          "statement_id": 3920,
+          "label": "21st day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3920",
+          "submitted_on": "2026-10-13",
+          "submitted_at": "2026-10-13 09:47:40.353",
+          "balance": {
+            "contributions": 11544.56,
+            "matching_received": 11544.55,
+            "in_kind": 0.0,
+            "expenditures": 8589.25,
+            "cash_on_hand": 14499.86
+          },
+          "n_contributions": 0,
+          "n_expenditures": 2
         }
       ],
       "contributions": [
@@ -26298,6 +26557,24 @@
           "occurred_on": "2026-10-05",
           "amount": 73.7,
           "clerk_item_id": 9085,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Meta",
+          "purpose": "Digital ads",
+          "occurred_on": "2026-10-11",
+          "amount": 65.88,
+          "clerk_item_id": 9179,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Canva",
+          "purpose": "Business cards",
+          "occurred_on": "2026-10-13",
+          "amount": 32.76,
+          "clerk_item_id": 9180,
           "amends_id": null
         }
       ]
@@ -28320,12 +28597,12 @@
       "clerk_candidate": null,
       "person": null,
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=318",
-      "contributions_total": 2935.0,
-      "expenditures_total": 150.21,
+      "contributions_total": 3385.0,
+      "expenditures_total": 2258.76,
       "matching_received": null,
       "in_kind": 0.0,
-      "cash_on_hand": 2784.79,
-      "reported_on": "2026-09-24",
+      "cash_on_hand": 1126.24,
+      "reported_on": "2026-10-07",
       "statements": [
         {
           "statement_id": 2849,
@@ -28356,6 +28633,21 @@
           },
           "n_contributions": 23,
           "n_expenditures": 1
+        },
+        {
+          "statement_id": 3906,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3906",
+          "submitted_on": "2026-10-07",
+          "submitted_at": "2026-10-07 10:25:25.223",
+          "balance": {
+            "contributions": 3385.0,
+            "in_kind": 0.0,
+            "expenditures": 2258.76,
+            "cash_on_hand": 1126.24
+          },
+          "n_contributions": 5,
+          "n_expenditures": 2
         }
       ],
       "contributions": [
@@ -28838,6 +29130,66 @@
           "ytd_amount": 25.0,
           "clerk_item_id": 28455,
           "amends_id": null
+        },
+        {
+          "last_name": "Sweeney",
+          "first_name": "William",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28708,
+          "amends_id": null
+        },
+        {
+          "last_name": "Logan",
+          "first_name": "Jamie",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28709,
+          "amends_id": null
+        },
+        {
+          "last_name": "Frick",
+          "first_name": "Marty",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28710,
+          "amends_id": null
+        },
+        {
+          "last_name": "Meshnick",
+          "first_name": "Jason",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28711,
+          "amends_id": null
+        },
+        {
+          "last_name": "Johnson",
+          "first_name": "Eric",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-03",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28712,
+          "amends_id": null
         }
       ],
       "expenditures": [
@@ -28858,6 +29210,24 @@
           "amount": 85.38,
           "clerk_item_id": 9041,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "D&K Printing",
+          "purpose": "Printing",
+          "occurred_on": "2026-10-05",
+          "amount": 2085.0,
+          "clerk_item_id": 9141,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Donorbox/Stripe",
+          "purpose": "Fundraising fees",
+          "occurred_on": "2026-10-06",
+          "amount": 23.55,
+          "clerk_item_id": 9140,
+          "amends_id": null
         }
       ]
     },
@@ -28869,12 +29239,12 @@
       "clerk_candidate": null,
       "person": null,
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=327",
-      "contributions_total": 200.0,
+      "contributions_total": 2050.0,
       "expenditures_total": 0.0,
       "matching_received": null,
       "in_kind": 0.0,
-      "cash_on_hand": 200.0,
-      "reported_on": "2026-10-06",
+      "cash_on_hand": 2050.0,
+      "reported_on": "2026-10-12",
       "statements": [
         {
           "statement_id": 3873,
@@ -28905,6 +29275,21 @@
           },
           "n_contributions": 0,
           "n_expenditures": 0
+        },
+        {
+          "statement_id": 3899,
+          "label": "28th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3899",
+          "submitted_on": "2026-10-06",
+          "submitted_at": "2026-10-06 16:36:43.610",
+          "balance": {
+            "contributions": 2050.0,
+            "in_kind": 0.0,
+            "expenditures": 0.0,
+            "cash_on_hand": 2050.0
+          },
+          "n_contributions": 19,
+          "n_expenditures": 0
         }
       ],
       "contributions": [
@@ -28930,6 +29315,234 @@
           "match_amount": 0.0,
           "ytd_amount": 100.0,
           "clerk_item_id": 28219,
+          "amends_id": null
+        },
+        {
+          "last_name": "Mayo",
+          "first_name": "Tracy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-23",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28553,
+          "amends_id": null
+        },
+        {
+          "last_name": "Couch",
+          "first_name": "Grant",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28554,
+          "amends_id": null
+        },
+        {
+          "last_name": "Malden",
+          "first_name": "Deborah",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28555,
+          "amends_id": null
+        },
+        {
+          "last_name": "Pearson",
+          "first_name": "Louise",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28556,
+          "amends_id": null
+        },
+        {
+          "last_name": "Becker",
+          "first_name": "KC",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28557,
+          "amends_id": null
+        },
+        {
+          "last_name": "Morehouse",
+          "first_name": "Bob",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-24",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28558,
+          "amends_id": null
+        },
+        {
+          "last_name": "Drake",
+          "first_name": "Robert",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28559,
+          "amends_id": null
+        },
+        {
+          "last_name": "Shriver",
+          "first_name": "Jennifer",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-25",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28560,
+          "amends_id": null
+        },
+        {
+          "last_name": "Neshama",
+          "first_name": "Rivvy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-26",
+          "amount": 50.0,
+          "match_amount": 0.0,
+          "ytd_amount": 50.0,
+          "clerk_item_id": 28561,
+          "amends_id": null
+        },
+        {
+          "last_name": "Tebo",
+          "first_name": "Tatiana",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28563,
+          "amends_id": null
+        },
+        {
+          "last_name": "Hill",
+          "first_name": "Barbara",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-27",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28565,
+          "amends_id": null
+        },
+        {
+          "last_name": "Walker",
+          "first_name": "Jack",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-28",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28566,
+          "amends_id": null
+        },
+        {
+          "last_name": "Ross",
+          "first_name": "Harry",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28567,
+          "amends_id": null
+        },
+        {
+          "last_name": "Smith",
+          "first_name": "TK",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-29",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28568,
+          "amends_id": null
+        },
+        {
+          "last_name": "Kornblum",
+          "first_name": "Nancy",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-09-30",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28569,
+          "amends_id": null
+        },
+        {
+          "last_name": "Weaver",
+          "first_name": "Sam",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-04",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28570,
+          "amends_id": null
+        },
+        {
+          "last_name": "Leblang",
+          "first_name": "Steve",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-05",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28571,
+          "amends_id": null
+        },
+        {
+          "last_name": "Villanueva",
+          "first_name": "Hernan",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-05",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28572,
+          "amends_id": null
+        },
+        {
+          "last_name": "Bugbee",
+          "first_name": "Lindsey",
+          "contrib_type": "Monetary",
+          "from_candidate": false,
+          "occurred_on": "2026-10-05",
+          "amount": 100.0,
+          "match_amount": 0.0,
+          "ytd_amount": 100.0,
+          "clerk_item_id": 28573,
           "amends_id": null
         }
       ],
@@ -28975,6 +29588,24 @@
       ]
     },
     {
+      "committee_id": 330,
+      "committee_number": "2026-IEO-029",
+      "committee_name": "Colorado Jewish Action Alliance",
+      "kind": "independent_expenditure",
+      "clerk_candidate": null,
+      "person": null,
+      "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=330",
+      "contributions_total": 0.0,
+      "expenditures_total": 0.0,
+      "matching_received": 0.0,
+      "in_kind": null,
+      "cash_on_hand": null,
+      "reported_on": null,
+      "statements": [],
+      "contributions": [],
+      "expenditures": []
+    },
+    {
       "committee_id": 326,
       "committee_number": "2026-IEO-025",
       "committee_name": "Open Boulder",
@@ -28983,11 +29614,11 @@
       "person": null,
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=326",
       "contributions_total": 0.0,
-      "expenditures_total": 3951.0,
+      "expenditures_total": 4819.0,
       "matching_received": 0.0,
       "in_kind": null,
       "cash_on_hand": null,
-      "reported_on": "2026-10-06",
+      "reported_on": "2026-10-12",
       "statements": [
         {
           "statement_id": 3861,
@@ -29018,6 +29649,16 @@
           "balance": {},
           "n_contributions": 0,
           "n_expenditures": 3
+        },
+        {
+          "statement_id": 3916,
+          "label": "Independent Expenditure",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3916",
+          "submitted_on": "2026-10-12",
+          "submitted_at": "2026-10-12 15:24:09.960",
+          "balance": {},
+          "n_contributions": 0,
+          "n_expenditures": 1
         }
       ],
       "contributions": [],
@@ -29056,6 +29697,15 @@
           "occurred_on": "2026-10-05",
           "amount": 576.18,
           "clerk_item_id": 9091,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "USPS",
+          "purpose": "Mailing",
+          "occurred_on": "2026-10-12",
+          "amount": 867.62,
+          "clerk_item_id": 9157,
           "amends_id": null
         }
       ]
