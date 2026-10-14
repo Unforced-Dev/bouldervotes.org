@@ -614,11 +614,14 @@ class Graph2026:
                  "<li>Earlier elections: <a href='2025.html'>2025</a>, <a href='2023.html'>2023</a>, <a href='2021.html'>2021</a>, "
                  "<a href='2019.html'>2019</a>, <a href='2017.html'>2017</a></li></ul>")
         from build_llm import AI_CAUTION, AI_PROMPT, home_head
+        from build_chat_context import chat_enabled
         ask = ("<section class='ask-box' aria-labelledby='ask-h'>"
                "<div class='ask-head'><h2 id='ask-h'>Prefer to ask an AI? Copy this into ChatGPT, Claude, or any assistant:</h2>"
                "<button type='button' class='btn secondary copy' data-copy='ai-prompt' hidden>Copy</button></div>"
                f"<p class='prompt-box' id='ai-prompt'>{esc(AI_PROMPT)}</p>"
                f"<p class='note ask-foot'>{esc(AI_CAUTION)}</p>"
+               + ("<p class='ask-foot'><a href='ask.html'><strong>Or ask a question here</strong></a> about this election.</p>"
+                  if chat_enabled() else "") +
                "<script>(function(){var b=document.querySelector('button.copy');if(!b||!navigator.clipboard)return;"
                "b.hidden=false;b.addEventListener('click',function(){var t=document.getElementById(b.dataset.copy).textContent;"
                "navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},2000);});});})();</script>"

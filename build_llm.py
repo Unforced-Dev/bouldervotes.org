@@ -682,6 +682,8 @@ def write_all(con: sqlite3.Connection, out: Path, forums, page) -> dict:
     full = llms_full(d, asof)
     (out / "llms-full.txt").write_text(full, encoding="utf-8")
     (out / "api" / "index.html").write_text(api_page(page, d), encoding="utf-8")
+    from build_chat_context import write_chat_files
+    write_chat_files(out, d, asof)
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {u('sitemap.xml')}\n", encoding="utf-8")
     pages = sorted(p.relative_to(out).as_posix() for p in out.rglob("*.html"))
     locs = [u("")] + [u(p) for p in pages if p != "index.html"] + [u("llms.txt"), u("llms-full.txt")]

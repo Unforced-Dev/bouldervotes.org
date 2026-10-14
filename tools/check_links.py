@@ -64,7 +64,7 @@ def broken_links(docs: Path = DOCS) -> list[tuple[str, str]]:
                 tp = pages.get(target) or parse(target)
                 if u.fragment not in tp.ids:
                     bad.append((str(f.relative_to(docs)), href))
-    machine = [docs / "llms.txt", docs / "llms-full.txt", *sorted((docs / "api" / "v1").rglob("*.json"))]
+    machine = [docs / "llms.txt", docs / "llms-full.txt", docs / "api" / "chat-context.txt", *sorted((docs / "api" / "v1").rglob("*.json"))]
     for f in machine:
         if not f.exists():
             continue
