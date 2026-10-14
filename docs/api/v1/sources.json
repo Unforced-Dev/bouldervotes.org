@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-10-13",
+ "generated_at": "2026-10-14",
  "site": "https://bouldervotes.org",
  "license_note": "Facts and quotes belong to their sources; cite the source_url.",
  "guidance_for_ai": "https://bouldervotes.org/llms.txt",
@@ -272,7 +272,7 @@
    "title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
    "kind": "official",
    "year": 2026,
-   "published_on": "2026-10-13",
+   "published_on": "2026-10-14",
    "publisher": "City of Boulder"
   },
   {

@@ -130,17 +130,17 @@ class TestChatEvalSet(unittest.TestCase):
 
 class TestChatPage(unittest.TestCase):
     def test_flag_controls_page(self):
-        on = os.environ.get("BV_CHAT_ENABLED") == "1"
+        on = os.environ.get("BV_CHAT_ENABLED", "1") != "0"
         self.assertEqual((DOCS / "ask.html").exists(), on, "docs/ was built with a different BV_CHAT_ENABLED than this run")
         self.assertEqual((DOCS / "js" / "ask.js").exists(), on)
         home = (DOCS / "index.html").read_text(encoding="utf-8")
         self.assertEqual("ask.html" in home, on)
 
-    def test_flag_default_off(self):
+    def test_flag_default_on(self):
         import build_chat_context as C
         saved = os.environ.pop("BV_CHAT_ENABLED", None)
         try:
-            self.assertFalse(C.chat_enabled())
+            self.assertTrue(C.chat_enabled())
             os.environ["BV_CHAT_ENABLED"] = "0"
             self.assertFalse(C.chat_enabled())
             os.environ["BV_CHAT_ENABLED"] = "1"
@@ -162,7 +162,7 @@ class TestChatPage(unittest.TestCase):
             if saved is not None:
                 os.environ["BV_CHAT_GATEWAY"] = saved
 
-    @unittest.skipUnless(os.environ.get("BV_CHAT_ENABLED") == "1", "ask.html is only built when BV_CHAT_ENABLED=1")
+    @unittest.skipIf(os.environ.get("BV_CHAT_ENABLED") == "0", "ask.html is not built when BV_CHAT_ENABLED=0")
     def test_ask_page_content(self):
         s = (DOCS / "ask.html").read_text(encoding="utf-8")
         warn = "AI can be wrong. Check every answer against the linked source."

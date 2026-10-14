@@ -723,7 +723,9 @@ def ballot_counts() -> dict:
 
 
 def chat_enabled() -> bool:
-    return os.environ.get("BV_CHAT_ENABLED") == "1"
+    # Live since Aaron's go (2026-10-14): on by default, so every build path (nightly rebuild,
+    # freshness PRs) keeps /ask. BV_CHAT_ENABLED=0 is the off switch.
+    return os.environ.get("BV_CHAT_ENABLED", "1") != "0"
 
 
 def chat_gateway() -> str:

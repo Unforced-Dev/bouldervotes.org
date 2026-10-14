@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-10-13",
+ "generated_at": "2026-10-14",
  "site": "https://bouldervotes.org",
  "license_note": "Facts and quotes belong to their sources; cite the source_url.",
  "guidance_for_ai": "https://bouldervotes.org/llms.txt",
@@ -8420,6 +8420,174 @@
    "source_title": "Election 2026 (Downtown Boulder Partnership)"
   },
   {
+   "id": "E349",
+   "endorser": {
+    "type": "person",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "title_as_printed": "Boulder Library District trustee; 2026 council candidate",
+    "page_url": "https://bouldervotes.org/people/benita-duran.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Benita Duran. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E350",
+   "endorser": {
+    "type": "person",
+    "slug": "sam-fuqua",
+    "name": "Sam Fuqua",
+    "title_as_printed": "former BVSD Board of Education president; 2026 council candidate",
+    "page_url": "https://bouldervotes.org/people/sam-fuqua.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Sam Fuqua. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E348",
+   "endorser": {
+    "type": "person",
+    "slug": "jameson-goldstein",
+    "name": "Jameson Goldstein",
+    "title_as_printed": "Candidate for Boulder Mayor",
+    "page_url": "https://bouldervotes.org/people/jameson-goldstein.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Jameson Goldstein. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E351",
+   "endorser": {
+    "type": "person",
+    "slug": "jill-grano",
+    "name": "Jill Grano",
+    "title_as_printed": "former Boulder city councilmember; 2026 council candidate",
+    "page_url": "https://bouldervotes.org/people/jill-grano.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Jill Grano. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E347",
+   "endorser": {
+    "type": "person",
+    "slug": "aquiles-la-grave",
+    "name": "Aquiles La Grave",
+    "title_as_printed": "Candidate for Boulder Mayor",
+    "page_url": "https://bouldervotes.org/people/aquiles-la-grave.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Aquiles La Grave. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E352",
+   "endorser": {
+    "type": "person",
+    "slug": "rachel-rose-isaacson",
+    "name": "Rachel Rose Isaacson",
+    "title_as_printed": "Candidate for Boulder City Council",
+    "page_url": "https://bouldervotes.org/people/rachel-rose-isaacson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Rachel Rose Isaacson. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E353",
+   "endorser": {
+    "type": "person",
+    "slug": "ryan-jamieson",
+    "name": "Ryan Jamieson",
+    "title_as_printed": "Candidate for Boulder City Council",
+    "page_url": "https://bouldervotes.org/people/ryan-jamieson.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Ryan Jamieson. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
    "id": "E281",
    "endorser": {
     "type": "person",
@@ -8444,6 +8612,30 @@
    "source_title": "Vote YES on 2L"
   },
   {
+   "id": "E346",
+   "endorser": {
+    "type": "person",
+    "slug": "rob-kaplan",
+    "name": "Rob Kaplan",
+    "title_as_printed": "Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/rob-kaplan.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Rob Kaplan. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
    "id": "E340",
    "endorser": {
     "type": "person",
@@ -8462,6 +8654,30 @@
    "provenance": "campaign_claim",
    "provenance_label": "Campaign claim",
    "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Tina Marquis. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E354",
+   "endorser": {
+    "type": "person",
+    "slug": "dave-martus",
+    "name": "Dave Martus",
+    "title_as_printed": "2026 Boulder city council candidate",
+    "page_url": "https://bouldervotes.org/people/dave-martus.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Dave Martus. Only the campaign says so.",
    "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
    "published_on": null,
    "source_url": "https://strongerboulder.com/endorsements",
@@ -8779,6 +8995,54 @@
    "published_on": "2026-09-27",
    "source_url": "https://planboulder.org/2026-ballot-issue-endorsements",
    "source_title": "2026 Ballot Issue Endorsements"
+  },
+  {
+   "id": "E355",
+   "endorser": {
+    "type": "person",
+    "slug": "scott-rendleman",
+    "name": "Scott Rendleman",
+    "title_as_printed": "Candidate for Boulder City Council",
+    "page_url": "https://bouldervotes.org/people/scott-rendleman.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Scott Rendleman. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
+  },
+  {
+   "id": "E356",
+   "endorser": {
+    "type": "person",
+    "slug": "jamillah-richmond",
+    "name": "Jamillah Richmond",
+    "title_as_printed": "Candidate for Boulder City Council",
+    "page_url": "https://bouldervotes.org/people/jamillah-richmond.html"
+   },
+   "endorser_group": "other_individual",
+   "target": {
+    "type": "city_measure",
+    "letter": "2L"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Boulder Firefighters for a Stronger Boulder ballot campaign lists Jamillah Richmond. Only the campaign says so.",
+   "claimed_by": "Boulder Firefighters for a Stronger Boulder (ballot campaign)",
+   "published_on": null,
+   "source_url": "https://strongerboulder.com/endorsements",
+   "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
   },
   {
    "id": "E341",

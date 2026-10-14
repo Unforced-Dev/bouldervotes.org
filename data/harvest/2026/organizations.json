@@ -1802,7 +1802,8 @@
       "https://www.jamillahanewvoice.com/endorsements",
       "https://www.ryanwithboulder.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "former Boulder city councilmember; 2026 council candidate",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -1873,7 +1874,8 @@
       "https://rjforboulder.com/endorsements.html",
       "https://www.ryanwithboulder.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder city councilmember",
     "title_source_url": "https://rjforboulder.com/endorsements.html",
@@ -2429,7 +2431,8 @@
     "summary": "Sam Fuqua is identified as former BVSD Board of Education president; 2026 council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
       "https://brockett4mayor.org/endorsements/",
-      "https://www.tinaforboulder.com/endorsements"
+      "https://www.tinaforboulder.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "former BVSD Board of Education president; 2026 council candidate",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
@@ -2461,7 +2464,8 @@
     "past_endorsements": [],
     "summary": "Benita Duran is identified as Boulder Library District trustee; 2026 council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
-      "https://www.taraforboulder.com/endorsements/content/endorsers/"
+      "https://www.taraforboulder.com/endorsements/content/endorsers/",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "Boulder Library District trustee; 2026 council candidate",
     "title_source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
@@ -2494,7 +2498,8 @@
     "summary": "David Martus is identified as 2026 Boulder city council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
       "https://rjforboulder.com/endorsements.html",
-      "https://www.jillforcouncil.com/endorsements"
+      "https://www.jillforcouncil.com/endorsements",
+      "https://strongerboulder.com/endorsements"
     ],
     "title": "2026 Boulder city council candidate",
     "title_source_url": "https://www.jillforcouncil.com/endorsements",
@@ -4102,6 +4107,198 @@
     "title": "Boulder City Council",
     "title_source_url": "https://strongerboulder.com/endorsements",
     "weight_group": "current_elected",
+    "related": []
+  },
+  {
+    "slug": "aquiles-la-grave",
+    "name": "Aquiles La Grave",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Aquiles La Grave",
+        "role": "Candidate for Boulder Mayor",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-14"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Aquiles La Grave is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Candidate for Boulder Mayor",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "jameson-goldstein",
+    "name": "Jameson Goldstein",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Jameson Goldstein",
+        "role": "Candidate for Boulder Mayor",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-14"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Jameson Goldstein is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Candidate for Boulder Mayor",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "rachel-rose-isaacson",
+    "name": "Rachel Rose Isaacson",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Rachel Rose Isaacson",
+        "role": "Candidate for Boulder City Council",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-14"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Rachel Rose Isaacson is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Candidate for Boulder City Council",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "ryan-jamieson",
+    "name": "Ryan Jamieson",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Ryan Jamieson",
+        "role": "Candidate for Boulder City Council",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-14"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Ryan Jamieson is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Candidate for Boulder City Council",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "scott-rendleman",
+    "name": "Scott Rendleman",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Scott Rendleman",
+        "role": "Candidate for Boulder City Council",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-14"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Scott Rendleman is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Candidate for Boulder City Council",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "other_individual",
+    "related": []
+  },
+  {
+    "slug": "jamillah-richmond",
+    "name": "Jamillah Richmond",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Jamillah Richmond",
+        "role": "Candidate for Boulder City Council",
+        "source_url": "https://strongerboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-14"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Jamillah Richmond is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
+    "sources": [
+      "https://strongerboulder.com/endorsements"
+    ],
+    "title": "Candidate for Boulder City Council",
+    "title_source_url": "https://strongerboulder.com/endorsements",
+    "weight_group": "other_individual",
     "related": []
   }
 ]
