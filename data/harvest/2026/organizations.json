@@ -4325,5 +4325,37 @@
     "title_source_url": null,
     "weight_group": "organization",
     "related": []
+  },
+  {
+    "slug": "matt-appelbaum",
+    "name": "Matt Appelbaum",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Matt Appelbaum",
+        "role": "former Mayor and Councilmember",
+        "source_url": "https://www.ryanwithboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-15"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Matt Appelbaum is listed as former Mayor and Councilmember on Ryan Schuchard’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://www.ryanwithboulder.com/endorsements"
+    ],
+    "title": "former Mayor and Councilmember",
+    "title_source_url": "https://www.ryanwithboulder.com/endorsements",
+    "weight_group": "former_elected",
+    "related": []
   }
 ]

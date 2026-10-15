@@ -9522,5 +9522,30 @@
       "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
       "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Ryan Jamieson'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
     }
+  },
+  {
+    "id": "E363",
+    "endorser": "Matt Appelbaum",
+    "endorser_type": "person",
+    "endorser_slug": "matt-appelbaum",
+    "candidate": "Ryan Schuchard",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Ryan Schuchard campaign",
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements – Ryan Schuchard for Boulder City Council",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('former Mayor and Councilmember'); personal endorsement, not an endorsement by the office or organization.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+      "note": "Ryan Schuchard campaign endorsement page (fetched Oct. 15, 2026) lists 'Matt Appelbaum, former Mayor and Councilmember' under 'OTHER CURRENT AND FORMER ELECTED OFFICIALS' (new since Oct. 14). Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]
