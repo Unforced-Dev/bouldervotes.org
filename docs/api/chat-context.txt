@@ -37,30 +37,31 @@ A [S1]-style source code stands for the link below. When you cite one, write the
 - [S10]: https://workingfamilies.org/candidates/
 - [S11]: https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/
 - [S12]: https://yellowscene.com/2026/09/17/sierra-club-endorses-boulder-mayoral-and-city-council-candidates
-- [S13]: https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures
-- [S14]: https://openboulder.org/vote-news-opinions/
-- [S15]: https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327
-- [S16]: https://www.cojaa.org/boulder-endorsements
-- [S17]: https://boulderdsa.org/voterguide
-- [S18]: https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/
-- [S19]: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
-- [S20]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-taishya.pdf
-- [S21]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf
-- [S22]: https://gratefulfredinstead.com/
-- [S23]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aquiles.pdf
-- [S24]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf
-- [S25]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf
-- [S26]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jamillah.pdf
-- [S27]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-benita.pdf
-- [S28]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf
-- [S29]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-rachel.pdf
-- [S30]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf
-- [S31]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-scott.pdf
-- [S32]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jill.pdf
-- [S33]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-j.pdf
-- [S34]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf
-- [S35]: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
-- [S36]: https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/
+- [S13]: https://boulderaction.org/2026-candidate-endorsements
+- [S14]: https://yellowscene.com/2026/09/19/boulder-area-labor-council-announces-endorsements-for-city-of-boulder-rtd-district-o-and-local-ballot-measures
+- [S15]: https://openboulder.org/vote-news-opinions/
+- [S16]: https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=327
+- [S17]: https://www.cojaa.org/boulder-endorsements
+- [S18]: https://boulderdsa.org/voterguide
+- [S19]: https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/
+- [S20]: https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/
+- [S21]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-taishya.pdf
+- [S22]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aaron.pdf
+- [S23]: https://gratefulfredinstead.com/
+- [S24]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aquiles.pdf
+- [S25]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-sam.pdf
+- [S26]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-s.pdf
+- [S27]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jamillah.pdf
+- [S28]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-benita.pdf
+- [S29]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-question-tara.pdf
+- [S30]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-rachel.pdf
+- [S31]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf
+- [S32]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-scott.pdf
+- [S33]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jill.pdf
+- [S34]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-j.pdf
+- [S35]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf
+- [S36]: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
+- [S37]: https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/
 
 ## Election basics
 
@@ -281,17 +282,17 @@ housing: B3, F4Q43, F4Q45, F4Q46 YES on 2J | climate/energy: interview, F1Q1, F2
   > my number one is ecological collapse
 - Taishya Adams. Topic: downtown/economy. Better Boulder, questionnaire, answering B4. Source: [S3]
   > I come from a business family.
-- Taishya Adams. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S20]
+- Taishya Adams. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S21]
   > The City of Boulder is in the midst of an polycrisis where climate chaos, geopolitical strife, and economic downturn will require new strategy and investment tools.
 - Taishya Adams. Topic: other (governance). Better Boulder, questionnaire, answering B1. Source: [S3]
   > City of Boulder governmental priorities include addressing deferred maintenance of essential buildings, addressing budget constraints, and wildlife mitigation.
-- Taishya Adams. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S20]
+- Taishya Adams. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S21]
   > As Mayor, I would host monthly business town hall and meetings in collaboration with the Boulder Chamber, Latino Chamber of Boulder, Downtown Partnerships, and Visit Boulder.
 - Taishya Adams. Topic: other (governance). Campaign website: Taishya Adams, campaign_site. Source: https://www.adamsforboulder.com/
   > Develop pathways for participatory budgeting and resource allocation
 - Taishya Adams. Topic: housing. Better Boulder, questionnaire, answering B3. Source: [S3]
   > Yes, I voted to pass the Family-friendly Vibrant Neighborhoods act to make it easier to build duplexes and triplexes.
-- Taishya Adams. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S20]
+- Taishya Adams. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S21]
   > As Mayor, I continue to be committed to public safety for all including businesses.
 - Taishya Adams. Topic: transportation. Better Boulder, questionnaire, answering B2. Source: [S3]
   > I am committed to prioritizing what needs to be completed for the Core Arterial Network and crosswalking with need and funding available to complete it.
@@ -394,7 +395,7 @@ What reporters wrote (the reporter's words, not the candidate's):
   Watch: https://youtu.be/U3iEinbzOk0?t=2837 Transcript note: 'That model' is the Rocky Flats Stewardship Council, which she described just before.
 
 #### Endorsements
-- Boulder Area Labor Council, AFL-CIO (1 choice) [endorser's own statement] Source: [S13], 2026-09-19
+- Boulder Area Labor Council, AFL-CIO (1 choice) [endorser's own statement] Source: [S14], 2026-09-19
 - Boulder County Democratic Socialists of America (1 choice) [endorser's own statement] Source: https://www.instagram.com/p/DdFbfKijZtU/, 2026-09-09
 - Daily Camera Editorial Board (2 choice) [endorser's own statement] Source: [S5], 2026-10-04
 - PLAN-Boulder County (2 choice) [endorser's own statement] Source: [S8], 2026-09-28
@@ -418,11 +419,11 @@ housing: B3, interview, F1Q1, F1Q4, F2Q17, F2Q18, F4Q43, F4Q45, F4Q46 YES on 2J,
 #### In their own words
 - Aaron Brockett. Topic: downtown/economy. Better Boulder, questionnaire, answering B4. Source: [S3]
   > I voted in favor of the DDA because I think having a new entity that combines CAGID and UHGID with TIF financing could catalyze new vibrancy, activity and tax revenues from downtown.
-- Aaron Brockett. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S21]
+- Aaron Brockett. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S22]
   > I do think that Boulder needs a significant new strategy to strengthen Downtown and University Hill.
 - Aaron Brockett. Topic: other (governance). Better Boulder, questionnaire, answering B1. Source: [S3]
   > The top priority of city government should be the safety and health of it’s residents.
-- Aaron Brockett. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S21]
+- Aaron Brockett. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S22]
   > I have made community engagement a cornerstone of my time on city council and as mayor, and I will continue that approach if reelected.
 - Aaron Brockett. Topic: homelessness/safety. Campaign website: Aaron Brockett, campaign_site. Source: https://brockett4mayor.org/
   > Build homelessness solutions to get people off the streets and into housing
@@ -430,7 +431,7 @@ housing: B3, interview, F1Q1, F1Q4, F2Q17, F2Q18, F4Q43, F4Q45, F4Q46 YES on 2J,
   > Yes. I was one of the people who spearheaded this initiative along with Lauren Folkerts.
 - Aaron Brockett. Topic: housing. KGNU, interview, 2026-07-29. Source: https://kgnu.org/mayor-brockett-councilmember-adams-on-the-biggest-challenges-facing-boulder-and-how-we-can-work-to-fix-them
   > the cost of housing and then the parallel problem of homelessness, unsheltered homelessness, rise to the very top
-- Aaron Brockett. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S21]
+- Aaron Brockett. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S22]
   > Businesses deserve commercial districts that are safe and pleasant to visit.
 - Aaron Brockett. Topic: transportation. Better Boulder, questionnaire, answering B2. Source: [S3]
   > Yes. Absolutely! I’ve supported it from the beginning.
@@ -539,11 +540,11 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Daily Camera Editorial Board (1 choice) [endorser's own statement] Source: [S5], 2026-10-04
-- Boulder Area Labor Council, AFL-CIO (2 choice) [endorser's own statement] Source: [S13], 2026-09-19
+- Boulder Area Labor Council, AFL-CIO (2 choice) [endorser's own statement] Source: [S14], 2026-09-19
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
 - Boulder Progressives [endorser's own statement] Source: [S11], 2026-08-19
 - Boulder Progressives UCC [city filing] Source: [S9]
-- Colorado Jewish Action Alliance [endorser's own statement] Source: [S16]
+- Colorado Jewish Action Alliance [endorser's own statement] Source: [S17]
 - Sierra Club Indian Peaks Group [endorser's own statement] Source: [S12], 2026-09-17
 - Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
 - Campaign list (52 names; only the campaign says so, no endorser statement checked). Source: https://brockett4mayor.org/endorsements/. Names: Judy Amabile (Colorado state senator); Emily Baer (Erie town councilmember); KC Becker (former Colorado House speaker); Matt Benjamin (Boulder city councilmember); Karen Bigelow (former Thornton city councilmember); Michael Box (Jamestown mayor); Kyle Brown (Colorado state representative); Michael Dougherty (Boulder County district attorney); Leslie Durgin (former Boulder mayor); Angelique Espinoza (former Boulder city councilmember); Steve Fenberg (former Colorado Senate president); Adrian Fine (former Palo Alto mayor); Clint Folsom (former Superior mayor); Mike Foote (former Colorado state senator); Rachel Friend (former Boulder city councilmember); Sam Fuqua (former BVSD Board of Education president; 2026 council candidate); Kathy Gebhardt (Colorado State Board of Education member); Billy Giblin (former Nederland mayor); Jill Grano (former Boulder city councilmember; 2026 council candidate); Lynn Guissinger (RTD board director); Rollie Heath (former Colorado state senator); Susie Hidalgo-Fahring (Longmont mayor); Edie Hooton (former Colorado state representative); Elise Jones (former Boulder County commissioner); Zan Jones (former Boulder mayor); Junie Joseph (Colorado state representative); Kris Larsen (Nederland town trustee); Chris Leh (Louisville mayor); Janice Marchman (Colorado state senator); Tina Marquis (Boulder city councilmember); Karen McCormick (Colorado state representative); Stephanie Miller (Superior town councilmember); Mirabai Nagle (former Boulder city councilmember); Joe Neguse (U.S. Representative for Colorado’s 2nd District); Chris Nicholson (RTD board member); Tim Plass (former Boulder city councilmember); Kathy Plomer (Colorado State Board of Education member); Hollie Rogin (former Lyons mayor); Manny Rutinel (Democratic congressional nominee); Ryan Schuchard (Boulder city councilmember); Andy Schultheiss (former Boulder city councilmember); Andrew Shoemaker (former Boulder city councilmember); Lesley Smith (Colorado state representative); Nicole Speer (Boulder city councilmember); Lisa Sweeney-Miran (former BVSD Board of Education vice president); Adam Swetlik (former Boulder city councilmember); Brianna Titone (Colorado state representative); Will Toor (former Boulder mayor and Boulder County commissioner); Saul Tapia Vega (Lafayette mayor); Mark Wallach (former Boulder city councilmember); Tara Winer (Boulder mayor pro tem/councilmember); Bob Yates (former Boulder city councilmember)
@@ -656,14 +657,14 @@ Smith has run for Boulder council four times and is now a mayoral candidate. Kno
 housing: F4Q43, F4Q45, F4Q46 | climate/energy: F5Q49, F5Q50, F5Q51 | wildfire: none | transportation: F4Q37 | budget/taxes/2K: campaign_site, F1Q1, F1Q7, F3Q30, F4Q41, F4Q44, F4Q45 | downtown/economy: F1Q10 | homelessness/safety: none | growth: F1Q2 | arts: F3Q30, F3Q32
 
 #### In their own words
-- Fred Smith. Topic: budget/taxes/2K. Campaign website: Fred Smith, campaign_site. Source: [S22]
+- Fred Smith. Topic: budget/taxes/2K. Campaign website: Fred Smith, campaign_site. Source: [S23]
   > Students deserve a real voice in how Boulder raises and spends money, not a seat at the table after the decisions are made.
 What reporters wrote (the reporter's words, not the candidate's):
-- Fred Smith campaign, about Fred Smith. Topic: arts. Campaign website: Fred Smith. Source: [S22]
+- Fred Smith campaign, about Fred Smith. Topic: arts. Campaign website: Fred Smith. Source: [S23]
   > Fred wants Kinetics back at the Boulder Reservoir on the first Saturday in May.
 - Peter Constas (reporting the candidate), about Fred Smith. Topic: budget/taxes/2K. Yellow Scene, 2026-09-05. Source: [S7]
   > Smith fiercely opposed the TABOR Act and described how progressive taxes could strengthen the city.
-- Fred Smith campaign, about Fred Smith. Topic: budget/taxes/2K. Campaign website: Fred Smith. Source: [S22]
+- Fred Smith campaign, about Fred Smith. Topic: budget/taxes/2K. Campaign website: Fred Smith. Source: [S23]
   > Fred's proposal is a 10% city tax on household income above $184,500.
 - Boulder Reporting Lab reporter, about Fred Smith. Topic: housing. Boulder Reporting Lab, 2026-08-28. Source: https://boulderreportinglab.org/govpack_profiles/fred-smith/
   > Smith proposes a 10% city income tax on household income above $184,500, which he estimates would generate $185 million annually. Because TABOR prohibits Colorado municipalities from imposing income taxes, Smith proposes pursuing a statewide ballot measure to authorize such taxes. He proposes using the revenue for public facilities, childcare, affordable housing and mental health care.
@@ -749,17 +750,17 @@ housing: B3, F4Q43, F4Q45, F4Q46 | climate/energy: F5Q49, F5Q50, F5Q51 | wildfir
 #### In their own words
 - Aquiles La Grave. Topic: downtown/economy. Better Boulder, questionnaire, answering B4. Source: [S3]
   > Yes the DDA was the correct tool.
-- Aquiles La Grave. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S23]
+- Aquiles La Grave. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
   > Downtown requires major reinvestment and commitment in our mission to keep Downtown local.
 - Aquiles La Grave. Topic: other (governance). Campaign website: Aquiles La Grave, campaign_site. Source: https://boulder.vote/policy
   > Our city must earn back trust before it asks for more money.
 - Aquiles La Grave. Topic: other (governance). Better Boulder, questionnaire, answering B1. Source: [S3]
   > The way you judge a government is based upon its budget and its calendar.
-- Aquiles La Grave. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S23]
+- Aquiles La Grave. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
   > First, I already get the emails, because I run a business downtown, so I see who replies and who doesn't.
 - Aquiles La Grave. Topic: housing. Better Boulder, questionnaire, answering B3. Source: [S3]
   > Yes. Our housing crisis is exporting families and billions in wages. Zoning matters, but permit times make the difference on what gets built.
-- Aquiles La Grave. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S23]
+- Aquiles La Grave. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
   > Let's stop pretending and say the quiet part aloud.
 - Aquiles La Grave. Topic: transportation. Better Boulder, questionnaire, answering B2. Source: [S3]
   > Yes, and we must enhance design to ensure public safety in all circumstances especially rapid fire evacuation across the system.
@@ -872,6 +873,7 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - PLAN-Boulder County (1 choice) [endorser's own statement] Source: [S8], 2026-09-28
+- Boulder Action [endorser's own statement] Source: [S13]
 - Jan Burton, former Boulder city councilmember; Open Boulder chair [news listing (Boulder Reporting Lab (Sept. 16 report)); no endorser statement found] Source: https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/, 2026-09-16
 - Andrea Meneghel, Open Boulder board member [news listing (Boulder Reporting Lab (Sept. 16 report)); no endorser statement found] Source: https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/, 2026-09-16
 
@@ -960,15 +962,15 @@ housing: B3, F1Q1, F1Q12, F1Q16, F2Q17, F3Q29, F4Q33, F4Q35, F4Q39 YES on 2J | c
   > Continue to improve efforts to make the city budget accessible and understandable for residents.
 - Sam Fuqua. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > I’m not convinced at this point that the DDA is the right tool.
-- Sam Fuqua. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
+- Sam Fuqua. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
   > I am open to reconsidering the DDA because there is some evidence of its effectiveness in strengthening downtowns elsewhere.
-- Sam Fuqua. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
+- Sam Fuqua. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
   > I am committed not only to making myself available to meet with business owners on a regular basis, but also to proactively seeking them out to listen to their input, ask questions (that probably lead to more questions), explain my positions and also sometimes change my mind based on new information.
 - Sam Fuqua. Topic: wildfire. Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > I think the immediate top priorities now look like Sundance, the budget and wildfire resilience
 - Sam Fuqua. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
-- Sam Fuqua. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S24]
+- Sam Fuqua. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
   > Businesses should expect the City to enforce ordinances and preserve public safety in all commercial and residential districts but we should target our resources where we have the biggest challenges, including Downtown and on The Hill .
 - Sam Fuqua. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
@@ -1054,17 +1056,17 @@ housing: B3, F1Q1, F1Q4, F2Q18, F4Q35, F4Q39 YES on 2J | climate/energy: F4Q34, 
 #### In their own words
 - Ryan Schuchard. Topic: wildfire. Campaign website: Ryan Schuchard, campaign_site. Source: https://www.ryanwithboulder.com/
   > Ramp up systems to protect Boulder from the rising danger of large-scale wildfire, strengthen flood mitigation, and prepare our energy, agricultural, and transportation systems to withstand extreme weather.
-- Ryan Schuchard. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
+- Ryan Schuchard. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
   > Need: Boulder's downtown challenges reflect a nationwide pattern of chronic vacancies and low investment, aging buildings and infrastructure draining city resources, and high costs of living, on top of lacking healthcare and childcare that squeeze residents and business owners alike.
 - Ryan Schuchard. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > No. I don’t think it’s right to hand the decision to reallocate more than $60 million in voter-dedicated funding to a group representing less than 3 percent of the city’s population, especially with so many open questions about where the money would go, and real concerns from Boulder County and the library, the other local governments affected by the tax.
 - Ryan Schuchard. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > Actual priorities, where real bandwidth goes right now: managing cash flow, preparing for Sundance, and staying responsive to the wide range of requests we hear from residents, individuals and organized advocates alike.
-- Ryan Schuchard. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
+- Ryan Schuchard. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
   > My engagement: I hold open office hours downtown every Thursday morning at the Main Library cafe, no appointment needed.
 - Ryan Schuchard. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. I championed making it a workplan item, then voted to pass the final ordinance.
-- Ryan Schuchard. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S25]
+- Ryan Schuchard. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
   > Expectations: Businesses can reasonably expect the City to do three things.
 - Ryan Schuchard. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. I helped architect CAN’s original design on the Transportation Advisory Board and I will lead and back it until it is fully built.
@@ -1127,10 +1129,11 @@ housing: B3, F1Q1, F1Q4, F2Q18, F4Q35, F4Q39 YES on 2J | climate/energy: F4Q34, 
 
 #### Endorsements
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
-- Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: [S13], 2026-09-19
+- Boulder Action [endorser's own statement] Source: [S13]
+- Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: [S14], 2026-09-19
 - Boulder Progressives [endorser's own statement] Source: [S11], 2026-08-19
 - Boulder Progressives UCC [city filing] Source: [S9]
-- Colorado Jewish Action Alliance [endorser's own statement] Source: [S16]
+- Colorado Jewish Action Alliance [endorser's own statement] Source: [S17]
 - Colorado Working Families Party [endorser's own statement] Source: [S10]
 - Daily Camera Editorial Board [endorser's own statement] Source: [S5], 2026-10-04
 - PLAN-Boulder County [endorser's own statement] Source: [S8], 2026-09-28
@@ -1152,17 +1155,17 @@ housing: B3, F1Q1, F2Q17, F4Q33, F4Q34, F4Q35, F4Q39 YES on 2J | climate/energy:
 #### In their own words
 - Jamillah Richmond. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > The DDA vote tells us something real about where this city is right now.
-- Jamillah Richmond. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
+- Jamillah Richmond. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
   > I support the reconsideration of the DDA, it was not a plan without creativity, it was a plan that lacked community engagement, transparency and buy in.
 - Jamillah Richmond. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > This city seems to always be debating land, taxes and affordability.
-- Jamillah Richmond. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
+- Jamillah Richmond. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
   > As the co-founder of a non-profit in Boulder, and previous owner of a for profit business and single parent with a job it is important to me that there is meaningful engagement between sectors, that allow for business owners and employees alike to have a voice.
 - Jamillah Richmond. Topic: other (governance). Campaign website: Jamillah Richmond, campaign_site. Source: https://www.jamillahanewvoice.com/policy
   > One of the reasons I am running is to bring more community-driven governance to how we operate as a city.
 - Jamillah Richmond. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
-- Jamillah Richmond. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S26]
+- Jamillah Richmond. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
   > I think all community members should expect to feel safe from harm and that they can rely on city governance to help support that.
 - Jamillah Richmond. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
@@ -1218,6 +1221,7 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
+- Boulder Action [endorser's own statement] Source: [S13]
 - Boulder County Democratic Socialists of America [endorser's own statement] Source: https://www.instagram.com/p/DdFbfKijZtU/, 2026-09-09
 - Boulder Progressives [endorser's own statement] Source: https://yellowscene.com/2026/09/20/boulder-progressives-announces-2026-ballot-measure-positions-endorses-jamillah-richmond-for-boulder-city-council/, 2026-09-20
 - Boulder Progressives UCC [city filing] Source: [S9]
@@ -1239,17 +1243,17 @@ housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1, F1Q1 |
 #### In their own words
 - Benita Duran. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > Could have been right path had city council and staff had an engagement strategy on the front end to educate and inform people of the structure and pro/ cons so that by the time council voted on moving it to ballot for the district voters, it would have had majority support.
-- Benita Duran. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
+- Benita Duran. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S28]
   > Yes, support the DDA.
 - Benita Duran. Topic: other (governance). Campaign website: Benita Duran, campaign_site. Source: https://www.benitaduran.com/a-word-from-benita
   > Every major city priority, project, and initiative should have a real community engagement strategy.
 - Benita Duran. Topic: wildfire. Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > Affordable Housing, economic vitality, and sustainability I think priorities should be wildfire mitigation, attainable housing for the middle class, and economic recovery for small businesses.
-- Benita Duran. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
+- Benita Duran. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S28]
   > I was once a part of a family-owned business in downtown Boulder - People Productions was owned by Brad Gilbert for over 25 years and we met, married and had a son when I worked in the city manager’s office.
 - Benita Duran. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. It helps.
-- Benita Duran. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S27]
+- Benita Duran. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S28]
   > My position is that the city is on a better and more productive track in addressing safety and security issues of the downtown.
 - Benita Duran. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
@@ -1307,8 +1311,8 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Daily Camera Editorial Board [endorser's own statement] Source: [S5], 2026-10-04
-- Open Boulder [endorser's own statement] Source: [S14], 2026-09-14
-- Open Boulder 2026 UCC [city filing] Source: [S15]
+- Open Boulder [endorser's own statement] Source: [S15], 2026-09-14
+- Open Boulder 2026 UCC [city filing] Source: [S16]
 - Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
 - Campaign list (23 names; only the campaign says so, no endorser statement checked). Source: https://www.benitaduran.com/new-page-2. Names: Judy Amabile (Colorado state senator); KC Becker (former Colorado House speaker); Aaron Brockett (Boulder mayor); Geof Cahoon (Former President, Boulder Area Labor Council); Michael Dougherty (Boulder County district attorney); Leslie Durgin (former Boulder mayor); Rachel Friend (former Boulder city councilmember); Stan Garnett (Former Boulder District Attorney); Lynn Guissinger (RTD board director); Happy Haynes (Former Denver City Council); Susie Hidalgo-Fahring (Longmont mayor); Edie Hooton (former Colorado state representative); Elise Jones (former Boulder County commissioner); Suzanne Jones (Former Mayor of Boulder); Mardi Moore (Rocky Mountain Equality); Federico Peña (Former U.S. Secretary of Transportation); Ken Salazar (Former U.S. Secretary of the Interior); Gail Schoettler (Former Lieutenant Governor of Colorado); Andy Schultheiss (former Boulder city councilmember); Ashley Stolzmann (Boulder County commissioner); Sam Weaver (former Boulder mayor); Tara Winer (Boulder mayor pro tem/councilmember); Ruth Wright (Former Colorado House Minority Leader)
 
@@ -1328,17 +1332,17 @@ housing: B3 | climate/energy: none | wildfire: none | transportation: B2, F1Q9 |
 #### In their own words
 - Tara Winer. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > I think a Downtown Development Authority is a good idea, as I said at the city council meeting on August 6.
-- Tara Winer. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S28]
+- Tara Winer. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
   > Yes, we do need a new tool to strengthen our commercial districts.
 - Tara Winer. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > Right now, I think the city’s actual top three priorities are increasing revenue, solving deferred maintenance, and climate resiliency.
-- Tara Winer. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S28]
+- Tara Winer. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
   > If you know me at all, you know how accessible I am.
 - Tara Winer. Topic: other (governance). Campaign website: Tara Winer, campaign_site. Source: https://www.taraforboulder.com/
   > Balanced solutions for a stronger community.
 - Tara Winer. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. I voted no at first but yes on third reading. Tara of today would have voted yes sooner. Duplexes and triplexes bring affordability.
-- Tara Winer. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S28]
+- Tara Winer. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
   > Businesses should be able to expect commercial districts that are inviting, safe, well-landscaped, and as clean as a city can reasonably keep them.
 - Tara Winer. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. Absolutely yes. I was on Council when CAN unanimously passed as a priority. It has been one of council’s best priorities ever.
@@ -1380,10 +1384,10 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
-- Colorado Jewish Action Alliance [endorser's own statement] Source: [S16]
+- Colorado Jewish Action Alliance [endorser's own statement] Source: [S17]
 - Daily Camera Editorial Board [endorser's own statement] Source: [S5], 2026-10-04
-- Open Boulder [endorser's own statement] Source: [S14], 2026-09-14
-- Open Boulder 2026 UCC [city filing] Source: [S15]
+- Open Boulder [endorser's own statement] Source: [S15], 2026-09-14
+- Open Boulder 2026 UCC [city filing] Source: [S16]
 - PLAN-Boulder County [endorser's own statement] Source: [S8], 2026-09-28
 - Sierra Club Indian Peaks Group [endorser's own statement] Source: [S12], 2026-09-17
 - Campaign list (23 names; only the campaign says so, no endorser statement checked). Source: https://www.taraforboulder.com/endorsements/content/endorsers/. Names: Judy Amabile (Colorado state senator); KC Becker (former Colorado House speaker); Matt Benjamin (Boulder city councilmember); Aaron Brockett (Boulder mayor); Jan Burton (former Boulder city councilmember; Open Boulder chair); Guyleen Castriotta (Broomfield mayor); Michael Dougherty (Boulder County district attorney); Benita Duran (Boulder Library District trustee; 2026 council candidate); Steve Fenberg (former Colorado Senate president); Rachel Friend (former Boulder city councilmember); Kathy Gebhardt (Colorado State Board of Education member); Jill Grano (former Boulder city councilmember; 2026 council candidate); Edie Hooton (former Colorado state representative); Rob Kaplan (Boulder city councilmember); Tina Marquis (Boulder city councilmember); Joe Neguse (U.S. Representative for Colorado’s 2nd District); Reimagine South Boulder Recreation Advocacy Group; Ryan Schuchard (Boulder city councilmember); Lesley Smith (Colorado state representative); Ashley Stolzmann (Boulder County commissioner); Lisa Sweeney-Miran (former BVSD Board of Education vice president); Saul Tapia Vega (Lafayette mayor); Sam Weaver (former Boulder mayor)
@@ -1403,17 +1407,17 @@ housing: B3, F1Q1, F1Q12, F2Q18, F4Q35, F4Q39 | climate/energy: F1Q5, F4Q40 | wi
 #### In their own words
 - Rachel Rose Isaacson. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > A DDA could be an effective tool, but it needs a clear and transparent investment strategy, meaningful representation for affected stakeholders, and safeguards ensuring that public resources produce measurable public benefits.
-- Rachel Rose Isaacson. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
+- Rachel Rose Isaacson. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S30]
   > Boulder would benefit from a coordinated, long-term strategy to strengthen Downtown, University Hill, and the Civic Area.
 - Rachel Rose Isaacson. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > Based on where the city is directing significant staff capacity, funding, and Council attention, I would characterize its current top priorities as fiscal sustainability and core services; housing and homelessness; and community safety and climate resilience.
-- Rachel Rose Isaacson. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
+- Rachel Rose Isaacson. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S30]
   > I would maintain regular office hours and make myself available for contact with our business community.
 - Rachel Rose Isaacson. Topic: homelessness/safety. Campaign website: Rachel Rose Isaacson, campaign_site. Source: https://www.rachelrose4boulder.com/homelessness
   > I believe our response to homelessness must be humane, prevention-focused, and grounded in long-term solutions that make the best use of our limited resources.
 - Rachel Rose Isaacson. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
-- Rachel Rose Isaacson. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S29]
+- Rachel Rose Isaacson. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S30]
   > Businesses should expect timely responses to threats, violence, theft, and illegal drug activity, accessible sidewalks and entrances, maintained public spaces, and clear communication about how to obtain help.
 - Rachel Rose Isaacson. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
@@ -1481,7 +1485,7 @@ What reporters wrote (the reporter's words, not the candidate's):
   Watch: https://youtu.be/pT9IeGL6deg?t=5937
 
 #### Endorsements
-- Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: [S13], 2026-09-19
+- Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: [S14], 2026-09-19
 - Boulder Progressives [endorser's own statement] Source: [S11], 2026-08-19
 - Boulder Progressives UCC [city filing] Source: [S9]
 - Colorado Working Families Party [endorser's own statement] Source: [S10]
@@ -1504,15 +1508,15 @@ housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1 | trans
   > I support the continued operation of the airport and the acceptance of FAA funding.
 - Dave Martus. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > In general, I do not believe fragmenting the city into siloed revenue sources and spending pools is the best approach.
-- Dave Martus. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S30]
+- Dave Martus. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S31]
   > I support the fundamental mission of a DDA, but the lack of detailed coordination with impacted agencies would have led me to vote no as well.
 - Dave Martus. Topic: wildfire. Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > I believe the city’s current top three priorities are: 1) long-term financial stability; 2) wildfire and public-safety resilience; and 3) housing policy.
-- Dave Martus. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S30]
+- Dave Martus. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S31]
   > I spent 25 years in institutional finance building consensus among people with different views, and I would bring that same approach to Council: listen first, be clear about facts and tradeoffs, and work toward practical agreement.
 - Dave Martus. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > No. If higher density is part of the solution, I believe it should be focused in areas of the city that provide more benefits.
-- Dave Martus. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S30]
+- Dave Martus. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S31]
   > Businesses should be able to expect a public safety presence to match their operating hours.
 - Dave Martus. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. The build-out should proceed if the outcome is positive, the cost is reasonable, and lessons from completed projects are incorporated.
@@ -1556,6 +1560,7 @@ What reporters wrote (the reporter's words, not the candidate's):
   Watch: https://youtu.be/pT9IeGL6deg?t=6026
 
 #### Endorsements
+- Boulder Action [endorser's own statement] Source: [S13]
 - PLAN-Boulder County [endorser's own statement] Source: [S8], 2026-09-28
 
 ### Scott Rendleman, City Council, ballot position 9
@@ -1572,15 +1577,15 @@ housing: B3, F1Q1, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F1Q
 #### In their own words
 - Scott Rendleman. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > Yes, I supported sending the Downtown Development Authority proposal to the November ballot.
-- Scott Rendleman. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S31]
+- Scott Rendleman. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
   > I support reconsideration of the DDA.
 - Scott Rendleman. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > City government currently appears focused on managing growth and housing, advancing climate goals, and addressing public safety and homelessness.
-- Scott Rendleman. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S31]
+- Scott Rendleman. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
   > So much of the Boulder community feels that City Council is not listening to its concerns, and it's one of the reasons I'm running this year.
 - Scott Rendleman. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. Ordinance 8666 was a modest, incremental modification of the Land Use Code to allow potential development, within 350 feet of bus routes.
-- Scott Rendleman. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S31]
+- Scott Rendleman. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
   > Boulder businesses rightfully expect commercial districts to remain safe and clean.
 - Scott Rendleman. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > No. The CAN has strong city support, but the community does not yet show sufficient backing for this; the Iris plan remains too contentious now.
@@ -1663,17 +1668,17 @@ housing: B3, F1Q1, F1Q4, F1Q14, F2Q17, F2Q18, F4Q33, F4Q34, F4Q35, F4Q39, F4Q39 
   > To be clear, I do not support the bond
 - Jill Grano. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > Downtown revitalization will absolutely be one of my top priorities if elected & you can hold me to that.
-- Jill Grano. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
+- Jill Grano. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S33]
   > Boulder definitely needs a strategy to revitalize downtown and the Hill.
 - Jill Grano. Topic: other (governance). Campaign website: Jill Grano, campaign_site. Source: https://www.jillforcouncil.com/community-questions
   > Knowing what I know now about how the resignation landed for the people who elected me (even though I believed at the time I was continuing to serve them), I would not make that choice the same way.
 - Jill Grano. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > To be honest, it is hard for me to identify the city’s current top three priorities.
-- Jill Grano. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
+- Jill Grano. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S33]
   > People and businesses not feeling heard is the number one thing I hear on the campaign trail.
 - Jill Grano. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
-- Jill Grano. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S32]
+- Jill Grano. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S33]
   > Businesses need to feel confident that customers (and employees) can enjoy downtown and the Hill safely, and that the city will respond (reliably) to open drug use and other dangerous or illegal behavior.
 - Jill Grano. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
@@ -1743,12 +1748,12 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
-- Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: [S13], 2026-09-19
+- Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: [S14], 2026-09-19
 - Boulder Progressives [endorser's own statement] Source: [S11], 2026-08-19
 - Boulder Progressives UCC [city filing] Source: [S9]
 - Daily Camera Editorial Board [endorser's own statement] Source: [S5], 2026-10-04
-- Open Boulder [endorser's own statement] Source: [S14], 2026-09-14
-- Open Boulder 2026 UCC [city filing] Source: [S15]
+- Open Boulder [endorser's own statement] Source: [S15], 2026-09-14
+- Open Boulder 2026 UCC [city filing] Source: [S16]
 - Sierra Club Indian Peaks Group [endorser's own statement] Source: [S12], 2026-09-17
 - Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
 - Campaign list (34 names; only the campaign says so, no endorser statement checked). Source: https://www.jillforcouncil.com/endorsements. Names: Judy Amabile (Colorado state senator); KC Becker (former Colorado House speaker); Aaron Brockett (Boulder mayor); Jan Burton (former Boulder city councilmember; Open Boulder chair); Cindy Carlisle (Former Boulder City Council Member and Univ of Colorado Regent); Michael Dougherty (Boulder County district attorney); Leslie Durgin (former Boulder mayor); Steve Fenberg (former Colorado Senate president); Adrian Fine (former Palo Alto mayor); Rachel Friend (former Boulder city councilmember); Kathy Gebhardt (Colorado State Board of Education member); Lynn Guissinger (RTD board director); Edie Hooton (former Colorado state representative); Elise Jones (former Boulder County commissioner); Suzanne Jones (Former Mayor of Boulder); Junie Joseph (Colorado state representative); Jenn Kaaoush (Superior mayor pro tem); Tina Marquis (Boulder city councilmember); Jim Martin (former University of Colorado Regent); Dave Martus (2026 Boulder city council candidate); Lisa Morzel (former Boulder city councilmember); Joe Neguse (U.S. Representative for Colorado’s 2nd District); Chris Nicholson (RTD board member); Francoise Poinsatte (former Boulder City Council); Hollie Rogin (former Lyons mayor); Ryan Schuchard (Boulder city councilmember); Lesley Smith (Colorado state representative); Ashley Stolzmann (Boulder County commissioner); Lisa Sweeney-Miran (former BVSD Board of Education vice president); Will Toor (former Boulder mayor and Boulder County commissioner); Saul Tapia Vega (Lafayette mayor); Mark Wallach (former Boulder city councilmember); Sam Weaver (former Boulder mayor); Tara Winer (Boulder mayor pro tem/councilmember)
@@ -1768,15 +1773,15 @@ housing: B3, F1Q3, F1Q14, F4Q35, F4Q39 NO on 2J | climate/energy: F1Q1, F4Q34 | 
   > Every dollar accountable.
 - Ryan Jamieson. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > Downtown has lost roughly 19% of its property value and 10% of its sales tax revenue since 2019, turning our civic and commercial heart from an economic engine to a net drag on the general fund.
-- Ryan Jamieson. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S33]
+- Ryan Jamieson. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
   > I think the DDA is the right tool for the job from a financial standpoint, but I also think that the city needs to overhaul much of the municipal code that makes doing business in Boulder outrageously expensive and more complex than it needs to be.
 - Ryan Jamieson. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > When you look through the handy “Budgeting for Resilience and Equity Dashboard” each department provides via PowerBI, it’s not clear that many departments have or understand their priorities.
-- Ryan Jamieson. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S33]
+- Ryan Jamieson. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
   > In my time in corporate spaces, I found regular meetings with key constituencies was really the simplest way to ensure that everyone was aware of what was underway and what was coming down the pipe.
 - Ryan Jamieson. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > Yes. We need the ability to build more diverse housing types by right in residential areas, plus an easier process to change zoning.
-- Ryan Jamieson. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S33]
+- Ryan Jamieson. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
   > I think it’s entirely reasonable for businesses anywhere in Boulder to expect the city to enforce existing laws related to public safety.
 - Ryan Jamieson. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. I like the idea, I question some of the plans. Iris, in particular, given traffic speeds, volume, the trees, and that bike lane.
@@ -1847,8 +1852,9 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
-- Open Boulder [endorser's own statement] Source: [S14], 2026-09-14
-- Open Boulder 2026 UCC [city filing] Source: [S15]
+- Boulder Action [endorser's own statement] Source: [S13]
+- Open Boulder [endorser's own statement] Source: [S15], 2026-09-14
+- Open Boulder 2026 UCC [city filing] Source: [S16]
 - PLAN-Boulder County [endorser's own statement] Source: [S8], 2026-09-28
 - Campaign list (10 names; only the campaign says so, no endorser statement checked). Source: https://rjforboulder.com/endorsements.html. Names: KC Becker (former Colorado House speaker); Matt Benjamin (Boulder city councilmember); Jan Burton (former Boulder city councilmember; Open Boulder chair); Leslie Durgin (former Boulder mayor); Junie Joseph (Colorado state representative); Jenn Kaaoush (Superior mayor pro tem); Rob Kaplan (Boulder city councilmember); Dave Martus (2026 Boulder city council candidate); Lisa Morzel (former Boulder city councilmember); Sam Weaver (former Boulder mayor)
 
@@ -1951,15 +1957,15 @@ housing: B3, F1Q1, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfi
   > The city is working toward outcome-based budgeting.
 - Tina Marquis. Topic: downtown/economy. Better Boulder, questionnaire, answering B4, 2026-09-13. Source: [S1]
   > I made extensive comments about the DDA at the council meeting when I voted against the DDA at this time.
-- Tina Marquis. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
+- Tina Marquis. Topic: downtown/economy. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S35]
   > I made extensive comments about the DDA at the council meeting when I voted against the DDA.
-- Tina Marquis. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
+- Tina Marquis. Topic: other (governance). Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S35]
   > In general, I try to be accessible to all constituents through email, phone or in-person meetings, though recognize there are times when I cannot respond to all requests in a short window.
 - Tina Marquis. Topic: other (governance). Better Boulder, questionnaire, answering B1, 2026-09-13. Source: [S1]
   > 1. Providing basic services that only the local city government can provide, like providing clean water, maintaining roads, and public safety and emergency response.
 - Tina Marquis. Topic: housing. Better Boulder, questionnaire, answering B3, 2026-09-13. Source: [S1]
   > No. While I did vote no in 2025, I did support allowing duplexes and triplexes in more areas during the comp plan process.
-- Tina Marquis. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S34]
+- Tina Marquis. Topic: homelessness/safety. Downtown Boulder Partnership, questionnaire, 2026-09-21. Source: [S35]
   > When I first ran three years ago, public safety was perhaps the biggest issue during the campaign.
 - Tina Marquis. Topic: transportation. Better Boulder, questionnaire, answering B2, 2026-09-13. Source: [S1]
   > Yes. No additional comment submitted.
@@ -2019,12 +2025,13 @@ What reporters wrote (the reporter's words, not the candidate's):
 
 #### Endorsements
 - Better Boulder [endorser's own statement] Source: [S6], 2026-09-14
+- Boulder Action [endorser's own statement] Source: [S13]
 - Boulder Progressives [endorser's own statement] Source: [S11], 2026-08-19
 - Boulder Progressives UCC [city filing] Source: [S9]
-- Colorado Jewish Action Alliance [endorser's own statement] Source: [S16]
+- Colorado Jewish Action Alliance [endorser's own statement] Source: [S17]
 - Daily Camera Editorial Board [endorser's own statement] Source: [S5], 2026-10-04
-- Open Boulder [endorser's own statement] Source: [S14], 2026-09-14
-- Open Boulder 2026 UCC [city filing] Source: [S15]
+- Open Boulder [endorser's own statement] Source: [S15], 2026-09-14
+- Open Boulder 2026 UCC [city filing] Source: [S16]
 - PLAN-Boulder County [endorser's own statement] Source: [S8], 2026-09-28
 - Sierra Club Indian Peaks Group [endorser's own statement] Source: [S12], 2026-09-17
 - Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
@@ -2038,15 +2045,15 @@ Page: https://bouldervotes.org/measures/2026-2j.html
 A YES vote means: Create the residential vacancy tax and authorize the city to retain and spend its revenue.
 A NO vote means: Do not create this proposed residential vacancy tax.
 In plain words (bouldervotes.org's summary, not the ballot text): This would tax homes occupied for 183 days or fewer in a year, starting at $4,000 per vacant home. The tax could rise with inflation to no more than $7,000; money would support general city services rather than a dedicated housing fund. The ballot's $6 million figure is an estimate for 2028, not a guaranteed collection amount.
-Money: Ballot language estimates $6 million in 2028, the first full collection year. Initial rate is $4,000 per qualifying vacant home, indexed to inflation but capped at $7,000; actual collections depend on how many homes qualify and whether owners change how they use them. The $6 million figure is a ballot revenue estimate, not a guaranteed collection amount. Source: [S35]
-How it got on the ballot: Referred August 6, 2026, by a 7–1 council vote; Nicole Speer voted no. Source: [S36]
+Money: Ballot language estimates $6 million in 2028, the first full collection year. Initial rate is $4,000 per qualifying vacant home, indexed to inflation but capped at $7,000; actual collections depend on how many homes qualify and whether owners change how they use them. The $6 million figure is a ballot revenue estimate, not a guaranteed collection amount. Source: [S36]
+How it got on the ballot: Referred August 6, 2026, by a 7–1 council vote; Nicole Speer voted no. Source: [S37]
 Official ballot wording: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
 Who supports or opposes it:
 - Supports: Better Boulder [endorser's own statement] Source: https://betterboulder.com/2026-rtd-ballot-measure-endorsements/
-- Supports: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S17], 2026-10-08
-- Supports: Boulder Progressives [endorser's own statement] Source: [S18], 2026-09-16
+- Supports: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S18], 2026-10-08
+- Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
 - Supports: Colorado Working Families Party [endorser's own statement] Source: [S10]
-- Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S19], 2026-10-11
+- Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Opposes: Kim Monson, Host, The Kim Monson Show; President, Colorado Union of Taxpayers [endorser's own statement] Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/
 - Opposes: PLAN-Boulder County [endorser's own statement] Source: https://planboulder.org/2026-ballot-issue-endorsements, 2026-09-27
 - Supports: Vacancy to Vitality [endorser's own statement] Source: https://www.bouldervacancytax.org/
@@ -2063,14 +2070,14 @@ A YES vote means: Authorize up to $400 million in general-obligation debt and a 
 A NO vote means: Do not authorize this bond and its associated property-tax increase; existing building needs would still have to be addressed through other choices or existing funds.
 In plain words (bouldervotes.org's summary, not the ballot text): This would authorize up to $400 million in city borrowing, repaid with additional property taxes, for recreation and public-safety buildings and other capital projects. The ballot lists example projects, including both recreation centers, fire stations, a police/911 building, the Penfield Tate II building and the Municipal Service Center; exact allocations are not fixed in the ballot question. The maximum repayment with financing costs is $650 million. The city's project guide identifies intended projects and estimated costs, not a binding project-by-project appropriation.
 Money: Debt cap $400 million, maximum total repayment $650 million, and annual tax increase up to $32.5 million. The city estimates that, if it borrowed the full $400 million, a $1 million residential property would pay about $400 more each year for roughly 20 years; borrowing less or in stages changes the tax impact. The listed project estimates total more than $400 million, so not every estimate is guaranteed to be fully covered by this bond. Source: https://bouldercolorado.gov/guide/recreation-and-safety-bond
-How it got on the ballot: Council unanimously referred the bond at its August 6 meeting, then scheduled final ballot wording with an explicit lap pool for August 20; the current city ballot guide carries that amended language. The precise final-reading roll call has not been independently confirmed here. Source: [S36]
+How it got on the ballot: Council unanimously referred the bond at its August 6 meeting, then scheduled final ballot wording with an explicit lap pool for August 20; the current city ballot guide carries that amended language. The precise final-reading roll call has not been independently confirmed here. Source: [S37]
 Official ballot wording: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
 Who supports or opposes it:
 - Opposes: KC Becker, former Colorado House speaker [endorser's own statement] Source: https://boulderreportinglab.org/2026/08/30/kc-becker-boulder-deserves-a-better-bond-proposal-not-a-400-million-blank-check, 2026-08-30
 - Opposes: Boulder Chamber [endorser's own statement] Source: https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/, 2026-09-09
-- Opposes: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S17], 2026-10-08
-- Supports: Boulder Progressives [endorser's own statement] Source: [S18], 2026-09-16
-- Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S19], 2026-10-11
+- Opposes: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S18], 2026-10-08
+- Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
+- Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Opposes: Downtown Boulder Partnership [endorser's own statement] Source: https://boulderdowntown.com/about/downtown-boulder-partnership/election-2026
 - Opposes: Kim Monson, Host, The Kim Monson Show; President, Colorado Union of Taxpayers [endorser's own statement] Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2k/
 - Opposes: No on 2K: Demand Fiscal Responsibility [city filing] Source: https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=328, 2026-09-17
@@ -2089,20 +2096,20 @@ Page: https://bouldervotes.org/measures/2026-2l.html
 A YES vote means: Add the specified collective-bargaining right and dispute process to the charter.
 A NO vote means: Do not add this charter protection; existing contract and ordinance arrangements are not themselves repealed by a no vote.
 In plain words (bouldervotes.org's summary, not the ballot text): This would put full-time firefighters' collective-bargaining rights into the city charter. Bargaining already exists under a city contract and ordinance; the measure would make the right a charter provision and establish a process for unresolved disputes, potentially ending in a city vote. The city retains certain management rights defined in the proposed amendment.
-Money: The published ballot question has no specific tax, debt, or dollar amount. Future negotiated labor costs are not quantified in the ballot language; an unresolved impasse could lead to an election under the proposed process. Source: [S35]
-How it got on the ballot: Unanimously referred by City Council on August 6, 2026. Source: [S36]
+Money: The published ballot question has no specific tax, debt, or dollar amount. Future negotiated labor costs are not quantified in the ballot language; an unresolved impasse could lead to an election under the proposed process. Source: [S36]
+How it got on the ballot: Unanimously referred by City Council on August 6, 2026. Source: [S37]
 Official ballot wording: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
 Who supports or opposes it:
 - Supports: Taishya Adams, Boulder City Council: Boulder Firefighters for a Stronger Boulder ballot campaign lists Taishya Adams. Only the campaign says so. Source: [S2]
 - Supports: Judy Amabile, Colorado state senator: Boulder Firefighters for a Stronger Boulder ballot campaign lists Judy Amabile. Only the campaign says so. Source: https://strongerboulder.com/
 - Supports: Boulder Area Labor Council, AFL-CIO [endorser's own statement] Source: https://coaflcio.org/boulder-area-labor-council-afl-cio/news/boulder-area-labor-council-2026-endorsements, 2026-10-02
 - Supports: Boulder County Democratic Party [endorser's own statement] Source: https://www.bocodems.org/wp-content/uploads/2026/09/2026VG85x11FINALPRINT-wBug.pdf
-- Supports: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S17], 2026-10-08
+- Supports: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S18], 2026-10-08
 - Supports: Boulder Firefighters for a Stronger Boulder [endorser's own statement] Source: https://strongerboulder.com/
-- Supports: Boulder Progressives [endorser's own statement] Source: [S18], 2026-09-16
+- Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
 - Supports: Aaron Brockett, Boulder mayor: Boulder Firefighters for a Stronger Boulder ballot campaign lists Aaron Brockett. Only the campaign says so. Source: [S2]
 - Supports: Colorado Working Families Party [endorser's own statement] Source: [S10]
-- Supports: Daily Camera Editorial Board [endorser's own statement] Source: [S19], 2026-10-11
+- Supports: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Supports: Michael Dougherty, Boulder County district attorney: Boulder Firefighters for a Stronger Boulder ballot campaign lists Michael Dougherty. Only the campaign says so. Source: [S2]
 - Supports: Benita Duran, Boulder Library District trustee; 2026 council candidate: Boulder Firefighters for a Stronger Boulder ballot campaign lists Benita Duran. Only the campaign says so. Source: [S2]
 - Supports: Sam Fuqua, former BVSD Board of Education president; 2026 council candidate: Boulder Firefighters for a Stronger Boulder ballot campaign lists Sam Fuqua. Only the campaign says so. Source: [S2]
@@ -2132,14 +2139,14 @@ Page: https://bouldervotes.org/measures/2026-2m.html
 A YES vote means: Amend the charter's debt-limit calculation to three percent of actual taxable property value, increasing capacity to borrow.
 A NO vote means: Keep the current debt-limit calculation based on assessed property value; the proposed bond may not be issuable within the existing limit.
 In plain words (bouldervotes.org's summary, not the ballot text): This would calculate the city's charter debt limit using actual property value instead of assessed value while retaining the three-percent rate. Because actual value is larger, it would increase the city's legal borrowing capacity. It is a companion question to the $400 million bond, but passing 2M alone would not issue that bond or directly impose the bond's property tax.
-Money: No direct tax increase or new bond is authorized by this question alone. The city's legal debt ceiling would increase by switching the base from assessed to actual value; the resulting dollar limit depends on taxable property value. A contemporaneous advocacy presentation estimated a change from about $152.7 million to $1.55 billion; treat these as estimates, not official ballot language. Source: [S35]
+Money: No direct tax increase or new bond is authorized by this question alone. The city's legal debt ceiling would increase by switching the base from assessed to actual value; the resulting dollar limit depends on taxable property value. A contemporaneous advocacy presentation estimated a change from about $152.7 million to $1.55 billion; treat these as estimates, not official ballot language. Source: [S36]
 How it got on the ballot: City Council approved referral August 6, 2026; the available city summary and local reporting do not specify a roll-call tally for this item. Source: https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures
 Official ballot wording: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
 Who supports or opposes it:
 - Opposes: Boulder Chamber [endorser's own statement] Source: https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/, 2026-09-09
-- Opposes: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S17], 2026-10-08
-- Supports: Boulder Progressives [endorser's own statement] Source: [S18], 2026-09-16
-- Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S19], 2026-10-11
+- Opposes: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S18], 2026-10-08
+- Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
+- Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Opposes: Kim Monson, Host, The Kim Monson Show; President, Colorado Union of Taxpayers [endorser's own statement] Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/
 - Supports: Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
 All organizations on 2M: Supports: Boulder Progressives (2026-09-16); Yellow Scene Editorial Board (2026-10-09). Opposes: Boulder Chamber (2026-09-09); Boulder County Democratic Socialists of America (2026-10-08); Daily Camera Editorial Board (2026-10-11).

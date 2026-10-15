@@ -33,5 +33,12 @@
     "endorser_slug": "colorado-jewish-action-alliance",
     "browser_required": true,
     "coverage_note": "Wix page; city endorsements plus a separate 'Community Allies' list that is not endorsements. Found by discovery 2026-10-08."
+  },
+  {
+    "url": "https://boulderaction.org/2026-candidate-endorsements",
+    "kind": "endorser",
+    "endorser_slug": "boulder-action",
+    "browser_required": true,
+    "coverage_note": "Squarespace page whose endorsements are one image (no text); read the image. Found 2026-10-15 via Schuchard campaign page."
   }
 ]

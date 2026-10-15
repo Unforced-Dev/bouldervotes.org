@@ -9354,5 +9354,173 @@
       "evidence_url": "https://strongerboulder.com/endorsements",
       "note": "Boulder Firefighters for a Stronger Boulder 2L endorsements page (live, Oct. 14, 2026), under '2L is Proudly Endorsed By:': 'Jamillah Richmond / Candidate for Boulder City Council'. Ballot committee's claim; no endorser-authored statement on 2L found."
     }
+  },
+  {
+    "id": "E357",
+    "endorser": "Boulder Action",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-action",
+    "candidate": "Aquiles La Grave",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-15."
+    },
+    "notes": "Mayor. Endorser's own page, published as an image with no date or rank.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
+      "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Aquiles La Grave for Mayor'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
+    }
+  },
+  {
+    "id": "E358",
+    "endorser": "Boulder Action",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-action",
+    "candidate": "Ryan Schuchard",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-15."
+    },
+    "notes": "City Council. Endorser's own page, published as an image with no date or rank.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
+      "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Ryan Schuchard'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
+    }
+  },
+  {
+    "id": "E359",
+    "endorser": "Boulder Action",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-action",
+    "candidate": "Dave Martus",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-15."
+    },
+    "notes": "City Council. Endorser's own page, published as an image with no date or rank.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
+      "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Dave Martus'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
+    }
+  },
+  {
+    "id": "E360",
+    "endorser": "Boulder Action",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-action",
+    "candidate": "Tina Marquis",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-15."
+    },
+    "notes": "City Council. Endorser's own page, published as an image with no date or rank.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
+      "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Tina Marquis'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
+    }
+  },
+  {
+    "id": "E361",
+    "endorser": "Boulder Action",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-action",
+    "candidate": "Jamillah Richmond",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-15."
+    },
+    "notes": "City Council. Endorser's own page, published as an image with no date or rank. The graphic spells the name 'Jamilla Richmond'.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
+      "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Jamilla Richmond'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
+    }
+  },
+  {
+    "id": "E362",
+    "endorser": "Boulder Action",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-action",
+    "candidate": "Ryan Jamieson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)",
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-15."
+    },
+    "notes": "City Council. Endorser's own page, published as an image with no date or rank.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-15",
+      "evidence_url": "https://boulderaction.org/2026-candidate-endorsements",
+      "note": "Uni read Boulder Action's own '2026 CANDIDATE ENDORSEMENTS' page in a browser (Oct. 15, 2026). The page is a single image (https://images.squarespace-cdn.com/content/v1/647e5656f61bd63482aa27e9/c69e1360-96dd-487e-91f6-e6a8ad0884a9/BA-BCC-Cand-Endorse-2026V3-6.png) headed 'Boulder Action ENDORSES For Boulder City Council' that names 'Ryan Jamieson'. The graphic gives no rank or date. Ryan Schuchard's campaign page also lists Boulder Action among its endorsing organizations."
+    }
   }
 ]

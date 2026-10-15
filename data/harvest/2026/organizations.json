@@ -4300,5 +4300,30 @@
     "title_source_url": "https://strongerboulder.com/endorsements",
     "weight_group": "other_individual",
     "related": []
+  },
+  {
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "kind": "organization",
+    "website": "https://boulderaction.org/",
+    "legal_form": null,
+    "mission_quote": {
+      "text": "Boulder Action is a community engagement effort designed to help citizens better understand the political, business and social forces shaping local government and to act as a catalyst for political action.",
+      "source_url": "https://boulderaction.org/"
+    },
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Boulder Action describes itself as a community engagement effort working to bring common sense government to Boulder. Its 2026 endorsement page is a single graphic naming one mayoral and five council candidates.",
+    "sources": [
+      "https://boulderaction.org/2026-candidate-endorsements",
+      "https://boulderaction.org/"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "organization",
+    "related": []
   }
 ]

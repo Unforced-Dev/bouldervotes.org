@@ -720,6 +720,31 @@
     "source_title": "Better Boulder 2026 Endorsements"
    },
    {
+    "id": "E362",
+    "endorser": {
+     "type": "organization",
+     "slug": "boulder-action",
+     "name": "Boulder Action",
+     "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-jamieson",
+     "name": "Ryan Jamieson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": null,
+    "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+    "source_title": "2026 Candidate Endorsements (Boulder Action)"
+   },
+   {
     "id": "E165",
     "endorser": {
      "type": "person",
@@ -1020,6 +1045,7 @@
   "source_urls": [
    "https://betterboulder.com/2026-city-council-candidate-questionnaire",
    "https://betterboulder.com/better-boulder-2026-endorsements/",
+   "https://boulderaction.org/2026-candidate-endorsements",
    "https://boulderreportinglab.org/govpack_profiles/ryan-jamieson/",
    "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-ryan-j.pdf",
    "https://openboulder.org/vote-news-opinions/",
