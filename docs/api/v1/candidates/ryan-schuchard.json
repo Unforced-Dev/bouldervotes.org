@@ -625,6 +625,32 @@
     "source_title": "Endorsements — Re-Elect Ryan Schuchard"
    },
    {
+    "id": "E363",
+    "endorser": {
+     "type": "person",
+     "slug": "matt-appelbaum",
+     "name": "Matt Appelbaum",
+     "title_as_printed": "former Mayor and Councilmember",
+     "page_url": "https://bouldervotes.org/people/matt-appelbaum.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists Matt Appelbaum. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
     "id": "E140",
     "endorser": {
      "type": "person",
