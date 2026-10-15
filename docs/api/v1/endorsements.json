@@ -928,6 +928,156 @@
    "source_title": "Endorsements – Aaron Brockett For Mayor"
   },
   {
+   "id": "E357",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "aquiles-la-grave",
+    "name": "Aquiles La Grave",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+   "source_title": "2026 Candidate Endorsements (Boulder Action)"
+  },
+  {
+   "id": "E358",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-schuchard",
+    "name": "Ryan Schuchard",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+   "source_title": "2026 Candidate Endorsements (Boulder Action)"
+  },
+  {
+   "id": "E359",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "dave-martus",
+    "name": "Dave Martus",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+   "source_title": "2026 Candidate Endorsements (Boulder Action)"
+  },
+  {
+   "id": "E360",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "tina-marquis",
+    "name": "Tina Marquis",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+   "source_title": "2026 Candidate Endorsements (Boulder Action)"
+  },
+  {
+   "id": "E361",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "jamillah-richmond",
+    "name": "Jamillah Richmond",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+   "source_title": "2026 Candidate Endorsements (Boulder Action)"
+  },
+  {
+   "id": "E362",
+   "endorser": {
+    "type": "organization",
+    "slug": "boulder-action",
+    "name": "Boulder Action",
+    "page_url": "https://bouldervotes.org/orgs/boulder-action.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "ryan-jamieson",
+    "name": "Ryan Jamieson",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": null,
+   "source_url": "https://boulderaction.org/2026-candidate-endorsements",
+   "source_title": "2026 Candidate Endorsements (Boulder Action)"
+  },
+  {
    "id": "E48",
    "endorser": {
     "type": "organization",
