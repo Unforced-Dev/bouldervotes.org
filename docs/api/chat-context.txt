@@ -272,7 +272,7 @@ Adams is a sitting Boulder councilmember seeking the mayor’s office. She empha
 - Public office: Boulder city councilmember, elected 2023
 - In Boulder: moved to Boulder in summer 2013
 - Earlier city races: 2023 council (elected)
-- Money, as of 2026-10-06 (28th day before election): raised $8,292; spent $5,203; matching funds $8,291; cash on hand $11,380. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3902
+- Money, as of 2026-10-13 (21st day before election): raised $9,097; spent $5,550; matching funds $9,096; cash on hand $12,643. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3913
 
 #### Taishya Adams: lines by topic
 housing: B3, F4Q43, F4Q45, F4Q46 YES on 2J | climate/energy: interview, F1Q1, F2Q17, F4Q47, F5Q49, F5Q50, F5Q51 | wildfire: F3Q31, F5Q48 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F2Q17, F2Q22, F3Q32, F4Q44 | downtown/economy: B4, questionnaire, F1Q13 | homelessness/safety: questionnaire, F1Q1 | growth: F4Q45, F4Q40 | arts: F3Q27
@@ -742,7 +742,7 @@ No endorsements on file. That is not opposition.
 Page: https://bouldervotes.org/people/aquiles-la-grave.html | Campaign site: https://boulder.vote/
 La Grave is an entrepreneur seeking the mayor’s office for the first time. He stresses government accountability, public safety and local economic activity.
 - Occupation: Entrepreneur
-- Money, as of 2026-10-06 (28th day before election): raised $30,164; spent $12,480; matching funds $0; cash on hand $17,684. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3901 Note: Clerk contribution total includes $4,509.25 in loans.
+- Money, as of 2026-10-14 (3 days after committee certification): raised $36,779; spent $15,399; matching funds $0; cash on hand $21,380. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2857 Note: Clerk contribution total includes $9,424.39 in loans. As filed, the committee submitted its 3 days after committee certification report on Oct. 14, 2026, after its 21st day before election report; totals follow the later submission, as the clerk summary does.
 
 #### Aquiles La Grave: lines by topic
 housing: B3, F4Q43, F4Q45, F4Q46 | climate/energy: F5Q49, F5Q50, F5Q51 | wildfire: F1Q1, F2Q23 | transportation: B2, F4Q37 | budget/taxes/2K: F1Q1, F1Q7, F2Q21, F3Q31, F4Q44, F4Q44 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q8 | homelessness/safety: questionnaire | growth: F1Q5 | arts: F3Q32
@@ -1498,7 +1498,7 @@ Page: https://bouldervotes.org/people/dave-martus.html | Campaign site: https://
 Martus is a first-time council candidate and a senior adviser with a background in institutional finance. He emphasizes budget oversight, government trust and changes to land-use regulation.
 - Occupation: Senior advisor
 - In Boulder: moved to Boulder in 1985
-- Money, as of 2026-10-13 (21st day before election): raised $5,265; spent $4,067; matching funds $5,165; cash on hand $6,363. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3918
+- Money, as of 2026-10-15 (Additional Matching Funds): raised $5,815; spent $4,067; matching funds $5,715; cash on hand $7,463. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3934
 
 #### Dave Martus: lines by topic
 housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1 | transportation: B2, F4Q37 | budget/taxes/2K: F2Q17, F3Q32, F4Q33, F4Q34, F4Q36 NO on 2K | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: none | arts: F3Q29
