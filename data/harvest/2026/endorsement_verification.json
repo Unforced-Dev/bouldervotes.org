@@ -2602,5 +2602,19 @@
     "checked_on": "2026-10-15",
     "evidence_url": "https://www.ryanwithboulder.com/endorsements",
     "note": "Ryan Schuchard campaign endorsement page (fetched Oct. 15, 2026) lists 'Matt Appelbaum, former Mayor and Councilmember' under 'OTHER CURRENT AND FORMER ELECTED OFFICIALS' (new since Oct. 14). Campaign's claim; no endorser-authored statement found."
+  },
+  {
+    "id": "E364",
+    "result": "PASS",
+    "checked_on": "2026-10-17",
+    "evidence_url": "https://lwvbc.org/docs.ashx?id=1829355",
+    "note": "League of Women Voters of Boulder County's own PDF 'Where the League Stands on 2026 Ballot Issues' (linked from its 2026 Ballot Measures page as '2026 LWVBC Ballot Positions'; fetched Oct. 17, 2026) reads: 'Issue 2K: Recreation and Safety Bond (TABOR). SUPPORT. The League supports efficient fiscal administration and adequate, equitable financing of municipal programs, current and long range.' Press release dated Oct. 7, 2026, reprinted by Yellow Scene Oct. 15."
+  },
+  {
+    "id": "E365",
+    "result": "PASS",
+    "checked_on": "2026-10-17",
+    "evidence_url": "https://lwvbc.org/docs.ashx?id=1829355",
+    "note": "League of Women Voters of Boulder County's own PDF 'Where the League Stands on 2026 Ballot Issues' (linked from its 2026 Ballot Measures page as '2026 LWVBC Ballot Positions'; fetched Oct. 17, 2026) reads: 'Issue 2M: Debt Limit City Charter Language Change. SUPPORT. The League supports efficient fiscal administration and adequate, equitable financing of municipal programs, current and long range.' Press release dated Oct. 7, 2026, reprinted by Yellow Scene Oct. 15."
   }
 ]

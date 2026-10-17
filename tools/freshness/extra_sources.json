@@ -40,5 +40,12 @@
     "endorser_slug": "boulder-action",
     "browser_required": true,
     "coverage_note": "Squarespace page whose endorsements are one image (no text); read the image. Found 2026-10-15 via Schuchard campaign page."
+  },
+  {
+    "url": "https://lwvbc.org/content.aspx?page_id=22&club_id=629866&module_id=807082",
+    "kind": "endorser",
+    "endorser_slug": "league-of-women-voters-of-boulder-county",
+    "browser_required": true,
+    "coverage_note": "LWVBC 2026 Ballot Measures page; positions are in a linked PDF (docs.ashx?id=1829355) that returns 403 without a lwvbc.org Referer. Found 2026-10-17 via Yellow Scene reprint."
   }
 ]
