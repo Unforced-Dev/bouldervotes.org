@@ -4357,5 +4357,31 @@
     "title_source_url": "https://www.ryanwithboulder.com/endorsements",
     "weight_group": "former_elected",
     "related": []
+  },
+  {
+    "slug": "league-of-women-voters-of-boulder-county",
+    "name": "League of Women Voters of Boulder County",
+    "kind": "organization",
+    "website": "https://lwvbc.org/",
+    "legal_form": null,
+    "mission_quote": null,
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": {
+      "text": "The League's stances on ballot issues are based on its existing policy positions at local, state, and national levels. The League may support, oppose, or remain neutral on ballot issues. A neutral position may be chosen if there is no current relevant organizational position on the topic(s), or if there are conflicting positions.",
+      "source_url": "https://lwvbc.org/docs.ashx?id=1829355"
+    },
+    "past_endorsements": [],
+    "summary": "The League of Women Voters of Boulder County takes positions on ballot measures, not candidates. For 2026 City of Boulder measures it lists 2K SUPPORT, 2M SUPPORT, 2J NEUTRAL and 2L NEUTRAL.",
+    "sources": [
+      "https://lwvbc.org/docs.ashx?id=1829355",
+      "https://lwvbc.org/content.aspx?page_id=22&club_id=629866&module_id=807082",
+      "https://yellowscene.com/2026/10/15/where-the-league-of-women-voters-of-boulder-county-stands-on-2026-ballot-issues/"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "organization",
+    "related": []
   }
 ]

@@ -8812,6 +8812,52 @@
    "source_title": "2L Endorsements – Boulder Firefighters for a Stronger Boulder"
   },
   {
+   "id": "E364",
+   "endorser": {
+    "type": "organization",
+    "slug": "league-of-women-voters-of-boulder-county",
+    "name": "League of Women Voters of Boulder County",
+    "page_url": "https://bouldervotes.org/orgs/league-of-women-voters-of-boulder-county.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2K"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-07",
+   "source_url": "https://lwvbc.org/docs.ashx?id=1829355",
+   "source_title": "Where the League Stands on 2026 Ballot Issues (League of Women Voters of Boulder County)"
+  },
+  {
+   "id": "E365",
+   "endorser": {
+    "type": "organization",
+    "slug": "league-of-women-voters-of-boulder-county",
+    "name": "League of Women Voters of Boulder County",
+    "page_url": "https://bouldervotes.org/orgs/league-of-women-voters-of-boulder-county.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "city_measure",
+    "letter": "2M"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "endorser_statement",
+   "provenance_label": "Endorser's own statement",
+   "label": "Endorser's own statement.",
+   "claimed_by": null,
+   "published_on": "2026-10-07",
+   "source_url": "https://lwvbc.org/docs.ashx?id=1829355",
+   "source_title": "Where the League Stands on 2026 Ballot Issues (League of Women Voters of Boulder County)"
+  },
+  {
    "id": "E340",
    "endorser": {
     "type": "person",
