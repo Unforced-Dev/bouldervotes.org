@@ -191,7 +191,7 @@ City Council (vote for up to five): 1. Lee Gilbert; 2. Sam Fuqua; 3. Ryan Schuch
 Page: https://bouldervotes.org/people/lisa-ann-jacobs.html
 Jacobs is a 2026 Boulder mayoral candidate. Yellow Scene reported that she emphasized fiscal sustainability, litigation and transparency at an August candidate forum.
 - Note: No BRL individual profile, Better Boulder answer, DBP PDF, or verified campaign website located by September 24, 2026; do not infer positions on other issues. The city campaign-finance list marks her website “To be developed”: https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=candidateList . The city candidate-video showcase includes her introduction, but a transcript was not available here: https://vimeo.com/showcase/12421306 .
-- Money, as of 2026-10-04 (28th day before election): raised $240; spent $240; matching funds $0; cash on hand $0. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3889
+- Money, as of 2026-10-15 (21st day before election): raised $240; spent $240; matching funds $0; cash on hand $0. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3936
 
 #### Lisa Ann Jacobs: lines by topic
 housing: F1Q3, F4Q43, F4Q45, F4Q46 NO on 2J | climate/energy: F5Q48, F5Q49, F5Q50, F5Q51 | wildfire: none | transportation: F1Q15, F4Q37 | budget/taxes/2K: F4Q44, F4Q47 | downtown/economy: none | homelessness/safety: F1Q1 | growth: none | arts: F3Q26
@@ -1147,7 +1147,7 @@ Page: https://bouldervotes.org/people/jamillah-richmond.html | Campaign site: ht
 Richmond is a first-time council candidate and a diversity and education consultant. She advocates community-led governance, affordable housing and support for workers and small businesses.
 - Occupation: Diversity and education consultant
 - In Boulder: moved to Boulder in 2019
-- Money, as of 2026-10-06 (28th day before election): raised $7,366; spent $3,642; matching funds $6,851; cash on hand $10,475. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3897
+- Money, as of 2026-10-15 (21st day before election): raised $7,766; spent $4,582; matching funds $7,251; cash on hand $10,336. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3935
 
 #### Jamillah Richmond: lines by topic
 housing: B3, F1Q1, F2Q17, F4Q33, F4Q34, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F2Q23 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q10 | homelessness/safety: questionnaire | growth: none | arts: F3Q30, F3Q32
