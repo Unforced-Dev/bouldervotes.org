@@ -9597,5 +9597,33 @@
       "evidence_url": "https://lwvbc.org/docs.ashx?id=1829355",
       "note": "League of Women Voters of Boulder County's own PDF 'Where the League Stands on 2026 Ballot Issues' (linked from its 2026 Ballot Measures page as '2026 LWVBC Ballot Positions'; fetched Oct. 17, 2026) reads: 'Issue 2M: Debt Limit City Charter Language Change. SUPPORT. The League supports efficient fiscal administration and adequate, equitable financing of municipal programs, current and long range.' Press release dated Oct. 7, 2026, reprinted by Yellow Scene Oct. 15."
     }
+  },
+  {
+    "id": "E366",
+    "endorser": "Daily Camera Editorial Board",
+    "endorser_type": "organization",
+    "endorser_slug": "daily-camera-editorial-board",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.dailycamera.com/2026/10/18/colorado-election-propositions-vote-endorsements/",
+    "source_title": "Support investments in our future and reject disingenuous culture war issues (Editorial, Boulder Daily Camera)",
+    "published_on": "2026-10-18",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-18."
+    },
+    "notes": "Heading '‘Yes’ on Ballot Measure 7A'; 'Vote “yes” on 7A.' The same editorial covers statewide measures (not recorded here).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-18",
+      "evidence_url": "https://www.dailycamera.com/2026/10/18/colorado-election-propositions-vote-endorsements/",
+      "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 18, 2026. Heading '‘Yes’ on Ballot Measure 7A'; closes 'Vote “yes” on 7A.' Signed '— Gary Garrison for the Editorial Board', published Oct. 18, 2026."
+    }
   }
 ]
