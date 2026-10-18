@@ -9625,5 +9625,89 @@
       "evidence_url": "https://www.dailycamera.com/2026/10/18/colorado-election-propositions-vote-endorsements/",
       "note": "Uni read the editorial on dailycamera.com in a browser, Oct. 18, 2026. Heading '‘Yes’ on Ballot Measure 7A'; closes 'Vote “yes” on 7A.' Signed '— Gary Garrison for the Editorial Board', published Oct. 18, 2026."
     }
+  },
+  {
+    "id": "E367",
+    "endorser": "Boulder County Commissioners",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-county-commissioners",
+    "candidate": null,
+    "measure_letter": "2J",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+    "source_title": "Support for and Opposition to State and Local Ballot Measures (Boulder County)",
+    "published_on": "2026-10-14",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-18."
+    },
+    "notes": "SUPPORT, by vote of the Board of County Commissioners at its Oct. 13 business meeting. The board takes positions on measures, not candidates. It also took positions on statewide measures (not recorded here).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-18",
+      "evidence_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+      "note": "Boulder County's own news release (Oct. 14, 2026), read in a browser Oct. 18, 2026: 'At their weekly Business Meeting on Oct. 13, the Boulder County Commissioners agreed to take positions...' Listed under 'Support': 'City of Boulder Issue 2J – Residential Vacancy Excise Tax'."
+    }
+  },
+  {
+    "id": "E368",
+    "endorser": "Boulder County Commissioners",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-county-commissioners",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+    "source_title": "Support for and Opposition to State and Local Ballot Measures (Boulder County)",
+    "published_on": "2026-10-14",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-18."
+    },
+    "notes": "SUPPORT, by vote of the Board of County Commissioners at its Oct. 13 business meeting. The board takes positions on measures, not candidates. It also took positions on statewide measures (not recorded here).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-18",
+      "evidence_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+      "note": "Boulder County's own news release (Oct. 14, 2026), read in a browser Oct. 18, 2026: 'At their weekly Business Meeting on Oct. 13, the Boulder County Commissioners agreed to take positions...' Listed under 'Support': '7A – Front Range Passenger Rail District'."
+    }
+  },
+  {
+    "id": "E369",
+    "endorser": "Boulder County Commissioners",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-county-commissioners",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+    "source_title": "Support for and Opposition to State and Local Ballot Measures (Boulder County)",
+    "published_on": "2026-10-14",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-18."
+    },
+    "notes": "SUPPORT, by vote of the Board of County Commissioners at its Oct. 13 business meeting. The board takes positions on measures, not candidates. It also took positions on statewide measures (not recorded here).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-18",
+      "evidence_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+      "note": "Boulder County's own news release (Oct. 14, 2026), read in a browser Oct. 18, 2026: 'At their weekly Business Meeting on Oct. 13, the Boulder County Commissioners agreed to take positions...' Listed under 'Support': 'Boulder County Ballot Issue 1A – Early Childhood Care and Educational Mill Levy Increase and Voter-Approved Revenue Change'."
+    }
   }
 ]
