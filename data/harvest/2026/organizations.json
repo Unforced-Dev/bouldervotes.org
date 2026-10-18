@@ -4383,5 +4383,29 @@
     "title_source_url": null,
     "weight_group": "organization",
     "related": []
+  },
+  {
+    "slug": "boulder-county-commissioners",
+    "name": "Boulder County Commissioners",
+    "kind": "organization",
+    "website": "https://bouldercounty.gov/government/commissioners/",
+    "legal_form": null,
+    "mission_quote": null,
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": {
+      "text": "At their weekly Business Meeting on Oct. 13, the Boulder County Commissioners agreed to take positions on a number of state and local ballot measures being considered by voters in the 2026 General Election.",
+      "source_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/"
+    },
+    "past_endorsements": [],
+    "summary": "The elected Board of County Commissioners voted on Oct. 13, 2026 to take positions on ballot measures. Among measures on City of Boulder ballots it supports 2J, 7A and County Issue 1A.",
+    "sources": [
+      "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "organization",
+    "related": []
   }
 ]

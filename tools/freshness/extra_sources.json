@@ -47,5 +47,12 @@
     "endorser_slug": "league-of-women-voters-of-boulder-county",
     "browser_required": true,
     "coverage_note": "LWVBC 2026 Ballot Measures page; positions are in a linked PDF (docs.ashx?id=1829355) that returns 403 without a lwvbc.org Referer. Found 2026-10-17 via Yellow Scene reprint."
+  },
+  {
+    "url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
+    "kind": "endorser",
+    "endorser_slug": "boulder-county-commissioners",
+    "browser_required": false,
+    "coverage_note": "County commissioners' Oct. 14 release of ballot-measure positions. Found by discovery search 2026-10-18."
   }
 ]
