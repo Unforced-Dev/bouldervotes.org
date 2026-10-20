@@ -54,5 +54,12 @@
     "endorser_slug": "boulder-county-commissioners",
     "browser_required": false,
     "coverage_note": "County commissioners' Oct. 14 release of ballot-measure positions. Found by discovery search 2026-10-18."
+  },
+  {
+    "url": "https://cwa-union.org/candidates-co",
+    "kind": "endorser",
+    "endorser_slug": "communications-workers-of-america",
+    "browser_required": false,
+    "coverage_note": "CWA national Colorado endorsements page; lists City of Boulder ballot issues. Found by discovery search 2026-10-20."
   }
 ]

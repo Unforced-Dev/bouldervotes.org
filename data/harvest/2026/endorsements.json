@@ -9709,5 +9709,89 @@
       "evidence_url": "https://bouldercounty.gov/news/support-for-and-opposition-to-state-and-local-ballot-measures-2/",
       "note": "Boulder County's own news release (Oct. 14, 2026), read in a browser Oct. 18, 2026: 'At their weekly Business Meeting on Oct. 13, the Boulder County Commissioners agreed to take positions...' Listed under 'Support': 'Boulder County Ballot Issue 1A – Early Childhood Care and Educational Mill Levy Increase and Voter-Approved Revenue Change'."
     }
+  },
+  {
+    "id": "E370",
+    "endorser": "Communications Workers of America",
+    "endorser_type": "organization",
+    "endorser_slug": "communications-workers-of-america",
+    "candidate": null,
+    "measure_letter": "2J",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://cwa-union.org/candidates-co",
+    "source_title": "2026 Colorado | CWA Endorsed Candidates (Communications Workers of America)",
+    "published_on": "2026-10-20",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-20."
+    },
+    "notes": "SUPPORT, on the national union's Colorado endorsements page. The page states no publication date; the date shown is when we retrieved it. CWA takes no position here on 2K and endorses no City of Boulder candidates.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://cwa-union.org/candidates-co",
+      "note": "Communications Workers of America's own Colorado endorsements page, read in a browser Oct. 20, 2026. Under 'City of Boulder Ballot Issues': 'Ballot Issue 2J — SUPPORT'. The page lists no position on 2K and endorses no City of Boulder candidates. It does not show a publication date."
+    }
+  },
+  {
+    "id": "E371",
+    "endorser": "Communications Workers of America",
+    "endorser_type": "organization",
+    "endorser_slug": "communications-workers-of-america",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://cwa-union.org/candidates-co",
+    "source_title": "2026 Colorado | CWA Endorsed Candidates (Communications Workers of America)",
+    "published_on": "2026-10-20",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-20."
+    },
+    "notes": "SUPPORT, on the national union's Colorado endorsements page. The page states no publication date; the date shown is when we retrieved it. CWA takes no position here on 2K and endorses no City of Boulder candidates.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://cwa-union.org/candidates-co",
+      "note": "Communications Workers of America's own Colorado endorsements page, read in a browser Oct. 20, 2026. Under 'City of Boulder Ballot Issues': 'Ballot Question 2L — SUPPORT'. The page lists no position on 2K and endorses no City of Boulder candidates. It does not show a publication date."
+    }
+  },
+  {
+    "id": "E372",
+    "endorser": "Communications Workers of America",
+    "endorser_type": "organization",
+    "endorser_slug": "communications-workers-of-america",
+    "candidate": null,
+    "measure_letter": "2M",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://cwa-union.org/candidates-co",
+    "source_title": "2026 Colorado | CWA Endorsed Candidates (Communications Workers of America)",
+    "published_on": "2026-10-20",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-20."
+    },
+    "notes": "SUPPORT, on the national union's Colorado endorsements page. The page states no publication date; the date shown is when we retrieved it. CWA takes no position here on 2K and endorses no City of Boulder candidates.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://cwa-union.org/candidates-co",
+      "note": "Communications Workers of America's own Colorado endorsements page, read in a browser Oct. 20, 2026. Under 'City of Boulder Ballot Issues': 'Ballot Question 2M — SUPPORT'. The page lists no position on 2K and endorses no City of Boulder candidates. It does not show a publication date."
+    }
   }
 ]

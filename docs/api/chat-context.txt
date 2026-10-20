@@ -62,6 +62,7 @@ A [S1]-style source code stands for the link below. When you cite one, write the
 - [S35]: https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf
 - [S36]: https://bouldercolorado.gov/2026-city-boulder-ballot-measures
 - [S37]: https://boulderreportinglab.org/2026/08/06/boulder-city-council-sends-vacancy-tax-and-400-million-bond-to-november-ballot-rejects-downtown-development-authority/
+- [S38]: https://cwa-union.org/candidates-co
 
 ## Election basics
 
@@ -2054,12 +2055,13 @@ Who supports or opposes it:
 - Supports: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S18], 2026-10-08
 - Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
 - Supports: Colorado Working Families Party [endorser's own statement] Source: [S10]
+- Supports: Communications Workers of America [endorser's own statement] Source: [S38], 2026-10-20
 - Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Opposes: Kim Monson, Host, The Kim Monson Show; President, Colorado Union of Taxpayers [endorser's own statement] Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2j/
 - Opposes: PLAN-Boulder County [endorser's own statement] Source: https://planboulder.org/2026-ballot-issue-endorsements, 2026-09-27
 - Supports: Vacancy to Vitality [endorser's own statement] Source: https://www.bouldervacancytax.org/
 - Supports: Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
-All organizations on 2J: Supports: Better Boulder; Boulder County Commissioners (2026-10-14); Boulder County Democratic Socialists of America (2026-10-08); Boulder Progressives (2026-09-16); Colorado Working Families Party; Vacancy to Vitality; Yellow Scene Editorial Board (2026-10-09). Opposes: Daily Camera Editorial Board (2026-10-11); PLAN-Boulder County (2026-09-27).
+All organizations on 2J: Supports: Better Boulder; Boulder County Commissioners (2026-10-14); Boulder County Democratic Socialists of America (2026-10-08); Boulder Progressives (2026-09-16); Colorado Working Families Party; Communications Workers of America (2026-10-20); Vacancy to Vitality; Yellow Scene Editorial Board (2026-10-09). Opposes: Daily Camera Editorial Board (2026-10-11); PLAN-Boulder County (2026-09-27).
 Every mayoral candidate on 2J: Lisa Ann Jacobs NO; Taishya Adams YES; Aaron Brockett YES; Jameson Goldstein YES; Fred Smith answered, no yes/no; Aquiles La Grave answered, no yes/no.
 Every council candidate on 2J: Lee Gilbert answered, no yes/no; Sam Fuqua YES; Ryan Schuchard YES; Jamillah Richmond YES; Benita Duran NO; Tara Winer no answer on file; Rachel Rose Isaacson answered, no yes/no; Dave Martus NO; Scott Rendleman YES; Jill Grano YES; Ryan Jamieson NO; Lynn Segal answered, no yes/no; Tina Marquis YES.
 What we don't know yet: As of September 24 no named opposition organization had been verified for 2J or 2L; opponents verified since then are listed with their dates. A short opponents list does not imply broad support.
@@ -2111,6 +2113,7 @@ Who supports or opposes it:
 - Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
 - Supports: Aaron Brockett, Boulder mayor: Boulder Firefighters for a Stronger Boulder ballot campaign lists Aaron Brockett. Only the campaign says so. Source: [S2]
 - Supports: Colorado Working Families Party [endorser's own statement] Source: [S10]
+- Supports: Communications Workers of America [endorser's own statement] Source: [S38], 2026-10-20
 - Supports: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Supports: Michael Dougherty, Boulder County district attorney: Boulder Firefighters for a Stronger Boulder ballot campaign lists Michael Dougherty. Only the campaign says so. Source: [S2]
 - Supports: Benita Duran, Boulder Library District trustee; 2026 council candidate: Boulder Firefighters for a Stronger Boulder ballot campaign lists Benita Duran. Only the campaign says so. Source: [S2]
@@ -2132,7 +2135,7 @@ Who supports or opposes it:
 - Supports: Nicole Speer, Boulder city councilmember: Boulder Firefighters for a Stronger Boulder ballot campaign lists Nicole Speer. Only the campaign says so. Source: [S2]
 - Supports: Tara Winer, Boulder mayor pro tem/councilmember: Boulder Firefighters for a Stronger Boulder ballot campaign lists Tara Winer. Only the campaign says so. Source: [S2]
 - Supports: Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
-All organizations on 2L: Supports: Boulder Area Labor Council, AFL-CIO (2026-10-02); Boulder County Democratic Party; Boulder County Democratic Socialists of America (2026-10-08); Boulder Firefighters for a Stronger Boulder; Boulder Progressives (2026-09-16); Colorado Working Families Party; Daily Camera Editorial Board (2026-10-11); Yellow Scene Editorial Board (2026-10-09). Opposes: none on file.
+All organizations on 2L: Supports: Boulder Area Labor Council, AFL-CIO (2026-10-02); Boulder County Democratic Party; Boulder County Democratic Socialists of America (2026-10-08); Boulder Firefighters for a Stronger Boulder; Boulder Progressives (2026-09-16); Colorado Working Families Party; Communications Workers of America (2026-10-20); Daily Camera Editorial Board (2026-10-11); Yellow Scene Editorial Board (2026-10-09). Opposes: none on file.
 What we don't know yet: As of September 24 no named opposition organization had been verified for 2J or 2L; opponents verified since then are listed with their dates. A short opponents list does not imply broad support.
 
 ### 2M: Charter debt-limit calculation (actual vs. assessed value)
@@ -2148,11 +2151,12 @@ Who supports or opposes it:
 - Opposes: Boulder Chamber [endorser's own statement] Source: https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/, 2026-09-09
 - Opposes: Boulder County Democratic Socialists of America [endorser's own statement] Source: [S18], 2026-10-08
 - Supports: Boulder Progressives [endorser's own statement] Source: [S19], 2026-09-16
+- Supports: Communications Workers of America [endorser's own statement] Source: [S38], 2026-10-20
 - Opposes: Daily Camera Editorial Board [endorser's own statement] Source: [S20], 2026-10-11
 - Supports: League of Women Voters of Boulder County [endorser's own statement] Source: https://lwvbc.org/docs.ashx?id=1829355, 2026-10-07
 - Opposes: Kim Monson, Host, The Kim Monson Show; President, Colorado Union of Taxpayers [endorser's own statement] Source: https://kimmonson.com/colorado-voter-guide/2026/boulder-2m/
 - Supports: Yellow Scene Editorial Board [endorser's own statement] Source: [S4], 2026-10-09
-All organizations on 2M: Supports: Boulder Progressives (2026-09-16); League of Women Voters of Boulder County (2026-10-07); Yellow Scene Editorial Board (2026-10-09). Opposes: Boulder Chamber (2026-09-09); Boulder County Democratic Socialists of America (2026-10-08); Daily Camera Editorial Board (2026-10-11).
+All organizations on 2M: Supports: Boulder Progressives (2026-09-16); Communications Workers of America (2026-10-20); League of Women Voters of Boulder County (2026-10-07); Yellow Scene Editorial Board (2026-10-09). Opposes: Boulder Chamber (2026-09-09); Boulder County Democratic Socialists of America (2026-10-08); Daily Camera Editorial Board (2026-10-11).
 What we don't know yet: No registered ballot-measure committee for 2M was visible in the city filings as of September 24.
 
 ## More pages
