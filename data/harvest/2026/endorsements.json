@@ -9793,5 +9793,105 @@
       "evidence_url": "https://cwa-union.org/candidates-co",
       "note": "Communications Workers of America's own Colorado endorsements page, read in a browser Oct. 20, 2026. Under 'City of Boulder Ballot Issues': 'Ballot Question 2M — SUPPORT'. The page lists no position on 2K and endorses no City of Boulder candidates. It does not show a publication date."
     }
+  },
+  {
+    "id": "E373",
+    "endorser": "Lauren Folkerts",
+    "endorser_type": "person",
+    "endorser_slug": "lauren-folkerts",
+    "candidate": "Taishya Adams",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Taishya Adams campaign",
+    "source_url": "https://www.adamsforboulder.com/endorsements",
+    "source_title": "Endorsements – Adams for Boulder Mayor",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Frmr Boulder City Council'); personal endorsement, not an endorsement by the office. The campaign page spells the first name 'Laurent'; recorded under the existing Lauren Folkerts, former Boulder City Council member, since the page gives the same surname and office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://www.adamsforboulder.com/endorsements",
+      "note": "Adams for Boulder Mayor campaign endorsement page, read in a browser Oct. 20, 2026. Listed under 'Community Endorsements:' as 'Honorable Laurent Folkerts, Frmr Boulder City Council'. Campaign's claim; no endorser-authored statement found. The campaign page spells the first name 'Laurent'; recorded under the existing Lauren Folkerts, former Boulder City Council member, since the page gives the same surname and office."
+    }
+  },
+  {
+    "id": "E374",
+    "endorser": "Jenn Kaaoush",
+    "endorser_type": "person",
+    "endorser_slug": "jenn-kaaoush",
+    "candidate": "Taishya Adams",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Taishya Adams campaign",
+    "source_url": "https://www.adamsforboulder.com/endorsements",
+    "source_title": "Endorsements – Adams for Boulder Mayor",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Mayor Pro Tem, Superior'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://www.adamsforboulder.com/endorsements",
+      "note": "Adams for Boulder Mayor campaign endorsement page, read in a browser Oct. 20, 2026. Listed under 'Community Endorsements:' as 'Honorable Jenn Kaaoush, Mayor Pro Tem, Superior'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E375",
+    "endorser": "Renee Chacon",
+    "endorser_type": "person",
+    "endorser_slug": "renee-chacon",
+    "candidate": "Taishya Adams",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Taishya Adams campaign",
+    "source_url": "https://www.adamsforboulder.com/endorsements",
+    "source_title": "Endorsements – Adams for Boulder Mayor",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('Fmr Commerce City Council'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://www.adamsforboulder.com/endorsements",
+      "note": "Adams for Boulder Mayor campaign endorsement page, read in a browser Oct. 20, 2026. Listed under 'Community Endorsements:' as 'Honorable Renee Chacon, Fmr Commerce City Council'. Campaign's claim; no endorser-authored statement found."
+    }
+  },
+  {
+    "id": "E376",
+    "endorser": "Wanda James",
+    "endorser_type": "person",
+    "endorser_slug": "wanda-james",
+    "candidate": "Taishya Adams",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Taishya Adams campaign",
+    "source_url": "https://www.adamsforboulder.com/endorsements",
+    "source_title": "Endorsements – Adams for Boulder Mayor",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page ('University of Colorado'); personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-20",
+      "evidence_url": "https://www.adamsforboulder.com/endorsements",
+      "note": "Adams for Boulder Mayor campaign endorsement page, read in a browser Oct. 20, 2026. Listed under 'Community Endorsements:' as 'Regent Wanda James, University of Colorado'. Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]

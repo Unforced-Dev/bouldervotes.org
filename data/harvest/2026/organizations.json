@@ -2156,7 +2156,8 @@
     "sources": [
       "https://rjforboulder.com/endorsements.html",
       "https://www.jamillahanewvoice.com/endorsements",
-      "https://www.jillforcouncil.com/endorsements"
+      "https://www.jillforcouncil.com/endorsements",
+      "https://www.adamsforboulder.com/endorsements"
     ],
     "title": "Superior mayor pro tem",
     "title_source_url": "https://www.jillforcouncil.com/endorsements",
@@ -2365,7 +2366,8 @@
     "past_endorsements": [],
     "summary": "Lauren Folkerts is identified as former Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
-      "https://www.ryanwithboulder.com/endorsements"
+      "https://www.ryanwithboulder.com/endorsements",
+      "https://www.adamsforboulder.com/endorsements"
     ],
     "title": "former Boulder city councilmember",
     "title_source_url": "https://www.ryanwithboulder.com/endorsements",
@@ -4427,6 +4429,70 @@
     "title": null,
     "title_source_url": null,
     "weight_group": "organization",
+    "related": []
+  },
+  {
+    "slug": "renee-chacon",
+    "name": "Renee Chacon",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Renee Chacon",
+        "role": "former Commerce City Council member",
+        "source_url": "https://www.adamsforboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-20"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Renee Chacon is listed as former Commerce City Council member on Taishya Adams’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://www.adamsforboulder.com/endorsements"
+    ],
+    "title": "former Commerce City Council member",
+    "title_source_url": "https://www.adamsforboulder.com/endorsements",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "wanda-james",
+    "name": "Wanda James",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Wanda James",
+        "role": "University of Colorado Regent",
+        "source_url": "https://www.adamsforboulder.com/endorsements",
+        "current": true,
+        "as_of": "2026-10-20"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Wanda James is listed as University of Colorado Regent on Taishya Adams’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://www.adamsforboulder.com/endorsements"
+    ],
+    "title": "University of Colorado Regent",
+    "title_source_url": "https://www.adamsforboulder.com/endorsements",
+    "weight_group": "current_elected",
     "related": []
   }
 ]
