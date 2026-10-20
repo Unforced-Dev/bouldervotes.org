@@ -4407,5 +4407,26 @@
     "title_source_url": null,
     "weight_group": "organization",
     "related": []
+  },
+  {
+    "slug": "communications-workers-of-america",
+    "name": "Communications Workers of America",
+    "kind": "organization",
+    "website": "https://cwa-union.org/",
+    "legal_form": null,
+    "mission_quote": null,
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "A national labor union. Its Colorado endorsements page for the Nov. 3, 2026 election supports City of Boulder measures 2J, 2L and 2M. It lists no position on 2K and no City of Boulder candidates.",
+    "sources": [
+      "https://cwa-union.org/candidates-co"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "organization",
+    "related": []
   }
 ]
