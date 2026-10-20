@@ -1944,6 +1944,32 @@
    "source_title": "Tara’s Endorsers — Tara Winer for Council"
   },
   {
+   "id": "E375",
+   "endorser": {
+    "type": "person",
+    "slug": "renee-chacon",
+    "name": "Renee Chacon",
+    "title_as_printed": "former Commerce City Council member",
+    "page_url": "https://bouldervotes.org/people/renee-chacon.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Taishya Adams campaign lists Renee Chacon. Only the campaign says so.",
+   "claimed_by": "Taishya Adams campaign",
+   "published_on": null,
+   "source_url": "https://www.adamsforboulder.com/endorsements",
+   "source_title": "Endorsements – Adams for Boulder Mayor"
+  },
+  {
    "id": "E274",
    "endorser": {
     "type": "organization",
@@ -2866,6 +2892,32 @@
    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
   },
   {
+   "id": "E373",
+   "endorser": {
+    "type": "person",
+    "slug": "lauren-folkerts",
+    "name": "Lauren Folkerts",
+    "title_as_printed": "former Boulder city councilmember",
+    "page_url": "https://bouldervotes.org/people/lauren-folkerts.html"
+   },
+   "endorser_group": "former_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Taishya Adams campaign lists Lauren Folkerts. Only the campaign says so.",
+   "claimed_by": "Taishya Adams campaign",
+   "published_on": null,
+   "source_url": "https://www.adamsforboulder.com/endorsements",
+   "source_title": "Endorsements – Adams for Boulder Mayor"
+  },
+  {
    "id": "E232",
    "endorser": {
     "type": "person",
@@ -3776,6 +3828,32 @@
    "source_title": "Endorsements and Supporters – Benita Duran"
   },
   {
+   "id": "E376",
+   "endorser": {
+    "type": "person",
+    "slug": "wanda-james",
+    "name": "Wanda James",
+    "title_as_printed": "University of Colorado Regent",
+    "page_url": "https://bouldervotes.org/people/wanda-james.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Taishya Adams campaign lists Wanda James. Only the campaign says so.",
+   "claimed_by": "Taishya Adams campaign",
+   "published_on": null,
+   "source_url": "https://www.adamsforboulder.com/endorsements",
+   "source_title": "Endorsements – Adams for Boulder Mayor"
+  },
+  {
    "id": "E213",
    "endorser": {
     "type": "person",
@@ -4268,6 +4346,32 @@
    "published_on": null,
    "source_url": "https://rjforboulder.com/endorsements.html",
    "source_title": "Endorsements – Ryan Jamieson"
+  },
+  {
+   "id": "E374",
+   "endorser": {
+    "type": "person",
+    "slug": "jenn-kaaoush",
+    "name": "Jenn Kaaoush",
+    "title_as_printed": "Superior mayor pro tem",
+    "page_url": "https://bouldervotes.org/people/jenn-kaaoush.html"
+   },
+   "endorser_group": "current_elected",
+   "target": {
+    "type": "candidate",
+    "slug": "taishya-adams",
+    "name": "Taishya Adams",
+    "office": "mayor"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Taishya Adams campaign lists Jenn Kaaoush. Only the campaign says so.",
+   "claimed_by": "Taishya Adams campaign",
+   "published_on": null,
+   "source_url": "https://www.adamsforboulder.com/endorsements",
+   "source_title": "Endorsements – Adams for Boulder Mayor"
   },
   {
    "id": "E142",
