@@ -413,7 +413,7 @@ Brockett is seeking another term as Boulder mayor, a role he has held since 2021
 - In Boulder: moved to Boulder in 2003
 - Earlier city races: 2019 council (elected), 2023 mayor (elected)
 - Matching-funds participant (city clerk list).
-- Money, as of 2026-10-13 (21st day before election): raised $12,366; spent $10,892; matching funds $12,366; cash on hand $13,840. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3921
+- Money, as of 2026-10-20 (14th day before election): raised $12,366; spent $12,754; matching funds $12,366; cash on hand $11,978. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3948
 
 #### Aaron Brockett: lines by topic
 housing: B3, interview, F1Q1, F1Q4, F2Q17, F2Q18, F4Q43, F4Q45, F4Q46 YES on 2J, F4Q46 | climate/energy: F4Q40, F5Q48, F5Q49, F5Q50, F5Q51 | wildfire: F1Q1, F4Q47, F5Q49 | transportation: B2, F2Q19, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F2Q22, F4Q44 YES on 2K, F4Q44 | downtown/economy: B4, questionnaire | homelessness/safety: campaign_site, questionnaire | growth: F1Q4, F2Q18, F4Q45 | arts: F3Q27, F3Q32
@@ -887,7 +887,7 @@ Page: https://bouldervotes.org/people/lee-gilbert.html | Campaign site: https://
 Gilbert is an engineering consultant running for council for the first time. He focuses his campaign on reviewing major transportation projects, especially the Baseline corridor.
 - Occupation: Engineering consultant
 - Note: Source availability is narrower than for questionnaire respondents; silence is not a policy position.
-- Money, as of 2026-10-13 (21st day before election): raised $0; spent $80; matching funds $0; cash on hand $-80. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3924
+- Money, as of 2026-10-19 (14th day before election): raised $0; spent $80; matching funds $0; cash on hand $-80. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3943
 
 #### Lee Gilbert: lines by topic
 housing: B3, F4Q35, F4Q39 | climate/energy: none | wildfire: none | transportation: B2, campaign_site, F1Q1, F1Q5, F4Q33, F4Q34, F4Q37, F4Q40 | budget/taxes/2K: F4Q36 NO on 2K | downtown/economy: B4, F1Q10 | homelessness/safety: none | growth: none | arts: none
@@ -1660,7 +1660,7 @@ Grano previously served on Boulder City Council and is running again. Her campai
 - Public office: Boulder city councilmember, elected 2017; resigned 2019
 - In Boulder: first moved to Boulder in 2002; returned in 2007
 - Earlier city races: 2017 council (elected)
-- Money, as of 2026-10-13 (21st day before election): raised $12,423; spent $10,013; matching funds $12,366; cash on hand $14,776. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3930
+- Money, as of 2026-10-20 (14th day before election): raised $12,423; spent $14,778; matching funds $12,366; cash on hand $10,011. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3949
 
 #### Jill Grano: lines by topic
 housing: B3, F1Q1, F1Q4, F1Q14, F2Q17, F2Q18, F4Q33, F4Q34, F4Q35, F4Q39, F4Q39 YES on 2J, F4Q40 | climate/energy: none | wildfire: none | transportation: B2, F4Q37 | budget/taxes/2K: campaign_site, F4Q36 | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q4, F1Q16, F2Q18 | arts: none

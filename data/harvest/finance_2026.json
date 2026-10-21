@@ -1,5 +1,5 @@
 {
-  "retrieved_on": "2026-10-17",
+  "retrieved_on": "2026-10-21",
   "summary_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
   "summary_title": "City of Boulder Election Finance — Summary of Contributions and Expenditures (2026)",
   "list_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php",
@@ -209,11 +209,11 @@
       "person": "Aaron Brockett",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=313",
       "contributions_total": 12366.0,
-      "expenditures_total": 10891.8,
+      "expenditures_total": 12753.6,
       "matching_received": 12366.0,
       "in_kind": 0.0,
-      "cash_on_hand": 13840.2,
-      "reported_on": "2026-10-13",
+      "cash_on_hand": 11978.4,
+      "reported_on": "2026-10-20",
       "statements": [
         {
           "statement_id": 2839,
@@ -291,6 +291,22 @@
             "in_kind": 0.0,
             "expenditures": 10891.8,
             "cash_on_hand": 13840.2
+          },
+          "n_contributions": 0,
+          "n_expenditures": 3
+        },
+        {
+          "statement_id": 3948,
+          "label": "14th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3948",
+          "submitted_on": "2026-10-20",
+          "submitted_at": "2026-10-20 08:52:38.873",
+          "balance": {
+            "contributions": 12366.0,
+            "matching_received": 12366.0,
+            "in_kind": 0.0,
+            "expenditures": 12753.6,
+            "cash_on_hand": 11978.4
           },
           "n_contributions": 0,
           "n_expenditures": 3
@@ -2314,11 +2330,38 @@
         },
         {
           "first_name": "",
+          "last_name": "MailChimp",
+          "purpose": "Email service October",
+          "occurred_on": "2026-10-10",
+          "amount": 13.5,
+          "clerk_item_id": 9257,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
           "last_name": "Campaign Verify, Inc.",
           "purpose": "Fee for texting set-up",
           "occurred_on": "2026-10-12",
           "amount": 95.0,
           "clerk_item_id": 9183,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Rosetta Hall",
+          "purpose": "Election Gathering Space",
+          "occurred_on": "2026-10-15",
+          "amount": 400.0,
+          "clerk_item_id": 9258,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Scale to Win",
+          "purpose": "Texting",
+          "occurred_on": "2026-10-19",
+          "amount": 1448.3,
+          "clerk_item_id": 9259,
           "amends_id": null
         }
       ]
@@ -16723,11 +16766,11 @@
       "person": "Jill Grano",
       "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=309",
       "contributions_total": 12423.06,
-      "expenditures_total": 10012.63,
+      "expenditures_total": 14778.03,
       "matching_received": 12366.0,
       "in_kind": 0.0,
-      "cash_on_hand": 14776.43,
-      "reported_on": "2026-10-13",
+      "cash_on_hand": 10011.03,
+      "reported_on": "2026-10-20",
       "statements": [
         {
           "statement_id": 2836,
@@ -16808,6 +16851,22 @@
           },
           "n_contributions": 2,
           "n_expenditures": 3
+        },
+        {
+          "statement_id": 3949,
+          "label": "14th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3949",
+          "submitted_on": "2026-10-20",
+          "submitted_at": "2026-10-20 15:59:29.720",
+          "balance": {
+            "contributions": 12423.06,
+            "matching_received": 12366.0,
+            "in_kind": 0.0,
+            "expenditures": 14778.03,
+            "cash_on_hand": 10011.03
+          },
+          "n_contributions": 0,
+          "n_expenditures": 7
         }
       ],
       "contributions": [
@@ -19059,6 +19118,69 @@
           "amount": 498.94,
           "clerk_item_id": 9199,
           "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Prairie Mountain Media",
+          "purpose": "Advertising",
+          "occurred_on": "2026-10-15",
+          "amount": 1028.0,
+          "clerk_item_id": 9268,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Prairie Mountain Media",
+          "purpose": "Advertising",
+          "occurred_on": "2026-10-15",
+          "amount": 1000.0,
+          "clerk_item_id": 9269,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Fastsigns",
+          "purpose": "H Stakes for signs",
+          "occurred_on": "2026-10-16",
+          "amount": 337.4,
+          "clerk_item_id": 9270,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Rosetta Hall",
+          "purpose": "Campaign Party",
+          "occurred_on": "2026-10-16",
+          "amount": 400.0,
+          "clerk_item_id": 9271,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Ashley Eyre",
+          "purpose": "Goonies Show",
+          "occurred_on": "2026-10-16",
+          "amount": 1500.0,
+          "clerk_item_id": 9272,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Lucien King",
+          "purpose": "Lit dropping support",
+          "occurred_on": "2026-10-17",
+          "amount": 200.0,
+          "clerk_item_id": 9273,
+          "amends_id": null
+        },
+        {
+          "first_name": "",
+          "last_name": "Jennifer Weber",
+          "purpose": "Literature dropping support",
+          "occurred_on": "2026-10-17",
+          "amount": 300.0,
+          "clerk_item_id": 9274,
+          "amends_id": null
         }
       ]
     },
@@ -19075,7 +19197,7 @@
       "matching_received": 0.0,
       "in_kind": 0.0,
       "cash_on_hand": -80.0,
-      "reported_on": "2026-10-13",
+      "reported_on": "2026-10-19",
       "statements": [
         {
           "statement_id": 2846,
@@ -19131,6 +19253,22 @@
           "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3924",
           "submitted_on": "2026-10-13",
           "submitted_at": "2026-10-13 14:58:53.717",
+          "balance": {
+            "contributions": 0.0,
+            "matching_received": 0.0,
+            "in_kind": 0.0,
+            "expenditures": 80.0,
+            "cash_on_hand": -80.0
+          },
+          "n_contributions": 0,
+          "n_expenditures": 0
+        },
+        {
+          "statement_id": 3943,
+          "label": "14th day before election",
+          "url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3943",
+          "submitted_on": "2026-10-19",
+          "submitted_at": "2026-10-19 12:08:14.447",
           "balance": {
             "contributions": 0.0,
             "matching_received": 0.0,
