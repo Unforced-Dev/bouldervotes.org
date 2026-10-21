@@ -173,7 +173,7 @@ class TestChatPage(unittest.TestCase):
         self.assertIn("data-gateway=", s)
         self.assertIn("js/ask.js", s)
         self.assertNotIn("<style", s)
-        self.assertNotRegex(s, r"<script[^>]+src=[\"']https?://(?!static\.cloudflareinsights\.com)")
+        self.assertNotRegex(s, r"<script[^>]+src=[\"']https?://")
 
     def test_ask_js_has_no_third_party_or_cookies(self):
         js = ASK_JS.read_text(encoding="utf-8")
