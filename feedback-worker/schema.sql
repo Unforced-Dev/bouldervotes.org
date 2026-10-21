@@ -17,3 +17,12 @@ CREATE TABLE IF NOT EXISTS feedback (
 CREATE INDEX IF NOT EXISTS feedback_ip_time ON feedback (ip_hash, created_at);
 CREATE INDEX IF NOT EXISTS feedback_time    ON feedback (created_at);
 CREATE INDEX IF NOT EXISTS feedback_status  ON feedback (status, created_at);
+
+-- Page counts: one row per UTC day and page path, nothing else. No IP, user agent, referrer,
+-- cookie, visitor id or time finer than a day. Add-only; safe to re-run.
+CREATE TABLE IF NOT EXISTS page_counts (
+  day  TEXT    NOT NULL,                              -- YYYY-MM-DD, UTC
+  path TEXT    NOT NULL,                              -- e.g. / or /about.html
+  n    INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (day, path)
+);

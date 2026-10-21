@@ -160,14 +160,15 @@ REPO_URL = "https://github.com/Unforced-Dev/bouldervotes.org"
 # The feedback collector (Cloudflare Worker + D1, source in feedback-worker/).
 # The HTML form posts here; AI agents POST JSON to FEEDBACK_API.
 FEEDBACK_URL = "https://feedback.bouldervotes.org/"
-# Cloudflare Web Analytics (cookieless; JS-snippet mode because Pages traffic isn't proxied).
-# The token is public by design: it ships in every page's source.
-CF_ANALYTICS_TOKEN = "7a452d8fccb54d1aa4bc55d6bb758f6d"
-ANALYTICS_BEACON = ("<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" "
-                    f"data-cf-beacon='{{\"token\": \"{CF_ANALYTICS_TOKEN}\"}}'></script>")
 FEEDBACK_API = FEEDBACK_URL + "api/v1/feedback"
 # Footer placeholder, replaced with each page's own path after the build.
 PAGE_PATH_TOKEN = "__BV_PAGE_PATH__"
+# Page counts: each page tells our own Worker "+1 for this path today", once per load.
+# No cookies, no referrer, nothing about the visitor; the path is stamped at build time.
+COUNT_URL = FEEDBACK_URL + "api/v1/count"
+COUNT_SNIPPET = (f'<script>try{{fetch("{COUNT_URL}",{{method:"POST",keepalive:true,credentials:"omit",'
+                 f'referrerPolicy:"no-referrer",headers:{{"Content-Type":"text/plain"}},'
+                 f'body:\'{{"path":"{PAGE_PATH_TOKEN}"}}\'}}).catch(function(){{}})}}catch(e){{}}</script>')
 
 # The Learn section: hub groups, in order. (key, href, label, one plain line).
 # Keys with a page of their own get the section menu; the rest are links out.
@@ -350,7 +351,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
     </div>
   </div>
 </footer>
-{ANALYTICS_BEACON}
+{COUNT_SNIPPET}
 </body>
 </html>
 """
@@ -1747,7 +1748,7 @@ def main() -> None:
     </ul>
     <p>The site works without JavaScript and prints cleanly. Folded answers print in full.</p>
     <h2>Visitor counts</h2>
-    <p>We count visits with Cloudflare Web Analytics, which uses no cookies and does not follow you to other sites. It tells us how many people visit and which pages they read. We don't collect names, accounts or anything you type.</p>
+    <p>We keep one count per page per day, with our own small counter. When a page opens, it adds one to that page's count for the day. That's all we store: the date, the page, and the number. Nothing about you goes with it: no cookies, no IP address, no device or browser details, and not the page you came from. We use no outside analytics service.</p>
     <h2>Source code and data</h2>
     <p>The code that builds this site and the data behind it are public: <a href="{REPO_URL}">source code on GitHub</a>. The same facts are available as <a href="api/index.html">plain text and JSON</a>.</p>
     """.replace("{REPO_URL}", REPO_URL)
