@@ -204,6 +204,9 @@ describe("GET /api/v1/counts", () => {
     ]);
     const all = await (await mf.dispatchFetch(`${BASE}/api/v1/counts?days=60`, auth)).json();
     assert.equal(all.rows.length, 3);
+    for (const [q, want] of [["", 30], ["?days=0", 1], ["?days=-5", 1], ["?days=9999", 366], ["?days=abc", 30]]) {
+      assert.equal((await (await mf.dispatchFetch(`${BASE}/api/v1/counts${q}`, auth)).json()).days, want, q);
+    }
   });
 });
 

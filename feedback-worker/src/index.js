@@ -355,8 +355,8 @@ async function handleCount(request, env) {
   await env.DB.prepare(
     `INSERT INTO page_counts (day, path, n)
        SELECT ?1, ?2, 1
-       WHERE (SELECT COUNT(*) FROM page_counts WHERE day = ?1) < ?3
-          OR EXISTS (SELECT 1 FROM page_counts WHERE day = ?1 AND path = ?2)
+       WHERE EXISTS (SELECT 1 FROM page_counts WHERE day = ?1 AND path = ?2)
+          OR (SELECT COUNT(*) FROM page_counts WHERE day = ?1) < ?3
      ON CONFLICT (day, path) DO UPDATE SET n = n + 1 WHERE n < ?4`
   )
     .bind(day, path, COUNT.paths_per_day, COUNT.per_row_per_day)
@@ -367,7 +367,8 @@ async function handleCount(request, env) {
 // Admin: aggregate rows for the last N days (default 30, at most 366).
 async function handleCounts(request, env, url) {
   if (!authorized(request, env)) return json({ ok: false, error: "unauthorized" }, 401, { "WWW-Authenticate": "Bearer" });
-  const days = Math.min(Math.max(Math.floor(Number(url.searchParams.get("days"))) || 30, 1), 366);
+  const asked = Math.floor(Number(url.searchParams.get("days") ?? 30));
+  const days = Math.min(Math.max(Number.isFinite(asked) ? asked : 30, 1), 366);
   const since = new Date(Date.now() - (days - 1) * 86400e3).toISOString().slice(0, 10);
   const { results } = await env.DB.prepare(
     "SELECT day, path, n FROM page_counts WHERE day >= ? ORDER BY day DESC, n DESC, path"
