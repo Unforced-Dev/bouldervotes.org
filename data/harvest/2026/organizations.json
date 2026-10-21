@@ -1875,7 +1875,8 @@
       "https://www.ryanwithboulder.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
       "https://www.tinaforboulder.com/endorsements",
-      "https://strongerboulder.com/endorsements"
+      "https://strongerboulder.com/endorsements",
+      "https://brockett4mayor.org/endorsements/"
     ],
     "title": "Boulder city councilmember",
     "title_source_url": "https://rjforboulder.com/endorsements.html",
@@ -2122,7 +2123,8 @@
       "https://www.jillforcouncil.com/endorsements",
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
       "https://www.tinaforboulder.com/endorsements",
-      "https://www.benitaduran.com/new-page-2"
+      "https://www.benitaduran.com/new-page-2",
+      "https://brockett4mayor.org/endorsements/"
     ],
     "title": "former Boulder mayor",
     "title_source_url": "https://www.jillforcouncil.com/endorsements",
@@ -2467,7 +2469,8 @@
     "summary": "Benita Duran is identified as Boulder Library District trustee; 2026 council candidate on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
       "https://www.taraforboulder.com/endorsements/content/endorsers/",
-      "https://strongerboulder.com/endorsements"
+      "https://strongerboulder.com/endorsements",
+      "https://brockett4mayor.org/endorsements/"
     ],
     "title": "Boulder Library District trustee; 2026 council candidate",
     "title_source_url": "https://www.taraforboulder.com/endorsements/content/endorsers/",
@@ -4232,7 +4235,8 @@
     "past_endorsements": [],
     "summary": "Ryan Jamieson is identified as a 2026 Boulder candidate on a cited 2026 ballot-measure endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
-      "https://strongerboulder.com/endorsements"
+      "https://strongerboulder.com/endorsements",
+      "https://brockett4mayor.org/endorsements/"
     ],
     "title": "Candidate for Boulder City Council",
     "title_source_url": "https://strongerboulder.com/endorsements",
@@ -4353,7 +4357,8 @@
     "past_endorsements": [],
     "summary": "Matt Appelbaum is listed as former Mayor and Councilmember on Ryan Schuchard’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
     "sources": [
-      "https://www.ryanwithboulder.com/endorsements"
+      "https://www.ryanwithboulder.com/endorsements",
+      "https://brockett4mayor.org/endorsements/"
     ],
     "title": "former Mayor and Councilmember",
     "title_source_url": "https://www.ryanwithboulder.com/endorsements",
@@ -4493,6 +4498,166 @@
     "title": "University of Colorado Regent",
     "title_source_url": "https://www.adamsforboulder.com/endorsements",
     "weight_group": "current_elected",
+    "related": []
+  },
+  {
+    "slug": "brittany-pettersen",
+    "name": "Brittany Pettersen",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Brittany Pettersen",
+        "role": "U.S. Representative",
+        "source_url": "https://brockett4mayor.org/endorsements/",
+        "current": true,
+        "as_of": "2026-10-21"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Brittany Pettersen is listed as U.S. Representative on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://brockett4mayor.org/endorsements/"
+    ],
+    "title": "U.S. Representative",
+    "title_source_url": "https://brockett4mayor.org/endorsements/",
+    "weight_group": "current_elected",
+    "related": []
+  },
+  {
+    "slug": "katie-wallace",
+    "name": "Katie Wallace",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Katie Wallace",
+        "role": "Colorado state senator",
+        "source_url": "https://brockett4mayor.org/endorsements/",
+        "current": true,
+        "as_of": "2026-10-21"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Katie Wallace is listed as Colorado state senator on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://brockett4mayor.org/endorsements/"
+    ],
+    "title": "Colorado state senator",
+    "title_source_url": "https://brockett4mayor.org/endorsements/",
+    "weight_group": "current_elected",
+    "related": []
+  },
+  {
+    "slug": "george-karakehian",
+    "name": "George Karakehian",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "George Karakehian",
+        "role": "former Boulder City Council member",
+        "source_url": "https://brockett4mayor.org/endorsements/",
+        "current": true,
+        "as_of": "2026-10-21"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "George Karakehian is listed as former Boulder City Council member on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://brockett4mayor.org/endorsements/"
+    ],
+    "title": "former Boulder City Council member",
+    "title_source_url": "https://brockett4mayor.org/endorsements/",
+    "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "neil-shah",
+    "name": "Neil Shah",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Neil Shah",
+        "role": "Superior City Council member",
+        "source_url": "https://brockett4mayor.org/endorsements/",
+        "current": true,
+        "as_of": "2026-10-21"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Neil Shah is listed as Superior City Council member on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://brockett4mayor.org/endorsements/"
+    ],
+    "title": "Superior City Council member",
+    "title_source_url": "https://brockett4mayor.org/endorsements/",
+    "weight_group": "current_elected",
+    "related": []
+  },
+  {
+    "slug": "jason-serbu",
+    "name": "Jason Serbu",
+    "kind": "person",
+    "website": null,
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Jason Serbu",
+        "role": "former Superior City Council member",
+        "source_url": "https://brockett4mayor.org/endorsements/",
+        "current": true,
+        "as_of": "2026-10-21"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Jason Serbu is listed as former Superior City Council member on Aaron Brockett’s 2026 campaign endorsement page. This is a personal endorsement, not one made by the office.",
+    "sources": [
+      "https://brockett4mayor.org/endorsements/"
+    ],
+    "title": "former Superior City Council member",
+    "title_source_url": "https://brockett4mayor.org/endorsements/",
+    "weight_group": "former_elected",
     "related": []
   }
 ]

@@ -1057,6 +1057,32 @@
     "source_title": "Endorsements – Aaron Brockett For Mayor"
    },
    {
+    "id": "E382",
+    "endorser": {
+     "type": "person",
+     "slug": "matt-appelbaum",
+     "name": "Matt Appelbaum",
+     "title_as_printed": "former Mayor and Councilmember",
+     "page_url": "https://bouldervotes.org/people/matt-appelbaum.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Matt Appelbaum. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
     "id": "E224",
     "endorser": {
      "type": "person",
@@ -1333,6 +1359,32 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Aaron Brockett campaign lists Michael Dougherty. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E380",
+    "endorser": {
+     "type": "person",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "title_as_printed": "Boulder Library District trustee; 2026 council candidate",
+     "page_url": "https://bouldervotes.org/people/benita-duran.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Benita Duran. Only the campaign says so.",
     "claimed_by": "Aaron Brockett campaign",
     "published_on": null,
     "source_url": "https://brockett4mayor.org/endorsements/",
@@ -1729,6 +1781,32 @@
     "source_title": "Endorsements – Aaron Brockett For Mayor"
    },
    {
+    "id": "E381",
+    "endorser": {
+     "type": "person",
+     "slug": "ryan-jamieson",
+     "name": "Ryan Jamieson",
+     "title_as_printed": "Candidate for Boulder City Council",
+     "page_url": "https://bouldervotes.org/people/ryan-jamieson.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Ryan Jamieson. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
     "id": "E213",
     "endorser": {
      "type": "person",
@@ -1801,6 +1879,58 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Aaron Brockett campaign lists Junie Joseph. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E379",
+    "endorser": {
+     "type": "person",
+     "slug": "rob-kaplan",
+     "name": "Rob Kaplan",
+     "title_as_printed": "Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/rob-kaplan.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Rob Kaplan. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E383",
+    "endorser": {
+     "type": "person",
+     "slug": "george-karakehian",
+     "name": "George Karakehian",
+     "title_as_printed": "former Boulder City Council member",
+     "page_url": "https://bouldervotes.org/people/george-karakehian.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists George Karakehian. Only the campaign says so.",
     "claimed_by": "Aaron Brockett campaign",
     "published_on": null,
     "source_url": "https://brockett4mayor.org/endorsements/",
@@ -2041,6 +2171,32 @@
     "source_title": "Endorsements – Aaron Brockett For Mayor"
    },
    {
+    "id": "E377",
+    "endorser": {
+     "type": "person",
+     "slug": "brittany-pettersen",
+     "name": "Brittany Pettersen",
+     "title_as_printed": "U.S. Representative",
+     "page_url": "https://bouldervotes.org/people/brittany-pettersen.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Brittany Pettersen. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
     "id": "E218",
     "endorser": {
      "type": "person",
@@ -2191,6 +2347,58 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Aaron Brockett campaign lists Andy Schultheiss. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E386",
+    "endorser": {
+     "type": "person",
+     "slug": "jason-serbu",
+     "name": "Jason Serbu",
+     "title_as_printed": "former Superior City Council member",
+     "page_url": "https://bouldervotes.org/people/jason-serbu.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Jason Serbu. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E385",
+    "endorser": {
+     "type": "person",
+     "slug": "neil-shah",
+     "name": "Neil Shah",
+     "title_as_printed": "Superior City Council member",
+     "page_url": "https://bouldervotes.org/people/neil-shah.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Neil Shah. Only the campaign says so.",
     "claimed_by": "Aaron Brockett campaign",
     "published_on": null,
     "source_url": "https://brockett4mayor.org/endorsements/",
@@ -2430,6 +2638,32 @@
     "source_title": "Endorsements – Aaron Brockett For Mayor"
    },
    {
+    "id": "E378",
+    "endorser": {
+     "type": "person",
+     "slug": "katie-wallace",
+     "name": "Katie Wallace",
+     "title_as_printed": "Colorado state senator",
+     "page_url": "https://bouldervotes.org/people/katie-wallace.html"
+    },
+    "endorser_group": "current_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Katie Wallace. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
     "id": "E222",
     "endorser": {
      "type": "person",
@@ -2450,6 +2684,32 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Aaron Brockett campaign lists Mark Wallach. Only the campaign says so.",
+    "claimed_by": "Aaron Brockett campaign",
+    "published_on": null,
+    "source_url": "https://brockett4mayor.org/endorsements/",
+    "source_title": "Endorsements – Aaron Brockett For Mayor"
+   },
+   {
+    "id": "E384",
+    "endorser": {
+     "type": "person",
+     "slug": "sam-weaver",
+     "name": "Sam Weaver",
+     "title_as_printed": "former Boulder mayor",
+     "page_url": "https://bouldervotes.org/people/sam-weaver.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "aaron-brockett",
+     "name": "Aaron Brockett",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Aaron Brockett campaign lists Sam Weaver. Only the campaign says so.",
     "claimed_by": "Aaron Brockett campaign",
     "published_on": null,
     "source_url": "https://brockett4mayor.org/endorsements/",
