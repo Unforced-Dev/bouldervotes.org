@@ -59,6 +59,7 @@ Real workerd and a local D1 through miniflare (`node --test`):
 ```sh
 cd feedback-worker
 npm ci && npm test
+npm run e2e -- /tmp/shots   # headless Chromium + the built docs/, all local; needs chromium and openssl
 ```
 
 Secrets (already set; to rotate, pipe a new value):

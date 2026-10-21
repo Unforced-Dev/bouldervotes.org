@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test test/",
+    "e2e": "node e2e/browser.mjs"
   },
   "devDependencies": {
     "miniflare": "^4.20260730.0"
