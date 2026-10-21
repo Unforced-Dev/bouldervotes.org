@@ -1,0 +1,14 @@
+{
+  "name": "bouldervotes-feedback",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "miniflare": "^4.20260730.0"
+  },
+  "allowScripts": {
+    "workerd@1.20260730.1": true
+  }
+}

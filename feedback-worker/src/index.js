@@ -292,11 +292,103 @@ async function handleAdmin(request, env, url) {
   return json({ ok: true, status, count: results.length, rows: results });
 }
 
+// 5. Page counts. Each page on the site sends {"path": "/its/own/path.html"} once per load.
+// We keep one number per (UTC day, path) and nothing about the visitor.
+const COUNT = {
+  body_max_bytes: 512,
+  path_max: 200,
+  per_row_per_day: 50000, // one page can't be pushed past this in a day
+  paths_per_day: 2000, // nor can a script add endless made-up paths
+};
+const COUNT_PATH = /^\/(?:[a-z0-9_.-]+\/)*(?:[a-z0-9_.-]+\.html)?$/;
+
+function countCors(env) {
+  return {
+    "Access-Control-Allow-Origin": env.SITE_ORIGIN,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Max-Age": "86400",
+    Vary: "Origin",
+  };
+}
+
+// Reads at most `max` bytes; cancels the stream and returns null past that.
+async function readCapped(request, max) {
+  if (Number(request.headers.get("Content-Length") || 0) > max) return null;
+  if (!request.body) return "";
+  const reader = request.body.getReader();
+  const chunks = [];
+  let size = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    size += value.byteLength;
+    if (size > max) {
+      await reader.cancel().catch(() => {});
+      return null;
+    }
+    chunks.push(value);
+  }
+  const all = new Uint8Array(size);
+  let at = 0;
+  for (const c of chunks) {
+    all.set(c, at);
+    at += c.byteLength;
+  }
+  return new TextDecoder().decode(all);
+}
+
+async function handleCount(request, env) {
+  if (request.headers.get("Origin") !== env.SITE_ORIGIN) return new Response(null, { status: 403 });
+  const cors = countCors(env);
+  const text = await readCapped(request, COUNT.body_max_bytes);
+  if (text === null) return new Response(null, { status: 413, headers: cors });
+  let path;
+  try {
+    path = JSON.parse(text)?.path;
+  } catch {}
+  if (typeof path !== "string" || path.length > COUNT.path_max || !COUNT_PATH.test(path) || path.includes("..")) {
+    return new Response(null, { status: 400, headers: cors });
+  }
+  const day = new Date().toISOString().slice(0, 10);
+  // New paths only while the day has room; known paths only up to the per-row cap.
+  await env.DB.prepare(
+    `INSERT INTO page_counts (day, path, n)
+       SELECT ?1, ?2, 1
+       WHERE (SELECT COUNT(*) FROM page_counts WHERE day = ?1) < ?3
+          OR EXISTS (SELECT 1 FROM page_counts WHERE day = ?1 AND path = ?2)
+     ON CONFLICT (day, path) DO UPDATE SET n = n + 1 WHERE n < ?4`
+  )
+    .bind(day, path, COUNT.paths_per_day, COUNT.per_row_per_day)
+    .run();
+  return new Response(null, { status: 204, headers: cors });
+}
+
+// Admin: aggregate rows for the last N days (default 30, at most 366).
+async function handleCounts(request, env, url) {
+  if (!authorized(request, env)) return json({ ok: false, error: "unauthorized" }, 401, { "WWW-Authenticate": "Bearer" });
+  const days = Math.min(Math.max(Math.floor(Number(url.searchParams.get("days"))) || 30, 1), 366);
+  const since = new Date(Date.now() - (days - 1) * 86400e3).toISOString().slice(0, 10);
+  const { results } = await env.DB.prepare(
+    "SELECT day, path, n FROM page_counts WHERE day >= ? ORDER BY day DESC, n DESC, path"
+  )
+    .bind(since)
+    .all();
+  return json({ ok: true, days, since, rows: results });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, "") || "/";
     const method = request.method;
+
+    if (path === "/api/v1/count") {
+      if (method === "POST") return handleCount(request, env);
+      if (method === "OPTIONS") return new Response(null, { status: 204, headers: countCors(env) });
+      return new Response(null, { status: 405, headers: { Allow: "POST, OPTIONS" } });
+    }
+    if (path === "/api/v1/counts" && method === "GET") return handleCounts(request, env, url);
 
     if (path.startsWith("/api/") && method === "OPTIONS") return new Response(null, { status: 204, headers: CORS });
 
