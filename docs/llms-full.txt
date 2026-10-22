@@ -57,7 +57,7 @@ Jacobs is a 2026 Boulder mayoral candidate. Yellow Scene reported that she empha
 
 #### Money
 
-Raised $239.86; spent $239.86; matching funds received $0.00; cash on hand $0.00. As of 2026-10-15, the 21st day before election report (Elect Lisa Mayor); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3936
+Raised $641.44; spent $641.44; matching funds received $0.00; cash on hand $0.00. As of 2026-10-21, the 14th day before election report (Elect Lisa Mayor); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3958
 
 #### In their own words (statements)
 
@@ -145,7 +145,7 @@ Adams is a sitting Boulder councilmember seeking the mayor’s office. She empha
 
 #### Money
 
-Raised $9,096.62; spent $5,549.60; matching funds received $9,096.42; cash on hand $12,643.44. As of 2026-10-13, the 21st day before election report (Together with Taishya Adams); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3913
+Raised $10,853.30; spent $5,549.60; matching funds received $10,853.10; cash on hand $16,156.80. As of 2026-10-20, the 14th day before election report (Together with Taishya Adams); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3956
 
 #### In their own words (statements)
 
@@ -294,7 +294,7 @@ Brockett is seeking another term as Boulder mayor, a role he has held since 2021
 
 #### Money
 
-Raised $12,366.00; spent $12,753.60; matching funds received $12,366.00; cash on hand $11,978.40. As of 2026-10-20, the 14th day before election report (Aaron Brockett for Mayor); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3948
+Raised $12,366.00; spent $12,753.60; matching funds received $12,366.00; cash on hand $11,978.40. As of 2026-10-20, the 14th day before election report (Aaron Brockett for Mayor); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3948
 
 #### In their own words (statements)
 
@@ -505,7 +505,7 @@ Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU 
 
 #### Money
 
-Raised $600.00; spent $152.10; matching funds received $0.00; cash on hand $447.90. As of 2026-10-06, the 28th day before election report ("Committee For the Election of Jameson 'Jamo' Goldstein", "C.F.E.J.G"); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3904
+Raised $600.00; spent $415.90; matching funds received $0.00; cash on hand $184.10. As of 2026-10-20, the 21st day before election report ("Committee For the Election of Jameson 'Jamo' Goldstein", "C.F.E.J.G"); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3955
 
 #### In their own words (statements)
 
@@ -610,7 +610,7 @@ Smith has run for Boulder council four times and is now a mayoral candidate. Kno
 
 #### Money
 
-Raised $1,375.00; spent $1,317.57; matching funds received $0.00; cash on hand $57.43. As of 2026-10-13, the 21st day before election report (Grateful Fred Instead); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3929
+Raised $1,375.00; spent $1,317.57; matching funds received $0.00; cash on hand $57.43. As of 2026-10-21, the 14th day before election report (Grateful Fred Instead); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3960
 Note: Clerk contribution total includes $1,200.00 in loans.
 
 #### In their own words (statements)
@@ -709,8 +709,8 @@ La Grave is an entrepreneur seeking the mayor’s office for the first time. He 
 
 #### Money
 
-Raised $36,779.39; spent $15,399.24; matching funds received $0.00; cash on hand $21,380.15. As of 2026-10-14, the 3 days after committee certification report (Aquiles La Grave for Mayor); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2857
-Note: Clerk contribution total includes $9,424.39 in loans. As filed, the committee submitted its 3 days after committee certification report on Oct. 14, 2026, after its 21st day before election report; totals follow the later submission, as the clerk summary does.
+Raised $40,692.70; spent $18,559.87; matching funds received $0.00; cash on hand $22,132.83. As of 2026-10-20, the 14th day before election report (Aquiles La Grave for Mayor); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3944
+Note: Clerk contribution total includes $10,542.70 in loans.
 
 #### In their own words (statements)
 
@@ -861,7 +861,7 @@ Gilbert is an engineering consultant running for council for the first time. He 
 
 #### Money
 
-Raised $0.00; spent $80.00; matching funds received $0.00; cash on hand $-80.00. As of 2026-10-19, the 14th day before election report (Lee4Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3943
+Raised $0.00; spent $80.00; matching funds received $0.00; cash on hand $-80.00. As of 2026-10-19, the 14th day before election report (Lee4Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3943
 
 #### In their own words (statements)
 
@@ -935,7 +935,7 @@ Fuqua previously served on the Boulder Valley school board and is now seeking a 
 
 #### Money
 
-Raised $10,421.00; spent $9,265.06; matching funds received $10,021.00; cash on hand $11,176.94. As of 2026-10-13, the 21st day before election report (Sam Fuqua For Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3911
+Raised $10,521.00; spent $11,728.35; matching funds received $10,121.00; cash on hand $8,913.65. As of 2026-10-20, the 14th day before election report (Sam Fuqua For Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3947
 Note: Clerk contribution total includes $400.00 in loans.
 
 #### In their own words (statements)
@@ -1049,7 +1049,7 @@ Schuchard is a sitting Boulder councilmember seeking another term. He focuses on
 
 #### Money
 
-Raised $12,366.00; spent $9,959.12; matching funds received $12,366.00; cash on hand $14,772.88. As of 2026-10-13, the 21st day before election report (Friends of Ryan Schuchard); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3917
+Raised $12,366.00; spent $10,888.91; matching funds received $12,366.00; cash on hand $13,843.09. As of 2026-10-20, the 14th day before election report (Friends of Ryan Schuchard); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3946
 Note: Clerk contribution total includes $334.60 in loans.
 
 #### In their own words (statements)
@@ -1183,7 +1183,7 @@ Richmond is a first-time council candidate and a diversity and education consult
 
 #### Money
 
-Raised $7,766.37; spent $4,581.54; matching funds received $7,251.37; cash on hand $10,336.20. As of 2026-10-15, the 21st day before election report (Jamillah, A New Voice for Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3935
+Raised $7,866.37; spent $4,890.85; matching funds received $7,351.37; cash on hand $10,226.89. As of 2026-10-20, the 14th day before election report (Jamillah, A New Voice for Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3957
 
 #### In their own words (statements)
 
@@ -1282,7 +1282,7 @@ Duran is a government consultant running for Boulder council. She emphasizes aff
 
 #### Money
 
-Raised $9,052.50; spent $6,190.66; matching funds received $8,850.00; cash on hand $11,509.34. As of 2026-10-13, the 21st day before election report (Benita for Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3926
+Raised $9,627.50; spent $9,157.74; matching funds received $9,425.00; cash on hand $9,692.26. As of 2026-10-20, the 14th day before election report (Benita for Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3933
 Note: Clerk contribution total includes $348.29 in loans.
 
 #### In their own words (statements)
@@ -1402,7 +1402,7 @@ Winer is a sitting Boulder councilmember and mayor pro tem seeking reelection. S
 
 #### Money
 
-Raised $12,555.00; spent $12,738.05; matching funds received $12,366.00; cash on hand $12,182.95. As of 2026-10-12, the 21st day before election report (Tara Winer for Council); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3915
+Raised $12,555.00; spent $12,738.05; matching funds received $12,366.00; cash on hand $12,182.95. As of 2026-10-12, the 21st day before election report (Tara Winer for Council); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3915
 
 #### In their own words (statements)
 
@@ -1506,8 +1506,8 @@ Isaacson is again seeking a Boulder council seat after a previous campaign. Her 
 
 #### Money
 
-Raised $7,654.35; spent $13,353.16; matching funds received $7,346.00; cash on hand $1,636.11. As of 2026-10-13, the 28th day before election report (Rachel Rose for Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3895
-Note: Clerk contribution total includes $308.35 in loans. As filed, the committee submitted its 28th day before election report on Oct. 13, 2026, after its 21st day before election report; totals follow the later submission, as the clerk summary does.
+Raised $7,691.74; spent $13,690.55; matching funds received $7,346.00; cash on hand $1,336.11. As of 2026-10-20, the 14th day before election report (Rachel Rose for Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3954
+Note: Clerk contribution total includes $345.74 in loans.
 
 #### In their own words (statements)
 
@@ -1618,7 +1618,7 @@ Martus is a first-time council candidate and a senior adviser with a background 
 
 #### Money
 
-Raised $5,815.00; spent $4,066.96; matching funds received $5,715.00; cash on hand $7,463.04. As of 2026-10-15, the Additional Matching Funds report (David Martus for Boulder City Council); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3934
+Raised $6,315.00; spent $10,245.10; matching funds received $6,215.00; cash on hand $2,284.90. As of 2026-10-20, the 14th day before election report (David Martus for Boulder City Council); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3942
 
 #### In their own words (statements)
 
@@ -1697,7 +1697,7 @@ Rendleman is an attorney running for council for the first time. His stated prio
 
 #### Money
 
-Raised $3,750.00; spent $1,406.95; matching funds received $0.00; cash on hand $2,343.05. As of 2026-10-13, the 21st day before election report (Rendleman for Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3919
+Raised $4,150.00; spent $1,420.15; matching funds received $0.00; cash on hand $2,729.85. As of 2026-10-20, the 14th day before election report (Rendleman for Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3953
 
 #### In their own words (statements)
 
@@ -1793,7 +1793,7 @@ Grano previously served on Boulder City Council and is running again. Her campai
 
 #### Money
 
-Raised $12,423.06; spent $14,778.03; matching funds received $12,366.00; cash on hand $10,011.03. As of 2026-10-20, the 14th day before election report (Jill for Council); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3949
+Raised $12,423.06; spent $14,778.03; matching funds received $12,366.00; cash on hand $10,011.03. As of 2026-10-20, the 14th day before election report (Jill for Council); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3949
 
 #### In their own words (statements)
 
@@ -1939,7 +1939,7 @@ Jamieson is a cybersecurity consultant seeking a Boulder council seat. His campa
 
 #### Money
 
-Raised $11,800.00; spent $4,193.33; matching funds received $11,725.00; cash on hand $19,331.67. As of 2026-10-12, the 21st day before election report (Jamieson for Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3914
+Raised $12,360.00; spent $14,476.01; matching funds received $12,285.00; cash on hand $10,168.99. As of 2026-10-21, the 14th day before election report (Jamieson for Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3961
 
 #### In their own words (statements)
 
@@ -2056,7 +2056,7 @@ Segal is a retired ultrasonographer running for Boulder council. She advocates m
 
 #### Money
 
-Raised $200.00; spent $178.23; matching funds received $0.00; cash on hand $21.77. As of 2026-10-13, the 21st day before election report (Segal for Boulder); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3912
+Raised $200.00; spent $178.23; matching funds received $0.00; cash on hand $21.77. As of 2026-10-13, the 21st day before election report (Segal for Boulder); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3912
 
 #### In their own words (statements)
 
@@ -2145,7 +2145,7 @@ Marquis is a sitting councilmember seeking a second term. Her priorities include
 
 #### Money
 
-Raised $11,544.56; spent $8,589.25; matching funds received $11,544.55; cash on hand $14,499.86. As of 2026-10-13, the 21st day before election report (Tina for Boulder City Council); retrieved 2026-10-21. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3920
+Raised $11,844.56; spent $9,024.25; matching funds received $11,844.55; cash on hand $14,664.86. As of 2026-10-20, the 14th day before election report (Tina for Boulder City Council); retrieved 2026-10-22. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3950
 
 #### In their own words (statements)
 

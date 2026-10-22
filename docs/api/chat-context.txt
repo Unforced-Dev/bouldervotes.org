@@ -192,7 +192,7 @@ City Council (vote for up to five): 1. Lee Gilbert; 2. Sam Fuqua; 3. Ryan Schuch
 Page: https://bouldervotes.org/people/lisa-ann-jacobs.html
 Jacobs is a 2026 Boulder mayoral candidate. Yellow Scene reported that she emphasized fiscal sustainability, litigation and transparency at an August candidate forum.
 - Note: No BRL individual profile, Better Boulder answer, DBP PDF, or verified campaign website located by September 24, 2026; do not infer positions on other issues. The city campaign-finance list marks her website “To be developed”: https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=candidateList . The city candidate-video showcase includes her introduction, but a transcript was not available here: https://vimeo.com/showcase/12421306 .
-- Money, as of 2026-10-15 (21st day before election): raised $240; spent $240; matching funds $0; cash on hand $0. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3936
+- Money, as of 2026-10-21 (14th day before election): raised $641; spent $641; matching funds $0; cash on hand $0. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3958
 
 #### Lisa Ann Jacobs: lines by topic
 housing: F1Q3, F4Q43, F4Q45, F4Q46 NO on 2J | climate/energy: F5Q48, F5Q49, F5Q50, F5Q51 | wildfire: none | transportation: F1Q15, F4Q37 | budget/taxes/2K: F4Q44, F4Q47 | downtown/economy: none | homelessness/safety: F1Q1 | growth: none | arts: F3Q26
@@ -273,7 +273,7 @@ Adams is a sitting Boulder councilmember seeking the mayor’s office. She empha
 - Public office: Boulder city councilmember, elected 2023
 - In Boulder: moved to Boulder in summer 2013
 - Earlier city races: 2023 council (elected)
-- Money, as of 2026-10-13 (21st day before election): raised $9,097; spent $5,550; matching funds $9,096; cash on hand $12,643. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3913
+- Money, as of 2026-10-20 (14th day before election): raised $10,853; spent $5,550; matching funds $10,853; cash on hand $16,157. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3956
 
 #### Taishya Adams: lines by topic
 housing: B3, F4Q43, F4Q45, F4Q46 YES on 2J | climate/energy: interview, F1Q1, F2Q17, F4Q47, F5Q49, F5Q50, F5Q51 | wildfire: F3Q31, F5Q48 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F2Q17, F2Q22, F3Q32, F4Q44 | downtown/economy: B4, questionnaire, F1Q13 | homelessness/safety: questionnaire, F1Q1 | growth: F4Q45, F4Q40 | arts: F3Q27
@@ -556,7 +556,7 @@ What reporters wrote (the reporter's words, not the candidate's):
 Page: https://bouldervotes.org/people/jameson-goldstein.html | Campaign site: https://www.jamoformayor.org/
 Goldstein, also known as “Jamo,” is a first-time mayoral candidate and a CU Boulder student. His proposals include changes to housing taxation and ending the city’s Flock Safety camera contract.
 - Occupation: Student
-- Money, as of 2026-10-06 (28th day before election): raised $600; spent $152; matching funds $0; cash on hand $448. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3904
+- Money, as of 2026-10-20 (21st day before election): raised $600; spent $416; matching funds $0; cash on hand $184. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3955
 
 #### Jameson Goldstein: lines by topic
 housing: B3, F4Q43, F4Q45, F4Q46 YES on 2J | climate/energy: F4Q41, F5Q48, F5Q49, F5Q50, F5Q51 | wildfire: none | transportation: B2, F4Q37 | budget/taxes/2K: F3Q31, F4Q44 NO on 2K, F4Q44 | downtown/economy: B4 | homelessness/safety: F4Q47, F4Q40 | growth: none | arts: F3Q25, F3Q32
@@ -653,7 +653,7 @@ Smith has run for Boulder council four times and is now a mayoral candidate. Kno
 - Occupation: Laborer
 - In Boulder: moved to Boulder in the 1980s
 - Note: Source availability is narrower than for questionnaire respondents; silence is not a policy position. The city elections page lists “Fred Smith,” while the official campaign-finance list calls the ballot name “Grateful Fred Instead” and records legal name Michael Smith: https://webapps.bouldercolorado.gov/election/report.php?electionID=25&report=candidateList .
-- Money, as of 2026-10-13 (21st day before election): raised $1,375; spent $1,318; matching funds $0; cash on hand $57. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3929 Note: Clerk contribution total includes $1,200.00 in loans.
+- Money, as of 2026-10-21 (14th day before election): raised $1,375; spent $1,318; matching funds $0; cash on hand $57. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3960 Note: Clerk contribution total includes $1,200.00 in loans.
 
 #### Fred Smith: lines by topic
 housing: F4Q43, F4Q45, F4Q46 | climate/energy: F5Q49, F5Q50, F5Q51 | wildfire: none | transportation: F4Q37 | budget/taxes/2K: campaign_site, F1Q1, F1Q7, F3Q30, F4Q41, F4Q44, F4Q45 | downtown/economy: F1Q10 | homelessness/safety: none | growth: F1Q2 | arts: F3Q30, F3Q32
@@ -744,7 +744,7 @@ No endorsements on file. That is not opposition.
 Page: https://bouldervotes.org/people/aquiles-la-grave.html | Campaign site: https://boulder.vote/
 La Grave is an entrepreneur seeking the mayor’s office for the first time. He stresses government accountability, public safety and local economic activity.
 - Occupation: Entrepreneur
-- Money, as of 2026-10-14 (3 days after committee certification): raised $36,779; spent $15,399; matching funds $0; cash on hand $21,380. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=2857 Note: Clerk contribution total includes $9,424.39 in loans. As filed, the committee submitted its 3 days after committee certification report on Oct. 14, 2026, after its 21st day before election report; totals follow the later submission, as the clerk summary does.
+- Money, as of 2026-10-20 (14th day before election): raised $40,693; spent $18,560; matching funds $0; cash on hand $22,133. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3944 Note: Clerk contribution total includes $10,542.70 in loans.
 
 #### Aquiles La Grave: lines by topic
 housing: B3, F4Q43, F4Q45, F4Q46 | climate/energy: F5Q49, F5Q50, F5Q51 | wildfire: F1Q1, F2Q23 | transportation: B2, F4Q37 | budget/taxes/2K: F1Q1, F1Q7, F2Q21, F3Q31, F4Q44, F4Q44 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q8 | homelessness/safety: questionnaire | growth: F1Q5 | arts: F3Q32
@@ -954,7 +954,7 @@ Page: https://bouldervotes.org/people/sam-fuqua.html | Campaign site: https://ww
 Fuqua previously served on the Boulder Valley school board and is now seeking a council seat. He prioritizes affordable family housing, climate resilience and government transparency.
 - Occupation: Radio journalist
 - Public office: Boulder Valley School District board member
-- Money, as of 2026-10-13 (21st day before election): raised $10,421; spent $9,265; matching funds $10,021; cash on hand $11,177. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3911 Note: Clerk contribution total includes $400.00 in loans.
+- Money, as of 2026-10-20 (14th day before election): raised $10,521; spent $11,728; matching funds $10,121; cash on hand $8,914. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3947 Note: Clerk contribution total includes $400.00 in loans.
 
 #### Sam Fuqua: lines by topic
 housing: B3, F1Q1, F1Q12, F1Q16, F2Q17, F3Q29, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: B1, F2Q17, F2Q23 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes, F4Q40 | budget/taxes/2K: campaign_site, F2Q17, F4Q36 | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q12 | arts: F3Q29, F3Q32
@@ -1050,7 +1050,7 @@ Schuchard is a sitting Boulder councilmember seeking another term. He focuses on
 - Public office: Boulder city councilmember, elected 2023
 - In Boulder: moved to Boulder in 2019
 - Earlier city races: 2023 council (elected)
-- Money, as of 2026-10-13 (21st day before election): raised $12,366; spent $9,959; matching funds $12,366; cash on hand $14,773. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3917 Note: Clerk contribution total includes $334.60 in loans.
+- Money, as of 2026-10-20 (14th day before election): raised $12,366; spent $10,889; matching funds $12,366; cash on hand $13,843. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3946 Note: Clerk contribution total includes $334.60 in loans.
 
 #### Ryan Schuchard: lines by topic
 housing: B3, F1Q1, F1Q4, F2Q18, F4Q35, F4Q39 YES on 2J | climate/energy: F4Q34, F4Q40 | wildfire: campaign_site, F2Q23, F4Q34 | transportation: B2, F1Q9, F4Q37 | budget/taxes/2K: F3Q28, F4Q36 | downtown/economy: questionnaire, B4 | homelessness/safety: questionnaire | growth: F1Q4, F2Q18 | arts: none
@@ -1149,7 +1149,7 @@ Page: https://bouldervotes.org/people/jamillah-richmond.html | Campaign site: ht
 Richmond is a first-time council candidate and a diversity and education consultant. She advocates community-led governance, affordable housing and support for workers and small businesses.
 - Occupation: Diversity and education consultant
 - In Boulder: moved to Boulder in 2019
-- Money, as of 2026-10-15 (21st day before election): raised $7,766; spent $4,582; matching funds $7,251; cash on hand $10,336. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3935
+- Money, as of 2026-10-20 (14th day before election): raised $7,866; spent $4,891; matching funds $7,351; cash on hand $10,227. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3957
 
 #### Jamillah Richmond: lines by topic
 housing: B3, F1Q1, F2Q17, F4Q33, F4Q34, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F2Q23 | transportation: B2, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q10 | homelessness/safety: questionnaire | growth: none | arts: F3Q30, F3Q32
@@ -1237,7 +1237,7 @@ Page: https://bouldervotes.org/people/benita-duran.html | Campaign site: https:/
 Duran is a government consultant running for Boulder council. She emphasizes affordability, the local economy, wildfire preparedness and public safety.
 - Occupation: Government consultant
 - Earlier city races: 2019 council (lost)
-- Money, as of 2026-10-13 (21st day before election): raised $9,052; spent $6,191; matching funds $8,850; cash on hand $11,509. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3926 Note: Clerk contribution total includes $348.29 in loans.
+- Money, as of 2026-10-20 (14th day before election): raised $9,628; spent $9,158; matching funds $9,425; cash on hand $9,692. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3933 Note: Clerk contribution total includes $348.29 in loans.
 
 #### Benita Duran: lines by topic
 housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1, F1Q1 | transportation: B2, F4Q37 | budget/taxes/2K: F4Q34, F4Q36 NO on 2K, F4Q40 | downtown/economy: B4, questionnaire, F1Q11 | homelessness/safety: questionnaire | growth: F4Q34 | arts: F3Q26, F3Q32
@@ -1401,7 +1401,7 @@ Isaacson is again seeking a Boulder council seat after a previous campaign. Her 
 - Occupation: Barista
 - Earlier city races: 2025 council (lost)
 - Matching-funds participant (city clerk list).
-- Money, as of 2026-10-13 (28th day before election): raised $7,654; spent $13,353; matching funds $7,346; cash on hand $1,636. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3895 Note: Clerk contribution total includes $308.35 in loans. As filed, the committee submitted its 28th day before election report on Oct. 13, 2026, after its 21st day before election report; totals follow the later submission, as the clerk summary does.
+- Money, as of 2026-10-20 (14th day before election): raised $7,692; spent $13,691; matching funds $7,346; cash on hand $1,336. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3954 Note: Clerk contribution total includes $345.74 in loans.
 
 #### Rachel Rose Isaacson: lines by topic
 housing: B3, F1Q1, F1Q12, F2Q18, F4Q35, F4Q39 | climate/energy: F1Q5, F4Q40 | wildfire: F4Q33, F4Q34 | transportation: B2, F4Q37 | budget/taxes/2K: F1Q1, F2Q21, F2Q22, F3Q28, F4Q36 | downtown/economy: B4, questionnaire, F1Q6 | homelessness/safety: campaign_site, questionnaire, F4Q35 | growth: F1Q12, F2Q18 | arts: F3Q32
@@ -1500,7 +1500,7 @@ Page: https://bouldervotes.org/people/dave-martus.html | Campaign site: https://
 Martus is a first-time council candidate and a senior adviser with a background in institutional finance. He emphasizes budget oversight, government trust and changes to land-use regulation.
 - Occupation: Senior advisor
 - In Boulder: moved to Boulder in 1985
-- Money, as of 2026-10-15 (Additional Matching Funds): raised $5,815; spent $4,067; matching funds $5,715; cash on hand $7,463. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3934
+- Money, as of 2026-10-20 (14th day before election): raised $6,315; spent $10,245; matching funds $6,215; cash on hand $2,285. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3942
 
 #### Dave Martus: lines by topic
 housing: B3, F4Q35, F4Q39 NO on 2J | climate/energy: none | wildfire: B1 | transportation: B2, F4Q37 | budget/taxes/2K: F2Q17, F3Q32, F4Q33, F4Q34, F4Q36 NO on 2K | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: none | arts: F3Q29
@@ -1571,7 +1571,7 @@ Page: https://bouldervotes.org/people/scott-rendleman.html
 Rendleman is an attorney running for council for the first time. His stated priorities include wildfire preparedness, housing affordability and trust in city government.
 - Occupation: Attorney
 - In Boulder: moved to Boulder in 2011
-- Money, as of 2026-10-13 (21st day before election): raised $3,750; spent $1,407; matching funds $0; cash on hand $2,343. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3919
+- Money, as of 2026-10-20 (14th day before election): raised $4,150; spent $1,420; matching funds $0; cash on hand $2,730. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3953
 
 #### Scott Rendleman: lines by topic
 housing: B3, F1Q1, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F1Q1 | transportation: B2, F4Q37 | budget/taxes/2K: F4Q34, F4Q36 NO on 2K | downtown/economy: B4, questionnaire, F1Q8, F1Q13 | homelessness/safety: questionnaire | growth: F1Q5, F4Q40 | arts: F3Q27, F3Q32
@@ -1765,7 +1765,7 @@ What reporters wrote (the reporter's words, not the candidate's):
 Page: https://bouldervotes.org/people/ryan-jamieson.html | Campaign site: https://rjforboulder.com/
 Jamieson is a cybersecurity consultant seeking a Boulder council seat. His campaign focuses on code reform, fiscal oversight, housing and wildfire preparedness.
 - Occupation: Cybersecurity consultant
-- Money, as of 2026-10-12 (21st day before election): raised $11,800; spent $4,193; matching funds $11,725; cash on hand $19,332. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3914
+- Money, as of 2026-10-21 (14th day before election): raised $12,360; spent $14,476; matching funds $12,285; cash on hand $10,169. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3961
 
 #### Ryan Jamieson: lines by topic
 housing: B3, F1Q3, F1Q14, F4Q35, F4Q39 NO on 2J | climate/energy: F1Q1, F4Q34 | wildfire: F2Q23, F4Q33 | transportation: B2, F2Q19, F4Q37 | budget/taxes/2K: campaign_site, F1Q5, F2Q17, F2Q22, F4Q33, F4Q36 NO on 2K | downtown/economy: B4, questionnaire | homelessness/safety: questionnaire | growth: F1Q1 | arts: F3Q26, F3Q32
@@ -1949,7 +1949,7 @@ Marquis is a sitting councilmember seeking a second term. Her priorities include
 - Public office: Boulder city councilmember, elected 2023; previously BVSD school board
 - Earlier city races: 2023 council (elected)
 - Matching-funds participant (city clerk list).
-- Money, as of 2026-10-13 (21st day before election): raised $11,545; spent $8,589; matching funds $11,545; cash on hand $14,500. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3920
+- Money, as of 2026-10-20 (14th day before election): raised $11,845; spent $9,024; matching funds $11,845; cash on hand $14,665. City clerk filing: https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3950
 
 #### Tina Marquis: lines by topic
 housing: B3, F1Q1, F4Q33, F4Q35, F4Q39 YES on 2J | climate/energy: none | wildfire: F1Q1, F2Q23 | transportation: B2, F1Q9, F4Q37 YES on the Core Arterial Network / bus-only lanes | budget/taxes/2K: campaign_site, F2Q17, F2Q20, F4Q34, F4Q36 YES on 2K | downtown/economy: B4, questionnaire, F1Q6 | homelessness/safety: questionnaire, F1Q6 | growth: F4Q40 | arts: F3Q30, F3Q32
