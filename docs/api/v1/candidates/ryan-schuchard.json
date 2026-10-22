@@ -854,6 +854,31 @@
     "source_title": "Endorsements — Re-Elect Ryan Schuchard"
    },
    {
+    "id": "E388",
+    "endorser": {
+     "type": "organization",
+     "slug": "cwa-local-7799",
+     "name": "CWA Local 7799",
+     "page_url": "https://bouldervotes.org/orgs/cwa-local-7799.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "ryan-schuchard",
+     "name": "Ryan Schuchard",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Ryan Schuchard campaign lists CWA Local 7799. Only the campaign says so.",
+    "claimed_by": "Ryan Schuchard campaign",
+    "published_on": null,
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard"
+   },
+   {
     "id": "E276",
     "endorser": {
      "type": "organization",
