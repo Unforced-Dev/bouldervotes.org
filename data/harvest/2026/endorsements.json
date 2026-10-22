@@ -10143,5 +10143,80 @@
       "evidence_url": "https://brockett4mayor.org/endorsements/",
       "note": "Aaron Brockett for Mayor campaign endorsement page, read in a browser Oct. 21, 2026. Listed as 'Former Superior City Council' / 'Jason Serbu' on the page headed 'Aaron is honored to be endorsed by an extraordinary coalition of 121 elected officials, community leaders, and neighbors'. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E387",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Candidate site lists the group among endorsements; independent statement not located.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-22",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Benita Duran campaign endorsement page, read in a browser Oct. 22, 2026. Listed as 'PROUD TO BE ENDORSED BY / CWA Local 7799 / Communications Workers of America public sector union'. Campaign's claim; cwa7799.org and cwa-union.org/candidates-co list no City of Boulder candidates."
+    }
+  },
+  {
+    "id": "E388",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": "Ryan Schuchard",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Ryan Schuchard campaign",
+    "source_url": "https://www.ryanwithboulder.com/endorsements",
+    "source_title": "Endorsements — Re-Elect Ryan Schuchard",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Candidate site lists the group among endorsements; independent statement not located.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-22",
+      "evidence_url": "https://www.ryanwithboulder.com/endorsements",
+      "note": "Ryan Schuchard campaign endorsement page, read in a browser Oct. 22, 2026. Sentence 'I am proud and grateful to earn the endorsements of ... CWA 7799 (public sector union), ...'. Campaign's claim; cwa7799.org and cwa-union.org/candidates-co list no City of Boulder candidates."
+    }
+  },
+  {
+    "id": "E389",
+    "endorser": "Lisa Morzel",
+    "endorser_type": "person",
+    "endorser_slug": "lisa-morzel",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Office/title as stated on the cited candidate campaign page; personal endorsement, not an endorsement by the office.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-22",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Benita Duran campaign endorsement page, read in a browser Oct. 22, 2026. Listed as 'Lisa Morzel / Former Boulder City Council' in the endorsers list. Campaign's claim; no endorser-authored statement found."
+    }
   }
 ]

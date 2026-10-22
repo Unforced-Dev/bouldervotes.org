@@ -612,6 +612,31 @@
     "source_title": "Endorsements and Supporters – Benita Duran"
    },
    {
+    "id": "E387",
+    "endorser": {
+     "type": "organization",
+     "slug": "cwa-local-7799",
+     "name": "CWA Local 7799",
+     "page_url": "https://bouldervotes.org/orgs/cwa-local-7799.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Benita Duran campaign lists CWA Local 7799. Only the campaign says so.",
+    "claimed_by": "Benita Duran campaign",
+    "published_on": null,
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran"
+   },
+   {
     "id": "E262",
     "endorser": {
      "type": "person",
@@ -943,6 +968,32 @@
     "provenance": "campaign_claim",
     "provenance_label": "Campaign claim",
     "label": "Benita Duran campaign lists Mardi Moore. Only the campaign says so.",
+    "claimed_by": "Benita Duran campaign",
+    "published_on": null,
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran"
+   },
+   {
+    "id": "E389",
+    "endorser": {
+     "type": "person",
+     "slug": "lisa-morzel",
+     "name": "Lisa Morzel",
+     "title_as_printed": "former Boulder city councilmember",
+     "page_url": "https://bouldervotes.org/people/lisa-morzel.html"
+    },
+    "endorser_group": "former_elected",
+    "target": {
+     "type": "candidate",
+     "slug": "benita-duran",
+     "name": "Benita Duran",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "provenance_label": "Campaign claim",
+    "label": "Benita Duran campaign lists Lisa Morzel. Only the campaign says so.",
     "claimed_by": "Benita Duran campaign",
     "published_on": null,
     "source_url": "https://www.benitaduran.com/new-page-2",

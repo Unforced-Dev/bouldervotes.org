@@ -2402,7 +2402,8 @@
     "summary": "Lisa Morzel is identified as former Boulder city councilmember on a cited 2026 candidate endorsement page. Their personal endorsements are recorded separately from any organization or elected office.",
     "sources": [
       "https://rjforboulder.com/endorsements.html",
-      "https://www.jillforcouncil.com/endorsements"
+      "https://www.jillforcouncil.com/endorsements",
+      "https://www.benitaduran.com/new-page-2"
     ],
     "title": "former Boulder city councilmember",
     "title_source_url": "https://www.jillforcouncil.com/endorsements",
@@ -4658,6 +4659,29 @@
     "title": "former Superior City Council member",
     "title_source_url": "https://brockett4mayor.org/endorsements/",
     "weight_group": "former_elected",
+    "related": []
+  },
+  {
+    "slug": "cwa-local-7799",
+    "name": "CWA Local 7799",
+    "kind": "organization",
+    "website": "https://www.cwa7799.org/",
+    "legal_form": null,
+    "mission_quote": null,
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "A Colorado public-sector local of the Communications Workers of America. Two 2026 Boulder City Council campaigns list it as an endorser; its own website lists no City of Boulder endorsements as of Oct. 22, 2026.",
+    "sources": [
+      "https://www.cwa7799.org/",
+      "https://www.benitaduran.com/new-page-2",
+      "https://www.ryanwithboulder.com/endorsements"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "organization",
     "related": []
   }
 ]
