@@ -188,5 +188,71 @@
     "end_time_source": "organizer page",
     "secondary_sources": [],
     "notes": "Found by Aaron. An older listing (id 1907835) and an Oct 8 registration page are dead; the live organizer page says Sept 30."
+  },
+  {
+    "id": "2026-10-28-kgnu-council-forum-2",
+    "title": "KGNU Boulder City Council Candidate Forum, Part 2",
+    "hosts": [
+      "KGNU Community Radio"
+    ],
+    "date": "2026-10-28",
+    "start_time": "08:30",
+    "end_time": "09:30",
+    "venue_name": null,
+    "venue_address": null,
+    "in_person": false,
+    "where_label": "KGNU radio, A Public Affair",
+    "voter_note": "On the radio, on KGNU's morning show A Public Affair. No ticket needed. KGNU hasn't said which candidates are in this part. KGNU posted audio of Part 1 on its site.",
+    "registration_url": null,
+    "cost": "free (radio broadcast)",
+    "livestream_url": "https://kgnu.org/ways-to-listen",
+    "recording_plan": "KGNU posted Part 1 audio on its own page the day it aired",
+    "races": [
+      "council"
+    ],
+    "candidates_invited_or_confirmed": null,
+    "accessibility": null,
+    "source_url": "https://kgnu.org/boulder-city-council-candidate-forum-part-i/",
+    "source_quote": "Thirteen candidates are vying for five seats on Boulder’s City Council this election. KGNU will host on-air forums with the candidates on A Public Affair in three parts: Part 1 Thursday, October 22 Part 2 Wednesday, October 28 Part 3 Thursday, October 29",
+    "time_source": "https://kgnu.org/shows/a-public-affair/ ('Wednesday, Thursday: 8:30am - 9:30am')",
+    "secondary_sources": [
+      "https://kgnu.org/shows/a-public-affair/"
+    ],
+    "retrieved_on": "2026-10-23",
+    "confidence": "confirmed",
+    "notes": "Date from KGNU's Part 1 story (Oct. 22); time from the show's schedule page. Part 1 had Marquis, Duran, Winer and Schuchard; KGNU has not named who appears in Parts 2 and 3."
+  },
+  {
+    "id": "2026-10-29-kgnu-council-forum-3",
+    "title": "KGNU Boulder City Council Candidate Forum, Part 3",
+    "hosts": [
+      "KGNU Community Radio"
+    ],
+    "date": "2026-10-29",
+    "start_time": "08:30",
+    "end_time": "09:30",
+    "venue_name": null,
+    "venue_address": null,
+    "in_person": false,
+    "where_label": "KGNU radio, A Public Affair",
+    "voter_note": "On the radio, on KGNU's morning show A Public Affair. No ticket needed. KGNU hasn't said which candidates are in this part. KGNU posted audio of Part 1 on its site.",
+    "registration_url": null,
+    "cost": "free (radio broadcast)",
+    "livestream_url": "https://kgnu.org/ways-to-listen",
+    "recording_plan": "KGNU posted Part 1 audio on its own page the day it aired",
+    "races": [
+      "council"
+    ],
+    "candidates_invited_or_confirmed": null,
+    "accessibility": null,
+    "source_url": "https://kgnu.org/boulder-city-council-candidate-forum-part-i/",
+    "source_quote": "Thirteen candidates are vying for five seats on Boulder’s City Council this election. KGNU will host on-air forums with the candidates on A Public Affair in three parts: Part 1 Thursday, October 22 Part 2 Wednesday, October 28 Part 3 Thursday, October 29",
+    "time_source": "https://kgnu.org/shows/a-public-affair/ ('Wednesday, Thursday: 8:30am - 9:30am')",
+    "secondary_sources": [
+      "https://kgnu.org/shows/a-public-affair/"
+    ],
+    "retrieved_on": "2026-10-23",
+    "confidence": "confirmed",
+    "notes": "Date from KGNU's Part 1 story (Oct. 22); time from the show's schedule page. Part 1 had Marquis, Duran, Winer and Schuchard; KGNU has not named who appears in Parts 2 and 3."
   }
 ]
