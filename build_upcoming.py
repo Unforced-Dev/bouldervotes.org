@@ -62,10 +62,16 @@ def _what(e: dict) -> str:
 
 
 def _where(e: dict) -> str:
+    if e.get("where_label"):
+        return e["where_label"]
     if not e.get("in_person"):
         return "Online (Zoom)"
     parts = [e.get("venue_name"), e.get("venue_address")]
     return ", ".join(p for p in parts if p)
+
+
+def _note(e: dict) -> str:
+    return e.get("voter_note") or VOTER_NOTES.get(e["id"], "")
 
 
 def upcoming(today: dt.date | None = None) -> list[dict]:
@@ -96,7 +102,7 @@ def upcoming_html(prefix: str = "") -> str:
             f"<h3>{esc(e['title'])}</h3>"
             f"<p><strong>{esc(_what(e))}</strong> · {esc(_where(e))}</p>"
             f"<p class='meta'>Hosted by {esc(hosts)}</p>"
-            f"<p>{esc(VOTER_NOTES.get(e['id'], ''))}</p>"
+            f"<p>{esc(_note(e))}</p>"
             f"<p><a class='btn secondary' href='{esc(link)}'>{label}</a> "
             f"<a href='{esc(e['source_url'])}'>Organizer's page</a></p>"
             "</li>"
@@ -113,6 +119,6 @@ def upcoming_md() -> str:
     for e in rows:
         link = e.get("registration_url") or e["source_url"]
         lines.append(f"- {_when(e)} (Mountain): {e['title']}. {_what(e)}. {_where(e)}. "
-                     f"Hosted by {' and '.join(e.get('hosts') or [])}. {VOTER_NOTES.get(e['id'], '')} "
+                     f"Hosted by {' and '.join(e.get('hosts') or [])}. {_note(e)} "
                      f"Source: {e['source_url']}" + (f" Register: {link}" if link != e["source_url"] else ""))
     return "\n".join(lines)

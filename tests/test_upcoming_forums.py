@@ -35,6 +35,13 @@ class TestUpcomingForums(unittest.TestCase):
         self.assertIn("2026-09-30-bolo-barha-council-mayor", before)
         self.assertNotIn("2026-09-30-bolo-barha-council-mayor", after)
 
+    def test_optional_where_label_and_voter_note(self):
+        from build_upcoming import _note, _where
+        e = {"id": "x", "in_person": False, "where_label": "KGNU radio", "voter_note": "On the radio."}
+        self.assertEqual(_where(e), "KGNU radio")
+        self.assertEqual(_note(e), "On the radio.")
+        self.assertEqual(_where({"id": "y", "in_person": False}), "Online (Zoom)")
+
     def test_rendered_on_forums_page_and_llms(self):
         s = (DOCS / "forums.html").read_text(encoding="utf-8")
         self.assertIn("Upcoming forums you can attend", s)
