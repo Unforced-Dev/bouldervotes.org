@@ -1734,6 +1734,8 @@ def main() -> None:
     about = """
     <h1>About Boulder Votes</h1>
     <p>Boulder Votes is a guide to City of Boulder elections, written with older voters in mind. It covers the mayor and city council races and the city ballot measures.</p>
+    <h2>Who makes it</h2>
+    <p>Made by Aaron Gabriel Neyer, a Boulder resident, as a volunteer project. No campaign or party is involved.</p>
     <h2>What we won't do</h2>
     <p>We don't endorse, rank or score candidates or measures, and we don't tell you how to vote. We treat every candidate the same way and list them in ballot order.</p>
     <h2>Where the facts come from</h2>
