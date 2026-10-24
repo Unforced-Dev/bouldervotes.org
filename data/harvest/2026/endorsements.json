@@ -10218,5 +10218,30 @@
       "evidence_url": "https://www.benitaduran.com/new-page-2",
       "note": "Benita Duran campaign endorsement page, read in a browser Oct. 22, 2026. Listed as 'Lisa Morzel / Former Boulder City Council' in the endorsers list. Campaign's claim; no endorser-authored statement found."
     }
+  },
+  {
+    "id": "E390",
+    "endorser": "Quiet Enjoyment Project",
+    "endorser_type": "organization",
+    "endorser_slug": "quiet-enjoyment-project",
+    "candidate": "Benita Duran",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "campaign_claim",
+    "claimed_by": "Benita Duran campaign",
+    "source_url": "https://www.benitaduran.com/new-page-2",
+    "source_title": "Endorsements and Supporters – Benita Duran",
+    "published_on": null,
+    "status": "published",
+    "audit": null,
+    "notes": "Candidate site lists the group among endorsements; independent statement not located.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-24",
+      "evidence_url": "https://www.benitaduran.com/new-page-2",
+      "note": "Benita Duran campaign endorsement page, read in a browser Oct. 24, 2026. Listed as 'PROUD TO BE ENDORSED BY / Quiet Enjoyment Project / University Hill neighborhood group'. Campaign's claim; quietenjoymentproject.org (home and About pages, Oct. 24, 2026) names no candidates."
+    }
   }
 ]

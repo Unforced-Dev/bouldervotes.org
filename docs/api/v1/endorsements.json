@@ -5917,6 +5917,31 @@
    "source_title": "Endorsements – Jill for City Council"
   },
   {
+   "id": "E390",
+   "endorser": {
+    "type": "organization",
+    "slug": "quiet-enjoyment-project",
+    "name": "Quiet Enjoyment Project",
+    "page_url": "https://bouldervotes.org/orgs/quiet-enjoyment-project.html"
+   },
+   "endorser_group": "organization",
+   "target": {
+    "type": "candidate",
+    "slug": "benita-duran",
+    "name": "Benita Duran",
+    "office": "council"
+   },
+   "position": "support",
+   "rank": null,
+   "provenance": "campaign_claim",
+   "provenance_label": "Campaign claim",
+   "label": "Benita Duran campaign lists Quiet Enjoyment Project. Only the campaign says so.",
+   "claimed_by": "Benita Duran campaign",
+   "published_on": null,
+   "source_url": "https://www.benitaduran.com/new-page-2",
+   "source_title": "Endorsements and Supporters – Benita Duran"
+  },
+  {
    "id": "E71",
    "endorser": {
     "type": "organization",
