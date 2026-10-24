@@ -4683,5 +4683,27 @@
     "title_source_url": null,
     "weight_group": "organization",
     "related": []
+  },
+  {
+    "slug": "quiet-enjoyment-project",
+    "name": "Quiet Enjoyment Project",
+    "kind": "organization",
+    "website": "https://quietenjoymentproject.org/",
+    "legal_form": null,
+    "mission_quote": null,
+    "founded": null,
+    "leadership": [],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "A resident initiative founded on University Hill in 2025 that publishes noise-complaint data and works on enforcement of Boulder's noise laws. Its About page says it is not affiliated with the University Hill Neighborhood Association, the University of Colorado or the City of Boulder. One 2026 City Council campaign lists it as an endorser; its own website names no candidates as of Oct. 24, 2026.",
+    "sources": [
+      "https://quietenjoymentproject.org/about.html",
+      "https://www.benitaduran.com/new-page-2"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "organization",
+    "related": []
   }
 ]

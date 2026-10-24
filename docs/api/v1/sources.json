@@ -1942,6 +1942,15 @@
   },
   {
    "id": 284,
+   "url": "https://quietenjoymentproject.org/about.html",
+   "title": "https://quietenjoymentproject.org/about.html",
+   "kind": "article",
+   "year": 2026,
+   "published_on": null,
+   "publisher": null
+  },
+  {
+   "id": 285,
    "url": "https://bouldercolorado.gov/guide/recreation-and-safety-bond",
    "title": "https://bouldercolorado.gov/guide/recreation-and-safety-bond",
    "kind": "official",
@@ -1950,7 +1959,7 @@
    "publisher": null
   },
   {
-   "id": 285,
+   "id": 286,
    "url": "https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures",
    "title": "https://bouldercolorado.gov/news/city-council-voices-support-four-november-ballot-measures",
    "kind": "article",
@@ -1959,7 +1968,7 @@
    "publisher": null
   },
   {
-   "id": 286,
+   "id": 287,
    "url": "https://planboulder.org/2026-city-council-candidate-endorsements",
    "title": "2026 Candidate Endorsements (PLAN-Boulder County)",
    "kind": "article",
@@ -1968,7 +1977,7 @@
    "publisher": null
   },
   {
-   "id": 287,
+   "id": 288,
    "url": "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
    "title": "Announcing BP's Strongest Slate Ever for 2026 Election (Boulder Progressives)",
    "kind": "article",
@@ -1977,7 +1986,7 @@
    "publisher": null
   },
   {
-   "id": 288,
+   "id": 289,
    "url": "https://blog.boulderprogressives.org/our-2026-ballot-measure-positions/",
    "title": "Our 2026 ballot measure positions (Boulder Progressives)",
    "kind": "article",
@@ -1986,7 +1995,7 @@
    "publisher": null
   },
   {
-   "id": 289,
+   "id": 290,
    "url": "https://www.boulderchamber.com/2026/09/09/boulder-chamber-takes-measured-approach-2026/",
    "title": "Boulder Chamber takes measured approach to 2026 ballot measures (Boulder Chamber)",
    "kind": "article",
@@ -1995,7 +2004,7 @@
    "publisher": null
   },
   {
-   "id": 290,
+   "id": 291,
    "url": "https://www.instagram.com/p/DdFbfKijZtU/",
    "title": "@boulderdsa on Instagram: DSA endorses Taishya Adams and Jamillah Richmond",
    "kind": "article",
@@ -2004,7 +2013,7 @@
    "publisher": null
   },
   {
-   "id": 291,
+   "id": 292,
    "url": "https://boulderdsa.org/voterguide",
    "title": "2026 General Election Voter Guide (Boulder County DSA)",
    "kind": "article",
@@ -2013,7 +2022,7 @@
    "publisher": null
   },
   {
-   "id": 292,
+   "id": 293,
    "url": "https://planboulder.org/2026-ballot-issue-endorsements",
    "title": "2026 Ballot Issue Endorsements",
    "kind": "article",
@@ -2022,7 +2031,7 @@
    "publisher": null
   },
   {
-   "id": 293,
+   "id": 294,
    "url": "https://boulderreportinglab.org/2026/08/30/kc-becker-boulder-deserves-a-better-bond-proposal-not-a-400-million-blank-check",
    "title": "KC Becker: Boulder deserves a better bond proposal, not a $400 million blank check (opinion, Boulder Reporting Lab)",
    "kind": "article",
@@ -2031,7 +2040,7 @@
    "publisher": null
   },
   {
-   "id": 294,
+   "id": 295,
    "url": "https://www.dailycamera.com/2026/10/11/boulder-city-county-ballot-measures-2k-vacancy-tax-endorsement/",
    "title": "Let common sense prevail in city and county ballot measures (Editorial, Boulder Daily Camera)",
    "kind": "article",
@@ -2040,7 +2049,7 @@
    "publisher": null
   },
   {
-   "id": 295,
+   "id": 296,
    "url": "https://www.dailycamera.com/2026/10/18/colorado-election-propositions-vote-endorsements/",
    "title": "Support investments in our future and reject disingenuous culture war issues (Editorial, Boulder Daily Camera)",
    "kind": "article",
@@ -2049,7 +2058,7 @@
    "publisher": null
   },
   {
-   "id": 296,
+   "id": 297,
    "url": "https://www.youtube.com/watch?v=CQlalpB7N5w",
    "title": "2026 | Boulder City Council Candidate Forum (Boulder Chamber, YouTube)",
    "kind": "video",
@@ -2058,7 +2067,7 @@
    "publisher": "Boulder Chamber"
   },
   {
-   "id": 297,
+   "id": 298,
    "url": "https://www.youtube.com/watch?v=gdZzGJNB7g0",
    "title": "City of Boulder Colorado Candidate-Forum - 090226 (greenlight studios, YouTube)",
    "kind": "video",
@@ -2067,7 +2076,7 @@
    "publisher": "Better Boulder"
   },
   {
-   "id": 298,
+   "id": 299,
    "url": "https://www.youtube.com/watch?v=PlXLjT1gH5U",
    "title": "(Pt 1/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -2076,7 +2085,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 299,
+   "id": 300,
    "url": "https://www.youtube.com/watch?v=Syj4_V5cQOk",
    "title": "(Pt 2/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -2085,7 +2094,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 300,
+   "id": 301,
    "url": "https://www.youtube.com/watch?v=1At-W2cR9Mk",
    "title": "(Pt 3/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -2094,7 +2103,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 301,
+   "id": 302,
    "url": "https://www.youtube.com/watch?v=Q1PXyt_DLqw",
    "title": "(Pt 4/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -2103,7 +2112,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 302,
+   "id": 303,
    "url": "https://www.youtube.com/watch?v=szDYv-0rIgU",
    "title": "(Pt 5/5) 2026 City Council Candidates Forum on Arts and Culture (Boulder County Arts Alliance, YouTube)",
    "kind": "video",
@@ -2112,7 +2121,7 @@
    "publisher": "Boulder County Arts Alliance"
   },
   {
-   "id": 303,
+   "id": 304,
    "url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
    "title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
    "kind": "video",
@@ -2121,7 +2130,7 @@
    "publisher": "League of Women Voters of Boulder County"
   },
   {
-   "id": 304,
+   "id": 305,
    "url": "https://www.youtube.com/watch?v=U3iEinbzOk0",
    "title": "Empower Hour 2026-10-06 Climate & Energy Forum with Boulder Boulder Mayoral Candidates. (Empower Our Future, YouTube)",
    "kind": "video",
