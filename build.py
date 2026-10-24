@@ -1341,6 +1341,33 @@ def main() -> None:
         if cand26:
             bits.extend(history)
 
+        gifts = q(
+            """SELECT recv.full_name AS recv, recv.slug AS recv_slug, li.display_name,
+                      li.amount, li.occurred_on, li.item_type, li.statement_url
+               FROM finance_line_items li
+               JOIN finance_snapshots fs ON fs.id=li.snapshot_id
+               JOIN people recv ON recv.id=fs.person_id
+               WHERE li.direction='contribution' AND li.year=2026
+                 AND li.donor_person_id=? AND fs.person_id != li.donor_person_id
+               ORDER BY li.occurred_on, recv.sort_name""",
+            (p["id"],),
+        ).fetchall()
+        if gifts:
+            bits.append("<h2 id='gifts'>Gifts to 2026 campaigns</h2>")
+            bits.append("<p class='note'>From the campaigns' own filings with the city clerk, under the name as filed.</p>")
+            body = ["<tr><th>To</th><th>Filed as</th><th>Type</th><th>Date</th><th class='num'>Amount</th></tr>"]
+            for g in gifts:
+                filed = esc(g["display_name"])
+                if g["statement_url"]:
+                    filed = f"<a href='{esc(g['statement_url'])}'>{filed}</a>"
+                body.append(
+                    f"<tr><td><a href='{esc(g['recv_slug'])}.html'>{esc(g['recv'])}</a></td>"
+                    f"<td>{filed}</td><td>{esc(g['item_type'] or '')}</td>"
+                    f"<td>{esc(g['occurred_on'] or '—')}</td>"
+                    f"<td class='num'>{dollars(g['amount'])}</td></tr>"
+                )
+            bits.append(f"<table>{''.join(body)}</table>")
+
         if appearances:
             bits.append("<h2 id='attendance'>Forum attendance</h2><ul>")
             for a in appearances:
@@ -1735,7 +1762,7 @@ def main() -> None:
     <h1>About Boulder Votes</h1>
     <p>Boulder Votes is a guide to City of Boulder elections, written with older voters in mind. It covers the mayor and city council races and the city ballot measures.</p>
     <h2>Who makes it</h2>
-    <p>Made by Aaron Gabriel Neyer, a Boulder resident, as a volunteer project. No campaign or party is involved.</p>
+    <p>Made by <a href="people/aaron-gabriel-neyer.html">Aaron Gabriel Neyer</a>, a Boulder resident, as a volunteer project. No campaign or party is involved. His page in this guide shows his own 2023 council run and his gifts to 2026 campaigns, the same way the guide shows everyone else's.</p>
     <h2>What we won't do</h2>
     <p>We don't endorse, rank or score candidates or measures, and we don't tell you how to vote. We treat every candidate the same way and list them in ballot order.</p>
     <h2>Where the facts come from</h2>
