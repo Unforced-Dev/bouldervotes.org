@@ -1347,7 +1347,17 @@ def _donor_person_id(pid: dict, first: str | None, last: str | None) -> int | No
         hit = lower.get(name.lower())
         if hit:
             return hit
-    return None
+    # A filing that drops a middle name ("Aaron Neyer" for "Aaron Gabriel Neyer"): match on first and last name
+    # only when exactly one person in the guide has that pair, so two different people are never merged.
+    if " " in first or " " in last:
+        return None
+    pairs = {}
+    for full, i in pid.items():
+        parts = full.replace(",", " ").split()
+        if len(parts) >= 3 and "," not in full:
+            pairs.setdefault((parts[0].lower(), parts[-1].lower()), set()).add(i)
+    hits = pairs.get((first.lower(), last.lower()), set())
+    return next(iter(hits)) if len(hits) == 1 else None
 
 
 def ingest_finance_2026(cur, *, pid: dict, add_source, org_city: int) -> None:
