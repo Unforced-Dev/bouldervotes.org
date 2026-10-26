@@ -10154,19 +10154,22 @@
     "measure_label": null,
     "position": "endorse",
     "rank": null,
-    "provenance": "campaign_claim",
-    "claimed_by": "Benita Duran campaign",
-    "source_url": "https://www.benitaduran.com/new-page-2",
-    "source_title": "Endorsements and Supporters – Benita Duran",
-    "published_on": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
     "status": "published",
-    "audit": null,
-    "notes": "Candidate site lists the group among endorsements; independent statement not located.",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "City Council. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K. The candidate's campaign site also lists the endorsement (https://www.benitaduran.com/new-page-2).",
     "verification": {
       "result": "PASS",
-      "checked_on": "2026-10-22",
-      "evidence_url": "https://www.benitaduran.com/new-page-2",
-      "note": "Benita Duran campaign endorsement page, read in a browser Oct. 22, 2026. Listed as 'PROUD TO BE ENDORSED BY / CWA Local 7799 / Communications Workers of America public sector union'. Campaign's claim; cwa7799.org and cwa-union.org/candidates-co list no City of Boulder candidates."
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '04 / STRONG UNIONS VOTE LOCALLY', table 'City of Boulder · Mayor & City Council', OFFICE / ENDORSED CANDIDATE: 'Mayor Aaron Brockett', 'City Council Benita Duran', 'City Council Jamillah Richmond', 'City Council Ryan Schuchard', 'City Council Rachel Rose Isaacson', 'City Council Sam Fuqua'. Upgraded from campaign_claim (first seen on https://www.benitaduran.com/new-page-2). No publication date shown."
     }
   },
   {
@@ -10179,19 +10182,22 @@
     "measure_label": null,
     "position": "endorse",
     "rank": null,
-    "provenance": "campaign_claim",
-    "claimed_by": "Ryan Schuchard campaign",
-    "source_url": "https://www.ryanwithboulder.com/endorsements",
-    "source_title": "Endorsements — Re-Elect Ryan Schuchard",
-    "published_on": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
     "status": "published",
-    "audit": null,
-    "notes": "Candidate site lists the group among endorsements; independent statement not located.",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "City Council. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K. The candidate's campaign site also lists the endorsement (https://www.ryanwithboulder.com/endorsements).",
     "verification": {
       "result": "PASS",
-      "checked_on": "2026-10-22",
-      "evidence_url": "https://www.ryanwithboulder.com/endorsements",
-      "note": "Ryan Schuchard campaign endorsement page, read in a browser Oct. 22, 2026. Sentence 'I am proud and grateful to earn the endorsements of ... CWA 7799 (public sector union), ...'. Campaign's claim; cwa7799.org and cwa-union.org/candidates-co list no City of Boulder candidates."
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '04 / STRONG UNIONS VOTE LOCALLY', table 'City of Boulder · Mayor & City Council', OFFICE / ENDORSED CANDIDATE: 'Mayor Aaron Brockett', 'City Council Benita Duran', 'City Council Jamillah Richmond', 'City Council Ryan Schuchard', 'City Council Rachel Rose Isaacson', 'City Council Sam Fuqua'. Upgraded from campaign_claim (first seen on https://www.ryanwithboulder.com/endorsements). No publication date shown."
     }
   },
   {
@@ -10242,6 +10248,202 @@
       "checked_on": "2026-10-24",
       "evidence_url": "https://www.benitaduran.com/new-page-2",
       "note": "Benita Duran campaign endorsement page, read in a browser Oct. 24, 2026. Listed as 'PROUD TO BE ENDORSED BY / Quiet Enjoyment Project / University Hill neighborhood group'. Campaign's claim; quietenjoymentproject.org (home and About pages, Oct. 24, 2026) names no candidates."
+    }
+  },
+  {
+    "id": "E391",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": "Aaron Brockett",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "Mayor; one endorsed candidate, no ranking stated. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '04 / STRONG UNIONS VOTE LOCALLY', table 'City of Boulder · Mayor & City Council', OFFICE / ENDORSED CANDIDATE: 'Mayor Aaron Brockett', 'City Council Benita Duran', 'City Council Jamillah Richmond', 'City Council Ryan Schuchard', 'City Council Rachel Rose Isaacson', 'City Council Sam Fuqua'. No publication date shown."
+    }
+  },
+  {
+    "id": "E392",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": "Jamillah Richmond",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "City Council. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '04 / STRONG UNIONS VOTE LOCALLY', table 'City of Boulder · Mayor & City Council', OFFICE / ENDORSED CANDIDATE: 'Mayor Aaron Brockett', 'City Council Benita Duran', 'City Council Jamillah Richmond', 'City Council Ryan Schuchard', 'City Council Rachel Rose Isaacson', 'City Council Sam Fuqua'. No publication date shown."
+    }
+  },
+  {
+    "id": "E393",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": "Rachel Rose Isaacson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "City Council. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '04 / STRONG UNIONS VOTE LOCALLY', table 'City of Boulder · Mayor & City Council', OFFICE / ENDORSED CANDIDATE: 'Mayor Aaron Brockett', 'City Council Benita Duran', 'City Council Jamillah Richmond', 'City Council Ryan Schuchard', 'City Council Rachel Rose Isaacson', 'City Council Sam Fuqua'. No publication date shown."
+    }
+  },
+  {
+    "id": "E394",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": "Sam Fuqua",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "City Council. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '04 / STRONG UNIONS VOTE LOCALLY', table 'City of Boulder · Mayor & City Council', OFFICE / ENDORSED CANDIDATE: 'Mayor Aaron Brockett', 'City Council Benita Duran', 'City Council Jamillah Richmond', 'City Council Ryan Schuchard', 'City Council Rachel Rose Isaacson', 'City Council Sam Fuqua'. No publication date shown."
+    }
+  },
+  {
+    "id": "E395",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": null,
+    "measure_letter": "2J",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "YES. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '01 / OUR UNION'S BALLOT POSITIONS', 'City of Boulder': 'Ballot Issue 2J / Residential vacancy excise tax / YES', 'Ballot Question 2L / Collective bargaining rights for firefighters in the city charter / YES', 'Ballot Question 2M / Update the city charter's debt limit calculation / YES'. No 2K entry. No publication date shown."
+    }
+  },
+  {
+    "id": "E396",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "YES. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '01 / OUR UNION'S BALLOT POSITIONS', 'City of Boulder': 'Ballot Issue 2J / Residential vacancy excise tax / YES', 'Ballot Question 2L / Collective bargaining rights for firefighters in the city charter / YES', 'Ballot Question 2M / Update the city charter's debt limit calculation / YES'. No 2K entry. No publication date shown."
+    }
+  },
+  {
+    "id": "E397",
+    "endorser": "CWA Local 7799",
+    "endorser_type": "organization",
+    "endorser_slug": "cwa-local-7799",
+    "candidate": null,
+    "measure_letter": "2M",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)",
+    "published_on": "2026-10-26",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-26."
+    },
+    "notes": "YES. On the local's own 2026 Union Voter Guide (member-led; 'how union members vote is your own decision'). The page states no publication date; the date shown is when we retrieved it. The guide takes no position on 2K.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-26",
+      "evidence_url": "https://www.cwa7799.org/2026-primary",
+      "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '01 / OUR UNION'S BALLOT POSITIONS', 'City of Boulder': 'Ballot Issue 2J / Residential vacancy excise tax / YES', 'Ballot Question 2L / Collective bargaining rights for firefighters in the city charter / YES', 'Ballot Question 2M / Update the city charter's debt limit calculation / YES'. No 2K entry. No publication date shown."
     }
   }
 ]

@@ -628,13 +628,13 @@
     },
     "position": "support",
     "rank": null,
-    "provenance": "campaign_claim",
-    "provenance_label": "Campaign claim",
-    "label": "Benita Duran campaign lists CWA Local 7799. Only the campaign says so.",
-    "claimed_by": "Benita Duran campaign",
-    "published_on": null,
-    "source_url": "https://www.benitaduran.com/new-page-2",
-    "source_title": "Endorsements and Supporters – Benita Duran"
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-26",
+    "source_url": "https://www.cwa7799.org/2026-primary",
+    "source_title": "2026 Union Voter Guide (CWA Local 7799)"
    },
    {
     "id": "E262",
@@ -1333,6 +1333,7 @@
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "https://www.benitaduran.com/a-word-from-benita",
    "https://www.benitaduran.com/new-page-2",
+   "https://www.cwa7799.org/2026-primary",
    "https://www.dailycamera.com/2026/10/04/boulder-city-council-mayor-endorsement-election-vote/",
    "https://www.youtube.com/watch?v=1At-W2cR9Mk",
    "https://www.youtube.com/watch?v=CQlalpB7N5w",
