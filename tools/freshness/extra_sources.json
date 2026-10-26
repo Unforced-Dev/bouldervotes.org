@@ -61,12 +61,5 @@
     "endorser_slug": "communications-workers-of-america",
     "browser_required": false,
     "coverage_note": "CWA national Colorado endorsements page; lists City of Boulder ballot issues. Found by discovery search 2026-10-20."
-  },
-  {
-    "url": "https://www.cwa7799.org/2026-primary",
-    "kind": "endorser",
-    "endorser_slug": "cwa-local-7799",
-    "browser_required": false,
-    "coverage_note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org); lists City of Boulder candidates and 2J/2L/2M. Found 2026-10-26 after Brockett's page added the local's logo."
   }
 ]
