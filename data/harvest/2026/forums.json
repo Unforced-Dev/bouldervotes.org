@@ -550,6 +550,73 @@
      "measure": null
     }
    ]
+  },
+  {
+   "slug": "2026-eof-council-climate-forum",
+   "name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+   "short": "Empower Our Future council climate forum",
+   "date": "2026-10-13",
+   "hosts": [
+    "Empower Our Future",
+    "PLAN-Boulder County"
+   ],
+   "venue": "Online (Zoom webinar)",
+   "date_source": "Empower Our Future YouTube title 'Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate' (uploaded 2026-10-14); organizer's Zoom registration page (Oct 13, 2026, 6:00 PM Mountain, co-sponsored by EOF and PLAN-Boulder).",
+   "notes": "City Council candidates only. Moderator: Chris Hoffman; host: Mary (as transcribed). Twelve of the 13 council candidates took part; the host said Benita Duran was sorry not to attend and invited questions through her website. The same three questions as the Oct. 6 mayoral forum: climate hushing, Xcel Energy, and the Valmont coal ash cleanup. The automatic transcript writes 'Xcel' as 'Excel'; quotes keep the transcript text.",
+   "recordings": [
+    {
+     "youtube_id": "ysxIfw0TbWo",
+     "title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate",
+     "uploader": "Empower Our Future",
+     "uploaded": "2026-10-14",
+     "part": null,
+     "segments": [
+      {
+       "label": "Opening introductions",
+       "start": 115
+      },
+      {
+       "label": "Climate hushing",
+       "start": 900
+      },
+      {
+       "label": "Xcel Energy",
+       "start": 2401
+      },
+      {
+       "label": "Valmont coal ash",
+       "start": 3889
+      }
+     ]
+    }
+   ],
+   "absent_statement_read": [],
+   "questions": [
+    {
+     "prompt": "Council opening introduction, climate and energy forum (one minute)",
+     "issue_slug": null,
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Climate hushing: political leaders now seem reluctant to connect negative everyday experiences to climate change and its driver, carbon pollution. How do you plan to be vocal and lead on climate?",
+     "issue_slug": "climate",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Xcel says it will deliver 100% clean electricity by 2050, not Boulder's 2030 goal, and has presented no concrete plan under the 2020 franchise agreement. What remedies would you propose for Xcel's failures to deliver, at the city level, at the PUC, or at the state level? And would you be open to inviting cities that have gone to market for their electricity to come to Boulder to educate us about life after Xcel?",
+     "issue_slug": "climate",
+     "stance_about": null,
+     "measure": null
+    },
+    {
+     "prompt": "Xcel is preparing a decade-long remediation of nearly 2 million tons of coal ash at the Valmont power station. Should Boulder use its franchise and partnership agreements with Xcel to require strong, independent air quality monitoring throughout the cleanup? And if so, how specifically would you do this?",
+     "issue_slug": "climate",
+     "stance_about": null,
+     "measure": null
+    }
+   ]
   }
  ]
 }

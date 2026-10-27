@@ -47,10 +47,10 @@ class TestForumData(unittest.TestCase):
         cls.rows = forum_answers()
 
     def test_counts(self):
-        self.assertEqual(len(self.claims), 357)
+        self.assertEqual(len(self.claims), 405)
         held = [c for c in self.claims if c["status"] == "held"]
         self.assertEqual(len(held), len(FORUM_HOLDS))
-        self.assertEqual(len(self.rows), 357 - len(held))
+        self.assertEqual(len(self.rows), 405 - len(held))
 
     def test_verbatim_in_committed_transcript(self):
         cache = {}
@@ -152,7 +152,8 @@ class TestForumHtml(unittest.TestCase):
             self.assertIn(TRANSCRIPT_NOTE, s)
 
     def test_forum_pages_exist(self):
-        for slug in ("2026-chamber-forum", "2026-votes-forum", "2026-arts-forum", "2026-lwv-forum"):
+        for slug in ("2026-chamber-forum", "2026-votes-forum", "2026-arts-forum", "2026-lwv-forum",
+                     "2026-eof-council-climate-forum"):
             self.assertTrue((DOCS / "forums" / f"{slug}.html").exists(), slug)
         self.assertIn("2026-09-26", (H / "forums.json").read_text())
 

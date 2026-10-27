@@ -653,3 +653,18 @@ class TestQuoteIndex(unittest.TestCase):
         for i, line in enumerate(lines):
             if line.startswith("  > ") and i and lines[i - 1].startswith("- ") and "reporting" not in lines[i - 1] and "reporter" not in lines[i - 1]:
                 self.assertIn("Topic: ", lines[i - 1], lines[i - 1][:120])
+
+
+class TestChatSkipForums(unittest.TestCase):
+    def test_skipped_forums_are_real_and_absent_from_chat(self):
+        import build_chat_context as C
+        forums = json.loads((ROOT / "data" / "harvest" / "2026" / "forums.json").read_text())["forums"]
+        slugs = {f["slug"] for f in forums}
+        ctx = (ROOT / "docs" / "api" / "chat-context.txt").read_text()
+        quotes = (ROOT / "docs" / "api" / "chat-quotes.json").read_text()
+        for slug in C.CHAT_SKIP_FORUMS:
+            self.assertIn(slug, slugs)
+            rec = next(f for f in forums if f["slug"] == slug)
+            for r in rec["recordings"]:
+                self.assertNotIn(r["youtube_id"], ctx)
+                self.assertNotIn(r["youtube_id"], quotes)

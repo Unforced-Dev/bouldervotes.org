@@ -425,6 +425,108 @@
     "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
     "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
     "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC367",
+    "candidate_slug": "dave-martus",
+    "candidate": "Dave Martus",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Council opening introduction, climate and energy forum (one minute)",
+    "topic": "budget/bond 2K",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "if you manage your budgets well you have more money for the greater good, which of course includes climate activities.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=741s",
+    "timestamp": "12:21",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC371",
+    "candidate_slug": "dave-martus",
+    "candidate": "Dave Martus",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Climate hushing: political leaders now seem reluctant to connect negative everyday experiences to climate change and its driver, carbon pollution. How do you plan to be vocal and lead on climate?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think it's critical that we look at all our programs in the city and ask ourselves how do we measure success on programs,",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=1099s",
+    "timestamp": "18:19",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC393",
+    "candidate_slug": "dave-martus",
+    "candidate": "Dave Martus",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Xcel says it will deliver 100% clean electricity by 2050, not Boulder's 2030 goal, and has presented no concrete plan under the 2020 franchise agreement. What remedies would you propose for Xcel's failures to deliver, at the city level, at the PUC, or at the state level? And would you be open to inviting cities that have gone to market for their electricity to come to Boulder to educate us about life after Xcel?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I think that the CCE is really our best route forward if we can work with with our colleagues at the state level and get that passed",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=3838s",
+    "timestamp": "1:03:58",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: The moderator skipped him in the order; he answered after Jamillah Richmond, and the moderator then thanked 'David' for catching it. 'CCE' is community choice energy."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC405",
+    "candidate_slug": "dave-martus",
+    "candidate": "Dave Martus",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Xcel is preparing a decade-long remediation of nearly 2 million tons of coal ash at the Valmont power station. Should Boulder use its franchise and partnership agreements with Xcel to require strong, independent air quality monitoring throughout the cleanup? And if so, how specifically would you do this?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "And ideally we can get to start work sooner because the longer we wait, the greater the risk is to groundwater.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=4645s",
+    "timestamp": "1:17:25",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
    }
   ],
   "endorsements": [
@@ -504,7 +606,8 @@
    "https://www.youtube.com/watch?v=1At-W2cR9Mk",
    "https://www.youtube.com/watch?v=Syj4_V5cQOk",
    "https://www.youtube.com/watch?v=gdZzGJNB7g0",
-   "https://www.youtube.com/watch?v=pT9IeGL6deg"
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://www.youtube.com/watch?v=ysxIfw0TbWo"
   ]
  }
 }
