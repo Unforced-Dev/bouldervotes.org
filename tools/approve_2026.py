@@ -130,6 +130,8 @@ AUTHORED_ELSEWHERE = {
     "yellowscene.com/2026/09/12/": "verbatim_press_release",
     "instagram.com/p/DdFbfKijZtU": "endorser_social_account",
     "boulderreportinglab.org/2026/08/30/kc-becker": "signed_op_ed",
+    # BRL 'Across the Aisle' column co-written by Bob Yates and Brian C. Keegan; each states his own 2K stance.
+    "boulderreportinglab.org/2026/10/21/across-the-aisle-is-boulders-400-million-bond": "signed_op_ed",
 }
 
 # Organization websites missing from the research file.
