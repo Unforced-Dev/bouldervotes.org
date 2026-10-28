@@ -1,6 +1,6 @@
 # Boulder Votes: grounding for the election chat
 
-Source site: https://bouldervotes.org/ . Updated 2026-10-27. City of Boulder, Colorado, general election Tuesday, November 3, 2026.
+Source site: https://bouldervotes.org/ . Updated 2026-10-28. City of Boulder, Colorado, general election Tuesday, November 3, 2026.
 Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates are in official ballot order (https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates).
 
 ## Instructions for AI assistants
