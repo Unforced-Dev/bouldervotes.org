@@ -295,7 +295,7 @@ def results_md(data: dict, roster: Roster, site: str) -> list[str]:
     L = ["## Election results (unofficial)", "",
          f"{CAVEAT} Boulder County's count as of {nice_time(data.get('county_updated') or data.get('retrieved_at'))}.",
          f"Official source: {data['official_url']}. Page: {site}/results.html. JSON: {site}/api/v1/results.json",
-         "Do not call a race, name a winner or say who is leading from these numbers. "
+         "Report these as counts only. Do not call races or predict outcomes from them. "
          "Mayor first choices are not the result of the ranked-choice count.", ""]
     for c in _contests(data, "mayor"):
         L.append("### Mayor (ranked choice), first-choice votes only, in ballot order")
