@@ -112,21 +112,26 @@ class Roster:
         n = getattr(self, "aliases", {}).get(n, n)
         return self.order.get(office, {}).get(n)
 
-    def order_note(self, office: str) -> str:
-        """Say ballot order only when our sourced ballot order was applied."""
-        if any(pos is not None for pos, _ in self.order.get(office, {}).values()):
+    def in_ballot_order(self, office: str, rows: list[dict]) -> bool:
+        """True when every listed name except write-ins matches a ballot position we have a source for."""
+        named = [r for r in rows if "write" not in r["name"].lower()]
+        return bool(named) and all((hit := self.lookup(office, r["name"])) and hit[0] is not None for r in named)
+
+    def order_note(self, office: str, rows: list[dict]) -> str:
+        """Say ballot order only when our sourced ballot order was applied to these rows."""
+        if self.in_ballot_order(office, rows):
             return "Listed in ballot order."
         return "Listed in the order the county lists them."
 
     def ballot_sorted(self, office: str, rows: list[dict]) -> list[dict]:
-        """Ballot order when the roster has positions for every listed name; otherwise
-        the export's own order (county exports list choices in ballot order).
-        Names the roster doesn't know (write-ins) keep their place after the rest."""
-        known = [(self.lookup(office, r["name"]), i, r) for i, r in enumerate(rows)]
-        if all(k and k[0] is not None for k, _, _ in known if k) and any(k for k, _, _ in known):
-            return ([r for k, _, r in sorted((x for x in known if x[0]), key=lambda x: x[0][0])]
-                    + [r for k, _, r in known if not k])
-        return rows
+        """Our sourced ballot order when every name matches; otherwise the county's own order
+        (its pages list choices in ballot order), so one unmatched spelling can't reshuffle a list.
+        Write-ins keep their place after the named candidates."""
+        if not self.in_ballot_order(office, rows):
+            return rows
+        named = [r for r in rows if "write" not in r["name"].lower()]
+        return (sorted(named, key=lambda r: self.lookup(office, r["name"])[0])
+                + [r for r in rows if "write" in r["name"].lower()])
 
 
 def _contests(data: dict, office: str) -> list[dict]:
@@ -207,7 +212,7 @@ def mayor_section(data: dict, roster: Roster, prefix: str = "") -> str:
         out.append(f"<tr><th scope='row'>{candidate_cell(roster, 'mayor', r['name'], prefix)}</th>"
                    f"<td class='num'>{number(r['votes'], url)}</td><td class='num'>{pct(r['votes'], total)}</td></tr>")
     out.append("</tbody></table>")
-    out.append(f"<p class='meta'>{roster.order_note('mayor')}</p></section>")
+    out.append(f"<p class='meta'>{roster.order_note('mayor', c['candidates'])}</p></section>")
     return "\n".join(out)
 
 
@@ -231,7 +236,7 @@ def council_section(data: dict, roster: Roster, prefix: str = "") -> str:
                        f"<td class='num'>{number(r['votes'], url)}</td></tr>")
         out.append("</tbody></table>")
     seats = cs[0].get("seats") or 5
-    out.append(f"<p class='meta'>{roster.order_note('council')} Each voter could choose up to {WORD.get(seats, seats)}, "
+    out.append(f"<p class='meta'>{roster.order_note('council', cs[0]['candidates'])} Each voter could choose up to {WORD.get(seats, seats)}, "
                "so the votes add up to more than the number of ballots.</p></section>")
     return "\n".join(out)
 
@@ -287,13 +292,21 @@ def roster_for(con: sqlite3.Connection | None, data: dict | None) -> Roster:
     return Roster(con, year)
 
 
+def asof_line(data: dict) -> str:
+    """Never present our copy time as the county's own time."""
+    if data.get("county_updated"):
+        return f"Boulder County's count as of {nice_time(data['county_updated'])}."
+    if data.get("retrieved_at"):
+        return f"Copied from Boulder County at {nice_time(data['retrieved_at'])}."
+    return "From Boulder County's results page."
+
+
 def home_card(data: dict, prefix: str = "") -> str:
     """The calm home-page card that replaces the key-dates emphasis once results exist."""
-    county = nice_time(data.get("county_updated") or data.get("retrieved_at"))
     return ("<section class='res-home' aria-labelledby='res-home-h'>"
             "<h2 id='res-home-h'>Election results</h2>"
             f"<p class='res-caveat-main'>{esc(CAVEAT)}</p>"
-            f"<p class='meta'>Boulder County's count as of {esc(county)}. Mayor, City Council and city measures.</p>"
+            f"<p class='meta'>{esc(asof_line(data))} Mayor, City Council and city measures.</p>"
             f"<p><a class='btn' href='{prefix}results.html'>See all results</a></p>"
             f"<p class='note'>Official source: <a href='{esc(data['official_url'])}'>Boulder County election results</a>.</p>"
             "</section>")
@@ -302,7 +315,7 @@ def home_card(data: dict, prefix: str = "") -> str:
 def results_md(data: dict, roster: Roster, site: str) -> list[str]:
     """Markdown block for llms.txt / llms-full.txt."""
     L = ["## Election results (unofficial)", "",
-         f"{CAVEAT} Boulder County's count as of {nice_time(data.get('county_updated') or data.get('retrieved_at'))}.",
+         f"{CAVEAT} {asof_line(data)}",
          f"Official source: {data['official_url']}. Page: {site}/results.html. JSON: {site}/api/v1/results.json",
          "Report these as counts only. Do not call races or predict outcomes from them. "
          "Mayor first choices are not the result of the ranked-choice count.", ""]

@@ -33,12 +33,14 @@ import re
 import shutil
 import subprocess
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))  # build_results_2026 / ingest_2026 for shared name matching
 OUT = ROOT / "data" / "harvest" / "2026" / "results.json"
 RAW_DIR = ROOT / "data" / "harvest" / "2026" / "results_raw"
 BALLOT_ORDER = ROOT / "data" / "harvest" / "2026" / "ballot_order.json"
@@ -87,12 +89,12 @@ def _office(title: str) -> str | None:
     t = title.lower()
     if not t.startswith("city of boulder"):
         return None
+    if "ballot issue" in t or "ballot question" in t:  # first: a measure title may mention the council
+        return "measure"
     if "mayor" in t:
         return "mayor"
     if "council" in t:
         return "council"
-    if "ballot issue" in t or "ballot question" in t:
-        return "measure"
     return None
 
 
@@ -249,10 +251,10 @@ def assemble(index_html: str, index_url: str, *, rcv_html: str | None = None, rc
     if expect_title and h["title"] != expect_title:
         raise ParseError(f"results page is for {h['title']!r}, expected {expect_title!r} (stale mirror?)")
     cs = contests(index_html, index_url)
-    if rcv_html is not None:
-        rh = header(rcv_html)
-        if expect_title and rh["title"] != expect_title:
-            raise ParseError(f"ranked-choice page is for {rh['title']!r}, expected {expect_title!r} (stale mirror?)")
+    if rcv_html is not None and expect_title and header(rcv_html)["title"] != expect_title:
+        # The mirror still serves an old ranked-choice page until the county posts this year's: no rounds yet.
+        print(f"NOTE: ranked-choice page is for {header(rcv_html)['title']!r}; showing no rounds.", file=sys.stderr)
+        rcv_html = rcv_url = rcv_report = None
     for c in cs:
         if c["office"] != "mayor":
             continue
@@ -286,6 +288,15 @@ def assemble(index_html: str, index_url: str, *, rcv_html: str | None = None, rc
             "contests": cs}
 
 
+def canon(name: str) -> str:
+    """Same name matching as the renderer: case, punctuation and known aliases ignored."""
+    from build_results_2026 import norm_name
+    from ingest_2026 import NAME_ALIASES
+    aliases = {norm_name(k): norm_name(v) for k, v in NAME_ALIASES.items()}
+    n = norm_name(name)
+    return aliases.get(n, n)
+
+
 def check_2026(data: dict) -> list[str]:
     """Problems that should stop a 2026 write: missing roster names or measures."""
     order = json.loads(BALLOT_ORDER.read_text(encoding="utf-8"))["races"]
@@ -295,10 +306,14 @@ def check_2026(data: dict) -> list[str]:
         if len(cs) != 1:
             probs.append(f"{office}: expected one contest, found {len(cs)}")
             continue
-        got = {c["name"] for c in cs[0]["candidates"]}
+        got = {canon(c["name"]) for c in cs[0]["candidates"]}
+        for rd in cs[0].get("rounds") or []:
+            stray = [c["name"] for c in rd["candidates"] if canon(c["name"]) not in map(canon, order[office])]
+            if stray:
+                probs.append(f"{office} round {rd['round']}: names not on our ballot list: {stray}")
         if not got:
             continue  # posted with no numbers yet
-        missing = [n for n in order[office] if n not in got]
+        missing = [n for n in order[office] if canon(n) not in got]
         if missing:
             probs.append(f"{office}: names not in the county file: {missing}")
         if office == "council" and cs[0].get("seats") not in (5, None):
@@ -325,6 +340,42 @@ def save_raw(raw_dir: Path, name: str, url: str, body: bytes, manifest: list) ->
     return p
 
 
+def fetch_rcv(rcv_url: str, raw_dir: Path, manifest: list, dry_run: bool) -> tuple[str | None, dict | None]:
+    """The county's ranked-choice page and PDF. Any problem here drops only the rounds:
+    (None, None) means no rounds posted yet; a report with "error" means posted but unreadable."""
+    try:
+        rb = get(rcv_url)
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        print(f"WARNING: ranked-choice page not fetched: {e}", file=sys.stderr)
+        return None, {"rounds": [], "error": f"fetch failed: {e}"}
+    rcv_html = rb.decode("utf-8", "replace")
+    if not dry_run:
+        save_raw(raw_dir, "rcv.html", rcv_url, rb, manifest)
+    links = rcv_links(rcv_html, rcv_url)
+    if header(rcv_html)["title"] != EXPECT_TITLE or not links["pdf_url"]:
+        return rcv_html, None  # stale copy or nothing posted yet
+    try:
+        pb = get(links["pdf_url"])
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        print(f"WARNING: ranked-choice PDF not fetched: {e}", file=sys.stderr)
+        return rcv_html, {"rounds": [], "error": f"fetch failed: {e}", "url": links["pdf_url"]}
+    tmp = Path(__import__("tempfile").mkdtemp()) / "rcv.pdf"
+    tmp.write_bytes(pb)
+    if not dry_run:
+        save_raw(raw_dir, "rcv.pdf", links["pdf_url"], pb, manifest)
+    try:
+        report = parse_rcv_report(pdf_text(tmp))
+    except (ParseError, subprocess.CalledProcessError) as e:
+        # The rest of the results still publish; the page says the rounds couldn't be read.
+        print(f"WARNING: ranked-choice report not used: {e}", file=sys.stderr)
+        return rcv_html, {"rounds": [], "error": str(e), "url": links["pdf_url"]}
+    if report["report_time"] and report["report_time"][:10] < "2026-11-03":
+        print(f"NOTE: ranked-choice report is dated {report['report_time']} (stale copy); showing no rounds.", file=sys.stderr)
+        return rcv_html, None
+    report["url"] = links["pdf_url"]
+    return rcv_html, report
+
+
 def fetch_live(dry_run: bool) -> dict:
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     stamp = now.strftime("%Y%m%dT%H%M%SZ")
@@ -332,7 +383,11 @@ def fetch_live(dry_run: bool) -> dict:
     manifest: list = []
     errors = []
     for base in BASES:
-        body = get(base)
+        try:
+            body = get(base)
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            errors.append(f"{base}: {e}")
+            continue
         page = body.decode("utf-8", "replace")
         h = header(page)
         if h["title"] != EXPECT_TITLE:
@@ -343,33 +398,14 @@ def fetch_live(dry_run: bool) -> dict:
             raise SystemExit(3)
         break
     else:
-        raise ParseError("no results page with the 2026 title: " + "; ".join(errors))
+        raise ParseError("no usable 2026 results page: " + "; ".join(errors))
     if not dry_run:
         save_raw(raw_dir, "index.html", base, body, manifest)
     rcv_html = rcv_url = report = None
     mayor = [c for c in contests(page, base) if c["office"] == "mayor"]
     if mayor and mayor[0].get("rcv_page_url"):
         rcv_url = mayor[0]["rcv_page_url"]
-        rb = get(rcv_url)
-        rcv_html = rb.decode("utf-8", "replace")
-        if not dry_run:
-            save_raw(raw_dir, "rcv.html", rcv_url, rb, manifest)
-        links = rcv_links(rcv_html, rcv_url)
-        if links["pdf_url"] and header(rcv_html)["title"] == EXPECT_TITLE:
-            pb = get(links["pdf_url"])
-            tmp = Path(__import__("tempfile").mkdtemp()) / "rcv.pdf"
-            tmp.write_bytes(pb)
-            if not dry_run:
-                save_raw(raw_dir, "rcv.pdf", links["pdf_url"], pb, manifest)
-            try:
-                report = parse_rcv_report(pdf_text(tmp))
-                if report["report_time"] and report["report_time"][:10] < "2026-11-03":
-                    raise ParseError(f"report is dated {report['report_time']}, before election day (stale?)")
-            except (ParseError, subprocess.CalledProcessError) as e:
-                # The rest of the results still publish; the page says the rounds couldn't be read.
-                print(f"WARNING: ranked-choice report not used: {e}", file=sys.stderr)
-                report = {"rounds": [], "error": str(e)}
-            report["url"] = links["pdf_url"]
+        rcv_html, report = fetch_rcv(rcv_url, raw_dir, manifest, dry_run)
     data = assemble(page, base, rcv_html=rcv_html, rcv_url=rcv_url, rcv_report=report,
                     retrieved_at=now.isoformat().replace("+00:00", "Z"),
                     raw_dir=None if dry_run else raw_dir.relative_to(ROOT).as_posix())

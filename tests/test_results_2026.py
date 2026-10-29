@@ -136,6 +136,63 @@ class TestParserOnRealCountyPages(unittest.TestCase):
         self.assertIn(order["council"][0], probs[0])
 
 
+class TestElectionNightFailureModes(unittest.TestCase):
+    """Regressions from review: one bad piece must not stop or scramble the whole count."""
+
+    @classmethod
+    def setUpClass(cls):
+        page = (F2023 / "index.html").read_text(encoding="utf-8")
+        # The real 2023 page with this year's title: the shape the 2026 page will have.
+        cls.page26 = page.replace('class="EnrHeaderTitle">2023 Coordinated Election', 'class="EnrHeaderTitle">2026 General Election')
+        cls.rcv23 = (F2023 / "RcvContest-1.html").read_text(encoding="utf-8")
+
+    def test_stale_ranked_choice_page_means_no_rounds_not_a_stop(self):
+        d = F.assemble(self.page26, "https://example/", rcv_html=self.rcv23, rcv_url="https://example/rcv",
+                       rcv_report={"rounds": [{"round": 1, "candidates": []}]}, retrieved_at="x", raw_dir=None)
+        mayor = d["contests"][0]
+        self.assertEqual(mayor["rounds"], [])
+        self.assertEqual(len(d["contests"][1]["candidates"]), 10)
+
+    def test_network_errors_fall_back_and_keep_the_rest(self):
+        import urllib.error
+        calls = []
+
+        def fake_get(url):  # the county's servers are outside our control: fake them
+            calls.append(url)
+            if url == F.BASES[0]:
+                raise urllib.error.URLError("mirror down")
+            if url == F.BASES[1]:
+                return self.page26.encode()
+            raise urllib.error.HTTPError(url, 404, "not found", None, None)
+        saved = F.get
+        F.get = fake_get
+        try:
+            d = F.fetch_live(dry_run=True)
+        finally:
+            F.get = saved
+        self.assertEqual(calls[:2], list(F.BASES))
+        self.assertEqual(d["official_url"], F.BASES[1])
+        self.assertEqual(d["contests"][0]["rounds"], [])
+        self.assertIn("fetch failed", d["contests"][0]["rounds_error"])
+        self.assertEqual([m["code"] for m in d["contests"] if m["office"] == "measure"], ["2A", "2B", "302"])
+
+    def test_known_alias_is_not_a_missing_name(self):
+        order = json.loads(F.BALLOT_ORDER.read_text())["races"]
+        council = [{"name": "DAVID MARTUS" if n == "Dave Martus" else n, "votes": 0} for n in order["council"]]
+        data = {"contests": [
+            {"office": "mayor", "candidates": [{"name": n, "votes": 0} for n in order["mayor"]]},
+            {"office": "council", "seats": 5, "candidates": council},
+            *[{"office": "measure", "code": c} for c in F.MEASURE_CODES_2026]]}
+        self.assertEqual(F.check_2026(data), [])
+
+    def test_measure_title_naming_the_council_is_a_measure(self):
+        page = self.page26.replace("Elections Administrative Charter Cleanup", "City Council Districts")
+        self.assertNotEqual(page, self.page26)
+        cs = F.contests(page, "https://example/")
+        self.assertEqual([c["office"] for c in cs].count("council"), 1)
+        self.assertIn("2B", [c.get("code") for c in cs])
+
+
 def synthetic_2026(con, rounds: bool) -> dict:
     """2026 names in a scrambled order with zero votes: tests ordering, never published."""
     order = json.loads((ROOT / "data" / "harvest" / "2026" / "ballot_order.json").read_text())["races"]
@@ -226,6 +283,24 @@ class TestResultsViews(unittest.TestCase):
         page = R.results_body(data, R.roster_for(self.con, data))
         self.assertNotIn("ballot order", page)
         self.assertIn("up to four", page)
+
+    def test_one_unmatched_spelling_keeps_the_county_order(self):
+        data = synthetic_2026(self.con, rounds=False)
+        county = [{"name": n, "votes": 0} for n in self.order["council"]]
+        county[0]["name"] = "Lee Gilbertson"  # a spelling we can't match
+        data["contests"][1]["candidates"] = list(reversed(county))
+        roster = R.roster_for(self.con, data)
+        sec = R.council_section(data, roster)
+        self.assertEqual(roster.ballot_sorted("council", data["contests"][1]["candidates"]), data["contests"][1]["candidates"])
+        self.assertNotIn("Listed in ballot order", sec)
+        self.assertIn("the order the county lists them", sec)
+
+    def test_as_of_never_passes_our_copy_time_off_as_the_county_time(self):
+        data = synthetic_2026(self.con, rounds=False)
+        data["county_updated"] = None
+        for v in (R.home_card(data), "\n".join(R.results_md(data, R.roster_for(self.con, data), ""))):
+            self.assertNotIn("count as of", v)
+            self.assertIn("Copied from Boulder County at", v)
 
     def test_measures_are_equal_neutral_panels(self):
         page = R.measures_section(fixture_results(), R.roster_for(self.con, fixture_results()))
