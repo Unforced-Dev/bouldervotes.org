@@ -184,6 +184,7 @@ class TestResultsViews(unittest.TestCase):
                 self.assertNotIn("Round 1", v)
                 self.assertNotIn("round 1", v)
         self.assertIn(R.NO_ROUNDS_NOTE, self.views(data)["page"])
+        self.assertNotIn("round by round", self.views(data)["page"])
         data["contests"][0]["rounds_error"] = "unreadable"
         page = R.mayor_section(data, R.roster_for(self.con, data))
         self.assertIn(R.ROUNDS_UNREAD_NOTE, page)
