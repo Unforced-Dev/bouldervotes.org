@@ -306,20 +306,32 @@ def measure_change(yes_means: str) -> str:
     return core[:1].lower() + core[1:]
 
 
+# Provenance an organization needs to be named on a measure card: its own statement, a filing or a news report.
+# An organization that only a campaign page lists ("No on 2K lists Open Boulder") stays on the measure's page as
+# "X campaign lists Y", never on the card, for every measure and both sides.
+CARD_PROVENANCE = frozenset({"endorser_statement", "filing", "news_report"})
+
+
+def card_org(x: dict) -> bool:
+    """An endorsement the chat's measure card may name: an organization, on a source other than a campaign's list."""
+    return x["endorser"]["type"] == "organization" and x["provenance"] in CARD_PROVENANCE
+
+
 def measure_facts(d: dict) -> list[dict]:
     """Per measure, what the page shows from data when the chat brings it up: what a yes and a no do,
     the money line with its city source, and the groups on file for each side, each with its date and link.
     The chat model never writes these. Group lists hold organizations only, for every measure: a person on a
     campaign's list (a candidate, an official, a host) is a claim the chat can't check and that covers some
-    candidates and not others, so individuals stay on the measure's page, not on the card."""
+    candidates and not others, so individuals stay on the measure's page, not on the card. The same goes for an
+    organization named only on a campaign's list (see card_org)."""
     edges = {x["id"]: x for x in d["endorsements"]}
-    prov = {"campaign_claim": "listed by a campaign", "filing": "city filing", "news_report": "news listing"}
+    prov = {"filing": "city filing", "news_report": "news listing"}
     out = []
     for m in d["measures"]:
         groups = {"supports": [], "opposes": []}
         for i in m["positions"]:
             x = edges[i]
-            if x["endorser"]["type"] != "organization":
+            if not card_org(x):
                 continue
             g = {"name": x["endorser"]["name"], "date": x["published_on"] or "", "link": x["source_url"]}
             if x["provenance"] in prov:
@@ -632,16 +644,26 @@ def chat_context(d: dict, asof: str) -> str:
         pos = [edges_by_id[i] for i in m["positions"]]
         if not pos:
             L.append("- None found so far.")
+        # A campaign's list is one line per list, as in the candidate sections: every name, said once.
+        lists: dict[tuple, list] = {}
         for x in pos:
-            L.append(f"- {'Opposes' if x['position'] == 'oppose' else 'Supports'}: {_endorsement_line(x)[2:]}")
+            if x["provenance"] == "campaign_claim":
+                lists.setdefault((x["position"], x["claimed_by"], x["source_url"]), []).append(x)
+            else:
+                L.append(f"- {'Opposes' if x['position'] == 'oppose' else 'Supports'}: {_endorsement_line(x)[2:]}")
+        for (side, by, url), xs in lists.items():
+            names = "; ".join(x["endorser"]["name"] + (f" ({x['endorser']['title_as_printed']})" if x["endorser"].get("title_as_printed") else "")
+                              + (f", {x['published_on']}" if x["published_on"] else "") for x in xs)
+            L.append(f"- {'Opposes' if side == 'oppose' else 'Supports'}, campaign list by {by} ({len(xs)} names; only the campaign says so, "
+                     f"no endorser statement checked): {names}. Source: {url}")
         for r in m["reporter_summaries"]:
             L.append(f"- Reporter summary ({r['reporter']}, {r['reported_on']}): {clean(r['text'])} {r['note']} Source: {r['source_url']}")
-        orgs = [x for x in pos if x["endorser"]["type"] == "organization"]
+        orgs = [x for x in pos if card_org(x)]
         if orgs:
             pos = orgs
             sup = "; ".join(f"{x['endorser']['name']}" + (f" ({x['published_on']})" if x["published_on"] else "") for x in pos if x["position"] != "oppose")
             opp = "; ".join(f"{x['endorser']['name']}" + (f" ({x['published_on']})" if x["published_on"] else "") for x in pos if x["position"] == "oppose")
-            L.append(f"All organizations on {m['letter']}: Supports: {sup or 'none on file'}. Opposes: {opp or 'none on file'}.")
+            L.append(f"Organizations on {m['letter']} by their own statement, a filing or a news report: Supports: {sup or 'none on file'}. Opposes: {opp or 'none on file'}.")
         if m["forum_quotes"]:
             for race in ("mayor", "council"):
                 row = []

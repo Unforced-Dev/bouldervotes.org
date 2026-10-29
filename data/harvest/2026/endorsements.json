@@ -10445,5 +10445,733 @@
       "evidence_url": "https://www.cwa7799.org/2026-primary",
       "note": "CWA Local 7799's own 2026 Union Voter Guide (linked from cwa7799.org as '2026 Union Voter Guide'), read in a browser Oct. 26, 2026. Under '01 / OUR UNION'S BALLOT POSITIONS', 'City of Boulder': 'Ballot Issue 2J / Residential vacancy excise tax / YES', 'Ballot Question 2L / Collective bargaining rights for firefighters in the city charter / YES', 'Ballot Question 2M / Update the city charter's debt limit calculation / YES'. No 2K entry. No publication date shown."
     }
+  },
+  {
+    "endorser": "Open Boulder",
+    "endorser_type": "organization",
+    "endorser_slug": "open-boulder",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed under ORGANIZATIONS by the No on 2K committee; we did not find a statement by the organization itself on 2K.",
+    "id": "E398",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'ORGANIZATIONS': 'Open Boulder'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Boulder Area Rental Housing Association",
+    "endorser_type": "organization",
+    "endorser_slug": "boulder-area-rental-housing-association",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed under ORGANIZATIONS by the No on 2K committee; we did not find a statement by the organization itself on 2K.",
+    "id": "E399",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'ORGANIZATIONS': 'Boulder Area Rental Housing Association'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Leslie Durgin",
+    "endorser_type": "person",
+    "endorser_slug": "leslie-durgin",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder Mayors'; personal endorsement, not an endorsement by any office.",
+    "id": "E400",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER MAYORS': 'Leslie Durgin'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Susan Osborne",
+    "endorser_type": "person",
+    "endorser_slug": "susan-osborne",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder Mayors'; personal endorsement, not an endorsement by any office.",
+    "id": "E401",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER MAYORS': 'Susan Osborne'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Sam Weaver",
+    "endorser_type": "person",
+    "endorser_slug": "sam-weaver",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder Mayors'; personal endorsement, not an endorsement by any office.",
+    "id": "E402",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER MAYORS': 'Sam Weaver'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Jan Burton",
+    "endorser_type": "person",
+    "endorser_slug": "jan-burton",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E403",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Jan Burton'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Cindy Carlisle",
+    "endorser_type": "person",
+    "endorser_slug": "cindy-carlisle",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E404",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Cindy Carlisle'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Allyn Feinberg",
+    "endorser_type": "person",
+    "endorser_slug": "allyn-feinberg",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E405",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Allyn Feinberg'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Crystal Gray",
+    "endorser_type": "person",
+    "endorser_slug": "crystal-gray",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E406",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Crystal Gray'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Spense Havlick",
+    "endorser_type": "person",
+    "endorser_slug": "spense-havlick",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E407",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Spense Havlick'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Lisa Morzel",
+    "endorser_type": "person",
+    "endorser_slug": "lisa-morzel",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E408",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Lisa Morzel'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Francoise Poinsatte",
+    "endorser_type": "person",
+    "endorser_slug": "francoise-poinsatte",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E409",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Francoise Poinsatte'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Steve Pomerance",
+    "endorser_type": "person",
+    "endorser_slug": "steve-pomerance",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E410",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Steve Pomerance'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Andy Schultheiss",
+    "endorser_type": "person",
+    "endorser_slug": "andy-schultheiss",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E411",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Andy Schultheiss'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Andrew Shoemaker",
+    "endorser_type": "person",
+    "endorser_slug": "andrew-shoemaker",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former Boulder City Council'; personal endorsement, not an endorsement by any office.",
+    "id": "E412",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER BOULDER CITY COUNCIL': 'Andrew Shoemaker'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Jonathan Singer",
+    "endorser_type": "person",
+    "endorser_slug": "jonathan-singer",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Former State Legislators'; personal endorsement, not an endorsement by any office.",
+    "id": "E413",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'FORMER STATE LEGISLATORS': 'Jonathan Singer'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Taishya Adams",
+    "endorser_type": "person",
+    "endorser_slug": "taishya-adams",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E414",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Taishya Adams'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Benita Duran",
+    "endorser_type": "person",
+    "endorser_slug": "benita-duran",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E415",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Benita Duran'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Jill Grano",
+    "endorser_type": "person",
+    "endorser_slug": "jill-grano",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E416",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Jill Grano'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Aquiles La Grave",
+    "endorser_type": "person",
+    "endorser_slug": "aquiles-la-grave",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E417",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Aquiles La Grave'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Ryan Jamieson",
+    "endorser_type": "person",
+    "endorser_slug": "ryan-jamieson",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E418",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Ryan Jamieson'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Dave Martus",
+    "endorser_type": "person",
+    "endorser_slug": "david-martus",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E419",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'David Martus'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Scott Rendleman",
+    "endorser_type": "person",
+    "endorser_slug": "scott-rendleman",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E420",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Scott Rendleman'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Jamillah Richmond",
+    "endorser_type": "person",
+    "endorser_slug": "jamillah-richmond",
+    "position": "oppose",
+    "provenance": "campaign_claim",
+    "claimed_by": "No on 2K - Demand Fiscal Responsibility (ballot campaign)",
+    "source_url": "https://www.voteno2k.org/endorsements",
+    "source_title": "Who opposes 2K (No on 2K - Demand Fiscal Responsibility)",
+    "notes": "Listed by the No on 2K committee under 'Current Boulder Mayoral And City Council Candidates'; personal endorsement, not an endorsement by any office.",
+    "id": "E421",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://www.voteno2k.org/endorsements",
+      "note": "No on 2K committee endorsements page (embedded list, browser-rendered Oct. 28, 2026), 'Who opposes 2K', under 'CURRENT BOULDER MAYORAL AND CITY COUNCIL CANDIDATES': 'Jamillah Richmond'. Ballot committee's claim; no endorser-authored statement on 2K found."
+    }
+  },
+  {
+    "endorser": "Bob Yates",
+    "endorser_type": "person",
+    "endorser_slug": "bob-yates",
+    "position": "oppose",
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderreportinglab.org/2026/10/21/across-the-aisle-is-boulders-400-million-bond-a-necessary-investment-or-an-expensive-mistake/",
+    "source_title": "Across the Aisle: Is Boulder’s $400 million bond a necessary investment or an expensive mistake? (Boulder Reporting Lab)",
+    "notes": "His own words in a Boulder Reporting Lab column he co-writes (Oct. 21, 2026). The No on 2K committee also lists him under Former Boulder City Council.",
+    "id": "E422",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://boulderreportinglab.org/2026/10/21/across-the-aisle-is-boulders-400-million-bond-a-necessary-investment-or-an-expensive-mistake/",
+      "note": "Boulder Reporting Lab 'Across the Aisle', by Bob Yates and Brian C. Keegan, October 21, 2026 (read in a browser Oct. 28). Bob: 'Now let’s pivot to another ballot measure: Issue 2K, which would authorize the city to borrow an additional $400 million and result in the biggest tax increase in Boulder history. I am against this, for reasons I can explain.'"
+    }
+  },
+  {
+    "endorser": "Brian Keegan",
+    "endorser_type": "person",
+    "endorser_slug": "brian-keegan",
+    "position": "endorse",
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://boulderreportinglab.org/2026/10/21/across-the-aisle-is-boulders-400-million-bond-a-necessary-investment-or-an-expensive-mistake/",
+    "source_title": "Across the Aisle: Is Boulder’s $400 million bond a necessary investment or an expensive mistake? (Boulder Reporting Lab)",
+    "notes": "His own words in a Boulder Reporting Lab column he co-writes (Oct. 21, 2026); he calls himself a reluctant supporter.",
+    "id": "E423",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "rank": null,
+    "published_on": null,
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni checked the live page in a browser, 2026-10-28."
+    },
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-28",
+      "evidence_url": "https://boulderreportinglab.org/2026/10/21/across-the-aisle-is-boulders-400-million-bond-a-necessary-investment-or-an-expensive-mistake/",
+      "note": "Boulder Reporting Lab 'Across the Aisle', by Bob Yates and Brian C. Keegan, October 21, 2026 (read in a browser Oct. 28). Brian: 'I am a reluctant supporter of Issue 2K, and I think you’d be hard-pressed to find any enthusiastic supporters.'"
+    }
   }
 ]

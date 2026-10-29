@@ -37,6 +37,27 @@ class TestChatContext(unittest.TestCase):
         n = len(self.ctx.encode("utf-8"))
         self.assertLessEqual(n, HARD_LIMIT, f"chat-context.txt is {n:,} bytes; limit {HARD_LIMIT:,}")
 
+    def test_measure_campaign_lists_keep_every_name(self):
+        """A campaign's list under a measure is one line (to keep the context small), and still names everyone on it."""
+        edges = json.loads((DOCS / "api" / "v1" / "endorsements.json").read_text())["endorsements"]
+        claims = [e for e in edges if e["target"]["type"] == "city_measure" and e["provenance"] == "campaign_claim"]
+        self.assertGreater(len(claims), 20)
+        for letter in sorted({e["target"]["letter"] for e in claims}):
+            sec = self.ctx.split(f"\n### {letter}: ", 1)[1].split("\n### ", 1)[0]
+            mine = [e for e in claims if e["target"]["letter"] == letter]
+            lines = [ln for ln in sec.splitlines() if ", campaign list by " in ln]
+            keys = {(e["position"], e["claimed_by"], e["source_url"]) for e in mine}
+            self.assertEqual(len(lines), len(keys), letter)
+            for side, by, url in keys:
+                xs = [e for e in mine if (e["position"], e["claimed_by"], e["source_url"]) == (side, by, url)]
+                line = next(ln for ln in lines if ln.startswith("- " + ("Opposes" if side == "oppose" else "Supports"))
+                            and f"campaign list by {by} ({len(xs)} names;" in ln)
+                for e in xs:
+                    # A whole entry, so "Open Boulder" is not found inside "Jan Burton (Open Boulder chair)".
+                    entry = e["endorser"]["name"] + (f" ({e['endorser']['title_as_printed']})" if e["endorser"].get("title_as_printed") else "")
+                    self.assertRegex(line, r"(?:\): |; )" + re.escape(entry) + r"(?=; |, \d{4}|\. Source: )", f"{letter}: {entry}")
+            self.assertNotIn("campaign lists", sec.split("Organizations on ")[0], letter)
+
     def test_deterministic(self):
         """Same data in, byte-identical text out (keeps the prompt cache warm)."""
         import sqlite3
@@ -568,6 +589,21 @@ class TestCompareFile(unittest.TestCase):
         for who in ("Taishya Adams", "Aaron Brockett", "Tina Marquis", "Ryan Schuchard", "Tara Winer", "Kim Monson"):
             self.assertNotIn(who, json.dumps(l2["groups"]))
         self.assertIn("Boulder Firefighters for a Stronger Boulder", [g["name"] for g in l2["groups"]["supports"]])
+
+    def test_measure_groups_only_from_own_statement_filing_or_news(self):
+        """Every organization on a measure card has an edge for that measure and side that is its own statement, a
+        filing or a news report. One that only a campaign's list names (No on 2K lists Open Boulder) stays off the card."""
+        edges = json.loads((DOCS / "api" / "v1" / "endorsements.json").read_text())["endorsements"]
+        ok = {(e["endorser"]["name"], e["target"].get("letter"), "opposes" if e["position"] == "oppose" else "supports")
+              for e in edges if e["target"]["type"] == "city_measure"
+              and e["provenance"] in ("endorser_statement", "filing", "news_report")}
+        n = 0
+        for m in self.cmp["measures"]:
+            for side in ("supports", "opposes"):
+                for g in m["groups"][side]:
+                    self.assertIn((g["name"], m["letter"], side), ok, f"{m['letter']} {side}: {g['name']}")
+                    n += 1
+        self.assertGreater(n, 10)
 
 
 if __name__ == "__main__":
