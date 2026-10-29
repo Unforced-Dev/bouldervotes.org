@@ -1,0 +1,1588 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151309356-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-151309356-1');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Armin Samii">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/static/visualizer/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/visualizer/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/visualizer/favicons/favicon-16x16.png">
+<link rel="manifest" href="/static/visualizer/favicons/site.webmanifest">
+<link rel="mask-icon" href="/static/visualizer/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/static/visualizer/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/static/visualizer/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/static/CACHE/css/output.0a14119fb5f4.css" type="text/css">
+
+
+
+  
+
+
+
+<!-- This needs to be the first bit of js loaded to get the correct configs throughout -->
+<script>
+  var getUrlParameter = function getUrlParameter(sParam)
+  {
+      // Courtesy of https://stackoverflow.com/a/21903119/1057105
+      var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+  
+      for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split('=');
+  
+          if (sParameterName[0] === sParam) {
+              return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+          }
+      }
+  };
+
+  var config = {};
+
+  // 1. Load from django (happens once on baking)
+  config.onlyShowWinnersTabular =  false ;
+  config.hideSankey =  false ;
+  config.hidePie =  false ;
+  config.showRoundNumbersOnSankey =  true ;
+  config.hideTabular =  false ;
+  config.doDimPrevRoundColors =  true ;
+  config.forceFirstRoundDeterminesPercentages =  false ;
+  config.colorTheme = 1;
+  config.eliminationBarColor = 0;
+
+  // 2. Load any overrides (not supported in Internet Explorer)
+  let searchParams = new URLSearchParams(window.location.search);
+  for (var key in config) {
+    if (searchParams.has(key))
+    {
+      // We use hidden fields to make sure all checkboxes get sent over GET when updating settings.
+      // There seems to be some protocol that claims the last one is the valid one...so grab the last.
+      allValues = searchParams.getAll(key)
+      lastValue = allValues[allValues.length - 1]
+      if (key != 'colorTheme' && key != 'eliminationBarColor') {
+        config[key] = lastValue == "on";
+      } else {
+        config[key] = lastValue;
+      }
+    }
+  }
+
+  // Data from python
+  var humanFriendlyEventsPerRound = [[{"summary": "Initial votes", "description": "The results of everybody's first-choice candidates. ", "verb": "initial"}], [{"summary": "Nicole Speer and Paul Tweedlie  eliminated", "description": "Nicole Speer and Paul Tweedlie had the fewest votes and were eliminated. ", "verb": " eliminated"}, {"summary": "Nicole Speer and Paul Tweedlie  transferred votes", "description": "People who voted for Nicole Speer and Paul Tweedlie had their votes transferred to their next choice. ", "verb": " transferred votes"}, {"summary": "Aaron Brockett  won", "description": "Aaron Brockett reached the threshold of 16,208 votes and was elected. ", "verb": " won"}]];
+  var humanFriendlySummary = "After 2 rounds of this Ranked Choice Voting election, Aaron Brockett was elected.";
+  // Plain-English narration of the whole election, for screenreaders: {summary, rounds: [...]}
+  var narration = {"summary": "In this Ranked Choice Voting election, there were 2 rounds, after which Aaron Brockett was elected. Here's what happened in each round.", "rounds": ["In the first round, Bob Yates received the most votes.", "In the second round, People who voted for Nicole Speer and Paul Tweedlie had their votes transferred to their next choice. Nicole Speer and Paul Tweedlie had the fewest votes and were eliminated. Aaron Brockett reached the threshold of 16,208 votes and was elected."]};
+  var candidateSidecarData = null;
+</script>
+
+<style>
+  /* Want these to be invisible immediately, not wait for the nonblocking css to get to it */
+  #visualize-header-deferred-visibility {
+      opacity: 0.1;
+  }
+</style>
+
+<title>City of Boulder Mayoral Candidates: Ranked Choice Voting Visualization</title>
+<meta name="description" content="City of Boulder Mayoral Candidates on RCVis: Ranked-Choice Voting visualizations: sankey, interactive bar charts, and tabular formats for displaying the results of RCV Elections">
+
+<meta property="og:title" content="City of Boulder Mayoral Candidates" />
+<meta property="og:description" content="Ranked Choice Voting Election Results for City of Boulder Mayoral Candidates" />
+<meta property="og:site_name" content="rcvis" />
+<meta property="og:url" content="https://rcvis.com/v/city-of-boulder-mayoral-candidates-1" />
+
+
+<meta property="og:type" content="website">
+  
+  <meta property="og:image" content="https://rcvis.com/static/visualizer/favicons/android-chrome-256x256.png">
+  
+
+
+
+<meta name="robots" content="noindex">
+
+
+  <link id="oembed"
+        rel="alternate"
+        type="application/json+oembed"
+        href="https://rcvis.com/oembed?url=https%3A%2F%2Frcvis.com%2Fvo%2Fcity-of-boulder-mayoral-candidates-1%2Fbarchart-interactive"
+        title="City of Boulder Mayoral Candidates" />
+
+  <link rel="stylesheet" href="/static/CACHE/css/output.406c7018ed1e.css" type="text/css">
+
+	<script type="application/ld+json">
+		{
+      "@context" : "http://schema.org",
+      "@type" : "Dataset",
+      "name" : "City of Boulder Mayoral Candidates",
+      "description" : "RCVis is open-source Ranked-Choice Voting Visualization software",
+      "temporalCoverage" : "Tuesday, November 7, 2023",
+      "license" : "open-source",
+      "creator" : {
+        "@type": "Organization",
+        "name": "RCVis"
+      }
+		}
+	</script>
+
+
+</head>
+
+<body id="page-top" class="vis-page"><a href="https://rcvis.com/cdn-cgi/content?id=a88bU5i2c01KaF2rEuyPtW8uYOHeJXJwZhyLEAKTVDY-1793280213.8061066-1.2.1.1-50UgygwTv.D_Y83f50Dq.__fobv1.TKaeqUEjdndUGwfrSf1Ep4Ie5GPDpLKzBea" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+  <a class="skip-link" href="#maincontent">Skip to main content</a>
+  <!-- Site header / navigation -->
+  <header class="site-header" id="mainNav">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="navbar-brand" href="/index.html"><img src="/static/visualizer/logo-dark.png" width="120" height="28" alt="RCVis logo" id="logo" /></a>
+
+      <ul class="navbar-nav ml-auto tabswitchnavbar" role="tablist" aria-label="Visualizations">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link btn" id="barchart-tab" data-toggle="changeviz" href="#barchart" role="tab" aria-controls="id-barchart" aria-selected="true">
+              <img class="tabicon" src="/static/visualizer/tabicons/barchart.png" width="18" height="18" alt="Barchart icon"/>
+              <span class="tabtext">Bar</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation" name="li_hideable_tabular">
+            <a class="nav-link btn" id="single-table-summary-tab" data-toggle="changeviz" href="#single-table-summary" role="tab" aria-controls="id-single-table-summary" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/singletable.png" width="18" height="18" alt="Single Table Summary icon. 'formulae table with row and column cells' by icon 54 from the Noun Project."/>
+              <span class="tabtext">Table</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation" name="li_hideable_pie">
+            <a class="nav-link btn" id="pie-tab" data-toggle="changeviz" href="#pie" role="tab" aria-controls="id-pie" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/pie.png" width="18" height="18" alt="Pie icon"/>
+              <span class="tabtext">Pie</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation" name="li_hideable_sankey">
+            <a class="nav-link btn" id="sankey-tab" data-toggle="changeviz" href="#sankey" role="tab" aria-controls="id-sankey" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/sankey.png" width="18" height="18" alt="Sankey icon. 'sankey graph' by Product Pencil from the Noun Project."/>
+              <span class="tabtext">Sankey</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation" name="li_hideable_tabular">
+            <a class="nav-link btn" id="round-by-round-tab" data-toggle="changeviz" href="#round-by-round" role="tab" aria-controls="id-round-by-round" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/roundbyround.png" width="18" height="18" alt="Round-By-Round icon. 'move cells to another location for editing' by icon 54 from the Noun Project."/>
+              <span class="tabtext">By round</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation" name="li_hideable_tabular">
+            <a class="nav-link btn" id="candidate-summary-tab" data-toggle="changeviz" href="#candidate-summary" role="tab" aria-controls="id-candidate-summary" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/candidatesummary.png" width="18" height="18" alt="Candidate summary icon. 'data set' by H Alberto Gongora from the Noun Project."/>
+              <span class="tabtext">By candidate</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link btn" id="settings-tab" data-toggle="changeviz" href="#settings" role="tab" aria-controls="id-settings" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/settings.png" width="18" height="18" alt="Settings icon"/>
+              <span class="tabtext">Settings</span>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link btn" id="share-tab" data-toggle="changeviz" href="#share" role="tab" aria-controls="id-share" aria-selected="false">
+              <img class="tabicon" src="/static/visualizer/tabicons/share.png" width="18" height="18" alt="Share icon"/>
+              <span class="tabtext">Share</span>
+            </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+<main id="maincontent" tabindex="-1">
+
+<div id="visualize-header-deferred-visibility"
+     style="height: calc(200px + 5 * 100px)"> <!-- guess at the height to reduce Cumulative Layout Shift. removed in tabs-nonblocking.js once loaded. -->
+  <header class="masthead text-left pb-1 pt-1">
+  <div class="container px-0">
+      <h1 class="masthead-subheading font-weight-light electiontitleheading mt-1 mb-0 ml-3">City of Boulder Mayoral Candidates</h1>
+      <p class="font-weight-light mb-0 ml-3">Tuesday, November 7, 2023</p>
+      <p class="font-weight-light mb-1 ml-3 masthead-details">
+        
+          The
+          
+          results of a ranked-choice voting election.
+        
+        | <a href="/raw/city-of-boulder-mayoral-candidates-1">Download Raw Summary Data</a>
+        
+        | <a href="https://electionresults.bouldercounty.gov/">Source [electionresults.bouldercounty.gov]</a>
+        
+      </p>
+  </div>
+  </header>
+
+  <div class="px-0">
+    <div class="container vis-wrapper" id="id-barchart" data-anchor="barchart" role="tabpanel" aria-labelledby="barchart-tab">
+      <div class="vis-fixed">
+          <div class="shadow-wrapper row d-flex justify-content-left">
+    <div id="bargraph-fixed-container" class="col-s-2 col-md-9 col-s-2">
+        <div id="bargraph-fixed-body">
+        </div>
+    </div>
+    <div class="col" id="bargraph-fixed-legend">
+        Legend
+        <hr>
+    </div>
+</div>
+
+      </div>
+      <div class="vis-interactive">
+          
+
+
+<link rel="stylesheet" href="/static/CACHE/css/output.a145ed893737.css" type="text/css">
+
+<div class="container-fluid">
+  <div class="row d-flex flex-column justify-content-left align-items-start">
+    <div class="round-description-container">
+      <div id="round-description-wrapper" class="round-description-wrapper" role="status" aria-live="polite" aria-atomic="true">
+        <div class="round-description-text">
+          <span id="bargraph-interactive-round-description">
+          </span>
+          <span id="bargraph-interactive-why-button">
+            <button type="button" class="btn btn-link faq-link" onclick="showFaqs()">Read a detailed explanation</button>.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="shadow-wrapper col-md-12 col-xl-10" id="bargraph-interactive-body">
+      <div id="bargraph-slider-container" class="ml-auto mr-auto">
+      </div>
+    </div>
+    <div id="faq-text"></div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="vis-wrapper" id="id-sankey" data-anchor="sankey" role="tabpanel" aria-labelledby="sankey-tab">
+        <div id="sankey-body" class="shadow-wrapper">
+    <div id="topbar"></div>
+    <div id="content"></div>
+</div>
+
+    </div>
+
+    <div class="vis-wrapper" id="id-round-by-round" data-anchor="round-by-round" role="tabpanel" aria-labelledby="round-by-round-tab">
+      <div class="vis-fixed">
+          
+
+<div id="tabular-body">
+</div>
+
+<div class="responsive-table-wrapper">
+<div id="tabularByRoundInteractiveContainer" class="responsive-table">
+<table class="shadow-wrapper table fixed-width-table">
+    <caption class="sr-only">Candidates eliminated and elected in each round</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Round</th>
+            <th scope="col">Eliminated</th>
+            <th scope="col">Winners</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Round 1</th>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Round 2</th>
+            <td>Nicole Speer<br/>Paul Tweedlie</td>
+            <td>Aaron Brockett</td>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+</div>
+
+      </div>
+      <div class="vis-interactive">
+          
+
+  <div id="tabular-by-round-slider-container" class="ml-auto mr-auto">
+  </div>
+
+  <div id="tabularByRoundInteractiveContainer">
+    
+      <div id="tabular_round_container_0">
+        <h2 class="mt-2 text-center round-heading">Round 1</h2>
+        <table class="shadow-wrapper table fixed-width-table">
+          <caption class="sr-only">Round 1: what changed for each candidate, and their total votes</caption>
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Candidate</th>
+              <th style="max-width: 200px" scope="col">What changed</th>
+              <th scope="col">Current total votes</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Aaron Brockett</th>
+                  <td>11,504 votes in the first round</td>
+                  <td><strong>34.97%</strong><br/>
+                              11,504 votes</td>
+              </tr>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Bob Yates</th>
+                  <td>14,271 votes in the first round</td>
+                  <td><strong>43.39%</strong><br/>
+                              14,271 votes</td>
+              </tr>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Nicole Speer</th>
+                  <td>6,369 votes in the first round</td>
+                  <td><strong>19.36%</strong><br/>
+                              6,369 votes</td>
+              </tr>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Paul Tweedlie</th>
+                  <td>749 votes in the first round</td>
+                  <td><strong>2.28%</strong><br/>
+                              749 votes</td>
+              </tr>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Inactive Ballots</th>
+                  <td>All ballots are active in the first round</td>
+                  <td><strong></strong><br/>
+                              </td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    
+      <div id="tabular_round_container_1">
+        <h2 class="mt-2 text-center round-heading">Round 2</h2>
+        <table class="shadow-wrapper table fixed-width-table">
+          <caption class="sr-only">Round 2: what changed for each candidate, and their total votes</caption>
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Candidate</th>
+              <th style="max-width: 200px" scope="col">What changed</th>
+              <th scope="col">Current total votes</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            
+              
+              <tr style="background-color: #BFFFCC">
+              
+                  <th scope="row">Aaron Brockett</th>
+                  <td>Elected: Gained 5,319 votes</td>
+                  <td><strong>51.9%</strong><br/>
+                              16,823 votes</td>
+              </tr>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Bob Yates</th>
+                  <td>Gained 1,321 votes</td>
+                  <td><strong>48.1%</strong><br/>
+                              15,592 votes</td>
+              </tr>
+            
+              
+              <tr style="background-color: #FFBFBF">
+              
+                  <th scope="row">Nicole Speer</th>
+                  <td>Eliminated: 6,369 votes redistributed to remaining candidates or became inactive</td>
+                  <td><strong></strong><br/>
+                              </td>
+              </tr>
+            
+              
+              <tr style="background-color: #FFBFBF">
+              
+                  <th scope="row">Paul Tweedlie</th>
+                  <td>Eliminated: 749 votes redistributed to remaining candidates or became inactive</td>
+                  <td><strong></strong><br/>
+                              </td>
+              </tr>
+            
+              
+              <tr style="background-color: #fff">
+              
+                  <th scope="row">Inactive Ballots</th>
+                  <td>478 ballots became inactive</td>
+                  <td><strong></strong><br/>
+                              </td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    
+  </div>
+
+      </div>
+    </div>
+
+    <div class="vis-wrapper" id="id-pie" data-anchor="pie" role="tabpanel" aria-labelledby="pie-tab">
+        
+<!-- Embed JSON Data -->
+<script id="rawDataId" type="application/json">{"config": {"date": "2023-11-07", "contest": "City of Boulder Mayoral Candidates", "office": "City of Boulder Mayoral Candidates", "threshold": 16208.0}, "results": [{"round": 1, "tally": {"Aaron Brockett": 11504.0, "Nicole Speer": 6369.0, "Bob Yates": 14271.0, "Paul Tweedlie": 749.0, "Inactive Ballots": 1356.0}, "tallyResults": [{"eliminated": "Nicole Speer", "transfers": {}}, {"eliminated": "Paul Tweedlie", "transfers": {}}]}, {"round": 2, "tally": {"Aaron Brockett": 16823.0, "Bob Yates": 15592.0, "Inactive Ballots": 1834.0}, "tallyResults": [{"elected": "Aaron Brockett", "transfers": {}}]}]}</script>
+
+
+<div id="pie-wrapper" class="shadow-wrapper">
+    <div id="pie-slider-container"></div>
+    <p id="pie-description" class="sr-only">
+        Pie chart of each candidate's share of the votes in the selected round.
+        Use the round controls above to change rounds; the round is described as it changes.
+        The same numbers are available in the table views.
+    </p>
+    <div id="pie-body" style="width: 100%; max-width: 800px; aspect-ratio: 1; margin: 0 auto;" aria-describedby="pie-description"></div>
+</div>
+
+    </div>
+
+    <div class="vis-wrapper" id="id-candidate-summary" data-anchor="candidate-summary" role="tabpanel" aria-labelledby="candidate-summary-tab">
+        
+
+
+<div class="candidate-container" data-candidate-name="Aaron Brockett" data-is-winner="true">
+    <h2 class="text-center round-heading"> Aaron Brockett </h2>
+    <table class="shadow-wrapper table fixed-width-table">
+    <caption class="sr-only">Aaron Brockett: what changed and total votes in each round</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Round</th>
+            <th scope="col" style="max-width: 800px">What changed</th>
+            <th scope="col">Current total votes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Round 1</th>
+            <td>11504.0 first-round votes. </td>
+            <td><strong>34.97%</strong><br/>
+                        11,504 votes</td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Round 2</th>
+            <td>Elected. </td>
+            <td><strong>51.9%</strong><br/>
+                        16,823 votes</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</div>
+
+<div class="candidate-container" data-candidate-name="Bob Yates" data-is-winner="false">
+    <h2 class="text-center round-heading"> Bob Yates </h2>
+    <table class="shadow-wrapper table fixed-width-table">
+    <caption class="sr-only">Bob Yates: what changed and total votes in each round</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Round</th>
+            <th scope="col" style="max-width: 800px">What changed</th>
+            <th scope="col">Current total votes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Round 1</th>
+            <td>14271.0 first-round votes. </td>
+            <td><strong>43.39%</strong><br/>
+                        14,271 votes</td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Round 2</th>
+            <td></td>
+            <td><strong>48.1%</strong><br/>
+                        15,592 votes</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</div>
+
+<div class="candidate-container" data-candidate-name="Nicole Speer" data-is-winner="false">
+    <h2 class="text-center round-heading"> Nicole Speer </h2>
+    <table class="shadow-wrapper table fixed-width-table">
+    <caption class="sr-only">Nicole Speer: what changed and total votes in each round</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Round</th>
+            <th scope="col" style="max-width: 800px">What changed</th>
+            <th scope="col">Current total votes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Round 1</th>
+            <td>6369.0 first-round votes. Eliminated. </td>
+            <td><strong>19.36%</strong><br/>
+                        6,369 votes</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</div>
+
+<div class="candidate-container" data-candidate-name="Paul Tweedlie" data-is-winner="false">
+    <h2 class="text-center round-heading"> Paul Tweedlie </h2>
+    <table class="shadow-wrapper table fixed-width-table">
+    <caption class="sr-only">Paul Tweedlie: what changed and total votes in each round</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Round</th>
+            <th scope="col" style="max-width: 800px">What changed</th>
+            <th scope="col">Current total votes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Round 1</th>
+            <td>749.0 first-round votes. Eliminated. </td>
+            <td><strong>2.28%</strong><br/>
+                        749 votes</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</div>
+
+<div class="candidate-container" data-candidate-name="Inactive Ballots" data-is-winner="false">
+    <h2 class="text-center round-heading"> Inactive Ballots </h2>
+    <table class="shadow-wrapper table fixed-width-table">
+    <caption class="sr-only">Inactive Ballots: what changed and total votes in each round</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Round</th>
+            <th scope="col" style="max-width: 800px">What changed</th>
+            <th scope="col">Current total votes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Round 1</th>
+            <td>1356.0 first-round votes. </td>
+            <td><strong>1,356</strong><br/>
+                        ballots</td>
+        </tr>
+        
+        <tr>
+            <th scope="row">Round 2</th>
+            <td></td>
+            <td><strong>1,834</strong><br/>
+                        ballots</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (!config.onlyShowWinnersTabular) {
+        return;
+    }
+
+    const candidateContainers = document.querySelectorAll('.candidate-container');
+    candidateContainers.forEach(function(container) {
+        console.log(container.getAttribute('data-is-winner'));
+        if (container.getAttribute('data-is-winner') !== 'true') {
+            container.style.display = 'none';
+        }
+    });
+});
+</script>
+
+    </div>
+
+    <div class="vis-wrapper" id="id-single-table-summary" data-anchor="single-table-summary" role="tabpanel" aria-labelledby="single-table-summary-tab">
+        
+
+<link rel="stylesheet" type="text/css" href="/static/tabular/style.css">
+
+<div class="shadow-wrapper responsive-table-wrapper" id="single-table-summary-wrapper">
+<div class="responsive-table">
+<table class="table" id="single-table-summary-table">
+    <caption class="sr-only">Each candidate's votes in each round. Cells are shaded green once a candidate is elected and red once they are eliminated.</caption>
+    <thead class="thead-light">
+        <tr>
+            <th scope="col" class="col-auto">Candidate name </th>
+            
+                <th scope="col" class="col-auto">Round 1</th>
+            
+                <th scope="col" class="col-auto">Round 2</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <th scope="row">Aaron Brockett</th>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">34.97%</span>
+                                              11,504 votes
+                    
+                    
+                 </td>
+            
+                
+                 <td style="background-color: #A0FFB5">
+                    
+                      <span class="primaryLabel">51.9%</span>
+                                              16,823 votes
+                    
+                    
+                      <span class="sr-only">Elected</span>
+                    
+                 </td>
+            
+        </tr>
+        
+        <tr>
+            <th scope="row">Bob Yates</th>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">43.39%</span>
+                                              14,271 votes
+                    
+                    
+                 </td>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">48.1%</span>
+                                              15,592 votes
+                    
+                    
+                 </td>
+            
+        </tr>
+        
+        <tr>
+            <th scope="row">Nicole Speer</th>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">19.36%</span>
+                                              6,369 votes
+                    
+                    
+                 </td>
+            
+                
+                 <td style="background-color: #FFBEBE">
+                    
+                    
+                      <span class="sr-only">Eliminated</span>
+                    
+                 </td>
+            
+        </tr>
+        
+        <tr>
+            <th scope="row">Paul Tweedlie</th>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">2.28%</span>
+                                              749 votes
+                    
+                    
+                 </td>
+            
+                
+                 <td style="background-color: #FFBEBE">
+                    
+                    
+                      <span class="sr-only">Eliminated</span>
+                    
+                 </td>
+            
+        </tr>
+        
+        <tr>
+            <th scope="row">Inactive Ballots</th>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">1,356</span>
+                                              ballots
+                    
+                    
+                 </td>
+            
+                
+                 <td style="background-color: rgba(0,0,0,0)">
+                    
+                      <span class="primaryLabel">1,834</span>
+                                              ballots
+                    
+                    
+                 </td>
+            
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+</div>
+
+    </div>
+
+    <div class="vis-wrapper" id="id-settings" data-anchor="settings" role="tabpanel" aria-labelledby="settings-tab">
+        
+
+
+<link rel="stylesheet" href="/static/CACHE/css/output.60e2d1b64044.css" type="text/css">
+              
+
+  <form action="#barchart" enctype="multipart/form-data" method="get" id="update-settings-form">
+
+<body>
+     <div class="container formArea">
+        
+        
+
+        <button class="collapsible" id="colorOptions">▶ Color theme</button>
+        <div class="optionscontent">
+            <p class="mt-3">
+              <label for="colorTheme">Color theme:</label>
+              <select id="colorTheme" name="colorTheme">
+                <option value="0">Full color spectrum</option>
+                <option value="1" selected>Desaturated purple to orange spectrum</option>
+                <option value="2">Alternating colors</option>
+              </select>
+            </p>
+        </div>
+
+        <button class="collapsible" id="bargraphOptions">▶ Bargraph visualization options</button>
+        <div class="optionscontent">
+            <p class="mt-3">
+              <label for="eliminationBarColor">How do display elimination bars:</label>
+              <select id="eliminationBarColor" name="eliminationBarColor">
+                <option value="0" selected>Gray them out</option>
+                <option value="1">Hide them altogether</option>
+                <option value="2">Show color matching the transfer</option>
+              </select>
+            </p>
+
+            <p>
+            <input type="hidden" name="doDimPrevRoundColors"/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="doDimPrevRoundColors" checked> Highlight the current round when interactive</label>
+            </p>
+
+            <p>
+            <input type="hidden" name="isPreferentialBlock"/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="isPreferentialBlock"> Is this election a <a href="https://en.wikipedia.org/wiki/Preferential_block_voting" target="_blank">Preferential Block Voting</a> election?</label>
+            <br/>
+            <small>This changes the longform description FAQs to describe Preferential Block Voting</small>
+            </p>
+        </div>
+
+        <button class="collapsible" id="pieOptions">▶ Pie chart visualization options</button>
+        <div class="optionscontent">
+            <p class="mt-3">
+            <input type="hidden" name="hidePie" value=""/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="hidePie"/> Hide the pie chart altogether</label>
+            </p>
+        </div>
+
+        <button class="collapsible" id="sankeyOptions">▶ Sankey visualization options</button>
+        <div class="optionscontent">
+            <p class="mt-3">
+            <input type="hidden" name="hideSankey" value=""/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="hideSankey"/> Hide the sankey altogether</label>
+            </p>
+
+            <p>
+            <input type="hidden" name="rotateNames" value=""/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="rotateNames"/> Rotate the names of candidates on the top bar</label>
+            </p>
+
+            <p>
+            <input type="hidden" name="showRoundNumbersOnSankey"/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="showRoundNumbersOnSankey" checked/> Show round numbers on Sankey?</label>
+            </p>
+        </div>
+
+        <button class="collapsible" id="tabularOptions">▶ Tabular visualization options</button>
+        <div class="optionscontent">
+            <p class="mt-3">
+            <input type="hidden" name="hideTabular"/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="hideTabular"/> Hide all tabular formats</label>
+            </p>
+            <p>
+            <input type="hidden" name="onlyShowWinnersTabular"/><!-- To be sent in GET/POST if unchecked -->
+            <label><input type="checkbox" name="onlyShowWinnersTabular"/> Only show winners, hiding eliminated candidates</label>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container text-center" id="submitDiv">
+      <button id="updateSettings" type="submit" class="btn btn-primary btn-xl">Update Settings</button>
+    </div>
+  </form>
+
+</body>
+
+    </div>
+
+    <div class="vis-wrapper" id="id-share" data-anchor="share" role="tabpanel" aria-labelledby="share-tab">
+        
+
+
+
+<div class="container" id="sharecontainer">
+  <div class="row mb-4">
+    <h2>Share To</h2>
+  </div>
+
+  <div class="row" justify-content-md-center>
+    <div class="col-sm">
+        
+        <div class="tweet-this">
+    <a href="https://twitter.com/intent/tweet?text=City%20of%20Boulder%20Mayoral%20Candidates%20Ranked%20Choice%20Voting%20Results%2C%20Visualized%20by%20%40rcvisdotcom%20https%3A//rcvis.com/v/city-of-boulder-mayoral-candidates-1" class="meta-act-link meta-tweet " target="_blank"><div class="col-sm text-center">
+    <img src='/static/share/share_icons/twitter.png' width='128px'/><br/>
+    Twitter
+</div>
+</a>
+</div>
+
+    </div>
+    <div class="col-sm">
+        
+        <div class="facebook-this">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//rcvis.com/v/city-of-boulder-mayoral-candidates-1" class="" target="_blank"><div class="col-sm text-center">
+    <img src='/static/share/share_icons/facebook.png' width='128px'/><br/>
+    Facebook
+</div>
+</a>
+</div>
+
+    </div>
+    <div class="col-sm">
+        
+        <div class="reddit-this">
+    <a href="https://www.reddit.com/submit?title=City%20of%20Boulder%20Mayoral%20Candidates%20Ranked%20Choice%20Voting%20Results%2C%20Visualized&url=https%3A//rcvis.com/v/city-of-boulder-mayoral-candidates-1" class="" target="_blank"><div class="col-sm text-center">
+    <img src='/static/share/share_icons/reddit.png' width='128px'/><br/>
+    Reddit
+</div>
+</a>
+</div>
+
+    </div>
+    <div class="col-sm">
+        
+        <div class="telegram-this">
+    <a href="https://t.me/share/url?text=City%20of%20Boulder%20Mayoral%20Candidates%20Ranked%20Choice%20Voting%20Results%2C%20Visualized&url=https%3A//rcvis.com/v/city-of-boulder-mayoral-candidates-1" class="" target="_blank"><div class="col-sm text-center">
+    <img src='/static/share/share_icons/telegram.png' width='128px'/><br/>
+    Telegram
+</div>
+</a>
+</div>
+
+    </div>
+    <div class="col-sm">
+        
+        <div class="whatsapp-this">
+    <a href="https://api.whatsapp.com/send?text=https%3A//rcvis.com/v/city-of-boulder-mayoral-candidates-1" class="" target="_blank"><div class="col-sm text-center">
+    <img src='/static/share/share_icons/whatsapp.png' width='128px'/><br/>
+    WhatsApp
+</div>
+</a>
+</div>
+
+    </div>
+    <div class="col-sm">
+        
+        <div class="mail-this">
+    <a href="/cdn-cgi/l/email-protection#88b7fbfdeae2edebfcb5aeeae7ecf1b5cbe1fcf1adbab8e7eeadbab8cae7fde4ecedfaadbab8c5e9f1e7fae9e4adbab8cbe9e6ece1ece9fcedfbadbab8dae9e6e3edecadbab8cbe0e7e1ebedadbab8dee7fce1e6efadbab8daedfbfde4fcfbadbacbadbab8dee1fbfde9e4e1f2edeca6adbab8e0fcfcf8fbadbbc9a7a7faebfee1fba6ebe7e5a7fea7ebe1fcf1a5e7eea5eae7fde4ecedfaa5e5e9f1e7fae9e4a5ebe9e6ece1ece9fcedfba5b9" class=""><div class="col-sm text-center">
+    <img src='/static/share/share_icons/email.png' width='128px'/><br/>
+    Email
+</div>
+</a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-md-left mt-5">
+    <div class="col-sm"><label for="wikicode"><h3 class="px-0">WikiCode Export</h3></label></div>
+  </div>
+  <div class="row justify-content-md-left mt-0">
+    <div class="col-xl"><textarea id="wikicode" class="codeExport" cols="500" rows="3">
+            {| class=&quot;wikitable sortable&quot;
+            ! colspan=&quot; 5 &quot; | City of Boulder Mayoral Candidates &lt;ref&gt;
+                {{cite web
+                |title=City of Boulder Mayoral Candidates Ranked Choice Voting Election Results Visualization
+                |url=https://rcvis.com/v/city-of-boulder-mayoral-candidates-1#tabular-candidate-by-round
+                |website=rcvis.com
+                |publisher=RCVis
+                |date=October 29, 2026
+                }}
+            &lt;/ref&gt;
+            |- style=&quot;background:#eee; text-align:center;&quot; 
+            ! rowspan=2 style=&quot;text-align:center;&quot; | Candidate
+                ! colspan=2 style=&quot;text-align:center;&quot; | Round 1
+                ! colspan=2 style=&quot;text-align:center;&quot; | Round 2
+            |-
+                ! Votes
+                ! %
+                ! Votes
+                ! %
+                |-
+                ! scope=&quot;row&quot; style=&quot;text-align:left;&quot; | {{sortname| Aaron|Brockett}}
+                        |  11,504
+                        |  34.97%
+                        | {{won|}} 16,823
+                        | {{won|}} 51.9%
+                |-
+                |-
+                ! scope=&quot;row&quot; style=&quot;text-align:left;&quot; | {{sortname| Bob|Yates}}
+                        |  14,271
+                        |  43.39%
+                        |  15,592
+                        |  48.1%
+                |-
+                |-
+                ! scope=&quot;row&quot; style=&quot;text-align:left;&quot; | {{sortname| Nicole|Speer}}
+                        |  6,369
+                        |  19.36%
+            ! colspan=2 style=&quot;text-align:center;&quot; {{lost|Eliminated}}
+                |-
+                |-
+                ! scope=&quot;row&quot; style=&quot;text-align:left;&quot; | {{sortname| Paul|Tweedlie}}
+                        |  749
+                        |  2.28%
+            ! colspan=2 style=&quot;text-align:center;&quot; {{lost|Eliminated}}
+                |-
+                |-
+                ! scope=&quot;row&quot; style=&quot;text-align:left;&quot; | [[Instant-runoff voting#Invalid ballots and incomplete ballots|Inactive Ballots]]
+                        ! colspan=&quot;2&quot; |   1,356 ballots
+                        ! colspan=&quot;2&quot; |   1,834 ballots
+                |-
+            |}</textarea></div>
+  </div>
+  <div class="row mt-0">
+    <div class="col-xl">
+      <i>Presents the Single Table Summary in a format readable by Wikipedia</i>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row justify-content-md-left mt-5">
+    <div class="col-sm">
+      <label for="htmlembedexport"><h3 class="px-0">HTML Export</h3></label>
+    </div>
+  </div>
+  <div class="row justify-content-md-left mt-1">
+    <div class="col-sm">
+      <label for="exportVistypeSelector">Visualization type: </label>
+      <select class="form-control" id="exportVistypeSelector" onchange="switchVisTypeHTML('https://rcvis.com/vo/city-of-boulder-mayoral-candidates-1', this.value);">
+        <!-- Filled out by initializeOptions() -->
+      </select>
+    </div>
+  </div>
+  <div class="row justify-content-md-left mt-0">
+    <div class="col-xl"><textarea id="htmlembedexport" class="codeExport" cols="500" rows="3"></textarea></div>
+  </div>
+  <div class="row mt-0">
+    <div class="col-xl">
+      <i>Uses an iframe to embed the interactive Bar Chart</i>
+    </div>
+  </div>
+</div>
+
+
+<div class="alert alert-primary alert-dismissible fade show" role="alert" id="copiedInfo" style="display:none" tooltip="help">
+    <strong>Copied to clipboard!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="container mb-5">
+  <div class="row justify-content-md-left mt-5">
+    <div class="col-sm">
+      <label for="embedlyexport"><h3 class="px-0">Medium/Wordpress/Canva</h3></label>
+    </div>
+  </div>
+  <div class="row justify-content-md-left mt-1">
+    <div class="col-sm">
+      <label for="exportVistypeSelector">Visualization type: </label>
+      <select class="form-control" id="embedlyVistypeSelector" onchange="switchVisTypeEmbedly('https://rcvis.com/vo/city-of-boulder-mayoral-candidates-1', this.value);">
+        <!-- Filled out by initializeOptions() -->
+      </select>
+    </div>
+  </div>
+  <div class="row justify-content-md-left mt-0">
+    <div class="col-xl"><textarea id="embedlyexport" class="codeExport" cols="500" rows="1"></textarea></div>
+  </div>
+  <div class="row mt-0">
+    <div class="col-xl">
+      <i>On sites that support embed.ly (including Medium, Wordpress, Canva, and more), you can just paste this URL</i>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <small id="toggle-dynamic" class="mt-0 text-muted text-center">
+      <a id="make-print-friendly" href="#" class="vis-interactive">Showing interactive content. Show print-friendly instead?</a>
+      <a id="make-interactive" href="#" class="vis-fixed">Showing print-friendly content. Show interactive instead?</a>
+    </small>
+  </div>
+</div>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-grid">
+        <div>
+          <h2>About RCVis</h2>
+          <p>RCVis is open-source Ranked-Choice Voting Visualization software.</p>
+          <p>Let's collaborate! To use these visualizations for your election, poll, or infographic, please get in touch: <a href="/cdn-cgi/l/email-protection#ec98898d81ac9e8f9a859fc28f8381"><span class="__cf_email__" data-cfemail="285c4d4945685a4b5e415b064b4745">[email&#160;protected]</span></a>.</p>
+        </div>
+        <div>
+          <h2>Stay in touch</h2>
+          <ul class="site-footer-links">
+            <li>
+              <a href="/updates.html">Recent updates</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwMw6xYNyxbZiEtuB0G9F7avQhkLY_jmlXjNOBPA01qR4y3g/viewform?usp=sf_link" target="_blank" rel="noopener">Send feedback</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/rcvisdotcom"><img src="/static/visualizer/icon_twitter.svg" alt="" width="16" height="16">Follow us on Twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/artoonie/rcvis"><img src="/static/visualizer/icon_github.svg" alt="" width="16" height="16">Source code on GitHub</a>
+            </li>
+            <li>
+              <a href="/cdn-cgi/l/email-protection#d0a4b5b1bd90a2b3a6b9a3feb3bfbd"><img src="/static/visualizer/icon_email.svg" alt="" width="16" height="16"><span class="__cf_email__" data-cfemail="f98d9c9894b98b9a8f908ad79a9694">[email&#160;protected]</span></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <p>Occasional updates about new features and elections.</p>
+<!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="https://rcvis.us20.list-manage.com/subscribe/post?u=ef3745fe023451adbc1053eb9&amp;id=35fe134379" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL" class="sr-only" style="position:absolute;left:-5000px" aria-hidden="true">Email address</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ef3745fe023451adbc1053eb9_35fe134379" tabindex="-1" value=""></div>
+      <input type="submit" value="Join our mailing list" name="subscribe" id="mc-embedded-subscribe" class="button">
+    </div>
+  </form>
+</div>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+
+      <div class="site-footer-bottom">
+        <p>Copyright &copy; 2026 RCVis. Free, open-source, and nonpartisan.</p>
+        <p>Thank you to <a href="https://github.com/artoonie/rcvis/graphs/contributors">our contributors</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Common to all pages, visualizer and otherwise -->
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/CACHE/js/output.38dc2b412770.js"></script>
+<link rel="stylesheet" href="/static/CACHE/css/output.c09a3668b327.css" type="text/css">
+
+
+    <!-- Common to just pages that show visualizations  -->
+
+
+
+<!-- Common to all pages, visualizer and otherwise -->
+
+
+
+<script src="/static/CACHE/js/output.38dc2b412770.js"></script>
+<link rel="stylesheet" href="/static/CACHE/css/output.c09a3668b327.css" type="text/css">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.8.0/d3.min.js" integrity="sha256-xsGohpJpfIm6CIdoMHLMIRTore3sDR5poFt7CeUxjGI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-jXCJJT3KKcnNjZ3rfsabCj1EX4j2omR4xxm+H5CtywE=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="/static/CACHE/css/output.ad730bac3bc7.css" type="text/css">
+
+<!-- Shared resources for multiple visualizations-->
+<script src="/static/CACHE/js/output.9ab726779849.js"></script>
+
+    
+
+
+<link rel="stylesheet" href="/static/CACHE/css/output.276c818d0275.css" type="text/css">
+
+<script src="/static/CACHE/js/output.cb1fbb223390.js"></script>
+
+<script type="text/javascript">
+numRounds = 2;
+numCandidates = 5 ;
+numWinners = 1 ;
+longestLabelApxWidth = 6.84;
+totalVotesPerRound = [32893.0, 32415.0];
+charMap = {"a": "Inactive Ballots", "b": "Paul Tweedlie", "c": "Nicole Speer", "d": "Bob Yates", "e": "Aaron Brockett"};
+graphCompressed = {"nodes": [["e", 0, 11504.0, 0, 0], ["e", 1, 16823.0, 1, 0], ["d", 0, 14271.0, 0, 0], ["d", 1, 15592.0, 0, 0], ["c", 0, 6369.0, 0, 1], ["b", 0, 749.0, 0, 1]], "links": [[0, 1, 11504.0], [2, 3, 14271.0]]};
+  // lgtm [js/useless-expression]
+
+function renderSankey() {
+  const graph = decompressGraph(graphCompressed, charMap);
+  if (numRounds > 1)
+  {
+    loadFunctions();
+    makeSankey(graph, numRounds, numCandidates, numWinners, longestLabelApxWidth, totalVotesPerRound, config.colorTheme);
+  }
+  else
+  {
+    d3.select("#sankey-body").append("text")
+          .text("Sankey diagrams show a flow from one round to the next. This single-round election cannot be displayed as a Sankey diagram.")
+          .style("margin-left", "50px")
+  }
+}
+
+requestAnimationFrame(renderSankey);
+</script>
+
+    
+
+<!-- Previously wrapped in django-compressor block, but compressor 4.5.1
+     breaks ES module scripts. May need a different compression approach. -->
+<script type="module" src="/static/pie/pie-chart.es.js"></script>
+
+<script>
+
+    // const electionSummary = JSON.parse(document.getElementById("rawDataId").textContent);
+    //
+    // We might as well leave this as a string, because it has to be serialized to send to the
+    // client browser anyway, and the pie chart component can handle it in string form.
+    const electionSummary = document.getElementById("rawDataId").textContent;
+
+    // Generate candidate colors from the election's color theme,
+    // matching the palette used by the other visualizations.
+    const colorGenerator = getColorGenerator(config.colorTheme);
+    const candidateColors = Array.from(colorGenerator(5));
+
+    // Create the pie-chart element
+    const pieChart = document.createElement("pie-chart");
+
+    // Functions *must* be added as properties; anything added as an attribute must be a string.
+    // So we don't have to re-stringify the JSON object, which will be immediately parsed again,
+    // we can just bind it in object form here.
+    pieChart.requestRoundChange = updateRound;
+    pieChart.requestSkipToRound = skipToRound;
+    pieChart.electionSummary = electionSummary;
+    pieChart.candidateColors = candidateColors;
+    pieChart.textForWinner = "elected";
+    pieChart.excludeFinalWinnerAndEliminatedCandidate = false;
+    pieChart.firstRoundDeterminesPercentages = false;
+    pieChart.randomizeOrder = true;
+    pieChart.currentRound = 2;
+
+    // Append it to the div
+    document.getElementById("pie-body").appendChild(pieChart);
+
+    const pieRoundPlayer = RoundPlayer({
+      container: document.getElementById('pie-slider-container'),
+      totalRounds: 2,
+      onChange: updatePieChartRound,
+      timeBetweenStepsMs: 3000,
+      narration: narration,
+    });
+
+    function updatePieChartRound(sliderIndex) {
+        pieChart.currentRound = sliderIndex+1;
+    }
+
+    // When the pie chart is animating it knows it is advancing rounds, but to avoid reactive
+    // loops it requests to be told the new currentRound rather than using 2-way binding.
+    // And we also update the slider state while we're at it.
+    //
+    // During auto-play, skip the setStep() call — it stops playback.
+    // The round player's timer will catch up on its next tick.
+    function updateRound(roundNum) {
+        pieChart.currentRound = roundNum;
+        if (!pieRoundPlayer.playing()) {
+            pieRoundPlayer.setStep(roundNum - 1);
+        }
+    }
+
+    // Skip to a round immediately without stopping playback.
+    // Used to skip no-transfer rounds during animation.
+    function skipToRound(roundNum) {
+        pieChart.currentRound = roundNum;
+        pieRoundPlayer.skipToStep(roundNum - 1);
+    }
+
+</script>
+
+    
+
+
+<script src="/static/CACHE/js/output.69927fc5039b.js"></script>
+
+<script type="text/javascript">
+const colorThemeGenerator = getColorGenerator(config.colorTheme);
+const colorsPerRound = Array.from(colorThemeGenerator(2));
+</script>
+
+<link rel="stylesheet" href="/static/CACHE/css/output.a145ed893737.css" type="text/css">
+
+    <script type="text/javascript">
+function makeFixedGraph() {
+  var candidateVoteCounts = [{'candidate': 'Aaron Brockett', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 11504.0, 'Round 2 (Aaron Brockett won)': 5319.0}, {'candidate': 'Bob Yates', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 14271.0, 'Round 2 (Aaron Brockett won)': 1321.0}, {'candidate': 'Nicole Speer', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 6369.0}, {'candidate': 'Paul Tweedlie', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 749.0}, {'candidate': 'Inactive Ballots', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 1356.0, 'Round 2 (Aaron Brockett won)': 478.0}];
+var humanFriendlyRoundNames = ["Round 1 (Nicole Speer & Paul Tweedlie eliminated)", "Round 2 (Aaron Brockett won)"];
+var threshold = 16208.0;
+var longestLabelApxWidth = 6.84;
+var totalVotesPerRound = [32893.0, 32415.0];
+var numRoundsTilWin = {"Aaron Brockett": 1};  // lgtm [js/useless-expression]
+
+  const numCandidates = candidateVoteCounts.length;
+  fixMaxWidthFor('bargraph-fixed-container', numCandidates);
+
+  const isInteractive = false;
+  makeBarGraph({
+    idOfContainer: "bargraph-fixed-body",
+    idOfLegend: "bargraph-fixed-legend",
+    candidateVoteCounts,
+    humanFriendlyRoundNames,
+    totalVotesPerRound,
+    numRoundsTilWin,
+    colors: colorsPerRound,
+    longestLabelApxWidth,
+    isInteractive,
+    threshold,
+    eliminationBarColor: config.eliminationBarColor,
+    isVertical: false,
+    textForWinner: "elected",
+    doDimPrevRoundColors: config.doDimPrevRoundColors,
+    candidateSidecarData: candidateSidecarData,
+    roundDescriptions: narration.rounds,
+    chartSummary: narration.summary
+  });
+}
+makeFixedGraph();
+</script>
+
+    
+
+<script type="text/javascript">
+
+const idOfWhyButton = "#bargraph-interactive-why-button";
+// Raising the scope for other methods to access
+let barchartRoundPlayer = null;
+let scrollbarLocked = false;
+
+function showTextOnRoundDescriber(description, keepFAQButtonHidden) {
+  // While playing, don't update the description text for the round
+  if (barchartRoundPlayer.playing()) {
+    return;
+  }
+
+  const idOfLegendOrRoundDescriber = "#bargraph-interactive-round-description";
+
+  // Don't re-render and transition if text already matches
+  if (d3.select(idOfLegendOrRoundDescriber).text() === description) {
+    return;
+  }
+
+  d3.select(idOfLegendOrRoundDescriber)
+  .transition()
+    .duration(100)
+    .delay(0)
+    .style("opacity", "0");
+  d3.select(idOfWhyButton)
+  .transition()
+    .duration(100)
+    .delay(0)
+    .style("opacity", "0");
+
+  d3.select(idOfLegendOrRoundDescriber)
+  .transition()
+    .delay(350)
+    .style("opacity", "1")
+    .text(description);
+
+  if (!keepFAQButtonHidden) {
+    d3.select(idOfWhyButton)
+    .transition()
+      .delay(350)
+      .style("opacity", "1");
+  }
+};
+
+
+function descriptionOfCurrRound(round) {
+  const roundData = humanFriendlyEventsPerRound[round];
+
+  let roundText = roundData.map(function(event) {
+    return event.description;
+  }).reduce(function(totalString, currText) {
+    return totalString + "\n" + currText;
+  }, "");
+
+  const roundIdentifier = `Round ${round + 1}. `;
+  return roundIdentifier + roundText;
+}
+
+
+function lockScrollbarIfNeeded() {
+  // Don't allow the animation to shift horizontally when a scrollbar is added
+  // and removed -- if a scrollbar is ever visible, keep it there.
+  if (scrollbarLocked) return;
+
+  const hasVerticalScrollbar = document.documentElement.scrollHeight > window.innerHeight;
+
+  if (hasVerticalScrollbar) {
+    document.body.style.overflowY = 'scroll';
+    scrollbarLocked = true;
+  }
+}
+
+function updateFaqText(round) {
+  const faqsPerRound = [[{"question": "What is happening?", "answer": "These are results from a ranked choice election. Voters were asked to rank the candidates from most to least favorite. The ballots are then counted in rounds. In each round, the candidate with the fewest votes is eliminated, and their supporters' votes transfer to the next choice on their ballots. The rounds continue until one candidate wins by earning more than 50% of the votes."}, {"question": "What are Inactive Ballots?", "answer": "A ballot is \"inactive\" if the voter did not rank any of the candidates remaining in that round. Voters are not required to rank all the candidates, so if all the candidates they ranked are eliminated, their ballot becomes inactive."}], [{"question": "What is happening?", "answer": "These are results from a ranked choice election. Voters were asked to rank the candidates from most to least favorite. The ballots are then counted in rounds. In each round, the candidate with the fewest votes is eliminated, and their supporters' votes transfer to the next choice on their ballots. The rounds continue until one candidate wins by earning more than 50% of the votes."}, {"question": "Why were Nicole Speer and Paul Tweedlie eliminated?", "answer": "Nicole Speer and Paul Tweedlie had the fewest votes in Round 1. Since Nicole Speer and Paul Tweedlie were eliminated, the voters who supported Nicole Speer and Paul Tweedlie had their votes count for their next choices in Round 2. Transferring votes ensures that every voter can be included in choosing the final winner, even if their favorite candidate doesn't win."}, {"question": "Why were 2 candidates eliminated in this round?", "answer": "This election used \"batch\" elimination, which reduces the number of rounds without changing the winner. The 2 eliminated candidates had fewer total votes together than the next highest candidates, so even if all of the votes for the 2 eliminated candidates had gone to one of them, that person would still trail the next highest candidates. Eliminating the candidates one at a time produces the same results, \"batch\" elimination just takes fewer rounds."}, {"question": "Why was Aaron Brockett elected this round?", "answer": "Aaron Brockett received more than 50% of the votes after 2 round(s). Only one candidate can have more than 50% of the votes, so Aaron Brockett was the candidate most preferred by these voters."}, {"question": "What are Inactive Ballots?", "answer": "A ballot is \"inactive\" if the voter did not rank any of the candidates remaining in that round. Voters are not required to rank all the candidates, so if all the candidates they ranked are eliminated, their ballot becomes inactive."}]];
+  const idOfFaqTextDiv = "faq-text";
+  const text = faqsPerRound[round]
+              .map(d => "<p class='faq-q'>" + d['question'] + "</p>" +
+                        "<p class='faq-a'>" + d['answer'] + "</p>")
+              .reduce((accum, val) => accum + val);
+  document.getElementById(idOfFaqTextDiv).innerHTML = `<h2 class="faq-description-header">Round ${round + 1} Explanation</h2> ${text}`;
+  setTimeout(lockScrollbarIfNeeded, 0); // Needs to run after the DOM is updated
+}
+
+function showFaqs() {
+  makeFaqSectionVisible();
+  document.getElementById("faq-text").scrollIntoView({ behavior: "smooth" })
+}
+
+function makeFaqSectionVisible() {
+  document.getElementById("faq-text").style.display = "block";
+}
+
+function makeInteractiveGraph() {
+  var candidateVoteCounts = [{'candidate': 'Aaron Brockett', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 11504.0, 'Round 2 (Aaron Brockett won)': 5319.0}, {'candidate': 'Bob Yates', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 14271.0, 'Round 2 (Aaron Brockett won)': 1321.0}, {'candidate': 'Nicole Speer', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 6369.0}, {'candidate': 'Paul Tweedlie', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 749.0}, {'candidate': 'Inactive Ballots', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 1356.0, 'Round 2 (Aaron Brockett won)': 478.0}];
+var humanFriendlyRoundNames = ["Round 1 (Nicole Speer & Paul Tweedlie eliminated)", "Round 2 (Aaron Brockett won)"];
+var threshold = 16208.0;
+var longestLabelApxWidth = 6.84;
+var totalVotesPerRound = [32893.0, 32415.0];
+var numRoundsTilWin = {"Aaron Brockett": 1};
+
+  // For slider TODO sync with tabular-by-round-interactive.html
+  const numRounds = 2;
+
+  const numCandidates = candidateVoteCounts.length;
+  fixMaxWidthFor('bargraph-interactive-body', numCandidates);
+  // window.onresize = fixMaxWidth; TODO fix moving across monitors for interactive and static
+
+  const isInteractive = true;
+  transitionEachBarForRound = makeBarGraph({
+    idOfContainer: "bargraph-interactive-body",
+    idOfLegend: null,
+    candidateVoteCounts,
+    humanFriendlyRoundNames,
+    totalVotesPerRound,
+    numRoundsTilWin,
+    colors: colorsPerRound,
+    longestLabelApxWidth,
+    isInteractive,
+    threshold,
+    eliminationBarColor: config.eliminationBarColor,
+    isVertical: false,
+    textForWinner: "elected",
+    doDimPrevRoundColors: config.doDimPrevRoundColors,
+    candidateSidecarData: candidateSidecarData,
+    roundDescriptions: narration.rounds,
+    chartSummary: narration.summary
+  });
+
+  function sliderValueChangedCallback(round) {
+    transitionEachBarForRound(round);
+    showTextOnRoundDescriber(descriptionOfCurrRound(round), false);
+    updateFaqText(round);
+  }
+
+  barchartRoundPlayer = RoundPlayer({
+    container: document.getElementById("bargraph-slider-container"),
+    totalRounds: numRounds,
+    onChange: sliderValueChangedCallback,
+    onPlay: function() {
+      showTextOnRoundDescriber(humanFriendlySummary, false);
+    },
+    narration: narration,
+    // The round description above the chart is already a live region
+    announceRounds: false
+  });
+
+  // After creating the slider, make the default text the summary
+  // round summary, with the FAQ button showing.
+  showTextOnRoundDescriber(humanFriendlySummary, false);
+
+  // On load, show the FAQs if not in an iframe
+  if (window.self === window.top) {
+    makeFaqSectionVisible();
+  }
+
+  // Populate the FAQ with initial description for the last round
+  updateFaqText(numRounds - 1);
+}
+
+function showFaqButton() {
+  d3.select(idOfWhyButton)
+  .transition()
+    .delay(300)
+    .duration(300)
+    .style("opacity", "100%");
+}
+
+function showFaqButtonNow() {
+  // Just used for integration testing
+  d3.select(idOfWhyButton)
+    .style("opacity", "100%");
+}
+
+makeInteractiveGraph();
+
+</script>
+
+    
+
+<script type="text/javascript">
+var candidateVoteCounts = [{'candidate': 'Aaron Brockett', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 11504.0, 'Round 2 (Aaron Brockett won)': 5319.0}, {'candidate': 'Bob Yates', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 14271.0, 'Round 2 (Aaron Brockett won)': 1321.0}, {'candidate': 'Nicole Speer', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 6369.0}, {'candidate': 'Paul Tweedlie', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 749.0}, {'candidate': 'Inactive Ballots', 'Round 1 (Nicole Speer & Paul Tweedlie eliminated)': 1356.0, 'Round 2 (Aaron Brockett won)': 478.0}];
+var humanFriendlyRoundNames = ["Round 1 (Nicole Speer & Paul Tweedlie eliminated)", "Round 2 (Aaron Brockett won)"];
+var threshold = 16208.0;
+var longestLabelApxWidth = 6.84;
+var totalVotesPerRound = [32893.0, 32415.0];
+var numRoundsTilWin = {"Aaron Brockett": 1};
+
+// For slider TODO sync with barchart-interactive.html
+var numRounds = 2;
+
+function showRound(round) {
+    for (let i = 0; i < numRounds; i++) { 
+      document.getElementById("tabular_round_container_"+i).style.display = "none";
+    }
+    document.getElementById("tabular_round_container_"+round).style.display = "block";
+}
+
+showRound(numRounds-1)
+
+const roundPlayer = RoundPlayer({
+  container: document.getElementById("tabular-by-round-slider-container"),
+  totalRounds: numRounds,
+  onChange: showRound,
+  narration: narration,
+});
+
+</script>
+
+    
+
+
+<script src="/static/CACHE/js/output.4ab31f20f46e.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script>
+  for (let key in config) {
+    if (key != 'colorTheme' && key != 'eliminationBarColor') {
+      $("input[name='"+key+"']").prop('checked', config[key]);
+    } else {
+      $("select[name='"+key+"']").prop('value', config[key]);
+    }
+  }
+</script>
+
+    
+
+
+<script src="/static/CACHE/js/output.a2426b62ae2e.js"></script>
+
+<link rel="stylesheet" href="/static/CACHE/css/output.8eb69056a3af.css" type="text/css">
+
+
+  <script src="/static/CACHE/js/output.f2b00ffc4af6.js"></script>
+
+
+</body>
+
+</html>

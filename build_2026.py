@@ -627,9 +627,16 @@ class Graph2026:
                "navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},2000);});});})();</script>"
                "</section>")
         b.insert(b.index("</div>") + 1, ask)  # right after the hero, before key dates
+        head = home_head()
+        import build_results_2026 as R
+        results = R.load_results() if R.results_enabled() else None
+        if results is not None:  # election night: a calm results card takes the key dates' place
+            b.remove(timeline(today))
+            b.insert(0, R.home_card(results))  # first thing on the page, above the hero
+            head += "<link rel=\"stylesheet\" href=\"css/results.css\">\n"
         (self.out / "index.html").write_text(
             self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current=None,
-                      head_extra=home_head()), encoding="utf-8")
+                      head_extra=head), encoding="utf-8")
 
     def write_orgs(self) -> None:
         (self.out / "orgs").mkdir(exist_ok=True)

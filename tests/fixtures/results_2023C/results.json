@@ -1,0 +1,161 @@
+{
+ "schema_version": 1,
+ "election": {
+  "name": "Boulder County 2023 Coordinated Election",
+  "date": "2023-11-07"
+ },
+ "county_status": "Official Results",
+ "county_updated": "2023-12-06T16:50:00-07:00",
+ "ballots_counted_countywide": 119772,
+ "retrieved_at": "2026-10-29T13:23:30Z",
+ "official_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/",
+ "raw_dir": null,
+ "contests": [
+  {
+   "office": "mayor",
+   "name": "City of Boulder Mayoral Candidates",
+   "official_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/RcvContest/1.html",
+   "method": "ranked_choice",
+   "seats": 1,
+   "candidates": [
+    {
+     "name": "Aaron Brockett",
+     "votes": 11504
+    },
+    {
+     "name": "Nicole Speer",
+     "votes": 6369
+    },
+    {
+     "name": "Bob Yates",
+     "votes": 14271
+    },
+    {
+     "name": "Paul Tweedlie",
+     "votes": 749
+    }
+   ],
+   "rcv_page_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/RcvContest/1.html",
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": [
+      {
+       "name": "Aaron Brockett",
+       "votes": 11504
+      },
+      {
+       "name": "Nicole Speer",
+       "votes": 6369
+      },
+      {
+       "name": "Bob Yates",
+       "votes": 14271
+      },
+      {
+       "name": "Paul Tweedlie",
+       "votes": 749
+      }
+     ],
+     "continuing": 32893,
+     "inactive": 1356
+    },
+    {
+     "round": 2,
+     "candidates": [
+      {
+       "name": "Aaron Brockett",
+       "votes": 16823
+      },
+      {
+       "name": "Bob Yates",
+       "votes": 15592
+      }
+     ],
+     "continuing": 32415,
+     "inactive": 1834
+    }
+   ],
+   "rounds_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/GetRcvFile/COBMayorRCVShortPDF.pdf",
+   "rounds_page_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/RcvContest/1.html",
+   "rounds_updated": "2023-11-16T14:26:33-07:00",
+   "first_choices_from": "round 1 of the county's ranked-choice report"
+  },
+  {
+   "office": "council",
+   "name": "City of Boulder Council Candidates (Vote for not more than Four)",
+   "official_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/#contest2",
+   "method": "plurality",
+   "seats": 4,
+   "candidates": [
+    {
+     "name": "Terri Brncic",
+     "votes": 14365
+    },
+    {
+     "name": "Jenny Robins",
+     "votes": 11249
+    },
+    {
+     "name": "Aaron Gabriel Neyer",
+     "votes": 3483
+    },
+    {
+     "name": "Jacques Decalo",
+     "votes": 3329
+    },
+    {
+     "name": "Silas Atkins",
+     "votes": 6829
+    },
+    {
+     "name": "Waylon Lewis",
+     "votes": 8862
+    },
+    {
+     "name": "Ryan Schuchard",
+     "votes": 14411
+    },
+    {
+     "name": "Tara Winer",
+     "votes": 21255
+    },
+    {
+     "name": "Tina Marquis",
+     "votes": 14958
+    },
+    {
+     "name": "Taishya Adams",
+     "votes": 14633
+    }
+   ]
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Issue 2A City Sales Use and Tax Extension (TABOR)",
+   "official_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/#contest26",
+   "code": "2A",
+   "title": "City Sales Use and Tax Extension (TABOR)",
+   "yes": 24810,
+   "no": 8473
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Question 2B Elections Administrative Charter Cleanup",
+   "official_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/#contest27",
+   "code": "2B",
+   "title": "Elections Administrative Charter Cleanup",
+   "yes": 26137,
+   "no": 4153
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Question 302 Safe Zones 4 Kids",
+   "official_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/#contest28",
+   "code": "302",
+   "title": "Safe Zones 4 Kids",
+   "yes": 20261,
+   "no": 12973
+  }
+ ]
+}

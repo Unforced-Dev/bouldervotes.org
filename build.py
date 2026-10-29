@@ -271,6 +271,8 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
     home = f"{prefix}index.html"
     from build_chat_context import chat_enabled
     ask_foot = f'\n        <li><a href="{prefix}ask.html">Talk through your vote</a></li>' if chat_enabled() else ""
+    from build_results_2026 import results_enabled
+    results_foot = f'\n        <li><a href="{prefix}results.html">Election results</a></li>' if results_enabled() else ""
     past_links = "".join(f'<li><a href="{prefix}{y}.html">{y} city election</a></li>' for y in ARCHIVE_YEARS)
     return f"""<!doctype html>
 <html lang="en">
@@ -324,7 +326,7 @@ def page(title: str, body: str, *, prefix: str = "", year: int | None = None, cu
         <li><a href="{prefix}index.html#measures">Ballot measures</a></li>
         <li><a href="{prefix}compare.html">Forum answers, side by side</a></li>
         <li><a href="{prefix}print/index.html">Printable sheets</a></li>
-        <li><a href="{prefix}2026.html">2026 ballot details</a></li>{ask_foot}
+        <li><a href="{prefix}2026.html">2026 ballot details</a></li>{results_foot}{ask_foot}
       </ul>
     </div>
     <div>
@@ -1802,6 +1804,9 @@ def main() -> None:
         )
 
     (OUT / "feedback.html").write_text(page("Suggest a fix or an idea", feedback_body(), learn="feedback"), encoding="utf-8")
+
+    import build_results_2026
+    build_results_2026.write(OUT, con, page)  # no-op (and cleanup) unless BV_RESULTS=1
 
     from build_llm import write_all
     stats = write_all(con, OUT, forums, page)
