@@ -46,9 +46,16 @@ class TestChatContext(unittest.TestCase):
             sec = self.ctx.split(f"\n### {letter}: ", 1)[1].split("\n### ", 1)[0]
             mine = [e for e in claims if e["target"]["letter"] == letter]
             lines = [ln for ln in sec.splitlines() if ", campaign list by " in ln]
-            self.assertEqual(len(lines), len({(e["position"], e["claimed_by"], e["source_url"]) for e in mine}), letter)
-            for e in mine:
-                self.assertIn(e["endorser"]["name"], "\n".join(lines), f"{letter}: {e['endorser']['name']}")
+            keys = {(e["position"], e["claimed_by"], e["source_url"]) for e in mine}
+            self.assertEqual(len(lines), len(keys), letter)
+            for side, by, url in keys:
+                xs = [e for e in mine if (e["position"], e["claimed_by"], e["source_url"]) == (side, by, url)]
+                line = next(ln for ln in lines if ln.startswith("- " + ("Opposes" if side == "oppose" else "Supports"))
+                            and f"campaign list by {by} ({len(xs)} names;" in ln)
+                for e in xs:
+                    # A whole entry, so "Open Boulder" is not found inside "Jan Burton (Open Boulder chair)".
+                    entry = e["endorser"]["name"] + (f" ({e['endorser']['title_as_printed']})" if e["endorser"].get("title_as_printed") else "")
+                    self.assertRegex(line, r"(?:\): |; )" + re.escape(entry) + r"(?=; |, \d{4}|\. Source: )", f"{letter}: {entry}")
             self.assertNotIn("campaign lists", sec.split("Organizations on ")[0], letter)
 
     def test_deterministic(self):
