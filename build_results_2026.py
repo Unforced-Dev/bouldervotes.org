@@ -64,6 +64,13 @@ def esc(s: object) -> str:
     return html.escape("" if s is None else str(s), quote=True)
 
 
+def href(url: object) -> str:
+    """A link target from the results file, escaped. Only https links pass; anything else
+    (javascript:, data:, a relative path) becomes the county's results page."""
+    u = "" if url is None else str(url)
+    return esc(u if u.startswith("https://") else COUNTY_RESULTS_URL)
+
+
 def norm_name(name: str) -> str:
     return " ".join(re.sub(r"[^a-z ]", " ", name.lower().replace("’", "'").replace("'", "")).split())
 
@@ -139,7 +146,7 @@ def _contests(data: dict, office: str) -> list[dict]:
 
 
 def number(n: int, url: str) -> str:
-    return f"<a class='res-num' href='{esc(url)}'>{n:,}</a>"
+    return f"<a class='res-num' href='{href(url)}'>{n:,}</a>"
 
 
 def asof_block(data: dict) -> str:
@@ -153,7 +160,7 @@ def asof_block(data: dict) -> str:
     counted = (f"<p>Ballots counted so far across Boulder County (all races, not just the city): "
                f"{number(ballots, data['official_url'])}.</p>" if ballots else "")
     return (f"<div class='res-caveat' role='note'><p class='res-caveat-main'>{esc(CAVEAT)}</p>"
-            f"<p>{when}{fetched}{label} <a href='{esc(data['official_url'])}'>See the official results from Boulder County</a>.</p>"
+            f"<p>{when}{fetched}{label} <a href='{href(data['official_url'])}'>See the official results from Boulder County</a>.</p>"
             f"{counted}</div>")
 
 
@@ -177,7 +184,7 @@ def mayor_section(data: dict, roster: Roster, prefix: str = "") -> str:
         out.append("<h3>The county's ranked-choice count, round by round</h3>")
         out.append(f"<p class='note'>From the county's ranked-choice tabulation{', as of ' + esc(posted) if posted else ''}. "
                    "It changes as more ballots are counted. "
-                   f"<a href='{esc(rurl)}'>See the county's round-by-round count</a>.</p>")
+                   f"<a href='{href(rurl)}'>See the county's round-by-round count</a>.</p>")
         out.append("<div class='res-rounds'>")
         for rd in rounds:
             rows = roster.ballot_sorted("mayor", rd["candidates"])
@@ -196,7 +203,7 @@ def mayor_section(data: dict, roster: Roster, prefix: str = "") -> str:
         out.append("</div>")
     if not rounds and c.get("rounds_error"):
         rurl = c.get("rounds_url") or c.get("rounds_page_url") or url
-        out.append(f"<p class='note'>{esc(ROUNDS_UNREAD_NOTE)} <a href='{esc(rurl)}'>See the county's round-by-round count</a>.</p>")
+        out.append(f"<p class='note'>{esc(ROUNDS_UNREAD_NOTE)} <a href='{href(rurl)}'>See the county's round-by-round count</a>.</p>")
     elif not rounds:
         out.append(f"<p class='note'>{esc(NO_ROUNDS_NOTE)}</p>")
     if not c["candidates"]:
@@ -280,7 +287,7 @@ def results_body(data: dict | None, roster: Roster, prefix: str = "") -> str:
             "<nav class='res-jump' aria-label='On this page'><a href='#res-mayor'>Mayor</a>"
             "<a href='#res-council'>City Council</a><a href='#res-measures'>City measures</a></nav>"]
     tail = ["<p class='note'>Covers the City of Boulder races only. Your ballot's county, state and school races "
-            f"are on the <a href='{esc(data['official_url'])}'>county's results page</a>. "
+            f"are on the <a href='{href(data['official_url'])}'>county's results page</a>. "
             "This guide does not call races or predict outcomes.</p>",
             f"<div class='res-caveat res-caveat-end' role='note'><p class='res-caveat-main'>{esc(CAVEAT)}</p></div>"]
     return "\n".join(head + [mayor_section(data, roster, prefix), council_section(data, roster, prefix),
@@ -308,7 +315,7 @@ def home_card(data: dict, prefix: str = "") -> str:
             f"<p class='res-caveat-main'>{esc(CAVEAT)}</p>"
             f"<p class='meta'>{esc(asof_line(data))} Mayor, City Council and city measures.</p>"
             f"<p><a class='btn' href='{prefix}results.html'>See all results</a></p>"
-            f"<p class='note'>Official source: <a href='{esc(data['official_url'])}'>Boulder County election results</a>.</p>"
+            f"<p class='note'>Official source: <a href='{href(data['official_url'])}'>Boulder County election results</a>.</p>"
             "</section>")
 
 

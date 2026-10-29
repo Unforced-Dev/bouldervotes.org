@@ -319,6 +319,30 @@ class TestResultsViews(unittest.TestCase):
                 continue
             self.assertRegex(cell, r"^<a class='res-num' href='https://electionresults\.bouldercounty\.gov/")
 
+    def test_fetched_strings_are_escaped_and_links_stay_https(self):
+        """Names, titles and links come from a web page; none may become markup or script."""
+        data = fixture_results()
+        bad = "<script>alert(1)</script>"
+        data["official_url"] = "javascript:alert(1)"
+        data["county_status"] = bad
+        mayor = next(c for c in data["contests"] if c["office"] == "mayor")
+        mayor["candidates"].append({"name": "Write-in " + bad, "votes": 1})
+        mayor["rounds"] = []
+        mayor["rounds_error"] = bad
+        mayor["rounds_url"] = "data:text/html,<b>x</b>"
+        council = next(c for c in data["contests"] if c["office"] == "council")
+        council["official_url"] = "javascript:alert(2)"
+        measure = next(c for c in data["contests"] if c["office"] == "measure")
+        measure["name"] = bad
+        measure["code"] = "'><img src=x onerror=alert(3)>"
+        html = "\n".join([R.results_body(data, R.roster_for(self.con, data)), R.home_card(data)])
+        self.assertNotIn("<script", html)
+        self.assertNotIn("<img", html)
+        self.assertNotIn("javascript:", html)
+        self.assertNotIn("data:", html)
+        for link in re.findall(r"href='([^']*)'", html):
+            self.assertRegex(link, r"^(https://|people/|measures/|results\.html|#)", link)
+
     def test_unofficial_caveat_on_every_results_view(self):
         for data in (fixture_results(), synthetic_2026(self.con, rounds=False)):
             for name, v in self.views(data).items():
