@@ -16,6 +16,8 @@
 .res-table { font-size: var(--fs-md); margin: var(--s2) 0 var(--s3); }
 .res-table th[scope='row'] { font-size: var(--fs-md); font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
 .res-table td.num, .res-table th.num { width: 1%; }
+.res-table tr:nth-child(even) > * { background: #fcfbf9; } /* stripe whole rows, names included */
+.res-eyebrow { margin-top: var(--s5); }
 .res-num { font-weight: 700; font-variant-numeric: tabular-nums lining-nums; color: var(--ink); text-decoration-color: var(--line-strong); }
 .res-num:visited { color: var(--ink); }
 .res-rounds { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); gap: 0 var(--s5); }

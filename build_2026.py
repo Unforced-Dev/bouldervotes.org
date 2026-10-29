@@ -631,8 +631,9 @@ class Graph2026:
         import build_results_2026 as R
         results = R.load_results() if R.results_enabled() else None
         if results is not None:  # election night: a calm results card takes the key dates' place
-            b.remove(timeline(today))
-            b.insert(0, R.home_card(results))  # first thing on the page, above the hero
+            b.remove(timeline(today))  # key dates move below the races; the voter's first sight is results
+            b.insert(0, R.home_card(results))
+            b.insert(b.index(f"<p class='about-line' id='what-this-is'>{esc(HOME_INTRO)}</p>"), timeline(today))
             head += "<link rel=\"stylesheet\" href=\"css/results.css\">\n"
         (self.out / "index.html").write_text(
             self.page("Boulder 2026 election guide", "\n".join(b), year=2026, current=None,

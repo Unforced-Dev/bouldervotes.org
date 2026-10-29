@@ -212,6 +212,7 @@ class TestResultsViews(unittest.TestCase):
                 with self.subTest(office=office, rounds=rounds):
                     pos = [sec.index(f">{n}</a>") for n in self.order[office]]
                     self.assertEqual(pos, sorted(pos), f"{office} not in ballot order")
+            self.assertIn("Listed in ballot order.", page)
             # Measures in code order; candidates in the JSON and llms block in ballot order too.
             self.assertLess(page.index(">2J<"), page.index(">2K<"))
             api = R.results_api(data, roster)
@@ -219,6 +220,12 @@ class TestResultsViews(unittest.TestCase):
             md = "\n".join(R.results_md(data, roster, ""))
             pos = [md.index(f"- {n}:") for n in self.order["mayor"]]
             self.assertEqual(pos, sorted(pos))
+
+    def test_other_years_do_not_claim_ballot_order(self):
+        data = fixture_results()  # 2023: the guide has no sourced ballot order for that year
+        page = R.results_body(data, R.roster_for(self.con, data))
+        self.assertNotIn("ballot order", page)
+        self.assertIn("up to four", page)
 
     def test_measures_are_equal_neutral_panels(self):
         page = R.measures_section(fixture_results(), R.roster_for(self.con, fixture_results()))
@@ -304,7 +311,8 @@ class TestFlagOffMatchesMain(unittest.TestCase):
             shutil.copy2(F2023 / "results.json", head_dir / "data" / "harvest" / "2026" / "results.json")
             env = {k: v for k, v in os.environ.items() if not k.startswith("BV_RESULTS")}
             env["BV_TODAY"] = "2026-11-01"
-            for d, extra in ((main_dir, {}), (head_dir, {"BV_RESULTS": "0"})):
+            # BV_RESULTS=0 on both sides keeps this true after the election-night default flip.
+            for d, extra in ((main_dir, {"BV_RESULTS": "0"}), (head_dir, {"BV_RESULTS": "0"})):
                 for script in ("seed.py", "build.py"):
                     subprocess.run([sys.executable, script], cwd=d, env={**env, **extra}, check=True, capture_output=True)
             diffs = []

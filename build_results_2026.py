@@ -40,6 +40,7 @@ FIRST_CHOICE_NOTE = ("These are first choices only, not the result. If no candid
 ROUNDS_UNREAD_NOTE = "The county has posted a round-by-round count, but we could not read its file automatically."
 NO_ROUNDS_NOTE = "The county has not posted its round-by-round ranked-choice count yet. It will appear here when it does."
 COUNCIL_RULE = "Vote for up to five. When the count is final, the five candidates with the most votes fill the seats."
+WORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six"}
 OFFICE_LABEL = {"mayor": "Mayor", "council": "City Council"}
 
 
@@ -110,6 +111,12 @@ class Roster:
         n = norm_name(name)
         n = getattr(self, "aliases", {}).get(n, n)
         return self.order.get(office, {}).get(n)
+
+    def order_note(self, office: str) -> str:
+        """Say ballot order only when our sourced ballot order was applied."""
+        if any(pos is not None for pos, _ in self.order.get(office, {}).values()):
+            return "Listed in ballot order."
+        return "Listed in the order the county lists them."
 
     def ballot_sorted(self, office: str, rows: list[dict]) -> list[dict]:
         """Ballot order when the roster has positions for every listed name; otherwise
@@ -200,7 +207,7 @@ def mayor_section(data: dict, roster: Roster, prefix: str = "") -> str:
         out.append(f"<tr><th scope='row'>{candidate_cell(roster, 'mayor', r['name'], prefix)}</th>"
                    f"<td class='num'>{number(r['votes'], url)}</td><td class='num'>{pct(r['votes'], total)}</td></tr>")
     out.append("</tbody></table>")
-    out.append("<p class='meta'>Listed in ballot order.</p></section>")
+    out.append(f"<p class='meta'>{roster.order_note('mayor')}</p></section>")
     return "\n".join(out)
 
 
@@ -213,17 +220,19 @@ def council_section(data: dict, roster: Roster, prefix: str = "") -> str:
     for c in cs:
         url = c.get("official_url") or data["official_url"]
         seats = c.get("seats") or 5
-        out.append(f"<p class='res-kind'>{seats} seats · most votes</p>")
+        out.append(f"<p class='res-kind'>{WORD.get(seats, seats).capitalize()} seats · most votes</p>")
         if len(cs) > 1:
             out.append(f"<h3>{esc(c['name'])}</h3>")
-        out.append(f"<p>{esc(COUNCIL_RULE) if seats == 5 else f'The {seats} candidates with the most votes fill the seats when the count is final.'}</p>")
+        out.append(f"<p>{esc(COUNCIL_RULE) if seats == 5 else f'The {WORD.get(seats, seats)} candidates with the most votes fill the seats when the count is final.'}</p>")
         out.append("<table class='res-table'><thead><tr><th scope='col'>Candidate</th>"
                    "<th scope='col' class='num'>Votes</th></tr></thead><tbody>")
         for r in roster.ballot_sorted("council", c["candidates"]):
             out.append(f"<tr><th scope='row'>{candidate_cell(roster, 'council', r['name'], prefix)}</th>"
                        f"<td class='num'>{number(r['votes'], url)}</td></tr>")
         out.append("</tbody></table>")
-    out.append("<p class='meta'>Listed in ballot order. Each voter could choose up to five, so the votes add up to more than the number of ballots.</p></section>")
+    seats = cs[0].get("seats") or 5
+    out.append(f"<p class='meta'>{roster.order_note('council')} Each voter could choose up to {WORD.get(seats, seats)}, "
+               "so the votes add up to more than the number of ballots.</p></section>")
     return "\n".join(out)
 
 
@@ -260,7 +269,7 @@ def results_body(data: dict | None, roster: Roster, prefix: str = "") -> str:
                 "They will appear here soon after. "
                 f"<a href='{COUNTY_RESULTS_URL}'>Boulder County election results</a>.</p></div>")
     election = data.get("election", {})
-    head = [f"<p class='eyebrow'>{esc(election.get('name', 'City of Boulder election'))}</p>",
+    head = [f"<p class='eyebrow res-eyebrow'>{esc(election.get('name', 'City of Boulder election'))}</p>",
             "<h1>Election results</h1>",
             asof_block(data),
             "<nav class='res-jump' aria-label='On this page'><a href='#res-mayor'>Mayor</a>"
