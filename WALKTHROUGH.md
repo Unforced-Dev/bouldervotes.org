@@ -17,13 +17,13 @@ Screenshots come from that build in Chromium, at 390 and 1280 pixels wide.
 ## Steps
 
 1. **Home page, results card** (`walkthrough/results-01-home-card-390.png`)
-   - Narration: "Once the county posts numbers, a calm results card is the first thing on the home page. It says the results are unofficial and gives the county's time."
+   - Narration: "Once the county posts numbers, a calm results card sits right under the page title on the home page, above everything else. It says the results are unofficial and gives the county's time."
 2. **Top of the results page** (`walkthrough/results-02-top-390.png`)
    - Narration: "The page opens with the plain caveat: unofficial until the county certifies. Next comes the county's 'last updated' time, the time we copied it, and a link to the county's own page."
 3. **Mayor** (`walkthrough/results-03-mayor-390.png`)
    - Narration: "For mayor, the county's round-by-round count shows only when the county has posted it. First choices are labelled as first choices, not the result. No one is called the winner."
 4. **Council and measures** (`walkthrough/results-04-council-measures-390.png`)
-   - Narration: "Council candidates stay in ballot order, not sorted by votes. Each measure gets two equal panels, YES and NO, in the same neutral style."
+   - Narration: "Council candidates are never sorted by votes. For 2026 they follow the official ballot order. Each measure gets two equal panels, YES and NO, in the same neutral style."
 5. **Desktop** (`walkthrough/results-05-page-1280.png`)
    - Narration: "The same page on a desktop. Every vote count links to Boulder County's results page."
 
