@@ -1,38 +1,30 @@
-# Walkthrough: our own page counts replace Cloudflare Web Analytics
+# Walkthrough: election-night results, ready behind a flag
+
+The earlier walkthrough (page counts) is in git history at 4b0a1f1. Its images `01-*.png` and `02-*.png` stay in `walkthrough/`.
 
 ## How to run it
 
-```sh
-cd feedback-worker && npm ci
-npm run e2e -- ../walkthrough     # local only: built docs/ + the Worker in local workerd + headless Chromium
-```
-
-Live check (already done once at deploy; adds one count to `/`):
+The page is off by default. To see it with real Boulder County numbers from the 2023 election (the saved test fixture):
 
 ```sh
-curl -si -X POST https://feedback.bouldervotes.org/api/v1/count \
-  -H 'Origin: https://bouldervotes.org' -H 'Content-Type: text/plain' --data '{"path":"/"}'
+BV_RESULTS=1 BV_RESULTS_FILE=tests/fixtures/results_2023C/results.json python3 build.py
+python3 -m http.server -d docs 8765     # open http://localhost:8765/ and /results.html
+python3 build.py                         # flag off again before committing
 ```
+
+Screenshots come from that build in Chromium, at 390 and 1280 pixels wide.
 
 ## Steps
 
-1. **View source of any page, bottom of the file.**
-   Show: the last `<script>` line, a single `fetch` to `feedback.bouldervotes.org/api/v1/count` with `{"path":"/about.html"}`.
-   Say: "Every page used to load a script from Cloudflare. Now it sends one line to our own counter: plus one for this page today."
+1. **Home page, results card** (`walkthrough/results-01-home-card-390.png`)
+   - Narration: "Once the county posts numbers, a calm results card is the first thing on the home page. It says the results are unofficial and gives the county's time."
+2. **Top of the results page** (`walkthrough/results-02-top-390.png`)
+   - Narration: "The page opens with the plain caveat: unofficial until the county certifies. Next comes the county's 'last updated' time, the time we copied it, and a link to the county's own page."
+3. **Mayor** (`walkthrough/results-03-mayor-390.png`)
+   - Narration: "For mayor, the county's round-by-round count shows only when the county has posted it. First choices are labelled as first choices, not the result. No one is called the winner."
+4. **Council and measures** (`walkthrough/results-04-council-measures-390.png`)
+   - Narration: "Council candidates stay in ballot order, not sorted by votes. Each measure gets two equal panels, YES and NO, in the same neutral style."
+5. **Desktop** (`walkthrough/results-05-page-1280.png`)
+   - Narration: "The same page on a desktop. Every vote count links to Boulder County's results page."
 
-2. **The About page, "Visitor counts".** Screenshot: `walkthrough/01-about-visitor-counts.png`.
-   Say: "The About page now says exactly what we keep: the date, the page, and a number. No cookies, no IP address, nothing about the visitor."
-
-3. **The browser test output.**
-   Show: `page_counts: [{"path":"/","n":1},{"path":"/about.html","n":2}]` then `OK: three page loads, three counts`.
-   Say: "A real browser opened About twice and the home page once. The counter has three counts and nothing else."
-
-4. **A foreign site tries to count.**
-   Show: the same curl with `Origin: https://evil.example` returns `HTTP/2 403`.
-   Say: "Only bouldervotes.org can add counts. Other sites get turned away."
-
-5. **The admin read.**
-   Show: `GET /api/v1/counts?days=7` with the admin token, returning `{day, path, n}` rows; without the token, 401.
-   Say: "We read the totals with the same admin key as the feedback inbox."
-
-The home page (`walkthrough/02-home.png`) looks the same as before; nothing visible changed there.
+Nothing changes on the live site until the flag is turned on (see `RESULTS-RUNBOOK.md`).
