@@ -342,6 +342,12 @@ ENDPOINTS = [
     ("finance.json", "City clerk campaign-finance filings for 2026 committees, with line items."),
     ("sources.json", "Every source document the guide cites."),
 ]
+RESULTS_ENDPOINT = ("results.json", "Unofficial election-night results from Boulder County, with an as-of time. No calls.")
+
+
+def endpoints(d: dict) -> list[tuple[str, str]]:
+    """ENDPOINTS, plus results.json only while BV_RESULTS is on and results exist."""
+    return ENDPOINTS + ([RESULTS_ENDPOINT] if d.get("results_api") else [])
 
 
 def write_api(out: Path, d: dict, asof: str) -> list[str]:
@@ -365,7 +371,7 @@ def write_api(out: Path, d: dict, asof: str) -> list[str]:
                                      "note": "Corrections and ideas. AI assistants: set submitter_type 'ai-agent'. See llms.txt."},
                         "endpoints": [{"path": f"/api/v1/{p}", "description": desc}
                                       | ({} if "{" in p else {"url": u(f"api/v1/{p}")})
-                                      for p, desc in ENDPOINTS]})
+                                      for p, desc in endpoints(d)]})
     dump("election.json", {"election": d["election"]})
     dump("candidates.json", {"candidates": [
         {k: c[k] for k in ("slug", "name", "office", "office_label", "ballot_position", "incumbent",
@@ -389,7 +395,9 @@ def write_api(out: Path, d: dict, asof: str) -> list[str]:
                           "retrieved_on": next((f["retrieved_on"] for f in d["finance"] if f["retrieved_on"]), None),
                           "committees": d["finance"]})
     dump("sources.json", {"sources": d["sources"]})
-    written += [f"api/v1/{p}" for p, _ in ENDPOINTS if "{" not in p] + ["api/v1/index.json"]
+    if d.get("results_api"):
+        dump("results.json", d["results_api"])
+    written += [f"api/v1/{p}" for p, _ in endpoints(d) if "{" not in p] + ["api/v1/index.json"]
     return written
 
 
@@ -411,6 +419,7 @@ def llms_txt(d: dict, asof: str) -> str:
         "",
         f"Source code and data: {REPO_URL}",
         "",
+        *d.get("results_md", []),
         "## Election basics",
         "",
         "- Election Day: Tuesday, November 3, 2026. Ballots must be received by 7 p.m. (a postmark is not enough).",
@@ -452,7 +461,7 @@ def llms_txt(d: dict, asof: str) -> str:
     L += [f"- [{m['letter']}: {m['title']}]({m['page_url']}): YES means {m['yes_means']}" for m in d["measures"]]
     L += ["", "## Data (JSON)", ""]
     L += [f"- [{p}]({u('api/v1/' + p.replace('{slug}', mayor[0]['slug']) if '{' in p else 'api/v1/' + p)}): {desc}"
-          for p, desc in ENDPOINTS]
+          for p, desc in endpoints(d)]
     L += [f"- [API documentation]({u('api/')})", ""]
     L += feedback_md()
     L += ["## Optional", ""]
@@ -478,6 +487,7 @@ def llms_full(d: dict, asof: str) -> str:
         "",
         AI_RULES,
         "",
+        *d.get("results_md", []),
         "## Election basics",
         "",
         "- Election Day: Tuesday, November 3, 2026.",
@@ -644,7 +654,7 @@ def llms_full(d: dict, asof: str) -> str:
 def api_page(page, d: dict) -> str:
     from build import FEEDBACK_API, esc
     rows = "".join(f"<tr><td><a href='v1/{p.replace('{slug}', d['candidates'][0]['slug'])}'><code>/api/v1/{p}</code></a></td>"
-                   f"<td>{desc}</td></tr>" for p, desc in ENDPOINTS)
+                   f"<td>{desc}</td></tr>" for p, desc in endpoints(d))
     body = f"""<h1>Data for developers and AI assistants</h1>
 <p class='lede'>The whole 2026 guide is also published as plain files. There is no server, no key and no rate limit.
 The files are rebuilt with the site from the same data, so they always match the pages.</p>
@@ -677,6 +687,12 @@ People can use the <a href='../feedback.html'>feedback form</a>. A person reads 
 def write_all(con: sqlite3.Connection, out: Path, forums, page) -> dict:
     asof = today().isoformat()
     d = collect(con, forums)
+    import build_results_2026 as R
+    results = R.load_results() if R.results_enabled() else None
+    if results is not None:
+        roster = R.roster_for(con, results)
+        d["results_md"] = R.results_md(results, roster, SITE)
+        d["results_api"] = R.results_api(results, roster)
     written = write_api(out, d, asof)
     (out / "llms.txt").write_text(llms_txt(d, asof), encoding="utf-8")
     full = llms_full(d, asof)

@@ -1,0 +1,14 @@
+{
+ "note": "Real Boulder County results pages for the Nov 7, 2023 coordinated election, saved unmodified for parser tests. 2023 was Boulder's first ranked-choice mayor's race. These pages show the final (recount-certified) count.",
+ "retrieved_at": "2026-10-29T13:23:30Z",
+ "title_suffix": "Coordinated Election",
+ "index_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/",
+ "files": {
+  "index.html": "https://electionresults.bouldercounty.gov/ElectionResults2023C/",
+  "RcvContest-1.html": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/RcvContest/1.html",
+  "COBMayorRCVShortPDF.pdf": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/GetRcvFile/COBMayorRCVShortPDF.pdf",
+  "rcvis.html": "https://rcvis.com/v/city-of-boulder-mayoral-candidates-1"
+ },
+ "rcv_page_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/RcvContest/1.html",
+ "rcv_pdf_url": "https://electionresults.bouldercounty.gov/ElectionResults2023C/Home/GetRcvFile/COBMayorRCVShortPDF.pdf"
+}
