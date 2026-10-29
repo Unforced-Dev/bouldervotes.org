@@ -410,6 +410,108 @@
     "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
     "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
     "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC363",
+    "candidate_slug": "lee-gilbert",
+    "candidate": "Lee Gilbert",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Council opening introduction, climate and energy forum (one minute)",
+    "topic": "transportation",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "My platform is simple. A vote for me is a vote of no confidence in Boulder's road projects. I'm a single issue candidate.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=441s",
+    "timestamp": "7:21",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC375",
+    "candidate_slug": "lee-gilbert",
+    "candidate": "Lee Gilbert",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Climate hushing: political leaders now seem reluctant to connect negative everyday experiences to climate change and its driver, carbon pollution. How do you plan to be vocal and lead on climate?",
+    "topic": "transportation",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we might want to have ways to look at possibilities of RTD for that, for example, having electric vehicles that are very small vehicles,",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=1595s",
+    "timestamp": "26:35",
+    "attribution_confidence": "medium",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Speaker identified from speaking order; the moderator did not name them.",
+     "Transcript note: The moderator's cue before this answer is transcribed as 'Robert.' Lee Gilbert is the only council candidate at this forum not otherwise named in this round, and the speaker describes getting around by bike and on foot, as Gilbert did in his opening."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC382",
+    "candidate_slug": "lee-gilbert",
+    "candidate": "Lee Gilbert",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Xcel says it will deliver 100% clean electricity by 2050, not Boulder's 2030 goal, and has presented no concrete plan under the 2020 franchise agreement. What remedies would you propose for Xcel's failures to deliver, at the city level, at the PUC, or at the state level? And would you be open to inviting cities that have gone to market for their electricity to come to Boulder to educate us about life after Xcel?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "As far as finding out from other communities about switching to market things, I think that's a very good idea.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=2523s",
+    "timestamp": "42:03",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC396",
+    "candidate_slug": "lee-gilbert",
+    "candidate": "Lee Gilbert",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Xcel is preparing a decade-long remediation of nearly 2 million tons of coal ash at the Valmont power station. Should Boulder use its franchise and partnership agreements with Xcel to require strong, independent air quality monitoring throughout the cleanup? And if so, how specifically would you do this?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I liked what Rachel had to say. So I haven't looked into the issue, but it sounds like she's pretty much on top of it.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=4072s",
+    "timestamp": "1:07:52",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
    }
   ],
   "endorsements": [],
@@ -434,6 +536,7 @@
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "https://www.youtube.com/watch?v=CQlalpB7N5w",
    "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://www.youtube.com/watch?v=ysxIfw0TbWo",
    "https://yellowscene.com/2026/09/05/17-candidates-take-the-stage-at-boulder-chambers-first-2026-election-forum/"
   ]
  }

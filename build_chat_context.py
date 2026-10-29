@@ -21,6 +21,28 @@ SOFT_LIMIT_BYTES = 205_000   # target: measured ~2.3 bytes/token, so about 89K t
 HARD_LIMIT_BYTES = 215_000   # tests fail above this: ~93K tokens; over 100K tokens Haiku bills every token at 5x
 CHARS_PER_TOKEN = 3.7
 
+# Forums whose quotes are on the site (forum, candidate and issue pages, llms.txt) but are not yet
+# loaded into the AI chat. Adding them would push chat-context.txt past HARD_LIMIT_BYTES (the 100K-token
+# price tier), and a change to what the chat sees goes through the chat ship gate. Same for every
+# candidate at that forum, so the chat stays symmetric. Remove a slug once the context has room.
+CHAT_SKIP_FORUMS = frozenset({"2026-eof-council-climate-forum"})
+
+
+def chat_view(d: dict) -> dict:
+    """The site data minus CHAT_SKIP_FORUMS, for the three chat files only."""
+    if not CHAT_SKIP_FORUMS:
+        return d
+    v = dict(d)
+    v["forums"] = [f for f in d["forums"] if f["slug"] not in CHAT_SKIP_FORUMS]
+    v["quotes"] = [x for x in d["quotes"] if x["forum"] not in CHAT_SKIP_FORUMS]
+    keep = {x["id"] for x in v["quotes"]}
+    v["candidates"] = [dict(c, forum_quotes=[x for x in c["forum_quotes"] if x["forum"] not in CHAT_SKIP_FORUMS])
+                       for c in d["candidates"]]
+    v["measures"] = [dict(m, forum_quotes=[q for q in m["forum_quotes"]
+                                           if (q if isinstance(q, str) else q.get("id")) in keep])
+                     if m.get("forum_quotes") else m for m in d["measures"]]
+    return v
+
 CHAT_SYSTEM = """\
 You sort a voter's message for the Boulder Votes guide at bouldervotes.org (City of Boulder election, November 3, 2026: mayor, city council, measures 2J to 2M). You never write anything the voter reads: the page writes every sentence itself, from the site's data, and shows every candidate the same way, in ballot order. Never recommend a vote, rank candidates or label them. Read the voter's latest message, using the conversation for context, and reply with exactly two lines and nothing else:
 [intent ...]
@@ -194,6 +216,7 @@ def quote_index(d: dict, asof: str) -> dict:
     """Every quote in chat-context.txt, keyed to the candidate whose section holds it, with the
     label, link and caveat the page shows next to it. The gateway checks each quoted span in a chat
     answer against this before it is shown, and renders the label from here, never from the model."""
+    d = chat_view(d)
     people, quotes = [], []
     last_names: dict[str, list[str]] = {}
     cd, fm, bp = codes(d), _forum_meta(), _bb_prompts()
@@ -361,6 +384,7 @@ def basics(d: dict) -> dict:
 def compare_index(d: dict, asof: str) -> dict:
     """docs/api/chat-compare.json: the side-by-side cards the chat shows for `[compare TOPIC RACE]`.
     Built from data, so every line is exact and every candidate gets the same question."""
+    d = chat_view(d)
     cd, fm, bp = codes(d), _forum_meta(), _bb_prompts()
     topics = []
     for key, label, races in COMPARE:
@@ -431,6 +455,7 @@ def compare_md(cmp: dict) -> list[str]:
 
 
 def chat_context(d: dict, asof: str) -> str:
+    d = chat_view(d)
     e = d["election"]
     edges_by_id = {x["id"]: x for x in d["endorsements"]}
     quotes_by_id = {x["id"]: x for x in d["quotes"]}

@@ -133,7 +133,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/lee-gilbert.json",
    "summary": "Gilbert is an engineering consultant running for council for the first time. He focuses his campaign on reviewing major transportation projects, especially the Baseline corridor.",
    "endorsement_count": 0,
-   "forum_quote_count": 12,
+   "forum_quote_count": 16,
    "raised": 0.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/lee-gilbert/",
@@ -153,7 +153,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/sam-fuqua.json",
    "summary": "Fuqua previously served on the Boulder Valley school board and is now seeking a council seat. He prioritizes affordable family housing, climate resilience and government transparency.",
    "endorsement_count": 16,
-   "forum_quote_count": 17,
+   "forum_quote_count": 21,
    "raised": 10521.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/sam-fuqua/"
@@ -172,7 +172,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/ryan-schuchard.json",
    "summary": "Schuchard is a sitting Boulder councilmember seeking another term. He focuses on living costs, wildfire and climate resilience, and the effectiveness of city government.",
    "endorsement_count": 39,
-   "forum_quote_count": 18,
+   "forum_quote_count": 22,
    "raised": 12366.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/ryan-schuchard-2/"
@@ -191,7 +191,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/jamillah-richmond.json",
    "summary": "Richmond is a first-time council candidate and a diversity and education consultant. She advocates community-led governance, affordable housing and support for workers and small businesses.",
    "endorsement_count": 13,
-   "forum_quote_count": 14,
+   "forum_quote_count": 18,
    "raised": 7866.37,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/jamillah-richmond/"
@@ -229,7 +229,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/tara-winer.json",
    "summary": "Winer is a sitting Boulder councilmember and mayor pro tem seeking reelection. She cites city services, streamlined processes and the local economy among her priorities.",
    "endorsement_count": 30,
-   "forum_quote_count": 10,
+   "forum_quote_count": 14,
    "raised": 12555.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/tara-winer-2/"
@@ -248,7 +248,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/rachel-rose-isaacson.json",
    "summary": "Isaacson is again seeking a Boulder council seat after a previous campaign. Her stated priorities include housing affordability, climate resilience, city government and local businesses.",
    "endorsement_count": 11,
-   "forum_quote_count": 19,
+   "forum_quote_count": 23,
    "raised": 7691.74,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/rachel-rose-isaacson-2/"
@@ -267,7 +267,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/dave-martus.json",
    "summary": "Martus is a first-time council candidate and a senior adviser with a background in institutional finance. He emphasizes budget oversight, government trust and changes to land-use regulation.",
    "endorsement_count": 2,
-   "forum_quote_count": 11,
+   "forum_quote_count": 15,
    "raised": 6315.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/david-martus/"
@@ -286,7 +286,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/scott-rendleman.json",
    "summary": "Rendleman is an attorney running for council for the first time. His stated priorities include wildfire preparedness, housing affordability and trust in city government.",
    "endorsement_count": 0,
-   "forum_quote_count": 16,
+   "forum_quote_count": 20,
    "raised": 4150.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/scott-rendleman/"
@@ -305,7 +305,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/jill-grano.json",
    "summary": "Grano previously served on Boulder City Council and is running again. Her campaign focuses on middle-income housing, local economic activity and trust in city spending.",
    "endorsement_count": 43,
-   "forum_quote_count": 18,
+   "forum_quote_count": 22,
    "raised": 12423.06,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/jill-grano/"
@@ -324,7 +324,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/ryan-jamieson.json",
    "summary": "Jamieson is a cybersecurity consultant seeking a Boulder council seat. His campaign focuses on code reform, fiscal oversight, housing and wildfire preparedness.",
    "endorsement_count": 15,
-   "forum_quote_count": 19,
+   "forum_quote_count": 23,
    "raised": 12360.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/ryan-jamieson/"
@@ -343,7 +343,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/lynn-segal.json",
    "summary": "Segal is a retired ultrasonographer running for Boulder council. She advocates municipal ownership of utilities and seeks to reduce the university’s influence on development.",
    "endorsement_count": 0,
-   "forum_quote_count": 18,
+   "forum_quote_count": 22,
    "raised": 200.0,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/lynn-segal/"
@@ -362,7 +362,7 @@
    "api_url": "https://bouldervotes.org/api/v1/candidates/tina-marquis.json",
    "summary": "Marquis is a sitting councilmember seeking a second term. Her priorities include family housing, homelessness, wildfire resilience and accountable government.",
    "endorsement_count": 29,
-   "forum_quote_count": 16,
+   "forum_quote_count": 20,
    "raised": 11844.56,
    "source_urls": [
     "https://boulderreportinglab.org/govpack_profiles/tina-marquis-2/"

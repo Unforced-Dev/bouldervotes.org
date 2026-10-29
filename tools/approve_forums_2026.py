@@ -42,7 +42,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "harvest" / "2026"
 AUDIT_DATE = "2026-10-12"
-EXPECTED_CLAIMS = 357
+EXPECTED_CLAIMS = 405
 
 DISPLAY_NAME = {"David Martus": "Dave Martus"}
 
@@ -157,6 +157,30 @@ FORUMS_2026 = [
                           {"label": "Valmont coal ash", "start": 2254}]},
         ],
     },
+    {
+        "slug": "2026-eof-council-climate-forum",
+        "name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+        "short": "Empower Our Future council climate forum",
+        "date": "2026-10-13",
+        "hosts": ["Empower Our Future", "PLAN-Boulder County"],
+        "venue": "Online (Zoom webinar)",
+        "date_source": "Empower Our Future YouTube title 'Empower Hour 2026-10-13 Boulder City Council Candidates on Energy "
+                       "and Climate' (uploaded 2026-10-14); organizer's Zoom registration page (Oct 13, 2026, 6:00 PM Mountain, "
+                       "co-sponsored by EOF and PLAN-Boulder).",
+        "notes": "City Council candidates only. Moderator: Chris Hoffman; host: Mary (as transcribed). Twelve of the "
+                       "13 council candidates took part; the host said Benita Duran was sorry not to attend and invited questions through "
+                       "her website. The same three questions as the Oct. 6 mayoral forum: climate hushing, Xcel Energy, and the Valmont "
+                       "coal ash cleanup. The automatic transcript writes 'Xcel' as 'Excel'; quotes keep the transcript text.",
+        "recordings": [
+            {"youtube_id": "ysxIfw0TbWo",
+             "title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate",
+             "uploader": "Empower Our Future", "uploaded": "2026-10-14", "part": None,
+             "segments": [{"label": "Opening introductions", "start": 115},
+                          {"label": "Climate hushing", "start": 900},
+                          {"label": "Xcel Energy", "start": 2401},
+                          {"label": "Valmont coal ash", "start": 3889}]},
+        ],
+    },
 ]
 
 # Candidates who did not attend but whose submitted statement was read aloud.
@@ -228,6 +252,8 @@ FORUM_QUESTIONS = {
     "If elected, what is the single most important new initiative you would pursue during your first year as mayor": (None, None, None),
     # Empower Our Future climate forum (mayoral)
     "Mayoral opening introduction, climate and energy forum": (None, None, None),
+    # Empower Our Future climate forum (council) reuses the three mayoral-forum questions above
+    "Council opening introduction, climate and energy forum": (None, None, None),
     "Climate hushing: political leaders now seem reluctant": ("climate", None, None),
     "Xcel says it will deliver 100% clean electricity by 2050": ("climate", None, None),
     "Xcel is preparing a decade-long remediation": ("climate", None, None),

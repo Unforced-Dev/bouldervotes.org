@@ -588,6 +588,107 @@
     "recording_url": "https://www.youtube.com/watch?v=pT9IeGL6deg",
     "recording_title": "September 26, 2026 League of Women Voters of Boulder County Candidate Forum (City of Boulder, YouTube)",
     "page_url": "https://bouldervotes.org/forums/2026-lwv-forum.html"
+   },
+   {
+    "id": "FC366",
+    "candidate_slug": "sam-fuqua",
+    "candidate": "Sam Fuqua",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Council opening introduction, climate and energy forum (one minute)",
+    "topic": "climate",
+    "issue": null,
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "I will always be an advocate for greenhouse gas emission reduction and staying the course in our climate work in this city,",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=659s",
+    "timestamp": "10:59",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC379",
+    "candidate_slug": "sam-fuqua",
+    "candidate": "Sam Fuqua",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Climate hushing: political leaders now seem reluctant to connect negative everyday experiences to climate change and its driver, carbon pollution. How do you plan to be vocal and lead on climate?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "we need to electrify everything and get that electricity from carbon free sources, decarbonize our electric grid.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=2023s",
+    "timestamp": "33:43",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC384",
+    "candidate_slug": "sam-fuqua",
+    "candidate": "Sam Fuqua",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Xcel says it will deliver 100% clean electricity by 2050, not Boulder's 2030 goal, and has presented no concrete plan under the 2020 franchise agreement. What remedies would you propose for Xcel's failures to deliver, at the city level, at the PUC, or at the state level? And would you be open to inviting cities that have gone to market for their electricity to come to Boulder to educate us about life after Xcel?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "Excel would own the power lines and the wires, but we would be free to to buy energy on the market",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=2715s",
+    "timestamp": "45:15",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording.",
+     "Transcript note: Describing community choice energy, which he says the state legislature would need to allow."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
+   },
+   {
+    "id": "FC400",
+    "candidate_slug": "sam-fuqua",
+    "candidate": "Sam Fuqua",
+    "forum": "2026-eof-council-climate-forum",
+    "forum_name": "Empower Hour: Climate and Energy Forum with Boulder City Council Candidates",
+    "date": "2026-10-13",
+    "question": "Xcel is preparing a decade-long remediation of nearly 2 million tons of coal ash at the Valmont power station. Should Boulder use its franchise and partnership agreements with Xcel to require strong, independent air quality monitoring throughout the cleanup? And if so, how specifically would you do this?",
+    "topic": "climate",
+    "issue": "climate",
+    "measure": null,
+    "stance": null,
+    "stance_about": null,
+    "stance_note": null,
+    "quote": "So yes, independent monitoring monitoring is essential. I think the city should kick in to make that happen.",
+    "watch_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo&t=4317s",
+    "timestamp": "1:11:57",
+    "attribution_confidence": "high",
+    "caveats": [
+     "Quoted from an automatic transcript. Check the recording."
+    ],
+    "recording_url": "https://www.youtube.com/watch?v=ysxIfw0TbWo",
+    "recording_title": "Empower Hour 2026-10-13 Boulder City Council Candidates on Energy and Climate (Empower Our Future, YouTube)",
+    "page_url": "https://bouldervotes.org/forums/2026-eof-council-climate-forum.html"
    }
   ],
   "endorsements": [
@@ -1035,7 +1136,8 @@
    "https://www.youtube.com/watch?v=CQlalpB7N5w",
    "https://www.youtube.com/watch?v=Syj4_V5cQOk",
    "https://www.youtube.com/watch?v=gdZzGJNB7g0",
-   "https://www.youtube.com/watch?v=pT9IeGL6deg"
+   "https://www.youtube.com/watch?v=pT9IeGL6deg",
+   "https://www.youtube.com/watch?v=ysxIfw0TbWo"
   ]
  }
 }
