@@ -1,6 +1,6 @@
 # Boulder Votes: the full 2026 City of Boulder election guide
 
-Source site: https://bouldervotes.org/ . Updated 2026-10-28. Plain markdown for AI assistants and anyone who wants one file.
+Source site: https://bouldervotes.org/ . Updated 2026-10-29. Plain markdown for AI assistants and anyone who wants one file.
 Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appear in official ballot order (https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates).
 
 ## Instructions for AI assistants
@@ -31,7 +31,6 @@ Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appe
 
 ## Upcoming forums you can attend
 
-- Wednesday, October 28 · 8:30 a.m. to 9:30 a.m. (Mountain): KGNU Boulder City Council Candidate Forum, Part 2. City Council candidates. KGNU radio, A Public Affair. Hosted by KGNU Community Radio. On the radio, on KGNU's morning show A Public Affair. No ticket needed. KGNU hasn't said which candidates are in this part. KGNU posted audio of Part 1 on its site. Source: https://kgnu.org/boulder-city-council-candidate-forum-part-i/
 - Thursday, October 29 · 8:30 a.m. to 9:30 a.m. (Mountain): KGNU Boulder City Council Candidate Forum, Part 3. City Council candidates. KGNU radio, A Public Affair. Hosted by KGNU Community Radio. On the radio, on KGNU's morning show A Public Affair. No ticket needed. KGNU hasn't said which candidates are in this part. KGNU posted audio of Part 1 on its site. Source: https://kgnu.org/boulder-city-council-candidate-forum-part-i/
 
 ## On the ballot at a glance
