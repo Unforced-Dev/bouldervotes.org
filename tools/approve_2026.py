@@ -132,6 +132,8 @@ AUTHORED_ELSEWHERE = {
     "boulderreportinglab.org/2026/08/30/kc-becker": "signed_op_ed",
     # BRL 'Across the Aisle' column co-written by Bob Yates and Brian C. Keegan; each states his own 2K stance.
     "boulderreportinglab.org/2026/10/21/across-the-aisle-is-boulders-400-million-bond": "signed_op_ed",
+    # Airport Neighborhood Campaign's own Mailchimp email (Oct. 2026 council endorsements).
+    "mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026": "endorser_email",
 }
 
 # Organization websites missing from the research file.
