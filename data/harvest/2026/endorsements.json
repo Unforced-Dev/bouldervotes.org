@@ -11341,5 +11341,369 @@
       "evidence_url": "https://mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026",
       "note": "Airport Neighborhood Campaign's own Mailchimp email, read 2026-10-30: 'The Airport neighborhood campaign enthusiastically endorses Ryan Schuchard, Jill Grano, and Jamillah Richmond . We also endorse Tina Marquis, Rachel Rose Isaacson, and Sam Fuqua . We are unable to endorse any of this year's candidates for mayor.' Save Our Skies Alliance repost dated 10/7/2026. Resolves the 'Airport Neighborhood Council' line held on https://www.ryanwithboulder.com/endorsements."
     }
+  },
+  {
+    "id": "E443",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": "Aquiles La Grave",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Mayor. Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures). The numbers beside the council names are list order, not a ranking.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E444",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": "Ryan Jamieson",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "City Council. Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures). The numbers beside the council names are list order, not a ranking.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E445",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": "Tara Winer",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "City Council. Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures). The numbers beside the council names are list order, not a ranking.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E446",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": "Scott Rendleman",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "City Council. Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures). The numbers beside the council names are list order, not a ranking.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E447",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": "Dave Martus",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "City Council. Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures). The numbers beside the council names are list order, not a ranking.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E448",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": "Jill Grano",
+    "measure_letter": null,
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "City Council. Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures). The numbers beside the council names are list order, not a ranking.",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E449",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": "2J",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E450",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": "2K",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E451",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": "2L",
+    "measure_label": null,
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E452",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": "2M",
+    "measure_label": null,
+    "position": "oppose",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E453",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Ballot Issue 1A: Early Childhood Care and Education Mill Levy Increase",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E454",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Question 200: Expand Board of Commissioners to Five",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
+  },
+  {
+    "id": "E455",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Ballot Issue 7A: Front Range Passenger Rail District",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-10-30."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-10-30",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
   }
 ]

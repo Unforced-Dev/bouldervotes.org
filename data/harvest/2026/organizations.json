@@ -4994,5 +4994,37 @@
     "title_source_url": null,
     "weight_group": "organization",
     "related": []
+  },
+  {
+    "slug": "dan-caruso",
+    "name": "Dan Caruso",
+    "kind": "person",
+    "website": "https://www.engagecolorado.org/",
+    "legal_form": null,
+    "mission_quote": {
+      "text": "",
+      "source_url": ""
+    },
+    "founded": null,
+    "leadership": [
+      {
+        "name": "Dan Caruso",
+        "role": "Managing Director of Caruso Ventures; author of the Engage Colorado newsletter",
+        "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+        "current": true,
+        "as_of": "2026-10-30"
+      }
+    ],
+    "funding": null,
+    "endorsement_process": null,
+    "past_endorsements": [],
+    "summary": "Dan Caruso writes the Engage Colorado newsletter and is Managing Director of Caruso Ventures. His Oct. 13, 2026 Engage Boulder issue gives his personal slate. These are personal endorsements, not an organization's.",
+    "sources": [
+      "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6"
+    ],
+    "title": null,
+    "title_source_url": null,
+    "weight_group": "other_individual",
+    "related": []
   }
 ]

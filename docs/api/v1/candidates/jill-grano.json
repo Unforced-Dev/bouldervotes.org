@@ -1006,6 +1006,32 @@
     "source_title": "Endorsements – Jill for City Council"
    },
    {
+    "id": "E448",
+    "endorser": {
+     "type": "person",
+     "slug": "dan-caruso",
+     "name": "Dan Caruso",
+     "title_as_printed": null,
+     "page_url": "https://bouldervotes.org/people/dan-caruso.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "jill-grano",
+     "name": "Jill Grano",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-13",
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)"
+   },
+   {
     "id": "E250",
     "endorser": {
      "type": "organization",
@@ -1905,6 +1931,7 @@
    "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
    "https://boulderreportinglab.org/govpack_profiles/jill-grano/",
    "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-jill.pdf",
+   "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
    "https://mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026",
    "https://openboulder.org/vote-news-opinions/",
    "https://richardvalenty.com/2026/09/grano-re-localize-boulders-economy/",
