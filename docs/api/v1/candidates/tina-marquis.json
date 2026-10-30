@@ -663,6 +663,31 @@
   ],
   "endorsements": [
    {
+    "id": "E440",
+    "endorser": {
+     "type": "organization",
+     "slug": "airport-neighborhood-campaign",
+     "name": "Airport Neighborhood Campaign",
+     "page_url": "https://bouldervotes.org/orgs/airport-neighborhood-campaign.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "tina-marquis",
+     "name": "Tina Marquis",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-07",
+    "source_url": "https://mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026",
+    "source_title": "ANC endorsements for Boulder City Council (Airport Neighborhood Campaign email)"
+   },
+   {
     "id": "E84",
     "endorser": {
      "type": "person",
@@ -1427,6 +1452,7 @@
    "https://boulderaction.org/2026-candidate-endorsements",
    "https://boulderreportinglab.org/govpack_profiles/tina-marquis-2/",
    "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-tina.pdf",
+   "https://mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026",
    "https://openboulder.org/vote-news-opinions/",
    "https://planboulder.org/2026-city-council-candidate-endorsements",
    "https://richardvalenty.com/2026/09/marquis-can-boulder-housing-be-family-friendly/",
