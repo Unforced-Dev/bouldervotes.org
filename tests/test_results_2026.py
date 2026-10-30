@@ -389,24 +389,31 @@ def _git(*args: str) -> str:
 
 @unittest.skipIf(os.environ.get("BV_SKIP_SLOW") == "1", "BV_SKIP_SLOW=1")
 class TestFlagOffMatchesMain(unittest.TestCase):
-    """With BV_RESULTS off, docs/ is byte-identical to a build of main, even with a
-    results.json present. Builds both trees from scratch in temp folders (~20 s)."""
+    """With BV_RESULTS off, a results.json changes nothing in docs/. Builds this tree twice
+    from scratch in temp folders (~20 s): once without results.json, once with the fixture.
+    Set BV_BASE_REF to compare against a git ref's build instead (for results-code PRs);
+    the default is the tree itself, so data PRs, which rightly change docs/, still pass."""
 
     def test_flag_off_build_is_byte_identical_to_main(self):
         try:
-            base = _git("merge-base", "HEAD", os.environ.get("BV_BASE_REF", "origin/main"))
+            ref = os.environ.get("BV_BASE_REF")
+            base = _git("merge-base", "HEAD", ref) if ref else "HEAD"
             files = _git("ls-files", "--cached", "--others", "--exclude-standard", "-z").split("\0")
         except (subprocess.CalledProcessError, FileNotFoundError) as e:
             self.skipTest(f"git unavailable: {e}")
         with tempfile.TemporaryDirectory() as tmp:
             main_dir, head_dir = Path(tmp) / "main", Path(tmp) / "head"
             main_dir.mkdir()
-            archive = subprocess.run(["git", "archive", base], cwd=ROOT, check=True, capture_output=True).stdout
-            subprocess.run(["tar", "-x", "-C", str(main_dir)], input=archive, check=True)
+            if ref:
+                archive = subprocess.run(["git", "archive", base], cwd=ROOT, check=True, capture_output=True).stdout
+                subprocess.run(["tar", "-x", "-C", str(main_dir)], input=archive, check=True)
             for f in files:
                 if f and (ROOT / f).is_file():
-                    (head_dir / f).parent.mkdir(parents=True, exist_ok=True)
-                    shutil.copy2(ROOT / f, head_dir / f)
+                    for d in ((head_dir,) if ref else (head_dir, main_dir)):
+                        (d / f).parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy2(ROOT / f, d / f)
+            if not ref:
+                (main_dir / "data" / "harvest" / "2026" / "results.json").unlink(missing_ok=True)
             shutil.copy2(F2023 / "results.json", head_dir / "data" / "harvest" / "2026" / "results.json")
             env = {k: v for k, v in os.environ.items() if not k.startswith("BV_RESULTS")}
             env["BV_TODAY"] = "2026-11-01"
