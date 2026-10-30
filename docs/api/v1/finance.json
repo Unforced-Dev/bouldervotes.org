@@ -5,7 +5,7 @@
  "license_note": "Facts and quotes belong to their sources; cite the source_url.",
  "guidance_for_ai": "https://bouldervotes.org/llms.txt",
  "note": "City of Boulder clerk filings (city races do not report to the state's TRACER system). A 0 is a filed zero. as_of is the filing date of each committee's latest report (named in 'report'); retrieved_on is when bouldervotes.org pulled it.",
- "retrieved_on": "2026-10-22",
+ "retrieved_on": "2026-10-30",
  "committees": [
   {
    "committee": "Together with Taishya Adams",
@@ -20,7 +20,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3956",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=307",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -1784,7 +1784,7 @@
    "as_of": null,
    "report": null,
    "report_url": null,
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=314",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Official committee on the clerk app; not on the certified 2026 candidate list.",
@@ -1803,7 +1803,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3945",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=303",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -1935,7 +1935,7 @@
    "as_of": "2026-10-07",
    "report": "Independent Expenditure",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3907",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=329",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -1960,10 +1960,10 @@
    "expenditures": 2258.76,
    "matching_funds_received": 0.0,
    "cash_on_hand": 1126.24,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3951",
-   "retrieved_on": "2026-10-22",
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3982",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=318",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -2369,13 +2369,13 @@
    "candidate_slug": "aaron-brockett",
    "candidate": "Aaron Brockett",
    "contributions": 12366.0,
-   "expenditures": 12753.6,
+   "expenditures": 16696.6,
    "matching_funds_received": 12366.0,
-   "cash_on_hand": 11978.4,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3948",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 8035.4,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3976",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=313",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -3582,6 +3582,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Coleman Erickson",
+     "item_type": null,
+     "purpose": "Video Production",
+     "occurred_on": "2026-10-23",
+     "amount": 1500.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Scale to Win",
      "item_type": null,
      "purpose": "Texting",
@@ -3595,6 +3603,38 @@
      "purpose": "Advertising",
      "occurred_on": "2026-09-30",
      "amount": 1051.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google Ads/You Tube",
+     "item_type": null,
+     "purpose": "Targeted online advertising",
+     "occurred_on": "2026-10-27",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google Ads/YouTube",
+     "item_type": null,
+     "purpose": "Targeted Online Advertising",
+     "occurred_on": "2026-10-26",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google Ads/YouTube",
+     "item_type": null,
+     "purpose": "Targeted online advertising",
+     "occurred_on": "2026-10-27",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google Ads/YouTube",
+     "item_type": null,
+     "purpose": "Targeted online advertising",
+     "occurred_on": "2026-10-28",
+     "amount": 500.0
     },
     {
      "direction": "expenditure",
@@ -3614,6 +3654,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Brook Brockett",
+     "item_type": null,
+     "purpose": "Campaign Field Work",
+     "occurred_on": "2026-10-20",
+     "amount": 323.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Devin Edgely",
      "item_type": null,
      "purpose": "Campaign Management Consulting",
@@ -3627,6 +3675,14 @@
      "purpose": "Event Supplies",
      "occurred_on": "2026-09-28",
      "amount": 128.08
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Erika Dawn",
+     "item_type": null,
+     "purpose": "Events Consulting",
+     "occurred_on": "2026-10-28",
+     "amount": 120.0
     },
     {
      "direction": "expenditure",
@@ -3821,17 +3877,25 @@
    "candidate_slug": null,
    "candidate": null,
    "contributions": 0.0,
-   "expenditures": 271.0,
+   "expenditures": 544.0,
    "matching_funds_received": 0.0,
    "cash_on_hand": null,
-   "as_of": "2026-10-19",
+   "as_of": "2026-10-23",
    "report": "Independent Expenditure",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3941",
-   "retrieved_on": "2026-10-22",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3963",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=330",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
    "line_items": [
+    {
+     "direction": "expenditure",
+     "display_name": "Jared Sclar and Associates",
+     "item_type": null,
+     "purpose": "Texting",
+     "occurred_on": "2026-10-21",
+     "amount": 272.7
+    },
     {
      "direction": "expenditure",
      "display_name": "Jared Sclar and Associates",
@@ -3849,17 +3913,25 @@
    "candidate_slug": null,
    "candidate": null,
    "contributions": 0.0,
-   "expenditures": 7228.0,
+   "expenditures": 16313.0,
    "matching_funds_received": 0.0,
    "cash_on_hand": null,
-   "as_of": "2026-10-20",
+   "as_of": "2026-10-28",
    "report": "Independent Expenditure",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3940",
-   "retrieved_on": "2026-10-22",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3965",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=331",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
    "line_items": [
+    {
+     "direction": "expenditure",
+     "display_name": "IQM Corporation",
+     "item_type": null,
+     "purpose": "Display, video and audio ads that encourage recent and future college graduates to GOTV.",
+     "occurred_on": "2026-10-22",
+     "amount": 3421.0
+    },
     {
      "direction": "expenditure",
      "display_name": "AudioGo",
@@ -3886,6 +3958,30 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Lauren Harris (Elle Michelle Grateful Holler)",
+     "item_type": null,
+     "purpose": "Live musical performance at the 10/29/2026 GOTV event.",
+     "occurred_on": "2026-10-28",
+     "amount": 1500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Votometry",
+     "item_type": null,
+     "purpose": "production of display, video and audio ads and ad placement",
+     "occurred_on": "2026-10-26",
+     "amount": 1500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Bartaco Boulder",
+     "item_type": null,
+     "purpose": "Food for the 10/29/2026 GOTV event \"Vote for Your Right to Party\"",
+     "occurred_on": "2026-10-26",
+     "amount": 1346.54
+    },
+    {
+     "direction": "expenditure",
      "display_name": "IQM Corporation",
      "item_type": null,
      "purpose": "Audio ads that encourage recent and future college graduates to GOTV.",
@@ -3902,6 +3998,38 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Sticker Giant",
+     "item_type": null,
+     "purpose": "Stickers promoting afford-boulder.com",
+     "occurred_on": "2026-10-26",
+     "amount": 354.3
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "3103 Barcroft Creative Agency, LLC",
+     "item_type": null,
+     "purpose": "Graphic designer fee for the branding used on the GOTV event materials",
+     "occurred_on": "2026-10-27",
+     "amount": 350.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Amazon",
+     "item_type": null,
+     "purpose": "Purchased sandwich boards/displays",
+     "occurred_on": "2026-10-26",
+     "amount": 293.46
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "CallHub (Gaglers Inc)",
+     "item_type": null,
+     "purpose": "Phone and text platform for GOTV voter outreach.",
+     "occurred_on": "2026-10-25",
+     "amount": 230.24
+    },
+    {
+     "direction": "expenditure",
      "display_name": "GoDaddy.com, LLC",
      "item_type": null,
      "purpose": "Domain registration for afford-boulder.com (3-years)",
@@ -3910,11 +4038,35 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "FedEx Office",
+     "item_type": null,
+     "purpose": "Color prints of GOTV event flyers and graphics.",
+     "occurred_on": "2026-10-27",
+     "amount": 46.52
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Michaels",
+     "item_type": null,
+     "purpose": "Poster frames",
+     "occurred_on": "2026-10-28",
+     "amount": 39.98
+    },
+    {
+     "direction": "expenditure",
      "display_name": "GoDaddy.com, LLC",
      "item_type": null,
      "purpose": "Domain registration for affordboulder.com",
      "occurred_on": "2026-10-18",
      "amount": 12.99
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "craigslist, Inc.",
+     "item_type": null,
+     "purpose": "Online job posting to recruit door hanger distributors for GOTV flyer drops.",
+     "occurred_on": "2026-10-25",
+     "amount": 3.0
     }
    ]
   },
@@ -3931,7 +4083,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3933",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=310",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $348.29 in loans.",
@@ -5248,14 +5400,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "sam-fuqua",
    "candidate": "Sam Fuqua",
-   "contributions": 10521.0,
-   "expenditures": 11728.35,
+   "contributions": 10546.0,
+   "expenditures": 16806.97,
    "matching_funds_received": 10121.0,
-   "cash_on_hand": 8913.65,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3947",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 3860.03,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3975",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=319",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $400.00 in loans.",
@@ -6190,6 +6342,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Darcy Berus",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-22",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "David Adamson",
      "item_type": "Monetary",
      "purpose": null,
@@ -6598,6 +6758,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Scale to Win, Inc.",
+     "item_type": null,
+     "purpose": "Text messaging (Invoice 44573, usage 10/21-10/23)",
+     "occurred_on": "2026-10-26",
+     "amount": 782.77
+    },
+    {
+     "direction": "expenditure",
      "display_name": "DonorBox (Rebel Idealist Inc.) / Stripe (processing fees)",
      "item_type": null,
      "purpose": "Cumulative electronic-contribution processing fees absorbed by the campaign, all donations to date",
@@ -6606,11 +6774,67 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Google LLC",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-27",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google LLC",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-28",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Corazon Printing",
      "item_type": null,
      "purpose": "Yard signs (50, 18x24 w/ H-stakes) - Order 3213, Invoice #3643, paid in full",
      "occurred_on": "2026-09-15",
      "amount": 473.97
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-25",
+     "amount": 410.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-27",
+     "amount": 410.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-28",
+     "amount": 410.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "StickerGiant.com",
+     "item_type": null,
+     "purpose": "Campaign stickers",
+     "occurred_on": "2026-10-28",
+     "amount": 373.62
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google LLC",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-24",
+     "amount": 350.0
     },
     {
      "direction": "expenditure",
@@ -6630,11 +6854,43 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Eclectic Radio Works, LLC",
+     "item_type": null,
+     "purpose": "Campaign graphic design work (invoice dated 10/15/2026)",
+     "occurred_on": "2026-10-28",
+     "amount": 300.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Rosetta Hall (Tripleseat)",
      "item_type": null,
      "purpose": "Election night event (venue payment)",
      "occurred_on": "2026-10-14",
      "amount": 300.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-23",
+     "amount": 262.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-24",
+     "amount": 262.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google LLC",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-22",
+     "amount": 200.0
     },
     {
      "direction": "expenditure",
@@ -6690,6 +6946,22 @@
      "item_type": null,
      "purpose": "Online advertising",
      "occurred_on": "2026-10-20",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-21",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms, Inc.",
+     "item_type": null,
+     "purpose": "Online advertising",
+     "occurred_on": "2026-10-22",
      "amount": 152.0
     },
     {
@@ -6830,6 +7102,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Constant Contact",
+     "item_type": null,
+     "purpose": "Email marketing platform - monthly charge",
+     "occurred_on": "2026-10-21",
+     "amount": 12.46
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Contant Contact",
      "item_type": null,
      "purpose": "email marketing",
@@ -6843,6 +7123,14 @@
      "purpose": "Incremental DonorBox/Stripe processing fees",
      "occurred_on": "2026-10-15",
      "amount": 6.15
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "DonorBox (Rebel Idealist Inc.) / Stripe (processing fees)",
+     "item_type": null,
+     "purpose": "Incremental DonorBox/Stripe processing fees",
+     "occurred_on": "2026-10-22",
+     "amount": 1.77
     },
     {
      "direction": "expenditure",
@@ -6864,10 +7152,10 @@
    "expenditures": 80.0,
    "matching_funds_received": 0.0,
    "cash_on_hand": -80.0,
-   "as_of": "2026-10-19",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3943",
-   "retrieved_on": "2026-10-22",
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3977",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=315",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -6888,24 +7176,40 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "jameson-goldstein",
    "candidate": "Jameson Goldstein",
-   "contributions": 600.0,
-   "expenditures": 415.9,
+   "contributions": 800.0,
+   "expenditures": 458.24,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 184.1,
-   "as_of": "2026-10-20",
-   "report": "21st day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3955",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 341.76,
+   "as_of": "2026-10-22",
+   "report": "14th day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3964",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=324",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
    "line_items": [
     {
      "direction": "contribution",
+     "display_name": "Benjamin Malerba",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-13",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Benton Helzberg",
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-01",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Connie Boswell Sluski",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-15",
      "amount": 100.0
     },
     {
@@ -6990,6 +7294,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Michaels Stores 5115",
+     "item_type": null,
+     "purpose": "Campaign supplies",
+     "occurred_on": "2026-10-17",
+     "amount": 33.28
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Dollar Tree",
      "item_type": null,
      "purpose": "Campaign supplies",
@@ -7014,6 +7326,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Squarespace Inc",
+     "item_type": null,
+     "purpose": "Processing fee",
+     "occurred_on": "2026-10-15",
+     "amount": 3.5
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Squarespace, Inc.",
      "item_type": null,
      "purpose": "Processing fee for Benton Helzberg’s contribution",
@@ -7027,6 +7347,22 @@
      "purpose": "Processing fee for Robert Goldstein’s contribution",
      "occurred_on": "2026-10-05",
      "amount": 3.5
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Squarespace Inc",
+     "item_type": null,
+     "purpose": "Processing fee",
+     "occurred_on": "2026-10-13",
+     "amount": 3.2
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Squarespace Inc",
+     "item_type": null,
+     "purpose": "Processing fee",
+     "occurred_on": "2026-10-14",
+     "amount": 2.36
     }
    ]
   },
@@ -7043,7 +7379,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3949",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=309",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -8663,7 +8999,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3944",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=323",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $10,542.70 in loans.",
@@ -11964,17 +12300,17 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "rachel-rose-isaacson",
    "candidate": "Rachel Rose Isaacson",
-   "contributions": 7691.74,
-   "expenditures": 13690.55,
+   "contributions": 7710.44,
+   "expenditures": 13712.25,
    "matching_funds_received": 7346.0,
-   "cash_on_hand": 1336.11,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3954",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 1333.11,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3983",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=305",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": "Clerk contribution total includes $345.74 in loans.",
+   "notes": "Clerk contribution total includes $364.44 in loans.",
    "line_items": [
     {
      "direction": "contribution",
@@ -13258,6 +13594,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Rachel Rose Isaacson",
+     "item_type": "Loan",
+     "purpose": null,
+     "occurred_on": "2026-10-27",
+     "amount": 18.7
+    },
+    {
+     "direction": "contribution",
      "display_name": "Alana Guth",
      "item_type": "Monetary",
      "purpose": null,
@@ -13522,6 +13866,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Canva US Inc",
+     "item_type": null,
+     "purpose": "Canva Pro Subscription",
+     "occurred_on": "2026-10-27",
+     "amount": 18.7
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Canva US Inc.",
      "item_type": null,
      "purpose": "Canva Pro Subscription",
@@ -13559,6 +13911,14 @@
      "purpose": "Bank Fee",
      "occurred_on": "2026-09-25",
      "amount": 3.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Alpine Bank",
+     "item_type": null,
+     "purpose": "Bank Fee",
+     "occurred_on": "2026-10-23",
+     "amount": 3.0
     }
    ]
   },
@@ -13569,13 +13929,13 @@
    "candidate_slug": "lisa-ann-jacobs",
    "candidate": "Lisa Ann Jacobs",
    "contributions": 641.44,
-   "expenditures": 641.44,
+   "expenditures": 707.23,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 0.0,
-   "as_of": "2026-10-21",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3958",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": -65.79,
+   "as_of": "2026-10-26",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3969",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=321",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -13670,11 +14030,35 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Home Depot",
+     "item_type": null,
+     "purpose": "Sign holders",
+     "occurred_on": "2026-10-22",
+     "amount": 41.32
+    },
+    {
+     "direction": "expenditure",
      "display_name": "walgreens",
      "item_type": null,
      "purpose": "photos",
      "occurred_on": "2026-09-25",
      "amount": 19.86
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Home Depot",
+     "item_type": null,
+     "purpose": "Signs",
+     "occurred_on": "2026-10-23",
+     "amount": 19.27
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Home Depot",
+     "item_type": null,
+     "purpose": "Sign holders",
+     "occurred_on": "2026-10-22",
+     "amount": 5.2
     }
    ]
   },
@@ -13691,7 +14075,7 @@
    "as_of": "2026-10-21",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3961",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=312",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -15024,14 +15408,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "tina-marquis",
    "candidate": "Tina Marquis",
-   "contributions": 11844.56,
-   "expenditures": 9024.25,
+   "contributions": 11944.56,
+   "expenditures": 20200.98,
    "matching_funds_received": 11844.55,
-   "cash_on_hand": 14664.86,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3950",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 3588.13,
+   "as_of": "2026-10-27",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3968",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=316",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -15662,6 +16046,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Rob dea",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-20",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Robert Kaplan",
      "item_type": "Monetary",
      "purpose": null,
@@ -16166,11 +16558,35 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Copy center",
+     "item_type": null,
+     "purpose": "printed material and postage",
+     "occurred_on": "2026-10-26",
+     "amount": 5992.77
+    },
+    {
+     "direction": "expenditure",
      "display_name": "The Copy Center",
      "item_type": null,
      "purpose": "Printed materials",
      "occurred_on": "2026-10-02",
      "amount": 2884.71
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Monica Morrell",
+     "item_type": null,
+     "purpose": "Marketing Communications Consulting",
+     "occurred_on": "2026-10-26",
+     "amount": 2000.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Turn It Blue Digital",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-24",
+     "amount": 2000.0
     },
     {
      "direction": "expenditure",
@@ -16222,11 +16638,35 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Donor Box",
+     "item_type": null,
+     "purpose": "Processing Fees",
+     "occurred_on": "2026-10-20",
+     "amount": 372.26
+    },
+    {
+     "direction": "expenditure",
      "display_name": "squarespace",
      "item_type": null,
      "purpose": "website host, domain, email",
      "occurred_on": "2026-07-10",
      "amount": 276.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Sticker Giant",
+     "item_type": null,
+     "purpose": "Stickers",
+     "occurred_on": "2026-10-22",
+     "amount": 228.61
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Donor Box",
+     "item_type": null,
+     "purpose": "Fees",
+     "occurred_on": "2026-10-20",
+     "amount": 208.09
     },
     {
      "direction": "expenditure",
@@ -16250,6 +16690,30 @@
      "item_type": null,
      "purpose": "Digital Ads",
      "occurred_on": "2026-10-19",
+     "amount": 125.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms",
+     "item_type": null,
+     "purpose": "Digitals ads",
+     "occurred_on": "2026-10-21",
+     "amount": 125.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms",
+     "item_type": null,
+     "purpose": "Digital Ads",
+     "occurred_on": "2026-10-24",
+     "amount": 125.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta Platforms",
+     "item_type": null,
+     "purpose": "Digital Ads",
+     "occurred_on": "2026-10-26",
      "amount": 125.0
     },
     {
@@ -16316,14 +16780,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "dave-martus",
    "candidate": "Dave Martus",
-   "contributions": 6315.0,
-   "expenditures": 10245.1,
+   "contributions": 6490.0,
+   "expenditures": 11865.43,
    "matching_funds_received": 6215.0,
-   "cash_on_hand": 2284.9,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3942",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 839.57,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3974",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=325",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -16438,6 +16902,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-14",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Jessy Gary",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-25",
      "amount": 100.0
     },
     {
@@ -16818,6 +17290,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "george weber",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-26",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "sara Travis",
      "item_type": "Monetary",
      "purpose": null,
@@ -17154,6 +17634,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "david stieber",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-25",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Ellison Ramsey",
      "item_type": "Monetary",
      "purpose": null,
@@ -17223,6 +17711,14 @@
      "purpose": "Campaign print and mailing",
      "occurred_on": "2026-10-06",
      "amount": 1982.79
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "In 4degrees",
+     "item_type": null,
+     "purpose": "Advertising - social media",
+     "occurred_on": "2026-10-26",
+     "amount": 1600.0
     },
     {
      "direction": "expenditure",
@@ -17362,6 +17858,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "staples",
+     "item_type": null,
+     "purpose": "printing",
+     "occurred_on": "2026-10-20",
+     "amount": 14.2
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Amazon",
      "item_type": null,
      "purpose": "Name badges",
@@ -17383,6 +17887,14 @@
      "purpose": "website domain",
      "occurred_on": "2026-08-27",
      "amount": 10.46
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Stripe",
+     "item_type": null,
+     "purpose": "Credit card transaction fees",
+     "occurred_on": "2026-10-29",
+     "amount": 6.13
     },
     {
      "direction": "expenditure",
@@ -17408,18 +17920,50 @@
    "committee_kind": "ballot_measure",
    "candidate_slug": null,
    "candidate": null,
-   "contributions": 15833.18,
-   "expenditures": 13313.04,
+   "contributions": 26182.18,
+   "expenditures": 20883.53,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 2520.14,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3952",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 5298.65,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3980",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=328",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
    "line_items": [
+    {
+     "direction": "contribution",
+     "display_name": "Dan Caruso",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-21",
+     "amount": 4001.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "William Reynolds",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-26",
+     "amount": 2850.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Cheryl Liguori",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-26",
+     "amount": 1998.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Tebo Properties",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 1500.0
+    },
     {
      "direction": "contribution",
      "display_name": "Craig Jones",
@@ -17742,6 +18286,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "BluSkies Strategies",
+     "item_type": null,
+     "purpose": "Campaign Mgmt",
+     "occurred_on": "2026-10-28",
+     "amount": 5750.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Corazon Printing",
      "item_type": null,
      "purpose": "Yard Signs",
@@ -17758,6 +18310,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Facebook Meta",
+     "item_type": null,
+     "purpose": "digital ads",
+     "occurred_on": "2026-10-29",
+     "amount": 1536.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Stripe",
      "item_type": null,
      "purpose": "Payment processing fees",
@@ -17771,6 +18331,14 @@
      "purpose": "digital ads",
      "occurred_on": "2026-10-20",
      "amount": 307.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Stripe",
+     "item_type": null,
+     "purpose": "Payment processing fees",
+     "occurred_on": "2026-10-29",
+     "amount": 284.49
     },
     {
      "direction": "expenditure",
@@ -17824,10 +18392,10 @@
    "expenditures": 14789.0,
    "matching_funds_received": 0.0,
    "cash_on_hand": null,
-   "as_of": "2026-10-20",
+   "as_of": "2026-10-28",
    "report": "Independent Expenditure",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3937",
-   "retrieved_on": "2026-10-22",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3972",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=326",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -17929,13 +18497,13 @@
    "candidate_slug": null,
    "candidate": null,
    "contributions": 2050.0,
-   "expenditures": 1370.83,
+   "expenditures": 1314.58,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 679.17,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3938",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 735.42,
+   "as_of": "2026-10-28",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3979",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=327",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -18131,6 +18699,14 @@
      "purpose": "payment processing fees",
      "occurred_on": "2026-10-20",
      "amount": 120.49
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Stripe",
+     "item_type": null,
+     "purpose": "payment processing fees",
+     "occurred_on": "2026-10-29",
+     "amount": -56.25
     }
    ]
   },
@@ -18144,10 +18720,10 @@
    "expenditures": 1420.15,
    "matching_funds_received": 0.0,
    "cash_on_hand": 2729.85,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3953",
-   "retrieved_on": "2026-10-22",
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3978",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=322",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -18471,7 +19047,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3957",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=317",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -19835,7 +20411,7 @@
    "as_of": "2026-10-20",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3946",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=308",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $334.60 in loans.",
@@ -21776,14 +22352,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "lynn-segal",
    "candidate": "Lynn Segal",
-   "contributions": 200.0,
-   "expenditures": 178.23,
+   "contributions": 430.0,
+   "expenditures": 293.25,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 21.77,
-   "as_of": "2026-10-13",
-   "report": "21st day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3912",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 136.75,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3981",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=320",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -21798,11 +22374,51 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Randall Weiner",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-16",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Stephanie Chen",
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-13",
      "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Landon Hiliard IV",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-17",
+     "amount": 75.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Lucy Carlson-Krakoff",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-16",
+     "amount": 30.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Micha Kurz",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-16",
+     "amount": 20.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Boaz Nash",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-16",
+     "amount": 5.0
     },
     {
      "direction": "expenditure",
@@ -21816,9 +22432,33 @@
      "direction": "expenditure",
      "display_name": "Michaels Store #5115",
      "item_type": null,
+     "purpose": "Screen Printing Kit",
+     "occurred_on": "2026-10-22",
+     "amount": 68.78
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Michaels Store #5115",
+     "item_type": null,
+     "purpose": "T-shirts",
+     "occurred_on": "2026-10-21",
+     "amount": 34.34
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Michaels Store #5115",
+     "item_type": null,
      "purpose": "T-shirt material",
      "occurred_on": "2026-10-07",
      "amount": 22.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "FEDEX OFFICE",
+     "item_type": null,
+     "purpose": "Print Flyers",
+     "occurred_on": "2026-10-18",
+     "amount": 11.9
     }
    ]
   },
@@ -21835,7 +22475,7 @@
    "as_of": "2026-10-21",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3960",
-   "retrieved_on": "2026-10-22",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=311",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $1,200.00 in loans.",
@@ -21920,14 +22560,14 @@
    "committee_kind": "ballot_measure",
    "candidate_slug": null,
    "candidate": null,
-   "contributions": 356.45,
-   "expenditures": 336.45,
+   "contributions": 393.84,
+   "expenditures": 373.84,
    "matching_funds_received": 0.0,
    "cash_on_hand": 20.0,
-   "as_of": "2026-10-21",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3962",
-   "retrieved_on": "2026-10-22",
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3984",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=302",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -21994,6 +22634,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-22",
+     "amount": 37.39
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Doug Hamilton",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-22",
      "amount": 37.39
     },
     {
@@ -22094,6 +22742,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Squarespace Inc",
+     "item_type": null,
+     "purpose": "Monthly Website Subscription",
+     "occurred_on": "2026-10-22",
+     "amount": 37.39
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Office Depot",
      "item_type": null,
      "purpose": "Copy Paper",
@@ -22125,13 +22781,13 @@
    "candidate_slug": "tara-winer",
    "candidate": "Tara Winer",
    "contributions": 12555.0,
-   "expenditures": 12738.05,
+   "expenditures": 16452.25,
    "matching_funds_received": 12366.0,
-   "cash_on_hand": 12182.95,
-   "as_of": "2026-10-12",
-   "report": "21st day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3915",
-   "retrieved_on": "2026-10-22",
+   "cash_on_hand": 8468.75,
+   "as_of": "2026-10-25",
+   "report": "14th day before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3939",
+   "retrieved_on": "2026-10-30",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=306",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -23314,11 +23970,27 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Anna Wert",
+     "item_type": null,
+     "purpose": "Labor",
+     "occurred_on": "2026-10-20",
+     "amount": 2000.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Boulder Reporting Lab",
      "item_type": null,
      "purpose": "Advertising",
      "occurred_on": "2026-09-28",
      "amount": 1500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-20",
+     "amount": 976.76
     },
     {
      "direction": "expenditure",
@@ -23346,6 +24018,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Laura Jacoby -701 Creative",
+     "item_type": null,
+     "purpose": "Design",
+     "occurred_on": "2026-10-20",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "DEMLAUNCH VAN",
      "item_type": null,
      "purpose": "Voter Database",
@@ -23359,6 +24039,14 @@
      "purpose": "Merchant Services up till 8/9/2026",
      "occurred_on": "2026-08-09",
      "amount": 322.21
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Center Copy Boulder, Inc.",
+     "item_type": null,
+     "purpose": "Printing",
+     "occurred_on": "2026-10-20",
+     "amount": 237.44
     },
     {
      "direction": "expenditure",
