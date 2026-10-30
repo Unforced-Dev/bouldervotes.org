@@ -556,6 +556,32 @@
     "source_title": "2026 Candidate Endorsements (Boulder Action)"
    },
    {
+    "id": "E447",
+    "endorser": {
+     "type": "person",
+     "slug": "dan-caruso",
+     "name": "Dan Caruso",
+     "title_as_printed": null,
+     "page_url": "https://bouldervotes.org/people/dan-caruso.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "dave-martus",
+     "name": "Dave Martus",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-13",
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)"
+   },
+   {
     "id": "E2",
     "endorser": {
      "type": "organization",
@@ -601,6 +627,7 @@
    "https://boulderreportinglab.org/govpack_profiles/david-martus/",
    "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-dave.pdf",
    "https://daveforboulder.com/assets/docs/Boulder%20Chamber%20of%20Commerce%20Questionnaire.pdf",
+   "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
    "https://planboulder.org/2026-city-council-candidate-endorsements",
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "https://www.youtube.com/watch?v=1At-W2cR9Mk",
