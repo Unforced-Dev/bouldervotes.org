@@ -739,6 +739,31 @@
   ],
   "endorsements": [
    {
+    "id": "E441",
+    "endorser": {
+     "type": "organization",
+     "slug": "airport-neighborhood-campaign",
+     "name": "Airport Neighborhood Campaign",
+     "page_url": "https://bouldervotes.org/orgs/airport-neighborhood-campaign.html"
+    },
+    "endorser_group": "organization",
+    "target": {
+     "type": "candidate",
+     "slug": "rachel-rose-isaacson",
+     "name": "Rachel Rose Isaacson",
+     "office": "council"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-07",
+    "source_url": "https://mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026",
+    "source_title": "ANC endorsements for Boulder City Council (Airport Neighborhood Campaign email)"
+   },
+   {
     "id": "E88",
     "endorser": {
      "type": "person",
@@ -1038,6 +1063,7 @@
    "https://blog.boulderprogressives.org/announcing-bps-strongest-slate-ever-for-2026-election/",
    "https://boulderreportinglab.org/govpack_profiles/rachel-rose-isaacson-2/",
    "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-rachel.pdf",
+   "https://mailchi.mp/15aec264aab0/anc-endorsments-boulder-city-council-2026",
    "https://richardvalenty.com/2026/09/isaacson-can-working-class-boulderites-stay-here/",
    "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=02&committeeID=318",
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
