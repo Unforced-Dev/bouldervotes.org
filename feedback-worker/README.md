@@ -1,20 +1,19 @@
 # bouldervotes-feedback
 
-A Cloudflare Worker + D1 database that collects corrections and ideas for
-bouldervotes.org, and keeps the site's daily page counts. The site stays static;
-only this Worker takes input. Submissions are stored, never shown publicly.
+A Cloudflare Worker + D1 database that keeps the daily page counts for
+bouldervotes.org. It also collected corrections and ideas until 2026-10-31, when
+the form was closed because nearly all of it was spam. The feedback endpoints now
+answer 410 Gone and store nothing; the notes already in D1 stay readable by admin.
 
 - Live: https://feedback.bouldervotes.org (also https://bouldervotes-feedback.unforced.workers.dev)
 - D1 database: `bouldervotes-feedback` (id in `wrangler.toml`)
-- The site's single pointer to it is `FEEDBACK_URL` in `build.py`.
+- The site's single pointer to it is `COUNTS_HOST` in `build.py`.
 
 ## Endpoints
 
 | Method + path | Who | What |
 |---|---|---|
-| `POST /` | the HTML form on feedback.html | form-urlencoded; 303 to `/feedback.html?sent=1#sent`, or `?error=<reason>#problem` |
-| `POST /api/v1/feedback` | AI agents, scripts | JSON in, `{ok, id}` out; CORS `*`; `OPTIONS` handled |
-| `GET /api/v1/feedback/schema` | anyone | JSON description of the fields, limits and error codes |
+| `/`, `/api/v1/feedback`, `/api/v1/feedback/schema` | anyone | closed: 410 `{"ok": false, "error": "closed", "message": "Feedback is closed."}`, CORS `*`; nothing is read or stored |
 | `GET /admin/feedback?status=new` | admin | `Authorization: Bearer $ADMIN_TOKEN`; `status` = new, reviewed, fixed, declined or all |
 | `POST /admin/feedback/<id>` | admin | body `{"status": "reviewed"}` etc. |
 | `DELETE /admin/feedback/<id>` | admin | removes a row (test data) |
@@ -32,14 +31,6 @@ user agent, referrer, cookie, visitor id or time finer than a day.
 - Body at most 512 bytes, enforced while reading the stream (else 413, stream cancelled).
 - `path` is `/`, or lowercase `[a-z0-9_.-]` segments ending in `.html` or `/`, at most 200 characters (else 400).
 - A row stops at 50,000 a day; a day stops taking new paths at 2,000.
-
-## Abuse controls (no CAPTCHA: it would block AI agents and annoy older voters)
-
-- Honeypot field `homepage` (hidden in the form); anything in it is rejected.
-- 5 notes per `ip_hash` per hour and 200 per day overall, counted in D1.
-- Message 10 to 4000 characters, contact at most 200, body at most 20 KB.
-- A message with more links than words is rejected.
-- `ip_hash` is SHA-256(IP + `SALT`). The raw IP is never stored.
 
 ## Deploy
 
@@ -69,7 +60,7 @@ python3 -c 'import secrets;print(secrets.token_urlsafe(32))' | bunx wrangler@4 s
 ```
 
 Local copies live in `~/.hermes/.env` as `BV_FEEDBACK_ADMIN_TOKEN` and `BV_FEEDBACK_SALT`.
-Rotating `SALT` resets the per-sender rate limit; that's fine.
+`SALT` is no longer used now that nothing new is stored.
 
 ## Review
 
@@ -78,6 +69,6 @@ set -a; . ~/.hermes/.env; set +a
 python3 tools/feedback_digest.py            # prints nothing when there is nothing new
 ```
 
-Every correction is a claim. Check it against the source before changing any data,
-then mark the row `fixed`, `reviewed` or `declined`. We can only reply when the
-sender left a contact.
+No new notes arrive. For the old ones: every correction is a claim. Check it
+against the source before changing any data, then mark the row `fixed`, `reviewed`
+or `declined`. We can only reply when the sender left a contact.
