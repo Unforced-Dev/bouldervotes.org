@@ -1,4 +1,5 @@
-// Page counts: POST /api/v1/count and GET /api/v1/counts, run in real workerd with a real local D1.
+// Page counts (POST /api/v1/count, GET /api/v1/counts), the closed feedback endpoints and the admin
+// reads of old notes, run in real workerd with a real local D1.
 import { after, before, beforeEach, describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
@@ -36,6 +37,7 @@ after(() => mf.dispose());
 
 beforeEach(async () => {
   await db.prepare("DELETE FROM page_counts").run();
+  await db.prepare("DELETE FROM feedback").run();
 });
 
 const today = () => new Date().toISOString().slice(0, 10);
@@ -210,14 +212,52 @@ describe("GET /api/v1/counts", () => {
   });
 });
 
-describe("existing feedback endpoints still answer", () => {
-  test("schema GET and feedback OPTIONS keep their open CORS", async () => {
-    const s = await mf.dispatchFetch(`${BASE}/api/v1/feedback/schema`);
-    assert.equal(s.status, 200);
-    assert.equal(s.headers.get("Access-Control-Allow-Origin"), "*");
-    await s.arrayBuffer();
+describe("feedback is closed", () => {
+  const note = { kind: "correction", message: "The date on the mayor page is wrong, says the clerk.", source_url: "https://example.org/x" };
+  const feedbackRows = async () => (await db.prepare("SELECT COUNT(*) AS n FROM feedback").all()).results[0].n;
+
+  test("the form, the agent endpoint and the schema answer 410 and store nothing", async () => {
+    const asks = [
+      ["POST /", `${BASE}/`, { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(note).toString() }],
+      ["POST /api/v1/feedback", `${BASE}/api/v1/feedback`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...note, submitter_type: "ai-agent" }) }],
+      ["GET /api/v1/feedback/schema", `${BASE}/api/v1/feedback/schema`, {}],
+      ["GET /api/v1/feedback", `${BASE}/api/v1/feedback`, {}],
+      ["GET /", `${BASE}/`, {}],
+    ];
+    for (const [name, url, init] of asks) {
+      const r = await mf.dispatchFetch(url, { redirect: "manual", ...init });
+      assert.equal(r.status, 410, name);
+      assert.equal(r.headers.get("Location"), null, name);
+      assert.deepEqual(await r.json(), { ok: false, error: "closed", message: "Feedback is closed." }, name);
+    }
+    assert.equal(await feedbackRows(), 0);
+  });
+
+  test("the agent endpoint keeps open CORS, so a browser caller can read the 410", async () => {
     const o = await mf.dispatchFetch(`${BASE}/api/v1/feedback`, { method: "OPTIONS" });
     assert.equal(o.status, 204);
     assert.equal(o.headers.get("Access-Control-Allow-Origin"), "*");
+    const r = await mf.dispatchFetch(`${BASE}/api/v1/feedback`, { method: "POST", body: JSON.stringify(note) });
+    assert.equal(r.headers.get("Access-Control-Allow-Origin"), "*");
+    await r.arrayBuffer();
+  });
+
+  test("admin can still read, mark and delete the notes already stored", async () => {
+    await db.prepare(
+      "INSERT INTO feedback (created_at, kind, message, ip_hash, status) VALUES (?, 'correction', 'An old note from before.', 'abc', 'new')"
+    ).bind(new Date().toISOString()).run();
+    const auth = { Authorization: `Bearer ${ADMIN}` };
+    const no = await mf.dispatchFetch(`${BASE}/admin/feedback?status=all`);
+    assert.equal(no.status, 401);
+    await no.arrayBuffer();
+    const list = await (await mf.dispatchFetch(`${BASE}/admin/feedback?status=new`, { headers: auth })).json();
+    assert.equal(list.count, 1);
+    assert.equal(list.rows[0].message, "An old note from before.");
+    const id = list.rows[0].id;
+    const mark = await mf.dispatchFetch(`${BASE}/admin/feedback/${id}`, { method: "POST", headers: auth, body: JSON.stringify({ status: "declined" }) });
+    assert.deepEqual(await mark.json(), { ok: true, id, status: "declined" });
+    const del = await mf.dispatchFetch(`${BASE}/admin/feedback/${id}`, { method: "DELETE", headers: auth });
+    assert.equal((await del.json()).deleted, 1);
+    assert.equal(await feedbackRows(), 0);
   });
 });

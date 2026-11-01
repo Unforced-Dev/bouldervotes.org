@@ -52,7 +52,7 @@ class CountSnippetTest(unittest.TestCase):
             self.assertIn(part, s)
         for banned in ("sendBeacon", "cookie", "localStorage", "sessionStorage", "navigator", "location", "referrer:"):
             self.assertNotIn(banned, s)
-        self.assertTrue(build.COUNT_URL.startswith(build.FEEDBACK_URL))
+        self.assertTrue(build.COUNT_URL.startswith(build.COUNTS_HOST))
 
     def test_about_page_describes_our_counts(self):
         s = (DOCS / "about.html").read_text(encoding="utf-8")

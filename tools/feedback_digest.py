@@ -17,13 +17,7 @@ import textwrap
 import urllib.error
 import urllib.request
 
-FEEDBACK_URL = "https://feedback.bouldervotes.org/"
-if "__file__" in globals():  # inside the repo: use build.py's constant
-    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-    try:
-        from build import FEEDBACK_URL
-    except Exception:
-        pass
+FEEDBACK_URL = "https://feedback.bouldervotes.org/"  # the form is closed; old notes stay readable
 
 
 def fetch(status: str, token: str) -> list[dict]:
