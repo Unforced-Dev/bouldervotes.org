@@ -1069,6 +1069,32 @@
     "source_title": "Boulder mayoral candidate Aquiles La Grave faces lawsuit and campaign finance complaint (Boulder Reporting Lab)"
    },
    {
+    "id": "E443",
+    "endorser": {
+     "type": "person",
+     "slug": "dan-caruso",
+     "name": "Dan Caruso",
+     "title_as_printed": null,
+     "page_url": "https://bouldervotes.org/people/dan-caruso.html"
+    },
+    "endorser_group": "other_individual",
+    "target": {
+     "type": "candidate",
+     "slug": "aquiles-la-grave",
+     "name": "Aquiles La Grave",
+     "office": "mayor"
+    },
+    "position": "support",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "provenance_label": "Endorser's own statement",
+    "label": "Endorser's own statement.",
+    "claimed_by": null,
+    "published_on": "2026-10-13",
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)"
+   },
+   {
     "id": "B2",
     "endorser": {
      "type": "person",
@@ -1116,6 +1142,7 @@
    "https://boulderreportinglab.org/2026/09/16/boulder-mayoral-candidate-aquiles-la-grave-faces-lawsuit-and-campaign-finance-complaint/",
    "https://boulderreportinglab.org/govpack_profiles/aquiles-la-grave/",
    "https://ctycms.com/co-boulder/docs/2026-mayoral-and-city-council-candidate-questions-aquiles.pdf",
+   "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
    "https://planboulder.org/2026-city-council-candidate-endorsements",
    "https://richardvalenty.com/2026/09/la-grave-re-envision-the-role-of-the-mayor",
    "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
