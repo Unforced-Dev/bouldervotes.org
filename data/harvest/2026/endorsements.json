@@ -11705,5 +11705,33 @@
       "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
       "note": "Read 2026-10-30. Signed newsletter 'My Slate': Mayor 'Aquiles La Grave'; City Council (vote for all five): 'Ryan Jamieson', 'Tara Winer', 'Scott Rendleman', 'Dave Martus', 'Jill Adler Grano'. Ballot Measures, City of Boulder: 'NO 2J', 'HARD NO 2K', 'YES 2L', 'HARD NO 2M'; Boulder County 'YES 1A', 'YES 200'; Regional 'YES 7A'. Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
     }
+  },
+  {
+    "id": "E456",
+    "endorser": "Dan Caruso",
+    "endorser_type": "person",
+    "endorser_slug": "dan-caruso",
+    "candidate": null,
+    "measure_letter": null,
+    "measure_label": "Boulder County Question 201: Commissioner Election Method (five districts)",
+    "position": "endorse",
+    "rank": null,
+    "provenance": "endorser_statement",
+    "claimed_by": null,
+    "source_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+    "source_title": "Engage Boulder - My Boulder Ballot, Top to Bottom (Dan Caruso, Oct. 13, 2026)",
+    "published_on": "2026-10-13",
+    "status": "published",
+    "audit": {
+      "result": "pass",
+      "note": "Uni read the live page, 2026-11-02."
+    },
+    "notes": "Personal slate in Dan Caruso's signed Engage Boulder newsletter ('reflects the personal opinions of Dan Caruso'; paid for by Caruso Ventures).",
+    "verification": {
+      "result": "PASS",
+      "checked_on": "2026-11-02",
+      "evidence_url": "https://engagecolorado.org/articles/2026-10-13-engage-boulder-my-boulder-ballot-top-to-bottom-c59214ffa6",
+      "note": "Read 2026-11-02. Signed newsletter 'My Slate', Boulder County ballot measures table: 'Option A' in the vote column beside '201: Five commissioner districts' (other rows read 'YES 1A', 'YES 200'). Footer: 'This Engage Boulder Newsletter reflects the personal opinions of Dan Caruso' and 'Paid for by Caruso Ventures.'"
+    }
   }
 ]
