@@ -1,0 +1,44 @@
+/* Election-night results (BV_RESULTS). Copied to docs/css/results.css only when the
+   flag is on, so a default build leaves docs/ unchanged. Tokens come from site.css.
+   One neutral palette for every candidate and both YES and NO: no colour by side. */
+.res-caveat { margin: var(--s4) 0 var(--s5); padding: var(--s4) var(--s5); background: var(--surface);
+  border: 1px solid var(--line-strong); border-left: 6px solid var(--accent); border-radius: var(--radius); font-family: var(--sans); }
+.res-caveat p { margin: var(--s1) 0; font-size: var(--fs-md); line-height: 1.5; max-width: none; }
+.res-caveat-main { font-weight: 700; color: var(--ink); }
+.res-caveat-end { margin-top: var(--s6); }
+.res-jump { display: flex; flex-wrap: wrap; gap: var(--s2); margin: 0 0 var(--s5); font-family: var(--sans); }
+.res-jump a { display: inline-block; min-height: 44px; line-height: 44px; padding: 0 var(--s4); border: 1px solid var(--line-strong);
+  border-radius: 999px; background: var(--surface); text-decoration: none; font-weight: 600; }
+.res-race { margin: var(--s6) 0; padding: var(--s5); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.res-race h2 { margin: 0 0 var(--s1); }
+.res-race h3 { margin: var(--s5) 0 var(--s2); font-size: var(--fs-lg); }
+.res-kind { font-family: var(--sans); font-weight: 600; color: var(--ink-2); margin: 0 0 var(--s3); }
+.res-table { font-size: var(--fs-md); margin: var(--s2) 0 var(--s3); }
+.res-table th[scope='row'] { font-size: var(--fs-md); font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.res-table td.num, .res-table th.num { width: 1%; }
+.res-table tr:nth-child(even) > * { background: #fcfbf9; } /* stripe whole rows, names included */
+.res-eyebrow { margin-top: var(--s5); }
+.res-num { font-weight: 700; font-variant-numeric: tabular-nums lining-nums; color: var(--ink); text-decoration-color: var(--line-strong); }
+.res-num:visited { color: var(--ink); }
+.res-rounds { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); gap: 0 var(--s5); }
+.res-round h4 { margin: var(--s3) 0 0; }
+.res-measures { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); gap: var(--s4); margin-top: var(--s3); }
+.res-measure { border: 1px solid var(--line); border-radius: var(--radius); padding: var(--s4); background: var(--paper); min-width: 0; }
+.res-measure h3 { margin: 0 0 var(--s3); font-size: var(--fs-md); line-height: 1.35; }
+dl.res-yesno { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); margin: 0; }
+dl.res-yesno > div { background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius); padding: var(--s3); min-width: 0; text-align: center; }
+dl.res-yesno dt { font-family: var(--sans); font-weight: 700; font-size: var(--fs-sm); letter-spacing: 0.05em; text-transform: uppercase; margin: 0 0 var(--s1); }
+dl.res-yesno dd { margin: 0; font-family: var(--sans); }
+dl.res-yesno .res-num { display: block; font-size: 1.45rem; line-height: 1.25; }
+.res-pct { display: block; color: var(--ink-2); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; }
+.res-home { margin: var(--s6) 0; padding: var(--s5) var(--s6); background: var(--surface); border: 1px solid var(--line-strong);
+  border-left: 6px solid var(--accent); border-radius: var(--radius-lg); font-family: var(--sans); }
+.res-home h2 { margin: 0 0 var(--s2); }
+.res-home p { max-width: none; }
+.res-home .btn { white-space: normal; max-width: 100%; }
+@media (max-width: 540px) {
+  .res-race { padding: var(--s3); }
+  .res-caveat, .res-home { padding: var(--s3) var(--s4); }
+  .res-table th, .res-table td { padding: var(--s2); }
+}
+@media print { .res-race, .res-measure, dl.res-yesno > div { break-inside: avoid; } .res-jump { display: none; } }
