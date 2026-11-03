@@ -5,7 +5,7 @@
  "license_note": "Facts and quotes belong to their sources; cite the source_url.",
  "guidance_for_ai": "https://bouldervotes.org/llms.txt",
  "note": "City of Boulder clerk filings (city races do not report to the state's TRACER system). A 0 is a filed zero. as_of is the filing date of each committee's latest report (named in 'report'); retrieved_on is when bouldervotes.org pulled it.",
- "retrieved_on": "2026-10-30",
+ "retrieved_on": "2026-11-03",
  "committees": [
   {
    "committee": "Together with Taishya Adams",
@@ -13,14 +13,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "taishya-adams",
    "candidate": "Taishya Adams",
-   "contributions": 10853.3,
-   "expenditures": 5549.6,
+   "contributions": 11103.3,
+   "expenditures": 11129.98,
    "matching_funds_received": 10853.1,
-   "cash_on_hand": 16156.8,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3956",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 10826.42,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3970",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=307",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -47,6 +47,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-08-13",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Andrea Roberts",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-21",
      "amount": 100.0
     },
     {
@@ -731,6 +739,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Julia Johnson",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-23",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Julian Wade",
      "item_type": "Monetary",
      "purpose": null,
@@ -1203,6 +1219,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Joy Barrett",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-08-17",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Julie Langford",
      "item_type": "Monetary",
      "purpose": null,
@@ -1215,6 +1239,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-25",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Julie Langford",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-25",
      "amount": 25.0
     },
     {
@@ -1383,6 +1415,22 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-10",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Richard John Kinane",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-09-24",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Richard John Kinane",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-26",
      "amount": 25.0
     },
     {
@@ -1603,6 +1651,22 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Corazon Printing",
+     "item_type": null,
+     "purpose": "Direct Mail",
+     "occurred_on": "2026-10-11",
+     "amount": 4036.4
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Corazon Printing",
+     "item_type": null,
+     "purpose": "Printing",
+     "occurred_on": "2026-10-28",
+     "amount": 1530.48
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Kate Johnson",
      "item_type": null,
      "purpose": "Campaign Management",
@@ -1747,6 +1811,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Mail Chimp",
+     "item_type": null,
+     "purpose": "Emails",
+     "occurred_on": "2026-10-21",
+     "amount": 13.5
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Mailchimp",
      "item_type": null,
      "purpose": "Emails",
@@ -1784,7 +1856,7 @@
    "as_of": null,
    "report": null,
    "report_url": null,
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=314",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Official committee on the clerk app; not on the certified 2026 candidate list.",
@@ -1800,10 +1872,10 @@
    "expenditures": 23670.26,
    "matching_funds_received": 0.0,
    "cash_on_hand": 5254.55,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3945",
-   "retrieved_on": "2026-10-30",
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3986",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=303",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -1935,7 +2007,7 @@
    "as_of": "2026-10-07",
    "report": "Independent Expenditure",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3907",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=329",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -1963,7 +2035,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3982",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=318",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -2375,7 +2447,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3976",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=313",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -3877,13 +3949,13 @@
    "candidate_slug": null,
    "candidate": null,
    "contributions": 0.0,
-   "expenditures": 544.0,
+   "expenditures": 808.0,
    "matching_funds_received": 0.0,
    "cash_on_hand": null,
-   "as_of": "2026-10-23",
+   "as_of": "2026-11-02",
    "report": "Independent Expenditure",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3963",
-   "retrieved_on": "2026-10-30",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3992",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=330",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -3903,6 +3975,14 @@
      "purpose": "Texting",
      "occurred_on": "2026-10-15",
      "amount": 271.38
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Jared Sclar and Associates",
+     "item_type": null,
+     "purpose": "Texting",
+     "occurred_on": "2026-10-30",
+     "amount": 263.88
     }
    ]
   },
@@ -3919,7 +3999,7 @@
    "as_of": "2026-10-28",
    "report": "Independent Expenditure",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3965",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=331",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -4076,14 +4156,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "benita-duran",
    "candidate": "Benita Duran",
-   "contributions": 9627.5,
-   "expenditures": 9157.74,
+   "contributions": 9827.5,
+   "expenditures": 9917.24,
    "matching_funds_received": 9425.0,
-   "cash_on_hand": 9692.26,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3933",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 9132.76,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3967",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=310",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $348.29 in loans.",
@@ -4390,6 +4470,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-08-31",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Khadija Haynes",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-23",
      "amount": 100.0
     },
     {
@@ -4750,6 +4838,22 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-13",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Cathi Brents",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Christine Brescoll",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-23",
      "amount": 50.0
     },
     {
@@ -5330,6 +5434,22 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Meta Facebook",
+     "item_type": null,
+     "purpose": "Social media ad",
+     "occurred_on": "2026-10-29",
+     "amount": 370.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "USPS",
+     "item_type": null,
+     "purpose": "Postage",
+     "occurred_on": "2026-10-20",
+     "amount": 325.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "USPS",
      "item_type": null,
      "purpose": "Postage",
@@ -5391,6 +5511,14 @@
      "purpose": "Online payment processing fees",
      "occurred_on": "2026-10-02",
      "amount": 87.17
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "China Gourmet",
+     "item_type": null,
+     "purpose": "Team lunch",
+     "occurred_on": "2026-10-29",
+     "amount": 64.5
     }
    ]
   },
@@ -5407,7 +5535,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3975",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=319",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $400.00 in loans.",
@@ -7155,7 +7283,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3977",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=315",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -7183,7 +7311,7 @@
    "as_of": "2026-10-22",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3964",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=324",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -7373,13 +7501,13 @@
    "candidate_slug": "jill-grano",
    "candidate": "Jill Grano",
    "contributions": 12423.06,
-   "expenditures": 14778.03,
+   "expenditures": 16125.0,
    "matching_funds_received": 12366.0,
-   "cash_on_hand": 10011.03,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3949",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 8664.06,
+   "as_of": "2026-10-30",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3989",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=309",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -8810,6 +8938,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Scale to Win",
+     "item_type": null,
+     "purpose": "Text messages",
+     "occurred_on": "2026-10-27",
+     "amount": 846.97
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Heather Wicken",
      "item_type": null,
      "purpose": "Campaign support (sign delivery, errands, etc)",
@@ -8823,6 +8959,14 @@
      "purpose": "Social Media Ads",
      "occurred_on": "2026-10-02",
      "amount": 534.46
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Heather Wicken",
+     "item_type": null,
+     "purpose": "Campaign support (sign delivery, errands, etc)",
+     "occurred_on": "2026-10-20",
+     "amount": 500.0
     },
     {
      "direction": "expenditure",
@@ -8992,17 +9136,17 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "aquiles-la-grave",
    "candidate": "Aquiles La Grave",
-   "contributions": 40692.7,
-   "expenditures": 18559.87,
+   "contributions": 44500.2,
+   "expenditures": 24868.67,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 22132.83,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3944",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 19631.53,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3985",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=323",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
-   "notes": "Clerk contribution total includes $10,542.70 in loans.",
+   "notes": "Clerk contribution total includes $10,680.20 in loans.",
    "line_items": [
     {
      "direction": "contribution",
@@ -9046,6 +9190,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Aquiles La Grave",
+     "item_type": "Loan",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 137.5
+    },
+    {
+     "direction": "contribution",
      "display_name": "Aaron Day",
      "item_type": "Monetary",
      "purpose": null,
@@ -9078,6 +9230,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Alba Zaug",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Alex Bogusky",
      "item_type": "Monetary",
      "purpose": null,
@@ -9090,6 +9250,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-06",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Alexis Fasseas",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9122,6 +9290,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Ana Bogusky",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9186,6 +9362,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Anne Zaug",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9262,6 +9446,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Bode Stuart",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Brad Burch",
      "item_type": "Monetary",
      "purpose": null,
@@ -9282,6 +9474,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Brian Rosenfeld",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9430,6 +9630,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Connie DaArgenio",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Connie Sluski",
      "item_type": "Monetary",
      "purpose": null,
@@ -9510,6 +9718,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Dana Bitzer",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Dana Query",
      "item_type": "Monetary",
      "purpose": null,
@@ -9538,6 +9754,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "David Ingalls",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9586,6 +9810,22 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-06",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Don Martin",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Doug Rao",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9678,6 +9918,22 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Ethan Zaug",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Evonne Zaug",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "False Midnight Limited",
      "item_type": "Monetary",
      "purpose": null,
@@ -9714,6 +9970,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-08-27",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Gary Meyers",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9798,6 +10062,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Henrik Vandermersch",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Henry Beer",
      "item_type": "Monetary",
      "purpose": null,
@@ -9858,6 +10130,22 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Jamie Coit",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Jamie Doucet",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -9998,6 +10286,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Jill Wood",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Jim Butterworth",
      "item_type": "Monetary",
      "purpose": null,
@@ -10034,6 +10330,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "John K Wolff",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -10130,6 +10434,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-06",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Joy Meyers",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -10318,6 +10630,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Lena Caron",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Leslie Chandler",
      "item_type": "Monetary",
      "purpose": null,
@@ -10418,6 +10738,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-20",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Maribel Stuart",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -10654,6 +10982,22 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Nick Roza",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Niko Vandermersch",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Noah Hahn",
      "item_type": "Monetary",
      "purpose": null,
@@ -10774,6 +11118,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Raymond Spalla",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Rebecca Monahan",
      "item_type": "Monetary",
      "purpose": null,
@@ -10854,6 +11206,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Robert Presson",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Roger Koenig",
      "item_type": "Monetary",
      "purpose": null,
@@ -10898,6 +11258,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-08-27",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Sarah Collins Gold",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -10974,6 +11342,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Sophie Roza",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Sophie Walker",
      "item_type": "Monetary",
      "purpose": null,
@@ -10986,6 +11362,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Stephan Vandermersch",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -11054,6 +11438,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Suzanne Larson",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Tatiana Tebo",
      "item_type": "Monetary",
      "purpose": null,
@@ -11086,10 +11478,26 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Thomas K Birkle",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Tim Goodacre",
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Tim Zaug",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -11198,10 +11606,26 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Virginia Richardson",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "W.C. Pat Shanks",
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-09-21",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "William Bitzer",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -11258,6 +11682,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-06",
+     "amount": 100.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Zan O'Leary",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 100.0
     },
     {
@@ -11406,6 +11838,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Hosea Rosenberg",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Jacqueline Claudia",
      "item_type": "Monetary",
      "purpose": null,
@@ -11470,6 +11910,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Justin Guerra",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Katherine Hauge",
      "item_type": "Monetary",
      "purpose": null,
@@ -11530,6 +11978,14 @@
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-08-27",
+     "amount": 50.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Robert Drake",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 50.0
     },
     {
@@ -11662,10 +12118,26 @@
     },
     {
      "direction": "contribution",
+     "display_name": "James Martin",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
+     "amount": 10.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Kenneth J Stickney",
      "item_type": "Monetary",
      "purpose": null,
      "occurred_on": "2026-10-06",
+     "amount": 10.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Leslie Olson",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-29",
      "amount": 10.0
     },
     {
@@ -11702,6 +12174,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Colorado Hispanic Multimedia Platform",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-29",
+     "amount": 2200.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Donorbox",
      "item_type": null,
      "purpose": "Credit card fees",
@@ -11721,6 +12201,14 @@
      "display_name": "Meta (Facebook)",
      "item_type": null,
      "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-26",
+     "amount": 1376.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta (Facebook)",
+     "item_type": null,
+     "purpose": "Advertising & Media",
      "occurred_on": "2026-10-19",
      "amount": 1346.26
     },
@@ -11730,6 +12218,14 @@
      "item_type": null,
      "purpose": "Videographer",
      "occurred_on": "2026-09-01",
+     "amount": 1000.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Yourong 'Christene' Mallory",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-22",
      "amount": 1000.0
     },
     {
@@ -11782,6 +12278,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Meta (Facebook)",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-23",
+     "amount": 516.26
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Wild Enchanted Evening (Wild Bear Nature Center)",
      "item_type": null,
      "purpose": "Campaign Events",
@@ -11814,11 +12318,35 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Donorbox",
+     "item_type": null,
+     "purpose": "Other (Swipe fees)",
+     "occurred_on": "2026-10-29",
+     "amount": 392.51
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Yardsigns Plus",
      "item_type": null,
      "purpose": "Signage",
      "occurred_on": "2026-09-17",
      "amount": 366.29
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta (Facebook)",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-21",
+     "amount": 347.45
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta (Facebook)",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-22",
+     "amount": 265.08
     },
     {
      "direction": "expenditure",
@@ -11979,6 +12507,22 @@
      "purpose": "Software & Technology",
      "occurred_on": "2026-10-16",
      "amount": 81.01
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "The Sink",
+     "item_type": null,
+     "purpose": "Campaign Events",
+     "occurred_on": "2026-10-25",
+     "amount": 80.58
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta (Facebook)",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-20",
+     "amount": 74.0
     },
     {
      "direction": "expenditure",
@@ -12166,6 +12710,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Boulder Daily Camera",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-29",
+     "amount": 21.99
+    },
+    {
+     "direction": "expenditure",
      "display_name": "ManageFaxPhone",
      "item_type": null,
      "purpose": "Software & Technology",
@@ -12195,6 +12747,22 @@
      "purpose": "Printing & Literature",
      "occurred_on": "2026-09-17",
      "amount": 19.21
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Amazon",
+     "item_type": null,
+     "purpose": "Signage",
+     "occurred_on": "2026-10-24",
+     "amount": 18.86
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "EZE Marketing",
+     "item_type": null,
+     "purpose": "Software & Technology",
+     "occurred_on": "2026-10-27",
+     "amount": 15.99
     },
     {
      "direction": "expenditure",
@@ -12291,6 +12859,14 @@
      "purpose": "Campaign Events",
      "occurred_on": "2026-09-14",
      "amount": 8.52
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Meta (Facebook)",
+     "item_type": null,
+     "purpose": "Advertising & Media",
+     "occurred_on": "2026-10-20",
+     "amount": 0.08
     }
    ]
   },
@@ -12307,7 +12883,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3983",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=305",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $364.44 in loans.",
@@ -13935,7 +14511,7 @@
    "as_of": "2026-10-26",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3969",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=321",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -14075,7 +14651,7 @@
    "as_of": "2026-10-21",
    "report": "14th day before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3961",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=312",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -15415,7 +15991,7 @@
    "as_of": "2026-10-27",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3968",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=316",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -16787,7 +17363,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3974",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=325",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -17927,7 +18503,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3980",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=328",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -18395,7 +18971,7 @@
    "as_of": "2026-10-28",
    "report": "Independent Expenditure",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3972",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=326",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -18503,7 +19079,7 @@
    "as_of": "2026-10-28",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3979",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=327",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -18723,7 +19299,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3978",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=322",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -19040,14 +19616,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "jamillah-richmond",
    "candidate": "Jamillah Richmond",
-   "contributions": 7866.37,
-   "expenditures": 4890.85,
-   "matching_funds_received": 7351.37,
-   "cash_on_hand": 10226.89,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3957",
-   "retrieved_on": "2026-10-30",
+   "contributions": 7891.37,
+   "expenditures": 7933.85,
+   "matching_funds_received": 7376.37,
+   "cash_on_hand": 7233.89,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3987",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=317",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -19894,6 +20470,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Johanna Montenegro",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-28",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "Leslie Barrett",
      "item_type": "Monetary",
      "purpose": null,
@@ -20110,6 +20694,22 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Literature",
+     "occurred_on": "2026-10-23",
+     "amount": 1894.53
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Community Labor Admin",
+     "item_type": null,
+     "purpose": "Campaign Services",
+     "occurred_on": "2026-10-26",
+     "amount": 636.47
+    },
+    {
+     "direction": "expenditure",
      "display_name": "DK Printing",
      "item_type": null,
      "purpose": "Literature",
@@ -20166,6 +20766,46 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-23",
+     "amount": 82.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-26",
+     "amount": 82.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-26",
+     "amount": 82.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-26",
+     "amount": 82.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-28",
+     "amount": 82.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Staples",
      "item_type": null,
      "purpose": "Marketing Postcards",
@@ -20179,6 +20819,22 @@
      "purpose": "Website",
      "occurred_on": "2026-08-15",
      "amount": 54.51
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-20",
+     "amount": 51.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Ads",
+     "occurred_on": "2026-10-21",
+     "amount": 51.0
     },
     {
      "direction": "expenditure",
@@ -20405,13 +21061,13 @@
    "candidate_slug": "ryan-schuchard",
    "candidate": "Ryan Schuchard",
    "contributions": 12366.0,
-   "expenditures": 10888.91,
+   "expenditures": 20399.74,
    "matching_funds_received": 12366.0,
-   "cash_on_hand": 13843.09,
-   "as_of": "2026-10-20",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3946",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 4332.26,
+   "as_of": "2026-10-29",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3973",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=308",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $334.60 in loans.",
@@ -21882,6 +22538,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Corazon",
+     "item_type": null,
+     "purpose": "Mailer",
+     "occurred_on": "2026-10-27",
+     "amount": 6191.47
+    },
+    {
+     "direction": "expenditure",
      "display_name": "D&K Printing",
      "item_type": null,
      "purpose": "Advertising",
@@ -21922,6 +22586,22 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Google",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-26",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-28",
+     "amount": 500.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Facebook",
      "item_type": null,
      "purpose": "Advertising",
@@ -21949,6 +22629,14 @@
      "display_name": "Google",
      "item_type": null,
      "purpose": "Advertising",
+     "occurred_on": "2026-10-22",
+     "amount": 350.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google",
+     "item_type": null,
+     "purpose": "Advertising",
      "occurred_on": "2026-10-09",
      "amount": 275.85
     },
@@ -21965,6 +22653,38 @@
      "display_name": "Facebook",
      "item_type": null,
      "purpose": "Advertising",
+     "occurred_on": "2026-10-28",
+     "amount": 231.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-29",
+     "amount": 231.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Google",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-20",
+     "amount": 200.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-27",
+     "amount": 153.94
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
      "occurred_on": "2026-10-13",
      "amount": 152.0
     },
@@ -21974,6 +22694,62 @@
      "item_type": null,
      "purpose": "Advertising",
      "occurred_on": "2026-10-15",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-19",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-20",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-21",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-23",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-24",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-25",
+     "amount": 152.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-26",
      "amount": 152.0
     },
     {
@@ -22031,6 +22807,14 @@
      "purpose": "Web + Email Hosting (3x)",
      "occurred_on": "2026-09-01",
      "amount": 93.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "FedEx",
+     "item_type": null,
+     "purpose": "Postcard Printing",
+     "occurred_on": "2026-10-27",
+     "amount": 88.44
     },
     {
      "direction": "expenditure",
@@ -22322,6 +23106,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Google",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-20",
+     "amount": 0.98
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Stripe",
      "item_type": null,
      "purpose": "Payment Processing Fee",
@@ -22359,7 +23151,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3981",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=320",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -22468,14 +23260,14 @@
    "committee_kind": "official_candidate",
    "candidate_slug": "fred-smith",
    "candidate": "Fred Smith",
-   "contributions": 1375.0,
-   "expenditures": 1317.57,
+   "contributions": 1410.0,
+   "expenditures": 1408.3,
    "matching_funds_received": 0.0,
-   "cash_on_hand": 57.43,
-   "as_of": "2026-10-21",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3960",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 1.7,
+   "as_of": "2026-10-30",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3971",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=311",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": "Clerk contribution total includes $1,200.00 in loans.",
@@ -22506,6 +23298,14 @@
     },
     {
      "direction": "contribution",
+     "display_name": "Bill McIntyre",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2027-10-23",
+     "amount": 25.0
+    },
+    {
+     "direction": "contribution",
      "display_name": "George Grandits",
      "item_type": "Monetary",
      "purpose": null,
@@ -22527,6 +23327,14 @@
      "purpose": null,
      "occurred_on": "2026-09-27",
      "amount": 25.0
+    },
+    {
+     "direction": "contribution",
+     "display_name": "Fred Smith",
+     "item_type": "Monetary",
+     "purpose": null,
+     "occurred_on": "2026-10-28",
+     "amount": 10.0
     },
     {
      "direction": "expenditure",
@@ -22551,6 +23359,14 @@
      "purpose": "Printing Campaign Literature",
      "occurred_on": "2027-10-08",
      "amount": 245.07
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Fedex/Kinkos",
+     "item_type": null,
+     "purpose": "Printing Campaign Literature",
+     "occurred_on": "2026-10-29",
+     "amount": 90.73
     }
    ]
   },
@@ -22567,7 +23383,7 @@
    "as_of": "2026-10-29",
    "report": "Thursday before election",
    "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3984",
-   "retrieved_on": "2026-10-30",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=302",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -22781,13 +23597,13 @@
    "candidate_slug": "tara-winer",
    "candidate": "Tara Winer",
    "contributions": 12555.0,
-   "expenditures": 16452.25,
+   "expenditures": 19465.08,
    "matching_funds_received": 12366.0,
-   "cash_on_hand": 8468.75,
-   "as_of": "2026-10-25",
-   "report": "14th day before election",
-   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3939",
-   "retrieved_on": "2026-10-30",
+   "cash_on_hand": 5455.92,
+   "as_of": "2026-10-30",
+   "report": "Thursday before election",
+   "report_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandE&statementID=3988",
+   "retrieved_on": "2026-11-03",
    "reports_url": "https://webapps.bouldercolorado.gov/election/committeeFilings.php?action=04&committeeID=306",
    "source_url": "https://webapps.bouldercolorado.gov/election/report.php?report=CandESummary&electionID=25",
    "notes": null,
@@ -23978,6 +24794,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Facebook",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-28",
+     "amount": 1800.0
+    },
+    {
+     "direction": "expenditure",
      "display_name": "Boulder Reporting Lab",
      "item_type": null,
      "purpose": "Advertising",
@@ -23999,6 +24823,14 @@
      "purpose": "Advertising",
      "occurred_on": "2026-09-28",
      "amount": 935.0
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Scale to Win",
+     "item_type": null,
+     "purpose": "Advertising",
+     "occurred_on": "2026-10-27",
+     "amount": 913.07
     },
     {
      "direction": "expenditure",
@@ -24050,6 +24882,14 @@
     },
     {
      "direction": "expenditure",
+     "display_name": "Center Copy Boulder, Inc.",
+     "item_type": null,
+     "purpose": "Printing",
+     "occurred_on": "2026-10-28",
+     "amount": 237.44
+    },
+    {
+     "direction": "expenditure",
      "display_name": "EPromos Promotional Products",
      "item_type": null,
      "purpose": "Pens",
@@ -24078,6 +24918,14 @@
      "item_type": null,
      "purpose": "Cloud Services, Text, & Email",
      "occurred_on": "2026-10-06",
+     "amount": 62.32
+    },
+    {
+     "direction": "expenditure",
+     "display_name": "Mailchimp",
+     "item_type": null,
+     "purpose": "Cloud Services, Text, & Email",
+     "occurred_on": "2026-10-28",
      "amount": 62.32
     },
     {
