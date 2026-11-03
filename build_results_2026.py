@@ -31,7 +31,7 @@ DENVER = ZoneInfo("America/Denver")
 
 # Election night: change this to "1" (keep BV_RESULTS=0 as the off switch), because
 # the nightly rebuild and other workers run build.py without BV_RESULTS set.
-RESULTS_DEFAULT = "0"
+RESULTS_DEFAULT = "1"
 
 CAVEAT = "Unofficial results until the county certifies. Results update as ballots are counted."
 FIRST_CHOICE_NOTE = ("These are first choices only, not the result. If no candidate has more than half "

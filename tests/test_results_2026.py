@@ -369,10 +369,10 @@ class TestResultsViews(unittest.TestCase):
 
 
 class TestFlag(unittest.TestCase):
-    def test_default_off_with_explicit_switch(self):
+    def test_default_on_with_explicit_switch(self):
         saved = os.environ.pop("BV_RESULTS", None)
         try:
-            self.assertFalse(R.results_enabled(), "default flips to on only on election night (RESULTS-RUNBOOK.md)")
+            self.assertTrue(R.results_enabled(), "default on for election night; BV_RESULTS=0 turns it off (RESULTS-RUNBOOK.md)")
             os.environ["BV_RESULTS"] = "1"
             self.assertTrue(R.results_enabled())
             os.environ["BV_RESULTS"] = "0"
