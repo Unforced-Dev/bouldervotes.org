@@ -1,4 +1,13 @@
 {
  "_about": "Boulder County's ballot spellings of 2026 City of Boulder candidates, mapped to the names in ballot_order.json. Used only to match the county's results file to our candidate pages. Each target must be a 2026 ballot name.",
- "aliases": {}
+ "aliases": {
+  "Jameson (Jamo) Goldstein": "Jameson Goldstein",
+  "Grateful Fred Instead": "Fred Smith",
+  "Jill Adler Grano": "Jill Grano"
+ },
+ "sources": {
+  "Grateful Fred Instead": "candidates.json: the city's campaign-finance list gives the ballot name 'Grateful Fred Instead' for Fred Smith (webapps.bouldercolorado.gov committee filings). Same ballot slot (mayor, 5th) on the county page.",
+  "Jill Adler Grano": "endorsements.json and endorsement_verification.json cite her as 'Jill Adler Grano'. Same ballot slot (council, 10th) on the county page.",
+  "Jameson (Jamo) Goldstein": "Nickname in parentheses; his campaign links use 'jamo-goldstein'. Same ballot slot (mayor, 4th) on the county page."
+ }
 }

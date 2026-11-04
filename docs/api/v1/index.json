@@ -46,6 +46,11 @@
    "path": "/api/v1/sources.json",
    "description": "Every source document the guide cites.",
    "url": "https://bouldervotes.org/api/v1/sources.json"
+  },
+  {
+   "path": "/api/v1/results.json",
+   "description": "Unofficial election-night results from Boulder County, with an as-of time. No calls.",
+   "url": "https://bouldervotes.org/api/v1/results.json"
   }
  ]
 }
