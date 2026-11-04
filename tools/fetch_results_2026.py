@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch Boulder County's election-night results and keep the City of Boulder contests.
 
-    python3 tools/fetch_results_2026.py              # fetch, save raw files, write results.json
+    BV_RESULTS_UPDATES=1 python3 tools/fetch_results_2026.py   # fetch, save raw files, write results.json
     python3 tools/fetch_results_2026.py --dry-run    # fetch and print, write nothing
     python3 tools/fetch_results_2026.py --offline tests/fixtures/results_2023C --year 2023 --out /tmp/r.json
 
@@ -29,6 +29,7 @@ import gzip
 import hashlib
 import html
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -53,6 +54,9 @@ EXPECT_TITLE = "2026 General Election"
 EXPECT_DATE = "November 3, 2026"
 MEASURE_CODES_2026 = ("2J", "2K", "2L", "2M")
 UA = "bouldervotes.org results reader (+https://bouldervotes.org/; nonpartisan voter guide)"
+# Archive mode (2026-11-04): updates are off by default. A write needs BV_RESULTS_UPDATES=1;
+# without it the tool stops before any network call. --dry-run and --offline still work.
+UPDATES_DEFAULT = "0"
 WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9}
 
 
@@ -290,9 +294,9 @@ def assemble(index_html: str, index_url: str, *, rcv_html: str | None = None, rc
 
 def canon(name: str) -> str:
     """Same name matching as the renderer: case, punctuation and known aliases ignored."""
-    from build_results_2026 import norm_name
+    from build_results_2026 import county_aliases, norm_name
     from ingest_2026 import NAME_ALIASES
-    aliases = {norm_name(k): norm_name(v) for k, v in NAME_ALIASES.items()}
+    aliases = {norm_name(k): norm_name(v) for k, v in NAME_ALIASES.items()} | county_aliases()
     n = norm_name(name)
     return aliases.get(n, n)
 
@@ -451,6 +455,10 @@ def summary(data: dict) -> str:
     return "\n".join(L)
 
 
+def updates_enabled() -> bool:
+    return os.environ.get("BV_RESULTS_UPDATES", UPDATES_DEFAULT) == "1"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--dry-run", action="store_true", help="fetch and print; save nothing")
@@ -458,13 +466,20 @@ def main() -> int:
     ap.add_argument("--year", default="2026", help="with --offline: the election year the pages must show")
     ap.add_argument("--out", type=Path, default=OUT)
     a = ap.parse_args()
+    if not a.offline and not a.dry_run and not updates_enabled():
+        print("FROZEN: results updates are off (archive mode). Set BV_RESULTS_UPDATES=1 for a deliberate "
+              "refresh (RESULTS-RUNBOOK.md). Nothing fetched or written.", file=sys.stderr)
+        return 4
     try:
         data = from_dir(a.offline, a.year) if a.offline else fetch_live(a.dry_run)
     except ParseError as e:
         print(f"STOP: {e}. Nothing written.", file=sys.stderr)
         return 2
     if not a.offline or a.year == "2026":
-        probs = check_2026(data)
+        try:
+            probs = check_2026(data)
+        except ValueError as e:  # a bad county_names.json entry
+            probs = [str(e)]
         if probs:
             print("STOP: " + " | ".join(probs) + ". Nothing written.", file=sys.stderr)
             return 2

@@ -26,6 +26,10 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent
 RESULTS_JSON = ROOT / "data" / "harvest" / "2026" / "results.json"
+# County ballot spellings of our candidates' names ("county spelling": "name in ballot_order.json").
+# A data file, so a results refresh that only adds a spelling stays a data PR.
+COUNTY_NAMES_JSON = ROOT / "data" / "harvest" / "2026" / "county_names.json"
+BALLOT_ORDER_JSON = ROOT / "data" / "harvest" / "2026" / "ballot_order.json"
 COUNTY_RESULTS_URL = "https://bouldercounty.gov/elections/results/"
 DENVER = ZoneInfo("America/Denver")
 
@@ -33,7 +37,9 @@ DENVER = ZoneInfo("America/Denver")
 # the nightly rebuild and other workers run build.py without BV_RESULTS set.
 RESULTS_DEFAULT = "1"
 
-CAVEAT = "Unofficial results until the county certifies. Results update as ballots are counted."
+# Archive mode (2026-11-04): the count is a frozen copy; the county's page has the latest.
+CAVEAT = ("Unofficial results until the county certifies. "
+          "This guide no longer updates them. Boulder County has the latest count.")
 FIRST_CHOICE_NOTE = ("These are first choices only, not the result. If no candidate has more than half "
                      "of the first choices, the county counts in rounds: the candidate with the fewest votes "
                      "is removed and those ballots go to each voter's next choice.")
@@ -75,6 +81,26 @@ def norm_name(name: str) -> str:
     return " ".join(re.sub(r"[^a-z ]", " ", name.lower().replace("’", "'").replace("'", "")).split())
 
 
+def county_aliases() -> dict[str, str]:
+    """Normalized county spelling -> normalized ballot name, from COUNTY_NAMES_JSON.
+    Every target must be a 2026 ballot name, and a spelling may not be another
+    candidate's ballot name, so the file can only connect a spelling to one candidate."""
+    if not COUNTY_NAMES_JSON.exists():
+        return {}
+    raw = json.loads(COUNTY_NAMES_JSON.read_text(encoding="utf-8")).get("aliases", {})
+    races = json.loads(BALLOT_ORDER_JSON.read_text(encoding="utf-8"))["races"]
+    ballot = {norm_name(n) for names in races.values() for n in names}
+    out = {}
+    for county, ours in raw.items():
+        k, v = norm_name(county), norm_name(ours)
+        if v not in ballot:
+            raise ValueError(f"county_names.json: {ours!r} is not a 2026 ballot name")
+        if k in ballot and k != v:
+            raise ValueError(f"county_names.json: {county!r} is another candidate's ballot name")
+        out[k] = v
+    return out
+
+
 def nice_time(iso: str | None) -> str:
     """'9:42 p.m. Tuesday, Nov. 3, 2026' in Boulder time."""
     if not iso:
@@ -103,6 +129,8 @@ class Roster:
             return
         from ingest_2026 import NAME_ALIASES
         self.aliases = {norm_name(k): norm_name(v) for k, v in NAME_ALIASES.items()}
+        if year == 2026:
+            self.aliases.update(county_aliases())
         for office, pos, name, slug in con.execute(
                 """SELECT o.slug, c.ballot_position, p.full_name, p.slug FROM candidacies c
                    JOIN people p ON p.id=c.person_id JOIN races r ON r.id=c.race_id
@@ -277,9 +305,7 @@ def results_body(data: dict | None, roster: Roster, prefix: str = "") -> str:
     if data is None:
         return ("<h1>Election results</h1>"
                 f"<div class='res-caveat' role='note'><p class='res-caveat-main'>{esc(CAVEAT)}</p>"
-                "<p>Boulder County posts its first results after the polls close at 7 p.m. on Tuesday, Nov. 3. "
-                "They will appear here soon after. "
-                f"<a href='{COUNTY_RESULTS_URL}'>Boulder County election results</a>.</p></div>")
+                f"<p><a href='{COUNTY_RESULTS_URL}'>See the results from Boulder County Elections</a>.</p></div>")
     election = data.get("election", {})
     head = [f"<p class='eyebrow res-eyebrow'>{esc(election.get('name', 'City of Boulder election'))}</p>",
             "<h1>Election results</h1>",

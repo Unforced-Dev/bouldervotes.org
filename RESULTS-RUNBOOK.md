@@ -1,5 +1,21 @@
 # Election-night results runbook (Nov 3, 2026)
 
+## Archive mode (since Nov 4, 2026)
+
+The election is over and the site is an archive. Results updates are **off by default**:
+`tools/fetch_results_2026.py` stops with exit 4 ("FROZEN") before any network call unless
+`BV_RESULTS_UPDATES=1` is set. `--dry-run` and `--offline` still work. The results page keeps the
+last copy, says "Unofficial results until the county certifies. This guide no longer updates them.",
+and links the county. Every page carries the archive note (`ARCHIVE_TEXT` in build.py).
+
+A deliberate refresh is section 1 below with `BV_RESULTS_UPDATES=1` on the write. Don't schedule it.
+
+The county lists some candidates under a different spelling. Those go in
+`data/harvest/2026/county_names.json` (`"county spelling": "name in ballot_order.json"`), which the
+fetch and the page both read. Each target must be a 2026 ballot name, so an entry can only connect a
+spelling to one candidate. Because it's a data file, a refresh that adds a spelling stays a data PR
+for `bv-review`.
+
 The results view is built and tested behind `BV_RESULTS`. It is off by default, so merging the
 code changed nothing live. This page covers turning it on and keeping the numbers current.
 
@@ -46,7 +62,7 @@ T=$(date +%H%M); W=/home/uni/src/bouldervotes-results-$T
 git worktree add -b data/results-1103-$T $W origin/main && cd $W
 
 python3 tools/fetch_results_2026.py --dry-run    # prints the city numbers; saves nothing
-python3 tools/fetch_results_2026.py              # saves raw pages + data/harvest/2026/results.json
+BV_RESULTS_UPDATES=1 python3 tools/fetch_results_2026.py   # saves raw pages + data/harvest/2026/results.json
 python3 seed.py && python3 build.py
 { python3 -m unittest && python3 tools/check_links.py; } 2>&1 | tee /tmp/bv-verify-$T.log
 ```
@@ -55,16 +71,18 @@ Exit codes from the fetch:
 
 - `0`: written.
 - `3`: the county page has no contests yet. Wait and retry.
+- `4`: FROZEN (archive mode), nothing fetched. Set `BV_RESULTS_UPDATES=1` only for a deliberate refresh.
 - `2`: STOP, nothing written. The message names the problem: wrong election title (stale copy), a
   2026 ballot name missing from the county file, a measure missing, or a round table that doesn't add up.
-  Don't hand-edit around a STOP. Open the county page and see what changed.
+  Don't hand-edit around a STOP. Open the county page and see what changed. A candidate listed under
+  another spelling (a nickname, say) goes in `data/harvest/2026/county_names.json`.
 
 Before publishing, look at the numbers. `--dry-run` printed them; check two or three against the county page by eye.
 
 Publish through the reviewer. The fetch reads the web, so under T-225 this session doesn't merge its own data PR:
 
 ```sh
-git add data/harvest/2026/results.json data/harvest/2026/results_raw docs
+git add data/harvest/2026/results.json data/harvest/2026/results_raw data/harvest/2026/county_names.json docs
 git commit -m "Results: county count as of <time from the page>"
 git push -u origin HEAD
 URL=$(gh pr create -R Unforced-Dev/bouldervotes.org --fill)

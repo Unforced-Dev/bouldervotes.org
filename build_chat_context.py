@@ -770,9 +770,9 @@ def ballot_counts() -> dict:
 
 
 def chat_enabled() -> bool:
-    # Live since Aaron's go (2026-10-14): on by default, so every build path (nightly rebuild,
-    # freshness PRs) keeps /ask. BV_CHAT_ENABLED=0 is the off switch.
-    return os.environ.get("BV_CHAT_ENABLED", "1") != "0"
+    # Live 2026-10-14 to 2026-11-04. Off since the election passed (archive mode): no /ask page,
+    # no links to it, no gateway calls. The code stays; BV_CHAT_ENABLED=1 turns it back on.
+    return os.environ.get("BV_CHAT_ENABLED", "0") == "1"
 
 
 def chat_gateway() -> str:

@@ -176,6 +176,9 @@ details.years a[aria-current] { color: var(--accent); font-weight: 700; }
 @media (max-width: 540px) { .archive-outcome { padding: var(--s3); } .archive-candidate { gap: var(--s3); } .archive-mono { width: 44px; height: 44px; flex-basis: 44px; font-size: var(--fs-md); } }
 
 /* year strip on archive pages */
+.archive-note { background: var(--accent-tint); border-bottom: 1px solid var(--line); color: var(--accent-ink); font-family: var(--sans); font-size: var(--fs-sm); }
+.archive-note p { margin: 0; padding: var(--s3) 0; max-width: 60rem; }
+.archive-note a { color: var(--accent-ink); }
 .yearbar { background: var(--sunk); border-bottom: 1px solid var(--line); font-family: var(--sans); font-size: var(--fs-xs); }
 .yearbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s1) var(--s2); padding-top: var(--s2); padding-bottom: var(--s2); }
 .yearbar span { color: var(--ink-2); margin-right: var(--s1); }

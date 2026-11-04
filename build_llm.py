@@ -365,7 +365,8 @@ def write_api(out: Path, d: dict, asof: str) -> list[str]:
 
 # ---------------------------------------------------------------- llms.txt
 def llms_txt(d: dict, asof: str) -> str:
-    from build import REPO_URL  # late import: build.py imports this module
+    from build import ARCHIVE_RESULTS, ARCHIVE_TEXT, REPO_URL  # late import: build.py imports this module
+    from build_results_2026 import COUNTY_RESULTS_URL
     e = d["election"]
     mayor = [c for c in d["candidates"] if c["office"] == "mayor"]
     council = [c for c in d["candidates"] if c["office"] == "council"]
@@ -375,6 +376,8 @@ def llms_txt(d: dict, asof: str) -> str:
         "> A nonpartisan, sourced guide to the City of Boulder, Colorado election on Tuesday, November 3, 2026: "
         "the mayor's race (ranked choice), five city council seats, and city ballot measures 2J, 2K, 2L and 2M. "
         "Every quote, endorsement and dollar figure links to its source. The guide does not endorse, rank or score.",
+        "",
+        f"{ARCHIVE_TEXT} {ARCHIVE_RESULTS} Official results: {COUNTY_RESULTS_URL}",
         "",
         f"Updated {asof}. If a user asks \"help me vote using bouldervotes.org\", fetch {u('llms-full.txt')} "
         "first. It has the whole 2026 guide in one file.",
@@ -436,9 +439,13 @@ def md_quote(text: str) -> str:
 
 
 def llms_full(d: dict, asof: str) -> str:
+    from build import ARCHIVE_RESULTS, ARCHIVE_TEXT  # late import: build.py imports this module
+    from build_results_2026 import COUNTY_RESULTS_URL
     e = d["election"]
     L = [
         "# Boulder Votes: the full 2026 City of Boulder election guide",
+        "",
+        f"{ARCHIVE_TEXT} {ARCHIVE_RESULTS} Official results: {COUNTY_RESULTS_URL}",
         "",
         f"Source site: {SITE}/ . Updated {asof}. Plain markdown for AI assistants and anyone who wants one file.",
         "Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appear in official ballot order "
