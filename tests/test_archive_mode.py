@@ -76,11 +76,20 @@ class TestResultsFrozen(unittest.TestCase):
         self.assertEqual(code, 4)
         self.assertIn("FROZEN", err)
 
-    def test_page_says_the_copy_is_no_longer_updated(self):
-        self.assertIn("no longer updates", R.CAVEAT)
-        self.assertNotIn("update as ballots", R.CAVEAT)
-        if R.results_enabled():
-            self.assertIn(R.CAVEAT, (DOCS / "results.html").read_text(encoding="utf-8"))
+    def test_an_offline_parse_cannot_write_the_live_file_either(self):
+        env = {k: v for k, v in os.environ.items() if k != "BV_RESULTS_UPDATES"}
+        with mock.patch.dict(os.environ, env, clear=True), \
+                mock.patch.object(F, "from_dir", side_effect=AssertionError("parsed while frozen")):
+            code, err = self.run_main("--offline", "somewhere", "--out", str(F.OUT))
+        self.assertEqual(code, 4)
+        self.assertIn("FROZEN", err)
+
+    def test_built_pages_never_promise_more_updates(self):
+        for f in ("results.html", "index.html", "llms.txt", "llms-full.txt", "api/v1/results.json"):
+            p = DOCS / f
+            if p.exists():
+                with self.subTest(file=f):
+                    self.assertNotIn("update as ballots are counted", p.read_text(encoding="utf-8"))
 
 
 class TestCountyNames(unittest.TestCase):
@@ -88,7 +97,9 @@ class TestCountyNames(unittest.TestCase):
 
     def with_file(self, aliases: dict):
         import tempfile
-        tmp = Path(tempfile.mkdtemp()) / "county_names.json"
+        d = tempfile.TemporaryDirectory()
+        self.addCleanup(d.cleanup)
+        tmp = Path(d.name) / "county_names.json"
         tmp.write_text(json.dumps({"aliases": aliases}), encoding="utf-8")
         return mock.patch.object(R, "COUNTY_NAMES_JSON", tmp)
 
@@ -121,10 +132,20 @@ class TestCountyNames(unittest.TestCase):
             with self.assertRaises(ValueError):
                 R.county_aliases()
 
+    def test_one_spelling_cannot_point_at_two_candidates(self):
+        order = self.roster_names()["mayor"]
+        for aliases in ({"J. Doe": order[0], "J Doe": order[1]}, {"David Martus": order[0]}):
+            with self.subTest(aliases=aliases), self.with_file(aliases):
+                with self.assertRaises(ValueError):
+                    R.county_aliases()
+
 
 def build_con():
     import sqlite3
-    return sqlite3.connect(ROOT / "data" / "bouldervotes.db")
+    db = ROOT / "data" / "bouldervotes.db"
+    if not db.exists():
+        raise unittest.SkipTest("run seed.py first")
+    return sqlite3.connect(db)
 
 
 if __name__ == "__main__":

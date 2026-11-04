@@ -377,9 +377,9 @@ def llms_txt(d: dict, asof: str) -> str:
         "the mayor's race (ranked choice), five city council seats, and city ballot measures 2J, 2K, 2L and 2M. "
         "Every quote, endorsement and dollar figure links to its source. The guide does not endorse, rank or score.",
         "",
-        f"{ARCHIVE_TEXT} {ARCHIVE_RESULTS} Official results: {COUNTY_RESULTS_URL}",
+        f"{ARCHIVE_TEXT} Official results from Boulder County Elections: {COUNTY_RESULTS_URL} {ARCHIVE_RESULTS}",
         "",
-        f"Updated {asof}. If a user asks \"help me vote using bouldervotes.org\", fetch {u('llms-full.txt')} "
+        f"Updated {asof}. For questions about this election, fetch {u('llms-full.txt')} "
         "first. It has the whole 2026 guide in one file.",
         "",
         f"Source code and data: {REPO_URL}",
@@ -445,7 +445,7 @@ def llms_full(d: dict, asof: str) -> str:
     L = [
         "# Boulder Votes: the full 2026 City of Boulder election guide",
         "",
-        f"{ARCHIVE_TEXT} {ARCHIVE_RESULTS} Official results: {COUNTY_RESULTS_URL}",
+        f"{ARCHIVE_TEXT} Official results from Boulder County Elections: {COUNTY_RESULTS_URL} {ARCHIVE_RESULTS}",
         "",
         f"Source site: {SITE}/ . Updated {asof}. Plain markdown for AI assistants and anyone who wants one file.",
         "Nonpartisan. Nothing here is a recommendation, score or ranking. Candidates appear in official ballot order "

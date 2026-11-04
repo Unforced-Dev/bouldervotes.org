@@ -239,14 +239,14 @@ LOGO_SVG = (
 
 # Archive mode (2026-11-04): the election is over and the guide no longer updates.
 ARCHIVE_TEXT = "The 2026 City of Boulder election was on Nov. 3, 2026. This guide is kept as an archive."
-ARCHIVE_RESULTS = "Results come from Boulder County Elections and are unofficial until the county certifies them."
+ARCHIVE_RESULTS = "Counts are unofficial until the county certifies them."
 
 
 def archive_note() -> str:
     from build_results_2026 import COUNTY_RESULTS_URL
     return (f'<div class="archive-note" role="note"><div class="wrap"><p><strong>{esc(ARCHIVE_TEXT)}</strong> '
             f'<a href="{COUNTY_RESULTS_URL}">See the results from Boulder County Elections</a>. '
-            "Counts are unofficial until the county certifies them.</p></div></div>\n")
+            f"{esc(ARCHIVE_RESULTS)}</p></div></div>\n")
 
 
 def page(title: str, body: str, *, prefix: str = "", year: int | None = None, current: str | None = None,

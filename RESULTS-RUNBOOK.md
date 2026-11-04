@@ -4,9 +4,10 @@
 
 The election is over and the site is an archive. Results updates are **off by default**:
 `tools/fetch_results_2026.py` stops with exit 4 ("FROZEN") before any network call unless
-`BV_RESULTS_UPDATES=1` is set. `--dry-run` and `--offline` still work. The results page keeps the
-last copy, says "Unofficial results until the county certifies. This guide no longer updates them.",
-and links the county. Every page carries the archive note (`ARCHIVE_TEXT` in build.py).
+`BV_RESULTS_UPDATES=1` is set, and so does an `--offline` parse aimed at the live `results.json`.
+`--dry-run`, and `--offline` with `--out` somewhere else, still work. The results page shows the last
+published copy, if there is one, says "Unofficial results until the county certifies. This guide no
+longer updates them.", and links the county. Every page carries the archive note (`ARCHIVE_TEXT` in build.py).
 
 A deliberate refresh is section 1 below with `BV_RESULTS_UPDATES=1` on the write. Don't schedule it.
 
