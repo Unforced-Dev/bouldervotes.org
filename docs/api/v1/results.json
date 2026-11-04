@@ -1,0 +1,238 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-04",
+ "site": "https://bouldervotes.org",
+ "license_note": "Facts and quotes belong to their sources; cite the source_url.",
+ "guidance_for_ai": "https://bouldervotes.org/llms.txt",
+ "caveat": "Unofficial results until the county certifies. This guide no longer updates them. Boulder County has the latest count.",
+ "status": "unofficial",
+ "note": "No calls or projections. Candidates in ballot order. Rounds appear only when the county posts them.",
+ "election": {
+  "name": "Boulder County 2026 General Election",
+  "date": "2026-11-03"
+ },
+ "county_updated": "2026-11-04T00:59:00-07:00",
+ "retrieved_at": "2026-11-04T19:01:17Z",
+ "official_url": "https://electionresults.bouldercounty.gov/",
+ "contests": [
+  {
+   "office": "mayor",
+   "name": "City of Boulder Mayoral Candidates",
+   "official_url": "https://electionresults.bouldercounty.gov/Home/RcvContest/23.html",
+   "method": "ranked_choice",
+   "seats": 1,
+   "candidates": [
+    {
+     "name": "Lisa Ann Jacobs",
+     "votes": 1056
+    },
+    {
+     "name": "Taishya Adams",
+     "votes": 5358
+    },
+    {
+     "name": "Aaron Brockett",
+     "votes": 14643
+    },
+    {
+     "name": "Jameson (Jamo) Goldstein",
+     "votes": 833
+    },
+    {
+     "name": "Grateful Fred Instead",
+     "votes": 541
+    },
+    {
+     "name": "Aquiles La Grave",
+     "votes": 7695
+    }
+   ],
+   "rcv_page_url": "https://electionresults.bouldercounty.gov/Home/RcvContest/23.html",
+   "rounds": [
+    {
+     "round": 1,
+     "candidates": [
+      {
+       "name": "Lisa Ann Jacobs",
+       "votes": 1056
+      },
+      {
+       "name": "Taishya Adams",
+       "votes": 5358
+      },
+      {
+       "name": "Aaron Brockett",
+       "votes": 14643
+      },
+      {
+       "name": "Jameson (Jamo) Goldstein",
+       "votes": 833
+      },
+      {
+       "name": "Grateful Fred Instead",
+       "votes": 541
+      },
+      {
+       "name": "Aquiles La Grave",
+       "votes": 7695
+      }
+     ],
+     "continuing": 30126,
+     "inactive": 3604
+    },
+    {
+     "round": 2,
+     "candidates": [
+      {
+       "name": "Lisa Ann Jacobs",
+       "votes": 1112
+      },
+      {
+       "name": "Taishya Adams",
+       "votes": 5439
+      },
+      {
+       "name": "Aaron Brockett",
+       "votes": 14765
+      },
+      {
+       "name": "Jameson (Jamo) Goldstein",
+       "votes": 914
+      },
+      {
+       "name": "Aquiles La Grave",
+       "votes": 7800
+      }
+     ],
+     "continuing": 30030,
+     "inactive": 3700
+    },
+    {
+     "round": 3,
+     "candidates": [
+      {
+       "name": "Lisa Ann Jacobs",
+       "votes": 1246
+      },
+      {
+       "name": "Taishya Adams",
+       "votes": 5619
+      },
+      {
+       "name": "Aaron Brockett",
+       "votes": 14972
+      },
+      {
+       "name": "Aquiles La Grave",
+       "votes": 8073
+      }
+     ],
+     "continuing": 29910,
+     "inactive": 3820
+    }
+   ],
+   "rounds_url": "https://electionresults.bouldercounty.gov/Home/GetRcvFile/RcvShortReport.pdf",
+   "rounds_page_url": "https://electionresults.bouldercounty.gov/Home/RcvContest/23.html",
+   "rounds_updated": "2026-11-04T00:48:53-07:00",
+   "first_choices_from": "round 1 of the county's ranked-choice report",
+   "candidates_note": "First-choice votes only; not the ranked-choice result."
+  },
+  {
+   "office": "council",
+   "name": "City of Boulder Council Candidates (Vote for no more than Five)",
+   "official_url": "https://electionresults.bouldercounty.gov/#contest24",
+   "method": "plurality",
+   "seats": 5,
+   "candidates": [
+    {
+     "name": "Lee Gilbert",
+     "votes": 2359
+    },
+    {
+     "name": "Sam Fuqua",
+     "votes": 12777
+    },
+    {
+     "name": "Ryan Schuchard",
+     "votes": 15811
+    },
+    {
+     "name": "Jamillah Richmond",
+     "votes": 10379
+    },
+    {
+     "name": "Benita Duran",
+     "votes": 7759
+    },
+    {
+     "name": "Tara Winer",
+     "votes": 13667
+    },
+    {
+     "name": "Rachel Rose Isaacson",
+     "votes": 8752
+    },
+    {
+     "name": "Dave Martus",
+     "votes": 7157
+    },
+    {
+     "name": "Scott Rendleman",
+     "votes": 4873
+    },
+    {
+     "name": "Jill Adler Grano",
+     "votes": 16883
+    },
+    {
+     "name": "Ryan Jamieson",
+     "votes": 10381
+    },
+    {
+     "name": "Lynn Segal",
+     "votes": 1970
+    },
+    {
+     "name": "Tina Marquis",
+     "votes": 17249
+    }
+   ]
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Issue 2J RESIDENTIAL VACANCY EXCISE TAX (TABOR)",
+   "official_url": "https://electionresults.bouldercounty.gov/#contest59",
+   "code": "2J",
+   "title": "RESIDENTIAL VACANCY EXCISE TAX (TABOR)",
+   "yes": 18146,
+   "no": 13482
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Issue 2K RECREATION AND SAFETY BOND (TABOR)",
+   "official_url": "https://electionresults.bouldercounty.gov/#contest60",
+   "code": "2K",
+   "title": "RECREATION AND SAFETY BOND (TABOR)",
+   "yes": 13914,
+   "no": 17596
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Question 2L Bargaining Rights Union Firefighters in City Charter",
+   "official_url": "https://electionresults.bouldercounty.gov/#contest61",
+   "code": "2L",
+   "title": "Bargaining Rights Union Firefighters in City Charter",
+   "yes": 25120,
+   "no": 5312
+  },
+  {
+   "office": "measure",
+   "name": "City of Boulder Ballot Question 2M Debt Limit City Charter Language Change",
+   "official_url": "https://electionresults.bouldercounty.gov/#contest62",
+   "code": "2M",
+   "title": "Debt Limit City Charter Language Change",
+   "yes": 15352,
+   "no": 12959
+  }
+ ]
+}

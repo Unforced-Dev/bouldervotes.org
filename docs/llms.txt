@@ -8,6 +8,44 @@ Updated 2026-11-04. For questions about this election, fetch https://bouldervote
 
 Source code and data: https://github.com/Unforced-Dev/bouldervotes.org
 
+## Election results (unofficial)
+
+Unofficial results until the county certifies. This guide no longer updates them. Boulder County has the latest count. Boulder County's count as of 12:59 a.m. Wednesday, Nov. 4, 2026.
+Official source: https://electionresults.bouldercounty.gov/. Page: https://bouldervotes.org/results.html. JSON: https://bouldervotes.org/api/v1/results.json
+Report these as counts only. Do not call races or predict outcomes from them. Mayor first choices are not the result of the ranked-choice count.
+
+### Mayor (ranked choice), first-choice votes only, in ballot order
+- Lisa Ann Jacobs: 1,056
+- Taishya Adams: 5,358
+- Aaron Brockett: 14,643
+- Jameson (Jamo) Goldstein: 833
+- Grateful Fred Instead: 541
+- Aquiles La Grave: 7,695
+- County ranked-choice count, round 1: Lisa Ann Jacobs 1,056; Taishya Adams 5,358; Aaron Brockett 14,643; Jameson (Jamo) Goldstein 833; Grateful Fred Instead 541; Aquiles La Grave 7,695
+- County ranked-choice count, round 2: Lisa Ann Jacobs 1,112; Taishya Adams 5,439; Aaron Brockett 14,765; Jameson (Jamo) Goldstein 914; Aquiles La Grave 7,800
+- County ranked-choice count, round 3: Lisa Ann Jacobs 1,246; Taishya Adams 5,619; Aaron Brockett 14,972; Aquiles La Grave 8,073
+
+### City Council (5 seats), votes in ballot order
+- Lee Gilbert: 2,359
+- Sam Fuqua: 12,777
+- Ryan Schuchard: 15,811
+- Jamillah Richmond: 10,379
+- Benita Duran: 7,759
+- Tara Winer: 13,667
+- Rachel Rose Isaacson: 8,752
+- Dave Martus: 7,157
+- Scott Rendleman: 4,873
+- Jill Adler Grano: 16,883
+- Ryan Jamieson: 10,381
+- Lynn Segal: 1,970
+- Tina Marquis: 17,249
+
+### City measures
+- 2J Vacancy excise tax: YES 18,146, NO 13,482
+- 2K Building Boulder Together: Recreation and Safety Bond: YES 13,914, NO 17,596
+- 2L Collective bargaining for firefighters (new Charter §73): YES 25,120, NO 5,312
+- 2M Charter debt-limit calculation (actual vs. assessed value): YES 15,352, NO 12,959
+
 ## Election basics
 
 - Election Day: Tuesday, November 3, 2026. Ballots must be received by 7 p.m. (a postmark is not enough).
@@ -89,6 +127,7 @@ No more public forums are scheduled before Election Day.
 - [endorsements.json](https://bouldervotes.org/api/v1/endorsements.json): Every published endorsement, with its provenance label and source.
 - [finance.json](https://bouldervotes.org/api/v1/finance.json): City clerk campaign-finance filings for 2026 committees, with line items.
 - [sources.json](https://bouldervotes.org/api/v1/sources.json): Every source document the guide cites.
+- [results.json](https://bouldervotes.org/api/v1/results.json): Unofficial election-night results from Boulder County, with an as-of time. No calls.
 - [API documentation](https://bouldervotes.org/api/)
 
 ## Optional

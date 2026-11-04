@@ -1,0 +1,23 @@
+[
+ {
+  "file": "index.html.gz",
+  "url": "https://electionresults.bouldercounty.gov/",
+  "bytes": 513060,
+  "sha256": "4da1eab0dcf202ed5dc48a5c2063910fad4f9594cd251b1230af78e3ee3f0e08",
+  "retrieved_at": "2026-11-04T19:01:18+00:00"
+ },
+ {
+  "file": "rcv.html.gz",
+  "url": "https://electionresults.bouldercounty.gov/Home/RcvContest/23.html",
+  "bytes": 13811,
+  "sha256": "e0e7ec3ca4e45a9588c897e61aee17295685a5055832e3701d9e81d85b92d467",
+  "retrieved_at": "2026-11-04T19:01:18+00:00"
+ },
+ {
+  "file": "rcv.pdf.gz",
+  "url": "https://electionresults.bouldercounty.gov/Home/GetRcvFile/RcvShortReport.pdf",
+  "bytes": 252176,
+  "sha256": "135001cff3b919657fd08e193a8113ea5aba74ba13e3f80f8987c3e9df60f369",
+  "retrieved_at": "2026-11-04T19:01:18+00:00"
+ }
+]
