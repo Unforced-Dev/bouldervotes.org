@@ -1,30 +1,27 @@
-# Walkthrough: election-night results, ready behind a flag
+# Walkthrough: Boulder Votes in archive mode
 
-The earlier walkthrough (page counts) is in git history at 4b0a1f1. Its images `01-*.png` and `02-*.png` stay in `walkthrough/`.
+The earlier walkthrough (election-night results) is in git history at 1a2800d. Its images `results-*.png` stay in `walkthrough/`.
 
 ## How to run it
 
-The page is off by default. To see it with real Boulder County numbers from the 2023 election (the saved test fixture):
+Live: https://bouldervotes.org/ after the merge. Locally:
 
 ```sh
-BV_RESULTS=1 BV_RESULTS_FILE=tests/fixtures/results_2023C/results.json python3 build.py
-python3 -m http.server -d docs 8765     # open http://localhost:8765/ and /results.html
-python3 build.py                         # flag off again before committing
+python3 seed.py && python3 build.py
+python3 -m http.server -d docs 8765     # open http://localhost:8765/
 ```
 
 Screenshots come from that build in Chromium, at 390 and 1280 pixels wide.
 
 ## Steps
 
-1. **Home page, results card** (`walkthrough/results-01-home-card-390.png`)
-   - Narration: "Once the county posts numbers, a calm results card sits right under the page title on the home page, above everything else. It says the results are unofficial and gives the county's time."
-2. **Top of the results page** (`walkthrough/results-02-top-390.png`)
-   - Narration: "The page opens with the plain caveat: unofficial until the county certifies. Next comes the county's 'last updated' time, the time we copied it, and a link to the county's own page."
-3. **Mayor** (`walkthrough/results-03-mayor-390.png`)
-   - Narration: "For mayor, the county's round-by-round count shows only when the county has posted it. First choices are labelled as first choices, not the result. No one is called the winner."
-4. **Council and measures** (`walkthrough/results-04-council-measures-390.png`)
-   - Narration: "Council candidates are never sorted by votes. For 2026 they follow the official ballot order. Each measure gets two equal panels, YES and NO, in the same neutral style."
-5. **Desktop** (`walkthrough/results-05-page-1280.png`)
-   - Narration: "The same page on a desktop. Every vote count links to Boulder County's results page."
-
-Nothing changes on the live site until the flag is turned on (see `RESULTS-RUNBOOK.md`).
+1. **Home page, phone** (`walkthrough/archive-01-home-390.png`).
+   "The election is over, so every page now opens with one short note: the election was on November 3, and this guide is kept as an archive."
+2. **Home page, desktop** (`walkthrough/archive-02-home-1280.png`).
+   "The note links straight to Boulder County's official results and says the counts are unofficial until the county certifies them."
+3. **Results page** (`walkthrough/archive-03-results-390.png`).
+   "The results page keeps the unofficial caveat and now says this guide no longer updates the count. The county has the latest."
+4. **A candidate page** (`walkthrough/archive-04-candidate-390.png`).
+   "Every page carries the same note, including candidate pages. The AI chat link is gone from the footer and the home page; the chat page itself now returns a 404."
+5. **What's off.** No screen.
+   "Behind the scenes, nothing runs on a schedule any more: the AI chat is off, results updates refuse to run unless someone turns them on on purpose, and the page counter is the only thing still listening."
